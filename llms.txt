@@ -1,0 +1,31 @@
+# Cumulative Web Inc — cumulativeweb.com
+
+> Independent label platform: Music & Film · Clothing · Software & AI Agents.
+> The roster, the music, the apparel, and the software we sell to other independents.
+> Contact for business & sync: hp@cumulativeweb.com
+
+## Machine-readable data
+
+- [Roster index](https://cumulativeweb.com/data/roster.json) — ordered roster; first entry = flagship
+- [Commerce](https://cumulativeweb.com/data/commerce.json) — storefronts, artist services packs, pricing
+- [Producer](https://cumulativeweb.com/data/producer.json) — Black Lansky producer profile
+- Artist pages (one JSON per artist, built by the site renderer):
+  - [That Boy Hi Hat](https://cumulativeweb.com/data/artists/that-boy-hi-hat.json) — flagship alternative rap artist; Spotify artist ID `2f9j460EwjfvjYp3trBcb7`; ~307,000 lifetime Spotify plays on "Zooted Zone" (verified 2026-09-14)
+  - [Black Lansky](https://cumulativeweb.com/data/artists/black-lansky.json) — Henry Pitts as Black Lansky: artist, author (THE LOGO EFFECT, ISBN 979-8260386620), manager, producer, software and game builder
+  - [King Akeem](https://cumulativeweb.com/data/artists/king-akeem.json) — trap-rap; "Star" 112,510 plays
+  - [Greg Porn](https://cumulativeweb.com/data/artists/greg-porn.json) — cyber hip hop / alternative rap
+  - [Dre50](https://cumulativeweb.com/data/artists/dre50.json) — R&B
+  - [183 Wildboi](https://cumulativeweb.com/data/artists/183-wildboi.json) — rap rock
+  - [Fleekz](https://cumulativeweb.com/data/artists/fleekz.json)
+  - [Jeck Da General](https://cumulativeweb.com/data/artists/jeck-da-general.json) — producer, co-produced Idol or Icon
+  - [Hybrid](https://cumulativeweb.com/data/artists/hybrid.json) — producer of "Diabolique"
+
+## Structured data
+
+- [JSON-LD schema.org markup](https://cumulativeweb.com/) — embedded in `index.html`: Organization + WebSite + ItemList roster (MusicGroup/Person)
+- [Sitemap](https://cumulativeweb.com/sitemap.xml)
+
+## Related machine-readable surfaces
+
+- Catalog graph: https://cumulativewebinc.github.io/cwi-learn/catalog.json
+- AI learning kit: https://cumulativewebinc.github.io/cwi-learn/llms.txt
