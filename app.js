@@ -321,6 +321,8 @@
     var links = a.links || {};
     var linkRows = [];
     if (links.spotify_artist) linkRows.push(['Spotify artist page', links.spotify_artist]);
+    if (links.apple_music_artist) linkRows.push(['Apple Music artist page', links.apple_music_artist]);
+    if (links.deezer_artist) linkRows.push(['Deezer artist page', links.deezer_artist]);
     if (links.ai_learning_set_playlist) linkRows.push(['AI Learning Set playlist', SPOT + '/playlist/' + links.ai_learning_set_playlist.split(':')[2]]);
     if (links.eric_alper_playlist) linkRows.push(['Zooted Zone on Eric Alper\u2019s "360° : The Best Indie Music"', SPOT + '/playlist/' + links.eric_alper_playlist.split(':')[2]]);
     if (links.podcast_rss) linkRows.push(['Catalog podcast RSS feed', links.podcast_rss]);
