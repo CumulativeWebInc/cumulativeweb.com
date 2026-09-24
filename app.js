@@ -352,6 +352,20 @@
       html += '<section>' + sectionHead('Links') + '<p class="view-meta">' + esc(links.note) + '</p></section>';
     }
 
+    var bk = a.book || {};
+    if (bk.title) {
+      html += '<section>' + sectionHead('Book') +
+        '<p><b>' + esc(bk.title) + '</b></p>' +
+        (bk.subtitle ? '<p class="view-meta">' + esc(bk.subtitle) + '</p>' : '') +
+        (bk.authors ? '<p class="view-meta">By ' + esc(bk.authors) + '</p>' : '') +
+        '<p class="view-meta">' +
+          (bk.publication_date ? 'Published ' + esc(bk.publication_date) + ' · ' : '') +
+          (bk.isbn13 ? 'ISBN-13 ' + esc(bk.isbn13) + ' · ' : '') +
+          (bk.language ? esc(bk.language) : '') + '</p>' +
+        (bk.amazon_us ? '<a class="btn btn--secondary" target="_blank" rel="noopener" href="' + esc(bk.amazon_us) + '">Get the book on Amazon ↗</a>' : '') +
+        '</section>';
+    }
+
     var m = a.merch || {};
     html += '<section>' + sectionHead('Merch') +
       '<div class="badge-row">' + badge(m.status || 'DROPPING_SOON') + '</div>' +
