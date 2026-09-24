@@ -70,7 +70,7 @@
   ];
 
   /* ---------- state ---------- */
-  var DB = { roster: null, producer: null, artists: {}, commerce: null };
+  var DB = { roster: null, producer: null, artists: {}, commerce: null, artistMiss: {} };
   var playerClosed = false; // close (×) collapses to "Now on Spotify" pill; honest: playback continues in Spotify's player
   var currentFeature = null; // {type, id, title, artist} for STATE A, or null for STATE B
 
@@ -466,7 +466,22 @@
     var html;
     if (route === '' || route === '/') html = viewHome();
     else if (route === '/artists') html = viewArtists();
-    else if (route.indexOf('/artist/') === 0) html = viewArtist(route.slice(8));
+    else if (route.indexOf('/artist/') === 0) {
+      var aslug = route.slice(8);
+      if (artist(aslug)) html = viewArtist(aslug);
+      else if (DB.artistMiss[aslug]) html = viewNotFound('artist');
+      else {
+        // Stale-tab deep link: boot roster predates this artist. Fetch on demand (cache-busted), then render.
+        DB.artistMiss[aslug] = true;
+        view.innerHTML = '<section class="hero"><p class="view-meta">Loading artist…</p></section>' + footer() + playerSlot();
+        loadJSON('data/artists/' + aslug + '.json?fresh=' + Date.now()).then(function (a) {
+          delete DB.artistMiss[aslug];
+          DB.artists[aslug] = a;
+          render(route);
+        }, function () { render(route); });
+        return;
+      }
+    }
     else if (route === '/producer') html = viewProducer();
     else if (route === '/music') html = viewMusic();
     else if (route === '/clothing') html = viewClothing();
