@@ -106,9 +106,9 @@
   };
 
   /* ---------- shared chrome ---------- */
-  function lockup(prodName, prodImg) {
+  function lockup(prodName, prodImg, imgAlt) {
     return '<div class="lockup"><div class="prod">' +
-      (prodImg ? '<img src="' + esc(prodImg) + '" alt="' + esc(prodName) + ' logo">' : '') +
+      (prodImg ? '<img src="' + esc(prodImg) + '" alt="' + esc(imgAlt || (prodName + ' logo')) + '">' : '') +
       '<b>' + esc(prodName) + '</b></div>' +
       '<div class="cwi"><img src="assets/cwi-logo.jpg" alt="Cumulative Web Inc logo"><span>Cumulative Web Inc</span></div></div>';
   }
@@ -289,7 +289,7 @@
     if (!a) return viewNotFound('artist');
     currentFeature = firstVerifiedTrack(a); playerClosed = false;
 
-    var html = lockup(a.name, null) +
+    var html = lockup(a.name, (a.image && a.image !== 'placeholder') ? a.image : null, a.name) +
       '<section class="hero"><div class="eyebrow">' + (a.role === 'producer' ? 'Producer' : 'Artist') + ' · Cumulative Web Inc</div>' +
       '<h1>' + esc(a.name) + '</h1>' +
       '<div class="meta">' + (a.genres || []).map(function (g) { return '<span class="chip">' + esc(g) + '</span>'; }).join('') +
@@ -359,7 +359,7 @@
       return '<tr><td><b>' + esc(c.artist) + '</b></td><td>' + esc(c.work) + '</td><td>' + esc(c.role) + '</td><td>' + yr +
         '</td>' + (c.note ? '<td class="note">' + esc(c.note) + '</td>' : '<td></td>') + '</tr>';
     }).join('');
-    return lockup(p.alias, 'assets/cwi-logo.jpg') +
+    return lockup(p.alias, (p.image && p.image !== 'placeholder') ? p.image : 'assets/cwi-logo.jpg', p.alias) +
       '<section class="hero"><div class="eyebrow">Producer · Label founder</div>' +
       '<h1>' + esc(p.name) + '</h1><div class="meta"><span class="chip">' + esc(p.alias) + '</span>' + badge('LIVE') + '</div>' +
       '<p class="lede">' + esc(p.bio) + '</p>' +
