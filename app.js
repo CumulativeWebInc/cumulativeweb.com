@@ -271,9 +271,15 @@
 
   function viewArtists() {
     currentFeature = null; playerClosed = false;
+    var flag = artist(DB.roster.flagship);
+    var listenCta = (flag && flag.links && flag.links.spotify_artist)
+      ? ext(flag.links.spotify_artist, 'Listen on Spotify', 'btn btn--primary')
+      : '<a class="btn btn--primary" href="mailto:' + esc(DB.commerce.contact.email) + '">Contact CWI</a>';
     return lockup('Artists', 'assets/cwi-logo.jpg') +
       '<section>' + sectionHead('The roster') +
       '<p class="view-meta">' + rosterArtists().length + ' artists &amp; producers. DRAFT pages are in progress — shown as-is, never presented as available.</p>' +
+      '<div class="ctas" style="margin-bottom:var(--space-5)">' + listenCta +
+      '<a class="btn btn--secondary" href="mailto:' + esc(DB.commerce.contact.email) + '?subject=Booking%20an%20artist">Book an artist</a></div>' +
       '<div class="grid">' + rosterArtists().map(artistCard).join('') + '</div></section>' +
       footer() + playerSlot();
   }
@@ -287,7 +293,8 @@
       '<section class="hero"><div class="eyebrow">' + (a.role === 'producer' ? 'Producer' : 'Artist') + ' · Cumulative Web Inc</div>' +
       '<h1>' + esc(a.name) + '</h1>' +
       '<div class="meta">' + (a.genres || []).map(function (g) { return '<span class="chip">' + esc(g) + '</span>'; }).join('') +
-      badge(a.status) + '</div>' +
+      badge(a.status) + (a.page_status ? badge(a.page_status) : '') + '</div>' +
+      (a.page_status_note ? '<p class="view-meta" style="margin-top:var(--space-2)">' + esc(a.page_status_note) + '</p>' : '') +
       '<p class="lede">' + esc(a.tagline || '') + '</p>' +
       '<div class="ctas">' +
       ((a.links && a.links.spotify_artist) ? ext(a.links.spotify_artist, 'Listen on Spotify', 'btn btn--primary') : badge('PLANNED')) +
@@ -317,6 +324,12 @@
     if (links.ai_learning_set_playlist) linkRows.push(['AI Learning Set playlist', SPOT + '/playlist/' + links.ai_learning_set_playlist.split(':')[2]]);
     if (links.eric_alper_playlist) linkRows.push(['Zooted Zone on Eric Alper\u2019s "360° : The Best Indie Music"', SPOT + '/playlist/' + links.eric_alper_playlist.split(':')[2]]);
     if (links.podcast_rss) linkRows.push(['Catalog podcast RSS feed', links.podcast_rss]);
+    Object.keys(links).forEach(function (k) {
+      if (k.indexOf('hyperfollow_') === 0 && links[k]) {
+        var title = k.slice('hyperfollow_'.length).split('_').map(function (w) { return w.charAt(0).toUpperCase() + w.slice(1); }).join(' ');
+        linkRows.push([title + ' \u2014 stream on HyperFollow', links[k]]);
+      }
+    });
     if (links.podcast_note) linkRows.push(['Podcast note', null, links.podcast_note]);
     if (linkRows.length) {
       html += '<section>' + sectionHead('Links') + '<ul class="tracklist">' +
