@@ -329,6 +329,7 @@
     if (links.tidal_artist) linkRows.push(['Tidal artist page', links.tidal_artist]);
     if (links.shazam_artist) linkRows.push(['Shazam artist page', links.shazam_artist]);
     if (links.iheart_artist) linkRows.push(['iHeart artist page', links.iheart_artist]);
+    if (links.audiomack_artist) linkRows.push(['Audiomack artist page', links.audiomack_artist]);
     if (links.radio_playlist) linkRows.push(['Artist radio playlist', links.radio_playlist]);
     if (links.ai_learning_set_playlist) linkRows.push(['AI Learning Set playlist', SPOT + '/playlist/' + links.ai_learning_set_playlist.split(':')[2]]);
     if (links.eric_alper_playlist) linkRows.push(['Zooted Zone on Eric Alper\u2019s "360° : The Best Indie Music"', SPOT + '/playlist/' + links.eric_alper_playlist.split(':')[2]]);
