@@ -1,8 +1,8 @@
 {
   "alias": "Black Lansky",
-  "bio": "Henry Pitts, known as Black Lansky, runs Cumulative Web Inc and manages flagship artist That Boy Hi Hat. As a producer and executive producer he has co-production credits across the CWI catalog: That Boy Hi Hat's catalog including Idol or Icon (with Jeck Da General) and Diabolique (with Hybrid); King Akeem's Next Generation Protocol singles; Greg Porn's Pay Yourself and On Edge; Dre50's Pix (lyricist and assistant producer); and 183 Wildboi's Rock-Rap Revival core tracks Stunt and Full Moon. He owns the rights to the That Boy Hi Hat tracks connected to Jeck Da General and the catalogs he co-produced for the CWI roster.",
+  "bio": "Henry Pitts, known as Black Lansky, runs Cumulative Web Inc and manages flagship artist That Boy Hi Hat. As a producer and executive producer he has co-production credits across the CWI catalog: That Boy Hi Hat's catalog including Idol or Icon (with Jeck Da General) and Diabolique (with Hybrid); King Akeem's Next Generation Protocol singles; Greg Porn's Pay Yourself and On Edge; Dre50's Pix (lyricist and assistant producer); and 183 Wildboi's Rock-Rap Revival core tracks Stunt and Full Moon. He owns the rights to the That Boy Hi Hat tracks connected to Jeck Da General and the catalogs he co-produced for the CWI roster. He also records as an artist under the Black Lansky name \u2014 his artist page is currently a draft (DRAFT) until his own releases are verified.",
   "contact_cta": "mailto:hp@cumulativeweb.com",
-  "copyright": "© 2026 Cumulative Web Inc",
+  "copyright": "\u00a9 2026 Cumulative Web Inc",
   "credits": [
     {
       "artist": "That Boy Hi Hat",
@@ -41,7 +41,7 @@
     },
     {
       "artist": "Dre50",
-      "note": "℗ 2025 Cumulative Web Inc; receipts verified 2026-09-14",
+      "note": "\u2117 2025 Cumulative Web Inc; receipts verified 2026-09-14",
       "role": "lyricist + assistant producer",
       "work": "Pix (single)",
       "year": 2026
