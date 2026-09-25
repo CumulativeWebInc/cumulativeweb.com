@@ -26,7 +26,8 @@
       "evento",
       "promo",
       "modelos",
-      "geral"
+      "geral",
+      "artista"
     ]
   },
   "lang": "pt-BR",
@@ -83,6 +84,11 @@
       "href": "livestream.html",
       "label": "Ao Vivo",
       "route": "/livestream.html"
+    },
+    {
+      "href": "cadastro.html",
+      "label": "Cadastro",
+      "route": "/cadastro.html"
     },
     {
       "href": "contato.html",
@@ -193,6 +199,18 @@
       "lang": "pt-BR",
       "path": "livestream.html",
       "title": "Ao Vivo — Cumulative Web Inc Brasil"
+    },
+    {
+      "canonical": "https://cumulativeweb.com/br/cadastro.html",
+      "description": "Cadastro de artista independente na CWI Brasil: apresente seu projeto, sua história e seus planos à equipe de A&R. Sem promessa de contrato — trabalho honesto, em português.",
+      "hreflang": {
+        "en": "https://www.cumulativeweb.com/",
+        "pt-BR": "https://cumulativeweb.com/br/cadastro.html",
+        "x-default": "https://www.cumulativeweb.com/"
+      },
+      "lang": "pt-BR",
+      "path": "cadastro.html",
+      "title": "Cadastro de Artista — Cumulative Web Inc Brasil"
     },
     {
       "canonical": "https://cumulativeweb.com/br/contato.html",
