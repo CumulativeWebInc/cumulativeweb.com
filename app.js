@@ -155,6 +155,7 @@
       '<li>' + ext(DB.commerce.software[1].url, 'Agent Deck') + '</li>' +
       '<li>' + ext(DB.commerce.software[3].url, 'Caravan') + '</li>' +
       '<li><a href="mailto:' + esc(DB.commerce.contact.email) + '">Contact</a></li>' +
+      (DB.commerce.contact.whatsapp_url ? '<li>' + ext(DB.commerce.contact.whatsapp_url, 'WhatsApp \u00b7 ' + esc(DB.commerce.contact.whatsapp || '')) + '</li>' : '') +
       '</ul></div>' +
       '<div><h4>Roster</h4><ul>' + arts + '</ul></div>' +
       '<div><h4>Music</h4><ul>' +
