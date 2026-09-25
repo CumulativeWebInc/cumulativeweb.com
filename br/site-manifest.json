@@ -1,1 +1,219 @@
-{"base_url":"https://cumulativeweb.com/br/","hreflang":{"en":"https://www.cumulativeweb.com/","pt-BR":"https://cumulativeweb.com/br/","x-default":"https://www.cumulativeweb.com/"},"inquiry_form":{"allowed_mime":["image/jpeg","image/png","image/webp","application/pdf","application/zip"],"consentimento_lgpd_obrigatorio":true,"endpoint_relativo":"/api/contato","honeypot":true,"max_anexo_mb":10,"metodo":"POST","pagina":"https://cumulativeweb.com/br/contato.html","rate_limit":"5 envios/hora/IP","resposta_em":"português, em até 3 dias úteis","schema":"https://cumulativeweb.com/br/schemas/inquiry-submission.schema.json","tipos":["evento","promo","modelos","geral"]},"lang":"pt-BR","lang_switch":{"en":{"href":"https://www.cumulativeweb.com/","label":"EN"},"pt-BR":{"href":"index.html","label":"BR"}},"machine_readable":["llms.txt","site-manifest.json",".well-known/agent-card.json","schemas/inquiry-submission.schema.json","sitemap.xml","robots.txt"],"nav":[{"href":"index.html","label":"Início","route":"/"},{"href":"musica.html","label":"Música","route":"/musica.html"},{"href":"filmes.html","label":"Filmes","route":"/filmes.html"},{"href":"modelos.html","label":"Modelos","route":"/modelos.html"},{"href":"software.html","label":"Software","route":"/software.html"},{"href":"eventos.html","label":"Eventos","route":"/eventos.html"},{"href":"livestream.html","label":"Ao Vivo","route":"/livestream.html"},{"href":"contato.html","label":"Contato","route":"/contato.html"}],"organization":{"email":"hp@cumulativeweb.com","logo":"https://cumulativeweb.com/br/assets/cwi-logo.jpg","name":"Cumulative Web Inc","name_br":"Cumulative Web Inc Brasil","sameAs":["https://www.instagram.com/cumulativeweb","https://x.com/cumulativeBr","https://www.youtube.com/@cumulativeweb","https://www.tiktok.com/@cumulativeweb"],"url":"https://cumulativeweb.com/br/"},"routes":[{"canonical":"https://cumulativeweb.com/br/","description":"A Cumulative Web Inc no Brasil: música, cinema, moda e software — além de modelos e eventos. Todo o universo CWI, em português.","hreflang":{"en":"https://www.cumulativeweb.com/","pt-BR":"https://cumulativeweb.com/br/","x-default":"https://www.cumulativeweb.com/"},"lang":"pt-BR","path":"index.html","title":"Cumulative Web Inc Brasil — Música · Cinema · Moda · Software"},{"canonical":"https://cumulativeweb.com/br/musica.html","description":"O catálogo da Cumulative Web Inc no Brasil: That Boy Hi Hat, Black Lansky, King Akeem, Greg Porn, Dre50, 183 Wildboi, Fleekz e os produtores Jeck Da General e Hybrid.","hreflang":{"en":"https://www.cumulativeweb.com/","pt-BR":"https://cumulativeweb.com/br/musica.html","x-default":"https://www.cumulativeweb.com/"},"lang":"pt-BR","path":"musica.html","title":"Música — Cumulative Web Inc Brasil"},{"canonical":"https://cumulativeweb.com/br/filmes.html","description":"Cinema e projetos visuais da Cumulative Web Inc no Brasil: videoclipes, visualizers e produções audiovisuais do selo.","hreflang":{"en":"https://www.cumulativeweb.com/","pt-BR":"https://cumulativeweb.com/br/filmes.html","x-default":"https://www.cumulativeweb.com/"},"lang":"pt-BR","path":"filmes.html","title":"Filmes — Cumulative Web Inc Brasil"},{"canonical":"https://cumulativeweb.com/br/modelos.html","description":"Casting aberto da Cumulative Web Inc Brasil: modelos para videoclipes, campanhas e editoriais do selo.","hreflang":{"en":"https://www.cumulativeweb.com/","pt-BR":"https://cumulativeweb.com/br/modelos.html","x-default":"https://www.cumulativeweb.com/"},"lang":"pt-BR","path":"modelos.html","title":"Modelos — Cumulative Web Inc Brasil"},{"canonical":"https://cumulativeweb.com/br/software.html","description":"O software da Cumulative Web Inc no Brasil: THE EDIT, Agent Deck, Caravan, KingCode Lens e a loja CWI.","hreflang":{"en":"https://www.cumulativeweb.com/","pt-BR":"https://cumulativeweb.com/br/software.html","x-default":"https://www.cumulativeweb.com/"},"lang":"pt-BR","path":"software.html","title":"Software — Cumulative Web Inc Brasil"},{"canonical":"https://cumulativeweb.com/br/eventos.html","description":"Agenda da Cumulative Web Inc Brasil: shows, lançamentos e anúncios da cena. Anuncie seu evento com a CWI.","hreflang":{"en":"https://www.cumulativeweb.com/","pt-BR":"https://cumulativeweb.com/br/eventos.html","x-default":"https://www.cumulativeweb.com/"},"lang":"pt-BR","path":"eventos.html","title":"Eventos — Cumulative Web Inc Brasil"},{"canonical":"https://cumulativeweb.com/br/livestream.html","description":"Transmissões ao vivo da Cumulative Web Inc Brasil: shows, bastidores e conversas com a cena.","hreflang":{"en":"https://www.cumulativeweb.com/","pt-BR":"https://cumulativeweb.com/br/livestream.html","x-default":"https://www.cumulativeweb.com/"},"lang":"pt-BR","path":"livestream.html","title":"Ao Vivo — Cumulative Web Inc Brasil"},{"canonical":"https://cumulativeweb.com/br/contato.html","description":"Fale com a Cumulative Web Inc Brasil: reserva de eventos, projetos de promo, casting de modelos ou contato geral. Resposta em português.","hreflang":{"en":"https://www.cumulativeweb.com/","pt-BR":"https://cumulativeweb.com/br/contato.html","x-default":"https://www.cumulativeweb.com/"},"lang":"pt-BR","path":"contato.html","title":"Contato — Cumulative Web Inc Brasil"},{"canonical":"https://cumulativeweb.com/br/privacidade.html","description":"Política de privacidade da Cumulative Web Inc Brasil, em conformidade com a LGPD (Lei nº 13.709/2018).","lang":"pt-BR","path":"privacidade.html","title":"Privacidade (LGPD) — Cumulative Web Inc Brasil"}],"site":"Cumulative Web Inc Brasil","version":"1.0.0"}
+{
+  "base_url": "https://cumulativeweb.com/br/",
+  "hreflang": {
+    "en": "https://www.cumulativeweb.com/",
+    "pt-BR": "https://cumulativeweb.com/br/",
+    "x-default": "https://www.cumulativeweb.com/"
+  },
+  "inquiry_form": {
+    "allowed_mime": [
+      "image/jpeg",
+      "image/png",
+      "image/webp",
+      "application/pdf",
+      "application/zip"
+    ],
+    "consentimento_lgpd_obrigatorio": true,
+    "endpoint_relativo": "/api/contato",
+    "honeypot": true,
+    "max_anexo_mb": 10,
+    "metodo": "POST",
+    "pagina": "https://cumulativeweb.com/br/contato.html",
+    "rate_limit": "5 envios/hora/IP",
+    "resposta_em": "português, em até 3 dias úteis",
+    "schema": "https://cumulativeweb.com/br/schemas/inquiry-submission.schema.json",
+    "tipos": [
+      "evento",
+      "promo",
+      "modelos",
+      "geral"
+    ]
+  },
+  "lang": "pt-BR",
+  "lang_switch": {
+    "en": {
+      "href": "https://www.cumulativeweb.com/",
+      "label": "EN"
+    },
+    "pt-BR": {
+      "href": "index.html",
+      "label": "BR"
+    }
+  },
+  "machine_readable": [
+    "llms.txt",
+    "site-manifest.json",
+    ".well-known/agent-card.json",
+    "schemas/inquiry-submission.schema.json",
+    "sitemap.xml",
+    "robots.txt"
+  ],
+  "nav": [
+    {
+      "href": "index.html",
+      "label": "Início",
+      "route": "/"
+    },
+    {
+      "href": "musica.html",
+      "label": "Música",
+      "route": "/musica.html"
+    },
+    {
+      "href": "filmes.html",
+      "label": "Filmes",
+      "route": "/filmes.html"
+    },
+    {
+      "href": "modelos.html",
+      "label": "Modelos",
+      "route": "/modelos.html"
+    },
+    {
+      "href": "software.html",
+      "label": "Software",
+      "route": "/software.html"
+    },
+    {
+      "href": "eventos.html",
+      "label": "Eventos",
+      "route": "/eventos.html"
+    },
+    {
+      "href": "livestream.html",
+      "label": "Ao Vivo",
+      "route": "/livestream.html"
+    },
+    {
+      "href": "contato.html",
+      "label": "Contato",
+      "route": "/contato.html"
+    }
+  ],
+  "organization": {
+    "email": "hp@cumulativeweb.com",
+    "logo": "https://cumulativeweb.com/br/assets/cwi-logo.jpg",
+    "name": "Cumulative Web Inc",
+    "name_br": "Cumulative Web Inc Brasil",
+    "sameAs": [
+      "https://www.instagram.com/cumulativeweb",
+      "https://x.com/cumulativeBr",
+      "https://www.youtube.com/@cumulativeweb",
+      "https://www.tiktok.com/@cumulativeweb"
+    ],
+    "url": "https://cumulativeweb.com/br/",
+    "address": {
+      "region": "Alagoas",
+      "country": "BR",
+      "country_name": "Brasil",
+      "display": "Alagoas, Brasil"
+    }
+  },
+  "routes": [
+    {
+      "canonical": "https://cumulativeweb.com/br/",
+      "description": "A Cumulative Web Inc no Brasil: música, cinema, moda e software — além de modelos e eventos. Todo o universo CWI, em português.",
+      "hreflang": {
+        "en": "https://www.cumulativeweb.com/",
+        "pt-BR": "https://cumulativeweb.com/br/",
+        "x-default": "https://www.cumulativeweb.com/"
+      },
+      "lang": "pt-BR",
+      "path": "index.html",
+      "title": "Cumulative Web Inc Brasil — Música · Cinema · Moda · Software"
+    },
+    {
+      "canonical": "https://cumulativeweb.com/br/musica.html",
+      "description": "O catálogo da Cumulative Web Inc no Brasil: That Boy Hi Hat, Black Lansky, King Akeem, Greg Porn, Dre50, 183 Wildboi, Fleekz e os produtores Jeck Da General e Hybrid.",
+      "hreflang": {
+        "en": "https://www.cumulativeweb.com/",
+        "pt-BR": "https://cumulativeweb.com/br/musica.html",
+        "x-default": "https://www.cumulativeweb.com/"
+      },
+      "lang": "pt-BR",
+      "path": "musica.html",
+      "title": "Música — Cumulative Web Inc Brasil"
+    },
+    {
+      "canonical": "https://cumulativeweb.com/br/filmes.html",
+      "description": "Cinema e projetos visuais da Cumulative Web Inc no Brasil: videoclipes, visualizers e produções audiovisuais do selo.",
+      "hreflang": {
+        "en": "https://www.cumulativeweb.com/",
+        "pt-BR": "https://cumulativeweb.com/br/filmes.html",
+        "x-default": "https://www.cumulativeweb.com/"
+      },
+      "lang": "pt-BR",
+      "path": "filmes.html",
+      "title": "Filmes — Cumulative Web Inc Brasil"
+    },
+    {
+      "canonical": "https://cumulativeweb.com/br/modelos.html",
+      "description": "Casting aberto da Cumulative Web Inc Brasil: modelos para videoclipes, campanhas e editoriais do selo.",
+      "hreflang": {
+        "en": "https://www.cumulativeweb.com/",
+        "pt-BR": "https://cumulativeweb.com/br/modelos.html",
+        "x-default": "https://www.cumulativeweb.com/"
+      },
+      "lang": "pt-BR",
+      "path": "modelos.html",
+      "title": "Modelos — Cumulative Web Inc Brasil"
+    },
+    {
+      "canonical": "https://cumulativeweb.com/br/software.html",
+      "description": "O software da Cumulative Web Inc no Brasil: THE EDIT, Agent Deck, Caravan, KingCode Lens e a loja CWI.",
+      "hreflang": {
+        "en": "https://www.cumulativeweb.com/",
+        "pt-BR": "https://cumulativeweb.com/br/software.html",
+        "x-default": "https://www.cumulativeweb.com/"
+      },
+      "lang": "pt-BR",
+      "path": "software.html",
+      "title": "Software — Cumulative Web Inc Brasil"
+    },
+    {
+      "canonical": "https://cumulativeweb.com/br/eventos.html",
+      "description": "Agenda da Cumulative Web Inc Brasil: shows, lançamentos e anúncios da cena. Anuncie seu evento com a CWI.",
+      "hreflang": {
+        "en": "https://www.cumulativeweb.com/",
+        "pt-BR": "https://cumulativeweb.com/br/eventos.html",
+        "x-default": "https://www.cumulativeweb.com/"
+      },
+      "lang": "pt-BR",
+      "path": "eventos.html",
+      "title": "Eventos — Cumulative Web Inc Brasil"
+    },
+    {
+      "canonical": "https://cumulativeweb.com/br/livestream.html",
+      "description": "Transmissões ao vivo da Cumulative Web Inc Brasil: shows, bastidores e conversas com a cena.",
+      "hreflang": {
+        "en": "https://www.cumulativeweb.com/",
+        "pt-BR": "https://cumulativeweb.com/br/livestream.html",
+        "x-default": "https://www.cumulativeweb.com/"
+      },
+      "lang": "pt-BR",
+      "path": "livestream.html",
+      "title": "Ao Vivo — Cumulative Web Inc Brasil"
+    },
+    {
+      "canonical": "https://cumulativeweb.com/br/contato.html",
+      "description": "Fale com a Cumulative Web Inc Brasil: reserva de eventos, projetos de promo, casting de modelos ou contato geral. Resposta em português.",
+      "hreflang": {
+        "en": "https://www.cumulativeweb.com/",
+        "pt-BR": "https://cumulativeweb.com/br/contato.html",
+        "x-default": "https://www.cumulativeweb.com/"
+      },
+      "lang": "pt-BR",
+      "path": "contato.html",
+      "title": "Contato — Cumulative Web Inc Brasil"
+    },
+    {
+      "canonical": "https://cumulativeweb.com/br/privacidade.html",
+      "description": "Política de privacidade da Cumulative Web Inc Brasil, em conformidade com a LGPD (Lei nº 13.709/2018).",
+      "lang": "pt-BR",
+      "path": "privacidade.html",
+      "title": "Privacidade (LGPD) — Cumulative Web Inc Brasil"
+    }
+  ],
+  "site": "Cumulative Web Inc Brasil",
+  "version": "1.0.0"
+}
