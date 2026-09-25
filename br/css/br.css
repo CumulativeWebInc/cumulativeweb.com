@@ -130,6 +130,7 @@ p { margin: 0 0 var(--space-4); color: var(--cwi-text-sub); }
   letter-spacing: .1em; color: #e6e6e6; margin-bottom: var(--space-2); }
 .hero h1 { font-size: var(--text-display); font-weight: 900; letter-spacing: -.02em; }
 .hero p.lede { max-width: 72ch; color: #d9d9d9; font-size: 1.125rem; }
+.hero p.locale { margin-top: .5rem; color: #9fd8a8; font-size: .95rem; font-weight: 600; }
 .hero .ctas { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; margin-top: var(--space-5); }
 .chip { font-size: var(--text-small); background: rgba(255,255,255,.14); padding: 4px 12px;
   border-radius: var(--radius-pill); color: #fff; }
