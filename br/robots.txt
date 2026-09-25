@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /br/
+Disallow: /br/assets/
+
+Sitemap: https://cumulativeweb.com/br/sitemap.xml
