@@ -1,0 +1,51 @@
+# Cumulative Web Inc Brasil
+
+> A extensão brasileira da Cumulative Web Inc — selo independente de música, cinema, moda e software. Todo o conteúdo em português (pt-BR).
+
+## Sobre
+
+A Cumulative Web Inc (CWI) é um selo independente. A CWI Brasil é sua extensão em português: o mesmo universo — música, cinema, moda, software, modelos e eventos — falado em pt-BR, com consentimento e privacidade sob a LGPD (Lei nº 13.709/2018).
+
+- Site: https://cumulativeweb.com/br/
+- Organização: Cumulative Web Inc
+- Contato oficial: hp@cumulativeweb.com
+- Idioma: pt-BR (alternativa em inglês: https://www.cumulativeweb.com/)
+- Instagram: https://www.instagram.com/cumulativeweb
+- X: https://x.com/cumulativeBr
+- YouTube: https://www.youtube.com/@cumulativeweb
+- TikTok: https://www.tiktok.com/@cumulativeweb
+
+## Seções
+
+- Início: https://cumulativeweb.com/br/ — porta de entrada da CWI Brasil.
+- Música: https://cumulativeweb.com/br/musica.html — o catálogo no Brasil: That Boy Hi Hat, Black Lansky, King Akeem, Greg Porn, Dre50, 183 Wildboi, Fleekz.
+- Filmes: https://cumulativeweb.com/br/filmes.html — cinema e projetos visuais do selo: videoclipes, visualizers e produções audiovisuais.
+- Modelos: https://cumulativeweb.com/br/modelos.html — casting aberto: modelos para videoclipes, campanhas e editoriais do selo.
+- Software: https://cumulativeweb.com/br/software.html — o software da CWI: THE EDIT, Agent Deck, Caravan, KingCode Lens e a loja CWI.
+- Eventos: https://cumulativeweb.com/br/eventos.html — agenda: shows, lançamentos e anúncios da cena.
+- Ao Vivo: https://cumulativeweb.com/br/livestream.html — transmissões ao vivo: shows, bastidores e conversas com a cena.
+- Contato: https://cumulativeweb.com/br/contato.html — formulário de contato com 4 tipos de mensagem (ver "Formulário de contato").
+- Privacidade: https://cumulativeweb.com/br/privacidade.html — Política de Privacidade em conformidade com a LGPD.
+
+## Formulário de contato
+
+O formulário em https://cumulativeweb.com/br/contato.html aceita 4 tipos de mensagem:
+
+- `evento` — Reserva / Anúncio de evento
+- `promo` — Projeto de promo
+- `modelos` — Chamada de modelos / Casting
+- `geral` — Contato geral
+
+Campos: nome (2–100 caracteres), e-mail (válido), telefone (opcional), tipo (um dos 4), mensagem (10–5000 caracteres), consentimento LGPD (obrigatório), anexo opcional (máx. 10 MB; tipos: jpg, jpeg, png, webp, pdf, zip). Proteção anti-spam: honeypot + limite de 5 envios por hora por IP. Cada submissão recebe consentimento carimbado (data + versão do texto de privacidade). O esquema JSON da submissão está em https://cumulativeweb.com/br/schemas/inquiry-submission.schema.json. Resposta da equipe em português em até 3 dias úteis.
+
+## Infraestrutura legível por máquina
+
+- Manifesto do site: https://cumulativeweb.com/br/site-manifest.json
+- Cartão do agente: https://cumulativeweb.com/br/.well-known/agent-card.json
+- Esquema da submissão: https://cumulativeweb.com/br/schemas/inquiry-submission.schema.json
+- Sitemap: https://cumulativeweb.com/br/sitemap.xml
+- Robots: https://cumulativeweb.com/br/robots.txt
+
+## Privacidade (LGPD)
+
+Dados de contato são usados apenas para responder à mensagem. Para acessar, corrigir ou excluir seus dados, escreva para hp@cumulativeweb.com com o assunto "LGPD". Detalhes: https://cumulativeweb.com/br/privacidade.html
