@@ -27,6 +27,7 @@ A Cumulative Web Inc (CWI) é um selo independente. A CWI Brasil é sua extensã
 - Eventos: https://cumulativeweb.com/br/eventos.html — agenda: shows, lançamentos e anúncios da cena.
 - Ao Vivo: https://cumulativeweb.com/br/livestream.html — transmissões ao vivo: shows, bastidores e conversas com a cena.
 - Contato: https://cumulativeweb.com/br/contato.html — formulário de contato com 4 tipos de mensagem (ver "Formulário de contato").
+- Cadastro de artista: https://cumulativeweb.com/br/cadastro.html — página de cadastro para artistas independentes: apresentação do movimento CWI e formulário com tipo `artista` (ver "Cadastro de artista").
 - Privacidade: https://cumulativeweb.com/br/privacidade.html — Política de Privacidade em conformidade com a LGPD.
 
 ## Formulário de contato
@@ -38,7 +39,17 @@ O formulário em https://cumulativeweb.com/br/contato.html aceita 4 tipos de men
 - `modelos` — Chamada de modelos / Casting
 - `geral` — Contato geral
 
+A página de cadastro de artista envia um 5º tipo ao mesmo endpoint: `artista` — Cadastro de artista indie (ver "Cadastro de artista").
+
 Campos: nome (2–100 caracteres), e-mail (válido), telefone (opcional), tipo (um dos 4), mensagem (10–5000 caracteres), consentimento LGPD (obrigatório), anexo opcional (máx. 10 MB; tipos: jpg, jpeg, png, webp, pdf, zip). Proteção anti-spam: honeypot + limite de 5 envios por hora por IP. Cada submissão recebe consentimento carimbado (data + versão do texto de privacidade). O esquema JSON da submissão está em https://cumulativeweb.com/br/schemas/inquiry-submission.schema.json. Resposta da equipe em português em até 3 dias úteis.
+
+## Cadastro de artista
+
+A página https://cumulativeweb.com/br/cadastro.html apresenta o movimento da CWI Brasil para artistas independentes e oferece um formulário próprio que envia `tipo: "artista"` ("Cadastro de artista indie") ao mesmo endpoint `/api/contato`:
+
+- `artista` — Cadastro de artista indie (página cadastro.html)
+
+Campos do formulário: nome artístico (obrigatório), nome real (opcional), cidade/UF (obrigatório), WhatsApp (obrigatório), e-mail (obrigatório), gênero musical (obrigatório: Funk, Rap/Trap, MPB, Sertanejo, Pagode, Rock, Eletrônica, Gospel, Forró, Outro), links opcionais (Spotify, YouTube, Instagram), sobre o projeto (obrigatório, mínimo 20 caracteres), como conheceu a CWI (opcional), consentimento LGPD (obrigatório), honeypot anti-spam. O cliente monta a `mensagem` em linhas rotuladas em português (Nome artístico, Nome real, Cidade/UF, Gênero, Spotify, YouTube, Instagram, Como conheceu a CWI, Sobre o projeto). Sem promessa de contrato, adiantamento ou colocação garantida em playlist — a página promete apenas escuta real da equipe de A&R e resposta em português.
 
 ## Infraestrutura legível por máquina
 
