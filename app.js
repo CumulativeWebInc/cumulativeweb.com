@@ -1,6 +1,6 @@
 /* CWI Label Platform — hash router + JSON-driven renderers. Vanilla JS, zero deps.
    Routes: #/ (home), #/artists, #/artist/<slug>, #/producer, #/music,
-           #/clothing, #/software. Data: data/*.json. Adding an artist =
+           #/clothing, #/skateboards, #/software. Data: data/*.json. Adding an artist =
    one JSON in data/artists + entry in roster.json order. No code changes. */
 (function () {
   'use strict';
@@ -56,6 +56,7 @@
     producer: I('M12 3v10.55A4 4 0 1 0 14 17V7h4V3h-6z'),
     music: I('M12 3v10.55A4 4 0 1 0 14 17V7h4V3h-6z'),
     clothing: I('M12 6c-2.67 0-8 1.34-8 4v10.5h5V17h6v3.5h5V10c0-2.66-5.33-4-8-4zm0-4a2 2 0 1 0 0 4 2 2 0 0 0 0-4z'),
+    skateboard: I('M3 15c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2s-.9 2-2 2H5c-1.1 0-2-.9-2-2zm4.5 5.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm9 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z'),
     software: I('M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0 4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z')
   };
   var INFO_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>';
@@ -66,6 +67,7 @@
     { route: '#/producer', key: 'producer', label: 'Producer', icon: ICON.producer },
     { route: '#/music', key: 'music', label: 'Music', icon: ICON.music },
     { route: '#/clothing', key: 'clothing', label: 'Clothing', icon: ICON.clothing },
+    { route: '#/skateboards', key: 'skateboards', label: 'Skateboards', icon: ICON.skateboard },
     { route: '#/software', key: 'software', label: 'Software', icon: ICON.software }
   ];
 
@@ -155,7 +157,6 @@
       '<li>' + ext(DB.commerce.software[1].url, 'Agent Deck') + '</li>' +
       '<li>' + ext(DB.commerce.software[3].url, 'Caravan') + '</li>' +
       '<li><a href="mailto:' + esc(DB.commerce.contact.email) + '">Contact</a></li>' +
-      (DB.commerce.contact.whatsapp_url ? '<li>' + ext(DB.commerce.contact.whatsapp_url, 'WhatsApp \u00b7 ' + esc(DB.commerce.contact.whatsapp || '')) + '</li>' : '') +
       '</ul></div>' +
       '<div><h4>Roster</h4><ul>' + arts + '</ul></div>' +
       '<div><h4>Music</h4><ul>' +
@@ -262,9 +263,12 @@
       '<div class="card"><h3>Artist Services packs</h3><div class="sub">Pitch kit $19 · Evidence report $49 · Sync Readiness Pack $149</div>' +
       '<div class="badge-row">' + badge('LIVE') + '</div>' +
       '<div class="badge-row">' + ext(DB.commerce.music[0].url, 'Browse the store', 'btn btn--primary') + '</div></div>' +
-      '<div class="card"><h3>CWI Apparel</h3><div class="sub">First drop incoming — waitlist only.</div>' +
-      '<div class="badge-row">' + badge('DROPPING_SOON') + '</div>' +
-      '<div class="badge-row">' + inl('#/clothing', 'Join the waitlist', 'btn btn--secondary') + '</div></div>' +
+      '<div class="card"><h3>CWI Apparel</h3><div class="sub">8 official cover-art tees — $14.75 each.</div>' +
+      '<div class="badge-row">' + badge('LIVE') + '</div>' +
+      '<div class="badge-row">' + inl('#/clothing', 'Shop the tees', 'btn btn--primary') + '</div></div>' +
+      '<div class="card"><h3>CWI Skateboards</h3><div class="sub">7 artist-designed decks — $54.99–$84.99.</div>' +
+      '<div class="badge-row">' + badge('LIVE') + '</div>' +
+      '<div class="badge-row">' + inl('#/skateboards', 'Shop the decks', 'btn btn--primary') + '</div></div>' +
       '</div></section>';
 
     return html + footer() + playerSlot();
@@ -452,13 +456,45 @@
   function viewClothing() {
     var c = DB.commerce.clothing;
     currentFeature = null; playerClosed = false;
-    return lockup(c.name, 'assets/cwi-logo.jpg') +
+    var html = lockup(c.name, 'assets/cwi-logo.jpg') +
       '<section class="hero"><div class="eyebrow">Clothing · the label you can wear</div>' +
       '<h1>CWI Apparel</h1><div class="meta">' + badge(c.status) + '</div>' +
-      '<p class="lede">' + esc(c.note) + '</p>' +
-      '<div class="ctas"><a class="btn btn--primary" href="' + esc(c.url) + '">Join the waitlist</a></div></section>' +
-      '<section><p class="view-meta">No inventory yet, no pre-orders open, no prices invented — the waitlist hears first when the first pieces land.</p></section>' +
+      '<p class="lede">' + esc(c.tagline) + '</p>' +
+      '<div class="ctas">' + ext(c.url, esc(c.cta_label), 'btn btn--primary') + '</div></section>' +
+      '<section>' + sectionHead('The first drop — 8 official cover-art tees', c.url, 'All tees in the store') +
+      '<div class="grid">' + (c.items || []).map(function (t) {
+        return '<div class="card"><div class="art"><img src="' + esc(t.image) + '" alt="' +
+          esc(t.name) + ' tee — cover art" loading="lazy"></div><h3>' + esc(t.name) + '</h3>' +
+          '<div class="sub">' + esc(t.detail) + '</div>' +
+          '<div class="badge-row"><span class="badge badge--live">' + esc(t.price) + '</span></div>' +
+          '<div class="badge-row">' + ext(t.url, 'Shop this tee', 'btn btn--primary') + '</div></div>';
+      }).join('') + '</div></section>' +
+      '<section><p class="view-meta">Prices and checkout live in the Fourthwall store — tees are printed and shipped by Fourthwall. ' +
+      'No prices invented here: every figure above matches the live store.</p></section>' +
       footer() + playerSlot();
+    return html;
+  }
+
+  function viewSkateboards() {
+    var s = DB.commerce.skateboards;
+    currentFeature = null; playerClosed = false;
+    var html = lockup(s.name, 'assets/cwi-logo.jpg') +
+      '<section class="hero"><div class="eyebrow">Skateboards · ride the label</div>' +
+      '<h1>CWI Skateboards</h1><div class="meta">' + badge(s.status) + '</div>' +
+      '<p class="lede">' + esc(s.tagline) + '</p>' +
+      '<div class="ctas">' + ext(s.url, esc(s.cta_label), 'btn btn--primary') + '</div></section>' +
+      '<section>' + sectionHead('The 2026 lineup — 7 decks', s.url, 'All decks in the shop') +
+      '<div class="grid">' + (s.items || []).map(function (d) {
+        return '<div class="card"><div class="art"><img src="' + esc(d.image) + '" alt="' +
+          esc(d.name) + ' skateboard deck" loading="lazy"></div><h3>' + esc(d.name) + '</h3>' +
+          '<div class="sub">' + esc(d.detail) + '</div>' +
+          '<div class="badge-row"><span class="badge badge--live">' + esc(d.price) + '</span></div>' +
+          '<div class="badge-row">' + ext(d.url, 'View in the shop', 'btn btn--primary') + '</div></div>';
+      }).join('') + '</div></section>' +
+      '<section><p class="view-meta">Prices live in the Boardpusher shop — decks are printed and shipped by Boardpusher. ' +
+      'No prices invented here: every figure above matches the live shop.</p></section>' +
+      footer() + playerSlot();
+    return html;
   }
 
   function viewSoftware() {
@@ -510,6 +546,7 @@
     else if (route === '/producer') html = viewProducer();
     else if (route === '/music') html = viewMusic();
     else if (route === '/clothing') html = viewClothing();
+    else if (route === '/skateboards') html = viewSkateboards();
     else if (route === '/software') html = viewSoftware();
     else html = viewNotFound('page');
     view.innerHTML = html;
@@ -526,6 +563,7 @@
     else if (route === '/producer') key = 'producer';
     else if (route === '/music') key = 'music';
     else if (route === '/clothing') key = 'clothing';
+    else if (route === '/skateboards') key = 'skateboards';
     else if (route === '/software') key = 'software';
     var side = NAV.map(function (n) {
       return '<a class="nav-item' + (n.key === key ? ' active' : '') + '" href="' + n.route + '">' + n.icon + '<span>' + n.label + '</span></a>';
