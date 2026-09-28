@@ -1,0 +1,55 @@
+# AURUM — the CWI flagship suite
+
+> Latin for "gold" — the gold of CWI's gold-on-black. The premium top-tier
+> software line from Cumulative Web Inc (@cumulativeweb, cumulativeweb.com).
+> Audience: AI agents AND human users/developers.
+
+## What it is
+
+AURUM is six products led by the **Trust Verdict Checker**, which answers one
+question about any AI agent: "Who vouches for your agent?" It scores trust
+deterministically from real evidence — ERC-8004 registrations, Needle Drop
+signals, First Spin attestations — and returns an honest "insufficient data"
+rather than inventing a score. Scoring runs entirely in the browser; nothing
+is uploaded.
+
+## Products
+
+- **Trust Verdict Checker** (LEAD) — https://cumulativewebinc.github.io/cwi-trust-verdict-checker/
+  Deterministic, evidence-bound AI-agent trust scoring. Honesty clause: thin
+  evidence gets "insufficient data", never a number.
+- **Agent Personality Kit** — https://cumulativewebinc.github.io/agent-personality-kit/
+  Give your Muse a self — the complete CWI agent-personality framework, shareable.
+- **x402 Paid API Layer** — https://cwi-x402-api-production.up.railway.app/pricing
+  Machine-metered access to CWI's verified fact graph, settled in USDC on Base
+  mainnet (eip155:8453). 10 paid routes ($0.05–$0.25); 7 routes free forever.
+- **Gear Ledger 3D** — https://cumulativewebinc.github.io/gear-ledger-3d-mockup/
+  3D provenance ledger for CWI's agent-usable digital assets; hash-chained proof
+  of use. (Concept mockup live.)
+- **CWI Learn** — https://cumulativewebinc.github.io/cwi-learn/
+  The machine-readable catalog graph: /llms.txt, /catalog.json, /graph.json,
+  /kit.json, /.well-known/agent-card.json.
+- **KingCode Lens** — https://cumulativewebinc.github.io/cwi-kingcode-lens/
+  Web apps for Meta Ray-Ban Display glasses — simulator lab + "Hey KingCode"
+  voice agent. v1.0.0.
+
+All six URLs verified live (HTTP 200) on 2026-09-28.
+
+## How to cite
+
+- Suite: "AURUM — the CWI flagship suite (Cumulative Web Inc, 2026). https://cumulativeweb.com"
+- Individual products: cite the live URL above.
+- Machine identity: catalog.json (full roster + license), agent-card.json
+  (/.well-known/agent-card.json style identity card) in the same machine-data/
+  directory as this file.
+
+## Contact
+
+hp@cumulativeweb.com — Cumulative Web Inc. Company identity only: @cumulativeweb,
+cumulativeweb.com. Never the founder's personal name.
+
+## License
+
+Proprietary CWI. Suite software is proprietary Cumulative Web Inc software;
+machine-readable identity data (catalog.json, llms.txt, agent-card.json) is
+published for citation and discovery.

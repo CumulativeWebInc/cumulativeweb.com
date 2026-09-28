@@ -1,0 +1,386 @@
+/* AURUM — the CWI flagship suite · staged landing styles · gold on black */
+:root {
+  --black: #050505;
+  --ink: #000000;
+  --card: #0d0d0e;
+  --gold: #d4af37;
+  --gold-bright: #f3d47c;
+  --gold-champagne: #fff6d8;
+  --gold-deep: #8a6410;
+  --gold-text: #e9c35c;
+  --gold-muted: #c9a437;
+  --gold-faint: #8f6f1d;
+  --body: #e8e2d0;
+  --body-dim: #b9b2a0;
+  --line: #2a2416;
+  --radius: 14px;
+  --font: "Helvetica Neue", Inter, Arial, system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--black);
+  color: var(--body);
+  font-family: var(--font);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- header ---------- */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem clamp(1rem, 4vw, 3rem);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  background: rgba(5, 5, 5, 0.92);
+  backdrop-filter: blur(6px);
+  z-index: 10;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.brand-word {
+  color: var(--gold-champagne);
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  font-size: 1.05rem;
+}
+
+.site-header nav { display: flex; gap: 0.5rem; }
+
+.site-header nav a {
+  color: var(--gold-muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  display: inline-block;
+  padding: 0.75rem 0.5rem;
+  min-height: 44px;
+}
+
+.site-header nav a:hover { color: var(--gold-bright); }
+
+/* ---------- hero ---------- */
+.hero {
+  text-align: center;
+  padding: clamp(2.5rem, 7vw, 5rem) clamp(1rem, 4vw, 3rem) clamp(3rem, 7vw, 5rem);
+  background: radial-gradient(ellipse 70% 55% at 50% 30%, rgba(212, 175, 55, 0.09), transparent 70%);
+}
+
+.hero-coin {
+  width: min(300px, 64vw);
+  height: auto;
+  display: block;
+  margin: 0 auto 2rem;
+  border-radius: 50%;
+  box-shadow: 0 0 90px rgba(212, 175, 55, 0.28), 0 0 24px rgba(212, 175, 55, 0.18);
+}
+
+.hero-lockup {
+  width: min(760px, 100%);
+  height: auto;
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+.eyebrow {
+  color: var(--gold-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.32em;
+  font-size: 0.8rem;
+  margin: 0 0 1rem;
+}
+
+.hero h1 {
+  color: var(--gold-champagne);
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  line-height: 1.12;
+  letter-spacing: 0.02em;
+  margin: 0 0 1.25rem;
+}
+
+.lede {
+  max-width: 44rem;
+  margin: 0 auto 2rem;
+  color: var(--body-dim);
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+}
+
+.cta-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.85rem 1.9rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-gold {
+  background: linear-gradient(180deg, var(--gold-bright), var(--gold) 60%, var(--gold-deep));
+  color: #1a1405;
+}
+
+.btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(212, 175, 55, 0.35); }
+
+.btn-ghost {
+  border: 1px solid var(--gold-faint);
+  color: var(--gold-text);
+}
+
+.btn-ghost:hover { border-color: var(--gold); color: var(--gold-bright); }
+
+/* ---------- products ---------- */
+.products {
+  padding: clamp(2.5rem, 6vw, 4.5rem) clamp(1rem, 4vw, 3rem);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.products h2,
+.standard h2 {
+  color: var(--gold-champagne);
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  margin: 0 0 2rem;
+  letter-spacing: 0.02em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover { border-color: var(--gold-faint); transform: translateY(-3px); }
+
+.card-lead {
+  grid-column: 1 / -1;
+  border: 1px solid var(--gold-deep);
+  background: linear-gradient(180deg, #12100a, var(--card));
+}
+
+.card h3 {
+  color: var(--gold-champagne);
+  margin: 0 0 0.25rem;
+  font-size: 1.35rem;
+  letter-spacing: 0.02em;
+}
+
+.card-kicker { margin: 0 0 0.75rem; }
+
+.lead-badge {
+  display: inline-block;
+  background: linear-gradient(180deg, var(--gold-bright), var(--gold));
+  color: #1a1405;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+}
+
+.card-tag {
+  color: var(--gold-text);
+  font-style: italic;
+  margin: 0 0 0.75rem;
+}
+
+.card p { color: var(--body-dim); margin: 0 0 1rem; }
+
+.card-link {
+  margin-top: auto;
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding-top: 0.5rem;
+}
+
+.card-link:hover { color: var(--gold-bright); text-decoration: underline; }
+
+/* ---------- tiers ---------- */
+.tiers {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: clamp(2.5rem, 6vw, 4.5rem) clamp(1rem, 4vw, 3rem);
+  border-top: 1px solid var(--line);
+}
+
+.tiers h2,
+.pricing h2 {
+  color: var(--gold-champagne);
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  margin: 0 0 1rem;
+  letter-spacing: 0.02em;
+}
+
+.tiers-lede {
+  color: var(--body-dim);
+  margin: 0 0 2rem;
+  font-size: clamp(1rem, 2.2vw, 1.15rem);
+}
+
+.tier-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.tier-list li {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+}
+
+.tier-list li:first-child { border-color: var(--gold-deep); }
+
+.tier-list strong {
+  display: block;
+  color: var(--gold-champagne);
+  font-size: 1.05rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.35rem;
+}
+
+.tier-star { color: var(--gold); }
+
+.tier-list span { color: var(--body-dim); font-size: 0.95rem; }
+
+/* ---------- pricing ---------- */
+.pricing {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: clamp(2.5rem, 6vw, 4.5rem) clamp(1rem, 4vw, 3rem);
+  border-top: 1px solid var(--line);
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0 1.5rem;
+}
+
+.price-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+}
+
+.price-card:first-child { border-color: var(--gold-deep); }
+
+.price-card h3 {
+  color: var(--gold-champagne);
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+  letter-spacing: 0.02em;
+}
+
+.price-card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--body-dim);
+}
+
+.price-card li { margin-bottom: 0.75rem; }
+
+.price-card li strong { color: var(--gold-text); }
+
+.price-card a { color: var(--gold); font-weight: 600; }
+
+.price-note {
+  color: var(--gold-faint);
+  font-size: 0.85rem;
+  max-width: 56rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ---------- standard ---------- */
+.standard {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: clamp(2.5rem, 6vw, 4.5rem) clamp(1rem, 4vw, 3rem);
+  text-align: center;
+  border-top: 1px solid var(--line);
+}
+
+.standard p { color: var(--body-dim); font-size: clamp(1rem, 2.2vw, 1.15rem); }
+
+.machine-line { margin-top: 1.5rem; font-size: 0.95rem; }
+
+.machine-line a { color: var(--gold); font-weight: 600; text-decoration: none; }
+
+.machine-line a:hover { text-decoration: underline; }
+
+/* ---------- footer ---------- */
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 2rem clamp(1rem, 4vw, 3rem);
+  text-align: center;
+  color: var(--body-dim);
+}
+
+.site-footer p { margin: 0.5rem 0; }
+
+.site-footer strong {
+  color: var(--gold-champagne);
+  letter-spacing: 0.3em;
+}
+
+.handle { color: var(--gold-muted); }
+
+.fine { font-size: 0.8rem; color: var(--gold-faint); }
+
+/* ---------- responsive ---------- */
+@media (max-width: 640px) {
+  .site-header { flex-wrap: wrap; row-gap: 0.25rem; }
+  .site-header nav {
+    gap: 0.25rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 100%;
+  }
+  .site-header nav a { font-size: 0.85rem; padding: 0.75rem 0.6rem; }
+  .brand-word { font-size: 0.9rem; }
+  .card { padding: 1.35rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn, .card { transition: none; }
+}
