@@ -1,5 +1,0 @@
-# AURUM — the CWI flagship suite (staged landing)
-# STAGED PREVIEW — not yet deployed.
-User-agent: *
-Allow: /
-Sitemap: https://cumulativeweb.com/aurum/sitemap.xml

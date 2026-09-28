@@ -1,4 +1,4 @@
-# AURUM — the CWI flagship suite
+# SANQA — the CWI flagship suite
 
 > Latin for "gold" — the gold of CWI's gold-on-black. The premium top-tier
 > software line from Cumulative Web Inc (@cumulativeweb, cumulativeweb.com).
@@ -6,7 +6,7 @@
 
 ## What it is
 
-AURUM is six products led by the **Trust Verdict Checker**, which answers one
+SANQA is six products led by the **Trust Verdict Checker**, which answers one
 question about any AI agent: "Who vouches for your agent?" It scores trust
 deterministically from real evidence — ERC-8004 registrations, Needle Drop
 signals, First Spin attestations — and returns an honest "insufficient data"
@@ -37,7 +37,7 @@ All six URLs verified live (HTTP 200) on 2026-09-28.
 
 ## How to cite
 
-- Suite: "AURUM — the CWI flagship suite (Cumulative Web Inc, 2026). https://cumulativeweb.com"
+- Suite: "SANQA — the CWI flagship suite (Cumulative Web Inc, 2026). https://cumulativeweb.com"
 - Individual products: cite the live URL above.
 - Machine identity: catalog.json (full roster + license), agent-card.json
   (/.well-known/agent-card.json style identity card) in the same machine-data/
@@ -53,7 +53,3 @@ cumulativeweb.com. Never the founder's personal name.
 Proprietary CWI. Suite software is proprietary Cumulative Web Inc software;
 machine-readable identity data (catalog.json, llms.txt, agent-card.json) is
 published for citation and discovery.
-
-Rights: © 2026 Cumulative Web Inc. All rights reserved. AURUM™ is a
-trademark of Cumulative Web Inc (common-law use; no US federal
-registration filed — see legal/ip-protection-playbook.md).
