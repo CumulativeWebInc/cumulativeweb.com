@@ -222,7 +222,7 @@ footer{border-top:1px solid var(--line);padding:40px 0 56px;color:var(--muted);f
         <form id="invite-form" novalidate>
           <div class="field">
             <label for="f-name">Your name</label>
-            <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="Jane Appleseed">
+            <input id="f-name" name="name" type="text" autocomplete="name" required minlength="2" placeholder="Jane Appleseed">
           </div>
           <div class="field">
             <label for="f-email">Email</label>
@@ -230,18 +230,23 @@ footer{border-top:1px solid var(--line);padding:40px 0 56px;color:var(--muted);f
           </div>
           <div class="field">
             <label for="f-story">What story needs telling right?</label>
-            <textarea id="f-story" name="story" required placeholder="A few lines about you, your work, and why the press should get this one right."></textarea>
+            <textarea id="f-story" name="story" required minlength="10" placeholder="A few lines about you, your work, and why the press should get this one right."></textarea>
           </div>
-          <p class="honest">Your request is saved on <strong>this device only</strong> — nothing is transmitted anywhere, no email is sent, no account is created. Byline is invite-only and the request queue is still staging; when live requests open, we'll say so here.</p>
-          <button class="submit" type="submit">Record my invite request</button>
+          <div class="field" aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden">
+            <label for="f-website">Website</label>
+            <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+          <p class="honest">Submitting sends your request to <strong>Cumulative Web Inc</strong> for review — no account is created, nothing else is subscribed. Your data is kept for the invite queue only. To access, correct, or delete it, write to <strong>hp@cumulativeweb.com</strong> with the subject "BYLINE".</p>
+          <button class="submit" type="submit" id="f-submit">Send invite request</button>
+          <p id="form-error" role="alert" style="display:none;color:#e08080"></p>
         </form>
         <div id="confirm" role="status" aria-live="polite">
-          <h3>Request recorded.</h3>
-          <p>Your invite request is saved on this device. Nothing was sent anywhere.<br>
+          <h3>Request sent.</h3>
+          <p>Your invite request is on its way to the CWI team for review.<br>
           Reference: <code id="confirm-ref"></code></p>
         </div>
         <div id="myreqs">
-          <h3 style="font-size:16px;margin:0">Your saved requests <span style="color:var(--muted);font-weight:400">(this device)</span></h3>
+          <h3 style="font-size:16px;margin:0">Your sent requests <span style="color:var(--muted);font-weight:400">(this device)</span></h3>
           <ul id="myreqs-list"></ul>
         </div>
       </div>
@@ -310,40 +315,76 @@ footer{border-top:1px solid var(--line);padding:40px 0 56px;color:var(--muted);f
     return "BYL-" + t.slice(-4) + "-" + ("000" + r).slice(-3);
   }
 
-  function onSubmit(ev){
+  var ENDPOINT = "https://cwi-brasil-form-production.up.railway.app/api/contato";
+
+  function showError(msg){
+    var e = document.getElementById("form-error");
+    if (e) { e.textContent = msg; e.style.display = "block"; }
+  }
+
+  function hideError(){
+    var e = document.getElementById("form-error");
+    if (e) e.style.display = "none";
+  }
+
+  async function onSubmit(ev){
     ev.preventDefault();
+    hideError();
     var nameEl = document.getElementById("f-name");
     var emailEl = document.getElementById("f-email");
     var storyEl = document.getElementById("f-story");
+    var hpEl = document.getElementById("f-website");
     var name = (nameEl.value || "").trim();
     var email = (emailEl.value || "").trim();
     var story = (storyEl.value || "").trim();
-    var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    if (!name || !emailOk || !story) {
-      var bad = !name ? nameEl : (!emailOk ? emailEl : storyEl);
+    var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email);
+    if (name.length < 2 || !emailOk || story.length < 10) {
+      var bad = name.length < 2 ? nameEl : (!emailOk ? emailEl : storyEl);
       bad.focus();
       bad.setAttribute("aria-invalid", "true");
+      showError("Please complete your name (2+ characters), a valid email, and a few lines about your story (10+ characters).");
       return false;
     }
-    var list = loadRequests();
-    var rec = {
-      ref: makeRef(),
-      name: name,
-      email: email,
-      story: story,
-      createdAt: new Date().toISOString(),
-      sent: false
-    };
-    list.push(rec);
-    saveRequests(list);
-    var refEl = document.getElementById("confirm-ref");
-    if (refEl) refEl.textContent = rec.ref;
-    var c = document.getElementById("confirm");
-    if (c) c.style.display = "block";
-    nameEl.value = ""; emailEl.value = ""; storyEl.value = "";
-    nameEl.removeAttribute("aria-invalid"); emailEl.removeAttribute("aria-invalid"); storyEl.removeAttribute("aria-invalid");
-    renderMine();
-    if (c) c.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    var btn = document.getElementById("f-submit");
+    if (btn) { btn.disabled = true; btn.textContent = "Sending\u2026"; }
+    var fd = new FormData();
+    fd.append("nome", name);
+    fd.append("email", email);
+    fd.append("tipo", "byline");
+    fd.append("mensagem", story);
+    fd.append("consentimento", "sim");
+    fd.append("website", hpEl ? hpEl.value : "");
+    try {
+      var res = await fetch(ENDPOINT, { method: "POST", body: fd });
+      var body = null;
+      try { body = await res.json(); } catch (e) { body = null; }
+      if (!res.ok || !body || !body.ok) {
+        throw new Error((body && body.erro) || ("http_" + res.status));
+      }
+      var list = loadRequests();
+      var rec = {
+        ref: String(body.id || makeRef()).slice(0, 8).toUpperCase(),
+        serverId: body.id || null,
+        name: name,
+        email: email,
+        story: story,
+        createdAt: new Date().toISOString(),
+        sent: true
+      };
+      list.push(rec);
+      saveRequests(list);
+      var refEl = document.getElementById("confirm-ref");
+      if (refEl) refEl.textContent = rec.ref;
+      var c = document.getElementById("confirm");
+      if (c) { c.style.display = "block"; c.scrollIntoView({ behavior: "smooth", block: "nearest" }); }
+      nameEl.value = ""; emailEl.value = ""; storyEl.value = "";
+      nameEl.removeAttribute("aria-invalid"); emailEl.removeAttribute("aria-invalid"); storyEl.removeAttribute("aria-invalid");
+      renderMine();
+    } catch (err) {
+      showError("Couldn't send your request just now (" + String((err && err.message) || err) + "). Nothing was lost \u2014 your words are still in the form. Please try again.");
+    } finally {
+      if (btn) { btn.disabled = false; btn.textContent = "Send invite request"; }
+    }
     return false;
   }
 
