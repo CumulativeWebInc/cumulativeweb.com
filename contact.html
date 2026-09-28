@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact · Cumulative Web Inc</title>
+<meta name="description" content="One form, four paths — the message reaches the CWI team.">
+<link rel="icon" href="assets/cwi-logo.jpg">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="bar">
+    <a class="brand" href="index.html"><img src="assets/cwi-logo.jpg" alt="Cumulative Web Inc logo"><span>CUMULATIVE WEB INC</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="music.html">Music</a>
+      <a href="films.html">Films</a>
+      <a href="models.html">Models</a>
+      <a href="software.html">Software</a>
+      <a href="events.html">Events</a>
+      <a href="live.html">Live</a>
+      <a href="signup.html">Signup</a>
+      <a href="contact.html" class="active" aria-current="page">Contact</a>
+      <a href="games.html">Games</a>
+    </nav>
+    <div class="lang-switch" role="navigation" aria-label="Language">
+      <a href="https://cumulativeweb.com/br/" hreflang="pt-BR">BR</a><span class="sep" aria-hidden="true">|</span><a href="contact.html" hreflang="en" aria-current="true">EN</a>
+    </div>
+    <button class="menu-btn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg></button>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+    <a href="index.html">Home</a>
+    <a href="music.html">Music</a>
+    <a href="films.html">Films</a>
+    <a href="models.html">Models</a>
+    <a href="software.html">Software</a>
+    <a href="events.html">Events</a>
+    <a href="live.html">Live</a>
+    <a href="signup.html">Signup</a>
+    <a href="contact.html" class="active" aria-current="page">Contact</a>
+    <a href="games.html">Games</a>
+  </nav>
+</header>
+<main class="page">
+<section class="hero">
+  <div class="eyebrow">Cumulative Web Inc</div>
+  <h1>Contact</h1>
+  <p class="lede">One form, four paths. Pick the subject — the message reaches the team and you get a confirmation by email.</p>
+</section>
+<section>
+  <div class="type-tabs" role="tablist" aria-label="Subject">
+    <button type="button" role="tab" data-tipo="evento" aria-selected="false">Event booking / announcement</button>
+    <button type="button" role="tab" data-tipo="promo" aria-selected="false">Promo project</button>
+    <button type="button" role="tab" data-tipo="modelos" aria-selected="false">Model call / Casting</button>
+    <button type="button" role="tab" data-tipo="geral" aria-selected="true">General contact</button>
+  </div>
+  <form id="contactForm" class="form-grid" novalidate>
+    <div class="field" data-field="tipo">
+      <label for="tipo">Subject <span class="req" aria-hidden="true">*</span></label>
+      <select id="tipo" name="tipo" required>
+        <option value="evento">Event booking / announcement</option>
+        <option value="promo">Promo project</option>
+        <option value="modelos">Model call / Casting</option>
+        <option value="geral" selected>General contact</option>
+      </select>
+    </div>
+    <div class="field" data-field="nome">
+      <label for="nome">Name <span class="req" aria-hidden="true">*</span></label>
+      <input type="text" id="nome" name="nome" autocomplete="name" maxlength="100" required>
+      <p class="err">Tell us your name (at least 2 characters).</p>
+    </div>
+    <div class="field" data-field="email">
+      <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+      <input type="email" id="email" name="email" autocomplete="email" maxlength="254" required>
+      <p class="err">Enter a valid email.</p>
+    </div>
+    <div class="field" data-field="telefone">
+      <label for="telefone">Phone <span class="hint">(optional)</span></label>
+      <input type="tel" id="telefone" name="telefone" autocomplete="tel" maxlength="30" placeholder="+1 (555) 000-0000">
+      <p class="err">That phone number doesn't look valid.</p>
+    </div>
+    <div class="field" data-field="mensagem">
+      <label for="mensagem">Message <span class="req" aria-hidden="true">*</span></label>
+      <textarea id="mensagem" name="mensagem" maxlength="5000" required placeholder="Details: dates, city, links, what you need…"></textarea>
+      <p class="err">Give us a little more (at least 10 characters).</p>
+    </div>
+    <div class="field" data-field="arquivo">
+      <label for="arquivo">Attachment <span class="hint">(optional — jpg, png, webp, pdf or zip, up to 10 MB)</span></label>
+      <input type="file" id="arquivo" name="arquivo" accept=".jpg,.jpeg,.png,.webp,.pdf,.zip">
+      <p class="err">File must be jpg, png, webp, pdf or zip and under 10 MB.</p>
+    </div>
+    <div class="field" data-field="consentimento">
+      <label class="check">
+        <input type="checkbox" id="consentimento" name="consentimento" value="sim" required>
+        <span><span class="req" aria-hidden="true">*</span> I agree to my data being handled so CWI can respond to this contact. I can request deletion at any time via hp@cumulativeweb.com.</span>
+      </label>
+      <p class="err">We need your consent to handle this message.</p>
+    </div>
+    <div class="hp-field" aria-hidden="true"><label>Do not fill this in<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div><button class="btn btn--primary" type="submit" id="sendBtn">Send message</button></div>
+    <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+  </form>
+</section>
+<section>
+  <div class="notice">Prefer direct email? <a href="mailto:hp@cumulativeweb.com" style="color:#fff">hp@cumulativeweb.com</a></div>
+</section>
+<script src="js/contact.js" defer></script>
+</main>
+<footer class="footer">
+  <div class="inner">
+    <div class="cols">
+      <div><div class="fbrand"><img src="assets/cwi-logo.jpg" alt="Cumulative Web Inc logo">CUMULATIVE WEB INC</div>
+      <p style="font-size:var(--text-small)">Independent label — Music &amp; Film · Clothing · Software &amp; AI Agents.</p></div>
+      <div><h4>Sections</h4><ul>
+        <li><a href="music.html">Music</a></li><li><a href="films.html">Films</a></li>
+        <li><a href="models.html">Models</a></li><li><a href="software.html">Software</a></li>
+        <li><a href="games.html">Games</a></li>
+      </ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><a href="contact.html">Contact form</a></li>
+        <li><a href="mailto:hp@cumulativeweb.com">hp@cumulativeweb.com</a></li>
+      </ul></div>
+      <div><h4>Social</h4><ul>
+        <li><a href="https://www.instagram.com/cumulativeweb" rel="noopener">Instagram</a></li>
+        <li><a href="https://x.com/cumulativeweb" rel="noopener">X · @cumulativeweb</a></li>
+        <li><a href="https://www.youtube.com/@cumulativeweb" rel="noopener">YouTube</a></li>
+        <li><a href="https://www.tiktok.com/@cumulativeweb" rel="noopener">TikTok</a></li>
+      </ul></div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Cumulative Web Inc. All rights reserved.</span>
+      <div class="lang-switch" role="navigation" aria-label="Language">
+        <a href="https://cumulativeweb.com/br/" hreflang="pt-BR">Português (BR)</a><span class="sep" aria-hidden="true">|</span><a href="index.html" hreflang="en">English</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/nav.js" defer></script>
+</body>
+</html>

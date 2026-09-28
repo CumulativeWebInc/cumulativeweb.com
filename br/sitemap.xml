@@ -68,4 +68,9 @@
     <loc>https://cumulativeweb.com/br/privacidade.html</loc>
     <changefreq>yearly</changefreq><priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://cumulativeweb.com/br/jogos.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

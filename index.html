@@ -13,6 +13,7 @@
 <meta name="theme-color" content="#121212">
 <link rel="icon" href="assets/cwi-logo.jpg">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="site.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -141,6 +142,39 @@
 </script>
 </head>
 <body>
+<header class="navbar">
+  <div class="bar">
+    <a class="brand" href="index.html"><img src="assets/cwi-logo.jpg" alt="Cumulative Web Inc logo"><span>CUMULATIVE WEB INC</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html" class="active" aria-current="page">Home</a>
+      <a href="music.html">Music</a>
+      <a href="films.html">Films</a>
+      <a href="models.html">Models</a>
+      <a href="software.html">Software</a>
+      <a href="events.html">Events</a>
+      <a href="live.html">Live</a>
+      <a href="signup.html">Signup</a>
+      <a href="contact.html">Contact</a>
+      <a href="games.html">Games</a>
+    </nav>
+    <div class="lang-switch" role="navigation" aria-label="Language">
+      <a href="https://cumulativeweb.com/br/" hreflang="pt-BR">BR</a><span class="sep" aria-hidden="true">|</span><a href="index.html" hreflang="en" aria-current="true">EN</a>
+    </div>
+    <button class="menu-btn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg></button>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+    <a href="index.html" class="active" aria-current="page">Home</a>
+    <a href="music.html">Music</a>
+    <a href="films.html">Films</a>
+    <a href="models.html">Models</a>
+    <a href="software.html">Software</a>
+    <a href="events.html">Events</a>
+    <a href="live.html">Live</a>
+    <a href="signup.html">Signup</a>
+    <a href="contact.html">Contact</a>
+    <a href="games.html">Games</a>
+  </nav>
+</header>
 <div class="app">
   <aside class="sidebar" id="sidebar" aria-label="Primary">
     <a class="brand" href="#/">
@@ -159,5 +193,6 @@
 </div>
 <noscript><p style="padding:32px">Cumulative Web Inc — Music · Clothing · Software. Enable JavaScript to browse the roster, or email <a href="mailto:hp@cumulativeweb.com">hp@cumulativeweb.com</a>.</p></noscript>
 <script src="app.js"></script>
+<script src="js/nav.js" defer></script>
 </body>
 </html>

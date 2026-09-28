@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Signup · Cumulative Web Inc</title>
+<meta name="description" content="Independent artist signup — bring your project to the movement.">
+<link rel="icon" href="assets/cwi-logo.jpg">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="bar">
+    <a class="brand" href="index.html"><img src="assets/cwi-logo.jpg" alt="Cumulative Web Inc logo"><span>CUMULATIVE WEB INC</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="music.html">Music</a>
+      <a href="films.html">Films</a>
+      <a href="models.html">Models</a>
+      <a href="software.html">Software</a>
+      <a href="events.html">Events</a>
+      <a href="live.html">Live</a>
+      <a href="signup.html" class="active" aria-current="page">Signup</a>
+      <a href="contact.html">Contact</a>
+      <a href="games.html">Games</a>
+    </nav>
+    <div class="lang-switch" role="navigation" aria-label="Language">
+      <a href="https://cumulativeweb.com/br/" hreflang="pt-BR">BR</a><span class="sep" aria-hidden="true">|</span><a href="signup.html" hreflang="en" aria-current="true">EN</a>
+    </div>
+    <button class="menu-btn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg></button>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+    <a href="index.html">Home</a>
+    <a href="music.html">Music</a>
+    <a href="films.html">Films</a>
+    <a href="models.html">Models</a>
+    <a href="software.html">Software</a>
+    <a href="events.html">Events</a>
+    <a href="live.html">Live</a>
+    <a href="signup.html" class="active" aria-current="page">Signup</a>
+    <a href="contact.html">Contact</a>
+    <a href="games.html">Games</a>
+  </nav>
+</header>
+<main class="page">
+<section class="hero">
+  <div class="eyebrow">Cumulative Web Inc</div>
+  <h1>Independent artist signup</h1>
+  <p class="lede">Bring your project to the movement. Cumulative Web Inc is an independent artist-services company: A&amp;R, marketing, sync &amp; licensing, radio &amp; playlists, press, content studio, data and business affairs — a team of AI agents led by KingCode. We believe one simple thing: independent artists, building together, accumulate power. Register your project below and our A&amp;R team will actually listen.</p>
+</section>
+<section>
+  <div class="sec-head"><h2>What signup opens for you</h2></div>
+  <div class="grid">
+    <div class="card"><div class="art"><span class="monogram">♪</span></div><h3>A real listen</h3><p class="sub">Every signup passes through our A&amp;R team's ears. Real people (and machines) listening to your work.</p></div>
+    <div class="card"><div class="art"><span class="monogram">▤</span></div><h3>Playlist consideration</h3><p class="sub">Our catalog artists have landed verified playlists. Registered projects join the pitching consideration queue when the music fits.</p></div>
+    <div class="card"><div class="art"><span class="monogram">◉</span></div><h3>Promo &amp; sync</h3><p class="sub">When your project fits an opening — a promo campaign, a sync opportunity for film or game — you're on our radar.</p></div>
+    <div class="card"><div class="art"><span class="monogram">⌁</span></div><h3>CWI tools</h3><p class="sub">Access to the software CWI builds for creators: catalog, data and our independent-artist operation tooling.</p></div>
+  </div>
+</section>
+<section>
+  <div class="panel">
+    <h2>Honesty first</h2>
+    <p style="margin:0">Signing up is not signing a contract, doesn't guarantee an advance, and doesn't guarantee playlist placement. What we guarantee: honest attention to your work and a reply.</p>
+  </div>
+</section>
+<section>
+  <div class="sec-head"><h2>Register your project</h2></div>
+  <form id="signupForm" class="form-grid" novalidate>
+    <input type="hidden" name="tipo" value="artista">
+    <div class="field" data-field="nome">
+      <label for="nome">Stage name <span class="req" aria-hidden="true">*</span></label>
+      <input type="text" id="nome" name="nome" autocomplete="off" maxlength="100" required placeholder="What the audience knows you as">
+      <p class="err">Tell us your stage name (at least 2 characters).</p>
+    </div>
+    <div class="field" data-field="nome_real">
+      <label for="nome_real">Real name <span class="hint">(optional — just so we know who you are)</span></label>
+      <input type="text" id="nome_real" autocomplete="name" maxlength="100">
+    </div>
+    <div class="field" data-field="cidade">
+      <label for="cidade">City <span class="req" aria-hidden="true">*</span></label>
+      <input type="text" id="cidade" autocomplete="address-level2" maxlength="100" required placeholder="e.g. Miami/FL">
+      <p class="err">Tell us your city.</p>
+    </div>
+    <div class="field" data-field="telefone">
+      <label for="telefone">Phone <span class="hint">(optional)</span></label>
+      <input type="tel" id="telefone" name="telefone" autocomplete="tel" maxlength="30" placeholder="+1 (555) 000-0000">
+      <p class="err">That phone number doesn't look valid.</p>
+    </div>
+    <div class="field" data-field="email">
+      <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+      <input type="email" id="email" name="email" autocomplete="email" maxlength="254" required>
+      <p class="err">Enter a valid email.</p>
+    </div>
+    <div class="field" data-field="genero">
+      <label for="genero">Main genre <span class="req" aria-hidden="true">*</span></label>
+      <select id="genero" required>
+        <option value="" selected>Choose the main genre…</option>
+        <option>Hip-hop / Rap</option><option>Trap</option><option>R&amp;B</option>
+        <option>Rock</option><option>Pop</option><option>Electronic</option>
+        <option>Funk</option><option>Gospel</option><option>Other</option>
+      </select>
+      <p class="err">Pick a genre.</p>
+    </div>
+    <div class="field" data-field="spotify">
+      <label for="spotify">Spotify <span class="hint">(optional)</span></label>
+      <input type="url" id="spotify" inputmode="url" maxlength="300" placeholder="https://open.spotify.com/artist/…">
+      <p class="err">That doesn't look like a URL.</p>
+    </div>
+    <div class="field" data-field="youtube">
+      <label for="youtube">YouTube <span class="hint">(optional)</span></label>
+      <input type="url" id="youtube" inputmode="url" maxlength="300" placeholder="https://youtube.com/@…">
+      <p class="err">That doesn't look like a URL.</p>
+    </div>
+    <div class="field" data-field="instagram">
+      <label for="instagram">Instagram <span class="hint">(optional)</span></label>
+      <input type="url" id="instagram" inputmode="url" maxlength="300" placeholder="https://instagram.com/…">
+      <p class="err">That doesn't look like a URL.</p>
+    </div>
+    <div class="field" data-field="sobre">
+      <label for="sobre">About the project <span class="req" aria-hidden="true">*</span></label>
+      <textarea id="sobre" maxlength="5000" required placeholder="Your story: how long you've been making music, releases, numbers you're proud of, plans for the next months…"></textarea>
+      <p class="err">Give us a little more (at least 10 characters).</p>
+    </div>
+    <div class="field" data-field="origem">
+      <label for="origem">How did you find CWI? <span class="hint">(optional)</span></label>
+      <input type="text" id="origem" maxlength="200" placeholder="Instagram, a friend, a playlist, a show…">
+    </div>
+    <div class="field" data-field="consentimento">
+      <label class="check">
+        <input type="checkbox" id="consentimento" name="consentimento" value="sim" required>
+        <span><span class="req" aria-hidden="true">*</span> I agree to my data being handled so CWI can respond to this signup. I can request deletion at any time via hp@cumulativeweb.com.</span>
+      </label>
+      <p class="err">We need your consent to handle this signup.</p>
+    </div>
+    <div class="hp-field" aria-hidden="true"><label>Do not fill this in<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div><button class="btn btn--primary" type="submit" id="sendBtn">Submit signup</button></div>
+    <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+  </form>
+</section>
+<script src="js/signup.js" defer></script>
+</main>
+<footer class="footer">
+  <div class="inner">
+    <div class="cols">
+      <div><div class="fbrand"><img src="assets/cwi-logo.jpg" alt="Cumulative Web Inc logo">CUMULATIVE WEB INC</div>
+      <p style="font-size:var(--text-small)">Independent label — Music &amp; Film · Clothing · Software &amp; AI Agents.</p></div>
+      <div><h4>Sections</h4><ul>
+        <li><a href="music.html">Music</a></li><li><a href="films.html">Films</a></li>
+        <li><a href="models.html">Models</a></li><li><a href="software.html">Software</a></li>
+        <li><a href="games.html">Games</a></li>
+      </ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><a href="contact.html">Contact form</a></li>
+        <li><a href="mailto:hp@cumulativeweb.com">hp@cumulativeweb.com</a></li>
+      </ul></div>
+      <div><h4>Social</h4><ul>
+        <li><a href="https://www.instagram.com/cumulativeweb" rel="noopener">Instagram</a></li>
+        <li><a href="https://x.com/cumulativeweb" rel="noopener">X · @cumulativeweb</a></li>
+        <li><a href="https://www.youtube.com/@cumulativeweb" rel="noopener">YouTube</a></li>
+        <li><a href="https://www.tiktok.com/@cumulativeweb" rel="noopener">TikTok</a></li>
+      </ul></div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Cumulative Web Inc. All rights reserved.</span>
+      <div class="lang-switch" role="navigation" aria-label="Language">
+        <a href="https://cumulativeweb.com/br/" hreflang="pt-BR">Português (BR)</a><span class="sep" aria-hidden="true">|</span><a href="index.html" hreflang="en">English</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/nav.js" defer></script>
+</body>
+</html>

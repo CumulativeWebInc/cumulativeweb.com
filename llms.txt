@@ -29,3 +29,18 @@
 
 - Catalog graph: https://cumulativewebinc.github.io/cwi-learn/catalog.json
 - AI learning kit: https://cumulativewebinc.github.io/cwi-learn/llms.txt
+
+## Site pages
+
+- [Home](https://cumulativeweb.com/) — SPA: roster, music, clothing, skateboards, software
+- [Music](https://cumulativeweb.com/music.html) — catalog artists and producers
+- [Films](https://cumulativeweb.com/films.html) — music videos, visualizers, film projects
+- [Models](https://cumulativeweb.com/models.html) — open casting
+- [Software](https://cumulativeweb.com/software.html) — CWI product line
+- [Events](https://cumulativeweb.com/events.html) — calendar
+- [Live](https://cumulativeweb.com/live.html) — streams
+- [Signup](https://cumulativeweb.com/signup.html) — independent artist signup
+- [Contact](https://cumulativeweb.com/contact.html) — contact form
+- [Games](https://cumulativeweb.com/games.html) — CWI arcade games
+- [Byline press](https://cumulativeweb.com/press) — invite-only press interview service
+- [Brasil (pt-BR)](https://cumulativeweb.com/br/) — Brazilian site, incl. [Jogos](https://cumulativeweb.com/br/jogos.html)
