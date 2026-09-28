@@ -53,3 +53,7 @@ cumulativeweb.com. Never the founder's personal name.
 Proprietary CWI. Suite software is proprietary Cumulative Web Inc software;
 machine-readable identity data (catalog.json, llms.txt, agent-card.json) is
 published for citation and discovery.
+
+Rights: © 2026 Cumulative Web Inc. All rights reserved. AURUM™ is a
+trademark of Cumulative Web Inc (common-law use; no US federal
+registration filed — see legal/ip-protection-playbook.md).
