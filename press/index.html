@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Byline — Your story, in your words, on the record · Cumulative Web Inc</title>
+<meta name="description" content="Byline is Cumulative Web Inc's invite-only press interview service. Voice or text interviews become publication-ready articles and press releases — every quote traceable to your exact words, nothing published without your sign-off on the exact copy.">
+<link rel="canonical" href="https://cumulativeweb.com/press">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Byline — Your story, in your words, on the record">
+<meta property="og:description" content="Invite-only press interviews, articles, and press releases from Cumulative Web Inc. Nothing publishes without your sign-off on the exact copy.">
+<meta property="og:url" content="https://cumulativeweb.com/press">
+<meta property="og:image" content="https://cumulativeweb.com/press/assets/byline-monogram.webp">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" href="assets/byline-monogram.webp">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Byline",
+  "slogan": "Your story, in your words, on the record.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Cumulative Web Inc",
+    "url": "https://cumulativeweb.com/",
+    "email": "hp@cumulativeweb.com"
+  },
+  "url": "https://cumulativeweb.com/press",
+  "description": "Invite-only press interview service. Voice or text interviews become publication-ready articles and press releases, with every quote traceable to the subject's exact words and nothing published without exact-copy approval.",
+  "serviceType": ["Press interviews", "Articles", "Press releases"]
+}
+</script>
+<style>
+:root{
+  --bg:#0a0a0a; --panel:#111214; --gold:#d9b36c; --gold-soft:#b9975a;
+  --ink:#f2ede3; --muted:#a8a29a; --line:#2a2419;
+  --maxw:1080px; --radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--gold);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--gold);color:#000;padding:8px 14px;z-index:99}
+.skip:focus{left:8px;top:8px}
+
+/* header */
+header.top{border-bottom:1px solid var(--line);background:rgba(10,10,10,.92);
+  position:sticky;top:0;z-index:50;backdrop-filter:blur(8px)}
+.top-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brandline{display:flex;align-items:center;gap:12px}
+.brandline img{width:38px;height:38px;border-radius:50%;object-fit:cover;border:1px solid var(--gold-soft)}
+.brandline .who{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.brandline .who b{display:block;color:var(--gold);letter-spacing:.22em;font-size:15px}
+nav.cta a{display:inline-block;border:1px solid var(--gold);color:var(--gold);
+  padding:9px 20px;border-radius:999px;font-size:14px;letter-spacing:.06em}
+nav.cta a:hover{background:var(--gold);color:#0a0a0a;text-decoration:none}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;
+  padding:64px 0 40px}
+.hero-logo{width:100%;max-width:430px;margin:0 auto;display:block;border-radius:var(--radius);
+  border:1px solid var(--line);box-shadow:0 24px 70px rgba(217,179,108,.10)}
+.eyebrow{display:inline-block;font-size:12px;letter-spacing:.28em;text-transform:uppercase;
+  color:#0a0a0a;background:var(--gold);border-radius:999px;padding:6px 16px;font-weight:700;margin-bottom:18px}
+h1{font-size:clamp(34px,5vw,58px);line-height:1.08;margin:0 0 16px;letter-spacing:-.01em}
+h1 .gold{color:var(--gold)}
+.lede{font-size:18px;color:var(--muted);max-width:34em;margin:0 0 26px}
+.btn-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;background:var(--gold);color:#0a0a0a;font-weight:700;
+  padding:14px 28px;border-radius:999px;border:1px solid var(--gold);font-size:16px}
+.btn:hover{background:transparent;color:var(--gold);text-decoration:none}
+.btn.ghost{background:transparent;color:var(--gold)}
+.btn.ghost:hover{background:var(--gold);color:#0a0a0a}
+
+/* sections */
+section.block{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(26px,3.4vw,38px);margin:0 0 10px}
+h2 .gold{color:var(--gold)}
+.sub{color:var(--muted);max-width:46em;margin:0 0 30px}
+
+/* cards */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.card .kicker{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.card h3{margin:0 0 10px;font-size:19px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.card .n{font-size:34px;color:var(--gold);font-weight:800;display:block;margin-bottom:8px}
+
+/* integrity list */
+.rules{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:12px}
+.rules li{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--gold);
+  border-radius:10px;padding:16px 20px;font-size:15px}
+.rules li b{color:var(--gold)}
+
+/* form */
+.form-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:34px;max-width:640px;margin:0 auto}
+.field{margin-bottom:18px}
+label{display:block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+input,textarea{width:100%;background:#0d0e10;border:1px solid var(--line);color:var(--ink);
+  border-radius:10px;padding:13px 15px;font-size:16px;font-family:inherit}
+input:focus,textarea:focus{outline:2px solid var(--gold);border-color:var(--gold)}
+textarea{min-height:120px;resize:vertical}
+.honest{font-size:13px;color:var(--muted);border:1px dashed var(--gold-soft);
+  border-radius:10px;padding:12px 16px;margin:6px 0 20px}
+button.submit{width:100%;background:var(--gold);color:#0a0a0a;font-weight:800;font-size:17px;
+  padding:15px;border-radius:999px;border:1px solid var(--gold);cursor:pointer}
+button.submit:hover{background:transparent;color:var(--gold)}
+#confirm{display:none;margin-top:22px;border:1px solid var(--gold);border-radius:10px;
+  padding:20px;background:rgba(217,179,108,.06)}
+#confirm h3{margin:0 0 8px;color:var(--gold)}
+#confirm code{background:#0d0e10;padding:2px 8px;border-radius:6px;color:var(--gold)}
+#myreqs{margin-top:22px;display:none}
+#myreqs ul{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:8px}
+#myreqs li{background:#0d0e10;border:1px solid var(--line);border-radius:8px;
+  padding:10px 14px;font-size:14px;color:var(--muted)}
+#myreqs li b{color:var(--ink)}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:40px 0 56px;color:var(--muted);font-size:14px}
+.foot-grid{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.foot-grid .socials a{margin-right:16px}
+
+/* mobile */
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;gap:28px;padding:44px 0 28px}
+  .hero-logo{max-width:300px}
+  .grid3,.grid4{grid-template-columns:1fr}
+  section.block{padding:40px 0}
+  .form-card{padding:24px}
+  .top-inner{padding:12px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#invite">Skip to invite request</a>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brandline" href="https://cumulativeweb.com/" aria-label="Cumulative Web Inc home">
+      <img src="assets/byline-monogram.webp" alt="Byline monogram with Cumulative Web Inc badge" width="38" height="38">
+      <span class="who"><b>BYLINE</b>A Cumulative Web Inc service</span>
+    </a>
+    <nav class="cta" aria-label="Primary">
+      <a href="#invite">Request an invite</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap hero">
+    <div>
+      <span class="eyebrow">Invite-only · Press interview service</span>
+      <h1>Your story, <span class="gold">in your words,</span> on the record.</h1>
+      <p class="lede">Byline is Cumulative Web Inc's press interview service. Instead of a rushed call with a reporter, you sit down — by voice or by text, on your own time — with an interview shaped around your actual work. Your answers become a publication-ready article or press release, written from a verbatim transcript, with every quote traceable to the exact words you said.</p>
+      <div class="btn-row">
+        <a class="btn" href="#invite">Request an invite</a>
+        <a class="btn ghost" href="#how">How it works</a>
+      </div>
+    </div>
+    <div>
+      <img class="hero-logo" src="assets/byline-monogram.webp" alt="Byline logo — gold voice-waveform B monogram with the services line: Press Interviews · Articles · Press Releases" width="430" height="430">
+    </div>
+  </div>
+
+  <section class="block" id="services" aria-labelledby="services-h">
+    <div class="wrap">
+      <h2 id="services-h">What Byline <span class="gold">does</span></h2>
+      <p class="sub">One interview. Three publication-ready outputs — each one built from your verbatim transcript.</p>
+      <div class="grid3">
+        <div class="card">
+          <div class="kicker">01</div>
+          <h3>Press interviews</h3>
+          <p>A real interview about your work — your projects, your history, what you're building next. Voice or text, at your pace, with questions that adapt to your answers.</p>
+        </div>
+        <div class="card">
+          <div class="kicker">02</div>
+          <h3>Articles</h3>
+          <p>The interview becomes a finished article: your voice, your framing, your facts — written so a publication can run it as-is.</p>
+        </div>
+        <div class="card">
+          <div class="kicker">03</div>
+          <h3>Press releases</h3>
+          <p>Announcements, launches, and milestones turned into clean, quotable press releases — ready to send to outlets, playlists, and partners.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="how" aria-labelledby="how-h">
+    <div class="wrap">
+      <h2 id="how-h">How it <span class="gold">works</span></h2>
+      <p class="sub">Invite-gated, transcript-anchored, and approval-first.</p>
+      <div class="grid4">
+        <div class="card"><span class="n">1</span><h3>Request an invite</h3><p>Byline opens invite-only — artists, founders, and anyone with a story the press should get right.</p></div>
+        <div class="card"><span class="n">2</span><h3>Build your profile</h3><p>Tell us who you are and what you're working on, so the interview is shaped around your actual work.</p></div>
+        <div class="card"><span class="n">3</span><h3>Answer the interview</h3><p>Voice or text, at your pace. Every answer lands in a verbatim transcript.</p></div>
+        <div class="card"><span class="n">4</span><h3>Approve the exact copy</h3><p>You review the final article or press release word for word before it ships anywhere.</p></div>
+      </div>
+      <ul class="rules">
+        <li><b>Verbatim transcripts.</b> Everything you say is recorded word for word — no paraphrase drift.</li>
+        <li><b>Traceable quotes.</b> Every published quotation maps back to the exact transcript span where you said it.</li>
+        <li><b>Your approval is the gate.</b> Nothing publishes — not a sentence — without your sign-off on the exact copy.</li>
+        <li><b>No fabricated quotes.</b> If you didn't say it, it doesn't get a quotation mark. Ever.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="invite" aria-labelledby="invite-h">
+    <div class="wrap">
+      <h2 id="invite-h">Request an <span class="gold">invite</span></h2>
+      <p class="sub">We're opening with a small founding group. Tell us who you are and what story needs telling right.</p>
+      <div class="form-card">
+        <form id="invite-form" novalidate>
+          <div class="field">
+            <label for="f-name">Your name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="Jane Appleseed">
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+          </div>
+          <div class="field">
+            <label for="f-story">What story needs telling right?</label>
+            <textarea id="f-story" name="story" required placeholder="A few lines about you, your work, and why the press should get this one right."></textarea>
+          </div>
+          <p class="honest">Your request is saved on <strong>this device only</strong> — nothing is transmitted anywhere, no email is sent, no account is created. Byline is invite-only and the request queue is still staging; when live requests open, we'll say so here.</p>
+          <button class="submit" type="submit">Record my invite request</button>
+        </form>
+        <div id="confirm" role="status" aria-live="polite">
+          <h3>Request recorded.</h3>
+          <p>Your invite request is saved on this device. Nothing was sent anywhere.<br>
+          Reference: <code id="confirm-ref"></code></p>
+        </div>
+        <div id="myreqs">
+          <h3 style="font-size:16px;margin:0">Your saved requests <span style="color:var(--muted);font-weight:400">(this device)</span></h3>
+          <ul id="myreqs-list"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <strong style="color:var(--gold);letter-spacing:.2em">BYLINE</strong><br>
+      A press interview service by Cumulative Web Inc.<br>
+      © 2026 Cumulative Web Inc. All rights reserved.
+    </div>
+    <div class="socials">
+      <a href="https://www.instagram.com/cumulativeweb">Instagram</a>
+      <a href="https://x.com/cumulativeweb">X</a>
+      <a href="https://www.youtube.com/@cumulativeweb">YouTube</a>
+      <a href="https://www.tiktok.com/@cumulativeweb">TikTok</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var STORE_KEY = "byline_invite_requests";
+
+  function loadRequests(){
+    try {
+      var raw = localStorage.getItem(STORE_KEY);
+      if (!raw) return [];
+      var arr = JSON.parse(raw);
+      return Array.isArray(arr) ? arr : [];
+    } catch (e) { return []; }
+  }
+
+  function saveRequests(list){
+    try {
+      localStorage.setItem(STORE_KEY, JSON.stringify(list));
+      return true;
+    } catch (e) { return false; }
+  }
+
+  function renderMine(){
+    var list = loadRequests();
+    var box = document.getElementById("myreqs");
+    var ul = document.getElementById("myreqs-list");
+    if (!box || !ul) return;
+    if (list.length === 0) { box.style.display = "none"; return; }
+    ul.innerHTML = "";
+    list.slice().reverse().forEach(function(r){
+      var li = document.createElement("li");
+      var b = document.createElement("b");
+      b.textContent = r.name || "Unnamed";
+      li.appendChild(b);
+      li.appendChild(document.createTextNode(" — ref " + (r.ref || "—") + " · " + (r.createdAt || "")));
+      ul.appendChild(li);
+    });
+    box.style.display = "block";
+  }
+
+  function makeRef(){
+    var t = Date.now().toString(36).toUpperCase();
+    var r = Math.floor(Math.random() * 46656).toString(36).toUpperCase();
+    return "BYL-" + t.slice(-4) + "-" + ("000" + r).slice(-3);
+  }
+
+  function onSubmit(ev){
+    ev.preventDefault();
+    var nameEl = document.getElementById("f-name");
+    var emailEl = document.getElementById("f-email");
+    var storyEl = document.getElementById("f-story");
+    var name = (nameEl.value || "").trim();
+    var email = (emailEl.value || "").trim();
+    var story = (storyEl.value || "").trim();
+    var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if (!name || !emailOk || !story) {
+      var bad = !name ? nameEl : (!emailOk ? emailEl : storyEl);
+      bad.focus();
+      bad.setAttribute("aria-invalid", "true");
+      return false;
+    }
+    var list = loadRequests();
+    var rec = {
+      ref: makeRef(),
+      name: name,
+      email: email,
+      story: story,
+      createdAt: new Date().toISOString(),
+      sent: false
+    };
+    list.push(rec);
+    saveRequests(list);
+    var refEl = document.getElementById("confirm-ref");
+    if (refEl) refEl.textContent = rec.ref;
+    var c = document.getElementById("confirm");
+    if (c) c.style.display = "block";
+    nameEl.value = ""; emailEl.value = ""; storyEl.value = "";
+    nameEl.removeAttribute("aria-invalid"); emailEl.removeAttribute("aria-invalid"); storyEl.removeAttribute("aria-invalid");
+    renderMine();
+    if (c) c.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    return false;
+  }
+
+  function init(){
+    var form = document.getElementById("invite-form");
+    if (form) form.addEventListener("submit", onSubmit);
+    renderMine();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
+</script>
+</body>
+</html>
