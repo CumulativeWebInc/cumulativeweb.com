@@ -26,6 +26,10 @@
 - [Sitemap](https://cumulativeweb.com/sitemap.xml)
 
 ## Related machine-readable surfaces
+- SANQA machine-readable data: [catalog](https://cumulativeweb.com/sanqa/catalog.json) · [agent card](https://cumulativeweb.com/sanqa/.well-known/agent-card.json)
+- Trust Verdict Checker (flagship SANQA tool): https://cumulativewebinc.github.io/cwi-trust-verdict-checker/ — evidence-bound agent trust scoring; demo at /demo.html
+- Results feed: https://cumulativewebinc.github.io/cwi-results/results.json — public receipts ledger (machine-readable)
+- Post-Trap Futurism Radio: https://cumulativewebinc.github.io/cwi-apps/radio/ — That Boy Hi Hat rotation app (JSON-LD MusicPlaylist)
 
 - Catalog graph: https://cumulativewebinc.github.io/cwi-learn/catalog.json
 - AI learning kit: https://cumulativewebinc.github.io/cwi-learn/llms.txt
@@ -37,6 +41,8 @@
 - [Films](https://cumulativeweb.com/films.html) — music videos, visualizers, film projects
 - [Models](https://cumulativeweb.com/models.html) — open casting
 - [Software](https://cumulativeweb.com/software.html) — CWI product line
+- [SANQA software suite](https://cumulativeweb.com/sanqa/) — flagship product line (six gold-standard AI-agent tools; renamed from AURUM 2026-09-28)
+- [Press releases](https://cumulativeweb.com/press/releases/) — release announcements, incl. the Signal Sessions pilot (183 Wildboi)
 - [Events](https://cumulativeweb.com/events.html) — calendar
 - [Live](https://cumulativeweb.com/live.html) — streams
 - [Signup](https://cumulativeweb.com/signup.html) — independent artist signup
