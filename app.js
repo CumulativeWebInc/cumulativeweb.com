@@ -152,6 +152,7 @@
       '<b>CUMULATIVE WEB INC</b></div><div class="cols">' +
       '<div><h4>Company</h4><ul>' +
       '<li>' + inl('#/', 'Home') + '</li>' +
+      '<li>' + inl('shop.html', 'Shop') + '</li>' +
       '<li>' + inl('#/producer', 'Producer — Black Lansky') + '</li>' +
       '<li>' + ext(DB.commerce.music[1].url, 'THE EDIT storefront') + '</li>' +
       '<li>' + ext(DB.commerce.software[1].url, 'Agent Deck') + '</li>' +
