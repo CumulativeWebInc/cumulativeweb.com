@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://cumulativeweb.com/sitemap.xml
+
+Sitemap: https://cumulativeweb.com/sitemap-video.xml

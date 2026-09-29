@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <!-- No public video files are embedded on cumulativeweb.com yet.
+       The SANQA demo videos are in production review and not published;
+       the two mp4s in /assets are unlisted ad renders with no public page.
+       Entries will be added here (loc + video:title/description/thumbnail_loc/
+       content_loc/duration/publication_date) as public videos ship. -->
+</urlset>
