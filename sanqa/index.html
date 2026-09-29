@@ -22,29 +22,152 @@
   <meta name="twitter:description" content="Six instruments. One gold standard. Deterministic AI-agent trust scoring and the tools that compound on top of it.">
   <meta name="twitter:image" content="assets/sanqa-coin-logo.webp">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "SANQA — the CWI flagship suite",
-    "applicationCategory": "DeveloperApplication",
-    "operatingSystem": "Web",
-    "description": "SANQA is the flagship software suite from Cumulative Web Inc — six gold-standard tools for AI-agent trust, led by the Trust Verdict Checker, which answers one question about any AI agent: Who vouches for your agent?",
-    "provider": {
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
       "@type": "Organization",
+      "@id": "https://cumulativeweb.com/#org",
       "name": "Cumulative Web Inc",
-      "url": "https://cumulativeweb.com",
-      "email": "hp@cumulativeweb.com",
-      "sameAs": ["https://x.com/cumulativeweb"]
+      "url": "https://cumulativeweb.com/",
+      "logo": "https://cumulativeweb.com/assets/cwi-logo.jpg"
     },
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD",
-      "description": "Trust Verdict Checker browser scoring is free. x402 API routes from $0.05 to $0.25 per call, settled in USDC on Base mainnet; seven routes free forever."
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://cumulativeweb.com/sanqa/#suite",
+      "name": "SANQA — the CWI flagship suite",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "url": "https://cumulativeweb.com/sanqa/",
+      "description": "SANQA is the flagship software suite from Cumulative Web Inc — six gold-standard tools for AI-agent trust, led by the Trust Verdict Checker, which answers one question about any AI agent: Who vouches for your agent?",
+      "provider": {
+        "@id": "https://cumulativeweb.com/#org"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Trust Verdict Checker browser scoring and 7 x402 routes free forever; 10 x402 routes $0.05–$0.25 per call, settled in USDC on Base mainnet."
+      },
+      "hasPart": [
+        {
+          "@id": "https://cumulativeweb.com/sanqa/#trust-verdict-checker"
+        },
+        {
+          "@id": "https://cumulativeweb.com/sanqa/#agent-personality-kit"
+        },
+        {
+          "@id": "https://cumulativeweb.com/sanqa/#x402-api"
+        },
+        {
+          "@id": "https://cumulativeweb.com/sanqa/#gear-ledger-3d"
+        },
+        {
+          "@id": "https://cumulativeweb.com/sanqa/#cwi-learn"
+        },
+        {
+          "@id": "https://cumulativeweb.com/sanqa/#kingcode-lens"
+        }
+      ]
     },
-    "url": "https://cumulativeweb.com/sanqa/"
-  }
-  </script>
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://cumulativeweb.com/sanqa/#trust-verdict-checker",
+      "name": "Trust Verdict Checker",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "url": "https://cumulativewebinc.github.io/cwi-trust-verdict-checker/",
+      "description": "“Who vouches for your agent?” Deterministic, evidence-bound trust scoring for AI agents — over ERC-8004, Needle Drop, and First Spin signals. Scoring runs entirely in your browser; nothing you paste is uploaded. Thin evidence gets an honest “insufficient data,” never a number.",
+      "provider": {
+        "@id": "https://cumulativeweb.com/#org"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free forever — deterministic scoring in your browser, no signup."
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://cumulativeweb.com/sanqa/#agent-personality-kit",
+      "name": "Agent Personality Kit",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "url": "https://cumulativewebinc.github.io/agent-personality-kit/",
+      "description": "Give your Muse a self. Equip any agent with a consistent personality, voice, and visual identity — the complete CWI agent-personality framework as a shareable kit.",
+      "provider": {
+        "@id": "https://cumulativeweb.com/#org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://cumulativeweb.com/sanqa/#x402-api",
+      "name": "x402 Paid API Layer",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "url": "https://cwi-x402-api-production.up.railway.app/pricing",
+      "description": "APIs agents can pay for. Machine-payable HTTP APIs over the x402 protocol — agents pay per call in USDC on Base mainnet. 10 paid routes ($0.05–$0.25), 7 free forever.",
+      "provider": {
+        "@id": "https://cumulativeweb.com/#org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://cumulativeweb.com/sanqa/#gear-ledger-3d",
+      "name": "Gear Ledger 3D",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "url": "https://cumulativewebinc.github.io/gear-ledger-3d-mockup/",
+      "description": "Walk through the work. A 3D provenance ledger of CWI's agent-usable digital assets — every item carrying hash-chained proof of use. Concept mockup live; data truth: sample.",
+      "provider": {
+        "@id": "https://cumulativeweb.com/#org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://cumulativeweb.com/sanqa/#cwi-learn",
+      "name": "CWI Learn",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "url": "https://cumulativewebinc.github.io/cwi-learn/",
+      "description": "The catalog, machine-readable. The public catalog graph — llms.txt, catalog.json, agent cards, and trust routes, built for agents first.",
+      "provider": {
+        "@id": "https://cumulativeweb.com/#org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://cumulativeweb.com/sanqa/#kingcode-lens",
+      "name": "KingCode Lens",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "url": "https://cumulativewebinc.github.io/cwi-kingcode-lens/",
+      "description": "Web apps for Meta Ray-Ban Display glasses — simulator lab plus the ‘Hey KingCode’ voice agent.",
+      "provider": {
+        "@id": "https://cumulativeweb.com/#org"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cumulativeweb.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "SANQA",
+          "item": "https://cumulativeweb.com/sanqa/"
+        }
+      ]
+    }
+  ]
+}
+</script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
