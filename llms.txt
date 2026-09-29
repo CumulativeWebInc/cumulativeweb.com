@@ -48,5 +48,6 @@
 - [Signup](https://cumulativeweb.com/signup.html) — independent artist signup
 - [Contact](https://cumulativeweb.com/contact.html) — contact form
 - [Games](https://cumulativeweb.com/games.html) — CWI arcade games
+- [Shop](https://cumulativeweb.com/shop.html) — 8 official cover-art tees ($14.75, Fourthwall) + 7 artist-designed decks ($54.99–$84.99, Boardpusher); per-product buy links; Product + BreadcrumbList JSON-LD
 - [Byline press](https://cumulativeweb.com/press) — invite-only press interview service
 - [Brasil (pt-BR)](https://cumulativeweb.com/br/) — Brazilian site, incl. [Jogos](https://cumulativeweb.com/br/jogos.html)
