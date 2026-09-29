@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Submit your track — CWI Lab: Signal Sessions · Cumulative Web Inc</title>
+<meta name="description" content="Artists: submit your track to CWI Lab: Signal Sessions. Get your music played live and run through CWI's audio analysis and verification tools on air.">
+<link rel="canonical" href="https://cumulativeweb.com/artists/submit.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Submit your track — CWI Lab: Signal Sessions">
+<meta property="og:description" content="Get your music played live and run through CWI's audio analysis and verification tools on air.">
+<meta property="og:url" content="https://cumulativeweb.com/artists/submit.html">
+<meta property="og:image" content="https://cumulativeweb.com/assets/cwi-logo.jpg">
+<link rel="icon" href="/assets/cwi-logo.jpg">
+<link rel="stylesheet" href="/site.css">
+<style>
+.consent-box{display:flex;gap:12px;align-items:flex-start;background:var(--cwi-bg-deep);
+  border:1px solid var(--cwi-border);border-radius:var(--radius-md);padding:14px 16px}
+.consent-box input{margin-top:4px;flex:none;width:18px;height:18px;accent-color:var(--cwi-accent)}
+.consent-box label{font-weight:400;font-size:var(--text-small);line-height:1.6}
+.privacy-note{font-size:var(--text-small);color:var(--cwi-text-sub);max-width:720px}
+.privacy-note details{margin-top:10px}
+.privacy-note summary{cursor:pointer;color:var(--cwi-accent);font-weight:700}
+.privacy-note p{margin:8px 0}
+.privacy-note ol{margin:8px 0;padding-left:20px}
+.privacy-note li{margin-bottom:6px}
+.draft-flag{display:inline-block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+  border:1px solid var(--cwi-danger);color:var(--cwi-danger);border-radius:999px;padding:3px 10px;margin-left:8px}
+.hp{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+</style>
+</head>
+<body>
+<header class="navbar">
+  <div class="bar">
+    <a class="brand" href="/"><img src="/assets/cwi-logo.jpg" alt="Cumulative Web Inc logo"><span>CUMULATIVE WEB INC</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/music.html">Music</a>
+      <a href="/films.html">Films</a>
+      <a href="/models.html">Models</a>
+      <a href="/software.html">Software</a>
+      <a href="/sanqa/">SANQA</a>
+      <a href="/events.html">Events</a>
+      <a href="/live.html">Live</a>
+      <a href="/signup.html">Signup</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/games.html">Games</a>
+      <a href="/press/releases/">Press</a>
+    </nav>
+    <div class="lang-switch" role="navigation" aria-label="Language">
+      <a href="https://cumulativeweb.com/br/" hreflang="pt-BR">BR</a><span class="sep" aria-hidden="true">|</span><a href="/artists/submit.html" hreflang="en" aria-current="true">EN</a>
+    </div>
+    <button class="menu-btn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg></button>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+    <a href="/">Home</a>
+    <a href="/music.html">Music</a>
+    <a href="/films.html">Films</a>
+    <a href="/models.html">Models</a>
+    <a href="/software.html">Software</a>
+    <a href="/events.html">Events</a>
+    <a href="/live.html">Live</a>
+    <a href="/signup.html">Signup</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/games.html">Games</a>
+    <a href="/press/releases/">Press</a>
+  </nav>
+</header>
+
+<main class="page">
+<section class="hero">
+  <div class="eyebrow">CWI Lab: Signal Sessions</div>
+  <h1>Submit your track</h1>
+  <p class="lede">Get your music played live on the show and run through CWI's audio analysis and
+  verification tools on air. Every week: the song plays, the tool gets demoed live on it, the hosts
+  rate it and publish the results. Send us a link — our team reviews every submission.</p>
+</section>
+
+<section>
+  <form id="artistForm" class="form-grid" novalidate>
+    <div class="field" data-field="nome">
+      <label for="nome">Your name <span class="req" aria-hidden="true">*</span></label>
+      <input type="text" id="nome" name="nome" autocomplete="name" maxlength="100" required>
+      <p class="err">Tell us your name (at least 2 characters).</p>
+    </div>
+    <div class="field" data-field="artist_name">
+      <label for="artist_name">Artist name <span class="req" aria-hidden="true">*</span></label>
+      <input type="text" id="artist_name" name="artist_name" maxlength="100" required placeholder="The name the track is released under">
+      <p class="err">Tell us the artist name (at least 2 characters).</p>
+    </div>
+    <div class="field" data-field="email">
+      <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+      <input type="email" id="email" name="email" autocomplete="email" maxlength="254" required>
+      <p class="err">Enter a valid email — this is how we reach you about your submission.</p>
+    </div>
+    <div class="field" data-field="track_link">
+      <label for="track_link">Track link <span class="req" aria-hidden="true">*</span></label>
+      <input type="url" id="track_link" name="track_link" maxlength="500" required placeholder="https://… — Spotify, SoundCloud, YouTube, Audiomack, etc.">
+      <p class="err">Paste a valid link to the track (starting with http:// or https://).</p>
+    </div>
+    <div class="field" data-field="consentimento">
+      <div class="consent-box">
+        <input type="checkbox" id="consentimento" name="consentimento" value="sim" required>
+        <label for="consentimento">I give Cumulative Web Inc permission to play my submitted track on the
+        "CWI Lab: Signal Sessions" show and podcast, run CWI's audio analysis and verification tools on it,
+        and publish/share the resulting scores, ratings, and commentary for promotional purposes. I confirm
+        I own or control the rights to the music I am submitting, and that playing it on the show will not
+        violate any agreement I have with a label, distributor, or publisher. I understand my submission is
+        not a guarantee of airplay or placement. <span class="req" aria-hidden="true">*</span></label>
+      </div>
+      <p class="err">You need to tick the consent box so we can play and analyze your track on the show.</p>
+    </div>
+    <div class="hp" aria-hidden="true">
+      <label>Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+    </div>
+    <div>
+      <button type="submit" id="sendBtn" class="btn btn--primary">Submit my track</button>
+    </div>
+    <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+  </form>
+
+  <div class="privacy-note" style="margin-top:28px">
+    <p><strong>Privacy.</strong> What we collect: your name, artist name, email address, track link, and your
+    consent checkbox confirmation. Where it goes: submissions are stored on CWI's Railway-hosted service and a
+    copy is emailed to our team at <a href="mailto:hp@cumulativeweb.com">hp@cumulativeweb.com</a> for review.
+    Why: to consider your track for "CWI Lab: Signal Sessions" and to contact you about your submission.
+    Retention: we keep submissions for as long as we run the Show, plus a reasonable archive period afterward.
+    If you want your data deleted, email <a href="mailto:hp@cumulativeweb.com">hp@cumulativeweb.com</a> with the
+    subject "Delete my submission" and we will remove your personal details and stop contacting you. Sharing: we
+    do not sell your information. Your details are used only by CWI staff for the Show and related artist outreach.</p>
+    <details>
+      <summary>Full submission terms <span class="draft-flag">Draft — pending attorney review</span></summary>
+      <ol>
+        <li><strong>What you're granting.</strong> By submitting a track link, you grant Cumulative Web Inc a non-exclusive,
+        worldwide, royalty-free license to: (a) play the submitted track (or portions of it) on the Show, including the
+        podcast episode, any live broadcast or stream, and any replay, clip, or highlight derived from it; (b) run CWI's
+        audio analysis, verification, and scoring tools on the track, including AI-based analysis; (c) publish, display,
+        and promote the results of that analysis — scores, ratings, verdicts, graphics, and the hosts' commentary — in
+        the episode, on CWI's websites and social channels, and in press materials.</li>
+        <li><strong>What you're NOT granting.</strong> This is not an assignment of your copyright. You keep ownership of
+        your music. This is not a distribution deal, a publishing deal, or a sync license — it covers the Show and its
+        promotion only.</li>
+        <li><strong>Your representation.</strong> You represent that you own or control all rights in the submitted track
+        (sound recording and underlying composition, including any samples or co-writer shares) and have the authority
+        to grant this license.</li>
+        <li><strong>No guarantee of use.</strong> Submission does not guarantee the track will be played, analyzed, or
+        promoted. CWI decides what goes on the Show in its sole discretion.</li>
+        <li><strong>Takedown.</strong> You may request removal of your track from future episodes by emailing
+        hp@cumulativeweb.com. CWI will make reasonable efforts going forward but cannot retract episodes or clips
+        already published or distributed.</li>
+        <li><strong>No payment.</strong> There is no payment, royalty, or compensation for submitting or being featured.
+        You submit voluntarily for the promotional value of the feature.</li>
+        <li><strong>Not a contest.</strong> The Show is not a contest, sweepstakes, or competition.</li>
+        <li><strong>Governing terms.</strong> These terms, and the Show, are subject to attorney review and to any
+        platform rules of the services CWI uses for hosting and distribution.</li>
+      </ol>
+    </details>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="inner">
+    <div class="cols">
+      <div><div class="fbrand"><img src="/assets/cwi-logo.jpg" alt="Cumulative Web Inc logo">CUMULATIVE WEB INC</div>
+      <p style="font-size:var(--text-small)">Independent label — Music &amp; Film · Clothing · Software &amp; AI Agents.</p></div>
+      <div><h4>Sections</h4><ul>
+        <li><a href="/music.html">Music</a></li><li><a href="/films.html">Films</a></li>
+        <li><a href="/models.html">Models</a></li><li><a href="/software.html">Software</a></li>
+        <li><a href="/games.html">Games</a></li>
+      </ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><a href="/contact.html">Contact form</a></li>
+        <li><a href="mailto:hp@cumulativeweb.com">hp@cumulativeweb.com</a></li>
+      </ul></div>
+      <div><h4>Social</h4><ul>
+        <li><a href="https://www.instagram.com/cumulativeweb" rel="noopener">Instagram</a></li>
+        <li><a href="https://x.com/cumulativeweb" rel="noopener">X · @cumulativeweb</a></li>
+        <li><a href="https://www.youtube.com/@cumulativeweb" rel="noopener">YouTube</a></li>
+        <li><a href="https://www.tiktok.com/@cumulativeweb" rel="noopener">TikTok</a></li>
+      </ul></div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Cumulative Web Inc. All rights reserved.</span>
+      <div class="lang-switch" role="navigation" aria-label="Language">
+        <a href="https://cumulativeweb.com/br/" hreflang="pt-BR">Português (BR)</a><span class="sep" aria-hidden="true">|</span><a href="/artists/submit.html" hreflang="en">English</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/js/artist-signup.js" defer></script>
+<script src="/js/nav.js" defer></script>
+</body>
+</html>
