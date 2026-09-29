@@ -20,7 +20,40 @@
 <meta name="theme-color" content="#121212">
 <link rel="icon" href="assets/cwi-logo.jpg">
 <link rel="stylesheet" href="css/br.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Música — Cumulative Web Inc Brasil","url":"https://cumulativeweb.com/br/musica.html","inLanguage":"pt-BR","isPartOf":{"@type":"Organization","name":"Cumulative Web Inc","alternateName":"Cumulative Web Inc Brasil","url":"https://cumulativeweb.com/br/","logo":"https://cumulativeweb.com/br/assets/cwi-logo.jpg","email":"hp@cumulativeweb.com","address":{"@type":"PostalAddress","addressRegion":"Alagoas","addressCountry":"BR"}},"about":"Catálogo musical da CWI no Brasil"}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "name": "Música — Cumulative Web Inc Brasil",
+      "url": "https://cumulativeweb.com/br/musica.html",
+      "inLanguage": "pt-BR",
+      "isPartOf": {
+        "@id": "https://cumulativeweb.com/br/#org"
+      },
+      "about": "Catálogo musical da CWI no Brasil"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://cumulativeweb.com/br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Música",
+          "item": "https://cumulativeweb.com/br/musica.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <header class="navbar">
