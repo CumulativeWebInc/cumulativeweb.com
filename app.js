@@ -167,6 +167,15 @@
       '<li>' + ext(DB.commerce.music[0].url, 'CWI Store') + '</li>' +
       '<li>' + inl('#/music', 'All music') + '</li>' +
       '</ul></div>' +
+      '<div><h4>Games</h4><ul>' +
+      '<li>' + inl('games.html', 'All games') + '</li>' +
+      '<li>' + ext('https://cumulativewebinc.github.io/cwi-777-neon-nights/', 'Neon Nights pt. 777') + '</li>' +
+      '<li>' + ext('https://cumulativewebinc.github.io/arcade/street-kings/', 'Street Kings') + '</li>' +
+      '<li>' + ext('https://cumulativewebinc.github.io/arcade/barrel-king/', 'Barrel King') + '</li>' +
+      '<li>' + ext('https://cumulativewebinc.github.io/arcade/crown-climb/', 'Crown Climb') + '</li>' +
+      '<li>' + ext('https://cumulativewebinc.github.io/arcade/word-signal/', 'Word Signal') + '</li>' +
+      '<li>' + ext('https://cumulativewebinc.github.io/cwi-cover-pieces/', 'Cover Pieces') + '</li>' +
+      '</ul></div>' +
       '<div><h4>Legal</h4><ul><li><a href="mailto:' + esc(DB.commerce.contact.email) + '">' + esc(DB.commerce.contact.email) + '</a></li></ul>' +
       '<p class="view-meta">Built with $0. No trackers.</p></div>' +
       '</div>' +
