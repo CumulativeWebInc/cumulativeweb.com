@@ -15,6 +15,32 @@
   if (!form) return;
   var status = document.getElementById("formStatus");
   var btn = document.getElementById("enviarBtn");
+
+  /* Bot shield, $0: timestamp de renderização (bots fazem POST instantâneo
+   * sem renderizar a página). O servidor rejeita timestamps ausentes/
+   * frescos demais/antigos. */
+  (function botShield() {
+    try {
+      var ts = document.createElement("input");
+      ts.type = "hidden"; ts.name = "form_ts";
+      ts.value = String(Date.now());
+      form.appendChild(ts);
+      /* Turnstile (Cloudflare, grátis) — ativa quando Lansky definir
+       * window.CWI_TURNSTILE_SITEKEY com a site key real E configurar
+       * TURNSTILE_SECRET no serviço Railway. Até lá, sem efeito. */
+      var key = window.CWI_TURNSTILE_SITEKEY || "";
+      if (!key || key.indexOf("PLACEHOLDER") !== -1) return;
+      var wrap = document.getElementById("turnstileWrap");
+      var d = document.createElement("div");
+      d.className = "cf-turnstile";
+      d.setAttribute("data-sitekey", key);
+      wrap.appendChild(d);
+      var s = document.createElement("script");
+      s.src = "https://challenges.cloudflare.com/turnstile/v0/api.js";
+      s.async = true; s.defer = true;
+      document.head.appendChild(s);
+    } catch (e) { /* escudo é best-effort no cliente */ }
+  })();
   var tabs = Array.prototype.slice.call(document.querySelectorAll(".type-tabs button"));
   var select = document.getElementById("tipo");
 
