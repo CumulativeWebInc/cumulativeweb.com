@@ -20,40 +20,7 @@
 <meta name="theme-color" content="#121212">
 <link rel="icon" href="assets/cwi-logo.jpg">
 <link rel="stylesheet" href="css/br.css">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebPage",
-      "name": "Cadastro de Artista — Cumulative Web Inc Brasil",
-      "url": "https://cumulativeweb.com/br/cadastro.html",
-      "inLanguage": "pt-BR",
-      "isPartOf": {
-        "@id": "https://cumulativeweb.com/br/#org"
-      },
-      "about": "Página de cadastro para artistas independentes apresentarem seus projetos à Cumulative Web Inc Brasil."
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Início",
-          "item": "https://cumulativeweb.com/br/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Cadastro de Artista",
-          "item": "https://cumulativeweb.com/br/cadastro.html"
-        }
-      ]
-    }
-  ]
-}
-</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Cadastro de Artista — Cumulative Web Inc Brasil","url":"https://cumulativeweb.com/br/cadastro.html","inLanguage":"pt-BR","description":"Página de cadastro para artistas independentes apresentarem seus projetos à Cumulative Web Inc Brasil.","isPartOf":{"@type":"Organization","name":"Cumulative Web Inc","alternateName":"Cumulative Web Inc Brasil","url":"https://cumulativeweb.com/br/","logo":"https://cumulativeweb.com/br/assets/cwi-logo.jpg","email":"hp@cumulativeweb.com","address":{"@type":"PostalAddress","addressRegion":"Alagoas","addressCountry":"BR"}}}</script>
 </head>
 <body>
 <header class="navbar">
@@ -69,7 +36,6 @@
       <a href="livestream.html">Ao Vivo</a>
       <a href="cadastro.html" class="active" aria-current="page">Cadastro</a>
       <a href="contato.html">Contato</a>
-      <a href="jogos.html">Jogos</a>
     </nav>
     <div class="lang-switch" role="navigation" aria-label="Idioma / Language">
       <a href="cadastro.html" hreflang="pt-BR" aria-current="true">BR</a><span class="sep" aria-hidden="true">|</span><a href="https://www.cumulativeweb.com/" hreflang="en">EN</a>
@@ -86,7 +52,6 @@
     <a href="livestream.html">Ao Vivo</a>
     <a href="cadastro.html" class="active" aria-current="page">Cadastro</a>
     <a href="contato.html">Contato</a>
-    <a href="jogos.html">Jogos</a>
   </nav>
 </header>
 
@@ -201,6 +166,7 @@
         <div class="hp-field" aria-hidden="true">
           <label>Não preencha este campo<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
         </div>
+        <div class="cf-turnstile-wrap" id="turnstileWrap" aria-hidden="true"></div>
         <div class="field" data-field="consentimento">
           <label class="check" for="consentimento">
             <input type="checkbox" id="consentimento" name="consentimento" value="sim" required>
@@ -230,15 +196,6 @@
         <li><a href="modelos.html">Modelos</a></li><li><a href="software.html">Software</a></li>
         <li><a href="eventos.html">Eventos</a></li><li><a href="livestream.html">Ao Vivo</a></li>
       </ul></div>
-      <div><h4>Jogos</h4><ul>
-        <li><a href="jogos.html">Todos os jogos</a></li>
-        <li><a href="https://cumulativewebinc.github.io/cwi-777-neon-nights/" target="_blank" rel="noopener">Neon Nights pt. 777</a></li>
-        <li><a href="https://cumulativewebinc.github.io/arcade/street-kings/" target="_blank" rel="noopener">Street Kings</a></li>
-        <li><a href="https://cumulativewebinc.github.io/arcade/barrel-king/" target="_blank" rel="noopener">Barrel King</a></li>
-        <li><a href="https://cumulativewebinc.github.io/arcade/crown-climb/" target="_blank" rel="noopener">Crown Climb</a></li>
-        <li><a href="https://cumulativewebinc.github.io/arcade/word-signal/" target="_blank" rel="noopener">Word Signal</a></li>
-        <li><a href="https://cumulativewebinc.github.io/cwi-cover-pieces/" target="_blank" rel="noopener">Cover Pieces</a></li>
-      </ul></div>
       <div><h4>Fale conosco</h4><ul>
         <li><a href="cadastro.html">Seja um artista — cadastre-se</a></li>
         <li><a href="contato.html">Formulário de contato</a></li>
@@ -264,6 +221,7 @@
   </div>
 </footer>
 <script src="js/nav.js" defer></script>
+<script>window.CWI_TURNSTILE_SITEKEY = "0x4AAAAAAFKHek_cawyKOMOD";</script>
 <script src="js/cadastro.js" defer></script>
 </body>
 </html>
