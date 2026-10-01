@@ -302,7 +302,7 @@
     }catch(e){}
   }
   function load(){
-    fetch('/radio/now-playing.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(d){
+    fetch('/radio/now-playing.json?_='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(d){
       if(d.title)document.getElementById('npTitle').textContent=d.title;
       if(d.artist)document.getElementById('npArtist').textContent=d.artist;
       var art=document.getElementById('npArt');
@@ -314,7 +314,7 @@
       if(u&&d.updated_at)u.textContent=WORDS[4]+' '+ago(d.updated_at,WORDS.slice(0,3));
     }).catch(function(){});
   }
-  load();setInterval(load,30000);
+  load();setInterval(load,15000);
 })();
 </script>
 
