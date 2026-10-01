@@ -131,7 +131,7 @@
         <span class="pulse" aria-hidden="true" style="background:var(--cwi-accent)"></span>
         <h2 style="color:#fff">Listen live</h2>
         <p>Press play — the stream opens in your browser.</p>
-        <audio controls preload="none" src="https://stream.cumulativeweb.com:8443/radio" style="width:100%;max-width:520px;margin-top:12px">
+        <audio id="radioAudio" controls preload="none" src="https://stream.cumulativeweb.com:8443/radio" style="width:100%;max-width:520px;margin-top:12px">
           Your browser does not support the audio element. Listen at
           <a href="https://cumulative-radio-365.pages.dev">cumulative-radio-365.pages.dev</a>.
         </audio>
@@ -249,12 +249,39 @@
     return Math.floor(s/3600)+words[2];
   }
   var WORDS=["s ago","m ago","h ago","listening","updated"];
+  /* Media Session: puts CWI branding + live track art in the browser/OS
+     media notification (the popup in the screenshot). prev/next are
+     deliberately unset — this is a live stream, not a playlist. */
+  var BRAND_ART='https://cumulativeweb.com/assets/cwi-logo.jpg';
+  var audioEl=document.getElementById('radioAudio');
+  function setMediaSession(d){
+    if(!('mediaSession' in navigator))return;
+    try{
+      navigator.mediaSession.metadata=new MediaMetadata({
+        title:(d&&d.title)||'Cumulative Radio 365',
+        artist:(d&&d.artist)||'Independent music, 24/7',
+        album:'Cumulative Radio 365',
+        artwork:[{src:((d&&d.artwork)||BRAND_ART),sizes:'512x512',type:'image/jpeg'}]
+      });
+    }catch(e){}
+  }
+  if('mediaSession' in navigator&&audioEl){
+    try{
+      navigator.mediaSession.setActionHandler('play',function(){audioEl.play();});
+      navigator.mediaSession.setActionHandler('pause',function(){audioEl.pause();});
+      var syncState=function(){try{navigator.mediaSession.playbackState=audioEl.paused?'paused':'playing';}catch(e){}};
+      audioEl.addEventListener('play',syncState);
+      audioEl.addEventListener('pause',syncState);
+      setMediaSession(null);
+    }catch(e){}
+  }
   function load(){
     fetch('/radio/now-playing.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(d){
       if(d.title)document.getElementById('npTitle').textContent=d.title;
       if(d.artist)document.getElementById('npArtist').textContent=d.artist;
       var art=document.getElementById('npArt');
       if(d.artwork&&art.getAttribute('src')!==d.artwork){art.src=d.artwork;}
+      setMediaSession(d);
       var l=document.getElementById('npListeners');
       if(l)l.textContent=d.listeners>0?d.listeners+' '+WORDS[3]:'';
       var u=document.getElementById('npUpdated');
