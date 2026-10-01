@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neon Royale — White-Label Slot Machine | Live Demo | Cumulative Web Inc</title>
+<meta name="description" content="Neon Royale: a white-label promo slot machine for indie labels and artists. This demo runs the Cumulative Web Inc catalog — your build would run YOUR artists. Promo prizes only. No gambling.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cumulative Web Inc">
+<meta property="og:title" content="Neon Royale — a slot machine that plays your catalog">
+<meta property="og:description" content="White-label promo slot machine for indie labels. Demo running the CWI catalog. Promo prizes only — no gambling.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Neon Royale — White-Label Slot Machine",
+  "description": "White-label promo slot machine for indie labels and artists. Spins pay free music links and promo prizes. No gambling, no cash prizes.",
+  "brand": { "@type": "Brand", "name": "Cumulative Web Inc" },
+  "manufacturer": { "@type": "Organization", "name": "Cumulative Web Inc", "url": "https://cumulativeweb.com", "email": "hp@cumulativeweb.com" },
+  "offers": [
+    { "@type": "Offer", "name": "Solo", "price": "249", "priceCurrency": "USD", "description": "One artist catalog, one skin, promo-prize mode, link engine, email support." },
+    { "@type": "Offer", "name": "Label", "price": "899", "priceCurrency": "USD", "description": "Up to 10 artist catalogs, custom brand skin, promo-prize mode, priority support." }
+  ]
+}
+</script>
+<style>
+  :root{
+    --bg:#12071f; --bg2:#1c0b2e; --panel:#221038;
+    --magenta:#ff2fd6; --cyan:#29f3ff; --gold:#f5c542;
+    --ink:#f4ecff; --muted:#b9a8d6;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{background:radial-gradient(1200px 600px at 50% -10%, #2a1145 0%, var(--bg) 60%) , var(--bg);
+       color:var(--ink); font-family:"Segoe UI", system-ui, -apple-system, Arial, sans-serif; line-height:1.55}
+  .wrap{max-width:1060px; margin:0 auto; padding:0 20px}
+  header.top{border-bottom:1px solid #3a1c5e; padding:14px 0; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px}
+  .brand{font-weight:800; letter-spacing:2px; font-size:15px}
+  .brand .nr{color:var(--magenta); text-shadow:0 0 12px var(--magenta)}
+  .brand .cwi{color:var(--muted); font-weight:400; font-size:12px; letter-spacing:1px}
+  .staged{font-size:11px; color:#0a0a0a; background:var(--gold); border-radius:4px; padding:3px 10px; font-weight:700; letter-spacing:1px}
+  .hero{text-align:center; padding:56px 0 30px}
+  .kicker{color:var(--cyan); letter-spacing:4px; font-size:12px; text-transform:uppercase; text-shadow:0 0 10px var(--cyan)}
+  h1{font-size:clamp(38px,7vw,72px); font-weight:900; letter-spacing:1px; margin:12px 0 6px;
+     background:linear-gradient(180deg,#fff 10%, var(--magenta) 55%, #a3128f 90%);
+     -webkit-background-clip:text; background-clip:text; color:transparent;
+     filter:drop-shadow(0 0 22px rgba(255,47,214,.45))}
+  .gold-rule{height:3px; width:220px; margin:14px auto; border-radius:2px;
+     background:linear-gradient(90deg, transparent, var(--gold), transparent); box-shadow:0 0 14px var(--gold)}
+  .sub{color:var(--muted); font-size:clamp(15px,2.4vw,19px); max-width:640px; margin:0 auto}
+  .sub b{color:var(--ink)}
+  .demo-shell{margin:34px auto 10px; border:2px solid var(--magenta); border-radius:18px; overflow:hidden;
+     box-shadow:0 0 34px rgba(255,47,214,.35), 0 0 90px rgba(41,243,255,.12); background:#0b0416}
+  .demo-bar{display:flex; justify-content:space-between; align-items:center; padding:10px 16px;
+     background:linear-gradient(90deg,#2a0f45,#3d1663); border-bottom:1px solid var(--gold); font-size:13px; color:var(--gold); letter-spacing:1px}
+  .demo-bar .live{color:var(--cyan)}
+  iframe.game{width:100%; height:min(78vh,720px); min-height:480px; border:0; display:block; background:#0b0416}
+  .note{font-size:12.5px; color:var(--muted); text-align:center; margin:10px 0 0}
+  section{padding:44px 0}
+  h2{font-size:clamp(24px,4vw,34px); text-align:center; margin-bottom:8px; color:#fff; text-shadow:0 0 16px rgba(41,243,255,.5)}
+  .lede{text-align:center; color:var(--muted); max-width:620px; margin:0 auto 28px}
+  .steps{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px}
+  .card{background:var(--panel); border:1px solid #3a1c5e; border-radius:14px; padding:22px}
+  .card:hover{border-color:var(--cyan); box-shadow:0 0 18px rgba(41,243,255,.25)}
+  .card .n{font-size:30px; color:var(--gold); text-shadow:0 0 12px var(--gold)}
+  .card h3{margin:8px 0 6px; font-size:17px}
+  .card p{font-size:14px; color:var(--muted)}
+  .tiers{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; align-items:stretch}
+  .tier{background:var(--panel); border:1px solid #3a1c5e; border-radius:14px; padding:26px; display:flex; flex-direction:column}
+  .tier.hot{border:2px solid var(--gold); box-shadow:0 0 26px rgba(245,197,66,.3); transform:scale(1.02)}
+  .tier .tname{letter-spacing:3px; font-size:12px; color:var(--cyan)}
+  .tier .price{font-size:40px; font-weight:900; margin:8px 0}
+  .tier .price small{font-size:14px; color:var(--muted); font-weight:400}
+  .tier ul{list-style:none; margin:12px 0 20px; font-size:14px; color:var(--muted)}
+  .tier li{margin:7px 0; padding-left:22px; position:relative}
+  .tier li::before{content:"◆"; color:var(--magenta); position:absolute; left:0}
+  .cta{margin-top:auto; text-align:center; background:linear-gradient(90deg,var(--magenta),#b01aff); color:#fff;
+       font-weight:800; letter-spacing:1px; border:0; border-radius:10px; padding:13px 18px; font-size:15px; cursor:pointer; text-decoration:none; display:block}
+  .cta:hover{filter:brightness(1.12)}
+  .cta.ghost{background:transparent; border:1px solid var(--cyan); color:var(--cyan)}
+  .faq{max-width:700px; margin:0 auto}
+  .faq details{background:var(--panel); border:1px solid #3a1c5e; border-radius:10px; padding:14px 18px; margin:10px 0}
+  .faq summary{cursor:pointer; font-weight:700}
+  .faq p{color:var(--muted); font-size:14px; margin-top:8px}
+  footer{border-top:1px solid #3a1c5e; padding:26px 0 40px; color:var(--muted); font-size:13px; text-align:center}
+  footer a{color:var(--cyan)}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;width:100%">
+    <div class="brand"><span class="nr">NEON ROYALE</span> <span class="cwi">by Cumulative Web Inc</span></div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="kicker">White-label promo slot machine</div>
+    <h1>NEON ROYALE</h1>
+    <div class="gold-rule"></div>
+    <p class="sub">A slot machine that plays <b>your catalog</b>. Fans spin the reels — wins pay <b>free music links and promo prizes</b>. This demo runs the Cumulative Web Inc catalog. <b>Your build runs your artists, in your skin.</b></p>
+  </div>
+
+  <div class="demo-shell">
+    <div class="demo-bar"><span>● <span class="live">LIVE DEMO</span> — CWI CATALOG EDITION</span><span>promo-prize mode · no gambling</span></div>
+    <iframe class="game" title="Neon Royale demo — playable promo slot game" src="https://cumulativewebinc.github.io/cwi-777-neon-nights/" allow="autoplay; fullscreen" loading="lazy"></iframe>
+  </div>
+  <p class="note">Demo plays the CWI catalog (That Boy Hi Hat — Neon Nights Pt. 777). A licensed build loads <b>your</b> artists and links.</p>
+
+  <section>
+    <h2>How it works</h2>
+    <p class="lede">One codebase, unlimited skins. Each licensee gets their own build from a theme file — no forked code, no rebuild.</p>
+    <div class="steps">
+      <div class="card"><div class="n">01</div><h3>We load your catalog</h3><p>Our link engine verifies your artists' streaming links — Spotify, Apple Music, Amazon — and wires them into the game as prizes.</p></div>
+      <div class="card"><div class="n">02</div><h3>Fans spin, you get streams</h3><p>Every win pays a free listening link. Fans keep spinning, your catalog keeps getting played. Promo prizes only — no gambling, ever.</p></div>
+      <div class="card"><div class="n">03</div><h3>Your brand, your skin</h3><p>Neon Royale today; your colors, your logo, your artists tomorrow. Solo artists pick a skin — labels get a custom one built from their brand.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>One-time pricing. No subscriptions.</h2>
+    <p class="lede">Paid digitally, receipt issued per sale.</p>
+    <div class="tiers">
+      <div class="tier">
+        <div class="tname">SOLO</div>
+        <div class="price">$249 <small>one-time</small></div>
+        <ul>
+          <li>1 artist catalog</li>
+          <li>1 skin of your choice</li>
+          <li>Promo-prize mode</li>
+          <li>Streaming link engine included</li>
+          <li>Email support</li>
+        </ul>
+        <a class="cta ghost" href="mailto:hp@cumulativeweb.com?subject=Neon%20Royale%20—%20Solo%20license%20($249)">Get Solo</a>
+      </div>
+      <div class="tier hot">
+        <div class="tname">LABEL — MOST POPULAR</div>
+        <div class="price">$899 <small>one-time</small></div>
+        <ul>
+          <li>Up to 10 artist catalogs</li>
+          <li>Custom skin built from your brand</li>
+          <li>Promo-prize mode</li>
+          <li>Priority support</li>
+        </ul>
+        <a class="cta" href="mailto:hp@cumulativeweb.com?subject=Neon%20Royale%20—%20Label%20license%20($899)">Get Label</a>
+      </div>
+      <div class="tier">
+        <div class="tname">CUSTOM</div>
+        <div class="price">$2,500+ <small>quoted</small></div>
+        <ul>
+          <li>Unlimited catalogs</li>
+          <li>Bespoke game design input</li>
+          <li>White-glove onboarding</li>
+          <li>SLA</li>
+        </ul>
+        <a class="cta ghost" href="mailto:hp@cumulativeweb.com?subject=Neon%20Royale%20—%20Custom%20quote">Talk to us</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Questions, answered</h2>
+    <div class="faq">
+      <details><summary>Is this gambling?</summary><p>No. Neon Royale is a promo game: spins are free, wins pay free music links and promo prizes. There is no money mode — it is locked behind legal gates and stays off.</p></details>
+      <details><summary>What do my fans actually win?</summary><p>Free streaming links to your catalog, plus promo prizes you define (merch codes, presale access, shout-outs). Every prize drives a listen.</p></details>
+      <details><summary>How long does my build take?</summary><p>Solo: your catalog loaded into your chosen skin. Label: a custom skin built from your brand. Timelines confirmed per order — ask us.</p></details>
+      <details><summary>Who is behind this?</summary><p>Cumulative Web Inc — independent label running its own catalog, radio station, and promo tech. We built this for our artists first, then productized it. <a href="https://cumulativeweb.com">cumulativeweb.com</a></p></details>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>Neon Royale — white-label promo slot machine by <b>Cumulative Web Inc</b> · <a href="mailto:hp@cumulativeweb.com">hp@cumulativeweb.com</a></p>
+    <p style="margin-top:8px">Free promo game. No gambling. No cash prizes. No purchase necessary to play the demo.</p>
+  </div>
+</footer>
+</body>
+</html>
