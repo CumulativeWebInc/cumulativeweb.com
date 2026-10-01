@@ -48,6 +48,22 @@
   ]
 }
 </script>
+
+<style>
+#streamStage{position:relative}
+#npViz{position:absolute;inset:0;width:100%;height:100%;display:block}
+.np-wrap{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:18px;padding:28px 20px;width:100%}
+.np-card{display:flex;gap:16px;align-items:center;background:rgba(8,8,10,.74);border:1px solid var(--cwi-border);border-radius:14px;padding:14px 18px;max-width:580px;width:100%;text-align:left}
+.np-card img{width:96px;height:96px;object-fit:cover;border-radius:10px;flex:none;background:#111}
+.np-kicker{margin:0 0 2px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--cwi-text-sub)}
+.np-title{margin:0 0 2px;font-size:22px;color:#fff;line-height:1.2}
+.np-artist{margin:0;color:var(--cwi-text-sub);font-size:14px}
+.np-meta{margin:6px 0 0;font-size:12px;color:var(--cwi-text-sub)}
+.proof-list{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:10px}
+.proof-list li{padding-left:26px;position:relative}
+.proof-list li::before{content:"\2713";position:absolute;left:2px;color:var(--cwi-accent);font-weight:700}
+@media(max-width:560px){.np-card{flex-direction:column;text-align:center}}
+</style>
 </head>
 <body>
 <header class="navbar">
@@ -98,15 +114,28 @@
   <div class="badge-row"><span class="badge badge--live">ON AIR</span></div>
 </section>
 <section>
-  <div class="stream-stage">
-    <div class="stream-soon">
-      <span class="pulse" aria-hidden="true" style="background:var(--cwi-accent)"></span>
-      <h2 style="color:#fff">Listen live</h2>
-      <p>Press play — the stream opens in your browser.</p>
-      <audio controls preload="none" src="https://stream.cumulativeweb.com:8443/radio" style="width:100%;max-width:520px;margin-top:12px">
-        Your browser does not support the audio element. Listen at
-        <a href="https://cumulative-radio-365.pages.dev">cumulative-radio-365.pages.dev</a>.
-      </audio>
+  <div class="stream-stage" id="streamStage">
+    <canvas id="npViz" aria-hidden="true"></canvas>
+    <div class="np-wrap">
+      <div class="np-card">
+        <img id="npArt" src="radio/art/that-boy-hi-hat-diabolique.jpg" alt="Cover art of the track currently playing" width="96" height="96">
+        <div class="np-info">
+          <div class="badge-row" style="margin:0 0 6px"><span class="badge badge--live">ON AIR</span></div>
+          <p class="np-kicker">Now playing</p>
+          <h2 id="npTitle" class="np-title">Connecting to the station&hellip;</h2>
+          <p id="npArtist" class="np-artist"></p>
+          <p class="np-meta"><span id="npListeners"></span><span id="npUpdated"></span></p>
+        </div>
+      </div>
+      <div class="stream-soon">
+        <span class="pulse" aria-hidden="true" style="background:var(--cwi-accent)"></span>
+        <h2 style="color:#fff">Listen live</h2>
+        <p>Press play — the stream opens in your browser.</p>
+        <audio controls preload="none" src="https://stream.cumulativeweb.com:8443/radio" style="width:100%;max-width:520px;margin-top:12px">
+          Your browser does not support the audio element. Listen at
+          <a href="https://cumulative-radio-365.pages.dev">cumulative-radio-365.pages.dev</a>.
+        </audio>
+      </div>
     </div>
   </div>
 </section>
@@ -124,6 +153,19 @@
       <a href="http://dir.xiph.org" rel="noopener">Icecast Directory</a> ·
       <a href="https://cumulative-radio-365.pages.dev" rel="noopener">Station website</a>
     </p>
+  </div>
+</section>
+<section>
+  <div class="panel">
+    <h2>Run by agents, proven in public</h2>
+    <p>This station is operated by the CWI agent team. Every claim below is verifiable &mdash; no vanity metrics:</p>
+    <ul class="proof-list">
+      <li><strong>On air right now</strong> &mdash; Icecast 2.4.4, 128&nbsp;kbps. <a href="https://stream.cumulativeweb.com:8443/" rel="noopener">Live server status</a></li>
+      <li><strong>Listed</strong> on <a href="https://radio.streamitter.com/station/cumulative-radio-365" rel="noopener">Streamitter</a>, <a href="https://tunein.com/radio/s361867" rel="noopener">TuneIn</a> and <a href="https://liveonlineradio.net/cumulative-radio-365" rel="noopener">Live Online Radio</a></li>
+      <li><strong>Airable</strong> &mdash; added to their station database on 2026-09-30</li>
+      <li><strong>OnlineRadioBox</strong> &mdash; station request approved 2026-10-01, directory listing live within 24 hours</li>
+      <li><strong>Live now-playing</strong> &mdash; this page shows the actual track on air with its real cover art, refreshed from the stream</li>
+    </ul>
   </div>
 </section>
 <section>
@@ -166,5 +208,62 @@
   </div>
 </footer>
 <script src="js/nav.js" defer></script>
+<script>
+(function(){
+  var cv=document.getElementById('npViz');
+  if(cv&&cv.getContext){
+    var ctx=cv.getContext('2d'),W=0,H=0,bars=64,phase=0,beat=0,last=0,running=true;
+    function size(){var r=cv.parentElement.getBoundingClientRect();W=cv.width=Math.max(1,r.width);H=cv.height=Math.max(1,r.height);}
+    size();window.addEventListener('resize',size);
+    if('IntersectionObserver' in window){new IntersectionObserver(function(e){running=e[0].isIntersecting;}).observe(cv);}
+    function frame(t){
+      requestAnimationFrame(frame);
+      if(!running)return;
+      var dt=Math.min(50,t-(last||t));last=t;phase+=dt/1000;
+      var cyc=(phase*2)%1;
+      beat+=(cyc<0.12?(0.12-cyc)*8:-beat*0.08);
+      ctx.clearRect(0,0,W,H);
+      var cx=W/2,cy=H/2,R=Math.min(W,H)*0.30;
+      ctx.lineWidth=Math.max(2,W/240);
+      for(var i=0;i<bars;i++){
+        var a=i/bars*Math.PI*2;
+        var v=0.35+0.65*Math.abs(Math.sin(i*0.7+phase*2.2))*(0.6+0.4*beat);
+        var len=R*0.55*v+beat*R*0.14;
+        ctx.strokeStyle='hsla('+(160+i*2)+',90%,'+(42+v*22)+'%,0.8)';
+        ctx.beginPath();
+        ctx.moveTo(cx+Math.cos(a)*R,cy+Math.sin(a)*R);
+        ctx.lineTo(cx+Math.cos(a)*(R+len),cy+Math.sin(a)*(R+len));
+        ctx.stroke();
+      }
+      var g=ctx.createRadialGradient(cx,cy,0,cx,cy,R);
+      g.addColorStop(0,'rgba(0,230,170,'+(0.10+beat*0.12)+')');
+      g.addColorStop(1,'rgba(0,230,170,0)');
+      ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+    }
+    requestAnimationFrame(frame);
+  }
+  function ago(iso,words){
+    var s=(Date.now()-new Date(iso).getTime())/1000;
+    if(s<60)return Math.floor(s)+words[0];
+    if(s<3600)return Math.floor(s/60)+words[1];
+    return Math.floor(s/3600)+words[2];
+  }
+  var WORDS=["s ago","m ago","h ago","listening","updated"];
+  function load(){
+    fetch('/radio/now-playing.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(d){
+      if(d.title)document.getElementById('npTitle').textContent=d.title;
+      if(d.artist)document.getElementById('npArtist').textContent=d.artist;
+      var art=document.getElementById('npArt');
+      if(d.artwork&&art.getAttribute('src')!==d.artwork){art.src=d.artwork;}
+      var l=document.getElementById('npListeners');
+      if(l)l.textContent=d.listeners>0?d.listeners+' '+WORDS[3]:'';
+      var u=document.getElementById('npUpdated');
+      if(u&&d.updated_at)u.textContent=WORDS[4]+' '+ago(d.updated_at,WORDS.slice(0,3));
+    }).catch(function(){});
+  }
+  load();setInterval(load,30000);
+})();
+</script>
+
 </body>
 </html>
