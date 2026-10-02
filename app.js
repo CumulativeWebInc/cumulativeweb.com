@@ -163,6 +163,13 @@
       '<li>' + ext(DB.commerce.software[3].url, 'Caravan') + '</li>' +
       '<li><a href="mailto:' + esc(DB.commerce.contact.email) + '">Contact</a></li>' +
       '</ul></div>' +
+      '<div><h4>New</h4><ul>' +
+      '<li>' + inl('/services.html', 'Services for artists') + '</li>' +
+      '<li>' + inl('/sanqa/', 'SANQA — the flagship suite') + '</li>' +
+      '<li>' + inl('/demo/neon-royale.html', 'Neon Royale white-label demo') + '</li>' +
+      '<li>' + inl('/press/ruby/', 'Ruby — CWI press interview') + '</li>' +
+      '<li>' + inl('/artists/dre50.html', 'Dre50 — CWI artist') + '</li>' +
+      '</ul></div>' +
       '<div><h4>Roster</h4><ul>' + arts + '</ul></div>' +
       '<div><h4>Music</h4><ul>' +
       (flag && flag.links && flag.links.spotify_artist ? '<li>' + ext(flag.links.spotify_artist, 'Listen on Spotify') + '</li>' : '') +
@@ -304,7 +311,7 @@
       : '<a class="btn btn--primary" href="mailto:' + esc(DB.commerce.contact.email) + '">Contact CWI</a>';
     return lockup('Artists', 'assets/cwi-logo.jpg') +
       '<section>' + sectionHead('The roster') +
-      '<p class="view-meta">' + rosterArtists().length + ' artists &amp; producers. DRAFT pages are in progress — shown as-is, never presented as available.</p>' +
+      '<p class="view-meta">' + rosterArtists().length + ' artists &amp; producers.</p>' +
       '<div class="ctas" style="margin-bottom:var(--space-5)">' + listenCta +
       '<a class="btn btn--secondary" href="mailto:' + esc(DB.commerce.contact.email) + '?subject=Booking%20an%20artist">Book an artist</a></div>' +
       '<div class="grid">' + rosterArtists().map(artistCard).join('') + '</div></section>' +
