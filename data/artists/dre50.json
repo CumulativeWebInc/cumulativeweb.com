@@ -5,7 +5,7 @@
   "genres": [
     "r&b"
   ],
-  "image": "placeholder",
+  "image": "assets/artist-dre50.jpg",
   "links": {
     "deezer_track": "https://www.deezer.com/en/track/3172508161",
     "note": "Pix on Deezer — 2:31; writers Andre Rowe + Black Lansky; composer Elevated and Friends",
@@ -52,5 +52,8 @@
       "title": "vai vem vem",
       "note": "℗ 2026 Cumulative Web Inc; written & produced by Dre50, co-produced by Black Lansky; UPC 700573334051, ISRC QTAZU2645608 (verified live 2026-09-30)"
     }
-  ]
+  ],
+  "image_source": "owner_upload",
+  "image_note": "AI-cleaned portrait supplied by Black Lansky 2026-10-02 (background removed, Range Rover parked sideways per his direction)",
+  "updated_at": "2026-10-02"
 }
