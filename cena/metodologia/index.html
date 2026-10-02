@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Metodologia CENA.BR — como pontuamos cada cidade | Cumulative Web Inc</title>
+<meta name="description" content="O método aberto da CENA.BR: fórmula de oportunidade, calibragem semanal, regras de honestidade e o brief do agente de IA.">
+<link rel="canonical" href="https://cumulativeweb.com/cena/metodologia/">
+<link rel="alternate" hreflang="pt-BR" href="https://cumulativeweb.com/cena/metodologia/">
+<link rel="icon" href="/assets/cwi-logo.jpg">
+<link rel="stylesheet" href="/cena/cena.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CENA.BR — Cumulative Web Inc">
+<meta property="og:title" content="Metodologia CENA.BR — como pontuamos cada cidade | Cumulative Web Inc">
+<meta property="og:description" content="O método aberto da CENA.BR: fórmula de oportunidade, calibragem semanal, regras de honestidade e o brief do agente de IA.">
+<meta property="og:url" content="https://cumulativeweb.com/cena/metodologia/">
+<meta property="og:image" content="https://cumulativeweb.com/assets/cwi-logo.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<div class="announce" id="announce" data-ver="1">
+<span>As primeiras datas e aparições da CENA.BR estão chegando.</span>
+<a href="https://www.instagram.com/cumulativeweb" target="_blank" rel="noopener">Segue @cumulativeweb no Instagram →</a>
+<button aria-label="Fechar aviso" onclick="document.getElementById('announce').remove();try{localStorage.setItem('cena-banner-v1','1')}catch(e){}">×</button>
+</div>
+<script>try{if(localStorage.getItem('cena-banner-v1'))document.getElementById('announce').remove()}catch(e){}</script>
+<header class="topbar">
+<a class="brand" href="/cena/"><img src="/assets/cwi-logo.jpg" alt="Cumulative Web Inc — logo"><span>CENA<strong>.BR</strong></span></a>
+<nav><a href="/cena/">Cidades</a><a href="/cena/metodologia/">Método</a><a href="/">cumulativeweb.com</a></nav>
+</header>
+<main class="metod">
+<h1>Metodologia</h1>
+<p class="tagline">O manual que o agente de IA usa para operar a CENA.BR — público, pra qualquer um auditar.</p>
+<section><h2>O objetivo</h2><p>Levar quem procura rap, trap e underground no Brasil até a música da CWI: cada página de cidade é uma porta de entrada que termina em play (Radio 365, YouTube, Spotify).</p>
+<p><strong>Rastro de linhagem:</strong> R2 — 100 verified Radio 365 listener sessions + 10 verified new signups + 25 unique Neon Nights devices by 2026-10-28.<br>city pages -&gt; organic search/social discovery -&gt; stream plays on Radio 365 embeds -&gt; measured listener sessions in radio-sessions/summary.json.<br>Conversão: page visit -&gt; press play on the Radio 365 embed (or follow to Spotify/YouTube) -&gt; session recorded.</p></section>
+<section><h2>A fórmula</h2>
+<p><strong>Insumos:</strong> demand (0-1): search/social demand evidence. scene (0-1): existing artist/event density. gap (0-1): lack of curated competition — higher means more open. confidence (0-1): data quality behind the numbers.</p>
+<p class="formula">opportunity = round(100 * (0.35*demand + 0.25*scene + 0.40*gap) * (0.6 + 0.4*confidence))</p>
+<p><strong>Leitura:</strong> Higher gap beats higher demand at the start: with zero domain authority in a market, an open lane outranks a crowded one. Confidence is shown as a separate badge — a high score with low confidence is a hypothesis, not a fact.</p>
+<p><strong>Previsão e calibragem:</strong> Each city carries predicted_trend + prediction_basis. The weekly loop compares predictions against Search Console clicks and Google Trends movement, then publishes a calibration note. Predictability is earned by calibration, never promised.</p></section>
+<section><h2>O loop semanal</h2><p>Weekly: re-run scoring with fresh Google Trends (pytrends, $0) + Search Console queries (connected) + page click data; re-rank cities; expand where traction shows; publish calibration note in hidden_files.</p></section>
+<section><h2>Regras de honestidade</h2><ul>
+<li>Scores built on estimates are labeled &#x27;estimativa inicial&#x27; with a confidence badge. They are replaced by measured data weekly.</li><li>Never claim a human listener. Classes: monitor / unverified.</li><li>No per-city playlist is shown until a real curated playlist exists for that city. Until then: CWI&#x27;s own catalog, clearly labeled.</li><li>No WhatsApp/Telegram join button until a real channel link exists. Share buttons (no number needed) ship from day one.</li><li>pt-BR always. LGPD respected: no tracking beyond privacy-friendly analytics, no personal data collected on-page.</li>
+</ul></section>
+<section><h2>Por que cada peça existe</h2><ul>
+<li><strong>URL real por cidade</strong> — o Google não indexa fragmentos de hash; sem URL real, não há magnetismo de busca.</li>
+<li><strong>pt-BR + &lt;100KB + zero imagem remota</strong> — o Brasil ouve no Android intermediário com dados móveis; página pesada não rankeia nem converte.</li>
+<li><strong>Nota de oportunidade + selo de confiança</strong> — separa hipótese de fato; o agente só escala o que tem confiança.</li>
+<li><strong>Botão de compartilhar no WhatsApp</strong> — é onde o Brasil troca música; funciona sem número, sem cadastro.</li>
+<li><strong>Rádio 365 em cada página</strong> — transforma visita em audição mensurável na hora.</li>
+<li><strong>Manda teu som + batalhas</strong> — o underground se autoabastece: artista manda som, evento entra no mapa, página ganha backlink e conteúdo fresco.</li>
+<li><strong>JSON-LD com bloco de linhagem</strong> — máquina lê o método, a fórmula e o rastro de resultado em cada página.</li>
+</ul></section>
+</main>
+<footer>
+<img src="/assets/cwi-logo.jpg" alt="Cumulative Web Inc — logo" class="flogo">
+<p><strong>CENA.BR</strong> é um projeto da <strong>Cumulative Web Inc</strong> — mapeando o rap, trap e underground do Brasil, cidade por cidade.</p>
+<p><a href="/">cumulativeweb.com</a> · <a href="/br/privacidade.html">Privacidade (LGPD)</a> · <a href="mailto:hp@cumulativeweb.com">Contato</a></p>
+<p class="tiny">Estimativas marcadas como tal são hipóteses iniciais, substituídas por dados medidos toda semana. Método aberto em <a href="/cena/metodologia/">/cena/metodologia/</a>.</p>
+</footer>
+</body>
+</html>
