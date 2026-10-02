@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ruby — CWI Press Interview | Cumulative Web Inc</title>
+<meta name="description" content="Cumulative Web Inc press interview: Ruby shares her story.">
+<style>
+  :root { --bg:#0b0b0b; --surface:#141414; --border:#2a2a2a; --text:#f2ede4; --sub:#a89f8f;
+          --accent:#d9b36c; --accent-ink:#0a0a0a; --ok:#3ddc84; --err:#ff6b6b; --radius:12px; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+         line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:24px 18px 80px; }
+  .brand { display:flex; align-items:center; gap:12px; margin-bottom:28px; }
+  .brand img { width:44px; height:44px; border-radius:50%; object-fit:cover; }
+  .brand b { letter-spacing:.06em; font-size:14px; }
+  .kicker { color:var(--accent); font-weight:700; font-size:13px; letter-spacing:.14em; text-transform:uppercase; }
+  h1 { font-size:30px; line-height:1.2; margin:8px 0 10px; }
+  .lede { color:var(--sub); margin:0 0 6px; }
+  .save-state { position:sticky; top:0; z-index:5; background:rgba(11,11,11,.94);
+    padding:10px 0; font-size:13px; color:var(--sub); border-bottom:1px solid var(--border); }
+  .save-state .dot { display:inline-block; width:8px; height:8px; border-radius:50%;
+    background:var(--ok); margin-right:8px; vertical-align:1px; }
+  .save-state.saving .dot { background:var(--accent); }
+  section.q { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    padding:20px; margin:18px 0; }
+  section.q h2 { font-size:17px; margin:0 0 4px; }
+  section.q .hint { font-size:13px; color:var(--sub); margin:0 0 12px; }
+  label.fl { display:block; font-size:13px; font-weight:700; color:var(--sub); margin:14px 0 6px; }
+  label.fl:first-of-type { margin-top:0; }
+  input[type=text], input[type=email], input[type=tel], input[type=url], textarea {
+    width:100%; background:#0e0e0e; border:1px solid var(--border); border-radius:8px;
+    color:var(--text); font-size:16px; padding:12px 14px; font-family:inherit; }
+  textarea { min-height:120px; resize:vertical; }
+  input:focus, textarea:focus { outline:none; border-color:var(--accent); }
+  .photo-preview { margin-top:12px; max-width:100%; border-radius:8px; display:none; }
+  .file-btn { display:inline-block; background:#1e1e1e; border:1px dashed var(--border); color:var(--text);
+    border-radius:8px; padding:14px 18px; font-size:15px; cursor:pointer; width:100%; text-align:center; }
+  .file-btn:hover { border-color:var(--accent); }
+  input[type=file] { display:none; }
+  .consent { display:flex; gap:12px; align-items:flex-start; font-size:14px; color:var(--sub); }
+  .consent input { width:20px; height:20px; margin-top:2px; accent-color:var(--accent); flex-shrink:0; }
+  .submit { width:100%; background:var(--accent); color:var(--accent-ink); border:none; border-radius:var(--radius);
+    font-size:18px; font-weight:800; padding:16px; cursor:pointer; margin-top:8px; }
+  .submit:disabled { opacity:.5; cursor:default; }
+  .msg { border-radius:var(--radius); padding:16px 18px; margin:18px 0; display:none; font-size:15px; }
+  .msg.ok { display:block; background:#0f2a1c; border:1px solid var(--ok); }
+  .msg.err { display:block; background:#2a0f0f; border:1px solid var(--err); }
+  .done { text-align:center; padding:40px 10px; }
+  .done h2 { font-size:26px; }
+  .req { color:var(--accent); }
+  footer { margin-top:40px; color:var(--sub); font-size:12px; text-align:center; }
+</style>
+</head>
+<body>
+<div class="save-state" id="saveState"><span class="dot"></span><span id="saveText">Ready — your answers save automatically as you type.</span></div>
+<div class="wrap" id="formWrap">
+  <div class="brand">
+    <img src="/assets/cwi-logo.jpg" alt="Cumulative Web Inc logo">
+    <b>CUMULATIVE WEB INC</b>
+  </div>
+  <div class="kicker">CWI Press</div>
+  <h1>Hi Ruby — tell us your story.</h1>
+  <p class="lede">Black Lansky would like to interview you for a CWI press feature. Answer at your own pace —
+  everything saves automatically, so you can leave and come back anytime. When you're done, hit submit.</p>
+  <p class="lede">After you submit, we'll write the draft and send you a link to review it before anything is published.</p>
+
+  <form id="interview" novalidate>
+    <section class="q">
+      <h2>About you</h2>
+      <label class="fl" for="f_name">Your name <span class="req">*</span></label>
+      <input type="text" id="f_name" name="name" autocomplete="name" required>
+      <label class="fl" for="f_role">Your role / title <span class="req">*</span></label>
+      <input type="text" id="f_role" name="role" placeholder="e.g. PR Assistant" required>
+      <label class="fl" for="f_business">Business name</label>
+      <input type="text" id="f_business" name="business" autocomplete="organization">
+      <label class="fl" for="f_email">Email <span class="req">*</span></label>
+      <input type="email" id="f_email" name="email" autocomplete="email" required>
+      <label class="fl" for="f_phone">Phone (optional)</label>
+      <input type="tel" id="f_phone" name="phone" autocomplete="tel">
+      <label class="fl" for="f_location">Location</label>
+      <input type="text" id="f_location" name="location" placeholder="City, State/Country">
+      <label class="fl" for="f_links">Website / social links</label>
+      <input type="text" id="f_links" name="links" placeholder="One per line or separated by commas">
+    </section>
+
+    <section class="q">
+      <h2>Tell us about your business.</h2>
+      <p class="hint">What is it, who is it for, what makes it yours.</p>
+      <textarea name="q_business" data-autosave></textarea>
+    </section>
+
+    <section class="q">
+      <h2>Why do you love doing it?</h2>
+      <textarea name="q_why_love" data-autosave></textarea>
+    </section>
+
+    <section class="q">
+      <h2>What do you do?</h2>
+      <p class="hint">Your services — walk us through what a client gets.</p>
+      <textarea name="q_what_you_do" data-autosave></textarea>
+    </section>
+
+    <section class="q">
+      <h2>How did you meet Cumulative Web Inc?</h2>
+      <textarea name="q_how_met_cwi" data-autosave></textarea>
+    </section>
+
+    <section class="q">
+      <h2>Projects you've done with us</h2>
+      <p class="hint">Anything you've worked on with CWI so far.</p>
+      <textarea name="q_projects_cwi" data-autosave></textarea>
+    </section>
+
+    <section class="q">
+      <h2>Projects with other people</h2>
+      <p class="hint">Other clients, artists, or companies you've worked with.</p>
+      <textarea name="q_projects_others" data-autosave></textarea>
+    </section>
+
+    <section class="q">
+      <h2>Stats</h2>
+      <p class="hint">Numbers that show your work — clients, placements, reach, growth, anything measurable.</p>
+      <textarea name="q_stats" data-autosave></textarea>
+    </section>
+
+    <section class="q">
+      <h2>Accomplishments</h2>
+      <p class="hint">What are you most proud of so far?</p>
+      <textarea name="q_accomplishments" data-autosave></textarea>
+    </section>
+
+    <section class="q">
+      <h2>Your goals</h2>
+      <textarea name="q_goals" data-autosave></textarea>
+    </section>
+
+    <section class="q">
+      <h2>Future goals with Cumulative Web Inc</h2>
+      <p class="hint">How you'd like to help CWI going forward — including the possibility of joining the team permanently.</p>
+      <textarea name="q_future_cwi" data-autosave></textarea>
+    </section>
+
+    <section class="q">
+      <h2>Your photo <span class="req">*</span></h2>
+      <p class="hint">Upload an image we can use with your story (JPG or PNG, up to 8 MB).</p>
+      <label class="file-btn" for="f_photo" id="photoLabel">Choose a photo…</label>
+      <input type="file" id="f_photo" name="photo" accept="image/jpeg,image/png,image/webp">
+      <img class="photo-preview" id="photoPreview" alt="Photo preview">
+    </section>
+
+    <section class="q">
+      <h2>Permission</h2>
+      <label class="consent">
+        <input type="checkbox" id="f_consent" name="consent">
+        <span>I give Cumulative Web Inc permission to publish my answers and photo in a press feature about me. <span class="req">*</span></span>
+      </label>
+    </section>
+
+    <div class="msg" id="msg"></div>
+    <button type="submit" class="submit" id="submitBtn">Submit my interview</button>
+  </form>
+  <footer>© 2026 Cumulative Web Inc — Press</footer>
+</div>
+
+<div class="wrap done" id="doneWrap" style="display:none">
+  <div class="brand" style="justify-content:center"><img src="/assets/cwi-logo.jpg" alt="Cumulative Web Inc logo"><b>CUMULATIVE WEB INC</b></div>
+  <h2>Thank you, Ruby! 🎉</h2>
+  <p class="lede">Your interview and photo are saved. Here's what happens next:</p>
+  <p class="lede">We'll work on the draft of your story, and when it's ready we'll send you a link to review it before anything is published.</p>
+  <p class="lede">— Black Lansky &amp; the CWI team</p>
+</div>
+
+<script>
+(function () {
+  var ENDPOINT = '/api/press-interview/submit';
+  var form = document.getElementById('interview');
+  var saveState = document.getElementById('saveState');
+  var saveText = document.getElementById('saveText');
+  var msg = document.getElementById('msg');
+  var submitBtn = document.getElementById('submitBtn');
+  var DRAFT_KEY = 'cwi-ruby-interview-draft';
+  var interviewId = null;
+  var saveTimer = null;
+  var photoDataUrl = null;
+
+  function setState(saving, text) {
+    saveState.classList.toggle('saving', !!saving);
+    saveText.textContent = text;
+  }
+  function showMsg(kind, text) {
+    msg.className = 'msg ' + kind;
+    msg.textContent = text;
+    msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  // Restore local draft
+  try {
+    var draft = JSON.parse(localStorage.getItem(DRAFT_KEY) || '{}');
+    Object.keys(draft).forEach(function (k) {
+      var el = form.elements[k];
+      if (el && k !== 'photo') {
+        if (el.type === 'checkbox') el.checked = !!draft[k];
+        else el.value = draft[k];
+      }
+    });
+    if (draft._interviewId) interviewId = draft._interviewId;
+  } catch (e) {}
+
+  function collectAnswers(status) {
+    var data = { status: status };
+    if (interviewId) data.interview_id = interviewId;
+    Array.prototype.forEach.call(form.elements, function (el) {
+      if (!el.name || el.name === 'photo') return;
+      data[el.name] = el.type === 'checkbox' ? (el.checked ? 'yes' : '') : el.value;
+    });
+    return data;
+  }
+
+  function localSave() {
+    try {
+      var d = collectAnswers('draft');
+      if (interviewId) d._interviewId = interviewId;
+      localStorage.setItem(DRAFT_KEY, JSON.stringify(d));
+    } catch (e) {}
+  }
+
+  function remoteSave(status, withPhoto, done) {
+    setState(true, 'Saving…');
+    var fd = new FormData();
+    var answers = collectAnswers(status);
+    fd.append('answers', JSON.stringify(answers));
+    var fileInput = document.getElementById('f_photo');
+    if (withPhoto && fileInput.files.length) fd.append('photo', fileInput.files[0]);
+    else if (photoDataUrl && withPhoto) fd.append('photo_dataurl', photoDataUrl);
+    fetch(ENDPOINT, { method: 'POST', body: fd })
+      .then(function (r) { return r.json(); })
+      .then(function (j) {
+        if (j && j.ok) {
+          interviewId = j.interview_id || interviewId;
+          localSave();
+          setState(false, status === 'submitted' ? 'Submitted ✓' : 'All changes saved ✓  (' + new Date().toLocaleTimeString() + ')');
+        } else {
+          setState(false, 'Saved on this device — will retry sending.');
+        }
+        if (done) done(j);
+      })
+      .catch(function () {
+        setState(false, 'Saved on this device — will retry sending.');
+        if (done) done(null);
+      });
+  }
+
+  function queueAutosave() {
+    localSave();
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(function () { remoteSave('draft', false); }, 2500);
+  }
+
+  form.addEventListener('input', queueAutosave);
+  form.addEventListener('change', queueAutosave);
+
+  // Photo preview + size guard
+  var fileInput = document.getElementById('f_photo');
+  var preview = document.getElementById('photoPreview');
+  var photoLabel = document.getElementById('photoLabel');
+  fileInput.addEventListener('change', function () {
+    var f = fileInput.files[0];
+    if (!f) return;
+    if (f.size > 8 * 1024 * 1024) {
+      showMsg('err', 'That photo is over 8 MB — please choose a smaller file.');
+      fileInput.value = '';
+      return;
+    }
+    photoLabel.textContent = f.name;
+    var rd = new FileReader();
+    rd.onload = function () {
+      photoDataUrl = rd.result;
+      preview.src = rd.result;
+      preview.style.display = 'block';
+    };
+    rd.readAsDataURL(f);
+    queueAutosave();
+  });
+
+  form.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var name = form.elements['name'].value.trim();
+    var email = form.elements['email'].value.trim();
+    var role = form.elements['role'].value.trim();
+    if (!name || !email || !role) { showMsg('err', 'Please fill in your name, role, and email.'); return; }
+    if (!document.getElementById('f_consent').checked) { showMsg('err', 'Please check the permission box so we can publish your story.'); return; }
+    if (!fileInput.files.length && !photoDataUrl) { showMsg('err', 'Please upload a photo for your story.'); return; }
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Submitting…';
+    remoteSave('submitted', true, function (j) {
+      if (j && j.ok) {
+        document.getElementById('formWrap').style.display = 'none';
+        document.getElementById('doneWrap').style.display = 'block';
+        try { localStorage.removeItem(DRAFT_KEY); } catch (e) {}
+        window.scrollTo(0, 0);
+      } else {
+        showMsg('err', 'Could not submit right now — your answers are saved on this device. Please check your connection and try again.');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Submit my interview';
+      }
+    });
+  });
+
+  // Initial draft ping so progress is visible even before she types much
+  setTimeout(function () { remoteSave('draft', false); }, 8000);
+})();
+</script>
+</body>
+</html>
