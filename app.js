@@ -173,6 +173,13 @@
       '<li>' + inl('#/music', 'All music') + '</li>' +
       '<li>' + inl('radio.html', 'Cumulative Radio 365') + '</li>' +
       '</ul></div>' +
+      '<div><h4>Social</h4><ul>' +
+      '<li>' + ext('https://www.instagram.com/cumulativeweb', 'Instagram') + '</li>' +
+      '<li>' + ext('https://x.com/cumulativeweb', 'X') + '</li>' +
+      '<li>' + ext('https://www.youtube.com/@cumulativeweb', 'YouTube') + '</li>' +
+      '<li>' + ext('https://www.tiktok.com/@cumulativeweb', 'TikTok') + '</li>' +
+      '<li>' + ext('https://www.facebook.com/Cumulative-Web-102372541712722', 'Facebook') + '</li>' +
+      '</ul></div>' +
       '<div><h4>Games</h4><ul>' +
       '<li>' + inl('games.html', 'All games') + '</li>' +
       '<li>' + ext('https://cumulativewebinc.github.io/cwi-777-neon-nights/', 'Neon Nights pt. 777') + '</li>' +
