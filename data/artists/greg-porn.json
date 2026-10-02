@@ -16,18 +16,39 @@
     "waitlist": "mailto:hp@cumulativeweb.com"
   },
   "name": "Greg Porn",
-  "releases": [],
+  "releases": [
+    {
+      "title": "Pay Yourself",
+      "type": "single",
+      "status": "LIVE",
+      "release_date": "2023-07-04",
+      "label": "Cumulative Web Inc",
+      "upc": "197901983966",
+      "isrc": "QZMEP2353035",
+      "note": "DistroKid-verified (screenshot 2026-10-02): processed and delivered to stores. Produced by Rick Friedrich (The Roots camp), co-produced by Black Lansky."
+    },
+    {
+      "title": "On Edge",
+      "type": "single",
+      "status": "LIVE",
+      "release_date": "2023-08-10",
+      "label": "Cumulative Web Inc",
+      "upc": "197993834085",
+      "isrc": "QZPLR2387460",
+      "note": "DistroKid-verified (screenshot 2026-10-02): delivered to 28 streaming platforms and stores."
+    }
+  ],
   "role": "artist",
   "slug": "greg-porn",
   "status": "LIVE",
   "tagline": "CWI roster artist — cyberpunk rap; Pay Yourself produced by Rick Friedrich, co-produced by Black Lansky.",
   "tracks": [
     {
-      "note": "Single; produced by Rick Friedrich (The Roots camp), co-produced by Black Lansky — documented in CWI's Nov 2025 Medium article",
+      "note": "Single; produced by Rick Friedrich (The Roots camp), co-produced by Black Lansky. DistroKid-verified: released 2023-07-04, UPC 197901983966, ISRC QZMEP2353035, delivered to stores.",
       "title": "Pay Yourself"
     },
     {
-      "note": "Psychological-thriller sync asset — documented in CWI's cyberpunk-rap buyer's guide; streaming record pending",
+      "note": "Psychological-thriller sync asset — documented in CWI's cyberpunk-rap buyer's guide. DistroKid-verified: released 2023-08-10, UPC 197993834085, ISRC QZPLR2387460, delivered to 28 platforms.",
       "title": "On Edge"
     },
     {
