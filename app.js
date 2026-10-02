@@ -142,7 +142,9 @@
       '<span class="tmeta"><span class="t">' + titleHtml + '</span><span class="a">' + esc(artistName) +
       (t.note ? ' · ' + esc(t.note) : '') + '</span></span>' +
       '<span class="tright">' + (live ? badge('LIVE') : '') + stBadge +
-      (live ? playCircle(trackUrl(t.spotify_track_id), t.title) : '') + '</span></li>';
+      (live ? playCircle(trackUrl(t.spotify_track_id), t.title) : '') +
+      (t.audio_file ? '<audio controls preload="metadata" src="' + esc(t.audio_file) + '" style="max-width:200px;vertical-align:middle"></audio>' : '') +
+      '</span></li>';
   }
 
   function footer() {
@@ -334,6 +336,15 @@
     if ((a.tracks || []).length) {
       html += '<section>' + sectionHead('Tracks') +
         '<ol class="tracklist">' + a.tracks.map(function (t) { return trackRow(t, a.name); }).join('') + '</ol></section>';
+    }
+
+    if ((a.videos || []).length) {
+      html += '<section>' + sectionHead('Videos') + '<div class="grid">' + a.videos.map(function (v) {
+        return '<div class="card"><h3>' + esc(v.title) + '</h3>' +
+          (v.note ? '<div class="sub">' + esc(v.note) + '</div>' : '') +
+          '<div class="badge-row">' + badge(v.status || 'UNRELEASED') + '</div>' +
+          '<video controls preload="metadata" playsinline src="' + esc(v.file) + '" style="width:100%;border-radius:8px;margin-top:var(--space-2)"></video></div>';
+      }).join('') + '</div></section>';
     }
 
     var links = a.links || {};
