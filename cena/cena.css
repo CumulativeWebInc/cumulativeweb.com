@@ -66,3 +66,6 @@ footer a{color:var(--txt)}
 .segue .btnrow .soc{background:var(--panel);color:var(--txt);border:1px solid var(--line)}
 .airplay{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accent,#00e5a0);border-radius:.8rem;padding:1.2rem;margin-top:2.2rem}
 .airplay h2{margin-top:0}
+.ytcard{display:flex;gap:1rem;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:.7rem;padding:1rem}
+.ytcard img{width:64px;height:64px;border-radius:50%}
+.ytcard .btn{margin-top:.5rem}
