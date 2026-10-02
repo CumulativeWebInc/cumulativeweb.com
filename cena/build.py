@@ -68,7 +68,8 @@ def header(meta):
 def social_row(meta):
     s = meta.get("social", {})
     links = [("Instagram", s.get("instagram")), ("TikTok", s.get("tiktok")),
-             ("YouTube", s.get("youtube")), ("X", s.get("x"))]
+             ("YouTube", s.get("youtube")), ("X", s.get("x")),
+             ("Facebook", s.get("facebook"))]
     btns = "".join(f'<a class="btn soc" href="{esc(u)}" target="_blank" rel="noopener">{n}</a>'
                    for n, u in links if u)
     return f"""<section class="segue">
@@ -91,10 +92,18 @@ def airplay_section(c, meta):
 </section>"""
 
 def footer(meta):
+    soc = meta.get("social", {})
+    soc_links = " · ".join(
+        f'<a href="{esc(u)}">{n}</a>'
+        for n, u in [("Instagram", soc.get("instagram")), ("X", soc.get("x")),
+                     ("YouTube", soc.get("youtube")), ("TikTok", soc.get("tiktok")),
+                     ("Facebook", soc.get("facebook"))]
+        if u)
     return f"""<footer>
 <img src="/assets/cwi-logo.jpg" alt="Cumulative Web Inc — logo" class="flogo">
 <p><strong>CENA.BR</strong> é um projeto da <strong>Cumulative Web Inc</strong> — mapeando o rap, trap e underground do Brasil, cidade por cidade.</p>
 <p><a href="/">cumulativeweb.com</a> · <a href="/br/privacidade.html">Privacidade (LGPD)</a> · <a href="mailto:{meta['cwi']['contact_email']}">Contato</a></p>
+<p>Social: {soc_links}</p>
 <p class="tiny">Estimativas marcadas como tal são hipóteses iniciais, substituídas por dados medidos toda semana. Método aberto em <a href="/cena/metodologia/">/cena/metodologia/</a>.</p>
 </footer>
 </body>
