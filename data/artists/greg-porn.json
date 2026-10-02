@@ -6,7 +6,7 @@
     "cyber hip hop",
     "alternative rap"
   ],
-  "image": "placeholder",
+  "image": "assets/artist-greg-porn.jpg",
   "links": {
     "note": "Owner-verified artist (2026-10-02); streaming profile links to be added"
   },
@@ -31,13 +31,25 @@
       "title": "On Edge"
     },
     {
-      "note": "Dystopian gaming trailer hook — documented in CWI's cyberpunk-rap buyer's guide; not located on any streaming platform — ISRC/record still needed",
-      "title": "Unholy Hunter"
+      "note": "Dystopian gaming trailer hook — documented in CWI's cyberpunk-rap buyer's guide. Unreleased Ref 1.0 audio + vertical visual held by Black Lansky (received 2026-10-02). ISRC/record still needed.",
+      "title": "Unholy Hunter",
+      "status": "UNRELEASED",
+      "audio_file": "assets/audio-greg-porn-unholy-hunter.mp3"
     },
     {
       "note": "59,290 plays with major features — identity UNCONFIRMED, do not promote as Greg Porn's",
       "status": "PLANNED",
       "title": "Cloud 9"
     }
-  ]
+  ],
+  "image_source": "owner_upload",
+  "videos": [
+    {
+      "title": "Unholy Hunter (visual)",
+      "file": "assets/video-greg-porn-unholy-hunter.mp4",
+      "status": "UNRELEASED",
+      "note": "Unreleased vertical visual — CWI exclusive. Held by Black Lansky."
+    }
+  ],
+  "updated_at": "2026-10-02"
 }
