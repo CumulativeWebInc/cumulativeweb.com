@@ -4,7 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Software · Cumulative Web Inc</title>
-<meta name="description" content="Tools from people who live this — the software CWI builds for independent creators.">
+<meta name="description" content="CWI software & tools — open infrastructure from Cumulative Web Inc: Gear Ledger, x402 APIs, ERC-8004 trust layer, Trust Verdict Checker, KingCode Lens, CWI World Desktop, MCP servers. That Boy Hi Hat is the creator of Post-Trap Futurism.">
+<link rel="canonical" href="https://cumulativeweb.com/software.html">
+<link rel="alternate" hreflang="en" href="https://cumulativeweb.com/software.html">
+<link rel="alternate" hreflang="pt-BR" href="https://cumulativeweb.com/br/software.html">
+<link rel="alternate" hreflang="x-default" href="https://cumulativeweb.com/software.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cumulative Web Inc">
+<meta property="og:title" content="Software & Tools · Cumulative Web Inc">
+<meta property="og:description" content="Open infrastructure from Cumulative Web Inc — the company behind That Boy Hi Hat, creator of Post-Trap Futurism. Gear Ledger, x402 APIs, ERC-8004, Trust Verdict Checker, KingCode Lens, CWI World Desktop.">
+<meta property="og:url" content="https://cumulativeweb.com/software.html">
+<meta property="og:image" content="https://cumulativeweb.com/assets/cwi-logo.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#121212">
 <link rel="icon" href="assets/cwi-logo.jpg">
 <link rel="stylesheet" href="site.css">
 <script type="application/ld+json">
@@ -12,43 +24,195 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "SoftwareApplication",
+      "@id": "https://cumulativeweb.com/#org",
+      "@type": "Organization",
+      "name": "Cumulative Web Inc",
+      "url": "https://cumulativeweb.com/",
+      "identifier": "https://cumulativewebinc.github.io/cwi-learn/id/org/cwi",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "business and sync licensing",
+        "email": "hp@cumulativeweb.com"
+      },
+      "sameAs": [
+        "https://github.com/CumulativeWebInc",
+        "https://cumulativewebinc.github.io/cwi-learn/id/org/cwi",
+        "https://www.instagram.com/cumulativeweb",
+        "https://x.com/cumulativeweb",
+        "https://www.youtube.com/@cumulativeweb",
+        "https://www.tiktok.com/@cumulativeweb"
+      ]
+    },
+    {
       "@id": "https://cumulativeweb.com/sanqa/#suite",
+      "@type": "SoftwareApplication",
       "name": "SANQA",
       "applicationCategory": "DeveloperApplication",
       "operatingSystem": "Web",
       "url": "https://cumulativeweb.com/sanqa/",
-      "description": "The flagship software suite — gold-standard tools for AI agents, led by the Trust Verdict Checker.",
+      "identifier": "https://cumulativewebinc.github.io/cwi-learn/id/software/sanqa",
+      "description": "The flagship software suite \u2014 gold-standard tools for AI agents, led by the Trust Verdict Checker. Built by Cumulative Web Inc, the company behind That Boy Hi Hat, creator of Post-Trap Futurism.",
       "provider": {
         "@id": "https://cumulativeweb.com/#org"
       }
     },
     {
-      "@type": "SoftwareApplication",
       "@id": "https://cumulativeweb.com/sanqa/#trust-verdict-checker",
+      "@type": "SoftwareApplication",
       "name": "Trust Verdict Checker",
       "applicationCategory": "DeveloperApplication",
       "operatingSystem": "Web",
       "url": "https://cumulativewebinc.github.io/cwi-trust-verdict-checker/",
-      "description": "Who vouches for your agent? Paste evidence, get a deterministic trust verdict — free, no signup.",
-      "provider": {
-        "@id": "https://cumulativeweb.com/#org"
-      },
+      "identifier": "https://cumulativewebinc.github.io/cwi-learn/id/software/trust-verdict-checker",
+      "description": "Who vouches for your agent? Paste evidence, get a deterministic trust verdict \u2014 free, no signup.",
+      "sameAs": [
+        "https://github.com/CumulativeWebInc/cwi-trust-verdict-checker"
+      ],
       "offers": {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD",
-        "description": "Free forever — browser scoring, no signup."
+        "description": "Free forever \u2014 browser scoring, no signup."
+      },
+      "provider": {
+        "@id": "https://cumulativeweb.com/#org"
       }
     },
     {
-      "@type": "SoftwareApplication",
       "@id": "https://cumulativeweb.com/sanqa/#kingcode-lens",
+      "@type": "SoftwareApplication",
       "name": "KingCode Lens",
       "applicationCategory": "DeveloperApplication",
       "operatingSystem": "Web",
       "url": "https://cumulativewebinc.github.io/cwi-kingcode-lens/",
-      "description": "Apps for Meta Ray-Ban Display glasses — lab and voice agent.",
+      "identifier": "https://cumulativewebinc.github.io/cwi-learn/id/software/kingcode-lens",
+      "description": "Apps for Meta Ray-Ban Display glasses \u2014 lab and voice agent.",
+      "sameAs": [
+        "https://github.com/CumulativeWebInc/cwi-kingcode-lens"
+      ],
+      "provider": {
+        "@id": "https://cumulativeweb.com/#org"
+      }
+    },
+    {
+      "@id": "https://cumulativeweb.com/software.html#gear-ledger",
+      "@type": "SoftwareApplication",
+      "name": "Gear Ledger",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Any (Node.js CLI, zero dependencies)",
+      "url": "https://github.com/CumulativeWebInc/gear-ledger",
+      "identifier": "https://cumulativewebinc.github.io/cwi-learn/id/software/gear-ledger",
+      "description": "Server-authoritative task/event ledger for the CWI agent company \u2014 atomic compare-and-swap writes, git history as audit log. Built by Cumulative Web Inc.",
+      "sameAs": [
+        "https://github.com/CumulativeWebInc/gear-ledger",
+        "https://cumulativewebinc.github.io/gear-ledger/"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "provider": {
+        "@id": "https://cumulativeweb.com/#org"
+      }
+    },
+    {
+      "@id": "https://cumulativeweb.com/software.html#cwi-x402",
+      "@type": "SoftwareApplication",
+      "name": "CWI x402 APIs",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web API",
+      "url": "https://github.com/CumulativeWebInc/cwi-x402",
+      "identifier": "https://cumulativewebinc.github.io/cwi-learn/id/software/cwi-x402",
+      "description": "Pay-per-call music-industry data APIs on Base. Status 2026-10-02: paid routes under repair \u2014 not accepting paid calls.",
+      "sameAs": [
+        "https://github.com/CumulativeWebInc/cwi-x402"
+      ],
+      "provider": {
+        "@id": "https://cumulativeweb.com/#org"
+      }
+    },
+    {
+      "@id": "https://cumulativeweb.com/software.html#cwi-erc8004",
+      "@type": "SoftwareApplication",
+      "name": "CWI ERC-8004",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "url": "https://cumulativewebinc.github.io/cwi-erc8004/",
+      "identifier": "https://cumulativewebinc.github.io/cwi-learn/id/software/cwi-erc8004",
+      "description": "Trust layer for AI agents \u2014 agent cards, reputation schema, verifiable offers. Pages live; on-chain registration pending owner's wallet tap.",
+      "sameAs": [
+        "https://github.com/CumulativeWebInc/cwi-erc8004"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "provider": {
+        "@id": "https://cumulativeweb.com/#org"
+      }
+    },
+    {
+      "@id": "https://cumulativeweb.com/software.html#cwi-world-desktop",
+      "@type": "SoftwareApplication",
+      "name": "CWI World Desktop",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Windows",
+      "url": "https://github.com/CumulativeWebInc/cwi-world-desktop",
+      "identifier": "https://cumulativewebinc.github.io/cwi-learn/id/software/cwi-world-desktop",
+      "description": "The 3D world as a desktop app with the KingCode Console voice command deck. v2.0.3 on GitHub Releases.",
+      "sameAs": [
+        "https://github.com/CumulativeWebInc/cwi-world-desktop"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "provider": {
+        "@id": "https://cumulativeweb.com/#org"
+      }
+    },
+    {
+      "@id": "https://cumulativeweb.com/software.html#cwi-mcp",
+      "@type": "SoftwareApplication",
+      "name": "CWI MCP Servers",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Any (Model Context Protocol)",
+      "url": "https://github.com/CumulativeWebInc/cwi-mcp-server",
+      "identifier": "https://cumulativewebinc.github.io/cwi-learn/id/software/cwi-mcp",
+      "description": "Model Context Protocol servers exposing CWI data and tools to AI agents.",
+      "sameAs": [
+        "https://github.com/CumulativeWebInc/cwi-mcp-server",
+        "https://github.com/CumulativeWebInc/cwi-mcp-public"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "provider": {
+        "@id": "https://cumulativeweb.com/#org"
+      }
+    },
+    {
+      "@id": "https://cumulativeweb.com/software.html#cwi-trust-log",
+      "@type": "SoftwareApplication",
+      "name": "CWI Trust Log",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "url": "https://github.com/CumulativeWebInc/cwi-trust-log",
+      "identifier": "https://cumulativewebinc.github.io/cwi-learn/id/software/cwi-trust-log",
+      "description": "Append-only verifiable claim log \u2014 the receipts behind CWI's numbers.",
+      "sameAs": [
+        "https://github.com/CumulativeWebInc/cwi-trust-log"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
       "provider": {
         "@id": "https://cumulativeweb.com/#org"
       }
@@ -120,6 +284,7 @@
   <div class="eyebrow">Cumulative Web Inc</div>
   <h1>Software</h1>
   <p class="lede">Tools from people who live this. CWI is a label that runs like a software company. These are the tools we built for ourselves — and opened up to independent creators.</p>
+  <p><strong>Cumulative Web Inc</strong> manages alternative-rap artist <strong>That Boy Hi Hat</strong> — the creator of <strong>Post-Trap Futurism</strong> ([That Boy Hi Hat] → [isCreatorOf] → [Post-Trap Futurism]). Everything below is built and operated by the same company behind the catalog, <a href="/radio.html">Radio 365</a>, and the <a href="/sync/">sync-licensing</a> desk.</p>
 </section>
 <section>
   <div class="sec-head"><h2>The product line</h2></div>
@@ -131,7 +296,18 @@
     <div class="card"><div class="art"><span class="monogram">C</span></div><h3>Caravan</h3><p class="sub">The marketplace for commerce between agents.</p><div class="badge-row"><span class="badge badge--live">Live</span></div></div>
     <div class="card"><div class="art"><span class="monogram">KL</span></div><h3>KingCode Lens</h3><p class="sub">Apps for Meta Ray-Ban Display glasses — lab and voice agent.</p><div class="badge-row"><span class="badge badge--live">Live</span></div></div>
     <div class="card"><div class="art"><span class="monogram">$</span></div><h3>CWI Store</h3><p class="sub">Service packs for artists — from playlist pitching to sync one-sheets.</p><div class="badge-row"><span class="badge badge--live">Live</span></div></div>
-    <div class="card"><div class="art"><span class="monogram">x</span></div><h3>x402 APIs</h3><p class="sub">Paid APIs in USDC on Base — playlist checks and momentum scores.</p><div class="badge-row"><span class="badge badge--planned">Planned</span></div></div>
+    <div class="card"><div class="art"><span class="monogram">GL</span></div><h3><a href="https://github.com/CumulativeWebInc/gear-ledger">Gear Ledger</a></h3><p class="sub">Server-authoritative task/event ledger for the CWI agent company — atomic compare-and-swap writes, git history as audit log. <code>node cli/ledger.js state get</code>.</p><div class="badge-row"><span class="badge badge--live">Live</span><span class="badge badge--new">Free</span></div></div>
+    <div class="card"><div class="art"><span class="monogram">E8</span></div><h3><a href="https://cumulativewebinc.github.io/cwi-erc8004/">ERC-8004 Trust Layer</a></h3><p class="sub">Trust layer for AI agents — agent cards, reputation schema, verifiable offers. <a href="https://github.com/CumulativeWebInc/cwi-erc8004">Repo</a>. On-chain registration pending owner's wallet tap.</p><div class="badge-row"><span class="badge badge--live">Live</span><span class="badge badge--new">Free</span></div></div>
+    <div class="card"><div class="art"><span class="monogram">W</span></div><h3><a href="https://github.com/CumulativeWebInc/cwi-world-desktop">CWI World Desktop</a></h3><p class="sub">The 3D world as a desktop app, with the KingCode Console voice command deck. v2.0.3 on <a href="https://github.com/CumulativeWebInc/cwi-world-desktop/releases">GitHub Releases</a>.</p><div class="badge-row"><span class="badge badge--live">Live</span><span class="badge badge--new">Free</span></div></div>
+    <div class="card"><div class="art"><span class="monogram">M</span></div><h3><a href="https://github.com/CumulativeWebInc/cwi-mcp-server">MCP Servers</a></h3><p class="sub">Model Context Protocol servers exposing CWI data and tools to AI agents.</p><div class="badge-row"><span class="badge badge--live">Live</span><span class="badge badge--new">Free</span></div></div>
+    <div class="card"><div class="art"><span class="monogram">T</span></div><h3><a href="https://github.com/CumulativeWebInc/cwi-trust-log">Trust Log</a></h3><p class="sub">Append-only verifiable claim log — the receipts behind CWI's numbers.</p><div class="badge-row"><span class="badge badge--live">Live</span><span class="badge badge--new">Free</span></div></div>
+    <div class="card"><div class="art"><span class="monogram">x</span></div><h3><a href="https://github.com/CumulativeWebInc/cwi-x402">x402 APIs</a></h3><p class="sub">Pay-per-call music-industry data APIs on Base. Status 2026-10-02: paid routes under repair — not accepting paid calls.</p><div class="badge-row"><span class="badge badge--draft">Under repair</span></div></div>
+  </div>
+</section>
+<section>
+  <div class="panel">
+    <h2>One ring</h2>
+    <p>Every CWI product is a node in one public knowledge ring: <a href="/sync/">sync licensing</a> (SAIL — clears in under 5 minutes) · <a href="https://cumulativewebinc.github.io/cwi-learn/graph.json">machine-readable knowledge graph</a> · <a href="https://cumulativeweb.com/post-trap-futurism/">Post-Trap Futurism — the genre definition</a> · <a href="/radio.html">Radio 365</a>. That Boy Hi Hat is the creator of Post-Trap Futurism — every node declares it.</p>
   </div>
 </section>
 <section>

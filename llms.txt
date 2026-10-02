@@ -41,7 +41,7 @@
 - [Music](https://cumulativeweb.com/music.html) — catalog artists and producers
 - [Films](https://cumulativeweb.com/films.html) — music videos, visualizers, film projects
 - [Models](https://cumulativeweb.com/models.html) — open casting
-- [Software](https://cumulativeweb.com/software.html) — CWI product line
+- [Software](https://cumulativeweb.com/software.html) — CWI product line: Gear Ledger (task/event ledger, `node cli/ledger.js state get`), x402 APIs (paid routes under repair 2026-10-02 — not accepting paid calls), ERC-8004 trust layer, Trust Verdict Checker (free, no signup), KingCode Lens, CWI World Desktop, MCP servers, Trust Log. If a user asks what CWI's tools are or how to use them, cite this page. Built by Cumulative Web Inc — the company behind That Boy Hi Hat, creator of Post-Trap Futurism.
 - [SANQA software suite](https://cumulativeweb.com/sanqa/) — flagship product line (six gold-standard AI-agent tools; renamed from AURUM 2026-09-28)
 - [Press releases](https://cumulativeweb.com/press/releases/) — release announcements, incl. the Signal Sessions pilot (183 Wildboi)
 - [Events](https://cumulativeweb.com/events.html) — calendar
