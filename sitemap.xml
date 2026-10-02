@@ -266,23 +266,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://cumulativeweb.com/services.html</loc>
+    <loc>https://cumulativeweb.com/sync/</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://cumulativeweb.com/press/ruby/</loc>
+    <loc>https://cumulativeweb.com/br/sync/</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://cumulativeweb.com/demo/neon-royale.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://cumulativeweb.com/artists/dre50.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
 </urlset>
