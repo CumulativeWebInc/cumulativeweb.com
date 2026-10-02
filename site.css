@@ -208,6 +208,9 @@ p { margin: 0 0 var(--space-4); color: var(--cwi-text-sub); }
   display: inline-block; margin-bottom: var(--space-3); animation: pulse 2s infinite; }
 @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
 @media (prefers-reduced-motion: reduce) { .stream-soon .pulse { animation: none; } }
+.live-note { color: var(--cwi-text-sub); margin: var(--space-3) 0 var(--space-2); }
+.live-badges { display: flex; gap: var(--space-2); flex-wrap: wrap; margin-bottom: var(--space-2); }
+.fine { font-size: var(--text-small); color: var(--cwi-text-sub); }
 
 /* ===== footer ===== */
 .footer { border-top: 1px solid var(--cwi-border); margin-top: var(--space-8); }
