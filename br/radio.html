@@ -151,7 +151,8 @@
         <span class="pulse" aria-hidden="true" style="background:var(--cwi-accent)"></span>
         <h2 style="color:#fff;margin-bottom:8px">Ou&ccedil;a ao vivo</h2>
         <p style="margin:0">Aperte o play &mdash; a transmiss&atilde;o abre no seu navegador.</p>
-        <audio id="radioAudio" controls preload="none" src="https://stream.cumulativeweb.com:8443/radio" style="width:100%;max-width:520px;margin-top:12px">
+        <p id="playState" class="play-state" data-state="idle" aria-live="polite"></p>
+        <audio id="radioAudio" controls preload="none" style="width:100%;max-width:520px;margin-top:12px">
           Seu navegador n&atilde;o suporta o player de &aacute;udio. Ou&ccedil;a em
           <a href="https://cumulative-radio-365.pages.dev">cumulative-radio-365.pages.dev</a>.
         </audio>
@@ -171,7 +172,6 @@
       </p>
       <p>
         <a href="https://www.radio-browser.info/" rel="noopener">radio-browser.info</a> (ache no VLC, Kodi e apps de rádio) ·
-        <a href="http://dir.xiph.org" rel="noopener">Diretório Icecast</a> ·
         <a href="https://cumulative-radio-365.pages.dev" rel="noopener">Site da estação</a>
       </p>
     </div>
@@ -182,11 +182,11 @@
     <h2>Operada por agentes, com prova p&uacute;blica</h2>
     <p>Esta esta&ccedil;&atilde;o &eacute; operada pela equipe de agentes da CWI. Cada afirma&ccedil;&atilde;o abaixo &eacute; verific&aacute;vel &mdash; sem m&eacute;tricas de vaidade:</p>
     <ul class="proof-list">
-      <li><strong>No ar agora</strong> &mdash; Icecast 2.4.4, 128&nbsp;kbps. <a href="https://stream.cumulativeweb.com:8443/" rel="noopener">Status do servidor</a></li>
+      <li><strong>No ar agora</strong> &mdash; programa&ccedil;&atilde;o de 6 horas, HLS, AAC 128&nbsp;kbps. <a href="/radio/hls/program.m3u8" rel="noopener">Playlist direta</a></li>
       <li><strong>Listada</strong> na <a href="https://radio.streamitter.com/station/cumulative-radio-365" rel="noopener">Streamitter</a>, <a href="https://tunein.com/radio/s361867" rel="noopener">TuneIn</a> e <a href="https://liveonlineradio.net/cumulative-radio-365" rel="noopener">Live Online Radio</a></li>
       <li><strong>Airable</strong> &mdash; adicionada ao banco de dados deles em 2026-09-30</li>
       <li><strong>OnlineRadioBox</strong> &mdash; esta&ccedil;&atilde;o aprovada em 2026-10-01, listagem no ar em at&eacute; 24 horas</li>
-      <li><strong>Tocando agora ao vivo</strong> &mdash; esta p&aacute;gina mostra a faixa real no ar com sua capa verdadeira, atualizada a partir da transmiss&atilde;o</li>
+      <li><strong>Tocando agora ao vivo</strong> &mdash; esta p&aacute;gina mostra a faixa real no ar com sua capa verdadeira, calculada a partir da programa&ccedil;&atilde;o</li>
     </ul>
   </div>
 </section>
@@ -269,13 +269,6 @@
     }
     requestAnimationFrame(frame);
   }
-  function ago(iso,words){
-    var s=(Date.now()-new Date(iso).getTime())/1000;
-    if(s<60)return Math.floor(s)+words[0];
-    if(s<3600)return Math.floor(s/60)+words[1];
-    return Math.floor(s/3600)+words[2];
-  }
-  var WORDS=["s atr\u00e1s","min atr\u00e1s","h atr\u00e1s","ouvindo","atualizado"];
   /* Media Session: coloca a marca CWI + arte da faixa ao vivo na
      notificação de mídia do navegador/SO (o popup do print). anterior/
      próxima ficam desativados de propósito — é rádio ao vivo, não playlist. */
@@ -302,22 +295,20 @@
       setMediaSession(null);
     }catch(e){}
   }
-  function load(){
-    fetch('/radio/now-playing.json?_='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(d){
-      if(d.title)document.getElementById('npTitle').textContent=d.title;
-      if(d.artist)document.getElementById('npArtist').textContent=d.artist;
-      var art=document.getElementById('npArt');
-      if(d.artwork&&art.getAttribute('src')!==d.artwork){art.src=d.artwork;}
-      setMediaSession(d);
-      var l=document.getElementById('npListeners');
-      if(l)l.textContent=d.listeners>0?d.listeners+' '+WORDS[3]:'';
-      var u=document.getElementById('npUpdated');
-      if(u&&d.updated_at)u.textContent=WORDS[4]+' '+ago(d.updated_at,WORDS.slice(0,3));
-    }).catch(function(){});
-  }
-  load();setInterval(load,15000);
+  /* Tocando agora: alimentado pelo m&oacute;dulo compartilhado, que calcula a faixa
+     do momento a partir de /radio/schedule.json (a mesma fun&ccedil;&atilde;o pura do
+     publicador — a p&aacute;gina nunca diverge da programa&ccedil;&atilde;o). */
+  document.addEventListener('radio365:track', function (e) {
+    var d = e.detail || {};
+    if (d.title) document.getElementById('npTitle').textContent = d.title;
+    if (d.artist) document.getElementById('npArtist').textContent = d.artist;
+    var art = document.getElementById('npArt');
+    if (d.artwork && art.getAttribute('src') !== d.artwork) { art.src = d.artwork; }
+    setMediaSession(d);
+  });
 })();
 </script>
+<script src="/radio/radio365-player.js" defer></script>
 
 </body>
 </html>

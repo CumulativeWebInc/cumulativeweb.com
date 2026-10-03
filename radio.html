@@ -131,7 +131,8 @@
         <span class="pulse" aria-hidden="true" style="background:var(--cwi-accent)"></span>
         <h2 style="color:#fff">Listen live</h2>
         <p>Press play — the stream opens in your browser.</p>
-        <audio id="radioAudio" controls preload="none" src="https://stream.cumulativeweb.com:8443/radio" style="width:100%;max-width:520px;margin-top:12px">
+        <p id="playState" class="play-state" data-state="idle" aria-live="polite"></p>
+        <audio id="radioAudio" controls preload="none" style="width:100%;max-width:520px;margin-top:12px">
           Your browser does not support the audio element. Listen at
           <a href="https://cumulative-radio-365.pages.dev">cumulative-radio-365.pages.dev</a>.
         </audio>
@@ -150,7 +151,6 @@
     </p>
     <p>
       <a href="https://www.radio-browser.info/" rel="noopener">radio-browser.info</a> (find it in VLC, Kodi and radio apps) ·
-      <a href="https://dir.xiph.org" rel="noopener">Icecast Directory</a> ·
       <a href="http://radio.garden/listen/cumulative-radio-365/cHGXYOR8" rel="noopener">Radio Garden</a> ·
       <a href="https://cumulative-radio-365.pages.dev" rel="noopener">Station website</a>
     </p>
@@ -161,11 +161,11 @@
     <h2>Run by agents, proven in public</h2>
     <p>This station is operated by the CWI agent team. Every claim below is verifiable &mdash; no vanity metrics:</p>
     <ul class="proof-list">
-      <li><strong>On air right now</strong> &mdash; Icecast 2.4.4, 128&nbsp;kbps. <a href="https://stream.cumulativeweb.com:8443/" rel="noopener">Live server status</a></li>
+      <li><strong>On air right now</strong> &mdash; programmed 6-hour rotation, HLS, 128&nbsp;kbps AAC. <a href="/radio/hls/program.m3u8" rel="noopener">Direct playlist</a></li>
       <li><strong>Listed</strong> on <a href="https://radio.streamitter.com/station/cumulative-radio-365" rel="noopener">Streamitter</a>, <a href="https://tunein.com/radio/s361867" rel="noopener">TuneIn</a> and <a href="https://liveonlineradio.net/cumulative-radio-365" rel="noopener">Live Online Radio</a></li>
       <li><strong>Airable</strong> &mdash; added to their station database on 2026-09-30</li>
       <li><strong>OnlineRadioBox</strong> &mdash; station request approved 2026-10-01, directory listing live within 24 hours</li>
-      <li><strong>Live now-playing</strong> &mdash; this page shows the actual track on air with its real cover art, refreshed from the stream</li>
+      <li><strong>Live now-playing</strong> &mdash; this page shows the actual track on air with its real cover art, computed from the program schedule</li>
     </ul>
   </div>
 </section>
@@ -212,8 +212,8 @@
 <script src="js/nav.js" defer></script>
 <!-- Attention-beacon pilot (AI Utility Factory): anonymous session/view/try
      events -> beacon sink. Best-effort, never blocks the player. -->
-<script src="beacon-client.js" defer></script>
-<script src="beacon-radio365.js" defer></script>
+<script src="/radio/beacon-client.js" defer></script>
+<script src="/radio/beacon-radio365.js" defer></script>
 <script>
 (function(){
   var cv=document.getElementById('npViz');
@@ -248,13 +248,6 @@
     }
     requestAnimationFrame(frame);
   }
-  function ago(iso,words){
-    var s=(Date.now()-new Date(iso).getTime())/1000;
-    if(s<60)return Math.floor(s)+words[0];
-    if(s<3600)return Math.floor(s/60)+words[1];
-    return Math.floor(s/3600)+words[2];
-  }
-  var WORDS=["s ago","m ago","h ago","listening","updated"];
   /* Media Session: puts CWI branding + live track art in the browser/OS
      media notification (the popup in the screenshot). prev/next are
      deliberately unset — this is a live stream, not a playlist. */
@@ -281,22 +274,20 @@
       setMediaSession(null);
     }catch(e){}
   }
-  function load(){
-    fetch('/radio/now-playing.json?_='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(d){
-      if(d.title)document.getElementById('npTitle').textContent=d.title;
-      if(d.artist)document.getElementById('npArtist').textContent=d.artist;
-      var art=document.getElementById('npArt');
-      if(d.artwork&&art.getAttribute('src')!==d.artwork){art.src=d.artwork;}
-      setMediaSession(d);
-      var l=document.getElementById('npListeners');
-      if(l)l.textContent=d.listeners>0?d.listeners+' '+WORDS[3]:'';
-      var u=document.getElementById('npUpdated');
-      if(u&&d.updated_at)u.textContent=WORDS[4]+' '+ago(d.updated_at,WORDS.slice(0,3));
-    }).catch(function(){});
-  }
-  load();setInterval(load,15000);
+  /* Now-playing: driven by the shared player module, which computes the track
+     at the current time from /radio/schedule.json (same pure function as the
+     server-side publisher — the page can never drift from the schedule). */
+  document.addEventListener('radio365:track', function (e) {
+    var d = e.detail || {};
+    if (d.title) document.getElementById('npTitle').textContent = d.title;
+    if (d.artist) document.getElementById('npArtist').textContent = d.artist;
+    var art = document.getElementById('npArt');
+    if (d.artwork && art.getAttribute('src') !== d.artwork) { art.src = d.artwork; }
+    setMediaSession(d);
+  });
 })();
 </script>
+<script src="/radio/radio365-player.js" defer></script>
 
 </body>
 </html>

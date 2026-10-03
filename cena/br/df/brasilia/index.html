@@ -52,15 +52,12 @@
 <div class="radio-card">
 <img src="/assets/cwi-logo.jpg" alt="Cumulative Web Inc — logo">
 <p><strong>Rádio 365</strong> — o som da CWI tocando direto daqui.</p>
-<audio controls preload="none" src="https://stream.cumulativeweb.com:8443/radio"></audio>
+<audio id="radioAudio" controls preload="none"></audio>
+<p class="tiny" id="playState" data-state="idle" aria-live="polite"></p>
+<script src="/radio/radio365-player.js" defer></script>
 </div>
 <div class="embeds">
-<div class="emb ytcard">
-<img src="/assets/cwi-logo.jpg" alt="Cumulative Web Inc — logo">
-<div><p><strong>CWI no YouTube</strong></p>
-<p class="tiny">Clipes, shorts e transmissões no canal oficial.</p>
-<a class="btn" href="https://www.youtube.com/@cumulativeweb" target="_blank" rel="noopener">Abrir no YouTube</a></div>
-</div>
+<div class="emb"><p><strong>CWI no YouTube</strong></p><iframe loading="lazy" src="https://www.youtube.com/embed/videoseries?list=UUoTKVkho9yIMFuaiJZ60vtQ" title="CWI no YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 <div class="emb"><p><strong>Catálogo CWI no Spotify</strong> <span class="est">seleção da casa</span></p><iframe loading="lazy" src="https://open.spotify.com/embed/playlist/45RaLEzD4KO8YHpp3oayq8" title="Spotify" allow="encrypted-media"></iframe></div>
 </div>
 </div>

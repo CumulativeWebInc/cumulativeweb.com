@@ -185,7 +185,9 @@ def render_city(c, meta):
 <div class="radio-card">
 <img src="/assets/cwi-logo.jpg" alt="Cumulative Web Inc — logo">
 <p><strong>Rádio 365</strong> — o som da CWI tocando direto daqui.</p>
-<audio controls preload="none" src="{meta['cwi']['radio_stream']}"></audio>
+<audio id="radioAudio" controls preload="none"></audio>
+<p class="tiny" id="playState" data-state="idle" aria-live="polite"></p>
+<script src="/radio/radio365-player.js" defer></script>
 </div>
 <div class="embeds">
 {f'<div class="emb"><p><strong>Seleção CWI no YouTube</strong></p><iframe loading="lazy" src="{yt}" title="CWI no YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>' if yt else '<div class="emb"><p><strong>CWI no YouTube</strong></p><iframe loading="lazy" src="https://www.youtube.com/embed/videoseries?list=' + meta['cwi']['youtube_uploads_playlist'] + '" title="CWI no YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'}
