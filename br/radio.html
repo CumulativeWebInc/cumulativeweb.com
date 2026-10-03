@@ -71,14 +71,27 @@
 
 <style>
 #streamStage{position:relative}
-#npViz{position:absolute;inset:0;width:100%;height:100%;display:block}
-.np-wrap{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:18px;padding:28px 20px;width:100%}
+.np-wrap{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:22px;padding:28px 20px;width:100%}
 .np-card{display:flex;gap:16px;align-items:center;background:rgba(8,8,10,.74);border:1px solid var(--cwi-border);border-radius:14px;padding:14px 18px;max-width:580px;width:100%;text-align:left}
 .np-card img{width:96px;height:96px;object-fit:cover;border-radius:10px;flex:none;background:#111}
 .np-kicker{margin:0 0 2px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--cwi-text-sub)}
 .np-title{margin:0 0 2px;font-size:22px;color:#fff;line-height:1.2}
 .np-artist{margin:0;color:var(--cwi-text-sub);font-size:14px}
 .np-meta{margin:6px 0 0;font-size:12px;color:var(--cwi-text-sub)}
+.player-box{display:flex;flex-direction:column;align-items:center;gap:14px;width:100%}
+.viz-wrap{position:relative;width:min(72vw,300px);height:min(72vw,300px);flex:none}
+#npViz{position:absolute;inset:0;width:100%;height:100%;display:block}
+.big-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:104px;height:104px;border-radius:50%;border:2px solid rgba(0,230,170,.65);background:rgba(8,10,10,.85);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.big-play:active{transform:translate(-50%,-50%) scale(.95)}
+.big-play svg{width:42px;height:42px;fill:#fff}
+.big-play .icon-pause,.big-play .spinner{display:none}
+.big-play[data-state="playing"] .icon-play{display:none}
+.big-play[data-state="playing"] .icon-pause{display:block}
+.big-play[data-state="buffering"] .icon-play,.big-play[data-state="buffering"] .icon-pause{display:none}
+.big-play[data-state="buffering"] .spinner{display:block}
+.big-play .spinner{width:38px;height:38px;border-radius:50%;border:3px solid rgba(255,255,255,.25);border-top-color:#00e6aa;animation:vizspin .9s linear infinite}
+@keyframes vizspin{to{transform:rotate(360deg)}}
+.play-state{min-height:1.5em;margin:0;color:var(--cwi-text-sub);font-size:14px;text-align:center}
 .proof-list{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:10px}
 .proof-list li{padding-left:26px;position:relative}
 .proof-list li::before{content:"\2713";position:absolute;left:2px;color:var(--cwi-accent);font-weight:700}
@@ -138,7 +151,7 @@
     <canvas id="npViz" aria-hidden="true"></canvas>
     <div class="np-wrap">
       <div class="np-card">
-        <img id="npArt" src="/radio/art/that-boy-hi-hat-diabolique.jpg" alt="Capa da faixa que est&aacute; tocando" width="96" height="96">
+        <img id="npArt" src="/radio/art/that-boy-hi-hat-diabolique.jpg" onerror="this.onerror=null;this.src='https://cumulativeweb.com/assets/cwi-logo.jpg'" alt="Capa da faixa que est&aacute; tocando" width="96" height="96">
         <div class="np-info">
           <div class="badge-row" style="margin:0 0 6px"><span class="badge badge--live">NO AR</span></div>
           <p class="np-kicker">Tocando agora</p>
@@ -147,15 +160,17 @@
           <p class="np-meta"><span id="npListeners"></span><span id="npUpdated"></span></p>
         </div>
       </div>
-      <div class="stream-soon">
-        <span class="pulse" aria-hidden="true" style="background:var(--cwi-accent)"></span>
-        <h2 style="color:#fff;margin-bottom:8px">Ou&ccedil;a ao vivo</h2>
-        <p style="margin:0">Aperte o play &mdash; a transmiss&atilde;o abre no seu navegador.</p>
+      <div class="player-box">
+        <div class="viz-wrap">
+          <canvas id="npViz" aria-hidden="true"></canvas>
+          <button id="bigPlay" class="big-play" data-state="idle" aria-label="Ouvir a Cumulative Radio 365 ao vivo">
+            <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+            <span class="spinner" aria-hidden="true"></span>
+          </button>
+        </div>
         <p id="playState" class="play-state" data-state="idle" aria-live="polite"></p>
-        <audio id="radioAudio" controls preload="none" style="width:100%;max-width:520px;margin-top:12px">
-          Seu navegador n&atilde;o suporta o player de &aacute;udio. Ou&ccedil;a em
-          <a href="https://cumulative-radio-365.pages.dev">cumulative-radio-365.pages.dev</a>.
-        </audio>
+        <audio id="radioAudio" preload="none"></audio>
       </div>
     </div>
   </div>
