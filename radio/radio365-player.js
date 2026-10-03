@@ -71,6 +71,132 @@
     throw new Error('schedule-invalid: no slot contains position ' + posS);
   }
 
+  /* ---------- seek-to-live: align audio with the schedule ----------
+   * ROOT CAUSE (2026-10-03): the program is a static VOD playlist, so
+   * playback always began at segment 0 (schedule offset 0), while the
+   * now-playing title/art were computed from wall-clock time. The two never
+   * met: audio and art disagreed by a fixed phase offset forever.
+   * Fix: on every play transition, seek the audio to the live schedule
+   * position. A 60s drift guard re-syncs if audio and schedule ever diverge
+   * by more than SYNC_THRESHOLD_S (covers the ~13s/loop HLS segment-rounding
+   * drift vs the schedule period). */
+  var SYNC_CHECK_MS = 60000;
+  var SYNC_THRESHOLD_S = 8;
+  var syncTimer = null;
+  /* Declared-timeline ratio: the HLS media timeline (sum of EXTINF) vs the
+   * schedule period. The encoder adds ~115ms/track of padding (~13s/loop),
+   * so schedule seconds must be scaled to address the right audio.
+   * Computed live from program.m3u8; 1 until measured. */
+  var TIMELINE_RATIO = 1;
+  var PERIOD_SECONDS = 21635.912;
+
+  function measureTimeline() {
+    fetch(HLS_URL, { cache: 'default' })
+      .then(function (r) { if (!r.ok) throw new Error('m3u8 ' + r.status); return r.text(); })
+      .then(function (txt) {
+        var total = 0, m, re = /#EXTINF:([0-9.]+)/g;
+        while ((m = re.exec(txt)) !== null) total += parseFloat(m[1]);
+        if (total > 0 && PERIOD_SECONDS > 0) {
+          var ratio = total / PERIOD_SECONDS;
+          if (ratio > 0.9 && ratio < 1.1) TIMELINE_RATIO = ratio;
+        }
+      })
+      .catch(function () { /* keep ratio 1: schedule seconds as-is */ });
+  }
+
+  function liveStreamPosition() {
+    if (!schedCache) return null;
+    try {
+      var r = trackAtTime(schedCache, Date.now());
+      return (r.track.offset_seconds + r.position_seconds) * TIMELINE_RATIO;
+    } catch (e) { return null; }
+  }
+
+  function clampPos(pos, audio) {
+    try {
+      var d = audio.duration;
+      if (isFinite(d) && d > 0 && pos >= d) return 0;
+    } catch (e) {}
+    return pos;
+  }
+
+  function seekHlsJs(audio, pos) {
+    try {
+      var hls = audio._radio365hls;
+      if (!hls) return false;
+      if (audio._radio365manifest) {
+        try { audio.currentTime = pos; } catch (e) {}
+        try { hls.startLoad(pos); } catch (e) {}
+        return true;
+      }
+      /* Manifest not parsed yet: park the seek; MANIFEST_PARSED fires it. */
+      audio._radio365pendingLive = pos;
+      return true;
+    } catch (e) { return false; }
+  }
+
+  function seekNative(audio, pos) {
+    try {
+      pos = clampPos(pos, audio);
+      if (Math.abs(audio.currentTime - pos) <= 2) return true; /* already there */
+      if (audio.readyState >= 1) { audio.currentTime = pos; return true; }
+      /* Metadata not loaded yet: park the seek until it is. */
+      var onMeta = function () {
+        audio.removeEventListener('loadedmetadata', onMeta);
+        try {
+          var p = clampPos(pos, audio);
+          if (Math.abs(audio.currentTime - p) > 2) audio.currentTime = p;
+        } catch (e) {}
+      };
+      audio.addEventListener('loadedmetadata', onMeta);
+      return true;
+    } catch (e) { return false; }
+  }
+
+  /* Seek the audio element to the live schedule position, then play.
+   * Used on every user play tap and on loop restart. */
+  function startLivePlayback(audio) {
+    var pos = liveStreamPosition();
+    var doPlay = function () { try { audio.play(); } catch (e) {} };
+    if (pos === null) { doPlay(); return; } /* schedule not loaded yet */
+    if (audio._radio365hls) {
+      seekHlsJs(audio, pos);
+      doPlay();
+      return;
+    }
+    /* Native HLS path: seek first when possible, play in all cases. */
+    if (audio.readyState >= 1) {
+      seekNative(audio, pos);
+      doPlay();
+    } else {
+      /* Not loaded yet: start loading now; the parked seek fires on metadata. */
+      seekNative(audio, pos);
+      doPlay();
+    }
+  }
+
+  /* Drift guard: while playing, compare audio clock vs schedule clock once a
+   * minute; re-sync if they diverge beyond the threshold. Loop-aware: near
+   * the natural end of the program, let the 'ended' handler restart instead
+   * of yanking the last seconds of audio. */
+  function syncGuard() {
+    var audio = document.getElementById('radioAudio');
+    if (!audio || audio.paused || audio.seeking) return;
+    var pos = liveStreamPosition();
+    if (pos === null) return;
+    try {
+      var d = audio.duration, cur = audio.currentTime;
+      if (isFinite(d) && d > 0) {
+        if (pos >= d) return;                    /* schedule wrapped: 'ended' restarts */
+        if (d - cur < 20 && pos < 30) return;     /* loop edge: let it end naturally */
+      }
+      if (Math.abs(cur - pos) > SYNC_THRESHOLD_S) {
+        if (audio._radio365hls) seekHlsJs(audio, pos);
+        else audio.currentTime = clampPos(pos, audio);
+      }
+    } catch (e) {}
+  }
+
   /* ---------- player state badge (never a silent dead button) ---------- */
   var badge = null;
   var bigPlay = null;
@@ -128,6 +254,18 @@
         hls.loadSource(HLS_URL);
         hls.attachMedia(audio);
         audio._radio365hls = hls;
+        audio._radio365manifest = false;
+        audio._radio365pendingLive = null;
+        hls.on(Hls.Events.MANIFEST_PARSED, function () {
+          audio._radio365manifest = true;
+          /* A seek parked before the manifest arrived: fire it now. */
+          var p = audio._radio365pendingLive;
+          if (p !== null && p !== undefined) {
+            audio._radio365pendingLive = null;
+            try { audio.currentTime = p; } catch (e) {}
+            try { hls.startLoad(p); } catch (e) {}
+          }
+        });
         onReady();
       } catch (e) {
         setState('error', 'Player failed to start \u2014 tap play to retry');
@@ -154,7 +292,7 @@
     if (bigPlay) {
       bigPlay.addEventListener('click', function () {
         try {
-          if (audio.paused) { audio.play(); }
+          if (audio.paused) { startLivePlayback(audio); }
           else { audio.pause(); }
         } catch (e) {
           setState('error', 'Tap play to retry');
@@ -174,9 +312,11 @@
         setState('error', 'Stream error \u2014 tap play to retry');
       }
     });
-    /* The program is a static 6h VOD loop — when it ends, start it over. */
+    /* The program is a static 6h VOD loop — when it ends, restart at the
+       live schedule position (not 0: the schedule period and the encoded
+       audio differ by ~13s/loop, so 0 would reintroduce the phase offset). */
     audio.addEventListener('ended', function () {
-      try { audio.currentTime = 0; audio.play(); } catch (e) {}
+      try { startLivePlayback(audio); } catch (e) {}
     });
     /* Tap-to-retry after a fatal error: reset the source. */
     audio.addEventListener('play', function () {
@@ -250,7 +390,13 @@
     if (!document.getElementById('npTitle') && !document.getElementById('npArtist')) return;
     fetch(SCHEDULE_URL, { cache: 'default' })
       .then(function (r) { if (!r.ok) throw new Error('schedule ' + r.status); return r.json(); })
-      .then(function (s) { schedCache = s; refreshNp(); })
+      .then(function (s) {
+        schedCache = s;
+        if (s && typeof s.period_seconds === 'number' && s.period_seconds > 0) {
+          PERIOD_SECONDS = s.period_seconds;
+        }
+        refreshNp();
+      })
       .catch(function () { /* schedule fetch failed: leave the connecting placeholder */ });
     npTimer = setInterval(refreshNp, NP_REFRESH_MS);
   }
@@ -259,6 +405,9 @@
     var audio = document.getElementById('radioAudio');
     if (audio) bootPlayer(audio);
     bootNowPlaying();
+    measureTimeline();
+    /* Drift guard: keep the audio clock glued to the schedule clock. */
+    if (!syncTimer) { try { syncTimer = setInterval(syncGuard, SYNC_CHECK_MS); } catch (e) {} }
   }
 
   if (document.readyState === 'loading') {
