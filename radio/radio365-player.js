@@ -73,10 +73,23 @@
 
   /* ---------- player state badge (never a silent dead button) ---------- */
   var badge = null;
+  var bigPlay = null;
+  var FALLBACK_ART = 'https://cumulativeweb.com/assets/cwi-logo.jpg';
   function setState(state, label) {
-    if (!badge) return;
-    badge.setAttribute('data-state', state);
-    badge.textContent = label;
+    if (badge) {
+      badge.setAttribute('data-state', state);
+      badge.textContent = label;
+    }
+    /* The big play button mirrors state: idle/paused/error show the play
+       triangle (error = tap to retry), playing shows pause, buffering spins. */
+    if (bigPlay) {
+      var bs = (state === 'playing') ? 'playing'
+             : (state === 'buffering') ? 'buffering' : 'idle';
+      bigPlay.setAttribute('data-state', bs);
+      bigPlay.setAttribute('aria-label',
+        bs === 'playing' ? 'Pause Cumulative Radio 365 live'
+                         : 'Play Cumulative Radio 365 live');
+    }
   }
 
   function attachNative(audio) {
@@ -133,7 +146,21 @@
 
   function bootPlayer(audio) {
     badge = document.getElementById('playState');
+    bigPlay = document.getElementById('bigPlay');
     setState('idle', '');
+    /* The big play button IS the control: one unmissable tap target that
+       toggles the stream. The tap is a real user gesture, so iOS Safari's
+       autoplay policy is satisfied and native HLS starts. */
+    if (bigPlay) {
+      bigPlay.addEventListener('click', function () {
+        try {
+          if (audio.paused) { audio.play(); }
+          else { audio.pause(); }
+        } catch (e) {
+          setState('error', 'Tap play to retry');
+        }
+      });
+    }
     var hlsPending = false;   /* true while hls.js is still loading */
     var pendingPlay = false;  /* user tapped play before hls.js attached */
     audio.addEventListener('playing', function () { setState('playing', '\u25B6 Playing'); });
@@ -193,7 +220,12 @@
     var art = document.getElementById('npArt');
     if (t && track.title) t.textContent = track.title;
     if (a) a.textContent = track.artist || '';
-    if (art && track.artwork && art.getAttribute('src') !== track.artwork) art.src = track.artwork;
+    /* Artwork can be null in the schedule (not every slot carries art) —
+       fall back to the CWI logo so the card never renders imageless. */
+    if (art) {
+      var want = track.artwork || FALLBACK_ART;
+      if (art.getAttribute('src') !== want) art.src = want;
+    }
     try {
       var ev;
       if (typeof CustomEvent === 'function') {
