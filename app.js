@@ -266,7 +266,7 @@
       '<h1>Cumulative Web Inc</h1>' +
       '<div class="meta"><span class="chip">Independent label</span><span class="chip">Frederick, MD</span>' + badge('LIVE') + '</div>' +
       '<p class="lede">The label platform for Cumulative Web Inc — the roster, the music, the apparel, and the software we sell to other independents.</p>' +
-      '<div class="ctas">' + heroCta + inl('#/artists', 'Meet the roster', 'btn btn--secondary') + '</div></section>';
+      '<div class="ctas">' + heroCta + ext('https://cumulativeweb.com/vote-diabolique.html?src=direct', 'Vote for Diabolique', 'btn btn--secondary') + inl('#/artists', 'Meet the roster', 'btn btn--secondary') + '</div></section>';
 
     html += '<section>' + sectionHead('Roster', '#/artists', 'All artists') +
       '<div class="grid">' + rosterArtists().map(artistCard).join('') + '</div></section>';
