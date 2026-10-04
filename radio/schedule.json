@@ -3,12 +3,12 @@
   "program_id": "radio365-main",
   "program_version": "2026-10-04a",
   "epoch": "2026-10-03T00:00:00Z",
-  "period_seconds": 23376.013,
-  "generated_at": "2026-10-04T14:28:06.792864+00:00",
+  "period_seconds": 24043.377,
+  "generated_at": "2026-10-04T14:48:34.600624+00:00",
   "generator": "radio-add-song/1.0",
   "segment_seconds": 10.0,
   "playlist_url": "https://cumulativeweb.com/radio/hls/program.m3u8",
-  "track_count_slots": 121,
+  "track_count_slots": 124,
   "track_count_unique": 12,
   "tracks": [
     {
@@ -999,6 +999,35 @@
       "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-spirits-n-shadows.jpg",
       "spotify_url": "https://open.spotify.com/track/2tEdW6WKfcs2NGI6OIvAm6",
       "isrc": "QZDA72377312"
+    },
+    {
+      "slot": 121,
+      "offset_seconds": 23376.013,
+      "duration_seconds": 226.371,
+      "artist": "That Boy Hi Hat",
+      "title": "Neon Nights pt. 777 (Mix 1)",
+      "artwork": "https://cumulativeweb.com/radio/art/That Boy Hi Hat - Neon Nights pt. 777.jpg",
+      "spotify_url": "https://open.spotify.com/track/4XP56LZjeS0TJUd30kpGSK",
+      "isrc": "QZTB92246281"
+    },
+    {
+      "slot": 122,
+      "offset_seconds": 23602.384,
+      "duration_seconds": 193.956,
+      "artist": "183 Wildboi",
+      "title": "Full Moon",
+      "artwork": "https://cumulativeweb.com/radio/art/183-wildboi-full-moon.jpg",
+      "isrc": "QZNWS2289104"
+    },
+    {
+      "slot": 123,
+      "offset_seconds": 23796.34,
+      "duration_seconds": 247.037,
+      "artist": "That Boy Hi Hat",
+      "title": "Warped & Wicked (Mix 1)",
+      "artwork": "https://cumulativeweb.com/radio/art/That Boy Hi Hat - Warped & Wicked.jpg",
+      "spotify_url": "https://open.spotify.com/track/3w4RKguHAT2xd9K0w5CklC",
+      "isrc": "QZDA62200554"
     }
   ]
 }
