@@ -61,7 +61,7 @@
 .player-box{display:flex;flex-direction:column;align-items:center;gap:14px;width:100%}
 .viz-wrap{position:relative;width:min(72vw,300px);height:min(72vw,300px);flex:none}
 #npViz{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none}
-.big-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:112px;height:112px;border-radius:50%;border:3px solid #00e6aa;background:#00e6aa;color:#06231c;cursor:pointer;display:flex;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent;touch-action:manipulation;box-shadow:0 0 0 6px rgba(0,230,170,.20),0 10px 34px rgba(0,230,170,.35)}
+.big-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(112px,42%);height:min(112px,42%);border-radius:50%;border:3px solid #00e6aa;background:#00e6aa;color:#06231c;cursor:pointer;display:flex;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent;touch-action:manipulation;box-shadow:0 0 0 6px rgba(0,230,170,.20),0 10px 34px rgba(0,230,170,.35)}
 .big-play:active{transform:translate(-50%,-50%) scale(.94)}
 .big-play svg{width:44px;height:44px;fill:#06231c}
 .big-play .icon-pause,.big-play .spinner{display:none}
@@ -305,7 +305,7 @@
   });
 })();
 </script>
-<script src="/radio/radio365-player.js" defer></script>
+<script src="/radio/radio365-player.js?v=20261004c" defer></script>
 
 </body>
 </html>
