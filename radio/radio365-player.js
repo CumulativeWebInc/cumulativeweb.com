@@ -157,7 +157,19 @@
    * Used on every user play tap and on loop restart. */
   function startLivePlayback(audio) {
     var pos = liveStreamPosition();
-    var doPlay = function () { try { audio.play(); } catch (e) {} };
+    /* iOS Safari (2026-10-04): play() returns a promise — the old bare
+       try/catch swallowed async rejections, leaving a dead button with no
+       state. Now the tap shows buffering immediately and any rejection
+       lands in the visible error state (tap to retry). */
+    var doPlay = function () {
+      setState('buffering', '\u2026 Buffering');
+      try {
+        var p = audio.play();
+        if (p && typeof p.catch === 'function') {
+          p.catch(function () { setState('error', 'Tap play to retry'); });
+        }
+      } catch (e) { setState('error', 'Tap play to retry'); }
+    };
     if (pos === null) { doPlay(); return; } /* schedule not loaded yet */
     if (audio._radio365hls) {
       seekHlsJs(audio, pos);
