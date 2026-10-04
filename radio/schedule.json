@@ -3,13 +3,13 @@
   "program_id": "radio365-main",
   "program_version": "2026-10-04a",
   "epoch": "2026-10-03T00:00:00Z",
-  "period_seconds": 24630.354,
-  "generated_at": "2026-10-04T16:40:24.479594+00:00",
+  "period_seconds": 24755.788,
+  "generated_at": "2026-10-04T16:41:18.709091+00:00",
   "generator": "radio-add-song/1.0",
   "segment_seconds": 10.0,
   "playlist_url": "https://cumulativeweb.com/radio/hls/program.m3u8",
-  "track_count_slots": 128,
-  "track_count_unique": 27,
+  "track_count_slots": 129,
+  "track_count_unique": 28,
   "tracks": [
     {
       "slot": 0,
@@ -1063,6 +1063,15 @@
       "title": "Star",
       "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-star.jpg",
       "isrc": "QZHN32363436"
+    },
+    {
+      "slot": 128,
+      "offset_seconds": 24630.354,
+      "duration_seconds": 125.434,
+      "artist": "King Ahkeem",
+      "title": "Super Solid",
+      "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-super-solid.jpg",
+      "isrc": "QZTB62301270"
     }
   ]
 }
