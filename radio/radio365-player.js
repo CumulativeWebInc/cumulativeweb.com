@@ -297,7 +297,7 @@
   function bootPlayer(audio) {
     badge = document.getElementById('playState');
     bigPlay = document.getElementById('bigPlay');
-    setState('idle', '');
+    setState('idle', 'Tap the green button to play');
     /* The big play button IS the control: one unmissable tap target that
        toggles the stream. The tap is a real user gesture, so iOS Safari's
        autoplay policy is satisfied and native HLS starts. */
