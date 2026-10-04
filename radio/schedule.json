@@ -3,13 +3,13 @@
   "program_id": "radio365-main",
   "program_version": "2026-10-04a",
   "epoch": "2026-10-03T00:00:00Z",
-  "period_seconds": 24978.514,
-  "generated_at": "2026-10-04T16:46:54.183326+00:00",
+  "period_seconds": 25170.891,
+  "generated_at": "2026-10-04T16:47:54.384306+00:00",
   "generator": "radio-add-song/1.0",
   "segment_seconds": 10.0,
   "playlist_url": "https://cumulativeweb.com/radio/hls/program.m3u8",
-  "track_count_slots": 130,
-  "track_count_unique": 29,
+  "track_count_slots": 131,
+  "track_count_unique": 30,
   "tracks": [
     {
       "slot": 0,
@@ -1081,6 +1081,15 @@
       "title": "2K23 Corners",
       "artwork": "https://cumulativeweb.com/radio/art/fleekz-2k23-corners.jpg",
       "isrc": "QZK6L2263080"
+    },
+    {
+      "slot": 130,
+      "offset_seconds": 24978.514,
+      "duration_seconds": 192.377,
+      "artist": "King Ahkeem",
+      "title": "Element",
+      "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-element.jpg",
+      "isrc": "QZHN42322704"
     }
   ]
 }
