@@ -3,13 +3,13 @@
   "program_id": "radio365-main",
   "program_version": "2026-10-04a",
   "epoch": "2026-10-03T00:00:00Z",
-  "period_seconds": 24193.958,
-  "generated_at": "2026-10-04T16:37:21.648594+00:00",
+  "period_seconds": 24317.233,
+  "generated_at": "2026-10-04T16:38:24.383344+00:00",
   "generator": "radio-add-song/1.0",
   "segment_seconds": 10.0,
   "playlist_url": "https://cumulativeweb.com/radio/hls/program.m3u8",
-  "track_count_slots": 125,
-  "track_count_unique": 24,
+  "track_count_slots": 126,
+  "track_count_unique": 25,
   "tracks": [
     {
       "slot": 0,
@@ -1036,6 +1036,15 @@
       "artist": "Dre50",
       "title": "Pix",
       "artwork": "https://cumulativeweb.com/radio/art/dre50-pix.jpg"
+    },
+    {
+      "slot": 125,
+      "offset_seconds": 24193.958,
+      "duration_seconds": 123.275,
+      "artist": "King Ahkeem",
+      "title": "Embiid",
+      "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-embiid.jpg",
+      "isrc": "QZNWW2269584"
     }
   ]
 }
