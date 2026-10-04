@@ -3,13 +3,13 @@
   "program_id": "radio365-main",
   "program_version": "2026-10-04a",
   "epoch": "2026-10-03T00:00:00Z",
-  "period_seconds": 24460.802,
-  "generated_at": "2026-10-04T16:39:27.005367+00:00",
+  "period_seconds": 24630.354,
+  "generated_at": "2026-10-04T16:40:24.479594+00:00",
   "generator": "radio-add-song/1.0",
   "segment_seconds": 10.0,
   "playlist_url": "https://cumulativeweb.com/radio/hls/program.m3u8",
-  "track_count_slots": 127,
-  "track_count_unique": 26,
+  "track_count_slots": 128,
+  "track_count_unique": 27,
   "tracks": [
     {
       "slot": 0,
@@ -1054,6 +1054,15 @@
       "title": "Bluefaces 3.0",
       "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-bluefaces-3-0.jpg",
       "isrc": "QZHN32388169"
+    },
+    {
+      "slot": 127,
+      "offset_seconds": 24460.802,
+      "duration_seconds": 169.552,
+      "artist": "King Ahkeem",
+      "title": "Star",
+      "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-star.jpg",
+      "isrc": "QZHN32363436"
     }
   ]
 }
