@@ -3,12 +3,12 @@
   "program_id": "radio365-main",
   "program_version": "2026-10-04a",
   "epoch": "2026-10-03T00:00:00Z",
-  "period_seconds": 22706.629,
-  "generated_at": "2026-10-04T13:00:00.931075+00:00",
+  "period_seconds": 22945.121,
+  "generated_at": "2026-10-04T13:03:26.199571+00:00",
   "generator": "radio-add-song/1.0",
   "segment_seconds": 10.0,
   "playlist_url": "https://cumulativeweb.com/radio/hls/program.m3u8",
-  "track_count_slots": 118,
+  "track_count_slots": 119,
   "track_count_unique": 12,
   "tracks": [
     {
@@ -969,6 +969,16 @@
       "title": "Golden Diamond (Mix 1)",
       "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg",
       "spotify_url": "https://open.spotify.com/track/4RFWRhPn8NX0DTQPpl1swe"
+    },
+    {
+      "slot": 118,
+      "offset_seconds": 22706.629,
+      "duration_seconds": 238.492,
+      "artist": "That Boy Hi Hat",
+      "title": "Rainbows And Roses (Mix 1)",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-rainbows-and-roses.jpg",
+      "spotify_url": "https://open.spotify.com/track/2ZUYjQGsRLHRcsfgyeAWpo",
+      "isrc": "QZF222243412"
     }
   ]
 }
