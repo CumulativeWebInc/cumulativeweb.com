@@ -1,14 +1,14 @@
 {
   "schema": "cwi-radio-schedule/1",
   "program_id": "radio365-main",
-  "program_version": "2026-10-03a",
+  "program_version": "2026-10-04a",
   "epoch": "2026-10-03T00:00:00Z",
-  "period_seconds": 21635.912,
-  "generated_at": "2026-10-03T10:04:45.309506+00:00",
-  "generator": "cwi-hls-program-builder/1.0",
+  "period_seconds": 22278.663,
+  "generated_at": "2026-10-04T12:48:27.569389+00:00",
+  "generator": "radio-add-song/1.0",
   "segment_seconds": 10.0,
   "playlist_url": "https://cumulativeweb.com/radio/hls/program.m3u8",
-  "track_count_slots": 113,
+  "track_count_slots": 116,
   "track_count_unique": 12,
   "tracks": [
     {
@@ -923,6 +923,34 @@
       "artist": "That Boy Hi Hat",
       "title": "Shaka Zulu",
       "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg"
+    },
+    {
+      "slot": 113,
+      "offset_seconds": 21635.912,
+      "duration_seconds": 154.436,
+      "artist": "That Boy Hi Hat",
+      "title": "Diabolique (Louder)",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg",
+      "spotify_url": "https://open.spotify.com/track/2eSyWmIdPzEMyWejLb2LBj",
+      "isrc": "QZ8EF2666377"
+    },
+    {
+      "slot": 114,
+      "offset_seconds": 21790.348,
+      "duration_seconds": 249.8,
+      "artist": "That Boy Hi Hat",
+      "title": "Shaka Zulu (v1)",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg"
+    },
+    {
+      "slot": 115,
+      "offset_seconds": 22040.148,
+      "duration_seconds": 238.515,
+      "artist": "That Boy Hi Hat",
+      "title": "7th Angel (Mix 1)",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg",
+      "spotify_url": "https://open.spotify.com/track/2dvfN5rFyQO69qmb5oYlRG",
+      "isrc": "QZTB82306781"
     }
   ]
 }
