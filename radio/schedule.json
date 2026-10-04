@@ -9,7 +9,7 @@
   "segment_seconds": 10.0,
   "playlist_url": "https://cumulativeweb.com/radio/hls/program.m3u8",
   "track_count_slots": 124,
-  "track_count_unique": 12,
+  "track_count_unique": 23,
   "tracks": [
     {
       "slot": 0,
