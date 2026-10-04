@@ -3,13 +3,13 @@
   "program_id": "radio365-main",
   "program_version": "2026-10-04a",
   "epoch": "2026-10-03T00:00:00Z",
-  "period_seconds": 24317.233,
-  "generated_at": "2026-10-04T16:38:24.383344+00:00",
+  "period_seconds": 24460.802,
+  "generated_at": "2026-10-04T16:39:27.005367+00:00",
   "generator": "radio-add-song/1.0",
   "segment_seconds": 10.0,
   "playlist_url": "https://cumulativeweb.com/radio/hls/program.m3u8",
-  "track_count_slots": 126,
-  "track_count_unique": 25,
+  "track_count_slots": 127,
+  "track_count_unique": 26,
   "tracks": [
     {
       "slot": 0,
@@ -1045,6 +1045,15 @@
       "title": "Embiid",
       "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-embiid.jpg",
       "isrc": "QZNWW2269584"
+    },
+    {
+      "slot": 126,
+      "offset_seconds": 24317.233,
+      "duration_seconds": 143.569,
+      "artist": "King Ahkeem",
+      "title": "Bluefaces 3.0",
+      "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-bluefaces-3-0.jpg",
+      "isrc": "QZHN32388169"
     }
   ]
 }
