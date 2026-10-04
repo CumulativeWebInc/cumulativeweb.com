@@ -60,7 +60,7 @@
 .np-meta{margin:6px 0 0;font-size:12px;color:var(--cwi-text-sub)}
 .player-box{display:flex;flex-direction:column;align-items:center;gap:14px;width:100%}
 .viz-wrap{position:relative;width:min(72vw,300px);height:min(72vw,300px);flex:none}
-#npViz{position:absolute;inset:0;width:100%;height:100%;display:block}
+#npViz{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none}
 .big-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:104px;height:104px;border-radius:50%;border:2px solid rgba(0,230,170,.65);background:rgba(8,10,10,.85);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
 .big-play:active{transform:translate(-50%,-50%) scale(.95)}
 .big-play svg{width:42px;height:42px;fill:#fff}
@@ -128,7 +128,6 @@
 </section>
 <section>
   <div class="stream-stage" id="streamStage">
-    <canvas id="npViz" aria-hidden="true"></canvas>
     <div class="np-wrap">
       <div class="np-card">
         <img id="npArt" src="radio/art/that-boy-hi-hat-diabolique.jpg" onerror="this.onerror=null;this.src='https://cumulativeweb.com/assets/cwi-logo.jpg'" alt="Cover art of the track currently playing" width="96" height="96">
@@ -233,13 +232,17 @@
 (function(){
   var cv=document.getElementById('npViz');
   if(cv&&cv.getContext){
-    var ctx=cv.getContext('2d'),W=0,H=0,bars=64,phase=0,beat=0,last=0,running=true;
-    function size(){var r=cv.parentElement.getBoundingClientRect();W=cv.width=Math.max(1,r.width);H=cv.height=Math.max(1,r.height);}
+    var ctx=cv.getContext('2d'),W=0,H=0,bars=64,phase=0,beat=0,last=0,running=true,frameNo=0,step=1;
+    function size(){var r=cv.parentElement.getBoundingClientRect();W=cv.width=Math.max(1,r.width);H=cv.height=Math.max(1,r.height);
+      /* Mobile perf (2026-10-04): small canvas = fewer bars + every-other-frame.
+         The full-stage 60fps repaint was chopping phone GPUs. */
+      var small=Math.min(W,H)<380;bars=small?32:64;step=small?2:1;}
     size();window.addEventListener('resize',size);
     if('IntersectionObserver' in window){new IntersectionObserver(function(e){running=e[0].isIntersecting;}).observe(cv);}
     function frame(t){
       requestAnimationFrame(frame);
-      if(!running)return;
+      if(!running||document.hidden)return;
+      frameNo++;if(frameNo%step!==0)return;
       var dt=Math.min(50,t-(last||t));last=t;phase+=dt/1000;
       var cyc=(phase*2)%1;
       beat+=(cyc<0.12?(0.12-cyc)*8:-beat*0.08);
