@@ -1,4 +1,9 @@
-# Cumulative Web Inc — cumulativeweb.com
+# CWI Discovery Engine — Cumulative Web Inc (cumulativeweb.com)
+
+> CWI Discovery Engine is the machine that makes our data findable by every AI
+> on earth: MCP server, embedding matrix, llms.txt briefings, crawler welcomes,
+> and the freshness engine — all below, all machine-readable.
+> Independent label platform: Music & Film · Clothing · Software & AI Agents.
 
 > Independent label platform: Music & Film · Clothing · Software & AI Agents.
 > Built for AI agents first: every section below is a machine-readable surface.
@@ -11,8 +16,8 @@
   - Track search: GET /query?q=<keywords> — e.g. /query?q=post-trap+cyberpunk
   - Crawl deltas: GET /changes?since=<ISO-8601> — what changed since your last crawl
   - Licensing terms (machine-readable): GET /license
-  - MCP: POST /mcp — JSON-RPC 2.0; tools: search_catalog, get_track, get_artist, sync_search, get_graph
-    (Status 2026-10-05: staged, rolling out — not yet accepting JSON-RPC calls)
+  - MCP: POST /mcp — JSON-RPC 2.0; tools: search_catalog, get_track, get_artist, sync_search, semantic_search, get_graph
+    (Status 2026-10-05: LIVE — accepting JSON-RPC calls)
   - Alias edge domain: https://data.cumulativeweb.com (same API)
 - Catalog learning surface: https://cumulativewebinc.github.io/cwi-learn/llms.txt — catalog.json, graph.json, kit.json, EQUIP-GUIDE.md (10-step agent equip guide)
 - Agent cards (JSON):
@@ -21,7 +26,7 @@
   - https://cumulativeweb.com/br/.well-known/agent-card.json (Brasil, pt-BR)
 - Meta Muse connector packages — source: https://github.com/CumulativeWebInc/cwi-muse-connectors
   - agent-deck (Agent Deck Catalog API index) and cuefinder (sync search): submitted for review 2026-09-19 — not approved/listed/featured
-- Q&A knowledge base: /answers/ (rolling out 2026-10-05); pt-BR answers: /br/respostas/ (rolling out 2026-10-05)
+- Q&A knowledge base: /answers/ (live 2026-10-05); pt-BR answers: /br/respostas/ (live 2026-10-05)
 
 ## Licensing
 

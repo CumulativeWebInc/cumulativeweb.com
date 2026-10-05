@@ -1,5 +1,8 @@
-# Cumulative Web Inc Brasil — briefing completo para IA
+# CWI Discovery Engine — Cumulative Web Inc Brasil — briefing completo para IA
 
+> O CWI Discovery Engine é a máquina que torna nossos dados encontráveis por
+> todas as IAs: servidor MCP, matriz de embeddings, briefings llms.txt,
+> boas-vindas a crawlers e o motor de frescor — tudo abaixo, tudo legível por máquina.
 > Extensão brasileira da Cumulative Web Inc — selo independente de música, cinema, moda e software, todo em pt-BR.
 > Versão longa de https://cumulativeweb.com/br/llms.txt — cada superfície de máquina, esquema de endpoint e exemplo de uso.
 > Contato oficial para negócios e sincronização (sync): hp@cumulativeweb.com

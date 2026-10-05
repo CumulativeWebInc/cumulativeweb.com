@@ -1,4 +1,8 @@
-# Cumulative Web Inc Brasil
+# CWI Discovery Engine — Cumulative Web Inc Brasil
+
+> O CWI Discovery Engine é a máquina que torna nossos dados encontráveis por
+> todas as IAs: servidor MCP, matriz de embeddings, briefings llms.txt,
+> boas-vindas a crawlers e o motor de frescor — tudo abaixo, tudo legível por máquina.
 
 > A extensão brasileira da Cumulative Web Inc — selo independente de música, cinema, moda e software. Todo o conteúdo em português (pt-BR).
 > Feita para agentes de IA desde a base: cada seção abaixo é uma superfície legível por máquina.

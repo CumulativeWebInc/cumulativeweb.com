@@ -1,4 +1,8 @@
-# Cumulative Web Inc — cumulativeweb.com (full briefing)
+# CWI Discovery Engine — Cumulative Web Inc (cumulativeweb.com — full briefing)
+
+> CWI Discovery Engine is the machine that makes our data findable by every AI
+> on earth: MCP server, embedding matrix, llms.txt briefings, crawler welcomes,
+> and the freshness engine — all below, all machine-readable.
 
 > Independent label platform: Music & Film · Clothing · Software & AI Agents.
 > This is the long form of https://cumulativeweb.com/llms.txt — every machine surface, endpoint schema, and usage example.
