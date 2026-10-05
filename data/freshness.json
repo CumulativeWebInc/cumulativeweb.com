@@ -1,9 +1,10 @@
 {
-  "generated_at": "2026-10-05T17:17:43.543Z",
-  "content_hash": "93e8b75de8ad4e57",
-  "previous_content_hash": "1844e0e23e878037",
+  "generated_at": "2026-10-05T17:22:19.959Z",
+  "content_hash": "cba78ff09a02d7c3",
+  "previous_content_hash": "93e8b75de8ad4e57",
   "changed": true,
   "surfaces_changed": [
+    "/sitemap.xml",
     "/radio/now-playing.json"
   ],
   "surface_count": 12,
@@ -32,9 +33,9 @@
     {
       "path": "/sitemap.xml",
       "exists": true,
-      "bytes": 9082,
-      "sha256": "9beaa4506f13979b",
-      "mtime": "2026-10-05T17:14:22.980Z"
+      "bytes": 11504,
+      "sha256": "14db3a99d7b1c217",
+      "mtime": "2026-10-05T17:21:45.972Z"
     },
     {
       "path": "/blog/index.html",
@@ -88,9 +89,9 @@
     {
       "path": "/radio/now-playing.json",
       "exists": true,
-      "bytes": 502,
-      "sha256": "89886b4305795ad7",
-      "mtime": "2026-10-05T17:17:13.563Z"
+      "bytes": 497,
+      "sha256": "a5cf6f76304eb172",
+      "mtime": "2026-10-05T17:21:45.952Z"
     }
   ]
 }
