@@ -55,12 +55,40 @@ function probe(rel) {
   }
 }
 
-function build() {
-  const surfaces = SURFACES.map(probe);
+function probeRemote(rel) {
+  // Probe the surface from the freshly-fetched origin/main blob, not the
+  // working tree. Required because the now-playing publisher commits via the
+  // GitHub API — the local working tree goes stale and a local probe would
+  // compare old bytes against the old remote record and wrongly conclude
+  // "unchanged", leaving freshness.json permanently behind the real surface.
+  const entry = { path: '/' + rel, exists: false };
+  try {
+    const buf = execSync(`git cat-file -p FETCH_HEAD:${rel}`,
+      { cwd: REPO, stdio: ['ignore', 'pipe', 'pipe'] });
+    return {
+      path: '/' + rel,
+      exists: true,
+      bytes: buf.length,
+      sha256: sha(buf).slice(0, 16),
+      mtime: null,
+      source: 'origin/main',
+    };
+  } catch (e) {
+    return entry;
+  }
+}
+
+function build(useRemote) {
+  const surfaces = SURFACES.map(useRemote ? probeRemote : probe);
   const live = surfaces.filter(s => s.exists);
   const contentHash = sha(live.map(s => `${s.path}:${s.sha256}`).sort().join('|')).slice(0, 16);
   let prev = null;
-  try { prev = JSON.parse(fs.readFileSync(OUT, 'utf8')); } catch (e) { /* first run */ }
+  if (useRemote) {
+    // Compare against the committed record on origin/main, not a stale local copy.
+    try { prev = JSON.parse(remoteFile('FETCH_HEAD', 'data/freshness.json') || 'null'); } catch (e) { /* first run */ }
+  } else {
+    try { prev = JSON.parse(fs.readFileSync(OUT, 'utf8')); } catch (e) { /* first run */ }
+  }
   const prevByPath = new Map((prev && prev.surfaces || []).filter(s => s.exists).map(s => [s.path, s.sha256]));
   const surfacesChanged = prev
     ? live.filter(s => prevByPath.get(s.path) !== s.sha256).map(s => s.path)
@@ -111,7 +139,7 @@ function main() {
     git('git fetch origin main'); // read-only, always safe
     syncPointerToRemote();
   }
-  const doc = build();
+  const doc = build(push);
   if (push) {
     // previous = the committed file on origin/main, not the working tree
     const remoteRaw = remoteFile('FETCH_HEAD', 'data/freshness.json');
