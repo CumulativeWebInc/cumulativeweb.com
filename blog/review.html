@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Review queue — CWI Blog</title>
+<meta name="description" content="Internal review queue for the CWI blog. Select drafts, approve many with one stacked command.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+:root{--bg:#0a0a0a;--panel:#111214;--gold:#d9b36c;--ink:#f2ede3;--muted:#a8a29a;--line:#2a2419;--maxw:860px;--radius:14px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+header.top{border-bottom:1px solid var(--line);padding:18px 0}
+header.top h1{margin:0;font-size:24px}
+header.top p{margin:4px 0 0;color:var(--muted);font-size:14px}
+main{padding:26px 0 60px}
+.draft{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin-bottom:12px;display:flex;gap:14px;align-items:flex-start}
+.draft input[type=checkbox]{width:20px;height:20px;margin-top:4px;accent-color:var(--gold)}
+.draft h3{margin:0 0 4px;font-size:17px}
+.draft .meta{color:var(--muted);font-size:13px}
+.draft .ex{color:var(--muted);font-size:14px;margin-top:6px}
+.bar{position:sticky;bottom:0;background:rgba(10,10,10,.96);border-top:1px solid var(--line);padding:16px 0}
+.btn{background:var(--gold);color:#0a0a0a;font-weight:800;border:0;border-radius:999px;padding:13px 28px;font-size:16px;cursor:pointer}
+.btn:disabled{opacity:.4;cursor:default}
+.btn.ghost{background:transparent;color:var(--gold);border:1px solid var(--gold);margin-left:10px}
+#cmdbox{display:none;margin-top:18px;background:#0d0e10;border:1px solid var(--gold);border-radius:10px;padding:18px}
+#cmdbox h3{margin:0 0 8px;color:var(--gold);font-size:15px}
+#cmdbox pre{background:#000;border-radius:8px;padding:12px;font-size:13px;overflow-x:auto;white-space:pre-wrap}
+#cmdbox p{color:var(--muted);font-size:13px}
+.empty{color:var(--muted);border:1px dashed var(--line);border-radius:var(--radius);padding:30px;text-align:center}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <h1>Blog review queue</h1>
+  <p>Internal tool — not indexed. Tick drafts, hit <strong>Approve selected</strong> once, and one stacked command publishes them all.</p>
+</div></header>
+<main class="wrap">
+  <div id="list"><p style="color:var(--muted)">Loading drafts…</p></div>
+  <div id="cmdbox">
+    <h3>One command approves them all</h3>
+    <p>Run this in the machine (or hand it to the agent). It publishes every selected draft, rebuilds the feed, the hub, and the sitemap.</p>
+    <pre id="cmd"></pre>
+    <button class="btn" id="copy">Copy command</button>
+    <span id="copied" style="display:none;color:#7db4ff;margin-left:10px">Copied.</span>
+  </div>
+</main>
+<div class="bar"><div class="wrap">
+  <button class="btn" id="approve" disabled>Approve selected (0)</button>
+  <button class="btn ghost" id="all">Select all</button>
+  <a href="./" style="color:var(--muted);font-size:14px;margin-left:16px">← Back to blog</a>
+</div></div>
+<script>
+(function(){
+  "use strict";
+  var list = document.getElementById('list');
+  var approveBtn = document.getElementById('approve');
+  var cmdbox = document.getElementById('cmdbox');
+  var cmd = document.getElementById('cmd');
+  function esc(t){return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+  function refreshCount(){
+    var n = document.querySelectorAll('.draft input:checked').length;
+    approveBtn.textContent = 'Approve selected (' + n + ')';
+    approveBtn.disabled = n === 0;
+  }
+  fetch('index.json').then(function(r){return r.json();}).then(function(feed){
+    var drafts = (feed.posts||[]).filter(function(p){return p.status==='draft';});
+    if (!drafts.length){
+      list.innerHTML = '<div class="empty">No drafts waiting. The queue is clear.</div>';
+      document.getElementById('all').style.display='none';
+      return;
+    }
+    list.innerHTML = drafts.map(function(p){
+      return '<label class="draft"><input type="checkbox" value="'+esc(p.slug)+'">' +
+        '<span><h3>'+esc(p.title)+'</h3>' +
+        '<span class="meta">'+esc(p.date)+' · '+p.tags.map(esc).join(', ')+'</span>' +
+        '<div class="ex">'+esc(p.excerpt)+'</div></span></label>';
+    }).join('');
+    var boxes = list.querySelectorAll('input[type=checkbox]');
+    boxes.forEach(function(b){ b.addEventListener('change', refreshCount); });
+    document.getElementById('all').addEventListener('click', function(){
+      var anyUnchecked = Array.prototype.some.call(boxes, function(b){return !b.checked;});
+      boxes.forEach(function(b){ b.checked = anyUnchecked; });
+      refreshCount();
+    });
+    approveBtn.addEventListener('click', function(){
+      var slugs = Array.prototype.map.call(
+        list.querySelectorAll('input:checked'), function(b){return b.value;});
+      if (!slugs.length) return;
+      cmd.textContent = 'cd ~/workspace/repos/cumulativeweb.com && node blog/new-post.js approve ' + slugs.join(' ');
+      cmdbox.style.display = 'block';
+      cmdbox.scrollIntoView({behavior:'smooth', block:'nearest'});
+    });
+    refreshCount();
+  }).catch(function(e){
+    list.innerHTML = '<div class="empty">Could not load the feed ('+esc(String(e&&e.message||e))+'). Serve over HTTP.</div>';
+  });
+  document.getElementById('copy').addEventListener('click', function(){
+    var t = cmd.textContent;
+    function ok(){ document.getElementById('copied').style.display=''; }
+    if (navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(t).then(ok).catch(function(){}); }
+    else { var ta=document.createElement('textarea'); ta.value=t; document.body.appendChild(ta); ta.select(); try{document.execCommand('copy');ok();}catch(e){} document.body.removeChild(ta); }
+  });
+})();
+</script>
+</body>
+</html>

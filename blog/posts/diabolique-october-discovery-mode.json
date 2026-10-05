@@ -1,0 +1,70 @@
+{
+  "slug": "diabolique-october-discovery-mode",
+  "title": "Diabolique is the October Discovery Mode control",
+  "excerpt": "That Boy Hi Hat's \"Diabolique\" is Cumulative Web Inc's October Discovery Mode control — the campaign is running in Spotify for Artists.",
+  "body_markdown": "# Diabolique is the October Discovery Mode control\n\nThat Boy Hi Hat's single **\"Diabolique\"** — produced by Hybrid and co-produced by Black Lansky — is Cumulative Web Inc's October Discovery Mode control.\n\nDiscovery Mode puts the track in front of listeners inside Spotify's programming, and October's campaign is the measurement baseline CWI is running the full month against: streams, saves, playlist adds, and listener conversion, tracked week over week. The campaign is confirmed running in Spotify for Artists.\n\nThe opening signal is already on the board: \"Diabolique\" won its DistroKid Spotlight matchup 38–2 (verified from the live DistroKid vote page on 2026-10-03; re-checked 2026-10-04). Spotlight votes reset weekly, and winning feeds DistroKid's own editorial playlists.\n\n\"Diabolique\" is the spearhead of the catalog push — the track everything else in the October program is measured against. Its machine-readable record, with the verified Spotify track ID, is published in the [CWI learning index](https://cumulativewebinc.github.io/cwi-learn/tracks/diabolique.html).\n\nListen: [Diabolique on Spotify](https://open.spotify.com/track/2eSyWmIdPzEMyWejLb2LBj). Vote: [cumulativeweb.com/vote-diabolique.html](https://cumulativeweb.com/vote-diabolique.html).\n\nEvery result this month gets reported back into [the blog](/blog/) — verified numbers only.",
+  "body_html": "<h2>Diabolique is the October Discovery Mode control</h2><p>That Boy Hi Hat's single <strong>&quot;Diabolique&quot;</strong> — produced by Hybrid and co-produced by Black Lansky — is Cumulative Web Inc's October Discovery Mode control.</p><p>Discovery Mode puts the track in front of listeners inside Spotify's programming, and October's campaign is the measurement baseline CWI is running the full month against: streams, saves, playlist adds, and listener conversion, tracked week over week. The campaign is confirmed running in Spotify for Artists.</p><p>The opening signal is already on the board: &quot;Diabolique&quot; won its DistroKid Spotlight matchup 38–2 (verified from the live DistroKid vote page on 2026-10-03; re-checked 2026-10-04). Spotlight votes reset weekly, and winning feeds DistroKid's own editorial playlists.</p><p>&quot;Diabolique&quot; is the spearhead of the catalog push — the track everything else in the October program is measured against. Its machine-readable record, with the verified Spotify track ID, is published in the <a href=\"https://cumulativewebinc.github.io/cwi-learn/tracks/diabolique.html\" data-outbound target=\"_blank\" rel=\"noopener\">CWI learning index</a>.</p><p>Listen: <a href=\"https://open.spotify.com/track/2eSyWmIdPzEMyWejLb2LBj\" data-outbound target=\"_blank\" rel=\"noopener\">Diabolique on Spotify</a>. Vote: <a href=\"https://cumulativeweb.com/vote-diabolique.html\">cumulativeweb.com/vote-diabolique.html</a>.</p><p>Every result this month gets reported back into <a href=\"/blog/\">the blog</a> — verified numbers only.</p>",
+  "date": "2026-10-05",
+  "tags": [
+    "discovery-mode",
+    "that-boy-hi-hat",
+    "music",
+    "announcement"
+  ],
+  "author": "Cumulative Web Inc",
+  "canonical_url": "https://cumulativeweb.com/blog/posts/diabolique-october-discovery-mode.html",
+  "self": "https://cumulativeweb.com/blog/posts/diabolique-october-discovery-mode.json",
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Diabolique is the October Discovery Mode control",
+    "description": "That Boy Hi Hat's \"Diabolique\" is Cumulative Web Inc's October Discovery Mode control — the campaign is running in Spotify for Artists.",
+    "datePublished": "2026-10-05",
+    "dateModified": "2026-10-05",
+    "author": {
+      "@type": "Organization",
+      "name": "Cumulative Web Inc",
+      "url": "https://cumulativeweb.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Cumulative Web Inc",
+      "url": "https://cumulativeweb.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cumulativeweb.com/assets/cwi-logo.jpg"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://cumulativeweb.com/blog/posts/diabolique-october-discovery-mode.html"
+    },
+    "keywords": "discovery-mode, that-boy-hi-hat, music, announcement",
+    "inLanguage": "en"
+  },
+  "related": [
+    {
+      "slug": "radio-365-is-live",
+      "title": "Radio 365 is live",
+      "url": "https://cumulativeweb.com/blog/posts/radio-365-is-live.html"
+    },
+    {
+      "slug": "cwi-blog-machine-readable",
+      "title": "The CWI blog is now machine-readable",
+      "url": "https://cumulativeweb.com/blog/posts/cwi-blog-machine-readable.html"
+    }
+  ],
+  "machine": {
+    "content_id": "blog:diabolique-october-discovery-mode",
+    "content_type": "blog_post",
+    "title": "Diabolique is the October Discovery Mode control",
+    "url": "https://cumulativeweb.com/blog/posts/diabolique-october-discovery-mode.html",
+    "tags": [
+      "discovery-mode",
+      "that-boy-hi-hat",
+      "music",
+      "announcement"
+    ]
+  },
+  "generated_at": "2026-10-05T15:19:08.788Z"
+}

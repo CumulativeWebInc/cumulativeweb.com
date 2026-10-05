@@ -1,0 +1,70 @@
+{
+  "slug": "cwi-blog-machine-readable",
+  "title": "The CWI blog is now machine-readable",
+  "excerpt": "Every post on the CWI blog ships with a JSON twin and JSON-LD schema — built so AI agents and search engines read our news directly.",
+  "body_markdown": "# The CWI blog is now machine-readable\n\nThis blog is built for two audiences: people, and machines.\n\nEvery post on [the CWI blog](/blog/) ships as three things at once:\n\n1. **An HTML page** — the article you're reading, with full SEO meta, Open Graph tags, and a canonical URL.\n2. **A JSON twin** — a machine-readable node with the slug, title, excerpt, body, date, tags, author, canonical URL, and the full JSON-LD record. Grab any post's JSON by swapping `.html` for `.json` in its URL.\n3. **JSON-LD BlogPosting schema** — embedded in every page, so search engines and AI agents parse the headline, date, author, and publisher without guessing.\n\nThe whole feed is one file: [cumulativeweb.com/blog/index.json](https://cumulativeweb.com/blog/index.json) — newest first, every post, every tag. That feed is the ingestion surface for CWI's own machine-data layer, which can pick up new posts as content the moment they publish.\n\nPages also report back: each post fires exposure and click beacons to the machine-data layer, so the team can see what gets read and what gets clicked — the same measurement pattern as the Radio 365 track pages.\n\nThe machine-readable contract for the label starts at [cumulativeweb.com/llms.txt](https://cumulativeweb.com/llms.txt). This blog is the news wire plugged into it.",
+  "body_html": "<h2>The CWI blog is now machine-readable</h2><p>This blog is built for two audiences: people, and machines.</p><p>Every post on <a href=\"/blog/\">the CWI blog</a> ships as three things at once:</p><ol><li><strong>An HTML page</strong> — the article you're reading, with full SEO meta, Open Graph tags, and a canonical URL.</li><li><strong>A JSON twin</strong> — a machine-readable node with the slug, title, excerpt, body, date, tags, author, canonical URL, and the full JSON-LD record. Grab any post's JSON by swapping `.html` for `.json` in its URL.</li><li><strong>JSON-LD BlogPosting schema</strong> — embedded in every page, so search engines and AI agents parse the headline, date, author, and publisher without guessing.</li></ul><p>The whole feed is one file: <a href=\"https://cumulativeweb.com/blog/index.json\">cumulativeweb.com/blog/index.json</a> — newest first, every post, every tag. That feed is the ingestion surface for CWI's own machine-data layer, which can pick up new posts as content the moment they publish.</p><p>Pages also report back: each post fires exposure and click beacons to the machine-data layer, so the team can see what gets read and what gets clicked — the same measurement pattern as the Radio 365 track pages.</p><p>The machine-readable contract for the label starts at <a href=\"https://cumulativeweb.com/llms.txt\">cumulativeweb.com/llms.txt</a>. This blog is the news wire plugged into it.</p>",
+  "date": "2026-10-05",
+  "tags": [
+    "machine-readable",
+    "ai",
+    "blog",
+    "announcement"
+  ],
+  "author": "Cumulative Web Inc",
+  "canonical_url": "https://cumulativeweb.com/blog/posts/cwi-blog-machine-readable.html",
+  "self": "https://cumulativeweb.com/blog/posts/cwi-blog-machine-readable.json",
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "The CWI blog is now machine-readable",
+    "description": "Every post on the CWI blog ships with a JSON twin and JSON-LD schema — built so AI agents and search engines read our news directly.",
+    "datePublished": "2026-10-05",
+    "dateModified": "2026-10-05",
+    "author": {
+      "@type": "Organization",
+      "name": "Cumulative Web Inc",
+      "url": "https://cumulativeweb.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Cumulative Web Inc",
+      "url": "https://cumulativeweb.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cumulativeweb.com/assets/cwi-logo.jpg"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://cumulativeweb.com/blog/posts/cwi-blog-machine-readable.html"
+    },
+    "keywords": "machine-readable, ai, blog, announcement",
+    "inLanguage": "en"
+  },
+  "related": [
+    {
+      "slug": "radio-365-is-live",
+      "title": "Radio 365 is live",
+      "url": "https://cumulativeweb.com/blog/posts/radio-365-is-live.html"
+    },
+    {
+      "slug": "diabolique-october-discovery-mode",
+      "title": "Diabolique is the October Discovery Mode control",
+      "url": "https://cumulativeweb.com/blog/posts/diabolique-october-discovery-mode.html"
+    }
+  ],
+  "machine": {
+    "content_id": "blog:cwi-blog-machine-readable",
+    "content_type": "blog_post",
+    "title": "The CWI blog is now machine-readable",
+    "url": "https://cumulativeweb.com/blog/posts/cwi-blog-machine-readable.html",
+    "tags": [
+      "machine-readable",
+      "ai",
+      "blog",
+      "announcement"
+    ]
+  },
+  "generated_at": "2026-10-05T15:19:08.791Z"
+}

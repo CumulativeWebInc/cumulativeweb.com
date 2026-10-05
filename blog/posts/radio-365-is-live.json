@@ -1,0 +1,68 @@
+{
+  "slug": "radio-365-is-live",
+  "title": "Radio 365 is live",
+  "excerpt": "Cumulative Web Inc's 365-day station is on the air — streaming the catalog over HLS with a live now-playing feed.",
+  "body_markdown": "# Radio 365 is live\n\nRadio 365 — Cumulative Web Inc's 365-day station for independent artists — is now streaming at [cumulativeweb.com/radio.html](https://cumulativeweb.com/radio.html).\n\nThe station broadcasts the CWI catalog over [HLS](https://cumulativeweb.com/radio/hls/program.m3u8), and a live [now-playing feed](https://cumulativeweb.com/radio/now-playing.json) publishes the current track, artist, and artwork in real time. The 7-day program playlist is published alongside the stream, so the full week's rotation is machine-readable too.\n\nThis is the station the [launch announcement](https://cumulativeweb.com/press/releases/cumulative-radio-365-launch.html) described: a full parallel to the old broadcast setup, rebuilt to stream from our own infrastructure — no rented computer, nothing to suspend.\n\nEvery track in rotation also has a machine-readable page in the [CWI learning index](https://cumulativewebinc.github.io/cwi-learn/tracks/), with cite-ready references and equip commands for AI agents.\n\nTune in: [cumulativeweb.com/radio.html](https://cumulativeweb.com/radio.html).",
+  "body_html": "<h2>Radio 365 is live</h2><p>Radio 365 — Cumulative Web Inc's 365-day station for independent artists — is now streaming at <a href=\"https://cumulativeweb.com/radio.html\">cumulativeweb.com/radio.html</a>.</p><p>The station broadcasts the CWI catalog over <a href=\"https://cumulativeweb.com/radio/hls/program.m3u8\">HLS</a>, and a live <a href=\"https://cumulativeweb.com/radio/now-playing.json\">now-playing feed</a> publishes the current track, artist, and artwork in real time. The 7-day program playlist is published alongside the stream, so the full week's rotation is machine-readable too.</p><p>This is the station the <a href=\"https://cumulativeweb.com/press/releases/cumulative-radio-365-launch.html\">launch announcement</a> described: a full parallel to the old broadcast setup, rebuilt to stream from our own infrastructure — no rented computer, nothing to suspend.</p><p>Every track in rotation also has a machine-readable page in the <a href=\"https://cumulativewebinc.github.io/cwi-learn/tracks/\" data-outbound target=\"_blank\" rel=\"noopener\">CWI learning index</a>, with cite-ready references and equip commands for AI agents.</p><p>Tune in: <a href=\"https://cumulativeweb.com/radio.html\">cumulativeweb.com/radio.html</a>.</p>",
+  "date": "2026-10-05",
+  "tags": [
+    "radio-365",
+    "music",
+    "announcement"
+  ],
+  "author": "Cumulative Web Inc",
+  "canonical_url": "https://cumulativeweb.com/blog/posts/radio-365-is-live.html",
+  "self": "https://cumulativeweb.com/blog/posts/radio-365-is-live.json",
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Radio 365 is live",
+    "description": "Cumulative Web Inc's 365-day station is on the air — streaming the catalog over HLS with a live now-playing feed.",
+    "datePublished": "2026-10-05",
+    "dateModified": "2026-10-05",
+    "author": {
+      "@type": "Organization",
+      "name": "Cumulative Web Inc",
+      "url": "https://cumulativeweb.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Cumulative Web Inc",
+      "url": "https://cumulativeweb.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cumulativeweb.com/assets/cwi-logo.jpg"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://cumulativeweb.com/blog/posts/radio-365-is-live.html"
+    },
+    "keywords": "radio-365, music, announcement",
+    "inLanguage": "en"
+  },
+  "related": [
+    {
+      "slug": "diabolique-october-discovery-mode",
+      "title": "Diabolique is the October Discovery Mode control",
+      "url": "https://cumulativeweb.com/blog/posts/diabolique-october-discovery-mode.html"
+    },
+    {
+      "slug": "cwi-blog-machine-readable",
+      "title": "The CWI blog is now machine-readable",
+      "url": "https://cumulativeweb.com/blog/posts/cwi-blog-machine-readable.html"
+    }
+  ],
+  "machine": {
+    "content_id": "blog:radio-365-is-live",
+    "content_type": "blog_post",
+    "title": "Radio 365 is live",
+    "url": "https://cumulativeweb.com/blog/posts/radio-365-is-live.html",
+    "tags": [
+      "radio-365",
+      "music",
+      "announcement"
+    ]
+  },
+  "generated_at": "2026-10-05T15:19:08.783Z"
+}

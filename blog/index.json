@@ -1,0 +1,86 @@
+{
+  "updated": "2026-10-05T15:19:08.792Z",
+  "feed_url": "https://cumulativeweb.com/blog/index.json",
+  "count": 3,
+  "posts": [
+    {
+      "slug": "radio-365-is-live",
+      "title": "Radio 365 is live",
+      "date": "2026-10-05",
+      "excerpt": "Cumulative Web Inc's 365-day station is on the air — streaming the catalog over HLS with a live now-playing feed.",
+      "tags": [
+        "radio-365",
+        "music",
+        "announcement"
+      ],
+      "status": "published",
+      "url": "https://cumulativeweb.com/blog/posts/radio-365-is-live.html",
+      "json_url": "https://cumulativeweb.com/blog/posts/radio-365-is-live.json",
+      "machine": {
+        "content_id": "blog:radio-365-is-live",
+        "content_type": "blog_post",
+        "title": "Radio 365 is live",
+        "url": "https://cumulativeweb.com/blog/posts/radio-365-is-live.html",
+        "tags": [
+          "radio-365",
+          "music",
+          "announcement"
+        ]
+      }
+    },
+    {
+      "slug": "diabolique-october-discovery-mode",
+      "title": "Diabolique is the October Discovery Mode control",
+      "date": "2026-10-05",
+      "excerpt": "That Boy Hi Hat's \"Diabolique\" is Cumulative Web Inc's October Discovery Mode control — the campaign is running in Spotify for Artists.",
+      "tags": [
+        "discovery-mode",
+        "that-boy-hi-hat",
+        "music",
+        "announcement"
+      ],
+      "status": "published",
+      "url": "https://cumulativeweb.com/blog/posts/diabolique-october-discovery-mode.html",
+      "json_url": "https://cumulativeweb.com/blog/posts/diabolique-october-discovery-mode.json",
+      "machine": {
+        "content_id": "blog:diabolique-october-discovery-mode",
+        "content_type": "blog_post",
+        "title": "Diabolique is the October Discovery Mode control",
+        "url": "https://cumulativeweb.com/blog/posts/diabolique-october-discovery-mode.html",
+        "tags": [
+          "discovery-mode",
+          "that-boy-hi-hat",
+          "music",
+          "announcement"
+        ]
+      }
+    },
+    {
+      "slug": "cwi-blog-machine-readable",
+      "title": "The CWI blog is now machine-readable",
+      "date": "2026-10-05",
+      "excerpt": "Every post on the CWI blog ships with a JSON twin and JSON-LD schema — built so AI agents and search engines read our news directly.",
+      "tags": [
+        "machine-readable",
+        "ai",
+        "blog",
+        "announcement"
+      ],
+      "status": "published",
+      "url": "https://cumulativeweb.com/blog/posts/cwi-blog-machine-readable.html",
+      "json_url": "https://cumulativeweb.com/blog/posts/cwi-blog-machine-readable.json",
+      "machine": {
+        "content_id": "blog:cwi-blog-machine-readable",
+        "content_type": "blog_post",
+        "title": "The CWI blog is now machine-readable",
+        "url": "https://cumulativeweb.com/blog/posts/cwi-blog-machine-readable.html",
+        "tags": [
+          "machine-readable",
+          "ai",
+          "blog",
+          "announcement"
+        ]
+      }
+    }
+  ]
+}

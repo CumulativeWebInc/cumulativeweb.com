@@ -300,7 +300,25 @@
       '<div class="badge-row">' + inl('#/skateboards', 'Shop the decks', 'btn btn--primary') + '</div></div>' +
       '</div></section>';
 
+    html += '<section>' + sectionHead('Latest from the blog', '/blog/', 'All posts') +
+      '<div class="grid" id="blog-latest-grid"><div class="card"><div class="sub">Loading the latest posts…</div></div></div></section>';
+
     return html + footer() + playerSlot();
+  }
+
+  // Latest blog posts — data-driven from the machine-readable feed.
+  function loadBlogLatest() {
+    var grid = document.getElementById('blog-latest-grid');
+    if (!grid) return;
+    loadJSON('blog/index.json').then(function (feed) {
+      var posts = ((feed && feed.posts) || []).filter(function (p) { return p.status === 'published'; }).slice(0, 3);
+      if (!posts.length) { grid.innerHTML = '<div class="card"><div class="sub">No posts yet.</div></div>'; return; }
+      grid.innerHTML = posts.map(function (p) {
+        return '<div class="card"><h3>' + inl('/blog/posts/' + esc(p.slug) + '.html', esc(p.title)) + '</h3>' +
+          '<div class="sub">' + esc(p.date) + ' · ' + (p.tags || []).map(esc).join(', ') + '</div>' +
+          '<div class="sub">' + esc(p.excerpt || '') + '</div></div>';
+      }).join('');
+    }, function () { grid.innerHTML = '<div class="card"><div class="sub">The blog feed is unavailable right now.</div></div>'; });
   }
 
   function viewArtists() {
@@ -588,6 +606,7 @@
     else if (route === '/software') html = viewSoftware();
     else html = viewNotFound('page');
     view.innerHTML = html;
+    if (route === '' || route === '/') loadBlogLatest();
     wirePlayer();
     document.getElementById('main').scrollTop = 0;
     window.scrollTo(0, 0);
