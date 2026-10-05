@@ -154,11 +154,18 @@ function main() {
     return;
   }
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
-  fs.writeFileSync(OUT, JSON.stringify(doc, null, 2) + '\n');
   if (!push) {
-    console.log(JSON.stringify({ ...report, reason: 'written to working tree' }));
+    // Read-only check: do NOT overwrite the working-tree freshness.json with
+    // locally-probed (potentially stale) data — that would block the next
+    // --push rebase. Report only.
+    console.log(JSON.stringify({ ...report, reason: 'read-only check, working tree untouched' }));
     return;
   }
+  // Discard any stale working-tree copy before writing: a previous non-push run
+  // or interrupted push may have left locally-probed data that would block the
+  // rebase inside ghapi_git_push. The committed version is authoritative.
+  try { git('git checkout HEAD -- data/freshness.json'); } catch (e) { /* no local copy */ }
+  fs.writeFileSync(OUT, JSON.stringify(doc, null, 2) + '\n');
   // Never sweep up siblings' unpushed work: the heartbeat only pushes when the
   // only unpushed commits are its own.
   const others = unpushedNonFreshnessCommits();
@@ -166,6 +173,8 @@ function main() {
     console.log(JSON.stringify({ ...report, reason: 'skipped push — unpushed non-freshness commits present', pending: others }));
     return;
   }
+  // Discard any stale working-tree copy before the push rebase: handled above
+  // before the write, so the rebase inside ghapi_git_push starts clean.
   git('git add data/freshness.json');
   git('git -c user.name="CWI Machine" -c user.email="machine@cumulativeweb.com" ' +
       `commit -m "freshness: heartbeat ${doc.content_hash} (${doc.surfaces_changed.length} surfaces changed)"`);
