@@ -6,6 +6,13 @@ on:
   push:
   pull_request:
 
+# Rapid scheduler pushes (now-playing every ~2 min) used to pile up overlapping
+# scans that GitHub cancelled and emailed as "failures". One run per ref now —
+# a newer push cleanly supersedes the older one, no failure noise.
+concurrency:
+  group: gitleaks-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 
