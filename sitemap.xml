@@ -386,4 +386,46 @@
     <priority>0.9</priority>
     <lastmod>2026-10-05</lastmod>
   </url>
+  <url>
+    <loc>https://cumulativeweb.com/llms.txt</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://cumulativeweb.com/llms-full.txt</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://cumulativeweb.com/br/llms.txt</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://cumulativeweb.com/br/llms-full.txt</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://cumulativeweb.com/robots.txt</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://cumulativeweb.com/data/freshness.json</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://cumulativeweb.com/data/catalog-embeddings.json</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-10-05</lastmod>
+  </url>
 </urlset>
