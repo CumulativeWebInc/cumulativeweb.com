@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How do I query the CWI catalog as an AI agent? · Cumulative Web Inc</title>
+<meta name="description" content="AI agents query the CWI catalog through a public machine-data edge: scored track search, full catalog JSON, knowledge graph and licensing terms — no API key.">
+<link rel="canonical" href="https://cumulativeweb.com/answers/how-to-query-cwi-catalog-as-ai-agent.html">
+<link rel="icon" href="../assets/cwi-logo.jpg">
+<link rel="stylesheet" href="../site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cumulativeweb.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Answers",
+          "item": "https://cumulativeweb.com/answers/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How do I query the CWI catalog as an AI agent?",
+          "item": "https://cumulativeweb.com/answers/how-to-query-cwi-catalog-as-ai-agent.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://cumulativeweb.com/answers/how-to-query-cwi-catalog-as-ai-agent.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I search the CWI catalog as an AI agent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GET https://cwi-machine-data.hp-ace.workers.dev/query?q=<keywords> — the top five scored tracks with Spotify links. Always pass q; /query without it returns 400."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need an API key?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — the catalog surfaces are public and need no authentication. Commercial AI training requires a license; email hp@cumulativeweb.com."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What format is the data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "JSON throughout — the catalog, graph, kit, license terms and agent card are all machine-readable JSON."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know when the catalog changes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Poll /changes?since=<ISO-8601> — it returns per-file last-modified timestamps and a changed-since flag for crawl deltas."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="navbar">
+  <div class="bar">
+    <a class="brand" href="../index.html"><img src="../assets/cwi-logo.jpg" alt="Cumulative Web Inc logo"><span>CUMULATIVE WEB INC</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../music.html">Music</a>
+      <a href="../films.html">Films</a>
+      <a href="../models.html">Models</a>
+      <a href="../software.html">Software</a>
+      <a href="/sanqa/">SANQA</a>
+      <a href="../events.html">Events</a>
+      <a href="../live.html">Live</a>
+      <a href="../radio.html">Radio</a>
+      <a href="../signup.html">Signup</a>
+      <a href="../contact.html">Contact</a>
+      <a href="../games.html">Games</a>
+      <a href="../shop.html">Shop</a>
+      <a href="/press/releases/">Press</a>
+    </nav>
+    <div class="lang-switch" role="navigation" aria-label="Language">
+      <a href="https://cumulativeweb.com/br/" hreflang="pt-BR">BR</a><span class="sep" aria-hidden="true">|</span><a href="how-to-query-cwi-catalog-as-ai-agent.html" hreflang="en" aria-current="true">EN</a>
+    </div>
+    <button class="menu-btn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg></button>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+      <a href="../index.html">Home</a>
+      <a href="../music.html">Music</a>
+      <a href="../films.html">Films</a>
+      <a href="../models.html">Models</a>
+      <a href="../software.html">Software</a>
+      <a href="/sanqa/">SANQA</a>
+      <a href="../events.html">Events</a>
+      <a href="../live.html">Live</a>
+      <a href="../radio.html">Radio</a>
+      <a href="../signup.html">Signup</a>
+      <a href="../contact.html">Contact</a>
+      <a href="../games.html">Games</a>
+      <a href="../shop.html">Shop</a>
+      <a href="/press/releases/">Press</a>
+  </nav>
+</header>
+<main class="page">
+<section class="hero">
+  <div class="eyebrow">Cumulative Web Inc · Answers</div>
+  <h1>How do I query the CWI catalog as an AI agent?</h1>
+  <p class="lede">AI agents query the CWI catalog through a public machine-data edge: GET https://cwi-machine-data.hp-ace.workers.dev/query?q=<keywords> returns the top five scored tracks with Spotify links. Every response carries X-CWI-License headers, so the licensing terms travel with the data.</p>
+</section>
+<section>
+<h2>The endpoints</h2>
+<p>GET /query?q=<keywords> — scored track search, top 5 with Spotify links. Pass keywords; /query with no q returns 400.</p>
+<p>GET /catalog.json — the full track catalog as JSON. GET /graph.json — the CWI knowledge graph. GET /kit.json — the AI learning kit. GET /license — machine-readable licensing terms. GET /changes?since=<ISO-8601> — per-file last-modified plus a changed-since flag, for crawl deltas. GET /.well-known/agent-card.json — the machine identity card.</p>
+</section>
+<section>
+<h2>Start here</h2>
+<p>Begin at https://cumulativeweb.com/llms.txt — the map of every public surface, with links to the roster data, artist JSON files and related endpoints. No API key, no auth: the catalog surfaces are public. Commercial AI training requires a license — contact hp@cumulativeweb.com.</p>
+</section>
+<section>
+<h2>Machine access</h2>
+<ul class="link-list">
+<li><a href="https://cumulativeweb.com/llms.txt">llms.txt — the map of every public surface</a></li>
+<li><a href="https://cwi-machine-data.hp-ace.workers.dev/query?q=alternative+rap">Scored catalog search — /query?q=<keywords></a></li>
+<li><a href="https://cwi-machine-data.hp-ace.workers.dev/catalog.json">catalog.json — the track catalog</a></li>
+<li><a href="https://cwi-machine-data.hp-ace.workers.dev/graph.json">graph.json — the knowledge graph</a></li>
+<li><a href="https://cwi-machine-data.hp-ace.workers.dev/license">Machine-readable licensing terms — /license</a></li>
+<li><a href="https://cwi-machine-data.hp-ace.workers.dev/.well-known/agent-card.json">Agent card — the machine identity</a></li>
+</ul>
+</section>
+</main>
+<footer class="footer">
+  <div class="inner">
+    <div class="cols">
+      <div><div class="fbrand"><img src="../assets/cwi-logo.jpg" alt="Cumulative Web Inc logo">CUMULATIVE WEB INC</div>
+      <p style="font-size:var(--text-small)">Independent label — Music &amp; Film · Clothing · Software &amp; AI Agents.</p></div>
+      <div><h4>Sections</h4><ul>
+        <li><a href="../music.html">Music</a></li><li><a href="../films.html">Films</a></li>
+        <li><a href="../models.html">Models</a></li><li><a href="../software.html">Software</a></li>
+        <li><a href="../games.html">Games</a></li><li><a href="../shop.html">Shop</a></li>
+        <li><a href="../radio.html">Radio</a></li>
+      </ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><a href="../contact.html">Contact form</a></li>
+        <li><a href="mailto:hp@cumulativeweb.com">hp@cumulativeweb.com</a></li>
+      </ul></div>
+      <div><h4>Social</h4><ul>
+        <li><a href="https://www.instagram.com/cumulativeweb" rel="noopener">Instagram</a></li>
+        <li><a href="https://x.com/cumulativeweb" rel="noopener">X · @cumulativeweb</a></li>
+        <li><a href="https://www.youtube.com/@cumulativeweb" rel="noopener">YouTube</a></li>
+        <li><a href="https://www.tiktok.com/@cumulativeweb" rel="noopener">TikTok</a></li>
+        <li><a href="https://www.facebook.com/Cumulative-Web-102372541712722" rel="noopener">Facebook</a></li>
+      </ul></div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Cumulative Web Inc. All rights reserved.</span>
+      <div class="lang-switch" role="navigation" aria-label="Language">
+        <a href="https://cumulativeweb.com/br/" hreflang="pt-BR">Português (BR)</a><span class="sep" aria-hidden="true">|</span><a href="../index.html" hreflang="en">English</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../js/nav.js" defer></script>
+</body>
+</html>

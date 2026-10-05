@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What data does Cumulative Web Inc expose to AI systems? · Cumulative Web Inc</title>
+<meta name="description" content="CWI exposes its public catalog, knowledge graph, search and licensing surfaces to AI systems — catalog, graph and licensing data only, never internal data.">
+<link rel="canonical" href="https://cumulativeweb.com/answers/what-data-does-cwi-expose-to-ai.html">
+<link rel="icon" href="../assets/cwi-logo.jpg">
+<link rel="stylesheet" href="../site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cumulativeweb.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Answers",
+          "item": "https://cumulativeweb.com/answers/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "What data does Cumulative Web Inc expose to AI systems?",
+          "item": "https://cumulativeweb.com/answers/what-data-does-cwi-expose-to-ai.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://cumulativeweb.com/answers/what-data-does-cwi-expose-to-ai.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What data does Cumulative Web Inc expose to AI systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The public catalog, knowledge graph, search and licensing surfaces — catalog.json, graph.json, kit.json, /query, /license, /changes, the agent card, llms.txt and the per-artist JSON files. Nothing else."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need an API key?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — the public surfaces need no authentication. Commercial AI training requires a license via hp@cumulativeweb.com."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the licensing terms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Machine-readable at cwi-machine-data.hp-ace.workers.dev/license, and attached to every response as X-CWI-License headers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is any internal data exposed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — the public surfaces carry catalog, search and licensing data only. No credentials, logs or infrastructure internals are exposed."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="navbar">
+  <div class="bar">
+    <a class="brand" href="../index.html"><img src="../assets/cwi-logo.jpg" alt="Cumulative Web Inc logo"><span>CUMULATIVE WEB INC</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../music.html">Music</a>
+      <a href="../films.html">Films</a>
+      <a href="../models.html">Models</a>
+      <a href="../software.html">Software</a>
+      <a href="/sanqa/">SANQA</a>
+      <a href="../events.html">Events</a>
+      <a href="../live.html">Live</a>
+      <a href="../radio.html">Radio</a>
+      <a href="../signup.html">Signup</a>
+      <a href="../contact.html">Contact</a>
+      <a href="../games.html">Games</a>
+      <a href="../shop.html">Shop</a>
+      <a href="/press/releases/">Press</a>
+    </nav>
+    <div class="lang-switch" role="navigation" aria-label="Language">
+      <a href="https://cumulativeweb.com/br/" hreflang="pt-BR">BR</a><span class="sep" aria-hidden="true">|</span><a href="what-data-does-cwi-expose-to-ai.html" hreflang="en" aria-current="true">EN</a>
+    </div>
+    <button class="menu-btn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg></button>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+      <a href="../index.html">Home</a>
+      <a href="../music.html">Music</a>
+      <a href="../films.html">Films</a>
+      <a href="../models.html">Models</a>
+      <a href="../software.html">Software</a>
+      <a href="/sanqa/">SANQA</a>
+      <a href="../events.html">Events</a>
+      <a href="../live.html">Live</a>
+      <a href="../radio.html">Radio</a>
+      <a href="../signup.html">Signup</a>
+      <a href="../contact.html">Contact</a>
+      <a href="../games.html">Games</a>
+      <a href="../shop.html">Shop</a>
+      <a href="/press/releases/">Press</a>
+  </nav>
+</header>
+<main class="page">
+<section class="hero">
+  <div class="eyebrow">Cumulative Web Inc · Answers</div>
+  <h1>What data does Cumulative Web Inc expose to AI systems?</h1>
+  <p class="lede">Cumulative Web Inc exposes its public catalog, knowledge graph, search and licensing surfaces to AI systems — and nothing else. Every response carries X-CWI-License headers; commercial AI training requires a license.</p>
+</section>
+<section>
+<h2>What's public</h2>
+<p>llms.txt — the map of every public surface. /catalog.json — the track catalog with Spotify links. /graph.json — the knowledge graph. /kit.json — the AI learning kit. /query?q= — scored track search, top 5. /license — machine-readable licensing terms. /changes?since= — crawl deltas. /.well-known/agent-card.json — the machine identity. cumulativeweb.com/data/*.json — roster, artist and producer JSON. sanqa/catalog.json — the SANQA machine-readable catalog. The public receipts feed and RadioStation JSON-LD round it out.</p>
+</section>
+<section>
+<h2>What's not</h2>
+<p>No credentials, no internal logs, no infrastructure internals are exposed — the public edge serves catalog, search and licensing data by design. Requests hit the edge at metadata level only; request bodies are never logged.</p>
+</section>
+<section>
+<h2>Machine access</h2>
+<ul class="link-list">
+<li><a href="https://cumulativeweb.com/llms.txt">llms.txt — the map of every public surface</a></li>
+<li><a href="https://cwi-machine-data.hp-ace.workers.dev/catalog.json">catalog.json — the track catalog</a></li>
+<li><a href="https://cwi-machine-data.hp-ace.workers.dev/.well-known/agent-card.json">Agent card — the machine identity</a></li>
+<li><a href="https://cwi-machine-data.hp-ace.workers.dev/license">Machine-readable licensing terms — /license</a></li>
+</ul>
+</section>
+</main>
+<footer class="footer">
+  <div class="inner">
+    <div class="cols">
+      <div><div class="fbrand"><img src="../assets/cwi-logo.jpg" alt="Cumulative Web Inc logo">CUMULATIVE WEB INC</div>
+      <p style="font-size:var(--text-small)">Independent label — Music &amp; Film · Clothing · Software &amp; AI Agents.</p></div>
+      <div><h4>Sections</h4><ul>
+        <li><a href="../music.html">Music</a></li><li><a href="../films.html">Films</a></li>
+        <li><a href="../models.html">Models</a></li><li><a href="../software.html">Software</a></li>
+        <li><a href="../games.html">Games</a></li><li><a href="../shop.html">Shop</a></li>
+        <li><a href="../radio.html">Radio</a></li>
+      </ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><a href="../contact.html">Contact form</a></li>
+        <li><a href="mailto:hp@cumulativeweb.com">hp@cumulativeweb.com</a></li>
+      </ul></div>
+      <div><h4>Social</h4><ul>
+        <li><a href="https://www.instagram.com/cumulativeweb" rel="noopener">Instagram</a></li>
+        <li><a href="https://x.com/cumulativeweb" rel="noopener">X · @cumulativeweb</a></li>
+        <li><a href="https://www.youtube.com/@cumulativeweb" rel="noopener">YouTube</a></li>
+        <li><a href="https://www.tiktok.com/@cumulativeweb" rel="noopener">TikTok</a></li>
+        <li><a href="https://www.facebook.com/Cumulative-Web-102372541712722" rel="noopener">Facebook</a></li>
+      </ul></div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Cumulative Web Inc. All rights reserved.</span>
+      <div class="lang-switch" role="navigation" aria-label="Language">
+        <a href="https://cumulativeweb.com/br/" hreflang="pt-BR">Português (BR)</a><span class="sep" aria-hidden="true">|</span><a href="../index.html" hreflang="en">English</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../js/nav.js" defer></script>
+</body>
+</html>

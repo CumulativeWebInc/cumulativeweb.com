@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Where is CWI's machine-readable music catalog? · Cumulative Web Inc</title>
+<meta name="description" content="CWI's machine-readable music catalog lives at the machine-data edge: catalog.json, graph.json, scored search and per-artist JSON — the map starts at llms.txt.">
+<link rel="canonical" href="https://cumulativeweb.com/answers/where-is-cwis-machine-readable-music-catalog.html">
+<link rel="icon" href="../assets/cwi-logo.jpg">
+<link rel="stylesheet" href="../site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cumulativeweb.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Answers",
+          "item": "https://cumulativeweb.com/answers/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Where is CWI's machine-readable music catalog?",
+          "item": "https://cumulativeweb.com/answers/where-is-cwis-machine-readable-music-catalog.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://cumulativeweb.com/answers/where-is-cwis-machine-readable-music-catalog.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where is CWI's machine-readable music catalog?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At the machine-data edge: https://cwi-machine-data.hp-ace.workers.dev/catalog.json — with the map to every surface at https://cumulativeweb.com/llms.txt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What format is it in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "JSON throughout — catalog, graph, kit, license terms and the agent card."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I search it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GET /query?q=<keywords> — scored search returning the top five tracks with Spotify links."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the terms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every response carries X-CWI-License headers; the machine-readable terms are at /license. Commercial AI training requires a license."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="navbar">
+  <div class="bar">
+    <a class="brand" href="../index.html"><img src="../assets/cwi-logo.jpg" alt="Cumulative Web Inc logo"><span>CUMULATIVE WEB INC</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../music.html">Music</a>
+      <a href="../films.html">Films</a>
+      <a href="../models.html">Models</a>
+      <a href="../software.html">Software</a>
+      <a href="/sanqa/">SANQA</a>
+      <a href="../events.html">Events</a>
+      <a href="../live.html">Live</a>
+      <a href="../radio.html">Radio</a>
+      <a href="../signup.html">Signup</a>
+      <a href="../contact.html">Contact</a>
+      <a href="../games.html">Games</a>
+      <a href="../shop.html">Shop</a>
+      <a href="/press/releases/">Press</a>
+    </nav>
+    <div class="lang-switch" role="navigation" aria-label="Language">
+      <a href="https://cumulativeweb.com/br/" hreflang="pt-BR">BR</a><span class="sep" aria-hidden="true">|</span><a href="where-is-cwis-machine-readable-music-catalog.html" hreflang="en" aria-current="true">EN</a>
+    </div>
+    <button class="menu-btn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg></button>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+      <a href="../index.html">Home</a>
+      <a href="../music.html">Music</a>
+      <a href="../films.html">Films</a>
+      <a href="../models.html">Models</a>
+      <a href="../software.html">Software</a>
+      <a href="/sanqa/">SANQA</a>
+      <a href="../events.html">Events</a>
+      <a href="../live.html">Live</a>
+      <a href="../radio.html">Radio</a>
+      <a href="../signup.html">Signup</a>
+      <a href="../contact.html">Contact</a>
+      <a href="../games.html">Games</a>
+      <a href="../shop.html">Shop</a>
+      <a href="/press/releases/">Press</a>
+  </nav>
+</header>
+<main class="page">
+<section class="hero">
+  <div class="eyebrow">Cumulative Web Inc · Answers</div>
+  <h1>Where is CWI's machine-readable music catalog?</h1>
+  <p class="lede">CWI's machine-readable music catalog lives at the machine-data edge: https://cwi-machine-data.hp-ace.workers.dev/catalog.json — the track catalog as JSON, with Spotify links and X-CWI-License headers on every response. The map to every surface starts at https://cumulativeweb.com/llms.txt.</p>
+</section>
+<section>
+<h2>The catalog files</h2>
+<p>/catalog.json — the track catalog with Spotify links. /graph.json — the knowledge graph. /kit.json — the AI learning kit. cumulativeweb.com/data/roster.json and data/artists/*.json — roster, artist and producer records. sanqa/catalog.json — the SANQA machine-readable catalog.</p>
+</section>
+<section>
+<h2>Search and track</h2>
+<p>/query?q=<keywords> — scored track search, top five results. /changes?since=<ISO-8601> — crawl deltas with per-file last-modified. /license — machine-readable licensing terms. The agent card at /.well-known/agent-card.json identifies the machine behind the data.</p>
+</section>
+<section>
+<h2>Machine access</h2>
+<ul class="link-list">
+<li><a href="https://cwi-machine-data.hp-ace.workers.dev/catalog.json">catalog.json — the track catalog</a></li>
+<li><a href="https://cwi-machine-data.hp-ace.workers.dev/graph.json">graph.json — the knowledge graph</a></li>
+<li><a href="https://cwi-machine-data.hp-ace.workers.dev/query?q=alternative+rap">Scored catalog search — /query?q=<keywords></a></li>
+<li><a href="https://cumulativeweb.com/llms.txt">llms.txt — the map of every public surface</a></li>
+<li><a href="https://cwi-machine-data.hp-ace.workers.dev/.well-known/agent-card.json">Agent card — the machine identity</a></li>
+<li><a href="https://cwi-machine-data.hp-ace.workers.dev/license">Machine-readable licensing terms — /license</a></li>
+</ul>
+</section>
+</main>
+<footer class="footer">
+  <div class="inner">
+    <div class="cols">
+      <div><div class="fbrand"><img src="../assets/cwi-logo.jpg" alt="Cumulative Web Inc logo">CUMULATIVE WEB INC</div>
+      <p style="font-size:var(--text-small)">Independent label — Music &amp; Film · Clothing · Software &amp; AI Agents.</p></div>
+      <div><h4>Sections</h4><ul>
+        <li><a href="../music.html">Music</a></li><li><a href="../films.html">Films</a></li>
+        <li><a href="../models.html">Models</a></li><li><a href="../software.html">Software</a></li>
+        <li><a href="../games.html">Games</a></li><li><a href="../shop.html">Shop</a></li>
+        <li><a href="../radio.html">Radio</a></li>
+      </ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><a href="../contact.html">Contact form</a></li>
+        <li><a href="mailto:hp@cumulativeweb.com">hp@cumulativeweb.com</a></li>
+      </ul></div>
+      <div><h4>Social</h4><ul>
+        <li><a href="https://www.instagram.com/cumulativeweb" rel="noopener">Instagram</a></li>
+        <li><a href="https://x.com/cumulativeweb" rel="noopener">X · @cumulativeweb</a></li>
+        <li><a href="https://www.youtube.com/@cumulativeweb" rel="noopener">YouTube</a></li>
+        <li><a href="https://www.tiktok.com/@cumulativeweb" rel="noopener">TikTok</a></li>
+        <li><a href="https://www.facebook.com/Cumulative-Web-102372541712722" rel="noopener">Facebook</a></li>
+      </ul></div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Cumulative Web Inc. All rights reserved.</span>
+      <div class="lang-switch" role="navigation" aria-label="Language">
+        <a href="https://cumulativeweb.com/br/" hreflang="pt-BR">Português (BR)</a><span class="sep" aria-hidden="true">|</span><a href="../index.html" hreflang="en">English</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../js/nav.js" defer></script>
+</body>
+</html>
