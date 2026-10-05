@@ -1,19 +1,9 @@
 {
-  "generated_at": "2026-10-05T23:35:05.436Z",
-  "content_hash": "a6fa596e681ba436",
-  "previous_content_hash": "a05af5d10ee9a5ad",
+  "generated_at": "2026-10-05T23:35:35.549Z",
+  "content_hash": "44df94b63a39782b",
+  "previous_content_hash": "a6fa596e681ba436",
   "changed": true,
   "surfaces_changed": [
-    "/robots.txt",
-    "/llms.txt",
-    "/sitemap.xml",
-    "/blog/index.html",
-    "/blog/index.json",
-    "/data/roster.json",
-    "/data/commerce.json",
-    "/data/producer.json",
-    "/data/software-catalog.json",
-    "/radio/schedule.json",
     "/radio/now-playing.json"
   ],
   "surface_count": 12,
@@ -110,7 +100,7 @@
       "path": "/radio/now-playing.json",
       "exists": true,
       "bytes": 513,
-      "sha256": "71f9c163284d2115",
+      "sha256": "5b5bb08b463ae097",
       "mtime": null,
       "source": "origin/main"
     }
