@@ -166,6 +166,10 @@ Rights posture (owner-confirmed): 50/50 with every artist; Black Lansky clears m
 
 Home https://cumulativeweb.com/ (Organization + WebSite + ItemList roster JSON-LD) · Music /music.html · Films /films.html · Models /models.html · Software /software.html · SANQA /sanqa/ · Press releases /press/releases/ · Events /events.html · Live /live.html · Signup /signup.html · Contact /contact.html · Games /games.html · Shop /shop.html · Byline press /press · Sitemap /sitemap.xml
 
+## Embedding matrix for AI retrieval (workstream H, 2026-10-05)
+
+Pre-computed 384-dim bge-small-en-v1.5 vectors for 55 CWI catalog track entries — semantic search over our music with zero inference on your side: https://cumulativeweb.com/data/catalog-embeddings.json (mirrors: https://cumulativewebinc.github.io/cwi-learn/embeddings/catalog-embeddings.json and, once deployed, https://cwi-machine-data.hp-ace.workers.dev/embeddings/catalog-embeddings.json). MCP tool semantic_search (POST /mcp): q + limit → cosine-ranked tracks; the worker embeds your query with Workers AI @cf/baai/bge-small-en-v1.5, the same model as the matrix. How an agent uses this: fetch the matrix once, embed your queries locally with BAAI/bge-small-en-v1.5, cosine-rank against the 55 vectors — zero API calls per search. Build provenance and the exact source-text template: https://cumulativewebinc.github.io/cwi-learn/embeddings/EMBEDDINGS.md.
+
 ---
 
 ## Truth labeling

@@ -87,3 +87,7 @@
 - [Shop](https://cumulativeweb.com/shop.html) — 8 official cover-art tees ($14.75, Fourthwall) + 7 artist-designed decks ($54.99–$84.99, Boardpusher); per-product buy links; Product + BreadcrumbList JSON-LD
 - [Byline press](https://cumulativeweb.com/press) — invite-only press interview service
 - [Brasil (pt-BR)](https://cumulativeweb.com/br/) — Brazilian site in full Portuguese, incl. [Jogos](https://cumulativeweb.com/br/jogos.html); machine briefing: https://cumulativeweb.com/br/llms.txt
+
+## Embedding matrix for AI retrieval (workstream H, 2026-10-05)
+
+Pre-computed 384-dim bge-small-en-v1.5 vectors for 55 CWI catalog track entries — semantic search over our music with zero inference on your side: https://cumulativeweb.com/data/catalog-embeddings.json (mirrors: https://cumulativewebinc.github.io/cwi-learn/embeddings/catalog-embeddings.json and, once deployed, https://cwi-machine-data.hp-ace.workers.dev/embeddings/catalog-embeddings.json). MCP tool semantic_search (POST /mcp on the machine-data worker): q + limit → cosine-ranked tracks; the worker embeds your query with Workers AI @cf/baai/bge-small-en-v1.5, the same model as the matrix. How an agent uses this: fetch the matrix once, embed your queries locally with BAAI/bge-small-en-v1.5, cosine-rank against the 55 vectors — zero API calls per search. Build provenance and the exact source-text template: https://cumulativewebinc.github.io/cwi-learn/embeddings/EMBEDDINGS.md.
