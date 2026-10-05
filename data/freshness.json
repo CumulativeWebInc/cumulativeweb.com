@@ -1,0 +1,107 @@
+{
+  "generated_at": "2026-10-05T17:11:54.832Z",
+  "content_hash": "ab7d6fb5e0ed43c0",
+  "previous_content_hash": null,
+  "changed": null,
+  "surfaces_changed": [
+    "/index.html",
+    "/robots.txt",
+    "/llms.txt",
+    "/sitemap.xml",
+    "/blog/index.html",
+    "/blog/index.json",
+    "/data/roster.json",
+    "/data/commerce.json",
+    "/data/producer.json",
+    "/data/software-catalog.json",
+    "/radio/schedule.json",
+    "/radio/now-playing.json"
+  ],
+  "surface_count": 12,
+  "surfaces": [
+    {
+      "path": "/index.html",
+      "exists": true,
+      "bytes": 10120,
+      "sha256": "03b9181b8763baba",
+      "mtime": "2026-10-05T15:19:32.520Z"
+    },
+    {
+      "path": "/robots.txt",
+      "exists": true,
+      "bytes": 1559,
+      "sha256": "334898cb1133daab",
+      "mtime": "2026-10-05T17:09:51.370Z"
+    },
+    {
+      "path": "/llms.txt",
+      "exists": true,
+      "bytes": 7133,
+      "sha256": "af45e76c0684ff85",
+      "mtime": "2026-10-05T17:11:27.906Z"
+    },
+    {
+      "path": "/sitemap.xml",
+      "exists": true,
+      "bytes": 8946,
+      "sha256": "d564aa539eb08d55",
+      "mtime": "2026-10-05T17:09:51.370Z"
+    },
+    {
+      "path": "/blog/index.html",
+      "exists": true,
+      "bytes": 10719,
+      "sha256": "7013f9cedb4b4ec2",
+      "mtime": "2026-10-05T15:35:12.989Z"
+    },
+    {
+      "path": "/blog/index.json",
+      "exists": true,
+      "bytes": 4355,
+      "sha256": "13e82501f031da82",
+      "mtime": "2026-10-05T17:09:51.363Z"
+    },
+    {
+      "path": "/data/roster.json",
+      "exists": true,
+      "bytes": 376,
+      "sha256": "2879ed3ecd594212",
+      "mtime": "2026-10-02T07:38:55.824Z"
+    },
+    {
+      "path": "/data/commerce.json",
+      "exists": true,
+      "bytes": 11998,
+      "sha256": "4ed27420765ed809",
+      "mtime": "2026-10-02T07:38:55.824Z"
+    },
+    {
+      "path": "/data/producer.json",
+      "exists": true,
+      "bytes": 2850,
+      "sha256": "905c8462ac0b00ce",
+      "mtime": "2026-10-02T09:20:28.758Z"
+    },
+    {
+      "path": "/data/software-catalog.json",
+      "exists": true,
+      "bytes": 1644,
+      "sha256": "56e0d3e77328ebc2",
+      "mtime": "2026-10-02T22:13:04.522Z"
+    },
+    {
+      "path": "/radio/schedule.json",
+      "exists": true,
+      "bytes": 34971,
+      "sha256": "2f98d089a47ce3c0",
+      "mtime": "2026-10-04T16:48:04.094Z"
+    },
+    {
+      "path": "/radio/now-playing.json",
+      "exists": true,
+      "bytes": 496,
+      "sha256": "721062d4fc95758e",
+      "mtime": "2026-10-05T17:09:51.276Z"
+    }
+  ]
+}

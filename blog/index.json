@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-05T15:19:08.792Z",
+  "updated": "2026-10-05T17:13:33.961Z",
   "feed_url": "https://cumulativeweb.com/blog/index.json",
-  "count": 3,
+  "count": 4,
   "posts": [
     {
       "slug": "radio-365-is-live",
@@ -52,6 +52,37 @@
           "that-boy-hi-hat",
           "music",
           "announcement"
+        ]
+      }
+    },
+    {
+      "slug": "cyberpunk-2027-that-boy-hi-hat-s-october-20-single",
+      "title": "Cyberpunk 2027 — That Boy Hi Hat's October 20 single",
+      "date": "2026-10-05",
+      "excerpt": "That Boy Hi Hat's October 20, 2026 single \"Cyberpunk 2027\" — produced by Kokurcho, exec. co-produced by Black Lansky — lands on Cumulative Web Inc with two visualizations and a live pre-save.",
+      "tags": [
+        "that boy hi hat",
+        "cyberpunk 2027",
+        "post trap futurism",
+        "alternative rap",
+        "single",
+        "pre-save"
+      ],
+      "status": "draft",
+      "url": "https://cumulativeweb.com/blog/posts/cyberpunk-2027-that-boy-hi-hat-s-october-20-single.html",
+      "json_url": "https://cumulativeweb.com/blog/posts/cyberpunk-2027-that-boy-hi-hat-s-october-20-single.json",
+      "machine": {
+        "content_id": "blog:cyberpunk-2027-that-boy-hi-hat-s-october-20-single",
+        "content_type": "blog_post",
+        "title": "Cyberpunk 2027 — That Boy Hi Hat's October 20 single",
+        "url": "https://cumulativeweb.com/blog/posts/cyberpunk-2027-that-boy-hi-hat-s-october-20-single.html",
+        "tags": [
+          "that boy hi hat",
+          "cyberpunk 2027",
+          "post trap futurism",
+          "alternative rap",
+          "single",
+          "pre-save"
         ]
       }
     },

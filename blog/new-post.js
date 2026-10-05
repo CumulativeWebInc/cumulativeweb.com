@@ -470,27 +470,41 @@ function rebuild() {
   // hub — published only
   const allTags = [...new Set(published.flatMap(p => p.tags))].sort();
   fs.writeFileSync(path.join(BLOG, 'index.html'), renderHub(published, allTags));
-  // sitemap
-  updateSitemap(published.map(p => `${BASE}/blog/posts/${p.slug}.html`));
+  // sitemap — lastmod = post date (YYYY-MM-DD) for posts, today for the hub
+  updateSitemap([
+    { url: `${BASE}/blog/`, lastmod: todayStr() },
+    ...published.map(p => ({ url: `${BASE}/blog/posts/${p.slug}.html`, lastmod: p.date })),
+  ]);
   return { total: all.length, published: published.length, drafts: all.length - published.length };
 }
 
-function updateSitemap(postUrls) {
+// ---- sitemap: upsert <lastmod> for new/changed blog entries, prune stale ones ----
+// entries: [{url, lastmod}] with lastmod as YYYY-MM-DD. Non-blog <url> blocks are
+// byte-preserved; blog blocks are normalized to carry a fresh <lastmod>.
+function updateSitemap(entries) {
   const sp = path.join(REPO, 'sitemap.xml');
-  let xml = fs.readFileSync(sp, 'utf8');
-  const urls = [`${BASE}/blog/`, ...postUrls];
-  const keep = new Set(urls);
-  // prune stale blog entries (posts that no longer exist)
-  xml = xml.replace(/\s*<url>\s*<loc>(https:\/\/cumulativeweb\.com\/blog\/[^<]*)<\/loc>.*?<\/url>/gs,
-    (m, u) => keep.has(u) ? m : '');
-  let added = 0;
-  for (const u of urls) {
-    if (xml.includes(`<loc>${u}</loc>`)) continue;
-    xml = xml.replace('</urlset>', `  <url>\n    <loc>${u}</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n</urlset>`);
-    added++;
+  const xml = fs.readFileSync(sp, 'utf8');
+  const byLoc = new Map(entries.map(e => [e.url, e.lastmod]));
+  const blogBlock = (loc, lastmod) =>
+    `<url>\n    <loc>${loc}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>`;
+  const blocks = [];
+  for (const m of xml.matchAll(/<url>[\s\S]*?<\/url>/g)) {
+    const block = m[0];
+    const loc = (block.match(/<loc>([^<]*)<\/loc>/) || [null, ''])[1];
+    if (loc.startsWith(`${BASE}/blog/`)) {
+      if (!byLoc.has(loc)) continue;                  // prune stale blog entry
+      blocks.push(blogBlock(loc, byLoc.get(loc)));     // refresh lastmod
+      byLoc.delete(loc);
+    } else {
+      blocks.push(block);                             // non-blog: untouched
+    }
   }
-  fs.writeFileSync(sp, xml);
-  return added;
+  for (const [loc, lastmod] of byLoc) blocks.push(blogBlock(loc, lastmod)); // add new
+  const head = xml.slice(0, xml.indexOf('<url>'));
+  const tail = xml.slice(xml.lastIndexOf('</url>') + '</url>'.length);
+  // head ends with "\n  ", tail starts with "\n</urlset>" — join supplies the canonical
+  // two-space indent for every block, keeping the diff minimal.
+  fs.writeFileSync(sp, head + blocks.join('\n  ') + tail);
 }
 
 // ---- CLI ----

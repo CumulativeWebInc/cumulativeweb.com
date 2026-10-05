@@ -277,22 +277,41 @@
   </url>
   <url>
     <loc>https://cumulativeweb.com/blog/</loc>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cumulativeweb.com/blog/posts/radio-365-is-live.html</loc>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cumulativeweb.com/blog/posts/diabolique-october-discovery-mode.html</loc>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cumulativeweb.com/blog/posts/cwi-blog-machine-readable.html</loc>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cumulativeweb.com/videos/cyberpunk-2027-anime.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cumulativeweb.com/videos/cyberpunk-2027-hd.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cumulativeweb.com/cyberpunk-2027.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 </urlset>
