@@ -404,7 +404,7 @@ footer{border-top:1px solid var(--line);padding:36px 0 52px;color:var(--muted);f
 <footer>
   <div class="wrap" style="display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap">
     <div><strong style="color:var(--gold);letter-spacing:.2em">CWI BLOG</strong><br>The news wire of Cumulative Web Inc.<br>© 2026 Cumulative Web Inc. All rights reserved.</div>
-    <div><a href="${BASE}/blog/index.json">JSON feed</a> · <a href="${BASE}/llms.txt">llms.txt</a></div>
+    <div><a href="${BASE}/blog/index.json">JSON feed</a> · <a href="${BASE}/llms.txt">llms.txt</a> · <a href="${BASE}/llms-full.txt">llms-full.txt</a> · <a href="${BASE}/answers/">Answers</a> · <a href="${BASE}/data/freshness.json">freshness.json</a></div>
   </div>
 </footer>
 <script>

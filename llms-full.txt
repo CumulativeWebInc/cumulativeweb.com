@@ -164,7 +164,7 @@ Rights posture (owner-confirmed): 50/50 with every artist; Black Lansky clears m
 
 ## 10. Site pages
 
-Home https://cumulativeweb.com/ (Organization + WebSite + ItemList roster JSON-LD) · Music /music.html · Films /films.html · Models /models.html · Software /software.html · SANQA /sanqa/ · Press releases /press/releases/ · Events /events.html · Live /live.html · Signup /signup.html · Contact /contact.html · Games /games.html · Shop /shop.html · Byline press /press · Sitemap /sitemap.xml
+Home https://cumulativeweb.com/ (Organization + WebSite + ItemList roster JSON-LD) · Music /music.html · Films /films.html · Models /models.html · Software /software.html · SANQA /sanqa/ · Press releases /press/releases/ · Events /events.html · Live /live.html · Signup /signup.html · Contact /contact.html · Games /games.html · Shop /shop.html · Byline press /press · Sitemap /sitemap.xml · Freshness feed /data/freshness.json (regenerates every minute)
 
 ## Embedding matrix for AI retrieval (workstream H, 2026-10-05)
 

@@ -1,9 +1,13 @@
 {
-  "generated_at": "2026-10-05T17:34:03.281Z",
-  "content_hash": "a6d1cce3eabe6f0f",
-  "previous_content_hash": "af1e2b71d5e0190b",
+  "generated_at": "2026-10-05T17:58:44.267Z",
+  "content_hash": "f36ce1dd04c16c27",
+  "previous_content_hash": "a6d1cce3eabe6f0f",
   "changed": true,
   "surfaces_changed": [
+    "/llms.txt",
+    "/sitemap.xml",
+    "/blog/index.html",
+    "/blog/index.json",
     "/radio/now-playing.json"
   ],
   "surface_count": 12,
@@ -11,9 +15,9 @@
     {
       "path": "/index.html",
       "exists": true,
-      "bytes": 10120,
-      "sha256": "03b9181b8763baba",
-      "mtime": "2026-10-05T15:19:32.520Z"
+      "bytes": 10192,
+      "sha256": "159abe025f7e479a",
+      "mtime": "2026-10-05T17:58:35.608Z"
     },
     {
       "path": "/robots.txt",
@@ -25,30 +29,30 @@
     {
       "path": "/llms.txt",
       "exists": true,
-      "bytes": 8091,
-      "sha256": "3f004ba4e988941e",
-      "mtime": "2026-10-05T17:26:32.369Z"
+      "bytes": 8330,
+      "sha256": "9198b5d823112d8c",
+      "mtime": "2026-10-05T17:58:35.608Z"
     },
     {
       "path": "/sitemap.xml",
       "exists": true,
-      "bytes": 12714,
-      "sha256": "403e8f6d4540cd29",
-      "mtime": "2026-10-05T17:33:35.954Z"
+      "bytes": 12880,
+      "sha256": "94cf9cdea7682cf8",
+      "mtime": "2026-10-05T17:58:35.613Z"
     },
     {
       "path": "/blog/index.html",
       "exists": true,
-      "bytes": 10719,
-      "sha256": "7013f9cedb4b4ec2",
-      "mtime": "2026-10-05T17:13:33.980Z"
+      "bytes": 10928,
+      "sha256": "d2a123cc60b0d8d9",
+      "mtime": "2026-10-05T17:58:35.582Z"
     },
     {
       "path": "/blog/index.json",
       "exists": true,
       "bytes": 4372,
-      "sha256": "f5917d7db3e200d5",
-      "mtime": "2026-10-05T17:14:22.976Z"
+      "sha256": "11b2cf3739e0a7d5",
+      "mtime": "2026-10-05T17:58:35.583Z"
     },
     {
       "path": "/data/roster.json",
@@ -88,9 +92,9 @@
     {
       "path": "/radio/now-playing.json",
       "exists": true,
-      "bytes": 479,
-      "sha256": "3b494cb01c917228",
-      "mtime": "2026-10-05T17:33:35.718Z"
+      "bytes": 495,
+      "sha256": "405080f31483fc42",
+      "mtime": "2026-10-05T17:58:35.319Z"
     }
   ]
 }
