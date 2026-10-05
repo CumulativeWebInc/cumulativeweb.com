@@ -86,9 +86,31 @@ function remoteFile(ref, rel) {
   }
 }
 
+// Move the local branch pointer onto FETCH_HEAD when the trees are identical.
+// Safe: identical trees mean index and working tree are unaffected; only the
+// pointer moves (recovers from ghapi_git_push's API-side commits, which share
+// our tree but not our sha).
+function syncPointerToRemote() {
+  try {
+    git('git diff --quiet FETCH_HEAD HEAD --');
+  } catch (e) {
+    return false; // trees differ — do not touch the pointer
+  }
+  git('git update-ref refs/heads/main FETCH_HEAD');
+  return true;
+}
+
+function unpushedNonFreshnessCommits() {
+  const log = git('git log --format=%s FETCH_HEAD..HEAD');
+  return log.split('\n').filter(l => l && !l.startsWith('freshness:'));
+}
+
 function main() {
   const push = process.argv.includes('--push');
-  if (push) git('git fetch origin main'); // read-only, always safe
+  if (push) {
+    git('git fetch origin main'); // read-only, always safe
+    syncPointerToRemote();
+  }
   const doc = build();
   if (push) {
     // previous = the committed file on origin/main, not the working tree
@@ -97,7 +119,6 @@ function main() {
     try { remotePrev = remoteRaw ? JSON.parse(remoteRaw).content_hash : null; } catch (e) {}
     doc.previous_content_hash = remotePrev;
     doc.changed = remotePrev ? doc.content_hash !== remotePrev : null;
-    doc.surfaces_changed = doc.surfaces_changed; // vs working tree; informational
   }
   const report = { ok: true, pushed: false, content_hash: doc.content_hash, surfaces_changed: doc.surfaces_changed };
   if (push && doc.previous_content_hash && doc.content_hash === doc.previous_content_hash) {
@@ -110,10 +131,19 @@ function main() {
     console.log(JSON.stringify({ ...report, reason: 'written to working tree' }));
     return;
   }
+  // Never sweep up siblings' unpushed work: the heartbeat only pushes when the
+  // only unpushed commits are its own.
+  const others = unpushedNonFreshnessCommits();
+  if (others.length) {
+    console.log(JSON.stringify({ ...report, reason: 'skipped push — unpushed non-freshness commits present', pending: others }));
+    return;
+  }
   git('git add data/freshness.json');
   git('git -c user.name="CWI Machine" -c user.email="machine@cumulativeweb.com" ' +
       `commit -m "freshness: heartbeat ${doc.content_hash} (${doc.surfaces_changed.length} surfaces changed)"`);
   git('/home/hatch/workspace/skills/github/bin/ghapi_git_push CumulativeWebInc/cumulativeweb.com --dir ' + REPO);
+  git('git fetch origin main');
+  syncPointerToRemote();
   report.pushed = true;
   console.log(JSON.stringify(report));
 }
