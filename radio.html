@@ -125,7 +125,25 @@
   <h1>Radio</h1>
   <p class="lede">Cumulative Radio 365 — our station for independent artists and producers. Alternative, indie and hip-hop, on air 365 days a year.</p>
   <div class="badge-row"><span class="badge badge--live">ON AIR</span></div>
+  <div id="cwi-featured" style="display:none;margin-top:12px;background:#fff8e1;border:1px solid #f0d060;border-radius:8px;padding:10px 14px"><strong>Featured dispatch:</strong> <span data-f-title></span> <span data-f-artist style="color:#666"></span> <a data-f-link href="#" target="_blank" rel="noopener" style="margin-left:8px">Listen →</a></div>
 </section>
+<script>
+(function(){
+  fetch('https://cwi-machine-data.hp-ace.workers.dev/ad/featured')
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      var f = d && d.featured && d.featured['radio365-hero'];
+      if (!f || !f.title) return;
+      var el = document.getElementById('cwi-featured');
+      el.querySelector('[data-f-title]').textContent = f.title;
+      el.querySelector('[data-f-artist]').textContent = f.artist ? '— ' + f.artist : '';
+      var a = el.querySelector('[data-f-link]');
+      if (f.url) { a.href = f.url; } else { a.style.display = 'none'; }
+      el.style.display = '';
+    })
+    .catch(function(){});
+})();
+</script>
 <section>
   <div class="stream-stage" id="streamStage">
     <div class="np-wrap">
