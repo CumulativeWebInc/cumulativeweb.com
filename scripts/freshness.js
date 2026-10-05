@@ -76,13 +76,32 @@ function build() {
   };
 }
 
+// Remote state via anonymous fetch (public repo reads need no credentials);
+// pushes go through the workspace ghapi_git_push helper (surrogate auth).
+function remoteFile(ref, rel) {
+  try {
+    return git(`git show ${ref}:${rel}`);
+  } catch (e) {
+    return null;
+  }
+}
+
 function main() {
   const push = process.argv.includes('--push');
-  if (push) git('git pull --rebase');
+  if (push) git('git fetch origin main'); // read-only, always safe
   const doc = build();
+  if (push) {
+    // previous = the committed file on origin/main, not the working tree
+    const remoteRaw = remoteFile('FETCH_HEAD', 'data/freshness.json');
+    let remotePrev = null;
+    try { remotePrev = remoteRaw ? JSON.parse(remoteRaw).content_hash : null; } catch (e) {}
+    doc.previous_content_hash = remotePrev;
+    doc.changed = remotePrev ? doc.content_hash !== remotePrev : null;
+    doc.surfaces_changed = doc.surfaces_changed; // vs working tree; informational
+  }
   const report = { ok: true, pushed: false, content_hash: doc.content_hash, surfaces_changed: doc.surfaces_changed };
   if (push && doc.previous_content_hash && doc.content_hash === doc.previous_content_hash) {
-    console.log(JSON.stringify({ ...report, reason: 'unchanged — no commit' }));
+    console.log(JSON.stringify({ ...report, reason: 'unchanged — no commit, no push' }));
     return;
   }
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
@@ -92,8 +111,9 @@ function main() {
     return;
   }
   git('git add data/freshness.json');
-  git(`git commit -m "freshness: heartbeat ${doc.content_hash} (${doc.surfaces_changed.length} surfaces changed)"`);
-  git('git push');
+  git('git -c user.name="CWI Machine" -c user.email="machine@cumulativeweb.com" ' +
+      `commit -m "freshness: heartbeat ${doc.content_hash} (${doc.surfaces_changed.length} surfaces changed)"`);
+  git('/home/hatch/workspace/skills/github/bin/ghapi_git_push CumulativeWebInc/cumulativeweb.com --dir ' + REPO);
   report.pushed = true;
   console.log(JSON.stringify(report));
 }
