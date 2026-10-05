@@ -332,6 +332,28 @@
     if (d.artwork && art.getAttribute('src') !== d.artwork) { art.src = d.artwork; }
     setMediaSession(d);
   });
+  /* Live listener count (Icecast status-json.xsl parallel): polls the worker's
+     /radio/listeners aggregate every 30s and fills the npListeners slot.
+     Best-effort — a failed poll leaves the last good value in place. */
+  (function () {
+    var el = document.getElementById('npListeners');
+    if (!el) return;
+    function poll() {
+      try {
+        fetch('https://cwi-machine-data.hp-ace.workers.dev/radio/listeners', { cache: 'no-store' })
+          .then(function (r) { return r.ok ? r.json() : null; })
+          .then(function (j) {
+            if (!j) return;
+            var n = Number(j.current) || 0;
+            el.textContent = n === 1 ? '1 listener now' : n + ' listeners now';
+            el.setAttribute('title', 'Peak (24h): ' + (j.peak_24h || 0) + ' · Total (24h): ' + (j.total_24h || 0));
+          })
+          .catch(function () {});
+      } catch (e) {}
+    }
+    poll();
+    setInterval(poll, 30000);
+  })();
 })();
 </script>
 <script src="/radio/radio365-player.js?v=20261004c" defer></script>
