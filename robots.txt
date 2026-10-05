@@ -1,4 +1,68 @@
+# robots.txt — Cumulative Web Inc
+# Posture: default-open. AI crawlers are explicitly welcome.
+# (prior version: "User-agent: * / Allow: /" — retained unchanged below;
+#  no Disallow lines ever existed, so no paths were unblocked.)
 User-agent: *
+Allow: /
+
+# AI discovery — machine briefing at /llms.txt
+User-agent: GPTBot
+Allow: /
+
+# AI discovery — machine briefing at /llms.txt
+User-agent: ChatGPT-User
+Allow: /
+
+# AI discovery — machine briefing at /llms.txt
+User-agent: OAI-SearchBot
+Allow: /
+
+# AI discovery — machine briefing at /llms.txt
+User-agent: ClaudeBot
+Allow: /
+
+# AI discovery — machine briefing at /llms.txt
+User-agent: anthropic-ai
+Allow: /
+
+# AI discovery — machine briefing at /llms.txt
+User-agent: PerplexityBot
+Allow: /
+
+# AI discovery — machine briefing at /llms.txt
+User-agent: CCBot
+Allow: /
+
+# AI discovery — machine briefing at /llms.txt
+User-agent: Meta-WebIndexer
+Allow: /
+
+# AI discovery — machine briefing at /llms.txt
+User-agent: FacebookBot
+Allow: /
+
+# AI discovery — machine briefing at /llms.txt
+User-agent: facebookexternalhit
+Allow: /
+
+# AI discovery — machine briefing at /llms.txt
+User-agent: Bytespider
+Allow: /
+
+# AI discovery — machine briefing at /llms.txt
+User-agent: Google-Extended
+Allow: /
+
+# AI discovery — machine briefing at /llms.txt
+User-agent: Applebot-Extended
+Allow: /
+
+# AI discovery — machine briefing at /llms.txt
+User-agent: cohere-ai
+Allow: /
+
+# AI discovery — machine briefing at /llms.txt
+User-agent: YouBot
 Allow: /
 
 Sitemap: https://cumulativeweb.com/sitemap.xml
