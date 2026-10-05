@@ -307,5 +307,50 @@
 </script>
 <script src="/radio/radio365-player.js?v=20261004c" defer></script>
 
+<script>
+/* Cumulative Radio 365 — listener heartbeat (Icecast listener-stats parallel).
+ * READY TO SHIP once the worker endpoints deploy (needs Black-minted token).
+ * Paste before </body> on radio.html. Sends {session_id, track} every 30s
+ * while the audio element is playing. Best-effort: never blocks, never throws.
+ */
+(function () {
+  try {
+    var SINK = 'https://cwi-machine-data.hp-ace.workers.dev/radio/heartbeat';
+    var sid = null;
+    try {
+      sid = sessionStorage.getItem('cwi_r365_sid');
+      if (!sid) {
+        var b = new Uint8Array(16);
+        (window.crypto.getRandomValues ? window.crypto.getRandomValues(b) : b.map(function(){return Math.floor(Math.random()*256);}));
+        sid = 's_' + Array.prototype.map.call(b, function(x){return ('0'+x.toString(16)).slice(-2);}).join('');
+        sessionStorage.setItem('cwi_r365_sid', sid);
+      }
+    } catch (e) { sid = 's_fallback_' + String(Date.now()); }
+
+    var audio = document.getElementById('radioAudio');
+    function currentTrack() {
+      var t = document.getElementById('npTitle');
+      var a = document.getElementById('npArtist');
+      return ((a && a.textContent) || '') + ' - ' + ((t && t.textContent) || '');
+    }
+    function beat() {
+      try {
+        if (!audio || audio.paused) return;
+        fetch(SINK, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ session_id: sid, track: currentTrack().slice(0, 200) }),
+          keepalive: true
+        }).catch(function(){});
+      } catch (e) {}
+    }
+    if (audio) {
+      audio.addEventListener('play', function(){ beat(); });
+      setInterval(beat, 30000);
+    }
+  } catch (e) {}
+})();
+
+</script>
 </body>
 </html>
