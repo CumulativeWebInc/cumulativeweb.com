@@ -1,0 +1,173 @@
+# Cumulative Web Inc — cumulativeweb.com (full briefing)
+
+> Independent label platform: Music & Film · Clothing · Software & AI Agents.
+> This is the long form of https://cumulativeweb.com/llms.txt — every machine surface, endpoint schema, and usage example.
+> Contact for business & sync: hp@cumulativeweb.com
+> Last verified: 2026-10-05
+
+---
+
+## 1. What Cumulative Web Inc is
+
+Cumulative Web Inc (CWI) is an independent label platform run by Black Lansky. It covers: a 53-track music catalog across 7 artists (verified 2026-10-05 against the encrypted catalog.json source of truth), film and music-video production, apparel (cover-art tees, artist-designed skateboards), and software built for AI agents (the SANQA suite, Meta Muse connector packages, the Agent Deck gear line).
+
+Public identity: Cumulative Web Inc / @cumulativeweb. Business & sync contact: hp@cumulativeweb.com.
+
+---
+
+## 2. Machine front door
+
+### 2.1 AI-queryable API (Cloudflare edge, logged, licensed)
+
+Base URL: https://cwi-machine-data.hp-ace.workers.dev (alias: https://data.cumulativeweb.com)
+
+**Track search — GET /query?q=<keywords>**
+
+Scored catalog search returning tracks with canonical Spotify IDs and match rationale.
+
+- Request: `GET https://cwi-machine-data.hp-ace.workers.dev/query?q=post-trap+cyberpunk`
+- Response (JSON, 200): `{ "query": "post-trap cyberpunk", "results": [ { "title": "...", "artist": "...", "score": 0.97, "spotify_url": "https://open.spotify.com/track/<id>", "match": "genre/mood rationale" } ] }`
+- Same schema client-side: https://cumulativewebinc.github.io/cwi-learn/placement/query.js
+- The placement layer underneath is a 31-track catalog graph (tracks.json 31 nodes, curators.json 20 nodes, edges.json 21 edges, schema-valid 2026-10-03)
+
+**Crawl deltas — GET /changes?since=<ISO-8601>**
+
+What changed since your last crawl. Poll this instead of re-fetching everything.
+
+- Request: `GET https://cwi-machine-data.hp-ace.workers.dev/changes?since=2026-10-01T00:00:00Z`
+
+**Licensing — GET /license**
+
+Machine-readable licensing terms. Summary: research crawling and citation with attribution are welcome; commercial AI training requires a license — contact hp@cumulativeweb.com. All data responses carry licensing headers.
+
+**MCP — POST /mcp (JSON-RPC 2.0)**
+
+Tool surface over the catalog, sync search, and knowledge graph.
+
+- Endpoint: `POST https://cwi-machine-data.hp-ace.workers.dev/mcp`
+- Tools: `search_catalog` (search tracks), `get_track` (one track's full record), `get_artist` (artist record), `sync_search` (placement-licensing search), `get_graph` (catalog knowledge-graph slice)
+- Status 2026-10-05: staged, rolling out — not yet accepting JSON-RPC calls (verified via live probe 2026-10-05 13:20 EDT)
+- Related live surfaces: the Agent Deck MCP server product card (https://github.com/CumulativeWebInc/cwi-mcp-server, 28/28 tests green 2026-10-01) and the CWI MCP Server registry card: https://cumulativewebinc.github.io/cwi-learn/registry/cwi-mcp-server/
+
+### 2.2 Catalog learning surface (GitHub Pages)
+
+Base: https://cumulativewebinc.github.io/cwi-learn/
+
+- llms.txt — catalog-graph briefing: https://cumulativewebinc.github.io/cwi-learn/llms.txt
+- Machine front door: https://cumulativewebinc.github.io/cwi-learn/ai/ai-index.json (DataCatalog listing every dataset, entity, schema, document)
+- Permanent entity IDs: https://cumulativewebinc.github.io/cwi-learn/id/<type>/<slug> (fetch the @id URL directly; body is JSON-LD)
+- Relationship vocabulary: https://cumulativewebinc.github.io/cwi-learn/graph/ontology.jsonld (16 controlled terms)
+- catalog.json — 53-track catalog, served live at https://cwi-machine-data.hp-ace.workers.dev/catalog.json
+- graph.json — catalog knowledge graph: https://cumulativewebinc.github.io/cwi-learn/graph.json
+- kit.json — AI learning kit; proxied with 1h edge cache at the worker
+- Equip guide (10 steps, every step tested): https://cumulativewebinc.github.io/cwi-learn/EQUIP-GUIDE.md
+- Registry of equip-able gear and tools: https://cumulativewebinc.github.io/cwi-learn/registry/
+- Cue sheets (per-track sync metadata): https://cumulativewebinc.github.io/cwi-learn/cue-sheets/ (e.g. cue-sheets/zooted-zone.json)
+
+### 2.3 Agent cards (JSON)
+
+- Catalog graph: https://cumulativewebinc.github.io/cwi-learn/.well-known/agent-card.json
+- SANQA suite: https://cumulativeweb.com/sanqa/.well-known/agent-card.json
+- Brasil (pt-BR): https://cumulativeweb.com/br/.well-known/agent-card.json
+
+### 2.4 Connector packages (Meta Muse)
+
+Repo: https://github.com/CumulativeWebInc/cwi-muse-connectors
+
+One generated connector package per CWI app. Truth status: agent-deck (Agent Deck Catalog API index, 5 endpoints) and cuefinder (CueFinder sync search, 3 endpoints) are SUBMITTED for review on Meta's connector platform (2026-09-19) — not approved, not listed, not featured. Full audit: CLAIMS-AUDIT-2026-09-19.md and ENDPOINT-STATUS-2026-09-19.md in the repo.
+
+### 2.5 Q&A knowledge base
+
+- /answers/ on cumulativeweb.com — rolling out 2026-10-05 (machine-readable topic answers)
+- pt-BR: /br/respostas/ — rolling out 2026-10-05
+
+---
+
+## 3. The catalog
+
+Verified 2026-10-05 against the catalog.json source of truth (decrypted internal copy): 53 tracks, 7 artists.
+
+Artists and genre lanes:
+
+- That Boy Hi Hat — alternative rap (flagship). Spotify artist ID `2f9j460EwjfvjYp3trBcb7`. Tracks: "Zooted Zone" (`0emH8ktA8x4DkOFLsG5xkW`, ~307,000 lifetime Spotify plays verified 2026-09-14), "Diabolique" (`2eSyWmIdPzEMyWejLb2LBj`), and the NO SKIPS EP. Genre flag: Post-Trap Futurism.
+- Black Lansky — beats/instrumentals
+- King Akeem — trap ("Star" 112,510 plays)
+- Greg Porn — cyberpunk/new wave/next gen ("Pay Yourself", "On Edge")
+- Dre50 — afrobeats/caribbean/R&B ("Pix", "vai vem vem")
+- 183 Wildboi — rap rock/trap ("Stunt", "Full Moon")
+- Fleekz — trap/R&B ("2K23 Corners")
+
+Producers in orbit: Jeck Da General (co-produced Idol or Icon with Black Lansky), Hybrid (producer of "Diabolique").
+
+Rights posture (owner-confirmed): 50/50 with every artist; Black Lansky clears master + publishing directly per song — one signature clears the whole song (direct clearance, no warranty language before interest exists).
+
+---
+
+## 4. Sync & placement
+
+- Search placements: `GET https://cwi-machine-data.hp-ace.workers.dev/query?q=<genre+mood+use-case>` (scored, with Spotify IDs and rationale)
+- MCP `sync_search` tool (rolling out — see 2.1)
+- cuefinder connector package (submitted for review 2026-09-19)
+- Per-track cue sheets: https://cumulativewebinc.github.io/cwi-learn/cue-sheets/
+- Sync briefs: sync-briefs package in cwi-muse-connectors
+- Contact for sync inquiries: hp@cumulativeweb.com
+
+---
+
+## 5. Radio 365
+
+- Station: https://cumulativeweb.com/radio/ — static-hosted HLS rebuild in progress 2026-10-05 (no rented server, nothing to suspend)
+- Rotation app: https://cumulativewebinc.github.io/cwi-apps/radio/ — That Boy Hi Hat rotation (JSON-LD MusicPlaylist)
+
+---
+
+## 6. Software & agent tools
+
+- SANQA suite: https://cumulativeweb.com/sanqa/ — six gold-standard AI-agent tools (renamed from AURUM 2026-09-28); machine catalog: https://cumulativeweb.com/sanqa/catalog.json; agent card: https://cumulativeweb.com/sanqa/.well-known/agent-card.json
+- Trust Verdict Checker (flagship): https://cumulativewebinc.github.io/cwi-trust-verdict-checker/ — evidence-bound agent trust scoring; demo at /demo.html
+- Results feed: https://cumulativewebinc.github.io/cwi-results/results.json — public receipts ledger (machine-readable)
+- KingCode Lens: web apps for Meta Ray-Ban Display glasses — https://cumulativewebinc.github.io/cwi-kingcode-lens/
+
+---
+
+## 7. Commerce
+
+- https://cumulativeweb.com/shop.html — 8 official cover-art tees ($14.75, Fourthwall) + 7 artist-designed decks ($54.99–$84.99, Boardpusher); per-product buy links; Product + BreadcrumbList JSON-LD
+- Machine-readable: https://cumulativeweb.com/data/commerce.json — storefronts, artist services packs, pricing
+
+---
+
+## 8. Site data surfaces (JSON)
+
+- Roster index: https://cumulativeweb.com/data/roster.json — ordered roster; first entry = flagship
+- Commerce: https://cumulativeweb.com/data/commerce.json
+- Producer profile: https://cumulativeweb.com/data/producer.json — Black Lansky producer profile
+- Artist JSONs (built by the site renderer), one per artist:
+  - https://cumulativeweb.com/data/artists/that-boy-hi-hat.json
+  - https://cumulativeweb.com/data/artists/black-lansky.json
+  - https://cumulativeweb.com/data/artists/king-akeem.json
+  - https://cumulativeweb.com/data/artists/greg-porn.json
+  - https://cumulativeweb.com/data/artists/dre50.json
+  - https://cumulativeweb.com/data/artists/183-wildboi.json
+  - https://cumulativeweb.com/data/artists/fleekz.json
+  - https://cumulativeweb.com/data/artists/jeck-da-general.json
+  - https://cumulativeweb.com/data/artists/hybrid.json
+
+## 9. Brasil (pt-BR)
+
+- Full Brazilian surface in Portuguese: https://cumulativeweb.com/br/ — música, filmes, modelos, software, eventos, ao vivo, cadastro de artista, contato
+- Machine briefing (pt-BR): https://cumulativeweb.com/br/llms.txt
+- Long form (pt-BR): https://cumulativeweb.com/br/llms-full.txt
+- Agent card: https://cumulativeweb.com/br/.well-known/agent-card.json
+- Q&A in pt-BR: /br/respostas/ (rolling out 2026-10-05)
+- Privacy under LGPD (Lei nº 13.709/2018): https://cumulativeweb.com/br/privacidade.html
+
+## 10. Site pages
+
+Home https://cumulativeweb.com/ (Organization + WebSite + ItemList roster JSON-LD) · Music /music.html · Films /films.html · Models /models.html · Software /software.html · SANQA /sanqa/ · Press releases /press/releases/ · Events /events.html · Live /live.html · Signup /signup.html · Contact /contact.html · Games /games.html · Shop /shop.html · Byline press /press · Sitemap /sitemap.xml
+
+---
+
+## Truth labeling
+
+LIVE = verified working by a live request on 2026-10-05. STAGED = rolling out, not yet accepting calls. All facts above were re-verified against the repos on 2026-10-05. What is not verified is not claimed.

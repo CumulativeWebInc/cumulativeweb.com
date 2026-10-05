@@ -1,6 +1,40 @@
 # Cumulative Web Inc Brasil
 
 > A extensão brasileira da Cumulative Web Inc — selo independente de música, cinema, moda e software. Todo o conteúdo em português (pt-BR).
+> Feita para agentes de IA desde a base: cada seção abaixo é uma superfície legível por máquina.
+> Contato oficial para negócios e sincronização (sync): hp@cumulativeweb.com
+
+## Porta de entrada para máquinas (comece aqui)
+
+- Versão longa deste briefing, com esquemas de endpoints e exemplos: https://cumulativeweb.com/br/llms-full.txt
+- API legível por IA (edge, com logs, licenciada): https://cwi-machine-data.hp-ace.workers.dev
+  - Busca de faixas: GET /query?q=<palavras-chave> — ex.: /query?q=post-trap+cyberpunk
+  - Deltas de rastreamento: GET /changes?since=<ISO-8601> — o que mudou desde o último crawl
+  - Termos de licenciamento (legível por máquina): GET /license
+  - MCP: POST /mcp — JSON-RPC 2.0; ferramentas: search_catalog, get_track, get_artist, sync_search, get_graph
+    (Status em 2026-10-05: em implantação — ainda não aceita chamadas JSON-RPC)
+  - Domínio alternativo: https://data.cumulativeweb.com (mesma API)
+- Superfície de aprendizado do catálogo: https://cumulativewebinc.github.io/cwi-learn/llms.txt — catalog.json, graph.json, kit.json, EQUIP-GUIDE.md
+- Cartão do agente: https://cumulativeweb.com/br/.well-known/agent-card.json
+- Pacotes de conectores para o Meta Muse — código-fonte: https://github.com/CumulativeWebInc/cwi-muse-connectors — agent-deck (índice da API do catálogo) e cuefinder (busca de sincronização): enviados para revisão em 2026-09-19 — ainda não aprovados/listados
+- Base de perguntas e respostas: /br/respostas/ (em implantação — 2026-10-05); versão em inglês: /answers/
+
+## Licenciamento
+
+- O catálogo e os dados derivados são licenciados. Rastreamento para pesquisa e citação com atribuição são bem-vindos.
+- Treinamento comercial de IA exige licença — contato: hp@cumulativeweb.com. Termos legíveis por máquina: https://cwi-machine-data.hp-ace.workers.dev/license
+
+## O catálogo (verificado em 2026-10-05 a partir do catalog.json)
+
+- 53 faixas · 7 artistas: That Boy Hi Hat (principal, alternative rap), Black Lansky (beats/instrumentais), King Akeem (trap), Greg Porn (cyberpunk/new wave), Dre50 (afrobeats/caribbean/R&B), 183 Wildboi (rap rock/trap), Fleekz (trap/R&B)
+- Spotify: That Boy Hi Hat ID de artista `2f9j460EwjfvjYp3trBcb7` — "Zooted Zone" `0emH8ktA8x4DkOFLsG5xkW`, "Diabolique" `2eSyWmIdPzEMyWejLb2LBj`
+- Selo de gênero: Post-Trap Futurism — alternative rap · post trap · cyberpunk (originado por That Boy Hi Hat)
+- Sincronização (sync): busque colocações via /query ou o conector cuefinder; cue sheets por faixa em https://cumulativewebinc.github.io/cwi-learn/cue-sheets/
+- Postura de direitos (confirmada pelo dono): 50/50 com cada artista; Black Lansky libera master + publishing diretamente por música — uma assinatura libera a música inteira
+
+## Rádio 365
+
+- [Rádio 365](https://cumulativeweb.com/br/radio.html) — a rádio da CWI; reconstrução estática em HLS em andamento (2026-10-05)
 
 ## Sobre
 
@@ -26,8 +60,10 @@ A Cumulative Web Inc (CWI) é um selo independente. A CWI Brasil é sua extensã
 - Software: https://cumulativeweb.com/br/software.html — o software da CWI: THE EDIT, Agent Deck, Caravan, KingCode Lens e a loja CWI.
 - Eventos: https://cumulativeweb.com/br/eventos.html — agenda: shows, lançamentos e anúncios da cena.
 - Ao Vivo: https://cumulativeweb.com/br/livestream.html — transmissões ao vivo: shows, bastidores e conversas com a cena.
-- Contato: https://cumulativeweb.com/br/contato.html — formulário de contato com 4 tipos de mensagem (ver "Formulário de contato").
+- Rádio: https://cumulativeweb.com/br/radio.html — a Rádio 365 da CWI Brasil.
+- Sync (Brasil): https://cumulativeweb.com/br/sync/ — sincronização e licenciamento no Brasil.
 - Cadastro de artista: https://cumulativeweb.com/br/cadastro.html — página de cadastro para artistas independentes: apresentação do movimento CWI e formulário com tipo `artista` (ver "Cadastro de artista").
+- Contato: https://cumulativeweb.com/br/contato.html — formulário de contato com 4 tipos de mensagem (ver "Formulário de contato").
 - Privacidade: https://cumulativeweb.com/br/privacidade.html — Política de Privacidade em conformidade com a LGPD.
 
 ## Formulário de contato
@@ -58,7 +94,13 @@ Campos do formulário: nome artístico (obrigatório), nome real (opcional), cid
 - Esquema da submissão: https://cumulativeweb.com/br/schemas/inquiry-submission.schema.json
 - Sitemap: https://cumulativeweb.com/br/sitemap.xml
 - Robots: https://cumulativeweb.com/br/robots.txt
+- Briefing para IA (este arquivo): https://cumulativeweb.com/br/llms.txt
+- Versão longa: https://cumulativeweb.com/br/llms-full.txt
 
 ## Privacidade (LGPD)
 
 Dados de contato são usados apenas para responder à mensagem. Para acessar, corrigir ou excluir seus dados, escreva para hp@cumulativeweb.com com o assunto "LGPD". Detalhes: https://cumulativeweb.com/br/privacidade.html
+
+## Marcação de verdade
+
+LIVE = verificado em funcionamento por requisição real em 2026-10-05. EM IMPLANTAÇÃO = em andamento, ainda não aceita chamadas. Todos os fatos acima foram re-verificados nos repositórios em 2026-10-05. O que não foi verificado não é afirmado.

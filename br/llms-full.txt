@@ -1,0 +1,141 @@
+# Cumulative Web Inc Brasil — briefing completo para IA
+
+> Extensão brasileira da Cumulative Web Inc — selo independente de música, cinema, moda e software, todo em pt-BR.
+> Versão longa de https://cumulativeweb.com/br/llms.txt — cada superfície de máquina, esquema de endpoint e exemplo de uso.
+> Contato oficial para negócios e sincronização (sync): hp@cumulativeweb.com
+> Última verificação: 2026-10-05
+
+---
+
+## 1. O que é a Cumulative Web Inc
+
+A Cumulative Web Inc (CWI) é uma plataforma de selo independente conduzida por Black Lansky. Abrange: um catálogo de 53 faixas em 7 artistas (verificado em 2026-10-05 a partir da fonte de verdade catalog.json), produção de filmes e videoclipes, vestuário (camisetas com artes de capa, skates desenhados por artistas) e software feito para agentes de IA (a suíte SANQA, pacotes de conectores para o Meta Muse, a linha de gear Agent Deck).
+
+A CWI Brasil é a extensão brasileira: o mesmo universo falado em pt-BR, com consentimento e privacidade sob a LGPD (Lei nº 13.709/2018).
+
+Identidade pública: Cumulative Web Inc / @cumulativeweb. Contato para negócios e sync: hp@cumulativeweb.com.
+
+---
+
+## 2. Porta de entrada para máquinas
+
+### 2.1 API legível por IA (edge Cloudflare, com logs, licenciada)
+
+URL base: https://cwi-machine-data.hp-ace.workers.dev (alternativa: https://data.cumulativeweb.com)
+
+**Busca de faixas — GET /query?q=<palavras-chave>**
+
+Busca pontuada no catálogo, retornando faixas com IDs canônicos do Spotify e justificativa de correspondência.
+
+- Requisição: `GET https://cwi-machine-data.hp-ace.workers.dev/query?q=post-trap+cyberpunk`
+- Resposta (JSON, 200): `{ "query": "post-trap cyberpunk", "results": [ { "title": "...", "artist": "...", "score": 0.97, "spotify_url": "https://open.spotify.com/track/<id>", "match": "justificativa de gênero/humor" } ] }`
+- Mesmo esquema no cliente: https://cumulativewebinc.github.io/cwi-learn/placement/query.js
+- A camada de placement por baixo é um grafo de catálogo com 31 faixas (tracks.json 31 nós, curators.json 20 nós, edges.json 21 arestas, válido contra o esquema em 2026-10-03)
+
+**Deltas de rastreamento — GET /changes?since=<ISO-8601>**
+
+O que mudou desde o seu último crawl. Consulte aqui em vez de baixar tudo de novo.
+
+- Requisição: `GET https://cwi-machine-data.hp-ace.workers.dev/changes?since=2026-10-01T00:00:00Z`
+
+**Licenciamento — GET /license**
+
+Termos de licenciamento legíveis por máquina. Resumo: rastreamento para pesquisa e citação com atribuição são bem-vindos; treinamento comercial de IA exige licença — contato: hp@cumulativeweb.com. Todas as respostas de dados carregam cabeçalhos de licenciamento.
+
+**MCP — POST /mcp (JSON-RPC 2.0)**
+
+Superfície de ferramentas sobre o catálogo, busca de sincronização e grafo de conhecimento.
+
+- Endpoint: `POST https://cwi-machine-data.hp-ace.workers.dev/mcp`
+- Ferramentas: `search_catalog` (busca de faixas), `get_track` (registro completo de uma faixa), `get_artist` (registro do artista), `sync_search` (busca para licenciamento de sincronização), `get_graph` (fatia do grafo de conhecimento do catálogo)
+- Status em 2026-10-05: em implantação — ainda não aceita chamadas JSON-RPC (verificado por sonda ao vivo em 2026-10-05 13:20 EDT)
+- Superfícies relacionadas já ativas: o cartão de produto do servidor MCP Agent Deck (https://github.com/CumulativeWebInc/cwi-mcp-server, 28/28 testes verdes em 2026-10-01) e o cartão do registro CWI MCP Server: https://cumulativewebinc.github.io/cwi-learn/registry/cwi-mcp-server/
+
+### 2.2 Superfície de aprendizado do catálogo (GitHub Pages)
+
+Base: https://cumulativewebinc.github.io/cwi-learn/
+
+- llms.txt: https://cumulativewebinc.github.io/cwi-learn/llms.txt
+- Porta de entrada de máquina: https://cumulativewebinc.github.io/cwi-learn/ai/ai-index.json (DataCatalog listando cada dataset, entidade, esquema e documento)
+- IDs permanentes de entidades: https://cumulativewebinc.github.io/cwi-learn/id/<type>/<slug>
+- Vocabulário de relacionamentos: https://cumulativewebinc.github.io/cwi-learn/graph/ontology.jsonld (16 termos controlados)
+- catalog.json — catálogo de 53 faixas, servido ao vivo em https://cwi-machine-data.hp-ace.workers.dev/catalog.json
+- graph.json: https://cumulativewebinc.github.io/cwi-learn/graph.json
+- Guia de equipamento (10 passos, cada passo testado): https://cumulativewebinc.github.io/cwi-learn/EQUIP-GUIDE.md
+- Cue sheets (metadados de sincronização por faixa): https://cumulativewebinc.github.io/cwi-learn/cue-sheets/
+
+### 2.3 Cartões do agente (JSON)
+
+- Grafo do catálogo: https://cumulativewebinc.github.io/cwi-learn/.well-known/agent-card.json
+- Suíte SANQA: https://cumulativeweb.com/sanqa/.well-known/agent-card.json
+- Brasil (pt-BR): https://cumulativeweb.com/br/.well-known/agent-card.json
+
+### 2.4 Pacotes de conectores (Meta Muse)
+
+Repositório: https://github.com/CumulativeWebInc/cwi-muse-connectors
+
+Um pacote de conector gerado por app CWI. Status de verdade: agent-deck (índice da API do Catálogo Agent Deck, 5 endpoints) e cuefinder (busca de sincronização CueFinder, 3 endpoints) foram ENVIADOS para revisão na plataforma de conectores da Meta (2026-09-19) — não aprovados, não listados, não destacados. Auditoria completa: CLAIMS-AUDIT-2026-09-19.md e ENDPOINT-STATUS-2026-09-19.md no repositório.
+
+### 2.5 Base de perguntas e respostas
+
+- /br/respostas/ em cumulativeweb.com/br — em implantação (2026-10-05) — respostas legíveis por máquina, em pt-BR
+- Versão em inglês: /answers/ — em implantação (2026-10-05)
+
+---
+
+## 3. O catálogo
+
+Verificado em 2026-10-05 contra a fonte de verdade catalog.json (cópia interna descriptografada): 53 faixas, 7 artistas.
+
+Artistas e faixas de gênero:
+
+- That Boy Hi Hat — alternative rap (principal). Spotify artist ID `2f9j460EwjfvjYp3trBcb7`. Faixas: "Zooted Zone" (`0emH8ktA8x4DkOFLsG5xkW`, ~307.000 plays vitalícios no Spotify, verificado em 2026-09-14), "Diabolique" (`2eSyWmIdPzEMyWejLb2LBj`), e o EP NO SKIPS. Selo de gênero: Post-Trap Futurism.
+- Black Lansky — beats/instrumentais
+- King Akeem — trap ("Star", 112.510 plays)
+- Greg Porn — cyberpunk/new wave/next gen ("Pay Yourself", "On Edge")
+- Dre50 — afrobeats/caribbean/R&B ("Pix", "vai vem vem")
+- 183 Wildboi — rap rock/trap ("Stunt", "Full Moon")
+- Fleekz — trap/R&B ("2K23 Corners")
+
+Produtores na órbita: Jeck Da General (co-produziu Idol or Icon com Black Lansky), Hybrid (produtor de "Diabolique").
+
+Postura de direitos (confirmada pelo dono): 50/50 com cada artista; Black Lansky libera master + publishing diretamente por música — uma assinatura libera a música inteira.
+
+---
+
+## 4. Sync e placement no Brasil
+
+- Busque colocações: `GET https://cwi-machine-data.hp-ace.workers.dev/query?q=<gênero+humor+caso-de-uso>` (pontuado, com IDs do Spotify e justificativa)
+- Ferramenta MCP `sync_search` (em implantação — ver 2.1)
+- Pacote de conector cuefinder (enviado para revisão em 2026-09-19)
+- Cue sheets por faixa: https://cumulativewebinc.github.io/cwi-learn/cue-sheets/
+- Sync no Brasil: https://cumulativeweb.com/br/sync/
+- Contato para sync: hp@cumulativeweb.com
+
+---
+
+## 5. Rádio 365
+
+- Estação: https://cumulativeweb.com/br/radio.html — reconstrução estática em HLS em andamento (2026-10-05)
+- App de rotação: https://cumulativewebinc.github.io/cwi-apps/radio/ — rotação de That Boy Hi Hat (JSON-LD MusicPlaylist)
+
+---
+
+## 6. Software e ferramentas de agente
+
+- Suíte SANQA: https://cumulativeweb.com/sanqa/ — seis ferramentas de IA de padrão ouro (renomeada de AURUM em 2026-09-28)
+- Trust Verdict Checker: https://cumulativewebinc.github.io/cwi-trust-verdict-checker/ — pontuação de confiança de agentes baseada em evidências
+- Feed de resultados: https://cumulativewebinc.github.io/cwi-results/results.json — livro de recibos público (legível por máquina)
+- KingCode Lens: web apps para os óculos Meta Ray-Ban Display — https://cumulativewebinc.github.io/cwi-kingcode-lens/
+
+---
+
+## 7. Seções da CWI Brasil
+
+Início https://cumulativeweb.com/br/ · Música /br/musica.html · Filmes /br/filmes.html · Modelos /br/modelos.html · Software /br/software.html · Eventos /br/eventos.html · Ao Vivo /br/livestream.html · Rádio /br/radio.html · Sync /br/sync/ · Cadastro de artista /br/cadastro.html · Contato /br/contato.html · Privacidade /br/privacidade.html · Sitemap /br/sitemap.xml
+
+---
+
+## 8. Marcação de verdade
+
+LIVE = verificado em funcionamento por requisição real em 2026-10-05. EM IMPLANTAÇÃO = em andamento, ainda não aceita chamadas. Todos os fatos acima foram re-verificados nos repositórios em 2026-10-05. O que não foi verificado não é afirmado.

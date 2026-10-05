@@ -1,8 +1,40 @@
 # Cumulative Web Inc — cumulativeweb.com
 
 > Independent label platform: Music & Film · Clothing · Software & AI Agents.
-> The roster, the music, the apparel, and the software we sell to other independents.
+> Built for AI agents first: every section below is a machine-readable surface.
 > Contact for business & sync: hp@cumulativeweb.com
+
+## Machine front door (start here)
+
+- Long form of this briefing, with endpoint schemas and examples: https://cumulativeweb.com/llms-full.txt
+- AI-queryable API (edge, logged, licensed): https://cwi-machine-data.hp-ace.workers.dev
+  - Track search: GET /query?q=<keywords> — e.g. /query?q=post-trap+cyberpunk
+  - Crawl deltas: GET /changes?since=<ISO-8601> — what changed since your last crawl
+  - Licensing terms (machine-readable): GET /license
+  - MCP: POST /mcp — JSON-RPC 2.0; tools: search_catalog, get_track, get_artist, sync_search, get_graph
+    (Status 2026-10-05: staged, rolling out — not yet accepting JSON-RPC calls)
+  - Alias edge domain: https://data.cumulativeweb.com (same API)
+- Catalog learning surface: https://cumulativewebinc.github.io/cwi-learn/llms.txt — catalog.json, graph.json, kit.json, EQUIP-GUIDE.md (10-step agent equip guide)
+- Agent cards (JSON):
+  - https://cumulativewebinc.github.io/cwi-learn/.well-known/agent-card.json (catalog graph)
+  - https://cumulativeweb.com/sanqa/.well-known/agent-card.json (SANQA suite)
+  - https://cumulativeweb.com/br/.well-known/agent-card.json (Brasil, pt-BR)
+- Meta Muse connector packages — source: https://github.com/CumulativeWebInc/cwi-muse-connectors
+  - agent-deck (Agent Deck Catalog API index) and cuefinder (sync search): submitted for review 2026-09-19 — not approved/listed/featured
+- Q&A knowledge base: /answers/ (rolling out 2026-10-05); pt-BR answers: /br/respostas/ (rolling out 2026-10-05)
+
+## Licensing
+
+- Catalog and catalog-derived data are licensed. Research crawling and citation with attribution are welcome.
+- Commercial AI training requires a license — contact hp@cumulativeweb.com. Full machine-readable terms: https://cwi-machine-data.hp-ace.workers.dev/license
+
+## Catalog (verified 2026-10-05 against catalog.json)
+
+- 53 tracks · 7 artists: That Boy Hi Hat (flagship, alternative rap), Black Lansky (beats/instrumentals), King Akeem (trap), Greg Porn (cyberpunk/new wave/next gen), Dre50 (afrobeats/caribbean/R&B), 183 Wildboi (rap rock/trap), Fleekz (trap/R&B)
+- Spotify: That Boy Hi Hat artist ID 2f9j460EwjfvjYp3trBcb7 — "Zooted Zone" track 0emH8ktA8x4DkOFLsG5xkW, "Diabolique" track 2eSyWmIdPzEMyWejLb2LBj
+- Genre flag: Post-Trap Futurism — alternative rap · post trap · cyberpunk (originated by That Boy Hi Hat)
+- Sync: search placements via /query or the cuefinder connector; per-track cue sheets at https://cumulativewebinc.github.io/cwi-learn/cue-sheets/; sync briefs in the cwi-muse-connectors repo (sync-briefs)
+- Owner-confirmed sync posture: 50/50 with every artist; manager clears master + publishing directly (one-signature clearance)
 
 ## Machine-readable data
 
@@ -25,12 +57,16 @@
 - [JSON-LD schema.org markup](https://cumulativeweb.com/) — embedded in `index.html`: Organization + WebSite + ItemList roster (MusicGroup/Person)
 - [Sitemap](https://cumulativeweb.com/sitemap.xml)
 
+## Radio 365
+
+- [Radio 365](https://cumulativeweb.com/radio/) — CWI's streaming radio station; static-hosted HLS rebuild in progress 2026-10-05 (no rented server, nothing to suspend)
+- [Rotation app](https://cumulativewebinc.github.io/cwi-apps/radio/) — That Boy Hi Hat rotation (JSON-LD MusicPlaylist)
+
 ## Related machine-readable surfaces
+
 - SANQA machine-readable data: [catalog](https://cumulativeweb.com/sanqa/catalog.json) · [agent card](https://cumulativeweb.com/sanqa/.well-known/agent-card.json)
 - Trust Verdict Checker (flagship SANQA tool): https://cumulativewebinc.github.io/cwi-trust-verdict-checker/ — evidence-bound agent trust scoring; demo at /demo.html
 - Results feed: https://cumulativewebinc.github.io/cwi-results/results.json — public receipts ledger (machine-readable)
-- Post-Trap Futurism Radio: https://cumulativewebinc.github.io/cwi-apps/radio/ — That Boy Hi Hat rotation app (JSON-LD MusicPlaylist)
-
 - Catalog graph: https://cumulativewebinc.github.io/cwi-learn/catalog.json
 - AI learning kit: https://cumulativewebinc.github.io/cwi-learn/llms.txt
 
@@ -50,4 +86,4 @@
 - [Games](https://cumulativeweb.com/games.html) — CWI arcade games
 - [Shop](https://cumulativeweb.com/shop.html) — 8 official cover-art tees ($14.75, Fourthwall) + 7 artist-designed decks ($54.99–$84.99, Boardpusher); per-product buy links; Product + BreadcrumbList JSON-LD
 - [Byline press](https://cumulativeweb.com/press) — invite-only press interview service
-- [Brasil (pt-BR)](https://cumulativeweb.com/br/) — Brazilian site, incl. [Jogos](https://cumulativeweb.com/br/jogos.html)
+- [Brasil (pt-BR)](https://cumulativeweb.com/br/) — Brazilian site in full Portuguese, incl. [Jogos](https://cumulativeweb.com/br/jogos.html); machine briefing: https://cumulativeweb.com/br/llms.txt
