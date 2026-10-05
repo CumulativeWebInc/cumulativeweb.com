@@ -129,17 +129,28 @@
 </section>
 <script>
 (function(){
+  var SLOT = 'radio365-hero';
+  function beacon(type, contentId) {
+    try {
+      fetch('https://cwi-machine-data.hp-ace.workers.dev/ad/event', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ event_type: type, slot_id: SLOT, content_id: contentId })
+      }).catch(function(){});
+    } catch (e) {}
+  }
   fetch('https://cwi-machine-data.hp-ace.workers.dev/ad/featured')
     .then(function(r){ return r.json(); })
     .then(function(d){
-      var f = d && d.featured && d.featured['radio365-hero'];
+      var f = d && d.featured && d.featured[SLOT];
       if (!f || !f.title) return;
       var el = document.getElementById('cwi-featured');
       el.querySelector('[data-f-title]').textContent = f.title;
       el.querySelector('[data-f-artist]').textContent = f.artist ? '— ' + f.artist : '';
       var a = el.querySelector('[data-f-link]');
       if (f.url) { a.href = f.url; } else { a.style.display = 'none'; }
+      a.addEventListener('click', function(){ beacon('click', f.content_id); });
       el.style.display = '';
+      beacon('exposure', f.content_id);
     })
     .catch(function(){});
 })();
