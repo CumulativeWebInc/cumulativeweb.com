@@ -4,7 +4,16 @@ name: gitleaks
 
 on:
   push:
+    paths-ignore:
+      # Machine-written data/state — no secret-bearing capacity. Skips the
+      # scan on data-only pushes (radio now-playing + freshness heartbeat are
+      # the Actions-minute burners). Code/config pushes still scan.
+      - 'radio/now-playing.json'
+      - 'data/freshness.json'
   pull_request:
+  schedule:
+    # Weekly full-history safety net — catches anything the path filter skipped.
+    - cron: '0 6 * * 1'
 
 # Rapid scheduler pushes (now-playing every ~2 min) used to pile up overlapping
 # scans that GitHub cancelled and emailed as "failures". One run per ref now —
