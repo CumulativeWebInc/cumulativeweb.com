@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#07090d" />
+  <meta name="description" content="Casting aberto em Alagoas para modelos mulheres, 18+, fãs de anime e cyberpunk, para o videoclipe animado Cyberpunk 2027." />
+  <link rel="icon" href="data:," />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Oxanium:wght@500;600;700&amp;display=swap" rel="stylesheet" />
+  <title>Casting — Cyberpunk 2027</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f3f6f7;
+      --surface: #ffffff;
+      --surface-2: #e9eef0;
+      --text: #11151a;
+      --muted: #48525e;
+      --line: #b7c2c8;
+      --cyan: #006d78;
+      --cyan-hot: #008a98;
+      --pink: #c00059;
+      --pink-hot: #ed006d;
+      --yellow: #a86800;
+      --yellow-fill: #ffd35a;
+      --ink: #071014;
+      --focus: #0b65d8;
+      --shadow: 0 22px 60px rgba(11, 24, 31, .14);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #07090d;
+        --surface: #0d1118;
+        --surface-2: #141b24;
+        --text: #f5f8fa;
+        --muted: #aab5c0;
+        --line: #2a3541;
+        --cyan: #36e4f2;
+        --cyan-hot: #7af4ff;
+        --pink: #ff3c91;
+        --pink-hot: #ff79b5;
+        --yellow: #ffd35a;
+        --yellow-fill: #ffd35a;
+        --ink: #071014;
+        --focus: #7af4ff;
+        --shadow: 0 22px 70px rgba(0, 0, 0, .42);
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      overflow-x: hidden;
+      background:
+        linear-gradient(90deg, transparent 0 49.8%, color-mix(in srgb, var(--cyan) 8%, transparent) 50%, transparent 50.2%) 0 0 / 42px 42px,
+        linear-gradient(transparent 0 49.8%, color-mix(in srgb, var(--pink) 7%, transparent) 50%, transparent 50.2%) 0 0 / 42px 42px,
+        var(--bg);
+      color: var(--text);
+      font-family: "Manrope", sans-serif;
+      line-height: 1.55;
+    }
+
+    ::selection { background: var(--pink); color: #fff; }
+    a { color: inherit; }
+    img, iframe { max-width: 100%; }
+    button, input, textarea, select { font: inherit; }
+
+    .shell {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 92svh;
+      padding: 34px 0 70px;
+      display: grid;
+      align-items: center;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0 50% auto -50vw;
+      height: 5px;
+      background: var(--pink);
+      box-shadow: 42vw 0 var(--cyan), 84vw 0 var(--yellow-fill);
+    }
+
+    .hero-grid {
+      display: grid;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 18px;
+      color: var(--cyan);
+      font-family: "Oxanium", sans-serif;
+      font-size: .82rem;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 { font-family: "Oxanium", sans-serif; line-height: 1.05; }
+    h1 {
+      margin: 0;
+      max-width: 10ch;
+      font-size: clamp(3rem, 12.6vw, 6rem);
+      letter-spacing: -.065em;
+      text-transform: uppercase;
+    }
+
+    h1 .year {
+      display: block;
+      margin-top: 2px;
+      color: var(--pink);
+      -webkit-text-stroke: 1px currentColor;
+    }
+
+    .hero-copy {
+      max-width: 650px;
+      margin: 24px 0 0;
+      color: var(--muted);
+      font-size: clamp(1.06rem, 2vw, 1.28rem);
+      font-weight: 600;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin: 26px 0;
+    }
+
+    .tag {
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      font-size: .83rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .035em;
+    }
+
+    .tag:nth-child(2) { border-color: var(--cyan); }
+    .tag:nth-child(3) { border-color: var(--pink); }
+
+    .primary-cta, .submit-btn {
+      display: inline-flex;
+      min-height: 52px;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 0;
+      background: var(--yellow-fill);
+      color: var(--ink);
+      padding: 14px 20px;
+      font-family: "Oxanium", sans-serif;
+      font-size: .94rem;
+      font-weight: 800;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: .055em;
+      box-shadow: 6px 6px 0 var(--pink);
+      cursor: pointer;
+    }
+
+    .primary-cta:hover, .submit-btn:hover { background: #ffe083; }
+    .primary-cta:focus-visible, .submit-btn:focus-visible, input:focus-visible, textarea:focus-visible, a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .video-shell {
+      position: relative;
+      padding: 9px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .video-shell::before,
+    .video-shell::after {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      width: 38px;
+      height: 38px;
+      pointer-events: none;
+    }
+    .video-shell::before { left: -7px; top: -7px; border-left: 4px solid var(--cyan); border-top: 4px solid var(--cyan); }
+    .video-shell::after { right: -7px; bottom: -7px; border-right: 4px solid var(--pink); border-bottom: 4px solid var(--pink); }
+
+    .video-frame {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: #000;
+    }
+    .video-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .video-poster {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      width: 100%;
+      border: 0;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, transparent 0 49.7%, rgba(54, 228, 242, .13) 50%, transparent 50.3%) 0 0 / 34px 34px,
+        linear-gradient(transparent 0 49.7%, rgba(255, 60, 145, .12) 50%, transparent 50.3%) 0 0 / 34px 34px,
+        #05080d;
+      color: #f5f8fa;
+      cursor: pointer;
+      text-align: left;
+    }
+    .video-poster::before {
+      content: "";
+      position: absolute;
+      inset: 12% -8% auto 42%;
+      height: 42%;
+      border: 2px solid #36e4f2;
+      transform: skew(-18deg);
+      box-shadow: 24px 20px 0 rgba(255, 60, 145, .68);
+    }
+    .video-poster::after {
+      content: "";
+      position: absolute;
+      right: 7%;
+      bottom: 10%;
+      width: 25%;
+      height: 7px;
+      background: #ffd35a;
+      box-shadow: -44px -16px 0 #ff3c91, 30px -32px 0 #36e4f2;
+    }
+    .video-poster-copy {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      align-content: center;
+      height: 100%;
+      padding: clamp(20px, 5vw, 42px);
+    }
+    .video-poster-kicker {
+      color: #7af4ff;
+      font-family: "Oxanium", sans-serif;
+      font-size: clamp(.64rem, 1.4vw, .78rem);
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .video-poster-title {
+      max-width: 7ch;
+      margin-top: 7px;
+      font-family: "Oxanium", sans-serif;
+      font-size: clamp(1.8rem, 5vw, 3.7rem);
+      font-weight: 700;
+      line-height: .92;
+      letter-spacing: -.055em;
+      text-transform: uppercase;
+    }
+    .video-play {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      gap: 9px;
+      margin-top: clamp(14px, 3vw, 26px);
+      color: #ffd35a;
+      font-family: "Oxanium", sans-serif;
+      font-size: clamp(.72rem, 1.4vw, .88rem);
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .video-play-icon {
+      display: grid;
+      width: 38px;
+      height: 38px;
+      place-items: center;
+      border: 2px solid currentColor;
+      border-radius: 50%;
+      padding-left: 2px;
+    }
+    .video-poster:hover .video-play { color: #fff; }
+    .video-poster:focus-visible { outline: 3px solid #7af4ff; outline-offset: -5px; }
+    .video-poster.is-hidden { display: none; }
+    .video-label {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 6px 16px;
+      margin: 10px 2px 0;
+      color: var(--muted);
+      font-size: .78rem;
+      font-weight: 700;
+    }
+    .video-label a { color: var(--cyan); text-underline-offset: 3px; }
+    .video-guide { margin: 12px 0 0; font-size: .9rem; line-height: 1.55; color: var(--text); background: rgba(0,229,255,.08); border-left: 3px solid var(--cyan); padding: 10px 12px; border-radius: 0 8px 8px 0; }
+
+    .section { padding: 76px 0; }
+    .section-head {
+      display: grid;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+    .section h2 {
+      margin: 0;
+      font-size: clamp(2rem, 7vw, 4rem);
+      letter-spacing: -.04em;
+    }
+    .section-intro {
+      max-width: 760px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .brief {
+      display: grid;
+      border-top: 1px solid var(--line);
+    }
+    .brief-item {
+      display: grid;
+      grid-template-columns: 36px 1fr;
+      gap: 14px;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .brief-mark {
+      color: var(--pink);
+      font-family: "Oxanium", sans-serif;
+      font-weight: 800;
+    }
+    .brief-item h3 { margin: 0 0 6px; font-size: 1.08rem; }
+    .brief-item p { margin: 0; color: var(--muted); }
+
+    .money {
+      margin-top: 28px;
+      padding: 24px;
+      background: var(--yellow-fill);
+      color: var(--ink);
+      display: grid;
+      gap: 6px;
+    }
+    .money strong {
+      font-family: "Oxanium", sans-serif;
+      font-size: clamp(1.7rem, 6vw, 3rem);
+      letter-spacing: -.035em;
+    }
+    .money span { font-weight: 700; }
+
+    .consent-section { padding-top: 20px; }
+    .consent {
+      margin: 0;
+      padding: 26px 22px;
+      border: 1px solid var(--cyan);
+      background: var(--surface);
+      box-shadow: 7px 7px 0 color-mix(in srgb, var(--cyan) 28%, transparent);
+    }
+    .consent p { margin: 0; }
+    .consent strong { color: var(--cyan); }
+
+    .form-wrap {
+      margin-top: 54px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+    .form-head {
+      padding: 28px 22px;
+      border-bottom: 1px solid var(--line);
+    }
+    .form-head h2 { margin: 0 0 10px; }
+    .form-head p { margin: 0; color: var(--muted); }
+
+    form { padding: 24px 22px 30px; }
+    .form-grid { display: grid; gap: 20px; }
+    .field { display: grid; gap: 8px; }
+    label, legend { font-weight: 800; }
+    .hint { color: var(--muted); font-size: .82rem; font-weight: 500; }
+    input[type="text"], input[type="tel"], textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 0;
+      background: var(--bg);
+      color: var(--text);
+      padding: 13px 14px;
+      min-height: 48px;
+    }
+    textarea { min-height: 122px; resize: vertical; }
+    input::placeholder, textarea::placeholder { color: color-mix(in srgb, var(--muted) 82%, transparent); }
+
+    .check {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 15px;
+      background: var(--surface-2);
+      border: 1px solid var(--line);
+    }
+    .check input {
+      width: 22px;
+      height: 22px;
+      margin: 1px 0 0;
+      flex: 0 0 auto;
+      accent-color: var(--pink);
+    }
+    .check label { font-size: .94rem; }
+
+    .file-zone {
+      position: relative;
+      border: 1px dashed var(--cyan);
+      padding: 20px;
+      background: color-mix(in srgb, var(--cyan) 6%, var(--surface));
+    }
+    .file-zone input { width: 100%; max-width: 100%; margin-top: 12px; }
+    .file-list { margin: 10px 0 0; color: var(--muted); font-size: .83rem; overflow-wrap: anywhere; }
+
+    .submit-row {
+      display: grid;
+      gap: 16px;
+      margin-top: 26px;
+    }
+    .submit-btn { width: 100%; }
+    .privacy-note { margin: 0; color: var(--muted); font-size: .82rem; }
+
+    .after-submit {
+      display: none;
+      margin-top: 20px;
+      padding: 18px;
+      border: 1px solid var(--yellow);
+      background: color-mix(in srgb, var(--yellow-fill) 14%, var(--surface));
+    }
+    .after-submit.is-visible { display: block; }
+    .after-submit h3 { margin: 0 0 7px; font-size: 1rem; }
+    .after-submit p { margin: 0 0 12px; color: var(--muted); }
+    .after-submit a { color: var(--cyan); font-weight: 800; }
+
+    footer {
+      padding: 34px 0 max(34px, env(safe-area-inset-bottom));
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .82rem;
+    }
+    .footer-row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; }
+
+    @media (min-width: 760px) {
+      .shell { width: min(1120px, calc(100% - 64px)); }
+      .hero { padding: 54px 0 90px; }
+      .hero-grid { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 56px; }
+      .section-head { grid-template-columns: minmax(260px, .7fr) 1fr; align-items: end; }
+      .brief { grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); }
+      .brief-item { grid-template-columns: 1fr; padding: 26px 24px; border-right: 1px solid var(--line); }
+      .brief-item:last-child { border-right: 0; }
+      .form-wrap { margin-left: auto; margin-right: auto; max-width: 900px; }
+      .form-head, form { padding-left: 40px; padding-right: 40px; }
+      .form-grid.two { grid-template-columns: 1fr 1fr; }
+      .submit-row { grid-template-columns: minmax(240px, .6fr) 1fr; align-items: center; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="shell hero-grid">
+        <div>
+          <p class="eyebrow">Casting aberto • Alagoas</p>
+          <h1 id="page-title">Cyberpunk <span class="year">2027</span></h1>
+          <p class="hero-copy">Procuramos mulheres modelos que queiram transformar sua própria imagem em uma personagem animada para o novo videoclipe de That Boy Hi Hat.</p>
+          <div class="tags" aria-label="Requisitos principais">
+            <span class="tag">Mulheres modelos • 18+</span>
+            <span class="tag">Alagoas</span>
+            <span class="tag">Fãs de anime / cyberpunk</span>
+          </div>
+          <a class="primary-cta" href="#candidatura">Quero me candidatar <span aria-hidden="true">↓</span></a>
+        </div>
+
+        <div class="video-shell">
+          <div class="video-frame">
+            <a class="video-poster" href="https://www.youtube.com/watch?v=YNMsgkXhANU" target="_blank" rel="noopener" aria-label="Assistir Cyberpunk 2027 de That Boy Hi Hat no YouTube">
+              <span class="video-poster-copy">
+                <span class="video-poster-kicker">Visualização oficial</span>
+                <span class="video-poster-title">Cyberpunk 2027</span>
+                <span class="video-play"><span class="video-play-icon" aria-hidden="true">▶</span> Assistir agora</span>
+              </span>
+            </a>
+          </div>
+          <div class="video-label"><span>THAT BOY HI HAT</span><span>LANÇAMENTO 20.10.2026</span><a href="https://www.youtube.com/watch?v=YNMsgkXhANU" target="_blank" rel="noopener">Abrir no YouTube ↗</a></div>
+          <p class="video-guide">Assista ao vídeo acima para ver o estilo e os exemplos do projeto — é assim que sua imagem vai aparecer no videoclipe animado.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="sobre">
+      <div class="shell">
+        <div class="section-head">
+          <h2 id="sobre">Sua imagem.<br />Sua versão animada.</h2>
+          <p class="section-intro">A Cumulative Web Inc está selecionando modelos mulheres com 18 anos ou mais, em Alagoas ou que possam viajar até Alagoas, que amam anime, animação ou estética cyberpunk.</p>
+        </div>
+
+        <div class="brief">
+          <article class="brief-item">
+            <span class="brief-mark" aria-hidden="true">//</span>
+            <div><h3>Uso exclusivo</h3><p>As fotos serão usadas SOMENTE para a inteligência artificial criar a versão animada da modelo para o videoclipe "Cyberpunk 2027".</p></div>
+          </article>
+          <article class="brief-item">
+            <span class="brief-mark" aria-hidden="true">//</span>
+            <div><h3>Nada explícito</h3><p>Nenhum conteúdo explícito ou sensual será criado, nunca. O projeto é um videoclipe musical animado.</p></div>
+          </article>
+          <article class="brief-item">
+            <span class="brief-mark" aria-hidden="true">//</span>
+            <div><h3>Sem outro uso</h3><p>A imagem não será usada em nenhum outro projeto sem nova autorização escrita da modelo.</p></div>
+          </article>
+        </div>
+
+        <div class="money" aria-label="Remuneração">
+          <strong>$50–$150 (negociável)</strong>
+          <span>por sessão fotográfica curta, contratação freelance por sessão.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section consent-section" aria-labelledby="autorizacao">
+      <div class="shell">
+        <div class="section-head">
+          <h2 id="autorizacao">Antes de se candidatar</h2>
+          <p class="section-intro">Leia integralmente a autorização de uso de imagem abaixo.</p>
+        </div>
+        <blockquote class="consent">
+          <p><strong>AUTORIZAÇÃO DE USO DE IMAGEM —</strong> Declaro que tenho 18 anos ou mais e autorizo a Cumulative Web Inc a captar e utilizar minha imagem (fotografias) exclusivamente para a criação da minha semelhança em animação gerada por inteligência artificial para o videoclipe musical "Cyberpunk 2027", do artista That Boy Hi Hat. Minhas fotos serão usadas somente para esse fim — nenhum conteúdo explícito ou sensual será criado a partir da minha imagem, e minha imagem não será usada em nenhum outro projeto sem nova autorização escrita. Esta autorização pode ser revogada a qualquer momento mediante solicitação escrita, conforme a LGPD (Lei 13.709/2018). A contratação é de natureza freelance, por sessão fotográfica, com remuneração a combinar.</p>
+        </blockquote>
+
+        <div class="form-wrap" id="candidatura">
+          <div class="form-head">
+            <h2>Candidatura</h2>
+            <p>Responda às perguntas. Ao final, seu aplicativo de e-mail será aberto com as respostas preenchidas.</p>
+          </div>
+
+          <form id="casting-form" novalidate>
+            <div class="form-grid two">
+              <div class="field">
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" autocomplete="name" maxlength="120" required />
+              </div>
+              <div class="field">
+                <label for="cidade">Cidade</label>
+                <input id="cidade" name="cidade" type="text" autocomplete="address-level2" maxlength="120" required />
+              </div>
+            </div>
+
+            <div class="form-grid" style="margin-top:20px">
+              <div class="check">
+                <input id="maioridade" name="maioridade" type="checkbox" required />
+                <label for="maioridade">Confirmo que tenho 18 anos ou mais e concordo com a autorização de uso de imagem acima.</label>
+              </div>
+
+              <div class="field">
+                <label for="contato">WhatsApp/contato</label>
+                <input id="contato" name="contato" type="tel" autocomplete="tel" maxlength="120" required />
+              </div>
+
+              <div class="field">
+                <label for="tempo">Tempo disponível para a sessão de fotos</label>
+                <textarea id="tempo" name="tempo" maxlength="500" placeholder="Conte quais dias, horários ou períodos funcionam para você." required></textarea>
+              </div>
+
+              <div class="field">
+                <label for="experiencia">Experiência</label>
+                <textarea id="experiencia" name="experiencia" maxlength="700" placeholder="Conte sua experiência como modelo, diante das câmeras ou em projetos criativos. Se estiver começando, pode dizer isso." required></textarea>
+              </div>
+
+              <div class="field">
+                <label for="motivacao">Por que gosta de anime/animação/cyberpunk?</label>
+                <textarea id="motivacao" name="motivacao" maxlength="700" required></textarea>
+              </div>
+
+              <div class="field file-zone">
+                <label for="fotos">Algumas fotos iniciais para avaliação</label>
+                <span class="hint">Selecione suas fotos aqui para conferência. Por segurança do navegador, elas não podem ser anexadas automaticamente. Quando o aplicativo de e-mail abrir, anexe essas mesmas fotos antes de enviar.</span>
+                <input id="fotos" name="fotos" type="file" accept="image/png,image/jpeg,image/webp" multiple required aria-describedby="file-status" />
+                <p class="file-list" id="file-status" aria-live="polite">Nenhuma foto selecionada.</p>
+              </div>
+            </div>
+
+            <div class="submit-row">
+              <button class="submit-btn" type="submit">Enviar candidatura</button>
+              <p class="privacy-note">Nada é enviado ou armazenado nesta página. Suas respostas são preparadas em um e-mail para <strong>hp@cumulativeweb.com</strong>. Você revisa, anexa as fotos e envia pelo seu próprio aplicativo de e-mail.</p>
+            </div>
+
+            <div class="after-submit" id="after-submit" role="status" aria-live="polite">
+              <h3>Termine no seu aplicativo de e-mail</h3>
+              <p>Antes de enviar, anexe as fotos que você selecionou. Se o aplicativo não abriu, use o link abaixo.</p>
+              <a id="email-again" href="mailto:hp@cumulativeweb.com">Abrir o e-mail novamente</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-row">
+      <span>Cumulative Web Inc • That Boy Hi Hat</span>
+      <span>Cyberpunk 2027 • lançamento 20 de outubro de 2026</span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var form = document.getElementById('casting-form');
+      var photos = document.getElementById('fotos');
+      var fileStatus = document.getElementById('file-status');
+      var afterSubmit = document.getElementById('after-submit');
+      var emailAgain = document.getElementById('email-again');
+
+      function selectedFileNames() {
+        return Array.prototype.map.call(photos.files || [], function (file) { return file.name; });
+      }
+
+      photos.addEventListener('change', function () {
+        var names = selectedFileNames();
+        fileStatus.textContent = names.length ? 'Selecionadas: ' + names.join(', ') : 'Nenhuma foto selecionada.';
+      });
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+
+        var names = selectedFileNames();
+        var personName = document.getElementById('nome').value.trim();
+        var body = [
+          'CANDIDATURA — CASTING CYBERPUNK 2027',
+          '',
+          'Nome: ' + personName,
+          'Confirmação de idade: Tenho 18 anos ou mais',
+          'Cidade: ' + document.getElementById('cidade').value.trim(),
+          'WhatsApp/contato: ' + document.getElementById('contato').value.trim(),
+          '',
+          'Tempo disponível para a sessão de fotos:',
+          document.getElementById('tempo').value.trim(),
+          '',
+          'Experiência:',
+          document.getElementById('experiencia').value.trim(),
+          '',
+          'Por que gosto de anime/animação/cyberpunk:',
+          document.getElementById('motivacao').value.trim(),
+          '',
+          'Fotos selecionadas para anexar:',
+          names.join(', '),
+          '',
+          'IMPORTANTE: Vou anexar as fotos selecionadas a este e-mail antes de enviar.',
+          '',
+          'Declaro que li e concordo com a AUTORIZAÇÃO DE USO DE IMAGEM exibida no formulário.'
+        ].join('\n');
+
+        var subject = 'Candidatura — Casting Cyberpunk 2027 — ' + personName;
+        var mailto = 'mailto:hp@cumulativeweb.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        emailAgain.setAttribute('href', mailto);
+        afterSubmit.classList.add('is-visible');
+        afterSubmit.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        window.location.href = mailto;
+      });
+    }());
+  </script>
+</body>
+</html>
