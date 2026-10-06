@@ -1,10 +1,9 @@
 {
-  "generated_at": "2026-10-06T09:29:50.161Z",
-  "content_hash": "fd9ea164409c230c",
-  "previous_content_hash": "3df291a57bb2337e",
+  "generated_at": "2026-10-06T09:33:31.184Z",
+  "content_hash": "5a51c84227ebab54",
+  "previous_content_hash": "fd9ea164409c230c",
   "changed": true,
   "surfaces_changed": [
-    "/llms.txt",
     "/radio/now-playing.json"
   ],
   "surface_count": 12,
@@ -100,8 +99,8 @@
     {
       "path": "/radio/now-playing.json",
       "exists": true,
-      "bytes": 504,
-      "sha256": "c761ed048fc0f55c",
+      "bytes": 499,
+      "sha256": "383215a2fdd0220f",
       "mtime": null,
       "source": "origin/main"
     }
