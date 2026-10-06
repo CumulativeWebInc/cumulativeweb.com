@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-06T06:53:34.584Z",
-  "content_hash": "ddf9e7ec3d0936fc",
-  "previous_content_hash": "07e30a4a7cd9fd2c",
+  "generated_at": "2026-10-06T06:56:34.209Z",
+  "content_hash": "d2392ac8ea4f37fb",
+  "previous_content_hash": "ddf9e7ec3d0936fc",
   "changed": true,
   "surfaces_changed": [
     "/radio/now-playing.json"
@@ -99,8 +99,8 @@
     {
       "path": "/radio/now-playing.json",
       "exists": true,
-      "bytes": 499,
-      "sha256": "251ca1d27c894d33",
+      "bytes": 495,
+      "sha256": "e4536e79bbe361b7",
       "mtime": null,
       "source": "origin/main"
     }
