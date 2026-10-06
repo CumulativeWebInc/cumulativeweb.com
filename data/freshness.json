@@ -1,9 +1,10 @@
 {
-  "generated_at": "2026-10-06T08:49:35.551Z",
-  "content_hash": "3df291a57bb2337e",
-  "previous_content_hash": "b466fafe22aa8cd2",
+  "generated_at": "2026-10-06T09:29:50.161Z",
+  "content_hash": "fd9ea164409c230c",
+  "previous_content_hash": "3df291a57bb2337e",
   "changed": true,
   "surfaces_changed": [
+    "/llms.txt",
     "/radio/now-playing.json"
   ],
   "surface_count": 12,
@@ -27,8 +28,8 @@
     {
       "path": "/llms.txt",
       "exists": true,
-      "bytes": 8637,
-      "sha256": "2d9fec078542554f",
+      "bytes": 8862,
+      "sha256": "f540b11378be30b4",
       "mtime": null,
       "source": "origin/main"
     },
@@ -99,8 +100,8 @@
     {
       "path": "/radio/now-playing.json",
       "exists": true,
-      "bytes": 505,
-      "sha256": "fc47b3016a3f8881",
+      "bytes": 504,
+      "sha256": "c761ed048fc0f55c",
       "mtime": null,
       "source": "origin/main"
     }
