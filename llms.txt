@@ -16,8 +16,10 @@
   - Track search: GET /query?q=<keywords> — e.g. /query?q=post-trap+cyberpunk
   - Crawl deltas: GET /changes?since=<ISO-8601> — what changed since your last crawl
   - Licensing terms (machine-readable): GET /license
-  - MCP: POST /mcp — JSON-RPC 2.0; tools: search_catalog, get_track, get_artist, sync_search, semantic_search, get_graph
-    (Status 2026-10-05: LIVE — accepting JSON-RPC calls)
+  - MCP: POST /mcp — JSON-RPC 2.0; tools: search_catalog, get_track, get_artist, sync_search, semantic_search, get_graph, get_release
+    (Status 2026-10-06: LIVE — accepting JSON-RPC calls; 7 tools)
+  - Sitemap: GET /sitemap.xml — every machine-readable surface with change frequencies
+  - RSS freshness feed: GET /feed.xml — same freshness signals as /changes, for feed readers and polling agents
   - Alias edge domain: https://data.cumulativeweb.com (same API)
 - Catalog learning surface: https://cumulativewebinc.github.io/cwi-learn/llms.txt — catalog.json, graph.json, kit.json, EQUIP-GUIDE.md (10-step agent equip guide)
 - Agent cards (JSON):
