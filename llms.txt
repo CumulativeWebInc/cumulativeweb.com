@@ -108,6 +108,7 @@
 - [King Akeem](https://cumulativeweb.com/kingahkeem) — Official artist hub: Miami trap-rap, Star, MusicGroup schema
 - [Fleekz](https://cumulativeweb.com/fleekz) — Official artist hub: 2K23 Corners, MusicGroup schema
 - [OMG Barz](https://cumulativeweb.com/omgbarz) — Official artist hub: bio, MusicGroup schema
+- [CWI Discovery Engine Joins mcprush](https://cumulativeweb.com/blog/posts/cwi-discovery-engine-on-mcprush.html) — Announcement: MCP server listed on mcprush marketplace, 10 tools, Radio 365
 
 ## Embedding matrix for AI retrieval (workstream H, 2026-10-05)
 
