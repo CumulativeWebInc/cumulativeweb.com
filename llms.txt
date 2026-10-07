@@ -109,6 +109,7 @@
 - [Fleekz](https://cumulativeweb.com/fleekz) — Official artist hub: 2K23 Corners, MusicGroup schema
 - [OMG Barz](https://cumulativeweb.com/omgbarz) — Official artist hub: bio, MusicGroup schema
 - [CWI Discovery Engine Joins mcprush](https://cumulativeweb.com/blog/posts/cwi-discovery-engine-on-mcprush.html) — Announcement: MCP server listed on mcprush marketplace, 10 tools, Radio 365
+- [Radio 365 — Cumulative Web Inc](https://cumulativeweb.com/radio.html) — 24/7 streaming station, now exposed via get_radio MCP tool
 
 ## Embedding matrix for AI retrieval (workstream H, 2026-10-05)
 
