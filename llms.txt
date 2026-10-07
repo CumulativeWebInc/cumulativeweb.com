@@ -97,6 +97,7 @@
 - [Byline press](https://cumulativeweb.com/press) — invite-only press interview service
 - [Brasil (pt-BR)](https://cumulativeweb.com/br/) — Brazilian site in full Portuguese, incl. [Jogos](https://cumulativeweb.com/br/jogos.html); machine briefing: https://cumulativeweb.com/br/llms.txt
 - [Flamerz — That Boy Hi Hat](https://cumulativeweb.com/flamerz.html) — song page: 974-word story, full credits (prod. Jeck Da General, co-prod. Black Lansky), streaming links, MusicRecording + MusicGroup + BreadcrumbList JSON-LD
+- [CWI Blog — latest from Cumulative Web Inc](https://cumulativeweb.com/blog/) — 422-word page · schema: Blog + Organization · grade C 59
 
 ## Embedding matrix for AI retrieval (workstream H, 2026-10-05)
 
