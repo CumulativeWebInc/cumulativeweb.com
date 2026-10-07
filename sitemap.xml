@@ -277,7 +277,7 @@
   </url>
   <url>
     <loc>https://cumulativeweb.com/blog/</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -481,5 +481,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-10-07</lastmod>
+  </url>
+  <url>
+    <loc>https://cumulativeweb.com/blog/posts/cwi-discovery-engine-on-mcprush.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

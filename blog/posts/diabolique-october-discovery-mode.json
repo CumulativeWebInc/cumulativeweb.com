@@ -35,6 +35,10 @@
         "url": "https://cumulativeweb.com/assets/cwi-logo.jpg"
       }
     },
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://cumulativeweb.com/assets/cwi-logo.jpg"
+    },
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://cumulativeweb.com/blog/posts/diabolique-october-discovery-mode.html"
@@ -66,5 +70,5 @@
       "announcement"
     ]
   },
-  "generated_at": "2026-10-07T16:10:57.593Z"
+  "generated_at": "2026-10-07T16:13:20.181Z"
 }

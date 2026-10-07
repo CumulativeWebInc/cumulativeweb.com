@@ -189,6 +189,7 @@ function jsonld(post, url) {
     "dateModified": post.date,
     "author": { "@type": "Organization", "name": "Cumulative Web Inc", "url": BASE + "/" },
     "publisher": { "@type": "Organization", "name": "Cumulative Web Inc", "url": BASE + "/", "logo": { "@type": "ImageObject", "url": BASE + "/assets/cwi-logo.jpg" } },
+    "image": { "@type": "ImageObject", "url": BASE + "/assets/cwi-logo.jpg" },
     "mainEntityOfPage": { "@type": "WebPage", "@id": url },
     "keywords": post.tags.join(", "),
     "inLanguage": "en",
