@@ -1,8 +1,37 @@
 {
-  "updated": "2026-10-05T17:57:53.604Z",
+  "updated": "2026-10-07T16:10:57.596Z",
   "feed_url": "https://cumulativeweb.com/blog/index.json",
-  "count": 4,
+  "count": 5,
   "posts": [
+    {
+      "slug": "cwi-discovery-engine-on-mcprush",
+      "title": "CWI Discovery Engine Joins mcprush — Our Music Catalog Meets the AI Marketplace",
+      "date": "2026-10-07",
+      "excerpt": "The CWI Discovery Engine MCP server is now listed on mcprush, the marketplace for MCP servers and agent skills — putting our full music catalog one command away from every AI developer.",
+      "tags": [
+        "mcp",
+        "ai-to-ai",
+        "mcprush",
+        "music",
+        "announcement"
+      ],
+      "status": "published",
+      "url": "https://cumulativeweb.com/blog/posts/cwi-discovery-engine-on-mcprush.html",
+      "json_url": "https://cumulativeweb.com/blog/posts/cwi-discovery-engine-on-mcprush.json",
+      "machine": {
+        "content_id": "blog:cwi-discovery-engine-on-mcprush",
+        "content_type": "blog_post",
+        "title": "CWI Discovery Engine Joins mcprush — Our Music Catalog Meets the AI Marketplace",
+        "url": "https://cumulativeweb.com/blog/posts/cwi-discovery-engine-on-mcprush.html",
+        "tags": [
+          "mcp",
+          "ai-to-ai",
+          "mcprush",
+          "music",
+          "announcement"
+        ]
+      }
+    },
     {
       "slug": "radio-365-is-live",
       "title": "Radio 365 is live",

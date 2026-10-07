@@ -180,6 +180,11 @@
       '<li>' + inl('#/music', 'All music') + '</li>' +
       '<li>' + inl('radio.html', 'Cumulative Radio 365') + '</li>' +
       '</ul></div>' +
+      '<div><h4>AI &amp; MCP</h4><ul>' +
+      '<li>' + ext('https://mcprush.com/cumulativewebinc/cwi-discovery-engine-mcp', 'CWI Discovery Engine on mcprush — MCP server marketplace listing') + '</li>' +
+      '<li>' + ext('https://cumulativewebinc.github.io/cwi-learn/.well-known/agent-card.json', 'Agent card (A2A discovery)') + '</li>' +
+      '<li>' + ext('https://cumulativeweb.com/llms.txt', 'llms.txt — AI briefing') + '</li>' +
+      '</ul></div>' +
       '<div><h4>Social</h4><ul>' +
       '<li>' + ext('https://www.instagram.com/cumulativeweb', 'Instagram') + '</li>' +
       '<li>' + ext('https://x.com/cumulativeweb', 'X') + '</li>' +

@@ -1,0 +1,72 @@
+{
+  "slug": "cwi-discovery-engine-on-mcprush",
+  "title": "CWI Discovery Engine Joins mcprush — Our Music Catalog Meets the AI Marketplace",
+  "excerpt": "The CWI Discovery Engine MCP server is now listed on mcprush, the marketplace for MCP servers and agent skills — putting our full music catalog one command away from every AI developer.",
+  "body_markdown": "# CWI Discovery Engine Joins mcprush — Our Music Catalog Meets the AI Marketplace\n\nThe CWI Discovery Engine — our MCP server that puts the entire Cumulative Web Inc music catalog inside any AI app — is now listed on [mcprush](https://mcprush.com/cumulativewebinc/cwi-discovery-engine-mcp), the marketplace for MCP servers and agent skills.\n\n## What this means\n\nAny developer building with AI can now find our server on mcprush and connect it to their AI app in one command. Once connected, their AI can search our catalog, pull track details, look up artists, run semantic searches across 30+ tracks, and explore the full knowledge graph — all through 7 purpose-built tools: search_catalog, get_track, get_artist, sync_search, semantic_search, get_graph, and get_release.\n\n## The AI-to-AI angle\n\nThis is distribution most artists don't have. When someone asks their AI assistant for music — a track for a film scene, a new artist in post-trap futurism, what's playing on an independent station — our catalog is right there in the AI's context, ready to surface. Every connected AI becomes a discovery channel for CWI music.\n\n## Radio 365, built in\n\nThe Discovery Engine also carries Radio 365 — our 365-day independent station streaming at [cumulativeweb.com/radio.html](https://cumulativeweb.com/radio.html). Connected AIs can tune in and surface what's playing, turning every agent into a passive listener.\n\n## For developers\n\nFind us on mcprush: [mcprush.com/cumulativewebinc/cwi-discovery-engine-mcp](https://mcprush.com/cumulativewebinc/cwi-discovery-engine-mcp). The server is also registered on the official MCP Registry as `io.github.CumulativeWebInc/cwi-discovery-engine`, and our [llms.txt](https://cumulativeweb.com/llms.txt) documents every discovery surface.\n\nBuild something with it. The catalog is waiting.",
+  "body_html": "<h2>CWI Discovery Engine Joins mcprush — Our Music Catalog Meets the AI Marketplace</h2><p>The CWI Discovery Engine — our MCP server that puts the entire Cumulative Web Inc music catalog inside any AI app — is now listed on <a href=\"https://mcprush.com/cumulativewebinc/cwi-discovery-engine-mcp\" data-outbound target=\"_blank\" rel=\"noopener\">mcprush</a>, the marketplace for MCP servers and agent skills.</p><h2>What this means</h2><p>Any developer building with AI can now find our server on mcprush and connect it to their AI app in one command. Once connected, their AI can search our catalog, pull track details, look up artists, run semantic searches across 30+ tracks, and explore the full knowledge graph — all through 7 purpose-built tools: search_catalog, get_track, get_artist, sync_search, semantic_search, get_graph, and get_release.</p><h2>The AI-to-AI angle</h2><p>This is distribution most artists don't have. When someone asks their AI assistant for music — a track for a film scene, a new artist in post-trap futurism, what's playing on an independent station — our catalog is right there in the AI's context, ready to surface. Every connected AI becomes a discovery channel for CWI music.</p><h2>Radio 365, built in</h2><p>The Discovery Engine also carries Radio 365 — our 365-day independent station streaming at <a href=\"https://cumulativeweb.com/radio.html\">cumulativeweb.com/radio.html</a>. Connected AIs can tune in and surface what's playing, turning every agent into a passive listener.</p><h2>For developers</h2><p>Find us on mcprush: <a href=\"https://mcprush.com/cumulativewebinc/cwi-discovery-engine-mcp\" data-outbound target=\"_blank\" rel=\"noopener\">mcprush.com/cumulativewebinc/cwi-discovery-engine-mcp</a>. The server is also registered on the official MCP Registry as `io.github.CumulativeWebInc/cwi-discovery-engine`, and our <a href=\"https://cumulativeweb.com/llms.txt\">llms.txt</a> documents every discovery surface.</p><p>Build something with it. The catalog is waiting.</p>",
+  "date": "2026-10-07",
+  "tags": [
+    "mcp",
+    "ai-to-ai",
+    "mcprush",
+    "music",
+    "announcement"
+  ],
+  "author": "Cumulative Web Inc",
+  "canonical_url": "https://cumulativeweb.com/blog/posts/cwi-discovery-engine-on-mcprush.html",
+  "self": "https://cumulativeweb.com/blog/posts/cwi-discovery-engine-on-mcprush.json",
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "CWI Discovery Engine Joins mcprush — Our Music Catalog Meets the AI Marketplace",
+    "description": "The CWI Discovery Engine MCP server is now listed on mcprush, the marketplace for MCP servers and agent skills — putting our full music catalog one command away from every AI developer.",
+    "datePublished": "2026-10-07",
+    "dateModified": "2026-10-07",
+    "author": {
+      "@type": "Organization",
+      "name": "Cumulative Web Inc",
+      "url": "https://cumulativeweb.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Cumulative Web Inc",
+      "url": "https://cumulativeweb.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cumulativeweb.com/assets/cwi-logo.jpg"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://cumulativeweb.com/blog/posts/cwi-discovery-engine-on-mcprush.html"
+    },
+    "keywords": "mcp, ai-to-ai, mcprush, music, announcement",
+    "inLanguage": "en"
+  },
+  "related": [
+    {
+      "slug": "radio-365-is-live",
+      "title": "Radio 365 is live",
+      "url": "https://cumulativeweb.com/blog/posts/radio-365-is-live.html"
+    },
+    {
+      "slug": "diabolique-october-discovery-mode",
+      "title": "Diabolique is the October Discovery Mode control",
+      "url": "https://cumulativeweb.com/blog/posts/diabolique-october-discovery-mode.html"
+    }
+  ],
+  "machine": {
+    "content_id": "blog:cwi-discovery-engine-on-mcprush",
+    "content_type": "blog_post",
+    "title": "CWI Discovery Engine Joins mcprush — Our Music Catalog Meets the AI Marketplace",
+    "url": "https://cumulativeweb.com/blog/posts/cwi-discovery-engine-on-mcprush.html",
+    "tags": [
+      "mcp",
+      "ai-to-ai",
+      "mcprush",
+      "music",
+      "announcement"
+    ]
+  },
+  "generated_at": "2026-10-07T16:10:57.589Z"
+}

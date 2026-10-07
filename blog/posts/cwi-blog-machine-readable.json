@@ -44,14 +44,14 @@
   },
   "related": [
     {
+      "slug": "cwi-discovery-engine-on-mcprush",
+      "title": "CWI Discovery Engine Joins mcprush — Our Music Catalog Meets the AI Marketplace",
+      "url": "https://cumulativeweb.com/blog/posts/cwi-discovery-engine-on-mcprush.html"
+    },
+    {
       "slug": "radio-365-is-live",
       "title": "Radio 365 is live",
       "url": "https://cumulativeweb.com/blog/posts/radio-365-is-live.html"
-    },
-    {
-      "slug": "diabolique-october-discovery-mode",
-      "title": "Diabolique is the October Discovery Mode control",
-      "url": "https://cumulativeweb.com/blog/posts/diabolique-october-discovery-mode.html"
     }
   ],
   "machine": {
@@ -66,5 +66,5 @@
       "announcement"
     ]
   },
-  "generated_at": "2026-10-05T17:57:53.586Z"
+  "generated_at": "2026-10-07T16:10:57.595Z"
 }

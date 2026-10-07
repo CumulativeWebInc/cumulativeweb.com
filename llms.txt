@@ -21,6 +21,8 @@
   - Sitemap: GET /sitemap.xml — every machine-readable surface with change frequencies
   - RSS freshness feed: GET /feed.xml — same freshness signals as /changes, for feed readers and polling agents
   - Alias edge domain: https://data.cumulativeweb.com (same API)
+- MCP server directories & marketplaces (where AI developers discover and install our MCP server):
+  - mcprush — CWI Discovery Engine listing: https://mcprush.com/cumulativewebinc/cwi-discovery-engine-mcp — MCP server marketplace (100,000+ MCP server and agent skill listings); publisher claim approved 2026-10-07 (ref CLM-0075); free listing, security-scanned; developers install the catalog MCP server into Claude, Cursor, VS Code with one CLI command, putting the CWI music catalog inside their AI's context
 - Catalog learning surface: https://cumulativewebinc.github.io/cwi-learn/llms.txt — catalog.json, graph.json, kit.json, EQUIP-GUIDE.md (10-step agent equip guide)
 - Agent cards (JSON):
   - https://cumulativewebinc.github.io/cwi-learn/.well-known/agent-card.json (catalog graph)
