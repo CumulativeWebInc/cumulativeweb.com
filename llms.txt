@@ -99,6 +99,13 @@
 - [Flamerz — That Boy Hi Hat](https://cumulativeweb.com/flamerz.html) — song page: 974-word story, full credits (prod. Jeck Da General, co-prod. Black Lansky), streaming links, MusicRecording + MusicGroup + BreadcrumbList JSON-LD
 - [CWI Blog — latest from Cumulative Web Inc](https://cumulativeweb.com/blog/) — 422-word page · schema: Blog + Organization · grade C 59
 - [Cyberpunk 2027 — That Boy Hi Hat | October 20, 2026 | Cumulative Web Inc](https://cumulativeweb.com/cyberpunk-2027.html) — 148-word page · schema: MusicRecording + MusicGroup + Person + Organization + VideoObject + ListenAction · grade C 64.5
+- [That Boy Hi Hat](https://cumulativeweb.com/thatboyhihat) — Official artist hub: bio, discography, streaming links, MusicGroup schema
+- [Black Lansky](https://cumulativeweb.com/blacklansky) — Official artist hub: bio, production credits, MusicGroup schema
+- [183 Wildboi](https://cumulativeweb.com/183wildboi) — Official artist hub: DMV rap-rock, Stunt, Full Moon, MusicGroup schema
+- [Greg Porn](https://cumulativeweb.com/greg-porn) — Official artist hub: cyberpunk rap, Pay Yourself, On Edge, MusicGroup schema
+- [King Akeem](https://cumulativeweb.com/kingahkeem) — Official artist hub: Miami trap-rap, Star, MusicGroup schema
+- [Fleekz](https://cumulativeweb.com/fleekz) — Official artist hub: 2K23 Corners, MusicGroup schema
+- [OMG Barz](https://cumulativeweb.com/omgbarz) — Official artist hub: bio, MusicGroup schema
 
 ## Embedding matrix for AI retrieval (workstream H, 2026-10-05)
 
