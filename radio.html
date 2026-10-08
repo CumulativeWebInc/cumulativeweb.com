@@ -5,18 +5,32 @@
 <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Radio · Cumulative Web Inc</title>
-<meta name="description" content="Cumulative Radio 365 — Cumulative Web Inc's year-round internet radio station for independent artists. Alternative, indie and hip-hop, on air 365 days a year.">
-<link rel="icon" href="assets/cwi-logo.jpg">
-<link rel="stylesheet" href="site.css">
-<meta property="og:title" content="Cumulative Radio 365 — Cumulative Web Inc">
-<meta property="og:description" content="Independent radio, on air 365 days a year. Listen live now.">
+<title>Radio 365 — 24/7 Independent Radio | Cumulative Web Inc</title>
+<meta name="description" content="Radio 365 — Cumulative Web Inc's 24/7 streaming station. Alternative rap, post-trap futurism, and independent music around the clock. Listen live now.">
+<link rel="canonical" href="https://cumulativeweb.com/radio.html">
+<meta name="keywords" content="Radio 365, internet radio, 24/7 radio, alternative rap radio, independent music, That Boy Hi Hat, CWI, streaming radio, hip hop radio">
+<meta property="og:title" content="Radio 365 — 24/7 Independent Radio">
+<meta property="og:description" content="Cumulative Web Inc's round-the-clock station. Alternative rap, post-trap futurism, independent music. Listen live.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cumulativeweb.com/radio.html">
+<meta property="og:image" content="https://cumulativeweb.com/assets/cwi-logo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Radio 365 — 24/7 Independent Radio">
+<meta name="twitter:description" content="Alternative rap and independent music, streaming 24/7. Listen live now.">
+<meta name="twitter:image" content="https://cumulativeweb.com/assets/cwi-logo.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Organization",
+      "@id": "https://cumulativeweb.com/#org",
+      "name": "Cumulative Web Inc",
+      "url": "https://cumulativeweb.com/"
+    },
+    {
       "@type": "BreadcrumbList",
+      "@id": "https://cumulativeweb.com/radio.html#breadcrumbs",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -27,7 +41,7 @@
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Radio",
+          "name": "Radio 365",
           "item": "https://cumulativeweb.com/radio.html"
         }
       ]
@@ -35,16 +49,91 @@
     {
       "@type": "RadioStation",
       "@id": "https://cumulativeweb.com/radio.html#station",
-      "name": "Cumulative Radio 365",
-      "url": "https://cumulative-radio-365.pages.dev",
-      "description": "Cumulative Web Inc's year-round internet radio station for independent artists and producers — alternative, indie and hip-hop, on air 365 days a year.",
-      "genre": ["Alternative", "Indie", "Hip-Hop"],
+      "name": "Radio 365",
+      "alternateName": "Cumulative Radio 365",
+      "url": "https://cumulativeweb.com/radio.html",
+      "description": "Cumulative Web Inc's 24/7 streaming radio station \u2014 alternative rap, post-trap futurism, and independent music around the clock.",
+      "genre": [
+        "Alternative Rap",
+        "Post-Trap Futurism",
+        "Hip-Hop",
+        "Independent"
+      ],
       "inLanguage": "en",
-      "parentOrganization": {"@id": "https://cumulativeweb.com/#org"},
+      "dateModified": "2026-10-08",
+      "parentOrganization": {
+        "@id": "https://cumulativeweb.com/#org"
+      },
+      "broadcastFrequency": "24/7",
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "United States"
+        },
+        {
+          "@type": "Country",
+          "name": "Worldwide",
+          "description": "Streaming worldwide"
+        }
+      ],
       "sameAs": [
         "https://radio.streamitter.com/station/cumulative-radio-365",
         "https://tunein.com/radio/s361867",
         "https://liveonlineradio.net/cumulative-radio-365"
+      ],
+      "potentialAction": {
+        "@type": "ListenAction",
+        "target": "https://cumulativeweb.com/radio/hls/program.m3u8"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://cumulativeweb.com/radio.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Radio 365?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Radio 365 is Cumulative Web Inc's 24/7 streaming station playing alternative rap, post-trap futurism, and independent music around the clock \u2014 no subscription needed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I listen to Radio 365?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Press play on this page, or find Cumulative Radio 365 on Streamitter, TuneIn, Live Online Radio, and radio apps via radio-browser.info."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do artists submit music to Radio 365?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Independent artists can submit tracks for rotation through the station website. Submissions are free; rights attestation is required."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://cumulativeweb.com/radio.html#program-dataset",
+      "name": "Radio 365 Program Schedule",
+      "description": "Machine-readable program schedule for Radio 365 \u2014 current rotation, track metadata, and now-playing data.",
+      "creator": {
+        "@id": "https://cumulativeweb.com/#org"
+      },
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://cumulativeweb.com/radio/schedule.json",
+        "encodingFormat": "application/json"
+      },
+      "license": "https://cumulativeweb.com/license.html",
+      "keywords": [
+        "radio schedule",
+        "now playing",
+        "independent radio"
       ]
     }
   ]
@@ -221,6 +310,14 @@
     <a class="btn btn--primary" href="https://cumulative-radio-365.pages.dev" rel="noopener">Submit your track</a>
   </div>
 </section>
+
+<section class="seo-radio">
+  <h2>About Radio 365</h2>
+  <p>Radio 365 is the official streaming station of <a href="/">Cumulative Web Inc</a>, broadcasting independent music 24 hours a day, 365 days a year. The rotation features <a href="/thatboyhihat">That Boy Hi Hat</a>'s full catalog alongside <a href="/blacklansky">Black Lansky</a>'s productions and the complete CWI roster — <a href="/183wildboi">183 Wilboi</a>, <a href="/artists/dre50.html">Dre50</a>, <a href="/greg-porn">Greg Porn</a>, <a href="/kingahkeem">King Ahkeem</a>, <a href="/fleekz">Fleekz</a>, and <a href="/omgbarz">Omgbarz</a>.</p>
+  <p>The station streams in HLS format for maximum compatibility across phones, browsers, smart speakers, and radio apps. Independent artists interested in airplay can <a href="/contact.html">contact the label</a> — submissions are free and every track is reviewed by the CWI team.</p>
+</section>
+<style>.seo-radio{max-width:900px;margin:0 auto;padding:32px 24px;color:#e8e8e8}.seo-radio h2{font-size:1.4rem;margin-bottom:12px}.seo-radio p{line-height:1.7;margin-bottom:12px}.seo-radio a{color:#7ec8ff}</style>
+
 </main>
 <footer class="footer">
   <div class="inner">
