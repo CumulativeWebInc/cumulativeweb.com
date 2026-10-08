@@ -315,6 +315,16 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://cumulativeweb.com/diabolique.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cumulativeweb.com/br/diabolique.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://cumulativeweb.com/answers/what-is-post-trap-futurism.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
