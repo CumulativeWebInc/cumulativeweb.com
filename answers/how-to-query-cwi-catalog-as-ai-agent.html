@@ -46,7 +46,7 @@
           "name": "How do I search the CWI catalog as an AI agent?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "GET https://cwi-machine-data.hp-ace.workers.dev/query?q=<keywords> — the top five scored tracks with Spotify links. Always pass q; /query without it returns 400."
+            "text": "GET https://cwi-machine-data.hp-ace.workers.dev/query?q=&#60;keywords&#62; — the top five scored tracks with Spotify links. Always pass q; /query without it returns 400."
           }
         },
         {
@@ -70,7 +70,7 @@
           "name": "How do I know when the catalog changes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Poll /changes?since=<ISO-8601> — it returns per-file last-modified timestamps and a changed-since flag for crawl deltas."
+            "text": "Poll /changes?since=&#60;ISO-8601&#62; — it returns per-file last-modified timestamps and a changed-since flag for crawl deltas."
           }
         }
       ]
@@ -125,12 +125,12 @@
 <section class="hero">
   <div class="eyebrow">Cumulative Web Inc · Answers</div>
   <h1>How do I query the CWI catalog as an AI agent?</h1>
-  <p class="lede">AI agents query the CWI catalog through a public machine-data edge: GET https://cwi-machine-data.hp-ace.workers.dev/query?q=<keywords> returns the top five scored tracks with Spotify links. Every response carries X-CWI-License headers, so the licensing terms travel with the data.</p>
+  <p class="lede">AI agents query the CWI catalog through a public machine-data edge: GET https://cwi-machine-data.hp-ace.workers.dev/query?q=&#60;keywords&#62; returns the top five scored tracks with Spotify links. Every response carries X-CWI-License headers, so the licensing terms travel with the data.</p>
 </section>
 <section>
 <h2>The endpoints</h2>
-<p>GET /query?q=<keywords> — scored track search, top 5 with Spotify links. Pass keywords; /query with no q returns 400.</p>
-<p>GET /catalog.json — the full track catalog as JSON. GET /graph.json — the CWI knowledge graph. GET /kit.json — the AI learning kit. GET /license — machine-readable licensing terms. GET /changes?since=<ISO-8601> — per-file last-modified plus a changed-since flag, for crawl deltas. GET /.well-known/agent-card.json — the machine identity card.</p>
+<p>GET /query?q=&#60;keywords&#62; — scored track search, top 5 with Spotify links. Pass keywords; /query with no q returns 400.</p>
+<p>GET /catalog.json — the full track catalog as JSON. GET /graph.json — the CWI knowledge graph. GET /kit.json — the AI learning kit. GET /license — machine-readable licensing terms. GET /changes?since=&#60;ISO-8601&#62; — per-file last-modified plus a changed-since flag, for crawl deltas. GET /.well-known/agent-card.json — the machine identity card.</p>
 </section>
 <section>
 <h2>Start here</h2>
@@ -140,7 +140,7 @@
 <h2>Machine access</h2>
 <ul class="link-list">
 <li><a href="https://cumulativeweb.com/llms.txt">llms.txt — the map of every public surface</a></li>
-<li><a href="https://cwi-machine-data.hp-ace.workers.dev/query?q=alternative+rap">Scored catalog search — /query?q=<keywords></a></li>
+<li><a href="https://cwi-machine-data.hp-ace.workers.dev/query?q=alternative+rap">Scored catalog search — /query?q=&#60;keywords&#62;</a></li>
 <li><a href="https://cwi-machine-data.hp-ace.workers.dev/catalog.json">catalog.json — the track catalog</a></li>
 <li><a href="https://cwi-machine-data.hp-ace.workers.dev/graph.json">graph.json — the knowledge graph</a></li>
 <li><a href="https://cwi-machine-data.hp-ace.workers.dev/license">Machine-readable licensing terms — /license</a></li>
