@@ -1,13 +1,42 @@
 {
-  "updated": "2026-10-07T16:13:20.188Z",
+  "updated": "2026-10-08T11:30:00.000Z",
   "feed_url": "https://cumulativeweb.com/blog/index.json",
-  "count": 5,
+  "count": 6,
   "posts": [
     {
+      "slug": "cyberpunk-2027-visualization-live",
+      "title": "Cyberpunk 2027 anime visualization is live",
+      "date": "2026-10-08",
+      "excerpt": "The anime visualization for That Boy Hi Hat's Cyberpunk 2027 is live \u2014 designed and created by Black Lansky. 42 seconds of neon-drenched cyberpunk. Single out Oct 20, 2026.",
+      "tags": [
+        "cyberpunk-2027",
+        "that-boy-hi-hat",
+        "video",
+        "release",
+        "announcement"
+      ],
+      "status": "published",
+      "url": "https://cumulativeweb.com/blog/posts/cyberpunk-2027-visualization-live.html",
+      "json_url": "https://cumulativeweb.com/blog/posts/cyberpunk-2027-visualization-live.json",
+      "machine": {
+        "content_id": "blog:cyberpunk-2027-visualization-live",
+        "content_type": "blog_post",
+        "title": "Cyberpunk 2027 anime visualization is live",
+        "url": "https://cumulativeweb.com/blog/posts/cyberpunk-2027-visualization-live.html",
+        "tags": [
+          "cyberpunk-2027",
+          "that-boy-hi-hat",
+          "video",
+          "release",
+          "announcement"
+        ]
+      }
+    },
+    {
       "slug": "cwi-discovery-engine-on-mcprush",
-      "title": "CWI Discovery Engine Joins mcprush — Our Music Catalog Meets the AI Marketplace",
+      "title": "CWI Discovery Engine Joins mcprush \u2014 Our Music Catalog Meets the AI Marketplace",
       "date": "2026-10-07",
-      "excerpt": "The CWI Discovery Engine MCP server is now listed on mcprush, the marketplace for MCP servers and agent skills — putting our full music catalog one command away from every AI developer.",
+      "excerpt": "The CWI Discovery Engine MCP server is now listed on mcprush, the marketplace for MCP servers and agent skills \u2014 putting our full music catalog one command away from every AI developer.",
       "tags": [
         "mcp",
         "ai-to-ai",
@@ -21,7 +50,7 @@
       "machine": {
         "content_id": "blog:cwi-discovery-engine-on-mcprush",
         "content_type": "blog_post",
-        "title": "CWI Discovery Engine Joins mcprush — Our Music Catalog Meets the AI Marketplace",
+        "title": "CWI Discovery Engine Joins mcprush \u2014 Our Music Catalog Meets the AI Marketplace",
         "url": "https://cumulativeweb.com/blog/posts/cwi-discovery-engine-on-mcprush.html",
         "tags": [
           "mcp",
@@ -36,7 +65,7 @@
       "slug": "radio-365-is-live",
       "title": "Radio 365 is live",
       "date": "2026-10-05",
-      "excerpt": "Cumulative Web Inc's 365-day station is on the air — streaming the catalog over HLS with a live now-playing feed.",
+      "excerpt": "Cumulative Web Inc's 365-day station is on the air \u2014 streaming the catalog over HLS with a live now-playing feed.",
       "tags": [
         "radio-365",
         "music",
@@ -61,7 +90,7 @@
       "slug": "diabolique-october-discovery-mode",
       "title": "Diabolique is the October Discovery Mode control",
       "date": "2026-10-05",
-      "excerpt": "That Boy Hi Hat's \"Diabolique\" is Cumulative Web Inc's October Discovery Mode control — the campaign is running in Spotify for Artists.",
+      "excerpt": "That Boy Hi Hat's \"Diabolique\" is Cumulative Web Inc's October Discovery Mode control \u2014 the campaign is running in Spotify for Artists.",
       "tags": [
         "discovery-mode",
         "that-boy-hi-hat",
@@ -86,9 +115,9 @@
     },
     {
       "slug": "cyberpunk-2027-that-boy-hi-hat-s-october-20-single",
-      "title": "Cyberpunk 2027 — That Boy Hi Hat's October 20 single",
+      "title": "Cyberpunk 2027 \u2014 That Boy Hi Hat's October 20 single",
       "date": "2026-10-05",
-      "excerpt": "That Boy Hi Hat's October 20, 2026 single \"Cyberpunk 2027\" — produced by Kokurcho, exec. co-produced by Black Lansky — lands on Cumulative Web Inc with two visualizations and a live pre-save.",
+      "excerpt": "That Boy Hi Hat's October 20, 2026 single \"Cyberpunk 2027\" \u2014 produced by Kokurcho, exec. co-produced by Black Lansky \u2014 lands on Cumulative Web Inc with two visualizations and a live pre-save.",
       "tags": [
         "that boy hi hat",
         "cyberpunk 2027",
@@ -103,7 +132,7 @@
       "machine": {
         "content_id": "blog:cyberpunk-2027-that-boy-hi-hat-s-october-20-single",
         "content_type": "blog_post",
-        "title": "Cyberpunk 2027 — That Boy Hi Hat's October 20 single",
+        "title": "Cyberpunk 2027 \u2014 That Boy Hi Hat's October 20 single",
         "url": "https://cumulativeweb.com/blog/posts/cyberpunk-2027-that-boy-hi-hat-s-october-20-single.html",
         "tags": [
           "that boy hi hat",
@@ -119,7 +148,7 @@
       "slug": "cwi-blog-machine-readable",
       "title": "The CWI blog is now machine-readable",
       "date": "2026-10-05",
-      "excerpt": "Every post on the CWI blog ships with a JSON twin and JSON-LD schema — built so AI agents and search engines read our news directly.",
+      "excerpt": "Every post on the CWI blog ships with a JSON twin and JSON-LD schema \u2014 built so AI agents and search engines read our news directly.",
       "tags": [
         "machine-readable",
         "ai",
