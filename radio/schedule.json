@@ -1,10 +1,10 @@
 {
   "schema": "cwi-radio-schedule/1",
   "program_id": "radio365-main",
-  "program_version": "2026-10-04a",
+  "program_version": "2026-10-08a",
   "epoch": "2026-10-03T00:00:00Z",
   "period_seconds": 25170.891,
-  "generated_at": "2026-10-04T16:47:54.384306+00:00",
+  "generated_at": "2026-10-08T14:30:56Z",
   "generator": "radio-add-song/1.0",
   "segment_seconds": 10.0,
   "playlist_url": "https://cumulativeweb.com/radio/hls/program.m3u8",
@@ -14,50 +14,50 @@
     {
       "slot": 0,
       "offset_seconds": 0.0,
-      "duration_seconds": 167.931,
-      "artist": "That Boy Hi Hat",
-      "title": "Place I Go to Dream",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-place-i-go-to-dream-remastered.jpg"
-    },
-    {
-      "slot": 1,
-      "offset_seconds": 167.931,
       "duration_seconds": 166.88,
       "artist": "Dre50",
       "title": "Vai Vem Vem",
       "artwork": "https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg"
     },
     {
-      "slot": 2,
-      "offset_seconds": 334.811,
+      "slot": 1,
+      "offset_seconds": 166.88,
       "duration_seconds": 187.763,
       "artist": "That Boy Hi Hat",
       "title": "Broken Hearts Club",
       "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg"
     },
     {
-      "slot": 3,
-      "offset_seconds": 522.574,
+      "slot": 2,
+      "offset_seconds": 354.643,
       "duration_seconds": 251.451,
       "artist": "That Boy Hi Hat",
       "title": "Shaka Zulu",
       "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg"
     },
     {
-      "slot": 4,
-      "offset_seconds": 774.025,
+      "slot": 3,
+      "offset_seconds": 606.094,
       "duration_seconds": 242.547,
       "artist": "That Boy Hi Hat",
       "title": "Golden Diamond",
       "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg"
     },
     {
-      "slot": 5,
-      "offset_seconds": 1016.572,
+      "slot": 4,
+      "offset_seconds": 848.641,
       "duration_seconds": 239.862,
       "artist": "That Boy Hi Hat",
       "title": "7th Angel",
       "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg"
+    },
+    {
+      "slot": 5,
+      "offset_seconds": 1088.503,
+      "duration_seconds": 167.931,
+      "artist": "That Boy Hi Hat",
+      "title": "Place I Go to Dream",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-place-i-go-to-dream-remastered.jpg"
     },
     {
       "slot": 6,
