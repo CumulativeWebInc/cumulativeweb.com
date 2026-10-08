@@ -5,14 +5,22 @@
 <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cumulative Web Inc — Music · Clothing · Software</title>
-<meta name="description" content="Cumulative Web Inc label platform — roster, music, clothing, software. Music & Film · Clothing · Software & AI Agents.">
-<meta property="og:title" content="Cumulative Web Inc — Music · Clothing · Software">
-<meta property="og:description" content="The label platform for Cumulative Web Inc — the roster, the music, the apparel, and the software we sell to other independents.">
+<title>Cumulative Web Inc — Independent Record Label | Alternative Rap & Post-Trap Futurism</title>
+<meta name="description" content="Cumulative Web Inc is an independent DMV record label specializing in alternative rap and post-trap futurism. Home of That Boy Hi Hat, Black Lansky, Dre50, and the CWI roster. Radio 365 streams 24/7.">
+<link rel="canonical" href="https://cumulativeweb.com/">
+<meta property="og:title" content="Cumulative Web Inc — Independent Record Label">
+<meta property="og:description" content="Alternative rap and post-trap futurism from the DMV. That Boy Hi Hat, Black Lansky, Dre50, and the full CWI roster. Radio 365 live 24/7.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://cumulativeweb.com/">
 <meta property="og:image" content="https://cumulativeweb.com/assets/cwi-logo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cumulative Web Inc — Independent Record Label">
+<meta name="twitter:description" content="Alternative rap and post-trap futurism from the DMV. That Boy Hi Hat, Black Lansky, Dre50, and the full CWI roster.">
+<meta name="twitter:image" content="https://cumulativeweb.com/assets/cwi-logo.jpg">
+<meta name="keywords" content="Cumulative Web Inc, CWI, independent record label, alternative rap, post-trap futurism, That Boy Hi Hat, Black Lansky, Dre50, DMV hip hop, Radio 365, sync licensing">
 <meta name="theme-color" content="#121212">
+<meta name="geo.region" content="US-DC">
+<meta name="geo.placename" content="Washington DC Metropolitan Area">
 <link rel="icon" href="assets/cwi-logo.jpg">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="site.css">
@@ -24,179 +32,102 @@
       "@type": "Organization",
       "@id": "https://cumulativeweb.com/#org",
       "name": "Cumulative Web Inc",
+      "alternateName": "CWI",
       "url": "https://cumulativeweb.com/",
       "logo": "https://cumulativeweb.com/assets/cwi-logo.jpg",
       "email": "hp@cumulativeweb.com",
-      "description": "Independent label — Music & Film · Clothing · Software & AI Agents. The label platform: the roster, the music, the apparel, and the software we sell to other independents.",
+      "description": "Independent record label in the DMV specializing in alternative rap and post-trap futurism. Home of That Boy Hi Hat, Black Lansky, and the CWI roster.",
+      "foundingDate": "2020",
+      "dateModified": "2026-10-08",
+      "areaServed": [
+        { "@type": "GeoShape", "name": "Washington DC Metropolitan Area" },
+        { "@type": "Country", "name": "United States" }
+      ],
       "sameAs": [
         "https://www.instagram.com/cumulativeweb",
         "https://x.com/cumulativeweb",
         "https://www.youtube.com/@cumulativeweb",
         "https://www.tiktok.com/@cumulativeweb",
-        "https://www.facebook.com/Cumulative-Web-102372541712722"
-      ]
+        "https://open.spotify.com/user/cumulativeweb"
+      ],
+      "founder": { "@id": "https://cumulativeweb.com/blacklansky#person" },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "hp@cumulativeweb.com",
+        "contactType": "business inquiries"
+      }
     },
     {
       "@type": "WebSite",
       "@id": "https://cumulativeweb.com/#site",
       "url": "https://cumulativeweb.com/",
-      "name": "Cumulative Web Inc — Music · Clothing · Software",
-      "publisher": {
-        "@id": "https://cumulativeweb.com/#org"
-      }
+      "name": "Cumulative Web Inc",
+      "publisher": { "@id": "https://cumulativeweb.com/#org" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://cumulativeweb.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://cumulativeweb.com/#breadcrumbs",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cumulativeweb.com/" }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://cumulativeweb.com/blacklansky#person",
+      "name": "Black Lansky",
+      "url": "https://cumulativeweb.com/blacklansky",
+      "jobTitle": "Founder, Producer",
+      "description": "Founder of Cumulative Web Inc. Co-producer and co-composer on all CWI catalog music.",
+      "worksFor": { "@id": "https://cumulativeweb.com/#org" }
     },
     {
       "@type": "ItemList",
       "@id": "https://cumulativeweb.com/#roster",
       "name": "Cumulative Web Inc artist roster",
+      "description": "The CWI artist roster — alternative rap, post-trap futurism, and dancehall.",
+      "numberOfItems": 8,
       "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "item": {
-            "@type": "MusicGroup",
-            "name": "That Boy Hi Hat",
-            "url": "https://cumulativeweb.com/#/artist/that-boy-hi-hat",
-            "genre": "alternative rap",
-            "sameAs": [
-              "https://open.spotify.com/artist/2f9j460EwjfvjYp3trBcb7",
-              "https://www.qobuz.com/ie-en/interpreter/that-boy-hi-hat/11457917",
-              "https://www.qobuz.com/us-en/album/gta-vi-the-logo-of-alternative-rap-that-boy-hi-hat/hsoa0hz430sxc",
-              "https://freefy.app/artist/3252322/that-boy-hi-hat",
-              "https://ampgroove.com/music/artist/that_boy_hi_hat"
-            ]
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "item": {
-            "@type": "MusicGroup",
-            "name": "Black Lansky",
-            "url": "https://cumulativeweb.com/#/artist/black-lansky",
-            "genre": "alternative rap"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "item": {
-            "@type": "MusicGroup",
-            "name": "King Akeem",
-            "url": "https://cumulativeweb.com/#/artist/king-akeem",
-            "genre": [
-              "trap",
-              "rap"
-            ]
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "item": {
-            "@type": "MusicGroup",
-            "name": "Greg Porn",
-            "url": "https://cumulativeweb.com/#/artist/greg-porn",
-            "genre": [
-              "cyber hip hop",
-              "alternative rap"
-            ]
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "item": {
-            "@type": "MusicGroup",
-            "name": "Dre50",
-            "url": "https://cumulativeweb.com/#/artist/dre50",
-            "genre": "r&b"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 6,
-          "item": {
-            "@type": "MusicGroup",
-            "name": "183 Wildboi",
-            "url": "https://cumulativeweb.com/#/artist/183-wildboi",
-            "genre": [
-              "rap rock",
-              "rock rap"
-            ]
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 7,
-          "item": {
-            "@type": "MusicGroup",
-            "name": "Fleekz",
-            "url": "https://cumulativeweb.com/#/artist/fleekz"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 8,
-          "item": {
-            "@type": "Person",
-            "name": "Jeck Da General",
-            "url": "https://cumulativeweb.com/#/artist/jeck-da-general",
-            "jobTitle": "Producer"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 9,
-          "item": {
-            "@type": "Person",
-            "name": "Hybrid",
-            "url": "https://cumulativeweb.com/#/artist/hybrid",
-            "jobTitle": "Producer"
-          }
-        }
+        { "@type": "ListItem", "position": 1, "item": { "@type": "MusicGroup", "@id": "https://cumulativeweb.com/thatboyhihat#artist", "name": "That Boy Hi Hat", "url": "https://cumulativeweb.com/thatboyhihat", "genre": ["alternative rap", "post-trap futurism"], "sameAs": ["https://open.spotify.com/artist/2f9j460EwjfvjYp3trBcb7"] } },
+        { "@type": "ListItem", "position": 2, "item": { "@id": "https://cumulativeweb.com/blacklansky#person" } },
+        { "@type": "ListItem", "position": 3, "item": { "@type": "MusicGroup", "@id": "https://cumulativeweb.com/183wildboi#artist", "name": "183 Wilboi", "url": "https://cumulativeweb.com/183wildboi", "genre": ["rock-rap", "alternative rap"] } },
+        { "@type": "ListItem", "position": 4, "item": { "@type": "MusicGroup", "@id": "https://cumulativeweb.com/dre50#artist", "name": "Dre50", "url": "https://cumulativeweb.com/artists/dre50.html", "genre": ["dancehall", "afrobeats"], "description": "Jamaican artist. Pix and Vai Vem Vem on Radio 365." } },
+        { "@type": "ListItem", "position": 5, "item": { "@type": "MusicGroup", "@id": "https://cumulativeweb.com/greg-porn#artist", "name": "Greg Porn", "url": "https://cumulativeweb.com/greg-porn", "genre": ["alternative rap"] } },
+        { "@type": "ListItem", "position": 6, "item": { "@type": "MusicGroup", "@id": "https://cumulativeweb.com/kingahkeem#artist", "name": "King Ahkeem", "url": "https://cumulativeweb.com/kingahkeem", "genre": ["trap", "rap"] } },
+        { "@type": "ListItem", "position": 7, "item": { "@type": "MusicGroup", "@id": "https://cumulativeweb.com/fleekz#artist", "name": "Fleekz", "url": "https://cumulativeweb.com/fleekz", "genre": ["alternative rap"] } },
+        { "@type": "ListItem", "position": 8, "item": { "@type": "MusicGroup", "@id": "https://cumulativeweb.com/omgbarz#artist", "name": "Omgbarz", "url": "https://cumulativeweb.com/omgbarz", "genre": ["alternative rap"] } }
       ]
     },
     {
       "@type": "RadioStation",
       "@id": "https://cumulativeweb.com/radio.html#station",
-      "name": "Cumulative Radio 365",
-      "url": "https://cumulative-radio-365.pages.dev",
-      "description": "Cumulative Web Inc's year-round internet radio station for independent artists and producers — alternative, indie and hip-hop, on air 365 days a year.",
-      "genre": [
-        "Alternative",
-        "Indie",
-        "Hip-Hop"
-      ],
-      "inLanguage": "en",
-      "parentOrganization": {
-        "@id": "https://cumulativeweb.com/#org"
-      },
-      "sameAs": [
-        "https://radio.streamitter.com/station/cumulative-radio-365",
-        "https://tunein.com/radio/s361867",
-        "https://liveonlineradio.net/cumulative-radio-365"
+      "name": "Radio 365",
+      "url": "https://cumulativeweb.com/radio.html",
+      "description": "CWI's 24/7 streaming radio — the full catalog, roster artists, and alternative rap around the clock.",
+      "parentOrganization": { "@id": "https://cumulativeweb.com/#org" }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://cumulativeweb.com/#catalog-dataset",
+      "name": "CWI Music Catalog",
+      "description": "Machine-readable catalog of Cumulative Web Inc music releases — tracks, artists, credits, and streaming links.",
+      "creator": { "@id": "https://cumulativeweb.com/#org" },
+      "distribution": { "@type": "DataDownload", "contentUrl": "https://cwi-machine-data.hp-ace.workers.dev/query", "encodingFormat": "application/json" },
+      "keywords": ["music catalog", "alternative rap", "post-trap futurism", "independent label"]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://cumulativeweb.com/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is Cumulative Web Inc?", "acceptedAnswer": { "@type": "Answer", "text": "Cumulative Web Inc is an independent record label in the DMV specializing in alternative rap and post-trap futurism, home to That Boy Hi Hat and a growing roster of artists." } },
+        { "@type": "Question", "name": "What is Radio 365?", "acceptedAnswer": { "@type": "Answer", "text": "Radio 365 is CWI's 24/7 streaming station playing the full catalog — That Boy Hi Hat, roster artists, and alternative rap around the clock." } },
+        { "@type": "Question", "name": "How do I submit music for sync licensing?", "acceptedAnswer": { "@type": "Answer", "text": "CWI offers sync licensing for film, TV, and games. Contact hp@cumulativeweb.com with your project details." } }
       ]
-    },
-    {
-      "@type": "MusicPlaylist",
-      "@id": "https://cumulativeweb.com/#playlist-ai-learning-set",
-      "name": "That Boy Hi Hat – Alternative Rap Complete Catalog (AI Learning Set)",
-      "url": "https://open.spotify.com/playlist/45RaLEzD4KO8YHpp3oayq8",
-      "numTracks": 24
-    },
-    {
-      "@type": "MusicPlaylist",
-      "@id": "https://cumulativeweb.com/#playlist-360-indie",
-      "name": "360°: The Best Indie Music (Eric Alper)",
-      "url": "https://open.spotify.com/playlist/0hsLLFaADDjU54tFqaImFh",
-      "numTracks": 216
-    },
-    {
-      "@type": "MusicPlaylist",
-      "@id": "https://cumulativeweb.com/#playlist-no-label-needed",
-      "name": "No Label Needed (Flow)",
-      "url": "https://open.spotify.com/playlist/79Qj8SYOl5zW4m4dMprrX9"
     }
   ]
 }
@@ -265,6 +196,36 @@
 
   <nav class="tabbar" id="tabbar" aria-label="Mobile"></nav>
 </div>
+
+<!-- SEO content: server-rendered for crawlers, AI, and agents. Styled to integrate with the page. -->
+<section class="seo-content" aria-label="About Cumulative Web Inc">
+  <h1>Cumulative Web Inc — Independent Record Label</h1>
+  <p>Cumulative Web Inc (CWI) is an independent record label based in the Washington DC metropolitan area, specializing in <strong>alternative rap</strong> and <strong>post-trap futurism</strong>. Founded by producer <a href="/blacklansky">Black Lansky</a>, the label develops artists, produces records, and licenses music for film, television, and games.</p>
+
+  <h2>The Artist Roster</h2>
+  <p>The CWI roster brings together some of the most distinctive voices in independent music. <a href="/thatboyhihat">That Boy Hi Hat</a> leads the flagship catalog with a genre-defying sound that has earned millions of streams. <a href="/183wildboi">183 Wilboi</a> fuses rock energy with rap cadence. Jamaican artist <a href="/artists/dre50.html">Dre50</a> brings dancehall and afrobeats heat with records like "Pix" and "Vai Vem Vem." <a href="/greg-porn">Greg Porn</a>, <a href="/kingahkeem">King Ahkeem</a>, <a href="/fleekz">Fleekz</a>, and <a href="/omgbarz">Omgbarz</a> round out a roster built on originality over algorithms.</p>
+  <p>Every track in the CWI catalog is co-produced by <a href="/blacklansky">Black Lansky</a> alongside the primary producer — a standing creative standard that gives the catalog its signature sonic identity.</p>
+
+  <h2>Radio 365 — Streaming 24/7</h2>
+  <p><a href="/radio.html">Radio 365</a> is CWI's around-the-clock streaming station. The full catalog, roster artists, and curated alternative rap play continuously — no subscriptions, no signups, just press play. The station also powers the <a href="/live.html">live experience</a> and scheduled programming blocks.</p>
+
+  <h2>Music, Film & Sync Licensing</h2>
+  <p>CWI's <a href="/music.html">music division</a> handles releases, distribution, and artist development. The <a href="/films.html">film division</a> produces visual content including the upcoming <a href="/cyberpunk-2027.html">Cyberpunk 2027</a> project. For sync licensing inquiries — film, TV, games, advertising — visit our <a href="/contact.html">contact page</a> or email hp@cumulativeweb.com.</p>
+
+  <h2>For Artists & Developers</h2>
+  <p>CWI builds <a href="/software.html">software for independents</a>, including tools for distribution, analytics, and AI-assisted production. Artists interested in working with the label can explore <a href="/services.html">services</a>, upcoming <a href="/events.html">events</a>, and the <a href="/models.html">model casting</a> program. Machine-readable catalog data is available through our <a href="https://cwi-machine-data.hp-ace.workers.dev/query">catalog API</a>.</p>
+
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq">
+    <h3>What is Cumulative Web Inc?</h3>
+    <p>Cumulative Web Inc is an independent record label in the DMV specializing in alternative rap and post-trap futurism, home to That Boy Hi Hat and a growing roster of artists.</p>
+    <h3>What is Radio 365?</h3>
+    <p>Radio 365 is CWI's 24/7 streaming station playing the full catalog — That Boy Hi Hat, roster artists, and alternative rap around the clock.</p>
+    <h3>How do I submit music for sync licensing?</h3>
+    <p>CWI offers sync licensing for film, TV, and games. Contact hp@cumulativeweb.com with your project details.</p>
+  </div>
+</section>
+<style>.seo-content{max-width:900px;margin:0 auto;padding:48px 24px;color:#e8e8e8}.seo-content h1{font-size:2rem;margin-bottom:16px}.seo-content h2{font-size:1.4rem;margin:32px 0 12px}.seo-content h3{font-size:1.1rem;margin:20px 0 8px}.seo-content p{line-height:1.7;margin-bottom:12px}.seo-content a{color:#7ec8ff}</style>
 <noscript><div style="padding:32px"><p>Cumulative Web Inc — Music · Clothing · Software. Enable JavaScript to browse the roster, or email <a href="mailto:hp@cumulativeweb.com">hp@cumulativeweb.com</a>.</p>
 <p>New on the site: <a href="/services.html">Services for artists</a> · <a href="/sanqa/">SANQA — the CWI flagship software suite</a> · <a href="/demo/neon-royale.html">Neon Royale white-label demo</a> · <a href="/press/ruby/">Ruby — CWI press interview</a> · <a href="/artists/dre50.html">Dre50 — CWI artist</a>.</p></div></noscript>
 <script src="app.js"></script>
