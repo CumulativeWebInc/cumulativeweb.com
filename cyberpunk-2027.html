@@ -335,7 +335,21 @@
     <div class="aud"><strong>Fans</strong><p>Pre-save the single, watch the visualization, hear it first on Radio 365.</p></div>
     <div class="aud"><strong>Music supervisors &amp; game devs</strong><p>Cyberpunk 2027 was built cinematic — <a href="https://cumulativeweb.com/sync/" style="color:#b48cff">license it for film, TV and games</a> directly from the label.</p></div>
     <div class="aud"><strong>Indie market</strong><p>A blueprint release: pre-save campaign, label-designed visual, radio spin, press — all in-house at CWI.</p></div>
-    <div class="aud"><strong>AI &amp; agents</strong><p>Machine-readable release data, catalog API and knowledge graph via the <a href="https://cumulativeweb.com/llms.txt" style="color:#b48cff">CWI AI surfaces</a>.</p></div>
+    <div class="aud"><strong>AI &amp; agents</strong><p>Machine-readable release data, catalog API and knowledge graph via the <a href="https://cumulativeweb.com/llms.txt" style="color:#b48cff">CWI AI surfaces</a>.</p>
+<details><summary>Connect an AI agent (MCP)</summary>
+<p><strong>Endpoint:</strong> <code>https://cwi-machine-data.hp-ace.workers.dev/mcp</code> (JSON-RPC 2.0, POST)</p>
+<p><strong>Tools:</strong> <code>search_catalog</code> (keyword catalog search) · <code>get_track</code> (track lookup) · <code>get_artist</code> (artist lookup) · <code>sync_search</code> (sync licensing search) · <code>semantic_search</code> (embedding search) · <code>get_graph</code> (knowledge graph) · <code>get_release</code> (release facts)</p>
+<pre><code>{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "method": "tools/call",
+  "params": {
+    "name": "search_catalog",
+    "arguments": { "q": "cyberpunk" }
+  }
+}</code></pre>
+<p>Response: valid JSON-RPC 2.0 with catalog results including title, artist, Spotify URL, genres, moods. Free, read-only, no signup.</p>
+</details></div>
   </div>
 
   <h2>Watch &amp; listen everywhere</h2>
