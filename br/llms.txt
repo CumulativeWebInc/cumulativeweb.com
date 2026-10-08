@@ -15,8 +15,9 @@
   - Busca de faixas: GET /query?q=<palavras-chave> — ex.: /query?q=post-trap+cyberpunk
   - Deltas de rastreamento: GET /changes?since=<ISO-8601> — o que mudou desde o último crawl
   - Termos de licenciamento (legível por máquina): GET /license
-  - MCP: POST /mcp — JSON-RPC 2.0; ferramentas: search_catalog, get_track, get_artist, sync_search, get_graph
-    (Status em 2026-10-05: em implantação — ainda não aceita chamadas JSON-RPC)
+  - MCP: POST /mcp — JSON-RPC 2.0; 10 ferramentas: search_catalog, get_track, get_artist, sync_search, semantic_search, get_graph, get_release, get_radio, get_announcements, get_featured (AO VIVO desde 2026-10-06)
+  - Instalação em uma linha: `claude mcp add --transport http cwi https://cwi-machine-data.hp-ace.workers.dev/mcp`
+  - Briefing de descoberta em pt-BR: https://cumulativewebinc.github.io/cwi-learn/llms-pt-BR.txt
   - Domínio alternativo: https://data.cumulativeweb.com (mesma API)
 - Superfície de aprendizado do catálogo: https://cumulativewebinc.github.io/cwi-learn/llms.txt — catalog.json, graph.json, kit.json, EQUIP-GUIDE.md
 - Cartão do agente: https://cumulativeweb.com/br/.well-known/agent-card.json
