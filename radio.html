@@ -28,7 +28,29 @@
       "@type": "Organization",
       "@id": "https://cumulativeweb.com/#org",
       "name": "Cumulative Web Inc",
-      "url": "https://cumulativeweb.com/"
+      "url": "https://cumulativeweb.com/",
+      "founder": {
+        "@id": "https://cumulativeweb.com/#blacklansky"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "hp@cumulativeweb.com",
+        "contactType": "general",
+        "url": "https://cumulativeweb.com/contact.html"
+      },
+      "subOrganization": {
+        "@id": "https://cumulativeweb.com/radio.html#station"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://cumulativeweb.com/#blacklansky",
+      "name": "Black Lansky",
+      "url": "https://cumulativeweb.com/blacklansky",
+      "jobTitle": "Founder, Cumulative Web Inc",
+      "worksFor": {
+        "@id": "https://cumulativeweb.com/#org"
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -66,6 +88,12 @@
       "parentOrganization": {
         "@id": "https://cumulativeweb.com/#org"
       },
+      "founder": {
+        "@id": "https://cumulativeweb.com/#blacklansky"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://cumulativeweb.com/radio.html#page"
+      },
       "broadcastFrequency": "24/7",
       "areaServed": [
         {
@@ -91,6 +119,9 @@
     {
       "@type": "FAQPage",
       "@id": "https://cumulativeweb.com/radio.html#faq",
+      "about": {
+        "@id": "https://cumulativeweb.com/radio.html#station"
+      },
       "mainEntity": [
         {
           "@type": "Question",
@@ -121,6 +152,9 @@
     {
       "@type": "Dataset",
       "@id": "https://cumulativeweb.com/radio.html#program-dataset",
+      "about": {
+        "@id": "https://cumulativeweb.com/radio.html#station"
+      },
       "name": "Radio 365 Program Schedule",
       "description": "Machine-readable program schedule for Radio 365 \u2014 current rotation, track metadata, and now-playing data.",
       "creator": {
@@ -136,6 +170,28 @@
         "radio schedule",
         "now playing",
         "independent radio"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cumulativeweb.com/radio.html#page",
+      "url": "https://cumulativeweb.com/radio.html",
+      "name": "Radio 365 — 24/7 Independent Radio | Cumulative Web Inc",
+      "about": {
+        "@id": "https://cumulativeweb.com/radio.html#station"
+      },
+      "breadcrumb": {
+        "@id": "https://cumulativeweb.com/radio.html#breadcrumbs"
+      },
+      "author": {
+        "@id": "https://cumulativeweb.com/#blacklansky"
+      },
+      "publisher": {
+        "@id": "https://cumulativeweb.com/#org"
+      },
+      "mainEntity": [
+        { "@id": "https://cumulativeweb.com/radio.html#faq" },
+        { "@id": "https://cumulativeweb.com/radio.html#program-dataset" }
       ]
     }
   ]
