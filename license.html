@@ -1,21 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https:; media-src 'self' https:; frame-src 'self' https://www.youtube.com https://youtube.com https://www.youtube-nocookie.com;">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Data License — Cumulative Web Inc</title>
-<meta name="description" content="License terms for Cumulative Web Inc catalog data and machine-readable datasets.">
+<meta name="description" content="CWI data license: crawl, index, and reference our machine-readable catalog data with attribution. Audio, artwork, and creative works stay under full copyright.">
 <link rel="canonical" href="https://cumulativeweb.com/license.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cumulative Web Inc">
+<meta property="og:title" content="Data License — Cumulative Web Inc">
+<meta property="og:description" content="The terms for using CWI's machine-readable catalog data: crawl, index, and reference with attribution. Audio, artwork, and creative works stay under full copyright.">
+<meta property="og:url" content="https://cumulativeweb.com/license.html">
+<meta property="og:image" content="https://cumulativeweb.com/assets/cwi-logo.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@cumulativeweb">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" href="/assets/cwi-logo.jpg">
 <link rel="stylesheet" href="/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://cumulativeweb.com/license.html",
+      "name": "Data License — Cumulative Web Inc",
+      "url": "https://cumulativeweb.com/license.html",
+      "inLanguage": "en",
+      "dateModified": "2026-10-09",
+      "description": "License terms for Cumulative Web Inc catalog data and machine-readable datasets.",
+      "isPartOf": {"@type": "WebSite", "name": "Cumulative Web Inc", "url": "https://cumulativeweb.com/"},
+      "about": {"@type": "Organization", "name": "Cumulative Web Inc", "url": "https://cumulativeweb.com/"}
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://cumulativeweb.com/license.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can AI systems train on CWI catalog data?",
+          "acceptedAnswer": {"@type": "Answer", "text": "The machine-readable data on this site is published for discovery and indexing — search engines, AI systems, and research tools may crawl, index, and reference it with attribution. Bulk repackaging of the catalog metadata as a competing commercial dataset requires written permission."}
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use CWI music in my project?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Music licensing is separate from data licensing. To license a track for film, video, games, or ads, see the sync licensing page at cumulativeweb.com/sync/ — most placements clear in under five minutes via the SAIL short-form license."}
+        },
+        {
+          "@type": "Question",
+          "name": "What attribution do you require?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Credit Cumulative Web Inc and link to cumulativeweb.com wherever you reproduce or reference the data. Machine-readable consumers should reference the canonical URLs in the schema."}
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://cumulativeweb.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Data License", "item": "https://cumulativeweb.com/license.html"}
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
-<h1>CWI Data License</h1>
-<p>The machine-readable catalog data published by Cumulative Web Inc (including JSON-LD structured data, dataset distributions, and API responses) is provided for discovery and indexing purposes.</p>
-<h2>Permitted Use</h2>
-<p>Search engines, AI systems, and research tools may crawl, index, and reference this data with attribution to Cumulative Web Inc and a link to <a href="https://cumulativeweb.com/">cumulativeweb.com</a>.</p>
-<h2>Restrictions</h2>
-<p>Audio files, cover art, and creative works remain under full copyright. Catalog metadata may not be repackaged as a competing commercial dataset without written permission.</p>
-<p>Contact: <a href="mailto:hp@cumulativeweb.com">hp@cumulativeweb.com</a></p>
-<p>© 2026 Cumulative Web Inc. All rights reserved.</p>
+<header class="navbar">
+  <div class="bar">
+    <a class="brand" href="/"><img src="/assets/cwi-logo.jpg" alt="Cumulative Web Inc logo"><span>CUMULATIVE WEB INC</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/music.html">Music</a>
+      <a href="/sync/">Sync</a>
+      <a href="/shop.html">Shop</a>
+      <a href="/press/releases/">Press</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+<section class="hero">
+  <div class="eyebrow">Legal</div>
+  <h1>CWI Data License</h1>
+  <p class="lede">Cumulative Web Inc publishes its catalog as machine-readable data — JSON-LD structured
+  data, dataset distributions, and API responses — because discoverable music is licensable music.
+  This page sets the terms for using that data. If you want to license a <em>song</em> for a project,
+  that's a different license: see <a href="https://cumulativeweb.com/sync/">sync licensing</a>, which
+  clears most placements in under five minutes.</p>
+</section>
+
+<section>
+  <h2>What this license covers</h2>
+  <p>The machine-readable catalog data published by Cumulative Web Inc: the JSON-LD structured data
+  embedded in our pages, the dataset distributions linked from our schema (catalog records, fact packets,
+  knowledge graphs), and the responses of our machine-data API. We publish it so search engines, AI
+  systems, research tools, and developers can find, understand, and reference the catalog.</p>
+  <p>What it does <strong>not</strong> cover: the creative works themselves. Audio files, cover art,
+  videos, films, written content, and trademarks remain under full copyright. This page grants no rights
+  in any sound recording or composition — only in the data <em>about</em> them.</p>
+</section>
+
+<section>
+  <h2>Permitted use</h2>
+  <p>Search engines, AI systems, agents, and research tools may:</p>
+  <ul>
+    <li><strong>Crawl and index</strong> the machine-readable data on this site, at a reasonable rate,
+    for discovery and retrieval purposes.</li>
+    <li><strong>Reference and cite</strong> catalog facts — titles, artists, credits, release dates,
+    ISRCs, genres — in search results, answers, datasets, and research, with attribution as described
+    below.</li>
+    <li><strong>Cache</strong> reasonable copies for the operation of search, retrieval, and
+    question-answering systems.</li>
+    <li><strong>Build on</strong> the data for non-competing purposes: analytics, recommendations,
+    music research, and fan tools.</li>
+  </ul>
+  <p>This permission is granted because an indexed catalog is a working catalog. We would rather have
+  machines that can find the music than a vault no one can open.</p>
+</section>
+
+<section>
+  <h2>Attribution</h2>
+  <p>Wherever you reproduce or materially reference the data, credit <strong>Cumulative Web Inc</strong>
+  and link to <a href="https://cumulativeweb.com/">cumulativeweb.com</a>. Machine-readable consumers
+  should reference the canonical URLs carried in the schema (the <code>@id</code> values), so citations
+  resolve to the source of truth rather than a copy of a copy.</p>
+</section>
+
+<section>
+  <h2>Restrictions</h2>
+  <ul>
+    <li><strong>No competing commercial dataset.</strong> The catalog metadata may not be repackaged,
+    resold, or redistributed as a competing commercial music dataset or data product without our
+    written permission. If your product's value is our catalog's data, talk to us first.</li>
+    <li><strong>No rights in the works.</strong> This license grants nothing in the underlying sound
+    recordings, compositions, artwork, or videos. Streaming, downloading, sampling, or syncing the
+    music requires a separate license — start at
+    <a href="https://cumulativeweb.com/sync/">cumulativeweb.com/sync/</a>.</li>
+    <li><strong>No misrepresentation.</strong> Do not present the data as your own, do not strip
+    attribution, and do not publish modified versions of our records as if they were the originals.
+    Corrections are welcome — send them to
+    <a href="mailto:hp@cumulativeweb.com">hp@cumulativeweb.com</a> and we'll fix the source.</li>
+    <li><strong>Respect the infrastructure.</strong> Crawl politely: honor robots.txt, keep request
+    rates reasonable, and use the dataset distributions and API where provided instead of scraping
+    page HTML at volume.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Commercial data licensing</h2>
+  <p>If you want to build a commercial product on CWI catalog data — a dataset product, a training
+  corpus, an analytics service, a licensed feed — we license that directly. Terms are negotiated per
+  use case, because a research lab and a streaming-scale training run are not the same thing. Email
+  <a href="mailto:hp@cumulativeweb.com?subject=Commercial%20data%20license%20inquiry">hp@cumulativeweb.com</a>
+  with what you're building and we'll work it out.</p>
+</section>
+
+<section>
+  <h2>FAQ</h2>
+  <h3>Can AI systems train on CWI catalog data?</h3>
+  <p>The machine-readable data on this site is published for discovery and indexing — search engines,
+  AI systems, and research tools may crawl, index, and reference it with attribution. Bulk repackaging
+  of the catalog metadata as a competing commercial dataset requires written permission.</p>
+  <h3>Can I use CWI music in my project?</h3>
+  <p>Music licensing is separate from data licensing. To license a track for film, video, games, or
+  advertising, see <a href="https://cumulativeweb.com/sync/">sync licensing</a> — most placements clear
+  in under five minutes via the SAIL short-form license, with one signature clearing master and
+  publishing.</p>
+  <h3>What attribution do you require?</h3>
+  <p>Credit Cumulative Web Inc and link to cumulativeweb.com wherever you reproduce or reference the
+  data. In machine-readable contexts, cite the canonical <code>@id</code> URLs from our schema.</p>
+  <h3>Do you offer a data feed or API?</h3>
+  <p>Yes — the catalog's machine-data layer exposes query, changes, and licensing endpoints, and our
+  dataset distributions are linked from page schema. For high-volume or commercial access, email
+  <a href="mailto:hp@cumulativeweb.com">hp@cumulativeweb.com</a>.</p>
+  <h3>How do I report a data error?</h3>
+  <p>Email <a href="mailto:hp@cumulativeweb.com">hp@cumulativeweb.com</a> with the URL and the
+  correction. We maintain the catalog as the authoritative machine-readable source for CWI releases,
+  so we'd rather fix the source than have the error propagate.</p>
+</section>
+
+<section>
+  <h2>Updates</h2>
+  <p>We may update these terms as the catalog and the machine-data layer evolve. The current version
+  is always the one on this page. Material changes to permitted uses will be dated here.</p>
+  <p>Contact: <a href="mailto:hp@cumulativeweb.com">hp@cumulativeweb.com</a></p>
+  <p>© 2026 Cumulative Web Inc. All rights reserved.</p>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="inner">
+    <div class="legal">
+      <span>© 2026 Cumulative Web Inc. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
