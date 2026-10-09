@@ -44,7 +44,7 @@
 - Genre flag: Post-Trap Futurism — alternative rap · post trap · cyberpunk (originated by That Boy Hi Hat)
 - Sync: search placements via /query or the cuefinder connector; per-track cue sheets at https://cumulativewebinc.github.io/cwi-learn/cue-sheets/; sync briefs in the cwi-muse-connectors repo (sync-briefs)
 - Owner-confirmed sync posture: 50/50 with every artist; manager clears master + publishing directly (one-signature clearance)
-- Campaign pages: [Diabolique (EN)](https://cumulativeweb.com/diabolique.html) + [Diabolique (pt-BR)](https://cumulativeweb.com/br/diabolique.html) — July 3, 2026 single, produced by Hybrid, co-produced by Black Lansky, 154 BPM, 2:36; [Cyberpunk 2027 (EN)](https://cumulativeweb.com/cyberpunk-2027.html) + [Cyberpunk 2027 (pt-BR)](https://cumulativeweb.com/br/cyberpunk-2027.html)
+- Campaign pages: [Diabolique (EN)](https://cumulativeweb.com/diabolique.html) + [Diabolique (pt-BR)](https://cumulativeweb.com/br/diabolique.html) — July 3, 2026 single, produced by Hybrid, co-produced by Black Lansky, 154 BPM, 2:36; [Cyberpunk 2027 (EN)](https://cumulativeweb.com/cyberpunk-2027.html) + [Cyberpunk 2027 (pt-BR)](https://cumulativeweb.com/br/cyberpunk-2027.html); [Doves & Diamonds (EN)](https://cumulativeweb.com/post/doves-diamonds) + [Doves & Diamonds (pt-BR)](https://cumulativeweb.com/br/doves-diamonds.html) — January 11, 2023 single, produced by Kokurcho, co-produced by Black Lansky, 85 BPM, 3:01, 132K+ streams
 
 ## Machine-readable data
 
