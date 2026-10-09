@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-09T16:29:21.848Z",
+  "updated_at": "2026-10-09T17:35:42.601Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "That Boy Hi Hat",
-      "title": "Warped & Wicked (Mix 1)",
-      "artwork": "https://cumulativeweb.com/radio/art/That Boy Hi Hat - Warped & Wicked.jpg",
-      "slot_index": 123,
-      "played_at": "2026-10-09T16:29:21.848Z",
-      "track_ends_at": "2026-10-09T16:30:02.979Z"
+      "artist": "Greg Porn",
+      "title": "Unholy Hunters (Ref 1.0)",
+      "artwork": null,
+      "slot_index": 14,
+      "played_at": "2026-10-09T17:35:42.601Z",
+      "track_ends_at": "2026-10-09T17:36:20.243Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
