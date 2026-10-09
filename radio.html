@@ -333,6 +333,37 @@
   </div>
 </section>
 <section>
+  <div class="panel" id="requestPanel">
+    <h2>Request a song</h2>
+    <p>Ask for a track on air. Requests go into the human-reviewed queue — nothing auto-plays. Limit 3 per 24 hours.</p>
+    <form id="reqForm" novalidate>
+      <div class="req-grid">
+        <label>Track title
+          <input type="text" id="reqTrack" maxlength="200" required autocomplete="off" placeholder="e.g. Diabolique">
+        </label>
+        <label>Artist
+          <input type="text" id="reqArtist" maxlength="200" required autocomplete="off" placeholder="e.g. That Boy Hi Hat">
+        </label>
+        <label>Your name
+          <input type="text" id="reqName" maxlength="120" required autocomplete="off" placeholder="Your name or handle">
+        </label>
+        <label>Dedication <span class="opt">(optional)</span>
+          <input type="text" id="reqDed" maxlength="200" autocomplete="off" placeholder="Shout-out">
+        </label>
+      </div>
+      <button type="submit" class="btn btn--primary" id="reqSubmit">Send request</button>
+      <p id="reqMsg" class="req-msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+<section>
+  <div class="panel">
+    <h2>On the request line <span id="reqCount" class="req-count"></span></h2>
+    <p class="req-note">Live queue — oldest requests air first, after human review.</p>
+    <ol id="reqQueue" class="req-queue"><li class="req-empty">Loading the queue&hellip;</li></ol>
+  </div>
+</section>
+<section>
   <div class="panel">
     <h2>Listen everywhere</h2>
     <p>Cumulative Radio 365 is listed in the directories below — pick your app:</p>
@@ -375,6 +406,24 @@
   <p>The station streams in HLS format for maximum compatibility across phones, browsers, smart speakers, and radio apps. Independent artists interested in airplay can <a href="/contact.html">contact the label</a> — submissions are free and every track is reviewed by the CWI team.</p>
 </section>
 <style>.seo-radio{max-width:900px;margin:0 auto;padding:32px 24px;color:#e8e8e8}.seo-radio h2{font-size:1.4rem;margin-bottom:12px}.seo-radio p{line-height:1.7;margin-bottom:12px}.seo-radio a{color:#7ec8ff}</style>
+<style>
+.req-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+.req-grid label{display:flex;flex-direction:column;gap:6px;font-size:.85rem;font-weight:600}
+.req-grid input{background:#0d0d12;border:1px solid #2a2a35;border-radius:8px;padding:10px 12px;color:#e8e8e8;font-size:1rem}
+.req-grid input:focus{outline:none;border-color:#00e6aa}
+.req-grid .opt{font-weight:400;color:#888}
+.req-msg{margin-top:12px;min-height:1.4em;font-size:.95rem}
+.req-msg.ok{color:#00e6aa}.req-msg.err{color:#ff6b6b}
+.req-count{font-size:.8rem;color:#888;font-weight:400}
+.req-note{color:#888;font-size:.9rem;margin:-6px 0 12px}
+.req-queue{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.req-queue li{background:#0d0d12;border:1px solid #2a2a35;border-radius:8px;padding:10px 14px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.req-queue .rq-t{font-weight:600}.req-queue .rq-a{color:#888;font-size:.85rem}
+.req-queue .rq-pos{background:#00e6aa22;color:#00e6aa;border:1px solid #00e6aa55;border-radius:6px;padding:2px 8px;font-size:.75rem;font-weight:700;white-space:nowrap}
+.req-queue .rq-by{font-size:.75rem;color:#666}
+.req-empty{color:#888!important;background:none!important;border:none!important;padding:4px 0!important}
+@media(max-width:640px){.req-grid{grid-template-columns:1fr}}
+</style>
 
 </main>
 <footer class="footer">
@@ -559,6 +608,94 @@
   } catch (e) {}
 })();
 
+</script>
+<script>
+/* Cumulative Radio 365 — request terminal + live queue.
+ * Calls the worker's /mcp JSON-RPC endpoint (request_song, get_requests).
+ * Best-effort: never blocks the player, never throws.
+ */
+(function () {
+  var MCP = 'https://cwi-machine-data.hp-ace.workers.dev/mcp';
+  var form = document.getElementById('reqForm');
+  var msg = document.getElementById('reqMsg');
+  var queueEl = document.getElementById('reqQueue');
+  var countEl = document.getElementById('reqCount');
+  var submitBtn = document.getElementById('reqSubmit');
+  if (!form || !queueEl) return;
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  function say(text, cls) {
+    msg.textContent = text;
+    msg.className = 'req-msg ' + (cls || '');
+  }
+  function mcpCall(tool, args) {
+    return fetch(MCP, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ jsonrpc: '2.0', id: 'web-' + Date.now(), method: 'tools/call', params: { name: tool, arguments: args } })
+    }).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    }).then(function (d) {
+      var t = d && d.result && d.result.content && d.result.content[0] && d.result.content[0].text;
+      if (!t) throw new Error('bad_response');
+      var payload;
+      try { payload = JSON.parse(t); } catch (e) { throw new Error('bad_response'); }
+      if (payload.error || (payload.isError)) throw new Error(payload.message || payload.error || 'request_failed');
+      return payload;
+    });
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var track = document.getElementById('reqTrack').value.trim();
+    var artist = document.getElementById('reqArtist').value.trim();
+    var name = document.getElementById('reqName').value.trim();
+    var ded = document.getElementById('reqDed').value.trim();
+    if (!track || !artist || !name) { say('Track, artist, and your name are required.', 'err'); return; }
+    submitBtn.disabled = true;
+    say('Sending your request…');
+    mcpCall('request_song', { track_title: track, artist: artist, requested_by: name, dedication: ded || undefined })
+      .then(function (p) {
+        say('You\u2019re on the list — "' + track + '" by ' + artist + ' is #' + p.queue_position + ' in the queue (est. ' + p.estimated_air_in_minutes + ' min).', 'ok');
+        form.reset();
+        loadQueue();
+      })
+      .catch(function (err) {
+        var m = String(err && err.message || err);
+        if (m.indexOf('rate_limited') > -1 || m.indexOf('3 song requests') > -1) say('You\u2019ve hit the 3-requests-per-day limit. Try again tomorrow.', 'err');
+        else if (m.indexOf('duplicate') > -1) say('You already requested that track in the last 24 hours.', 'err');
+        else say('Couldn\u2019t send the request right now — try again in a bit.', 'err');
+      })
+      .then(function () { submitBtn.disabled = false; });
+  });
+
+  function loadQueue() {
+    mcpCall('get_requests', { status: 'pending', limit: 10 })
+      .then(function (p) {
+        var reqs = p.requests || [];
+        countEl.textContent = p.pending_count ? '(' + p.pending_count + ' waiting)' : '';
+        if (!reqs.length) {
+          queueEl.innerHTML = '<li class="req-empty">The queue is empty — request the first song.</li>';
+          return;
+        }
+        queueEl.innerHTML = reqs.map(function (r, i) {
+          return '<li><div><div class="rq-t">' + esc(r.track_title) + '</div>' +
+            '<div class="rq-a">' + esc(r.artist) + ' <span class="rq-by">— ' + esc(r.requested_by) + '</span></div></div>' +
+            '<span class="rq-pos">#' + (i + 1) + '</span></li>';
+        }).join('');
+      })
+      .catch(function () {
+        queueEl.innerHTML = '<li class="req-empty">Queue unavailable right now.</li>';
+      });
+  }
+  loadQueue();
+  setInterval(loadQueue, 60000);
+})();
 </script>
 </body>
 </html>
