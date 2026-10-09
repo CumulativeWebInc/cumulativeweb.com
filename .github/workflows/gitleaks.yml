@@ -6,9 +6,12 @@ on:
   push:
     paths-ignore:
       # Machine-written data/state — no secret-bearing capacity. Skips the
-      # scan on data-only pushes (radio now-playing + freshness heartbeat are
-      # the Actions-minute burners). Code/config pushes still scan.
+      # scan on data-only pushes (radio now-playing + freshness heartbeat +
+      # radio RSS refresh are the Actions-minute burners). Code/config pushes
+      # still scan.
       - 'radio/now-playing.json'
+      - 'radio/now-playing-rss.xml'
+      - 'radio/track-history.json'
       - 'data/freshness.json'
   pull_request:
   schedule:
