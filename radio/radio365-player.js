@@ -16,7 +16,7 @@
 (function () {
   'use strict';
 
-  var HLS_URL = 'https://cumulativeweb.com/radio/hls/program.m3u8';
+  var HLS_URL = 'https://radio.cumulativeweb.com/live.m3u8';
   var SCHEDULE_URL = '/radio/schedule.json';
   var HLSJS_CDN = 'https://cdn.jsdelivr.net/npm/hls.js@1';
   var NP_REFRESH_MS = 15000;
