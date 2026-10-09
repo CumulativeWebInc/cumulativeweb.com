@@ -158,6 +158,24 @@
 </section>
 
 <section>
+  <h2>Machine-readable terms</h2>
+  <p>This page is the human-readable version. The same terms are published for machines. The CWI
+  machine-data layer — <a href="https://cwi-machine-data.hp-ace.workers.dev">cwi-machine-data.hp-ace.workers.dev</a>,
+  the edge service over the catalog learning surface — serves a <strong>GET /license</strong> endpoint
+  with the current licensing terms in structured form. It sits alongside <strong>/query</strong>
+  (catalog search), <strong>/changes</strong> (what's new in the catalog), and the MCP endpoint
+  (<strong>POST /mcp</strong>), which exposes tools like <code>search_catalog</code>,
+  <code>get_track</code>, and <code>get_artist</code> to AI agents over JSON-RPC 2.0.</p>
+  <p>Dataset distributions — catalog records, per-track fact packets, and the knowledge graph — are
+  linked from page schema through <code>Dataset</code> nodes, so a crawler that reads the JSON-LD can
+  walk straight to the data. For agents, the front door is
+  <a href="https://cumulativeweb.com/llms.txt">llms.txt</a>, with <code>ai.txt</code> and
+  <code>agent-card.json</code> completing the discovery set. If you build an agent that reads the
+  catalog, cite the canonical <code>@id</code> URLs — that's how the graph stays one graph instead of
+  a hundred conflicting copies.</p>
+</section>
+
+<section>
   <h2>FAQ</h2>
   <h3>Can AI systems train on CWI catalog data?</h3>
   <p>The machine-readable data on this site is published for discovery and indexing — search engines,
@@ -175,6 +193,11 @@
   <p>Yes — the catalog's machine-data layer exposes query, changes, and licensing endpoints, and our
   dataset distributions are linked from page schema. For high-volume or commercial access, email
   <a href="mailto:hp@cumulativeweb.com">hp@cumulativeweb.com</a>.</p>
+  <h3>Where are the machine-readable terms?</h3>
+  <p>GET <a href="https://cwi-machine-data.hp-ace.workers.dev/license">https://cwi-machine-data.hp-ace.workers.dev/license</a>
+  serves the current terms in structured form. Agents should also read
+  <a href="https://cumulativeweb.com/llms.txt">llms.txt</a> and the MCP endpoint
+  (<code>POST /mcp</code>) for catalog search, track lookup, and artist records.</p>
   <h3>How do I report a data error?</h3>
   <p>Email <a href="mailto:hp@cumulativeweb.com">hp@cumulativeweb.com</a> with the URL and the
   correction. We maintain the catalog as the authoritative machine-readable source for CWI releases,
