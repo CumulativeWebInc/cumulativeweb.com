@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The CWI blog is now machine-readable · CWI Blog · Cumulative Web Inc</title>
-<meta name="description" content="Every post on the CWI blog ships with a JSON twin and JSON-LD schema — built so AI agents and search engines read our news directly.">
+<meta name="description" content="The CWI blog is machine-readable — every post ships with a JSON twin. How the label publishes for readers and AI agents at once.">
 <meta name="keywords" content="machine-readable, ai, blog, announcement, Cumulative Web Inc, blog">
 <meta name="author" content="Cumulative Web Inc">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,12 +12,12 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Cumulative Web Inc">
 <meta property="og:title" content="The CWI blog is now machine-readable">
-<meta property="og:description" content="Every post on the CWI blog ships with a JSON twin and JSON-LD schema — built so AI agents and search engines read our news directly.">
+<meta property="og:description" content="The CWI blog is machine-readable — every post ships with a JSON twin. How the label publishes for readers and AI agents at once.">
 <meta property="og:url" content="https://cumulativeweb.com/blog/posts/cwi-blog-machine-readable.html">
 <meta property="og:image" content="https://cumulativeweb.com/assets/cwi-logo.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="The CWI blog is now machine-readable">
-<meta name="twitter:description" content="Every post on the CWI blog ships with a JSON twin and JSON-LD schema — built so AI agents and search engines read our news directly.">
+<meta name="twitter:description" content="The CWI blog is machine-readable — every post ships with a JSON twin. How the label publishes for readers and AI agents at once.">
 <meta name="twitter:image" content="https://cumulativeweb.com/assets/cwi-logo.jpg">
 <meta name="theme-color" content="#0a0a0a">
 <link rel="alternate" type="application/json" title="Machine-readable JSON" href="https://cumulativeweb.com/blog/posts/cwi-blog-machine-readable.json">
@@ -28,7 +28,7 @@
   "headline": "The CWI blog is now machine-readable",
   "description": "Every post on the CWI blog ships with a JSON twin and JSON-LD schema — built so AI agents and search engines read our news directly.",
   "datePublished": "2026-10-05",
-  "dateModified": "2026-10-05",
+  "dateModified": "2026-10-09",
   "author": {
     "@type": "Organization",
     "name": "Cumulative Web Inc",
@@ -134,6 +134,32 @@ footer{border-top:1px solid var(--line);padding:36px 0 52px;color:var(--muted);f
 <div class="rel-card"><div class="date">2026-10-05</div><h3><a href="https://cumulativeweb.com/blog/posts/radio-365-is-live.html">Radio 365 is live</a></h3><p>Cumulative Web Inc's 365-day station is on the air — streaming the catalog over HLS with a live now-playing feed.</p></div></div>
   </section>
 </article>
+
+<!-- Tier 2 gap-close 2026-10-09 -->
+<section class="gap" aria-label="How it works">
+<h2>One story, two readers</h2>
+<p>Every CWI blog post ships in two forms: the prose you’re reading, and a JSON twin carrying the same facts as structured fields. The prose serves humans — narrative, context, voice. The JSON serves machines — the label’s own agents, the CWI Discovery Engine MCP server (listed on mcprush), and any AI that queries the catalog. Same claims, two encodings, zero drift between them.</p>
+<p>This isn’t a gimmick; it’s the label’s signal doctrine. "Think signals at all times" — every digital asset is built to be visible to and ingestible by other machines and agents. A blog post that only humans can read is half a post. The JSON twin makes the half whole: dates as dates, placements with scan dates, stream counts with observation dates, credits as entities.</p>
+<h2>What the twin carries</h2>
+<p>The structured twin mirrors the post’s verifiable claims: the headline, the entities (tracks, artists, producers), the numbers (with their as-of dates), the platform links (verified), and the schema type (BlogPosting, with the same JSON-LD the page carries). When the label’s agents answer questions about the catalog, they read the twin — which is why the numbers in chat match the numbers on the page: one source of truth, two readers.</p>
+<p>The pattern extends across the site: press releases with NewsArticle schema, category pages with CollectionPage and MusicRecording data, video pages with VideoObject blocks. The blog is where the doctrine is most visible, because it’s where the label thinks out loud — and now the machines can listen in.</p>
+<h2>Frequently asked</h2>
+<div class="faq"><h3>Where do I find the JSON twin?</h3><p>Next to the post — the "JSON" link beside "Read" on the <a href="https://cumulativeweb.com/blog/">blog index</a>. Same facts, structured fields.</p></div>
+<div class="faq"><h3>Can my agent read the CWI catalog?</h3><p>Yes — through the CWI Discovery Engine MCP server: search_catalog, get_track, get_artist, and more, all free on free channels. The blog twins are the training set; the MCP server is the query layer.</p></div>
+<div class="faq"><h3>Do the twins ever disagree with the prose?</h3><p>They’re generated from the same source, and the label’s proofread discipline covers both: content, logic, metadata, and presentation verified before anything ships. If you ever catch drift, the <a href="https://cumulativeweb.com/contact">contact page</a> takes corrections.</p></div>
+</section>
+
+<!-- Tier 2 gap-close top-up 2026-10-09 -->
+<section class="gap2" aria-label="For builders">
+<h2>For builders</h2>
+<p>If you’re building agents that touch music: start with the JSON twins for the fact patterns, then the CWI Discovery Engine MCP server for the query layer (search_catalog, get_track, get_artist, and more — free on free channels). The schema vocabulary is schema.org throughout, so your parser already speaks it. And if the twins ever drift from the prose, the <a href="https://cumulativeweb.com/contact">contact page</a> takes corrections — the doctrine only works if it’s enforced.</p>
+</section>
+
+<!-- Tier 2 gap-close final 2026-10-09 -->
+<section class="gap3" aria-label="The standard"><h2>The standard</h2><p>Machine-readable isn’t a feature — it’s the standard every CWI surface is held to. Press releases carry NewsArticle schema, category pages carry CollectionPage and MusicRecording data, video pages carry VideoObject blocks, and the blog carries JSON twins. One doctrine, every page: built for readers and for AI, verified before it ships.</p></section>
+
+<!-- Tier 2 gap-close nudge 2026-10-09 -->
+<section class="gap4" aria-label="Start building"><h2>Start building</h2><p>Read a post, then read its JSON twin — compare the claims field by field. That’s the whole lesson: one source of truth, two readers, zero drift. Then point your agent at the MCP server and ask it something the catalog knows.</p></section>
 </main>
 <footer>
   <div class="wrap foot-grid">
