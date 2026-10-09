@@ -1,0 +1,247 @@
+{
+  "station": "Cumulative Radio 365",
+  "count": 30,
+  "packets": [
+    {
+      "artist": "That Boy Hi Hat",
+      "title": "Place I Go to Dream",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-place-i-go-to-dream-remastered.jpg",
+      "slot": 0,
+      "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-place-i-go-to-dream.html",
+      "json": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-place-i-go-to-dream.json"
+    },
+    {
+      "artist": "Dre50",
+      "title": "Vai Vem Vem",
+      "artwork": "https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg",
+      "slot": 1,
+      "url": "https://cumulativeweb.com/radio/proof/dre50-vai-vem-vem.html",
+      "json": "https://cumulativeweb.com/radio/proof/dre50-vai-vem-vem.json"
+    },
+    {
+      "artist": "That Boy Hi Hat",
+      "title": "Broken Hearts Club",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg",
+      "slot": 2,
+      "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-broken-hearts-club.html",
+      "json": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-broken-hearts-club.json"
+    },
+    {
+      "artist": "That Boy Hi Hat",
+      "title": "Shaka Zulu",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg",
+      "slot": 3,
+      "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-shaka-zulu.html",
+      "json": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-shaka-zulu.json"
+    },
+    {
+      "artist": "That Boy Hi Hat",
+      "title": "Golden Diamond",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg",
+      "slot": 4,
+      "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-golden-diamond.html",
+      "json": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-golden-diamond.json"
+    },
+    {
+      "artist": "That Boy Hi Hat",
+      "title": "7th Angel",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg",
+      "slot": 5,
+      "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-7th-angel.html",
+      "json": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-7th-angel.json"
+    },
+    {
+      "artist": "That Boy Hi Hat",
+      "title": "Doves & Diamonds",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-doves-and-diamonds.jpg",
+      "slot": 6,
+      "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-doves-diamonds.html",
+      "json": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-doves-diamonds.json"
+    },
+    {
+      "artist": "Greg Porn",
+      "title": "Unholy Hunters (Ref 1.0)",
+      "artwork": "",
+      "slot": 7,
+      "url": "https://cumulativeweb.com/radio/proof/greg-porn-unholy-hunters-ref-1-0.html",
+      "json": "https://cumulativeweb.com/radio/proof/greg-porn-unholy-hunters-ref-1-0.json"
+    },
+    {
+      "artist": "That Boy Hi Hat",
+      "title": "Diabolique",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg",
+      "slot": 8,
+      "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-diabolique.html",
+      "json": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-diabolique.json"
+    },
+    {
+      "artist": "That Boy Hi Hat",
+      "title": "Zooted Zone",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg",
+      "slot": 9,
+      "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-zooted-zone.html",
+      "json": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-zooted-zone.json"
+    },
+    {
+      "artist": "That Boy Hi Hat",
+      "title": "Rainbows And Roses",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-rainbows-and-roses.jpg",
+      "slot": 10,
+      "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-rainbows-and-roses.html",
+      "json": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-rainbows-and-roses.json"
+    },
+    {
+      "artist": "183 Wildboi",
+      "title": "Stunt",
+      "artwork": "https://cumulativeweb.com/radio/art/183-wildboi-stunt.jpg",
+      "slot": 11,
+      "url": "https://cumulativeweb.com/radio/proof/183-wildboi-stunt.html",
+      "json": "https://cumulativeweb.com/radio/proof/183-wildboi-stunt.json"
+    },
+    {
+      "artist": "That Boy Hi Hat",
+      "title": "Diabolique (Louder)",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg",
+      "slot": 113,
+      "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-diabolique-louder.html",
+      "json": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-diabolique-louder.json"
+    },
+    {
+      "artist": "That Boy Hi Hat",
+      "title": "Shaka Zulu (v1)",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg",
+      "slot": 114,
+      "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-shaka-zulu-v1.html",
+      "json": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-shaka-zulu-v1.json"
+    },
+    {
+      "artist": "That Boy Hi Hat",
+      "title": "7th Angel (Mix 1)",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg",
+      "slot": 115,
+      "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-7th-angel-mix-1.html",
+      "json": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-7th-angel-mix-1.json"
+    },
+    {
+      "artist": "That Boy Hi Hat",
+      "title": "Broken Hearts Club (Mix 1)",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg",
+      "slot": 116,
+      "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-broken-hearts-club-mix-1.html",
+      "json": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-broken-hearts-club-mix-1.json"
+    },
+    {
+      "artist": "That Boy Hi Hat",
+      "title": "Golden Diamond (Mix 1)",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg",
+      "slot": 117,
+      "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-golden-diamond-mix-1.html",
+      "json": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-golden-diamond-mix-1.json"
+    },
+    {
+      "artist": "That Boy Hi Hat",
+      "title": "Rainbows And Roses (Mix 1)",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-rainbows-and-roses.jpg",
+      "slot": 118,
+      "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-rainbows-and-roses-mix-1.html",
+      "json": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-rainbows-and-roses-mix-1.json"
+    },
+    {
+      "artist": "That Boy Hi Hat",
+      "title": "Phantasm",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-phantasm.jpg",
+      "slot": 119,
+      "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-phantasm.html",
+      "json": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-phantasm.json"
+    },
+    {
+      "artist": "That Boy Hi Hat",
+      "title": "Spirits n Shadows",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-spirits-n-shadows.jpg",
+      "slot": 120,
+      "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-spirits-n-shadows.html",
+      "json": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-spirits-n-shadows.json"
+    },
+    {
+      "artist": "That Boy Hi Hat",
+      "title": "Neon Nights pt. 777 (Mix 1)",
+      "artwork": "https://cumulativeweb.com/radio/art/That Boy Hi Hat - Neon Nights pt. 777.jpg",
+      "slot": 121,
+      "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-neon-nights-pt-777-mix-1.html",
+      "json": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-neon-nights-pt-777-mix-1.json"
+    },
+    {
+      "artist": "183 Wildboi",
+      "title": "Full Moon",
+      "artwork": "https://cumulativeweb.com/radio/art/183-wildboi-full-moon.jpg",
+      "slot": 122,
+      "url": "https://cumulativeweb.com/radio/proof/183-wildboi-full-moon.html",
+      "json": "https://cumulativeweb.com/radio/proof/183-wildboi-full-moon.json"
+    },
+    {
+      "artist": "That Boy Hi Hat",
+      "title": "Warped & Wicked (Mix 1)",
+      "artwork": "https://cumulativeweb.com/radio/art/That Boy Hi Hat - Warped & Wicked.jpg",
+      "slot": 123,
+      "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-warped-wicked-mix-1.html",
+      "json": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-warped-wicked-mix-1.json"
+    },
+    {
+      "artist": "Dre50",
+      "title": "Pix",
+      "artwork": "https://cumulativeweb.com/radio/art/dre50-pix.jpg",
+      "slot": 124,
+      "url": "https://cumulativeweb.com/radio/proof/dre50-pix.html",
+      "json": "https://cumulativeweb.com/radio/proof/dre50-pix.json"
+    },
+    {
+      "artist": "King Ahkeem",
+      "title": "Embiid",
+      "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-embiid.jpg",
+      "slot": 125,
+      "url": "https://cumulativeweb.com/radio/proof/king-ahkeem-embiid.html",
+      "json": "https://cumulativeweb.com/radio/proof/king-ahkeem-embiid.json"
+    },
+    {
+      "artist": "King Ahkeem",
+      "title": "Bluefaces 3.0",
+      "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-bluefaces-3-0.jpg",
+      "slot": 126,
+      "url": "https://cumulativeweb.com/radio/proof/king-ahkeem-bluefaces-3-0.html",
+      "json": "https://cumulativeweb.com/radio/proof/king-ahkeem-bluefaces-3-0.json"
+    },
+    {
+      "artist": "King Ahkeem",
+      "title": "Star",
+      "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-star.jpg",
+      "slot": 127,
+      "url": "https://cumulativeweb.com/radio/proof/king-ahkeem-star.html",
+      "json": "https://cumulativeweb.com/radio/proof/king-ahkeem-star.json"
+    },
+    {
+      "artist": "King Ahkeem",
+      "title": "Super Solid",
+      "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-super-solid.jpg",
+      "slot": 128,
+      "url": "https://cumulativeweb.com/radio/proof/king-ahkeem-super-solid.html",
+      "json": "https://cumulativeweb.com/radio/proof/king-ahkeem-super-solid.json"
+    },
+    {
+      "artist": "Fleekz",
+      "title": "2K23 Corners",
+      "artwork": "https://cumulativeweb.com/radio/art/fleekz-2k23-corners.jpg",
+      "slot": 129,
+      "url": "https://cumulativeweb.com/radio/proof/fleekz-2k23-corners.html",
+      "json": "https://cumulativeweb.com/radio/proof/fleekz-2k23-corners.json"
+    },
+    {
+      "artist": "King Ahkeem",
+      "title": "Element",
+      "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-element.jpg",
+      "slot": 130,
+      "url": "https://cumulativeweb.com/radio/proof/king-ahkeem-element.html",
+      "json": "https://cumulativeweb.com/radio/proof/king-ahkeem-element.json"
+    }
+  ],
+  "generated_at": "2026-10-09T10:12:38.388919+00:00"
+}
