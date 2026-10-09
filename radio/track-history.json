@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-09T15:59:43.095Z",
+  "updated_at": "2026-10-09T16:29:21.848Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "7th Angel (Mix 1)",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg",
-      "slot_index": 115,
-      "played_at": "2026-10-09T15:59:43.095Z",
-      "track_ends_at": "2026-10-09T16:00:38.265Z"
+      "title": "Warped & Wicked (Mix 1)",
+      "artwork": "https://cumulativeweb.com/radio/art/That Boy Hi Hat - Warped & Wicked.jpg",
+      "slot_index": 123,
+      "played_at": "2026-10-09T16:29:21.848Z",
+      "track_ends_at": "2026-10-09T16:30:02.979Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
