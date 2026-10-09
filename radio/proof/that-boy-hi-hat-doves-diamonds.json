@@ -10,7 +10,7 @@
     "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-doves-and-diamonds.jpg",
     "slot": 6,
     "duration_seconds": 181.544,
-    "spotify_url": null,
+    "spotify_url": "https://open.spotify.com/track/4NAyd7rvnuG3DrPFqXo4eQ",
     "isrc": null
   },
   "airplay": {
@@ -28,7 +28,7 @@
     "player_iframe": "<iframe src=\"https://cumulativeweb.com/radio.html\" width=\"100%\" height=\"400\" frameborder=\"0\" title=\"Cumulative Radio 365 \u2014 now playing: That Boy Hi Hat - Doves & Diamonds\"></iframe>"
   },
   "verification": {
-    "generated_at": "2026-10-09T10:11:10.030731+00:00",
+    "generated_at": "2026-10-09T11:59:09.867509+00:00",
     "generator": "cwi-proof-packet/1.0",
     "schedule_epoch": "2026-10-03T00:00:00Z",
     "evidence_tier": "owner_confirmed"
