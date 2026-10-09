@@ -364,6 +364,18 @@
   </div>
 </section>
 <section>
+  <div class="panel" id="liveRoom">
+    <h2>Live room <span id="liveCount" class="req-count"></span> <span id="liveDot" class="live-dot" title="Connection status"></span></h2>
+    <p class="req-note">Chat with other listeners in real time. Be kind.</p>
+    <div id="chatBox" class="chat-box" aria-live="polite"><div class="req-empty">Connecting to the live room&hellip;</div></div>
+    <form id="chatForm" class="chat-form" novalidate>
+      <input type="text" id="chatName" maxlength="40" autocomplete="off" placeholder="Name (optional)">
+      <input type="text" id="chatMsg" maxlength="280" autocomplete="off" placeholder="Say something&hellip;" required>
+      <button type="submit" class="btn btn--primary">Send</button>
+    </form>
+  </div>
+</section>
+<section>
   <div class="panel">
     <h2>Listen everywhere</h2>
     <p>Cumulative Radio 365 is listed in the directories below — pick your app:</p>
@@ -422,6 +434,18 @@
 .req-queue .rq-pos{background:#00e6aa22;color:#00e6aa;border:1px solid #00e6aa55;border-radius:6px;padding:2px 8px;font-size:.75rem;font-weight:700;white-space:nowrap}
 .req-queue .rq-by{font-size:.75rem;color:#666}
 .req-empty{color:#888!important;background:none!important;border:none!important;padding:4px 0!important}
+.live-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#666;margin-left:6px}
+.live-dot.on{background:#00e6aa;box-shadow:0 0 8px #00e6aa}
+.chat-box{max-height:300px;overflow-y:auto;display:flex;flex-direction:column;gap:8px;margin:12px 0;padding:4px}
+.chat-msg{background:#0d0d12;border:1px solid #2a2a35;border-radius:8px;padding:8px 12px;font-size:.9rem}
+.chat-msg .cm-s{font-weight:700;color:#00e6aa;font-size:.8rem}
+.chat-msg .cm-t{font-size:.7rem;color:#666;margin-left:8px}
+.chat-form{display:flex;gap:8px;margin-top:8px}
+.chat-form input{background:#0d0d12;border:1px solid #2a2a35;border-radius:8px;padding:10px 12px;color:#e8e8e8;font-size:.95rem}
+.chat-form #chatName{width:120px;flex-shrink:0}
+.chat-form #chatMsg{flex:1;min-width:0}
+.chat-form input:focus{outline:none;border-color:#00e6aa}
+@media(max-width:640px){.chat-form{flex-wrap:wrap}.chat-form #chatName{width:100%}}
 @media(max-width:640px){.req-grid{grid-template-columns:1fr}}
 </style>
 
@@ -695,6 +719,85 @@
   }
   loadQueue();
   setInterval(loadQueue, 60000);
+})();
+
+/* Cumulative Radio 365 — live room WebSocket client.
+ * wss://cwi-machine-data.hp-ace.workers.dev/radio/live
+ * Best-effort: chat degrades gracefully if the socket drops.
+ */
+(function () {
+  var WS_URL = 'wss://cwi-machine-data.hp-ace.workers.dev/radio/live';
+  var box = document.getElementById('chatBox');
+  var form = document.getElementById('chatForm');
+  var dot = document.getElementById('liveDot');
+  var countEl = document.getElementById('liveCount');
+  if (!box || !form) return;
+
+  var ws = null, retries = 0;
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  function addMsg(sender, message, ts) {
+    var empty = box.querySelector('.req-empty');
+    if (empty) empty.remove();
+    var div = document.createElement('div');
+    div.className = 'chat-msg';
+    var time = '';
+    try { time = new Date(ts).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }); } catch (e) {}
+    div.innerHTML = '<span class="cm-s">' + esc(sender) + '</span><span class="cm-t">' + esc(time) + '</span><div>' + esc(message) + '</div>';
+    box.appendChild(div);
+    while (box.children.length > 50) box.removeChild(box.firstChild);
+    box.scrollTop = box.scrollHeight;
+  }
+  function setOnline(on) {
+    if (dot) dot.className = 'live-dot' + (on ? ' on' : '');
+  }
+
+  function connect() {
+    try { ws = new WebSocket(WS_URL); } catch (e) { retry(); return; }
+    ws.onopen = function () { retries = 0; setOnline(true); };
+    ws.onmessage = function (evt) {
+      var p;
+      try { p = JSON.parse(evt.data); } catch (e) { return; }
+      var d = p.data || {};
+      if (p.event === 'radio.welcome') {
+        box.innerHTML = '';
+        (d.chat_history || []).forEach(function (m) { addMsg(m.sender, m.message, m.ts); });
+        if (d.listeners != null && countEl) countEl.textContent = '(' + d.listeners + ' here)';
+      } else if (p.event === 'radio.chat') {
+        addMsg(d.sender, d.message, d.ts);
+      } else if (p.event === 'radio.listeners') {
+        if (countEl) countEl.textContent = '(' + d.count + ' here)';
+      } else if (p.event === 'radio.error') {
+        addMsg('System', d.message || 'Slow down.', new Date().toISOString());
+      }
+    };
+    ws.onclose = function () { setOnline(false); retry(); };
+    ws.onerror = function () { try { ws.close(); } catch (e) {} };
+  }
+  function retry() {
+    retries++;
+    var delay = Math.min(30000, 2000 * Math.pow(1.5, retries));
+    setTimeout(connect, delay);
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var nameEl = document.getElementById('chatName');
+    var msgEl = document.getElementById('chatMsg');
+    var text = msgEl.value.trim();
+    if (!text || !ws || ws.readyState !== WebSocket.OPEN) return;
+    ws.send(JSON.stringify({
+      event: 'client.chat',
+      data: { sender: nameEl.value.trim() || undefined, message: text }
+    }));
+    msgEl.value = '';
+  });
+
+  connect();
 })();
 </script>
 </body>
