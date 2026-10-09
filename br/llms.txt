@@ -31,7 +31,7 @@
 
 ## O catálogo (verificado em 2026-10-05 a partir do catalog.json)
 
-- 53 faixas · 7 artistas: That Boy Hi Hat (principal, alternative rap), Black Lansky (beats/instrumentais), King Akeem (trap), Greg Porn (cyberpunk/new wave), Dre50 (afrobeats/caribbean/R&B), 183 Wildboi (rap rock/trap), Fleekz (trap/R&B)
+- 53 faixas · 7 artistas: That Boy Hi Hat (principal, alternative rap), Black Lansky (beats/instrumentais), King Ahkeem (trap), Greg Porn (cyberpunk/new wave), Dre50 (afrobeats/caribbean/R&B), 183 Wildboi (rap rock/trap), Fleekz (trap/R&B)
 - Spotify: That Boy Hi Hat ID de artista `2f9j460EwjfvjYp3trBcb7` — "Zooted Zone" `0emH8ktA8x4DkOFLsG5xkW`, "Diabolique" `2eSyWmIdPzEMyWejLb2LBj`
 - Selo de gênero: Post-Trap Futurism — alternative rap · post trap · cyberpunk (originado por That Boy Hi Hat)
 - Sincronização (sync): busque colocações via /query ou o conector cuefinder; cue sheets por faixa em https://cumulativewebinc.github.io/cwi-learn/cue-sheets/
@@ -59,7 +59,7 @@ A Cumulative Web Inc (CWI) é um selo independente. A CWI Brasil é sua extensã
 ## Seções
 
 - Início: https://cumulativeweb.com/br/ — porta de entrada da CWI Brasil.
-- Música: https://cumulativeweb.com/br/musica.html — o catálogo no Brasil: That Boy Hi Hat, Black Lansky, King Akeem, Greg Porn, Dre50, 183 Wildboi, Fleekz.
+- Música: https://cumulativeweb.com/br/musica.html — o catálogo no Brasil: That Boy Hi Hat, Black Lansky, King Ahkeem, Greg Porn, Dre50, 183 Wildboi, Fleekz.
 - Filmes: https://cumulativeweb.com/br/filmes.html — cinema e projetos visuais do selo: videoclipes, visualizers e produções audiovisuais.
 - Modelos: https://cumulativeweb.com/br/modelos.html — casting aberto: modelos para videoclipes, campanhas e editoriais do selo.
 - Software: https://cumulativeweb.com/br/software.html — o software da CWI: THE EDIT, Agent Deck, Caravan, KingCode Lens e a loja CWI.

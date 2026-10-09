@@ -14,21 +14,21 @@
     "isrc": null
   },
   "airplay": {
-    "next_airtime_utc": "2026-10-09T10:17:55.780000+00:00",
-    "next_airtime_human": "Friday, October 09 at 10:17 AM UTC",
-    "loop_iteration": 22,
+    "next_airtime_utc": "2026-10-09T17:17:26.671000+00:00",
+    "next_airtime_human": "Friday, October 09 at 05:17 PM UTC",
+    "loop_iteration": 23,
     "program_period_hours": 7.0,
     "schedule_version": "2026-10-08a"
   },
   "share": {
-    "text": "\ud83d\udcfb ON AIR: \"Zooted Zone\" by That Boy Hi Hat is spinning on Cumulative Radio 365 \u2014 next play Friday at 10:17 AM UTC. Tune in: https://cumulativeweb.com/radio.html",
+    "text": "\ud83d\udcfb ON AIR: \"Zooted Zone\" by That Boy Hi Hat is spinning on Cumulative Radio 365 \u2014 next play Friday at 05:17 PM UTC. Tune in: https://cumulativeweb.com/radio.html",
     "hashtags": "#Radio365 #IndependentRadio #SupportIndieMusic"
   },
   "embed": {
     "player_iframe": "<iframe src=\"https://cumulativeweb.com/radio.html\" width=\"100%\" height=\"400\" frameborder=\"0\" title=\"Cumulative Radio 365 \u2014 now playing: That Boy Hi Hat - Zooted Zone\"></iframe>"
   },
   "verification": {
-    "generated_at": "2026-10-09T10:11:10.205264+00:00",
+    "generated_at": "2026-10-09T13:19:17.840050+00:00",
     "generator": "cwi-proof-packet/1.0",
     "schedule_epoch": "2026-10-03T00:00:00Z",
     "evidence_tier": "owner_confirmed"
