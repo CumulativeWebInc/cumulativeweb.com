@@ -266,7 +266,7 @@
     var heroCta = (flag.links && flag.links.spotify_artist)
       ? ext(flag.links.spotify_artist, 'Listen on Spotify', 'btn btn--primary') : badge('PLANNED');
 
-    var html = lockup('Cumulative Web Inc', 'assets/cwi-logo.jpg') +
+    var html =
       '<section class="hero"><div class="eyebrow">Label roster · Music &amp; Film · Clothing · Software &amp; AI Agents</div>' +
       '<h1>Cumulative Web Inc</h1>' +
       '<div class="meta"><span class="chip">Independent label</span><span class="chip">Frederick, MD</span>' + badge('LIVE') + '</div>' +
@@ -633,7 +633,7 @@
     document.getElementById('side-nav').innerHTML =
       '<div class="nav-group">Label</div>' + side;
     document.getElementById('tabbar').innerHTML = NAV.map(function (n) {
-      return '<a class="' + (n.key === key ? 'active' : '') + '" href="' + n.route + '" aria-label="' + n.label + '">' + n.icon + n.label + '</a>';
+      return '<a class="' + (n.key === key ? 'active' : '') + '" href="' + n.route + '" aria-label="' + n.label + '">' + n.icon + '<span class="tab-label">' + n.label + '</span></a>';
     }).join('');
   }
 

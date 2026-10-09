@@ -166,7 +166,8 @@ p { margin: 0 0 var(--space-4); color: var(--cwi-text-sub); }
   gap: 2px; color: var(--cwi-text-sub); font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
 .tabbar a.active { color: var(--cwi-text); }
 .tabbar a:hover { text-decoration: none; color: var(--cwi-text); }
-.tabbar svg { width: 22px; height: 22px; fill: currentColor; }
+.tabbar svg { width: 22px; height: 22px; fill: currentColor; flex: 0 0 auto; }
+.tabbar a .tab-label { display: block; max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 .main { min-width: 0; padding-bottom: calc(var(--tabbar-h) + 110px); }
 .content { max-width: 1400px; margin: 0 auto; padding: var(--pad-page); }
