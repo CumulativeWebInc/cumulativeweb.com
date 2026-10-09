@@ -5,24 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Tue, 06 Oct 2026 16:34:11 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 09 Oct 2026 15:59:43 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>That Boy Hi Hat - 7th Angel</title>
+    <title>That Boy Hi Hat - 7th Angel (Mix 1)</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - 7th Angel</description>
-    <pubDate>Tue, 06 Oct 2026 16:28:43 +0000</pubDate>
-    <guid isPermaLink="false">https://cumulativeweb.com/radio/now-playing-rss.xml#That Boy Hi Hat-7th Angel-1791304123</guid>
+    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - 7th Angel (Mix 1) (slot 115, ends 2026-10-09T16:00:38.265Z)</description>
+    <pubDate>Fri, 09 Oct 2026 15:59:43 GMT</pubDate>
+    <guid isPermaLink="false">radio365-115-2026-10-09T16:00:38.265Z</guid>
     <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg" type="image/jpeg" />
-  </item>
-  <item>
-    <title>That Boy Hi Hat - Broken Hearts Club</title>
-    <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Broken Hearts Club</description>
-    <pubDate>Tue, 06 Oct 2026 16:21:39 +0000</pubDate>
-    <guid isPermaLink="false">https://cumulativeweb.com/radio/now-playing-rss.xml#That Boy Hi Hat-Broken Hearts Club-1791303699</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
