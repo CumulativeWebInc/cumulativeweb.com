@@ -26,10 +26,32 @@
       form.appendChild(ts);
       /* Turnstile (Cloudflare, grátis) — ativa quando Lansky definir
        * window.CWI_TURNSTILE_SITEKEY com a site key real E configurar
-       * TURNSTILE_SECRET no serviço Railway. Até lá, sem efeito. */
+       * TURNSTILE_SECRET no serviço Railway. Sem chave = SEM SILÊNCIO:
+       * o estado aparece como aviso visível no próprio formulário
+       * (nunca um formulário que parece protegido mas não está).
+       * Gate #6, 2026-10-09. */
       var key = window.CWI_TURNSTILE_SITEKEY || "";
-      if (!key || key.indexOf("PLACEHOLDER") !== -1) return;
       var wrap = document.getElementById("turnstileWrap");
+      if (!wrap) return;
+      var keyOk = key && key.indexOf("PLACEHOLDER") === -1;
+      if (!keyOk) {
+        /* Estado EXPLÍCITO: proteção anti-bot ausente. Aviso visível
+         * (admin e visitante veem o mesmo estado real) + flags de máquina:
+         * data-turnstile="off" no form, window.CWI_TURNSTILE_ACTIVE=false.
+         * O escudo básico (timestamp + honeypot) continua ativo. */
+        wrap.removeAttribute("aria-hidden");
+        var note = document.createElement("p");
+        note.className = "turnstile-off";
+        note.setAttribute("role", "note");
+        note.textContent = "Aviso: verificação anti-bot (Turnstile) não configurada — este formulário aceita envios com proteção básica (timestamp + honeypot) até a chave ser ativada.";
+        wrap.appendChild(note);
+        form.setAttribute("data-turnstile", "off");
+        window.CWI_TURNSTILE_ACTIVE = false;
+        if (window.console && window.console.warn) {
+          window.console.warn("[CWI] Turnstile inativo: defina window.CWI_TURNSTILE_SITEKEY e TURNSTILE_SECRET no Railway para ativar a verificação anti-bot.");
+        }
+        return;
+      }
       var d = document.createElement("div");
       d.className = "cf-turnstile";
       d.setAttribute("data-sitekey", key);
@@ -38,6 +60,8 @@
       s.src = "https://challenges.cloudflare.com/turnstile/v0/api.js";
       s.async = true; s.defer = true;
       document.head.appendChild(s);
+      form.setAttribute("data-turnstile", "on");
+      window.CWI_TURNSTILE_ACTIVE = true;
     } catch (e) { /* escudo é best-effort no cliente */ }
   })();
 

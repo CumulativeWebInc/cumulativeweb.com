@@ -198,6 +198,15 @@ p { margin: 0 0 var(--space-4); color: var(--cwi-text-sub); }
 .hp-field { position: absolute !important; left: -9999px !important; top: auto !important;
   width: 1px !important; height: 1px !important; overflow: hidden !important; }
 
+/* Turnstile ausente — aviso EXPLÍCITO de que a verificação anti-bot não está
+ * ativa. Nunca fica silencioso: ou o widget Turnstile renderiza, ou este
+ * aviso aparece. (Gate #6, 2026-10-09) */
+.cf-turnstile-wrap { min-height: 0; }
+.turnstile-off { border: 1px dashed var(--cwi-danger); border-radius: var(--radius-md);
+  background: rgba(233,20,41,.08); color: var(--cwi-text); font-size: var(--text-small);
+  padding: var(--space-3) var(--space-4); margin: var(--space-2) 0; }
+.turnstile-off strong { color: var(--cwi-danger); }
+
 /* ===== livestream ===== */
 .stream-stage { background: #000; border: 1px solid var(--cwi-border); border-radius: var(--radius-lg);
   aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center;

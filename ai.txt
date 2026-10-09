@@ -10,8 +10,8 @@ This file directs AI agents and crawlers to CWI's machine-readable surfaces.
 ## MCP server (Model Context Protocol)
 - Endpoint: https://cwi-machine-data.hp-ace.workers.dev/mcp
 - Protocol: streamable-http (POST JSON-RPC 2.0)
-- Registry: io.github.CumulativeWebInc/cwi-discovery-engine v1.0.0
-- Tools: search_catalog, get_track, get_artist, sync_search, semantic_search, get_release
+- Registry: io.github.CumulativeWebInc/cwi-discovery-engine v1.1.0
+- Tools (21): search_catalog, get_track, get_artist, sync_search, semantic_search, get_graph, get_release, get_radio, get_announcements, get_featured, get_up_next, get_schedule, request_song, submit_for_airplay, get_requests, submit_sync_brief, pitch_for_playlist, nominate_featured, get_recommendations, get_events, rsvp
 - Auth: none. No key, no login.
 
 ## Query API
