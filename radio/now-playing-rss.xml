@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Fri, 09 Oct 2026 19:35:22 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 09 Oct 2026 20:35:27 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>Dre50 - Vai Vem Vem</title>
+    <title>That Boy Hi Hat - Broken Hearts Club</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: Dre50 - Vai Vem Vem (slot 52, ends 2026-10-09T19:36:01.860Z)</description>
-    <pubDate>Fri, 09 Oct 2026 19:35:22 GMT</pubDate>
-    <guid isPermaLink="false">radio365-52-2026-10-09T19:36:01.860Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Broken Hearts Club (slot 71, ends 2026-10-09T20:38:16.413Z)</description>
+    <pubDate>Fri, 09 Oct 2026 20:35:27 GMT</pubDate>
+    <guid isPermaLink="false">radio365-71-2026-10-09T20:38:16.413Z</guid>
+    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
