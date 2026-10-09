@@ -1,0 +1,37 @@
+{
+  "packet_type": "cwi-proof-of-airplay",
+  "packet_version": "1.0",
+  "station": "Cumulative Radio 365",
+  "station_url": "https://cumulativeweb.com/radio.html",
+  "stream_url": "https://cumulativeweb.com/radio/hls/program.m3u8",
+  "track": {
+    "artist": "Fleekz",
+    "title": "2K23 Corners",
+    "artwork": "https://cumulativeweb.com/radio/art/fleekz-2k23-corners.jpg",
+    "slot": 129,
+    "duration_seconds": 222.726,
+    "spotify_url": null,
+    "isrc": "QZK6L2263080"
+  },
+  "airplay": {
+    "next_airtime_utc": "2026-10-09T16:41:55.390000+00:00",
+    "next_airtime_human": "Friday, October 09 at 04:41 PM UTC",
+    "loop_iteration": 22,
+    "program_period_hours": 7.0,
+    "schedule_version": "2026-10-08a"
+  },
+  "share": {
+    "text": "\ud83d\udcfb ON AIR: \"2K23 Corners\" by Fleekz is spinning on Cumulative Radio 365 \u2014 next play Friday at 04:41 PM UTC. Tune in: https://cumulativeweb.com/radio.html",
+    "hashtags": "#Radio365 #IndependentRadio #SupportIndieMusic"
+  },
+  "embed": {
+    "player_iframe": "<iframe src=\"https://cumulativeweb.com/radio.html\" width=\"100%\" height=\"400\" frameborder=\"0\" title=\"Cumulative Radio 365 \u2014 now playing: Fleekz - 2K23 Corners\"></iframe>"
+  },
+  "verification": {
+    "generated_at": "2026-10-09T10:11:11.556347+00:00",
+    "generator": "cwi-proof-packet/1.0",
+    "schedule_epoch": "2026-10-03T00:00:00Z",
+    "evidence_tier": "owner_confirmed"
+  },
+  "page_url": "https://cumulativeweb.com/radio/proof/fleekz-2k23-corners.html"
+}

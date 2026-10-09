@@ -28,7 +28,7 @@
     "player_iframe": "<iframe src=\"https://cumulativeweb.com/radio.html\" width=\"100%\" height=\"400\" frameborder=\"0\" title=\"Cumulative Radio 365 \u2014 now playing: That Boy Hi Hat - Diabolique\"></iframe>"
   },
   "verification": {
-    "generated_at": "2026-10-09T10:05:52.673268+00:00",
+    "generated_at": "2026-10-09T10:11:10.149944+00:00",
     "generator": "cwi-proof-packet/1.0",
     "schedule_epoch": "2026-10-03T00:00:00Z",
     "evidence_tier": "owner_confirmed"

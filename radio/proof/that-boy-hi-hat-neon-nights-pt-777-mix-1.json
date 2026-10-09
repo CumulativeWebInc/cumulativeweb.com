@@ -1,0 +1,37 @@
+{
+  "packet_type": "cwi-proof-of-airplay",
+  "packet_version": "1.0",
+  "station": "Cumulative Radio 365",
+  "station_url": "https://cumulativeweb.com/radio.html",
+  "stream_url": "https://cumulativeweb.com/radio/hls/program.m3u8",
+  "track": {
+    "artist": "That Boy Hi Hat",
+    "title": "Neon Nights pt. 777 (Mix 1)",
+    "artwork": "https://cumulativeweb.com/radio/art/That Boy Hi Hat - Neon Nights pt. 777.jpg",
+    "slot": 121,
+    "duration_seconds": 226.371,
+    "spotify_url": "https://open.spotify.com/track/4XP56LZjeS0TJUd30kpGSK",
+    "isrc": "QZTB92246281"
+  },
+  "airplay": {
+    "next_airtime_utc": "2026-10-09T16:18:55.615000+00:00",
+    "next_airtime_human": "Friday, October 09 at 04:18 PM UTC",
+    "loop_iteration": 22,
+    "program_period_hours": 7.0,
+    "schedule_version": "2026-10-08a"
+  },
+  "share": {
+    "text": "\ud83d\udcfb ON AIR: \"Neon Nights pt. 777 (Mix 1)\" by That Boy Hi Hat is spinning on Cumulative Radio 365 \u2014 next play Friday at 04:18 PM UTC. Tune in: https://cumulativeweb.com/radio.html",
+    "hashtags": "#Radio365 #IndependentRadio #SupportIndieMusic"
+  },
+  "embed": {
+    "player_iframe": "<iframe src=\"https://cumulativeweb.com/radio.html\" width=\"100%\" height=\"400\" frameborder=\"0\" title=\"Cumulative Radio 365 \u2014 now playing: That Boy Hi Hat - Neon Nights pt. 777 (Mix 1)\"></iframe>"
+  },
+  "verification": {
+    "generated_at": "2026-10-09T10:11:11.035940+00:00",
+    "generator": "cwi-proof-packet/1.0",
+    "schedule_epoch": "2026-10-03T00:00:00Z",
+    "evidence_tier": "owner_confirmed"
+  },
+  "page_url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-neon-nights-pt-777-mix-1.html"
+}

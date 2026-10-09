@@ -1,0 +1,37 @@
+{
+  "packet_type": "cwi-proof-of-airplay",
+  "packet_version": "1.0",
+  "station": "Cumulative Radio 365",
+  "station_url": "https://cumulativeweb.com/radio.html",
+  "stream_url": "https://cumulativeweb.com/radio/hls/program.m3u8",
+  "track": {
+    "artist": "That Boy Hi Hat",
+    "title": "Rainbows And Roses (Mix 1)",
+    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-rainbows-and-roses.jpg",
+    "slot": 118,
+    "duration_seconds": 238.492,
+    "spotify_url": "https://open.spotify.com/track/2ZUYjQGsRLHRcsfgyeAWpo",
+    "isrc": "QZF222243412"
+  },
+  "airplay": {
+    "next_airtime_utc": "2026-10-09T16:07:46.231000+00:00",
+    "next_airtime_human": "Friday, October 09 at 04:07 PM UTC",
+    "loop_iteration": 22,
+    "program_period_hours": 7.0,
+    "schedule_version": "2026-10-08a"
+  },
+  "share": {
+    "text": "\ud83d\udcfb ON AIR: \"Rainbows And Roses (Mix 1)\" by That Boy Hi Hat is spinning on Cumulative Radio 365 \u2014 next play Friday at 04:07 PM UTC. Tune in: https://cumulativeweb.com/radio.html",
+    "hashtags": "#Radio365 #IndependentRadio #SupportIndieMusic"
+  },
+  "embed": {
+    "player_iframe": "<iframe src=\"https://cumulativeweb.com/radio.html\" width=\"100%\" height=\"400\" frameborder=\"0\" title=\"Cumulative Radio 365 \u2014 now playing: That Boy Hi Hat - Rainbows And Roses (Mix 1)\"></iframe>"
+  },
+  "verification": {
+    "generated_at": "2026-10-09T10:11:10.858109+00:00",
+    "generator": "cwi-proof-packet/1.0",
+    "schedule_epoch": "2026-10-03T00:00:00Z",
+    "evidence_tier": "owner_confirmed"
+  },
+  "page_url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-rainbows-and-roses-mix-1.html"
+}
