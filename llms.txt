@@ -16,14 +16,14 @@
   - Track search: GET /query?q=<keywords> — e.g. /query?q=post-trap+cyberpunk
   - Crawl deltas: GET /changes?since=<ISO-8601> — what changed since your last crawl
   - Licensing terms (machine-readable): GET /license
-  - MCP: POST /mcp — JSON-RPC 2.0; tools: search_catalog, get_track, get_artist, sync_search, semantic_search, get_graph, get_release
-    (Status 2026-10-06: LIVE — accepting JSON-RPC calls; 7 tools)
+  - MCP: POST /mcp — JSON-RPC 2.0; tools: search_catalog, get_track, get_artist, sync_search, semantic_search, get_graph, get_release, get_radio, get_announcements, get_featured, get_up_next, get_schedule, request_song, submit_for_airplay, get_requests, submit_sync_brief, pitch_for_playlist, nominate_featured, get_recommendations, get_events, rsvp
+    (Status 2026-10-09: LIVE — accepting JSON-RPC calls; 21 tools)
   - Sitemap: GET /sitemap.xml — every machine-readable surface with change frequencies
   - RSS freshness feed: GET /feed.xml — same freshness signals as /changes, for feed readers and polling agents
   - Alias edge domain: https://data.cumulativeweb.com (same API)
 - MCP server directories & marketplaces (where AI developers discover and install our MCP server):
   - mcprush — CWI Discovery Engine listing: https://mcprush.com/cumulativewebinc/cwi-discovery-engine-mcp — MCP server marketplace (100,000+ MCP server and agent skill listings); publisher claim approved 2026-10-07 (ref CLM-0075); free listing, security-scanned; developers install the catalog MCP server into Claude, Cursor, VS Code with one CLI command, putting the CWI music catalog inside their AI's context
-- Catalog learning surface: https://cumulativewebinc.github.io/cwi-learn/llms.txt — catalog.json, graph.json, kit.json, EQUIP-GUIDE.md (10-step agent equip guide)
+- Catalog learning surface: https://cumulativeweb.com/graph.json — graph.json, kit.json, ai.txt (also mirrored at https://cumulativewebinc.github.io/cwi-learn/); full catalog data: GET https://cwi-machine-data.hp-ace.workers.dev/catalog.json; EQUIP-GUIDE.md (10-step agent equip guide)
 - Agent cards (JSON):
   - https://cumulativewebinc.github.io/cwi-learn/.well-known/agent-card.json (catalog graph)
   - https://cumulativeweb.com/sanqa/.well-known/agent-card.json (SANQA suite)
@@ -80,7 +80,7 @@
 - SANQA machine-readable data: [catalog](https://cumulativeweb.com/sanqa/catalog.json) · [agent card](https://cumulativeweb.com/sanqa/.well-known/agent-card.json)
 - Trust Verdict Checker (flagship SANQA tool): https://cumulativewebinc.github.io/cwi-trust-verdict-checker/ — evidence-bound agent trust scoring; demo at /demo.html
 - Results feed: https://cumulativewebinc.github.io/cwi-results/results.json — public receipts ledger (machine-readable)
-- Catalog graph: https://cumulativewebinc.github.io/cwi-learn/catalog.json
+- Catalog graph: https://cumulativeweb.com/graph.json
 - AI learning kit: https://cumulativewebinc.github.io/cwi-learn/llms.txt
 
 ## Site pages

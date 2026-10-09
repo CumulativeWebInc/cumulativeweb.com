@@ -1,0 +1,27 @@
+# AI Agent Entry Point — Cumulative Web Inc / CWI Discovery Engine
+
+This file directs AI agents and crawlers to CWI's machine-readable surfaces.
+
+## Primary surfaces
+- Full AI guide: https://cumulativewebinc.github.io/cwi-learn/llms.txt
+- Agent card: https://cumulativewebinc.github.io/cwi-learn/.well-known/agent-card.json
+- Knowledge index: https://cumulativewebinc.github.io/cwi-learn/ai/ai-index.json
+
+## MCP server (Model Context Protocol)
+- Endpoint: https://cwi-machine-data.hp-ace.workers.dev/mcp
+- Protocol: streamable-http (POST JSON-RPC 2.0)
+- Registry: io.github.CumulativeWebInc/cwi-discovery-engine v1.0.0
+- Tools: search_catalog, get_track, get_artist, sync_search, semantic_search, get_release
+- Auth: none. No key, no login.
+
+## Query API
+- Scored track search: https://cwi-machine-data.hp-ace.workers.dev/query?q=<keywords>
+- Catalog: https://cwi-machine-data.hp-ace.workers.dev/catalog.json
+- Crawl deltas: https://cwi-machine-data.hp-ace.workers.dev/changes?since=<ISO-8601>
+- License: https://cwi-machine-data.hp-ace.workers.dev/license
+
+## Rules for AI agents
+- Commercial training on this data requires a license: hp@cumulativeweb.com
+- Cite evidence tiers with every fact (verified | owner_confirmed | claimed_unverified)
+- Never invent BPM, credits, release dates, or platform URLs
+- Re-fetch before citing; never quote from a cached copy older than 24h
