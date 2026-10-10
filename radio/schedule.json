@@ -3,13 +3,13 @@
   "program_id": "radio365-main",
   "program_version": "2026-10-10a",
   "epoch": "2026-10-03T00:00:00Z",
-  "period_seconds": 25636.845,
-  "generated_at": "2026-10-10T12:00:11.921081+00:00",
+  "period_seconds": 25811.018,
+  "generated_at": "2026-10-10T12:15:00.250264+00:00",
   "generator": "radio-add-song/1.0",
   "segment_seconds": 10.0,
   "playlist_url": "https://cumulativeweb.com/radio/hls/program.m3u8",
-  "track_count_slots": 133,
-  "track_count_unique": 32,
+  "track_count_slots": 134,
+  "track_count_unique": 33,
   "tracks": [
     {
       "slot": 0,
@@ -1117,6 +1117,14 @@
       "artist": "That Boy Hi Hat",
       "title": "That Boy Hi Hat - Ultimate",
       "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-ultimate.jpg"
+    },
+    {
+      "slot": 133,
+      "offset_seconds": 25636.845,
+      "duration_seconds": 174.173,
+      "artist": "That Boy Hi Hat",
+      "title": "Flamerz",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-flamerz.jpg"
     }
   ]
 }
