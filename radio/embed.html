@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cumulative Radio 365 — Embed</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #fff; }
+  .widget { display: flex; align-items: center; width: 300px; height: 120px; padding: 12px; gap: 12px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #0a0a0a 100%); border-radius: 8px; }
+  .art { width: 96px; height: 96px; border-radius: 6px; object-fit: cover; flex-shrink: 0; background: #222; }
+  .info { flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center; gap: 4px; }
+  .brand { font-size: 9px; text-transform: uppercase; letter-spacing: .1em; color: #888; }
+  .title { font-size: 14px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .artist { font-size: 12px; color: #aaa; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .play-btn { width: 44px; height: 44px; border-radius: 50%; border: none; cursor: pointer; flex-shrink: 0;
+    background: #e63946; color: #fff; font-size: 18px; display: flex; align-items: center; justify-content: center; }
+  .play-btn:hover { background: #d62839; }
+  .play-btn:disabled { opacity: .5; cursor: wait; }
+  audio { display: none; }
+</style>
+</head>
+<body>
+<div class="widget">
+  <img class="art" id="wArt" src="https://cumulativeweb.com/assets/cwi-logo.jpg" alt="Track art">
+  <div class="info">
+    <div class="brand">Cumulative Radio 365</div>
+    <div class="title" id="wTitle">Loading…</div>
+    <div class="artist" id="wArtist">Live 24/7</div>
+  </div>
+  <button class="play-btn" id="wPlay" aria-label="Play Cumulative Radio 365">▶</button>
+</div>
+<audio id="wAudio" preload="none"></audio>
+<script>
+(function () {
+  var STREAM = 'https://radio.cumulativeweb.com/live.m3u8';
+  var NP_URL = 'https://radio.cumulativeweb.com/nowplaying.json';
+  var SCHEDULE_URL = 'https://cumulativeweb.com/radio/schedule.json';
+  var HLSJS = 'https://cdn.jsdelivr.net/npm/hls.js@1.5.13';
+  var FALLBACK_ART = 'https://cumulativeweb.com/assets/cwi-logo.jpg';
+
+  var audio = document.getElementById('wAudio');
+  var btn = document.getElementById('wPlay');
+  var elTitle = document.getElementById('wTitle');
+  var elArtist = document.getElementById('wArtist');
+  var elArt = document.getElementById('wArt');
+  var hls = null;
+  var playing = false;
+
+  /* Now-playing: fetch from API, update display */
+  function updateNowPlaying() {
+    fetch(NP_URL, { cache: 'no-store' })
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (d.title) elTitle.textContent = d.title;
+        if (d.artist) elArtist.textContent = d.artist;
+        var art = d.artwork || FALLBACK_ART;
+        if (elArt.getAttribute('src') !== art) elArt.src = art;
+      })
+      .catch(function () { /* keep last good values */ });
+  }
+  updateNowPlaying();
+  setInterval(updateNowPlaying, 30000);
+
+  /* HLS setup */
+  function initHls() {
+    return new Promise(function (resolve) {
+      if (audio.canPlayType('application/vnd.apple.mpegurl')) {
+        audio.src = STREAM; // native (iOS/desktop Safari)
+        resolve();
+      } else if (window.Hls && Hls.isSupported()) {
+        hls = new Hls({ maxBufferLength: 30 });
+        hls.loadSource(STREAM);
+        hls.attachMedia(audio);
+        resolve();
+      } else {
+        var s = document.createElement('script');
+        s.src = HLSJS;
+        s.onload = function () {
+          if (Hls.isSupported()) {
+            hls = new Hls({ maxBufferLength: 30 });
+            hls.loadSource(STREAM);
+            hls.attachMedia(audio);
+          }
+          resolve();
+        };
+        s.onerror = function () { resolve(); };
+        document.head.appendChild(s);
+      }
+    });
+  }
+
+  /* Tap-to-play (no autoplay — browsers block it) */
+  btn.addEventListener('click', function () {
+    if (playing) {
+      audio.pause();
+      playing = false;
+      btn.textContent = '▶';
+      btn.setAttribute('aria-label', 'Play Cumulative Radio 365');
+      return;
+    }
+    btn.disabled = true;
+    btn.textContent = '…';
+    initHls().then(function () {
+      /* iOS: play() returns a promise — must catch */
+      try {
+        var p = audio.play();
+        if (p && p.catch) {
+          p.then(function () {
+            playing = true;
+            btn.textContent = '⏸';
+            btn.setAttribute('aria-label', 'Pause Cumulative Radio 365');
+            btn.disabled = false;
+          }).catch(function () {
+            btn.textContent = '▶';
+            btn.disabled = false;
+          });
+        } else {
+          playing = true;
+          btn.textContent = '⏸';
+          btn.disabled = false;
+        }
+      } catch (e) {
+        btn.textContent = '▶';
+        btn.disabled = false;
+      }
+    });
+  });
+
+  audio.addEventListener('pause', function () {
+    if (playing) { playing = false; btn.textContent = '▶'; }
+  });
+  audio.addEventListener('error', function () {
+    playing = false; btn.textContent = '▶'; btn.disabled = false;
+    elTitle.textContent = 'Stream unavailable';
+  });
+})();
+</script>
+</body>
+</html>
