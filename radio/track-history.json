@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-09T23:35:59.625Z",
+  "updated_at": "2026-10-10T00:35:28.089Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "King Ahkeem",
-      "title": "Bluefaces 3.0",
-      "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-bluefaces-3-0.jpg",
-      "slot_index": 126,
-      "played_at": "2026-10-09T23:35:59.625Z",
-      "track_ends_at": "2026-10-09T23:36:31.295Z"
+      "artist": "Greg Porn",
+      "title": "Unholy Hunters (Ref 1.0)",
+      "artwork": null,
+      "slot_index": 14,
+      "played_at": "2026-10-10T00:35:28.089Z",
+      "track_ends_at": "2026-10-10T00:35:51.134Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
