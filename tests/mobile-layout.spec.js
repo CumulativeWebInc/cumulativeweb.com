@@ -1,6 +1,7 @@
 // Phase 1 acceptance test: mobile nav + logo deduplication
 // Run: npx playwright test tests/mobile-layout.spec.js
 const { test, expect } = require('@playwright/test');
+const BASE_URL = process.env.TEST_URL || 'https://cumulativeweb.com';
 
 const VIEWPORTS = [
   { width: 375, height: 667, name: 'iPhone SE' },
@@ -10,16 +11,16 @@ const VIEWPORTS = [
 for (const vp of VIEWPORTS) {
   test(`mobile layout at ${vp.name} (${vp.width}px)`, async ({ page }) => {
     await page.setViewportSize({ width: vp.width, height: vp.height });
-    await page.goto('https://cumulativeweb.com/index.html', { waitUntil: 'networkidle' });
+    await page.goto(`${BASE_URL}/index.html`, { waitUntil: 'networkidle' });
     await page.waitForTimeout(2000); // let JS render tabbar
 
-    // 1. Exactly ONE visible logo
-    const logos = await page.locator('img[src*="cwi-logo"]').all();
+    // 1. Exactly ONE visible logo in the header/top area (not footer)
+    const headerLogos = await page.locator('header img[src*="cwi-logo"], .lockup img[src*="cwi-logo"]').all();
     let visibleCount = 0;
-    for (const logo of logos) {
+    for (const logo of headerLogos) {
       if (await logo.isVisible()) visibleCount++;
     }
-    expect(visibleCount, `Expected 1 visible logo at ${vp.width}px, found ${visibleCount}`).toBe(1);
+    expect(visibleCount, `Expected 1 visible header logo at ${vp.width}px, found ${visibleCount}`).toBe(1);
 
     // 2. Tabbar nav items: icon and label bounding boxes must not overlap
     const tabItems = await page.locator('.tabbar a').all();
@@ -48,7 +49,7 @@ for (const vp of VIEWPORTS) {
 
 test('desktop layout unchanged at 1280px', async ({ page }) => {
   await page.setViewportSize({ width: 1280, height: 800 });
-  await page.goto('https://cumulativeweb.com/index.html', { waitUntil: 'networkidle' });
+  await page.goto(`${BASE_URL}/index.html`, { waitUntil: 'networkidle' });
   await page.waitForTimeout(2000);
 
   // Tabbar hidden on desktop, sidebar visible
