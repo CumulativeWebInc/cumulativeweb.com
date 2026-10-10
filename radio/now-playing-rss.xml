@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Sat, 10 Oct 2026 18:37:07 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 10 Oct 2026 19:35:23 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>That Boy Hi Hat - Broken Hearts Club (Mix 1)</title>
+    <title>That Boy Hi Hat - Painted Lady</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Broken Hearts Club (Mix 1) (slot 116, ends 2026-10-10T18:38:47.467Z)</description>
-    <pubDate>Sat, 10 Oct 2026 18:37:07 GMT</pubDate>
-    <guid isPermaLink="false">radio365-116-2026-10-10T18:38:47.467Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Painted Lady (slot 134, ends 2026-10-10T19:37:20.480Z)</description>
+    <pubDate>Sat, 10 Oct 2026 19:35:23 GMT</pubDate>
+    <guid isPermaLink="false">radio365-134-2026-10-10T19:37:20.480Z</guid>
+    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-painted-lady.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
