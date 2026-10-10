@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Sat, 10 Oct 2026 03:36:36 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 10 Oct 2026 04:36:01 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>That Boy Hi Hat - Broken Hearts Club</title>
+    <title>That Boy Hi Hat - Shaka Zulu</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Broken Hearts Club (slot 71, ends 2026-10-10T03:37:47.304Z)</description>
-    <pubDate>Sat, 10 Oct 2026 03:36:36 GMT</pubDate>
-    <guid isPermaLink="false">radio365-71-2026-10-10T03:37:47.304Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Shaka Zulu (slot 90, ends 2026-10-10T04:38:42.531Z)</description>
+    <pubDate>Sat, 10 Oct 2026 04:36:01 GMT</pubDate>
+    <guid isPermaLink="false">radio365-90-2026-10-10T04:38:42.531Z</guid>
+    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
