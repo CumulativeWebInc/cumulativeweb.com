@@ -3,13 +3,13 @@
   "program_id": "radio365-main",
   "program_version": "2026-10-10a",
   "epoch": "2026-10-03T00:00:00Z",
-  "period_seconds": 25456.194,
-  "generated_at": "2026-10-10T10:09:04.662475+00:00",
+  "period_seconds": 25636.845,
+  "generated_at": "2026-10-10T12:00:11.921081+00:00",
   "generator": "radio-add-song/1.0",
   "segment_seconds": 10.0,
   "playlist_url": "https://cumulativeweb.com/radio/hls/program.m3u8",
-  "track_count_slots": 132,
-  "track_count_unique": 31,
+  "track_count_slots": 133,
+  "track_count_unique": 32,
   "tracks": [
     {
       "slot": 0,
@@ -1109,6 +1109,14 @@
       "artist": "Black Lansky",
       "title": "Be Mad",
       "artwork": "https://cumulativeweb.com/radio/art/Black Lansky - Be_Mad.jpg"
+    },
+    {
+      "slot": 132,
+      "offset_seconds": 25456.194,
+      "duration_seconds": 180.651,
+      "artist": "That Boy Hi Hat",
+      "title": "That Boy Hi Hat - Ultimate",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-ultimate.jpg"
     }
   ]
 }
