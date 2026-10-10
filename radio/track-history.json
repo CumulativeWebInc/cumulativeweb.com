@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-10T17:35:27.312Z",
+  "updated_at": "2026-10-10T18:35:55.860Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "183 Wildboi",
-      "title": "Stunt",
-      "artwork": "https://cumulativeweb.com/radio/art/183-wildboi-stunt.jpg",
-      "slot_index": 98,
-      "played_at": "2026-10-10T17:35:27.312Z",
-      "track_ends_at": "2026-10-10T17:37:26.971Z"
+      "artist": "That Boy Hi Hat",
+      "title": "Broken Hearts Club (Mix 1)",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg",
+      "slot_index": 116,
+      "played_at": "2026-10-10T18:35:55.860Z",
+      "track_ends_at": "2026-10-10T18:38:47.467Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
