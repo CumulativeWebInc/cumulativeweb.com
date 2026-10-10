@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-10T22:35:21.745Z",
+  "updated_at": "2026-10-10T23:35:22.718Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "Greg Porn",
-      "title": "Unholy Hunters (Ref 1.0)",
-      "artwork": "https://cumulativeweb.com/assets/artist-greg-porn.jpg",
-      "slot_index": 56,
-      "played_at": "2026-10-10T22:35:21.745Z",
-      "track_ends_at": "2026-10-10T22:37:21.908Z"
+      "artist": "That Boy Hi Hat",
+      "title": "Golden Diamond",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg",
+      "slot_index": 74,
+      "played_at": "2026-10-10T23:35:22.718Z",
+      "track_ends_at": "2026-10-10T23:35:56.903Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
