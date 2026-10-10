@@ -1,0 +1,42 @@
+{
+  "packet_type": "cwi-proof-of-airplay",
+  "packet_version": "1.0",
+  "station": "Cumulative Radio 365",
+  "station_url": "https://cumulativeweb.com/radio.html",
+  "stream_url": "https://cumulativeweb.com/radio/hls/program.m3u8",
+  "track": {
+    "artist": "Black Lansky",
+    "title": "Be Mad",
+    "artwork": "https://cumulativeweb.com/radio/art/Black Lansky - Be_Mad.jpg",
+    "slot": 131,
+    "duration_seconds": 285.303,
+    "spotify_url": null,
+    "isrc": null,
+    "metadata_status": {
+      "artwork": "available",
+      "spotify_url": "unavailable: no value in schedule.json and no verified source on record",
+      "isrc": "unavailable: no value in schedule.json and no verified source on record"
+    }
+  },
+  "airplay": {
+    "next_airtime_utc": "2026-10-10T15:46:15.741000+00:00",
+    "next_airtime_human": "Saturday, October 10 at 03:46 PM UTC",
+    "loop_iteration": 25,
+    "program_period_hours": 7.1,
+    "schedule_version": "2026-10-10a"
+  },
+  "share": {
+    "text": "\ud83d\udcfb ON AIR: \"Be Mad\" by Black Lansky is spinning on Cumulative Radio 365 \u2014 next play Saturday at 03:46 PM UTC. Tune in: https://cumulativeweb.com/radio.html",
+    "hashtags": "#Radio365 #IndependentRadio #SupportIndieMusic"
+  },
+  "embed": {
+    "player_iframe": "<iframe src=\"https://cumulativeweb.com/radio.html\" width=\"100%\" height=\"400\" frameborder=\"0\" title=\"Cumulative Radio 365 \u2014 now playing: Black Lansky - Be Mad\"></iframe>"
+  },
+  "verification": {
+    "generated_at": "2026-10-10T10:13:14.375790+00:00",
+    "generator": "cwi-proof-packet/1.0",
+    "schedule_epoch": "2026-10-03T00:00:00Z",
+    "evidence_tier": "owner_confirmed"
+  },
+  "page_url": "https://cumulativeweb.com/radio/proof/black-lansky-be-mad.html"
+}
