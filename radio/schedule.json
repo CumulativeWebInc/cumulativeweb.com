@@ -3,13 +3,13 @@
   "program_id": "radio365-main",
   "program_version": "2026-10-10a",
   "epoch": "2026-10-03T00:00:00Z",
-  "period_seconds": 25985.191,
-  "generated_at": "2026-10-10T12:17:14.156410+00:00",
+  "period_seconds": 26152.653,
+  "generated_at": "2026-10-10T12:19:01.336624+00:00",
   "generator": "radio-add-song/1.0",
   "segment_seconds": 10.0,
   "playlist_url": "https://cumulativeweb.com/radio/hls/program.m3u8",
-  "track_count_slots": 135,
-  "track_count_unique": 33,
+  "track_count_slots": 136,
+  "track_count_unique": 34,
   "tracks": [
     {
       "slot": 0,
@@ -1133,6 +1133,14 @@
       "artist": "That Boy Hi Hat",
       "title": "Flamerz",
       "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-flamerz.jpg"
+    },
+    {
+      "slot": 135,
+      "offset_seconds": 25985.191,
+      "duration_seconds": 167.462,
+      "artist": "That Boy Hi Hat",
+      "title": "Painted Lady",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-painted-lady.jpg"
     }
   ]
 }
