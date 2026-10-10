@@ -163,11 +163,20 @@ p { margin: 0 0 var(--space-4); color: var(--cwi-text-sub); }
 .tabbar { position: fixed; inset: auto 0 0 0; height: var(--tabbar-h); background: var(--cwi-bg-deep);
   border-top: 1px solid var(--cwi-border); display: flex; z-index: 40; }
 .tabbar a { flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: 2px; color: var(--cwi-text-sub); font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+  gap: 4px; color: var(--cwi-text-sub); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em;
+  min-height: 44px; min-width: 44px; padding: 6px 2px; }
 .tabbar a.active { color: var(--cwi-text); }
 .tabbar a:hover { text-decoration: none; color: var(--cwi-text); }
 .tabbar svg { width: 22px; height: 22px; fill: currentColor; flex: 0 0 auto; }
-.tabbar a .tab-label { display: block; max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tabbar a .tab-label { display: block; max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 12px; }
+
+/* Mobile logo deduplication (2026-10-10): on small screens, hide the duplicate
+   CWI logos rendered inside .lockup view headers — the navbar brand logo remains
+   the single visible logo. */
+@media (max-width: 767px) {
+  .lockup .cwi img { display: none; }
+  .navbar .brand img { max-height: 40px; width: auto; }
+}
 
 .main { min-width: 0; padding-bottom: calc(var(--tabbar-h) + 110px); }
 .content { max-width: 1400px; margin: 0 auto; padding: var(--pad-page); }
