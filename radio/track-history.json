@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-10T09:35:31.154Z",
+  "updated_at": "2026-10-10T10:35:20.518Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Shaka Zulu",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg",
-      "slot_index": 53,
-      "played_at": "2026-10-10T09:35:31.154Z",
-      "track_ends_at": "2026-10-10T09:39:15.093Z"
+      "title": "Golden Diamond",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg",
+      "slot_index": 34,
+      "played_at": "2026-10-10T10:35:20.518Z",
+      "track_ends_at": "2026-10-10T10:38:39.879Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
