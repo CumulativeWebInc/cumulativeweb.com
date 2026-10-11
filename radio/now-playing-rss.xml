@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Sun, 11 Oct 2026 21:35:20 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 11 Oct 2026 22:35:24 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>Black Lansky - Be Mad</title>
+    <title>That Boy Hi Hat - Diabolique</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: Black Lansky - Be Mad (slot 126, ends 2026-10-11T21:36:52.631Z)</description>
-    <pubDate>Sun, 11 Oct 2026 21:35:20 GMT</pubDate>
-    <guid isPermaLink="false">radio365-126-2026-10-11T21:36:52.631Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/Black Lansky - Be_Mad.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Diabolique (slot 15, ends 2026-10-11T22:35:40.432Z)</description>
+    <pubDate>Sun, 11 Oct 2026 22:35:24 GMT</pubDate>
+    <guid isPermaLink="false">radio365-15-2026-10-11T22:35:40.432Z</guid>
+    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
