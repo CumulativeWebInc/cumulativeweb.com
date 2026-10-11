@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-11T22:35:24.802Z",
+  "updated_at": "2026-10-11T23:35:20.801Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Diabolique",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg",
-      "slot_index": 15,
-      "played_at": "2026-10-11T22:35:24.802Z",
-      "track_ends_at": "2026-10-11T22:35:40.432Z"
+      "title": "Golden Diamond",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg",
+      "slot_index": 34,
+      "played_at": "2026-10-11T23:35:20.801Z",
+      "track_ends_at": "2026-10-11T23:37:29.946Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
