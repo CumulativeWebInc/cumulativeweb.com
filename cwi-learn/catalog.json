@@ -1,0 +1,85 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://cumulativeweb.com/cwi-learn/catalog.json",
+  "name": "CWI Music Catalog — Machine-Readable Dataset",
+  "description": "Complete machine-readable catalog of Cumulative Web Inc music releases: 28 tracks across 6 artists, with credits, streaming links, and sync metadata. Post-Trap Futurism and affiliated genres.",
+  "url": "https://cumulativeweb.com/cwi-learn/catalog.json",
+  "license": "https://cumulativeweb.com/license.html",
+  "creator": {
+    "@type": "Organization",
+    "@id": "https://cumulativeweb.com/#org",
+    "name": "Cumulative Web Inc"
+  },
+  "dateModified": "2026-10-11",
+  "keywords": [
+    "music catalog",
+    "alternative rap",
+    "post-trap futurism",
+    "independent label",
+    "sync licensing"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cumulativeweb.com/cwi-learn/catalog.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cumulativeweb.com/data/roster.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cumulativeweb.com/graph.json",
+      "encodingFormat": "application/json"
+    }
+  ],
+  "artists": [
+    {
+      "name": "183 Wilboi",
+      "url": "https://cumulativeweb.com/data/artists/183-wildboi.json"
+    },
+    {
+      "name": "Black Lansky",
+      "url": "https://cumulativeweb.com/data/artists/black-lansky.json"
+    },
+    {
+      "name": "Dre50",
+      "url": "https://cumulativeweb.com/data/artists/dre50.json"
+    },
+    {
+      "name": "Fleekz",
+      "url": "https://cumulativeweb.com/data/artists/fleekz.json"
+    },
+    {
+      "name": "Greg Porn",
+      "url": "https://cumulativeweb.com/data/artists/greg-porn.json"
+    },
+    {
+      "name": "Hybrid",
+      "url": "https://cumulativeweb.com/data/artists/hybrid.json"
+    },
+    {
+      "name": "Jeck Da General",
+      "url": "https://cumulativeweb.com/data/artists/jeck-da-general.json"
+    },
+    {
+      "name": "King Akeem",
+      "url": "https://cumulativeweb.com/data/artists/king-akeem.json"
+    },
+    {
+      "name": "That Boy Hi Hat",
+      "url": "https://cumulativeweb.com/data/artists/that-boy-hi-hat.json"
+    }
+  ],
+  "trackCount": 28,
+  "catalogUrls": {
+    "roster": "https://cumulativeweb.com/data/roster.json",
+    "graph": "https://cumulativeweb.com/graph.json",
+    "embeddings": "https://cumulativeweb.com/data/catalog-embeddings.json",
+    "llms": "https://cumulativeweb.com/llms.txt",
+    "api": "https://cwi-machine-data.hp-ace.workers.dev/query"
+  }
+}
