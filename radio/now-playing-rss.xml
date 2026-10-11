@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Sun, 11 Oct 2026 00:35:28 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 11 Oct 2026 01:35:20 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>That Boy Hi Hat - Rainbows And Roses</title>
+    <title>That Boy Hi Hat - Shaka Zulu</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Rainbows And Roses (slot 93, ends 2026-10-11T00:37:51.344Z)</description>
-    <pubDate>Sun, 11 Oct 2026 00:35:28 GMT</pubDate>
-    <guid isPermaLink="false">radio365-93-2026-10-11T00:37:51.344Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-rainbows-and-roses.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Shaka Zulu (slot 112, ends 2026-10-11T01:37:56.392Z)</description>
+    <pubDate>Sun, 11 Oct 2026 01:35:20 GMT</pubDate>
+    <guid isPermaLink="false">radio365-112-2026-10-11T01:37:56.392Z</guid>
+    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
