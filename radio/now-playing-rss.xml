@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Sun, 11 Oct 2026 16:35:32 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 11 Oct 2026 17:35:24 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>That Boy Hi Hat - 7th Angel</title>
+    <title>That Boy Hi Hat - Place I Go to Dream</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - 7th Angel (slot 32, ends 2026-10-11T16:37:41.257Z)</description>
-    <pubDate>Sun, 11 Oct 2026 16:35:32 GMT</pubDate>
-    <guid isPermaLink="false">radio365-32-2026-10-11T16:37:41.257Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Place I Go to Dream (slot 51, ends 2026-10-11T17:36:15.697Z)</description>
+    <pubDate>Sun, 11 Oct 2026 17:35:24 GMT</pubDate>
+    <guid isPermaLink="false">radio365-51-2026-10-11T17:36:15.697Z</guid>
+    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-place-i-go-to-dream-remastered.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
