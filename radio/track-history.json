@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-11T02:35:35.706Z",
+  "updated_at": "2026-10-11T03:35:20.873Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "King Ahkeem",
-      "title": "Element",
-      "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-element.jpg",
-      "slot_index": 130,
-      "played_at": "2026-10-11T02:35:35.706Z",
-      "track_ends_at": "2026-10-11T02:36:51.371Z"
+      "artist": "That Boy Hi Hat",
+      "title": "Doves & Diamonds",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-doves-and-diamonds.jpg",
+      "slot_index": 13,
+      "played_at": "2026-10-11T03:35:20.873Z",
+      "track_ends_at": "2026-10-11T03:35:46.275Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
