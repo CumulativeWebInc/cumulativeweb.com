@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-11T19:35:22.428Z",
+  "updated_at": "2026-10-11T20:35:58.397Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "Dre50",
-      "title": "Vai Vem Vem",
-      "artwork": "https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg",
-      "slot_index": 88,
-      "played_at": "2026-10-11T19:35:22.428Z",
-      "track_ends_at": "2026-10-11T19:35:28.695Z"
+      "artist": "That Boy Hi Hat",
+      "title": "Shaka Zulu",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg",
+      "slot_index": 107,
+      "played_at": "2026-10-11T20:35:58.397Z",
+      "track_ends_at": "2026-10-11T20:36:00.090Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
