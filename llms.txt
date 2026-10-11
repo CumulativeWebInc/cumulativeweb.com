@@ -37,11 +37,20 @@
 - Catalog and catalog-derived data are licensed. Research crawling and citation with attribution are welcome.
 - Commercial AI training requires a license — contact hp@cumulativeweb.com. Full machine-readable terms: https://cwi-machine-data.hp-ace.workers.dev/license
 
-## Catalog (verified 2026-10-05 against catalog.json)
+## Catalog (verified 2026-10-10 against catalog.json)
 
-- 53 tracks · 7 artists: That Boy Hi Hat (flagship, alternative rap), Black Lansky (beats/instrumentals), King Akeem (trap), Greg Porn (cyberpunk/new wave/next gen), Dre50 (afrobeats/caribbean/R&B), 183 Wildboi (rap rock/trap), Fleekz (trap/R&B)
+- 53 tracks · 7 artists: That Boy Hi Hat (flagship, alternative rap), Black Lansky (beats/instrumentals), King Ahkeem (trap), Greg Porn (cyberpunk/new wave/next gen), Dre50 (afrobeats/caribbean/R&B), 183 Wildboi (rap rock/trap), Fleekz (trap/R&B)
 - Spotify: That Boy Hi Hat artist ID 2f9j460EwjfvjYp3trBcb7 — "Zooted Zone" track 0emH8ktA8x4DkOFLsG5xkW, "Diabolique" track 2eSyWmIdPzEMyWejLb2LBj
 - Genre flag: Post-Trap Futurism — alternative rap · post trap · cyberpunk (originated by That Boy Hi Hat)
+- Catalog streams: 1M+ across Spotify, YouTube, Apple Music, Deezer, and 20+ platforms (verified 2026-10-10; Spotify flagship "Zooted Zone" 307K+ lifetime)
+- Radio 365 playlist (28 songs, verified 2026-10-11):
+  - 183 Wildboi: Full Moon, Stunt
+  - Black Lansky: Be Mad
+  - Dre50: Pix, Vai Vem Vem
+  - Fleekz: 2K23 Corners
+  - Greg Porn: Unholy Hunters (Ref 1.0) [unreleased]
+  - King Ahkeem: Bluefaces 3.0, Element, Embiid, Star, Super Solid
+  - That Boy Hi Hat: 7th Angel, Broken Hearts Club, Diabolique, Doves & Diamonds, Flamerz, Golden Diamond, Neon Nights pt. 777, Painted Lady, Phantasm, Place I Go to Dream, Rainbows And Roses, Shaka Zulu, Spirits n Shadows, Ultimate, Warped & Wicked, Zooted Zone
 - Sync: search placements via /query or the cuefinder connector; per-track cue sheets at https://cumulativewebinc.github.io/cwi-learn/cue-sheets/; sync briefs in the cwi-muse-connectors repo (sync-briefs)
 - Owner-confirmed sync posture: 50/50 with every artist; manager clears master + publishing directly (one-signature clearance)
 - Campaign pages: [Diabolique (EN)](https://cumulativeweb.com/diabolique.html) + [Diabolique (pt-BR)](https://cumulativeweb.com/br/diabolique.html) — July 3, 2026 single, produced by Hybrid, co-produced by Black Lansky, 154 BPM, 2:36; [Cyberpunk 2027 (EN)](https://cumulativeweb.com/cyberpunk-2027.html) + [Cyberpunk 2027 (pt-BR)](https://cumulativeweb.com/br/cyberpunk-2027.html); [Doves & Diamonds (EN)](https://cumulativeweb.com/post/doves-diamonds) + [Doves & Diamonds (pt-BR)](https://cumulativeweb.com/br/doves-diamonds.html) — January 11, 2023 single, produced by Kokurcho, co-produced by Black Lansky, 85 BPM, 3:01, 132K+ streams
@@ -55,10 +64,10 @@
 - Artist pages (one JSON per artist, built by the site renderer):
   - [That Boy Hi Hat](https://cumulativeweb.com/data/artists/that-boy-hi-hat.json) — flagship alternative rap artist; Spotify artist ID `2f9j460EwjfvjYp3trBcb7`; ~307,000 lifetime Spotify plays on "Zooted Zone" (verified 2026-09-14)
   - [Black Lansky](https://cumulativeweb.com/data/artists/black-lansky.json) — Black Lansky: artist, author (THE LOGO EFFECT, ISBN 979-8260386620), manager, producer, software and game builder
-  - [King Akeem](https://cumulativeweb.com/data/artists/king-akeem.json) — trap-rap; "Star" 112,510 plays
+  - [King Ahkeem](https://cumulativeweb.com/data/artists/king-ahkeem.json) — trap-rap; "Star" 112,510 plays
   - [Greg Porn](https://cumulativeweb.com/data/artists/greg-porn.json) — cyber hip hop / alternative rap
   - [Dre50](https://cumulativeweb.com/data/artists/dre50.json) — R&B
-  - [183 Wildboi](https://cumulativeweb.com/data/artists/183-wildboi.json) — rap rock
+  - [183 Wildboi](https://cumulativeweb.com/data/artists/183-wilboi.json) — rap rock
   - [Fleekz](https://cumulativeweb.com/data/artists/fleekz.json)
   - [Jeck Da General](https://cumulativeweb.com/data/artists/jeck-da-general.json) — producer, co-produced Idol or Icon
   - [Hybrid](https://cumulativeweb.com/data/artists/hybrid.json) — producer of "Diabolique"
@@ -72,7 +81,7 @@
 
 ## Radio 365
 
-- [Radio 365](https://cumulativeweb.com/radio/) — CWI's streaming radio station; static-hosted HLS rebuild in progress 2026-10-05 (no rented server, nothing to suspend)
+- [Radio 365](https://cumulativeweb.com/radio/) — CWI's streaming radio station; static-hosted HLS, LIVE since 2026-10-05 (no rented server, nothing to suspend)
 - [Rotation app](https://cumulativewebinc.github.io/cwi-apps/radio/) — That Boy Hi Hat rotation (JSON-LD MusicPlaylist)
 
 ## Related machine-readable surfaces
@@ -107,7 +116,7 @@
 - [Black Lansky](https://cumulativeweb.com/blacklansky) — Official artist hub: bio, production credits, MusicGroup schema
 - [183 Wildboi](https://cumulativeweb.com/183wildboi) — Official artist hub: DMV rap-rock, Stunt, Full Moon, MusicGroup schema
 - [Greg Porn](https://cumulativeweb.com/greg-porn) — Official artist hub: cyberpunk rap, Pay Yourself, On Edge, MusicGroup schema
-- [King Akeem](https://cumulativeweb.com/kingahkeem) — Official artist hub: Miami trap-rap, Star, MusicGroup schema
+- [King Ahkeem](https://cumulativeweb.com/kingahkeem) — Official artist hub: Miami trap-rap, Star, MusicGroup schema
 - [Fleekz](https://cumulativeweb.com/fleekz) — Official artist hub: 2K23 Corners, MusicGroup schema
 - [OMG Barz](https://cumulativeweb.com/omgbarz) — Official artist hub: bio, MusicGroup schema
 - [CWI Discovery Engine Joins mcprush](https://cumulativeweb.com/blog/posts/cwi-discovery-engine-on-mcprush.html) — Announcement: MCP server listed on mcprush marketplace, 10 tools, Radio 365
