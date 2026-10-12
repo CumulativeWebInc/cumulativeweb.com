@@ -737,4 +737,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
+<url><loc>https://cumulativeweb.com/videos/cyberpunk-2027-trailer.html</loc><lastmod>2026-10-12</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://cumulativeweb.com/videos/cyberpunk-2027-trailer.json</loc><lastmod>2026-10-12</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
 </urlset>
