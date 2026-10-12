@@ -34,13 +34,18 @@
       "name": "Cumulative Web Inc",
       "alternateName": "CWI",
       "url": "https://cumulativeweb.com/",
-      "logo": "https://cumulativeweb.com/assets/cwi-logo.jpg",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cumulativeweb.com/assets/cwi-logo.jpg",
+        "width": 1125,
+        "height": 1125
+      },
       "email": "hp@cumulativeweb.com",
-      "description": "Independent record label in the DMV specializing in alternative rap and post-trap futurism. Home of That Boy Hi Hat, Black Lansky, and the CWI roster.",
+      "description": "Independent record label based in Richmond, VA, serving the DMV and worldwide. Specializing in alternative rap and post-trap futurism. Home of That Boy Hi Hat, Black Lansky, and the CWI roster.",
       "foundingDate": "2020",
       "areaServed": [
         {
-          "@type": "GeoShape",
+          "@type": "AdministrativeArea",
           "name": "Washington DC Metropolitan Area"
         },
         {
@@ -93,18 +98,6 @@
       },
       "dateModified": "2026-10-12",
       "inLanguage": "en-US"
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://cumulativeweb.com/#breadcrumbs",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://cumulativeweb.com/"
-        }
-      ]
     },
     {
       "@type": "Person",
@@ -253,11 +246,12 @@
       ]
     },
     {
-      "@type": "RadioStation",
+      "@type": "RadioBroadcastService",
       "@id": "https://cumulativeweb.com/radio#station",
       "name": "Radio 365",
       "url": "https://cumulativeweb.com/radio",
       "description": "CWI's 24/7 streaming radio — the full catalog, roster artists, and alternative rap around the clock.",
+      "broadcastDisplayName": "Cumulative Radio 365",
       "parentOrganization": {
         "@id": "https://cumulativeweb.com/#org"
       }
@@ -267,6 +261,7 @@
       "@id": "https://cumulativeweb.com/#catalog-dataset",
       "name": "CWI Music Catalog",
       "description": "Machine-readable catalog of Cumulative Web Inc music releases — tracks, artists, credits, and streaming links.",
+      "url": "https://cumulativeweb.com/cwi-learn/",
       "creator": {
         "@id": "https://cumulativeweb.com/#org"
       },
@@ -309,7 +304,7 @@
           "name": "How do I submit music for sync licensing?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "CWI offers sync licensing for film, TV, and games. Contact hp@cumulativeweb.com with your project details."
+            "text": "Email hp@cumulativeweb.com with your project details, timeline, and placement type (film, TV, game, ad). Include links to your music or a brief describing what you need. CWI clears both master and publishing in one signature."
           }
         }
       ]
@@ -433,7 +428,7 @@
     <h3>What is Radio 365?</h3>
     <p>Radio 365 is CWI's 24/7 streaming station playing the full catalog — That Boy Hi Hat, roster artists, and alternative rap around the clock.</p>
     <h3>How do I submit music for sync licensing?</h3>
-    <p>CWI offers sync licensing for film, TV, and games. Contact hp@cumulativeweb.com with your project details.</p>
+    <p>Email hp@cumulativeweb.com with your project details, timeline, and placement type (film, TV, game, ad). Include links to your music or a brief describing what you need.</p>
   </div>
 </section>
 <style>.seo-content{max-width:900px;margin:0 auto;padding:48px 24px;color:#e8e8e8}.seo-content h1{font-size:2rem;margin-bottom:16px}.seo-content h2{font-size:1.4rem;margin:32px 0 12px}.seo-content h3{font-size:1.1rem;margin:20px 0 8px}.seo-content p{line-height:1.7;margin-bottom:12px}.seo-content a{color:#7ec8ff}</style>
