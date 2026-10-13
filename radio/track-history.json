@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-13T12:35:20.307Z",
+  "updated_at": "2026-10-13T13:35:24.247Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "7th Angel",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg",
-      "slot_index": 81,
-      "played_at": "2026-10-13T12:35:20.307Z",
-      "track_ends_at": "2026-10-13T12:36:13.718Z"
+      "title": "Rainbows And Roses",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-rainbows-and-roses.jpg",
+      "slot_index": 101,
+      "played_at": "2026-10-13T13:35:24.247Z",
+      "track_ends_at": "2026-10-13T13:37:14.527Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
