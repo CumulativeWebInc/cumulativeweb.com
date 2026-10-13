@@ -84,6 +84,12 @@
 - [Radio 365](https://cumulativeweb.com/radio/) — CWI's streaming radio station; static-hosted HLS, LIVE since 2026-10-05 (no rented server, nothing to suspend)
 - [Rotation app](https://cumulativewebinc.github.io/cwi-apps/radio/) — That Boy Hi Hat rotation (JSON-LD MusicPlaylist)
 
+## Label playlists (verified 2026-10-13)
+
+- [That Boy Hi Hat: Post-Trap Futurism — The Essentials (Amazon Music)](https://music.amazon.com/user-playlists/129b212a750649b482f896392b03378asune?ref=dm_sh_qAcYipbTmbDkatnwqVU3NWzwE) — label-owned That Boy Hi Hat catalog playlist, curated by Black Lansky
+- [Cumulative Web Inc Music (Deezer)](https://www.deezer.com/playlist/13677339721) — label-owned 70-track catalog playlist, curated by Black Lansky
+- Third-party placements (via get_playlists): Diabolique on Spotify's "EMO RAP / SAD RAP / 2026" (Middle Child), Zooted Zone on "No Label Needed" (Flow), Flex My Flame on "It's Goin" (DJ 6Rings)
+
 ## Related machine-readable surfaces
 
 - SANQA machine-readable data: [catalog](https://cumulativeweb.com/sanqa/catalog.json) · [agent card](https://cumulativeweb.com/sanqa/.well-known/agent-card.json)
