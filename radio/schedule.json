@@ -1,111 +1,112 @@
 {
- "epoch": "2026-10-03T00:00:00Z",
- "period_seconds": 24859.84,
+ "epoch": "2026-10-03T00:00:00.000Z",
+ "period_seconds": 24859.8395669996,
  "program_version": "2026-10-13c",
  "build_id": "radio365-2026-10-13c",
  "generated": "2026-10-13T24:00:00Z",
  "method": "re-measured cross-correlation on corrected clock (true_durations_v2), 12 slots interpolated",
+ "audio_id": "2494:24859.840",
  "tracks": [
   {
    "slot": 0,
    "offset_seconds": 0.0,
-   "duration_seconds": 166.411,
+   "duration_seconds": 168.072,
    "artist": "That Boy Hi Hat",
    "title": "Place I Go to Dream",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-place-i-go-to-dream-remastered.jpg"
   },
   {
    "slot": 1,
-   "offset_seconds": 166.411,
-   "duration_seconds": 168.541,
+   "offset_seconds": 168.072,
+   "duration_seconds": 166.8798,
    "artist": "Dre50",
    "title": "Vai Vem Vem",
    "artwork": "https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg"
   },
   {
    "slot": 2,
-   "offset_seconds": 334.952,
-   "duration_seconds": 187.925,
+   "offset_seconds": 334.9518,
+   "duration_seconds": 187.9249,
    "artist": "That Boy Hi Hat",
    "title": "Broken Hearts Club",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg"
   },
   {
    "slot": 3,
-   "offset_seconds": 522.877,
-   "duration_seconds": 251.664,
+   "offset_seconds": 522.8767,
+   "duration_seconds": 251.6639,
    "artist": "That Boy Hi Hat",
    "title": "Shaka Zulu",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg"
   },
   {
    "slot": 4,
-   "offset_seconds": 774.54,
-   "duration_seconds": 242.756,
+   "offset_seconds": 774.5406,
+   "duration_seconds": 242.7557,
    "artist": "That Boy Hi Hat",
    "title": "Golden Diamond",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg"
   },
   {
    "slot": 5,
-   "offset_seconds": 1017.296,
-   "duration_seconds": 240.066,
+   "offset_seconds": 1017.2963,
+   "duration_seconds": 240.0655,
    "artist": "That Boy Hi Hat",
    "title": "7th Angel",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg"
   },
   {
    "slot": 6,
-   "offset_seconds": 1257.362,
-   "duration_seconds": 181.544,
+   "offset_seconds": 1257.3618,
+   "duration_seconds": 181.5441,
    "artist": "That Boy Hi Hat",
    "title": "Doves & Diamonds",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-doves-and-diamonds.jpg"
   },
   {
    "slot": 7,
-   "offset_seconds": 1438.906,
-   "duration_seconds": 122.54,
+   "offset_seconds": 1438.9059,
+   "duration_seconds": 122.5403,
    "artist": "Greg Porn",
    "title": "Unholy Hunters (Ref 1.0)",
    "artwork": "https://cumulativeweb.com/assets/artist-greg-porn.jpg"
   },
   {
    "slot": 8,
-   "offset_seconds": 1561.446,
-   "duration_seconds": 155.899,
+   "offset_seconds": 1561.4462,
+   "duration_seconds": 155.8989,
    "artist": "That Boy Hi Hat",
    "title": "Diabolique",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg"
   },
   {
    "slot": 9,
-   "offset_seconds": 1717.345,
-   "duration_seconds": 185.521,
+   "offset_seconds": 1717.3451,
+   "duration_seconds": 185.5213,
    "artist": "That Boy Hi Hat",
    "title": "Zooted Zone",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg"
   },
   {
    "slot": 10,
-   "offset_seconds": 1902.866,
-   "duration_seconds": 240.614,
+   "offset_seconds": 1902.8664,
+   "duration_seconds": 240.6137,
    "artist": "That Boy Hi Hat",
    "title": "Rainbows And Roses",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-rainbows-and-roses.jpg"
   },
   {
    "slot": 11,
-   "offset_seconds": 2143.48,
-   "duration_seconds": 152.208,
+   "offset_seconds": 2143.4801,
+   "duration_seconds": 152.2082,
    "artist": "183 Wildboi",
    "title": "Stunt",
    "artwork": "https://cumulativeweb.com/radio/art/183-wildboi-stunt.jpg"
   },
   {
    "slot": 12,
-   "offset_seconds": 2295.688,
-   "duration_seconds": 251.664,
+   "offset_seconds": 2295.6883,
+   "duration_seconds": 251.6637,
    "artist": "That Boy Hi Hat",
    "title": "Shaka Zulu",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg"
@@ -113,127 +114,127 @@
   {
    "slot": 13,
    "offset_seconds": 2547.352,
-   "duration_seconds": 181.544,
+   "duration_seconds": 181.5441,
    "artist": "That Boy Hi Hat",
    "title": "Doves & Diamonds",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-doves-and-diamonds.jpg"
   },
   {
    "slot": 14,
-   "offset_seconds": 2728.896,
-   "duration_seconds": 122.54,
+   "offset_seconds": 2728.8961,
+   "duration_seconds": 122.5403,
    "artist": "Greg Porn",
    "title": "Unholy Hunters (Ref 1.0)",
    "artwork": "https://cumulativeweb.com/assets/artist-greg-porn.jpg"
   },
   {
    "slot": 15,
-   "offset_seconds": 2851.436,
-   "duration_seconds": 154.843,
+   "offset_seconds": 2851.4364,
+   "duration_seconds": 155.8986,
    "artist": "That Boy Hi Hat",
    "title": "Diabolique",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg"
   },
   {
    "slot": 16,
-   "offset_seconds": 3006.279,
-   "duration_seconds": 167.936,
+   "offset_seconds": 3007.335,
+   "duration_seconds": 166.8801,
    "artist": "Dre50",
    "title": "Vai Vem Vem",
    "artwork": "https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg"
   },
   {
    "slot": 17,
-   "offset_seconds": 3174.215,
-   "duration_seconds": 185.522,
+   "offset_seconds": 3174.2151,
+   "duration_seconds": 185.5218,
    "artist": "That Boy Hi Hat",
    "title": "Zooted Zone",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg"
   },
   {
    "slot": 18,
-   "offset_seconds": 3359.737,
-   "duration_seconds": 240.065,
+   "offset_seconds": 3359.7369,
+   "duration_seconds": 240.0652,
    "artist": "That Boy Hi Hat",
    "title": "7th Angel",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg"
   },
   {
    "slot": 19,
-   "offset_seconds": 3599.802,
-   "duration_seconds": 242.756,
+   "offset_seconds": 3599.8021,
+   "duration_seconds": 242.7558,
    "artist": "That Boy Hi Hat",
    "title": "Golden Diamond",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg"
   },
   {
    "slot": 20,
-   "offset_seconds": 3842.558,
-   "duration_seconds": 240.614,
+   "offset_seconds": 3842.5579,
+   "duration_seconds": 240.6139,
    "artist": "That Boy Hi Hat",
    "title": "Rainbows And Roses",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-rainbows-and-roses.jpg"
   },
   {
    "slot": 21,
-   "offset_seconds": 4083.172,
-   "duration_seconds": 152.208,
+   "offset_seconds": 4083.1718,
+   "duration_seconds": 152.2079,
    "artist": "183 Wildboi",
    "title": "Stunt",
    "artwork": "https://cumulativeweb.com/radio/art/183-wildboi-stunt.jpg"
   },
   {
    "slot": 22,
-   "offset_seconds": 4235.38,
-   "duration_seconds": 187.925,
+   "offset_seconds": 4235.3797,
+   "duration_seconds": 187.9249,
    "artist": "That Boy Hi Hat",
    "title": "Broken Hearts Club",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg"
   },
   {
    "slot": 23,
-   "offset_seconds": 4423.305,
-   "duration_seconds": 168.072,
+   "offset_seconds": 4423.3046,
+   "duration_seconds": 168.0718,
    "artist": "That Boy Hi Hat",
    "title": "Place I Go to Dream",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-place-i-go-to-dream-remastered.jpg"
   },
   {
    "slot": 24,
-   "offset_seconds": 4591.376,
-   "duration_seconds": 251.664,
+   "offset_seconds": 4591.3764,
+   "duration_seconds": 251.6637,
    "artist": "That Boy Hi Hat",
    "title": "Shaka Zulu",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg"
   },
   {
    "slot": 25,
-   "offset_seconds": 4843.04,
-   "duration_seconds": 184.963,
+   "offset_seconds": 4843.0401,
+   "duration_seconds": 185.5213,
    "artist": "That Boy Hi Hat",
    "title": "Zooted Zone",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg"
   },
   {
    "slot": 26,
-   "offset_seconds": 5028.003,
-   "duration_seconds": 167.439,
+   "offset_seconds": 5028.5614,
+   "duration_seconds": 166.8801,
    "artist": "Dre50",
    "title": "Vai Vem Vem",
    "artwork": "https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg"
   },
   {
    "slot": 27,
-   "offset_seconds": 5195.442,
-   "duration_seconds": 152.208,
+   "offset_seconds": 5195.4415,
+   "duration_seconds": 152.2081,
    "artist": "183 Wildboi",
    "title": "Stunt",
    "artwork": "https://cumulativeweb.com/radio/art/183-wildboi-stunt.jpg"
   },
   {
    "slot": 28,
-   "offset_seconds": 5347.65,
-   "duration_seconds": 181.544,
+   "offset_seconds": 5347.6496,
+   "duration_seconds": 181.5444,
    "artist": "That Boy Hi Hat",
    "title": "Doves & Diamonds",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-doves-and-diamonds.jpg"
@@ -241,22 +242,22 @@
   {
    "slot": 29,
    "offset_seconds": 5529.194,
-   "duration_seconds": 155.898,
+   "duration_seconds": 155.8984,
    "artist": "That Boy Hi Hat",
    "title": "Diabolique",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg"
   },
   {
    "slot": 30,
-   "offset_seconds": 5685.092,
-   "duration_seconds": 240.614,
+   "offset_seconds": 5685.0924,
+   "duration_seconds": 240.6139,
    "artist": "That Boy Hi Hat",
    "title": "Rainbows And Roses",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-rainbows-and-roses.jpg"
   },
   {
    "slot": 31,
-   "offset_seconds": 5925.706,
+   "offset_seconds": 5925.7063,
    "duration_seconds": 187.925,
    "artist": "That Boy Hi Hat",
    "title": "Broken Hearts Club",
@@ -264,95 +265,95 @@
   },
   {
    "slot": 32,
-   "offset_seconds": 6113.631,
-   "duration_seconds": 240.065,
+   "offset_seconds": 6113.6313,
+   "duration_seconds": 240.0651,
    "artist": "That Boy Hi Hat",
    "title": "7th Angel",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg"
   },
   {
    "slot": 33,
-   "offset_seconds": 6353.696,
-   "duration_seconds": 122.541,
+   "offset_seconds": 6353.6964,
+   "duration_seconds": 122.5408,
    "artist": "Greg Porn",
    "title": "Unholy Hunters (Ref 1.0)",
    "artwork": "https://cumulativeweb.com/assets/artist-greg-porn.jpg"
   },
   {
    "slot": 34,
-   "offset_seconds": 6476.237,
-   "duration_seconds": 242.756,
+   "offset_seconds": 6476.2372,
+   "duration_seconds": 242.7557,
    "artist": "That Boy Hi Hat",
    "title": "Golden Diamond",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg"
   },
   {
    "slot": 35,
-   "offset_seconds": 6718.993,
-   "duration_seconds": 168.072,
+   "offset_seconds": 6718.9929,
+   "duration_seconds": 168.0717,
    "artist": "That Boy Hi Hat",
    "title": "Place I Go to Dream",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-place-i-go-to-dream-remastered.jpg"
   },
   {
    "slot": 36,
-   "offset_seconds": 6887.065,
-   "duration_seconds": 187.925,
+   "offset_seconds": 6887.0646,
+   "duration_seconds": 187.9249,
    "artist": "That Boy Hi Hat",
    "title": "Broken Hearts Club",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg"
   },
   {
    "slot": 37,
-   "offset_seconds": 7074.99,
-   "duration_seconds": 185.521,
+   "offset_seconds": 7074.9895,
+   "duration_seconds": 185.5214,
    "artist": "That Boy Hi Hat",
    "title": "Zooted Zone",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg"
   },
   {
    "slot": 38,
-   "offset_seconds": 7260.511,
-   "duration_seconds": 240.065,
+   "offset_seconds": 7260.5109,
+   "duration_seconds": 240.0654,
    "artist": "That Boy Hi Hat",
    "title": "7th Angel",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg"
   },
   {
    "slot": 39,
-   "offset_seconds": 7500.576,
-   "duration_seconds": 122.54,
+   "offset_seconds": 7500.5763,
+   "duration_seconds": 122.5403,
    "artist": "Greg Porn",
    "title": "Unholy Hunters (Ref 1.0)",
    "artwork": "https://cumulativeweb.com/assets/artist-greg-porn.jpg"
   },
   {
    "slot": 40,
-   "offset_seconds": 7623.117,
-   "duration_seconds": 181.593,
+   "offset_seconds": 7623.1166,
+   "duration_seconds": 181.5443,
    "artist": "That Boy Hi Hat",
    "title": "Doves & Diamonds",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-doves-and-diamonds.jpg"
   },
   {
    "slot": 41,
-   "offset_seconds": 7804.71,
-   "duration_seconds": 166.831,
+   "offset_seconds": 7804.6609,
+   "duration_seconds": 166.8798,
    "artist": "Dre50",
    "title": "Vai Vem Vem",
    "artwork": "https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg"
   },
   {
    "slot": 42,
-   "offset_seconds": 7971.541,
-   "duration_seconds": 251.664,
+   "offset_seconds": 7971.5407,
+   "duration_seconds": 251.6637,
    "artist": "That Boy Hi Hat",
    "title": "Shaka Zulu",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg"
   },
   {
    "slot": 43,
-   "offset_seconds": 8223.204,
+   "offset_seconds": 8223.2044,
    "duration_seconds": 240.614,
    "artist": "That Boy Hi Hat",
    "title": "Rainbows And Roses",
@@ -360,16 +361,16 @@
   },
   {
    "slot": 44,
-   "offset_seconds": 8463.818,
-   "duration_seconds": 242.756,
+   "offset_seconds": 8463.8184,
+   "duration_seconds": 242.7559,
    "artist": "That Boy Hi Hat",
    "title": "Golden Diamond",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg"
   },
   {
    "slot": 45,
-   "offset_seconds": 8706.574,
-   "duration_seconds": 155.899,
+   "offset_seconds": 8706.5743,
+   "duration_seconds": 155.8987,
    "artist": "That Boy Hi Hat",
    "title": "Diabolique",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg"
@@ -377,71 +378,71 @@
   {
    "slot": 46,
    "offset_seconds": 8862.473,
-   "duration_seconds": 152.208,
+   "duration_seconds": 152.2079,
    "artist": "183 Wildboi",
    "title": "Stunt",
    "artwork": "https://cumulativeweb.com/radio/art/183-wildboi-stunt.jpg"
   },
   {
    "slot": 47,
-   "offset_seconds": 9014.681,
-   "duration_seconds": 168.072,
+   "offset_seconds": 9014.6809,
+   "duration_seconds": 168.0718,
    "artist": "That Boy Hi Hat",
    "title": "Place I Go to Dream",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-place-i-go-to-dream-remastered.jpg"
   },
   {
    "slot": 48,
-   "offset_seconds": 9182.753,
-   "duration_seconds": 185.522,
+   "offset_seconds": 9182.7527,
+   "duration_seconds": 185.5218,
    "artist": "That Boy Hi Hat",
    "title": "Zooted Zone",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg"
   },
   {
    "slot": 49,
-   "offset_seconds": 9368.274,
-   "duration_seconds": 152.208,
+   "offset_seconds": 9368.2745,
+   "duration_seconds": 152.2077,
    "artist": "183 Wildboi",
    "title": "Stunt",
    "artwork": "https://cumulativeweb.com/radio/art/183-wildboi-stunt.jpg"
   },
   {
    "slot": 50,
-   "offset_seconds": 9520.482,
-   "duration_seconds": 181.544,
+   "offset_seconds": 9520.4822,
+   "duration_seconds": 181.5441,
    "artist": "That Boy Hi Hat",
    "title": "Doves & Diamonds",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-doves-and-diamonds.jpg"
   },
   {
    "slot": 51,
-   "offset_seconds": 9702.026,
-   "duration_seconds": 168.747,
+   "offset_seconds": 9702.0263,
+   "duration_seconds": 168.0718,
    "artist": "That Boy Hi Hat",
    "title": "Place I Go to Dream",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-place-i-go-to-dream-remastered.jpg"
   },
   {
    "slot": 52,
-   "offset_seconds": 9870.774,
-   "duration_seconds": 166.205,
+   "offset_seconds": 9870.0981,
+   "duration_seconds": 166.8802,
    "artist": "Dre50",
    "title": "Vai Vem Vem",
    "artwork": "https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg"
   },
   {
    "slot": 53,
-   "offset_seconds": 10036.978,
-   "duration_seconds": 251.664,
+   "offset_seconds": 10036.9783,
+   "duration_seconds": 251.6638,
    "artist": "That Boy Hi Hat",
    "title": "Shaka Zulu",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg"
   },
   {
    "slot": 54,
-   "offset_seconds": 10288.642,
-   "duration_seconds": 240.614,
+   "offset_seconds": 10288.6421,
+   "duration_seconds": 240.6139,
    "artist": "That Boy Hi Hat",
    "title": "Rainbows And Roses",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-rainbows-and-roses.jpg"
@@ -449,86 +450,86 @@
   {
    "slot": 55,
    "offset_seconds": 10529.256,
-   "duration_seconds": 155.898,
+   "duration_seconds": 155.8984,
    "artist": "That Boy Hi Hat",
    "title": "Diabolique",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg"
   },
   {
    "slot": 56,
-   "offset_seconds": 10685.154,
-   "duration_seconds": 122.541,
+   "offset_seconds": 10685.1544,
+   "duration_seconds": 122.5408,
    "artist": "Greg Porn",
    "title": "Unholy Hunters (Ref 1.0)",
    "artwork": "https://cumulativeweb.com/assets/artist-greg-porn.jpg"
   },
   {
    "slot": 57,
-   "offset_seconds": 10807.695,
-   "duration_seconds": 240.065,
+   "offset_seconds": 10807.6952,
+   "duration_seconds": 240.0652,
    "artist": "That Boy Hi Hat",
    "title": "7th Angel",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg"
   },
   {
    "slot": 58,
-   "offset_seconds": 11047.76,
-   "duration_seconds": 242.756,
+   "offset_seconds": 11047.7604,
+   "duration_seconds": 242.7557,
    "artist": "That Boy Hi Hat",
    "title": "Golden Diamond",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg"
   },
   {
    "slot": 59,
-   "offset_seconds": 11290.516,
-   "duration_seconds": 187.925,
+   "offset_seconds": 11290.5161,
+   "duration_seconds": 187.9251,
    "artist": "That Boy Hi Hat",
    "title": "Broken Hearts Club",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg"
   },
   {
    "slot": 60,
-   "offset_seconds": 11478.441,
-   "duration_seconds": 240.614,
+   "offset_seconds": 11478.4412,
+   "duration_seconds": 240.6139,
    "artist": "That Boy Hi Hat",
    "title": "Rainbows And Roses",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-rainbows-and-roses.jpg"
   },
   {
    "slot": 61,
-   "offset_seconds": 11719.055,
-   "duration_seconds": 155.899,
+   "offset_seconds": 11719.0551,
+   "duration_seconds": 155.8985,
    "artist": "That Boy Hi Hat",
    "title": "Diabolique",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg"
   },
   {
    "slot": 62,
-   "offset_seconds": 11874.954,
-   "duration_seconds": 251.664,
+   "offset_seconds": 11874.9536,
+   "duration_seconds": 251.6638,
    "artist": "That Boy Hi Hat",
    "title": "Shaka Zulu",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg"
   },
   {
    "slot": 63,
-   "offset_seconds": 12126.617,
-   "duration_seconds": 168.072,
+   "offset_seconds": 12126.6174,
+   "duration_seconds": 168.0717,
    "artist": "That Boy Hi Hat",
    "title": "Place I Go to Dream",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-place-i-go-to-dream-remastered.jpg"
   },
   {
    "slot": 64,
-   "offset_seconds": 12294.689,
-   "duration_seconds": 181.544,
+   "offset_seconds": 12294.6891,
+   "duration_seconds": 181.5443,
    "artist": "That Boy Hi Hat",
    "title": "Doves & Diamonds",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-doves-and-diamonds.jpg"
   },
   {
    "slot": 65,
-   "offset_seconds": 12476.233,
+   "offset_seconds": 12476.2334,
    "duration_seconds": 242.756,
    "artist": "That Boy Hi Hat",
    "title": "Golden Diamond",
@@ -536,71 +537,71 @@
   },
   {
    "slot": 66,
-   "offset_seconds": 12718.989,
-   "duration_seconds": 185.521,
+   "offset_seconds": 12718.9894,
+   "duration_seconds": 185.5211,
    "artist": "That Boy Hi Hat",
    "title": "Zooted Zone",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg"
   },
   {
    "slot": 67,
-   "offset_seconds": 12904.51,
-   "duration_seconds": 153.32,
+   "offset_seconds": 12904.5105,
+   "duration_seconds": 152.2082,
    "artist": "183 Wildboi",
    "title": "Stunt",
    "artwork": "https://cumulativeweb.com/radio/art/183-wildboi-stunt.jpg"
   },
   {
    "slot": 68,
-   "offset_seconds": 13057.831,
-   "duration_seconds": 165.768,
+   "offset_seconds": 13056.7187,
+   "duration_seconds": 166.8798,
    "artist": "Dre50",
    "title": "Vai Vem Vem",
    "artwork": "https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg"
   },
   {
    "slot": 69,
-   "offset_seconds": 13223.598,
-   "duration_seconds": 122.541,
+   "offset_seconds": 13223.5985,
+   "duration_seconds": 122.5407,
    "artist": "Greg Porn",
    "title": "Unholy Hunters (Ref 1.0)",
    "artwork": "https://cumulativeweb.com/assets/artist-greg-porn.jpg"
   },
   {
    "slot": 70,
-   "offset_seconds": 13346.139,
-   "duration_seconds": 240.065,
+   "offset_seconds": 13346.1392,
+   "duration_seconds": 240.0652,
    "artist": "That Boy Hi Hat",
    "title": "7th Angel",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg"
   },
   {
    "slot": 71,
-   "offset_seconds": 13586.204,
-   "duration_seconds": 187.925,
+   "offset_seconds": 13586.2044,
+   "duration_seconds": 187.9249,
    "artist": "That Boy Hi Hat",
    "title": "Broken Hearts Club",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg"
   },
   {
    "slot": 72,
-   "offset_seconds": 13774.129,
-   "duration_seconds": 122.54,
+   "offset_seconds": 13774.1293,
+   "duration_seconds": 122.5404,
    "artist": "Greg Porn",
    "title": "Unholy Hunters (Ref 1.0)",
    "artwork": "https://cumulativeweb.com/assets/artist-greg-porn.jpg"
   },
   {
    "slot": 73,
-   "offset_seconds": 13896.67,
-   "duration_seconds": 185.521,
+   "offset_seconds": 13896.6697,
+   "duration_seconds": 185.5214,
    "artist": "That Boy Hi Hat",
    "title": "Zooted Zone",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg"
   },
   {
    "slot": 74,
-   "offset_seconds": 14082.191,
+   "offset_seconds": 14082.1911,
    "duration_seconds": 242.756,
    "artist": "That Boy Hi Hat",
    "title": "Golden Diamond",
@@ -608,128 +609,128 @@
   },
   {
    "slot": 75,
-   "offset_seconds": 14324.947,
-   "duration_seconds": 181.544,
+   "offset_seconds": 14324.9471,
+   "duration_seconds": 181.5441,
    "artist": "That Boy Hi Hat",
    "title": "Doves & Diamonds",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-doves-and-diamonds.jpg"
   },
   {
    "slot": 76,
-   "offset_seconds": 14506.491,
-   "duration_seconds": 251.664,
+   "offset_seconds": 14506.4912,
+   "duration_seconds": 251.6637,
    "artist": "That Boy Hi Hat",
    "title": "Shaka Zulu",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg"
   },
   {
    "slot": 77,
-   "offset_seconds": 14758.155,
-   "duration_seconds": 168.072,
+   "offset_seconds": 14758.1549,
+   "duration_seconds": 168.0718,
    "artist": "That Boy Hi Hat",
    "title": "Place I Go to Dream",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-place-i-go-to-dream-remastered.jpg"
   },
   {
    "slot": 78,
-   "offset_seconds": 14926.227,
-   "duration_seconds": 157.368,
+   "offset_seconds": 14926.2267,
+   "duration_seconds": 155.8984,
    "artist": "That Boy Hi Hat",
    "title": "Diabolique",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg"
   },
   {
    "slot": 79,
-   "offset_seconds": 15083.594,
-   "duration_seconds": 165.411,
+   "offset_seconds": 15082.1251,
+   "duration_seconds": 166.8805,
    "artist": "Dre50",
    "title": "Vai Vem Vem",
    "artwork": "https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg"
   },
   {
    "slot": 80,
-   "offset_seconds": 15249.006,
-   "duration_seconds": 240.614,
+   "offset_seconds": 15249.0056,
+   "duration_seconds": 240.6137,
    "artist": "That Boy Hi Hat",
    "title": "Rainbows And Roses",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-rainbows-and-roses.jpg"
   },
   {
    "slot": 81,
-   "offset_seconds": 15489.619,
-   "duration_seconds": 240.065,
+   "offset_seconds": 15489.6193,
+   "duration_seconds": 240.0654,
    "artist": "That Boy Hi Hat",
    "title": "7th Angel",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg"
   },
   {
    "slot": 82,
-   "offset_seconds": 15729.685,
-   "duration_seconds": 152.208,
+   "offset_seconds": 15729.6847,
+   "duration_seconds": 152.2077,
    "artist": "183 Wildboi",
    "title": "Stunt",
    "artwork": "https://cumulativeweb.com/radio/art/183-wildboi-stunt.jpg"
   },
   {
    "slot": 83,
-   "offset_seconds": 15881.892,
-   "duration_seconds": 187.925,
+   "offset_seconds": 15881.8924,
+   "duration_seconds": 187.9251,
    "artist": "That Boy Hi Hat",
    "title": "Broken Hearts Club",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg"
   },
   {
    "slot": 84,
-   "offset_seconds": 16069.818,
-   "duration_seconds": 122.54,
+   "offset_seconds": 16069.8175,
+   "duration_seconds": 122.5403,
    "artist": "Greg Porn",
    "title": "Unholy Hunters (Ref 1.0)",
    "artwork": "https://cumulativeweb.com/assets/artist-greg-porn.jpg"
   },
   {
    "slot": 85,
-   "offset_seconds": 16192.358,
-   "duration_seconds": 240.065,
+   "offset_seconds": 16192.3578,
+   "duration_seconds": 240.0654,
    "artist": "That Boy Hi Hat",
    "title": "7th Angel",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg"
   },
   {
    "slot": 86,
-   "offset_seconds": 16432.423,
-   "duration_seconds": 242.756,
+   "offset_seconds": 16432.4232,
+   "duration_seconds": 242.7557,
    "artist": "That Boy Hi Hat",
    "title": "Golden Diamond",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg"
   },
   {
    "slot": 87,
-   "offset_seconds": 16675.179,
-   "duration_seconds": 187.338,
+   "offset_seconds": 16675.1789,
+   "duration_seconds": 185.5214,
    "artist": "That Boy Hi Hat",
    "title": "Zooted Zone",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg"
   },
   {
    "slot": 88,
-   "offset_seconds": 16862.517,
-   "duration_seconds": 165.064,
+   "offset_seconds": 16860.7003,
+   "duration_seconds": 166.8802,
    "artist": "Dre50",
    "title": "Vai Vem Vem",
    "artwork": "https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg"
   },
   {
    "slot": 89,
-   "offset_seconds": 17027.58,
-   "duration_seconds": 152.208,
+   "offset_seconds": 17027.5805,
+   "duration_seconds": 152.2082,
    "artist": "183 Wildboi",
    "title": "Stunt",
    "artwork": "https://cumulativeweb.com/radio/art/183-wildboi-stunt.jpg"
   },
   {
    "slot": 90,
-   "offset_seconds": 17179.789,
-   "duration_seconds": 251.663,
+   "offset_seconds": 17179.7887,
+   "duration_seconds": 251.6633,
    "artist": "That Boy Hi Hat",
    "title": "Shaka Zulu",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg"
@@ -737,47 +738,47 @@
   {
    "slot": 91,
    "offset_seconds": 17431.452,
-   "duration_seconds": 187.925,
+   "duration_seconds": 187.9251,
    "artist": "That Boy Hi Hat",
    "title": "Broken Hearts Club",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg"
   },
   {
    "slot": 92,
-   "offset_seconds": 17619.377,
-   "duration_seconds": 183.745,
+   "offset_seconds": 17619.3771,
+   "duration_seconds": 181.5439,
    "artist": "That Boy Hi Hat",
    "title": "Doves & Diamonds",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-doves-and-diamonds.jpg"
   },
   {
    "slot": 93,
-   "offset_seconds": 17803.122,
-   "duration_seconds": 238.413,
+   "offset_seconds": 17800.921,
+   "duration_seconds": 240.6139,
    "artist": "That Boy Hi Hat",
    "title": "Rainbows And Roses",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-rainbows-and-roses.jpg"
   },
   {
    "slot": 94,
-   "offset_seconds": 18041.535,
-   "duration_seconds": 155.899,
+   "offset_seconds": 18041.5349,
+   "duration_seconds": 155.8989,
    "artist": "That Boy Hi Hat",
    "title": "Diabolique",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg"
   },
   {
    "slot": 95,
-   "offset_seconds": 18197.434,
-   "duration_seconds": 168.072,
+   "offset_seconds": 18197.4338,
+   "duration_seconds": 168.0718,
    "artist": "That Boy Hi Hat",
    "title": "Place I Go to Dream",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-place-i-go-to-dream-remastered.jpg"
   },
   {
    "slot": 96,
-   "offset_seconds": 18365.506,
-   "duration_seconds": 122.54,
+   "offset_seconds": 18365.5056,
+   "duration_seconds": 122.5404,
    "artist": "Greg Porn",
    "title": "Unholy Hunters (Ref 1.0)",
    "artwork": "https://cumulativeweb.com/assets/artist-greg-porn.jpg"
@@ -785,63 +786,63 @@
   {
    "slot": 97,
    "offset_seconds": 18488.046,
-   "duration_seconds": 155.899,
+   "duration_seconds": 155.8988,
    "artist": "That Boy Hi Hat",
    "title": "Diabolique",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg"
   },
   {
    "slot": 98,
-   "offset_seconds": 18643.945,
-   "duration_seconds": 152.208,
+   "offset_seconds": 18643.9448,
+   "duration_seconds": 152.2081,
    "artist": "183 Wildboi",
    "title": "Stunt",
    "artwork": "https://cumulativeweb.com/radio/art/183-wildboi-stunt.jpg"
   },
   {
    "slot": 99,
-   "offset_seconds": 18796.153,
-   "duration_seconds": 187.925,
+   "offset_seconds": 18796.1529,
+   "duration_seconds": 187.9247,
    "artist": "That Boy Hi Hat",
    "title": "Broken Hearts Club",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg"
   },
   {
    "slot": 100,
-   "offset_seconds": 18984.078,
-   "duration_seconds": 168.072,
+   "offset_seconds": 18984.0776,
+   "duration_seconds": 168.0717,
    "artist": "That Boy Hi Hat",
    "title": "Place I Go to Dream",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-place-i-go-to-dream-remastered.jpg"
   },
   {
    "slot": 101,
-   "offset_seconds": 19152.149,
-   "duration_seconds": 242.875,
+   "offset_seconds": 19152.1493,
+   "duration_seconds": 240.6137,
    "artist": "That Boy Hi Hat",
    "title": "Rainbows And Roses",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-rainbows-and-roses.jpg"
   },
   {
    "slot": 102,
-   "offset_seconds": 19395.024,
-   "duration_seconds": 164.62,
+   "offset_seconds": 19392.763,
+   "duration_seconds": 166.8805,
    "artist": "Dre50",
    "title": "Vai Vem Vem",
    "artwork": "https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg"
   },
   {
    "slot": 103,
-   "offset_seconds": 19559.644,
-   "duration_seconds": 181.544,
+   "offset_seconds": 19559.6435,
+   "duration_seconds": 181.5439,
    "artist": "That Boy Hi Hat",
    "title": "Doves & Diamonds",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-doves-and-diamonds.jpg"
   },
   {
    "slot": 104,
-   "offset_seconds": 19741.187,
-   "duration_seconds": 185.522,
+   "offset_seconds": 19741.1874,
+   "duration_seconds": 185.5216,
    "artist": "That Boy Hi Hat",
    "title": "Zooted Zone",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg"
@@ -849,46 +850,46 @@
   {
    "slot": 105,
    "offset_seconds": 19926.709,
-   "duration_seconds": 242.756,
+   "duration_seconds": 242.7559,
    "artist": "That Boy Hi Hat",
    "title": "Golden Diamond",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg"
   },
   {
    "slot": 106,
-   "offset_seconds": 20169.465,
-   "duration_seconds": 240.065,
+   "offset_seconds": 20169.4649,
+   "duration_seconds": 240.0654,
    "artist": "That Boy Hi Hat",
    "title": "7th Angel",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg"
   },
   {
    "slot": 107,
-   "offset_seconds": 20409.53,
-   "duration_seconds": 251.663,
+   "offset_seconds": 20409.5303,
+   "duration_seconds": 251.6634,
    "artist": "That Boy Hi Hat",
    "title": "Shaka Zulu",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg"
   },
   {
    "slot": 108,
-   "offset_seconds": 20661.194,
-   "duration_seconds": 240.065,
+   "offset_seconds": 20661.1937,
+   "duration_seconds": 240.0654,
    "artist": "That Boy Hi Hat",
    "title": "7th Angel",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg"
   },
   {
    "slot": 109,
-   "offset_seconds": 20901.259,
-   "duration_seconds": 187.925,
+   "offset_seconds": 20901.2591,
+   "duration_seconds": 187.9251,
    "artist": "That Boy Hi Hat",
    "title": "Broken Hearts Club",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg"
   },
   {
    "slot": 110,
-   "offset_seconds": 21089.184,
+   "offset_seconds": 21089.1842,
    "duration_seconds": 122.54,
    "artist": "Greg Porn",
    "title": "Unholy Hunters (Ref 1.0)",
@@ -896,8 +897,8 @@
   },
   {
    "slot": 111,
-   "offset_seconds": 21211.724,
-   "duration_seconds": 185.522,
+   "offset_seconds": 21211.7242,
+   "duration_seconds": 185.5218,
    "artist": "That Boy Hi Hat",
    "title": "Zooted Zone",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg"
@@ -913,62 +914,62 @@
   {
    "slot": 113,
    "offset_seconds": 21648.938,
-   "duration_seconds": 155.806,
+   "duration_seconds": 155.8059,
    "artist": "That Boy Hi Hat",
    "title": "Diabolique",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg"
   },
   {
    "slot": 114,
-   "offset_seconds": 21804.744,
-   "duration_seconds": 235.691,
+   "offset_seconds": 21804.7439,
+   "duration_seconds": 235.4676,
    "artist": "That Boy Hi Hat",
    "title": "Phantasm",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-phantasm.jpg"
   },
   {
    "slot": 115,
-   "offset_seconds": 22040.435,
-   "duration_seconds": 197.041,
+   "offset_seconds": 22040.2115,
+   "duration_seconds": 197.144702,
    "artist": "That Boy Hi Hat",
    "title": "Spirits n Shadows",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-spirits-n-shadows.jpg"
   },
   {
    "slot": 116,
-   "offset_seconds": 22237.476,
-   "duration_seconds": 228.387,
+   "offset_seconds": 22237.356202,
+   "duration_seconds": 228.506198,
    "artist": "That Boy Hi Hat",
    "title": "Neon Nights pt. 777",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-neon-nights-pt-777.jpg"
   },
   {
    "slot": 117,
-   "offset_seconds": 22465.862,
-   "duration_seconds": 192.279,
+   "offset_seconds": 22465.8624,
+   "duration_seconds": 195.0719,
    "artist": "183 Wildboi",
    "title": "Full Moon",
    "artwork": "https://cumulativeweb.com/radio/art/183-wildboi-full-moon.jpg"
   },
   {
    "slot": 118,
-   "offset_seconds": 22658.141,
-   "duration_seconds": 251.431,
+   "offset_seconds": 22660.9343,
+   "duration_seconds": 248.6382,
    "artist": "That Boy Hi Hat",
    "title": "Warped & Wicked",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-warped-and-wicked.jpg"
   },
   {
    "slot": 119,
-   "offset_seconds": 22909.572,
-   "duration_seconds": 151.673,
+   "offset_seconds": 22909.5725,
+   "duration_seconds": 151.6727,
    "artist": "Dre50",
    "title": "Pix",
    "artwork": "https://cumulativeweb.com/radio/art/dre50-pix.jpg"
   },
   {
    "slot": 120,
-   "offset_seconds": 23061.245,
+   "offset_seconds": 23061.2452,
    "duration_seconds": 124.041,
    "artist": "King Ahkeem",
    "title": "Embiid",
@@ -976,72 +977,72 @@
   },
   {
    "slot": 121,
-   "offset_seconds": 23185.286,
-   "duration_seconds": 144.614,
+   "offset_seconds": 23185.2862,
+   "duration_seconds": 144.6139,
    "artist": "King Ahkeem",
    "title": "Bluefaces 3.0",
    "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-bluefaces-3-0.jpg"
   },
   {
    "slot": 122,
-   "offset_seconds": 23329.9,
-   "duration_seconds": 171.178,
+   "offset_seconds": 23329.9001,
+   "duration_seconds": 171.1775,
    "artist": "King Ahkeem",
    "title": "Star",
    "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-star.jpg"
   },
   {
    "slot": 123,
-   "offset_seconds": 23501.078,
-   "duration_seconds": 126.038,
+   "offset_seconds": 23501.0776,
+   "duration_seconds": 126.0379,
    "artist": "King Ahkeem",
    "title": "Super Solid",
    "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-super-solid.jpg"
   },
   {
    "slot": 124,
-   "offset_seconds": 23627.115,
-   "duration_seconds": 225.884,
+   "offset_seconds": 23627.1155,
+   "duration_seconds": 225.8837,
    "artist": "Fleekz",
    "title": "2K23 Corners",
    "artwork": "https://cumulativeweb.com/radio/art/fleekz-2k23-corners.jpg"
   },
   {
    "slot": 125,
-   "offset_seconds": 23852.999,
-   "duration_seconds": 180.8,
+   "offset_seconds": 23852.9992,
+   "duration_seconds": 193.7241,
    "artist": "King Ahkeem",
    "title": "Element",
    "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-element.jpg"
   },
   {
    "slot": 126,
-   "offset_seconds": 24033.799,
-   "duration_seconds": 300.341,
+   "offset_seconds": 24046.7233,
+   "duration_seconds": 287.4166,
    "artist": "Black Lansky",
    "title": "Be Mad",
    "artwork": "https://cumulativeweb.com/radio/art/Black Lansky - Be_Mad.jpg"
   },
   {
    "slot": 127,
-   "offset_seconds": 24334.14,
-   "duration_seconds": 165.988,
+   "offset_seconds": 24334.1399,
+   "duration_seconds": 181.8354,
    "artist": "That Boy Hi Hat",
    "title": "Ultimate",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-ultimate.jpg"
   },
   {
    "slot": 128,
-   "offset_seconds": 24500.128,
-   "duration_seconds": 174.313,
+   "offset_seconds": 24515.9753,
+   "duration_seconds": 175.2642,
    "artist": "That Boy Hi Hat",
    "title": "Flamerz",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-flamerz.jpg"
   },
   {
    "slot": 129,
-   "offset_seconds": 24674.441,
-   "duration_seconds": 185.398,
+   "offset_seconds": 24691.2395,
+   "duration_seconds": 168.600067,
    "artist": "That Boy Hi Hat",
    "title": "Painted Lady",
    "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-painted-lady.jpg"
