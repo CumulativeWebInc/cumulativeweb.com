@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-14T04:35:23.200Z",
+  "updated_at": "2026-10-14T05:35:22.884Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Neon Nights pt. 777",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-neon-nights-pt-777.jpg",
-      "slot_index": 116,
-      "played_at": "2026-10-14T04:35:23.200Z",
-      "track_ends_at": "2026-10-14T04:38:59.766Z"
+      "title": "Golden Diamond",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg",
+      "slot_index": 4,
+      "played_at": "2026-10-14T05:35:22.884Z",
+      "track_ends_at": "2026-10-14T05:35:51.039Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
