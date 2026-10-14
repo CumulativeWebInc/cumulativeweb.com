@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radio 365 player probe</title>
+<style>
+:root{--bg:#fff;--fg:#1b1b1b;--mut:#666;--card:#f3f3f3;--ok:#0a7d33;--bad:#b3261e}
+@media (prefers-color-scheme:dark){:root{--bg:#151515;--fg:#eee;--mut:#a0a0a0;--card:#222;--ok:#5bd08a;--bad:#ff8a80}}
+body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:14px/1.45 system-ui,sans-serif;max-width:920px}
+h1{font-size:18px;margin:0 0 4px}.mut{color:var(--mut)}
+label{display:block;margin:8px 0 0;color:var(--mut)}input{width:100%;box-sizing:border-box;padding:6px;font:inherit}
+button{margin:12px 8px 12px 0;padding:8px 14px;font:inherit}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:10px;margin-top:8px}
+.card{background:var(--card);padding:10px 12px;border-radius:8px}.big{font-size:19px;font-weight:600}
+.ok{color:var(--ok)}.bad{color:var(--bad)}
+pre{background:var(--card);padding:10px;border-radius:8px;overflow:auto;max-height:280px;margin:8px 0;white-space:pre-wrap}
+</style>
+</head>
+<body>
+<h1>Radio 365 player probe</h1>
+<p class="mut">Plays the live stream in hls.js and compares what you can hear with what nowplaying says. Leave it running for 10+ minutes
+(ideally across a track change and a stretch of the old-EXTINF region, segments 2164+). If loading fails with a manifest/CORS error,
+open this file from an origin the Worker allows, e.g. a page on cumulativeweb.com.</p>
+
+<label>Stream <input id="stream" value="https://radio.cumulativeweb.com/live.m3u8"></label>
+<label>nowplaying <input id="np" value="https://radio.cumulativeweb.com/nowplaying.json"></label>
+<label>catalog.json <input id="cat" value="https://cumulativeweb.com/radio/data/catalog.json"></label>
+<label>schedule.json <input id="sch" value="https://cumulativeweb.com/radio/schedule.json"></label>
+<button id="go">Start</button><button id="stop">Stop</button><button id="copy">Copy log</button>
+<audio id="a" controls style="width:100%"></audio>
+
+<div class="grid">
+  <div class="card"><div class="mut">Audible now (from the audio, via schedule.json)</div><div class="big" id="aud">-</div><div class="mut" id="audsub"></div></div>
+  <div class="card"><div class="mut">nowplaying.json says</div><div class="big" id="npv">-</div><div class="mut" id="npsub"></div></div>
+  <div class="card"><div class="mut">Player lead over the Worker clock</div><div class="big" id="lead">-</div><div class="mut" id="leadsub">positive = the audio you hear is AHEAD of the clock nowplaying uses</div></div>
+  <div class="card"><div class="mut">Counters</div><div id="cnt">-</div></div>
+</div>
+<pre id="log"></pre>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.5.13/hls.min.js"></script>
+<script>
+const $ = id => document.getElementById(id);
+const pure = {
+  segIndex(url) { const m = /seg(\d+)\.ts/.exec(url); return m ? parseInt(m[1], 10) : -1; },
+  cum(durs) { const c = [0]; for (const d of durs) c.push(c[c.length - 1] + d); return c; },
+  workerPos(cat, nowMs) { const t = (nowMs - cat.epoch_ms) / 1000; return t - Math.floor(t / cat.total) * cat.total; },
+  wrap(x, T) { x = ((x % T) + T) % T; return x > T / 2 ? x - T : x; },
+  slotAt(sch, pos) { const tr = sch.tracks; for (let i = tr.length - 1; i >= 0; i--) if (pos >= tr[i].offset_seconds) return i; return 0; }
+};
+
+let cat, cum, sch, hls, curFrag, prevFrag, tickT, npT, np = null;
+const c = { gaps: 0, drops: 0, errors: 0, waiting: 0, stalled: 0, frags: 0 };
+const lines = [];
+
+function log(msg, flag) {
+  const line = new Date().toISOString().slice(11, 19) + (flag ? ' !! ' : '    ') + msg;
+  lines.push(line); if (lines.length > 400) lines.shift();
+  $('log').textContent = lines.slice(-60).join('\n');
+}
+const DROPLIKE = /dropp?ing|inserting|silent|overlap|\bgap\b|jump/i;
+const hit = (...a) => { const m = a.join(' '); if (DROPLIKE.test(m)) { c.drops++; log('hls.js: ' + m.slice(0, 160), true); } };
+const logger = { debug() {}, log: hit, info: hit, warn: hit, error: hit };
+
+function onFrag(_e, d) {
+  const frag = d.frag, idx = pure.segIndex(frag.url);
+  c.frags++;
+  frag._idx = idx;
+  if (prevFrag && prevFrag._idx >= 0 && cat) {
+    const expected = prevFrag.start + cat.durations[prevFrag._idx];
+    const gap = frag.start - expected;
+    if (Math.abs(gap) > 0.03) { c.gaps++; log('timeline ' + (gap < 0 ? 'OVERLAP ' : 'GAP ') + gap.toFixed(3) + 's before seg ' + idx + ' (after ' + prevFrag._idx + ')', true); }
+  } else if (!prevFrag) {
+    log('first fragment played: seg ' + idx + ' (sn ' + frag.sn + ')');
+  }
+  prevFrag = curFrag = frag;
+}
+
+function tick() {
+  const a = $('a');
+  if (curFrag && cat && curFrag._idx >= 0) {
+    const i = curFrag._idx;
+    const off = Math.min(Math.max(a.currentTime - curFrag.start, 0), cat.durations[i]);
+    const head = cum[i] + off, wp = pure.workerPos(cat, Date.now());
+    const lead = pure.wrap(head - wp, cat.total);
+    const slot = pure.slotAt(sch, head), t = sch.tracks[slot];
+    $('aud').textContent = '#' + slot + '  ' + (t.title || '');
+    $('audsub').textContent = 'seg ' + i + ', ' + (head - t.offset_seconds).toFixed(1) + 's into the track';
+    const el = $('lead');
+    el.textContent = (lead >= 0 ? '+' : '') + lead.toFixed(1) + ' s';
+    $('leadsub').textContent = 'positive = audio is AHEAD of the nowplaying clock. display_shift_seconds that would align them: ' + lead.toFixed(1);
+    if (np && np.slot_index !== undefined) {
+      el.className = 'big ' + (np.slot_index === slot ? 'ok' : 'bad');
+      $('npsub').textContent = (np.slot_index === slot ? 'same track as the audio' : 'DIFFERENT track from the audio') + ' | position ' + (np.position_seconds || 0).toFixed(1) + 's';
+    }
+  }
+  $('cnt').innerHTML = 'fragments ' + c.frags + '<br>timeline gaps/overlaps (>30 ms): <b>' + c.gaps + '</b><br>drop/insert/overlap log lines: <b>' + c.drops +
+    '</b><br>hls errors ' + c.errors + ' &nbsp; waiting ' + c.waiting + ' &nbsp; stalled ' + c.stalled;
+}
+
+async function pollNow() {
+  try { np = await (await fetch($('np').value + '?t=' + Date.now())).json(); $('npv').textContent = '#' + np.slot_index + '  ' + (np.title || ''); }
+  catch (e) { log('nowplaying fetch failed: ' + e.message, true); }
+}
+
+async function start() {
+  stop();
+  try {
+    [cat, sch] = await Promise.all([$('cat').value, $('sch').value].map(u => fetch(u + '?t=' + Date.now()).then(r => r.json())));
+  } catch (e) { log('catalog/schedule fetch failed (CORS?): ' + e.message, true); return; }
+  cum = pure.cum(cat.durations);
+  log('catalog n=' + cat.n + ' total=' + cat.total.toFixed(3) + ' | schedule period=' + sch.period_seconds + ' slots=' + sch.tracks.length);
+  if (!Hls.isSupported()) { log('hls.js not supported here (Safari native HLS has no frame-level hooks)', true); return; }
+  const a = $('a');
+  hls = new Hls({ debug: logger });
+  hls.on(Hls.Events.FRAG_CHANGED, onFrag);
+  hls.on(Hls.Events.ERROR, (_e, d) => { c.errors++; log('hls ' + (d.fatal ? 'FATAL ' : '') + d.type + '/' + d.details, true); });
+  a.onwaiting = () => c.waiting++; a.onstalled = () => c.stalled++;
+  hls.loadSource($('stream').value); hls.attachMedia(a);
+  a.play().catch(e => log('play() blocked: ' + e.message, true));
+  tickT = setInterval(tick, 1000); npT = setInterval(pollNow, 5000); pollNow();
+}
+function stop() { clearInterval(tickT); clearInterval(npT); if (hls) { hls.destroy(); hls = null; } prevFrag = curFrag = null; }
+
+$('go').onclick = start; $('stop').onclick = stop;
+$('copy').onclick = () => navigator.clipboard.writeText(lines.join('\n') + '\n' + $('cnt').innerText);
+</script>
+</body>
+</html>
