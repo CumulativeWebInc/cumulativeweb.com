@@ -50,7 +50,7 @@ const pure = {
 };
 
 let cat, cum, sch, hls, curFrag, prevFrag, tickT, npT, np = null;
-const c = { gaps: 0, drops: 0, errors: 0, waiting: 0, stalled: 0, frags: 0 };
+const c = { gaps: 0, drops: 0, errors: 0, waiting: 0, stalled: 0, frags: 0, seen: 0 };
 const lines = [];
 
 function log(msg, flag) {
@@ -59,7 +59,7 @@ function log(msg, flag) {
   $('log').textContent = lines.slice(-60).join('\n');
 }
 const DROPLIKE = /dropp?ing|inserting|silent|overlap|\bgap\b|jump/i;
-const hit = (...a) => { const m = a.join(' '); if (DROPLIKE.test(m)) { c.drops++; log('hls.js: ' + m.slice(0, 160), true); } };
+const hit = (...a) => { c.seen++; const m = a.join(' '); if (DROPLIKE.test(m)) { c.drops++; log('hls.js: ' + m.slice(0, 160), true); } };
 const logger = { debug() {}, log: hit, info: hit, warn: hit, error: hit };
 
 function onFrag(_e, d) {
@@ -95,7 +95,7 @@ function tick() {
     }
   }
   $('cnt').innerHTML = 'fragments ' + c.frags + '<br>timeline gaps/overlaps (>30 ms): <b>' + c.gaps + '</b><br>drop/insert/overlap log lines: <b>' + c.drops +
-    '</b><br>hls errors ' + c.errors + ' &nbsp; waiting ' + c.waiting + ' &nbsp; stalled ' + c.stalled;
+    '</b><br>hls.js log lines captured: ' + c.seen + (c.seen ? '' : ' <b class="bad">(0: drop detection is blind)</b>') + '<br>hls errors ' + c.errors + ' &nbsp; waiting ' + c.waiting + ' &nbsp; stalled ' + c.stalled;
 }
 
 async function pollNow() {
