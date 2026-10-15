@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Install the CWI Discovery Engine in Your AI — Cumulative Web Inc</title>
+<meta name="description" content="One-click install: give Claude Desktop, Cursor, or Windsurf direct access to 28 music tools — indie game and film sync licensing, live Radio 365, catalog search with ISRC metadata.">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/site.css">
+<link rel="canonical" href="https://cumulativeweb.com/ai.html">
+<style>
+.ai-hero{max-width:720px;margin:3rem auto 2rem;padding:0 1.5rem;text-align:center}
+.ai-hero h1{font-size:2rem;margin-bottom:.5rem}
+.ai-hero p.lede{font-size:1.1rem;opacity:.85}
+.ai-grid{max-width:720px;margin:0 auto;padding:0 1.5rem 3rem}
+.ai-card{border:1px solid #333;border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;background:#111}
+.ai-card h2{margin-top:0;font-size:1.25rem}
+.ai-card pre{background:#0a0a0a;border:1px solid #2a2a2a;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.85rem}
+.ai-card code{font-family:ui-monospace,Menlo,Consolas,monospace}
+.copybtn{margin-top:.75rem;padding:.5rem 1rem;border-radius:8px;border:1px solid #555;background:#1a1a1a;color:#fff;cursor:pointer}
+.copybtn:hover{background:#2a2a2a}
+.prompt-list{list-style:none;padding:0}
+.prompt-list li{background:#0a0a0a;border:1px solid #2a2a2a;border-radius:8px;padding:.9rem 1rem;margin-bottom:.75rem;font-style:italic}
+</style>
+</head>
+<body>
+<div class="ai-hero">
+<h1>Give Your AI a Record Label</h1>
+<p class="lede">The CWI Discovery Engine is an MCP server with <strong>28 tools</strong>: indie game &amp; film sync licensing with real ISRC records, live Radio 365, catalog search, lyrics, press kit, and more. Install it in your AI client in under a minute.</p>
+</div>
+<div class="ai-grid">
+
+<div class="ai-card">
+<h2>Claude Desktop</h2>
+<p>Paste this into your <code>claude_desktop_config.json</code>:</p>
+<pre><code id="cfg-claude">{
+  "mcpServers": {
+    "cwi-discovery": {
+      "command": "npx",
+      "args": ["-y", "@smithery/cli@latest", "run", "io.github.CumulativeWebInc/cwi-discovery-engine"]
+    }
+  }
+}</code></pre>
+<button class="copybtn" onclick="navigator.clipboard.writeText(document.getElementById('cfg-claude').innerText)">Copy config</button>
+</div>
+
+<div class="ai-card">
+<h2>Cursor / Windsurf</h2>
+<p>Run this one-liner in your terminal:</p>
+<pre><code id="cfg-cursor">npx -y @smithery/cli@latest run io.github.CumulativeWebInc/cwi-discovery-engine --client cursor</code></pre>
+<button class="copybtn" onclick="navigator.clipboard.writeText(document.getElementById('cfg-cursor').innerText)">Copy command</button>
+</div>
+
+<div class="ai-card">
+<h2>Try it — 3 prompts to paste once installed</h2>
+<ol class="prompt-list">
+<li>"Search the CWI catalog for high-energy alternative rap tracks suitable for an action scene."</li>
+<li>"Pull the complete metadata, ISRC, and sync clearance terms for Cyberpunk 2027."</li>
+<li>"What is currently playing on Radio 365, and what's on the upcoming schedule?"</li>
+</ol>
+</div>
+
+<div class="ai-card">
+<h2>What you get</h2>
+<p><strong>28 tools across 7 lanes:</strong> catalog search, semantic search, track/artist/genre lookup, knowledge graph, live radio (Radio 365), sync licensing search with machine-readable license terms, playlist data, release packets, videos, lyrics, press kit, events — plus song requests, airplay submissions, sync briefs, playlist pitches, and event RSVP.</p>
+<p>No API key. No auth. Free.</p>
+<p><a href="https://smithery.ai/servers/cumulativewebinc/cwi-discovery-engine">Smithery listing (96/100)</a> · <a href="/">cumulativeweb.com</a></p>
+</div>
+
+</div>
+</body>
+</html>
