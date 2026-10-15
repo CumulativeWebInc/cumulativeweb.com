@@ -7,6 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cumulative Web Inc — Independent Record Label</title>
 <meta name="description" content="Cumulative Web Inc — independent record label. That Boy Hi Hat, post-trap futurism, Radio 365, films, software, and artist discovery.">
+<!-- AI & Machine Layer Discovery -->
+<link rel="alternate" type="text/markdown" href="https://cwi-machine-data.hp-ace.workers.dev/llms.txt" title="LLM Context">
+<link rel="service" type="application/json" href="https://cwi-machine-data.hp-ace.workers.dev/mcp" title="Model Context Protocol Endpoint">
 <link rel="canonical" href="https://cumulativeweb.com/">
 <meta property="og:title" content="Cumulative Web Inc — Independent Record Label">
 <meta property="og:description" content="Cumulative Web Inc — independent record label. That Boy Hi Hat, post-trap futurism, Radio 365, films, software, and artist discovery.">
@@ -118,7 +121,7 @@
     {
       "@id": "https://cumulativeweb.com/#roster",
       "@type": "ItemList",
-      "description": "The CWI artist roster \u2014 alternative rap, post-trap futurism, and dancehall.",
+      "description": "The CWI artist roster — alternative rap, post-trap futurism, and dancehall.",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -250,7 +253,7 @@
       "@id": "https://cumulativeweb.com/radio#station",
       "@type": "RadioBroadcastService",
       "broadcastDisplayName": "Radio 365",
-      "description": "CWI's 24/7 streaming radio \u2014 the full catalog, roster artists, and alternative rap around the clock.",
+      "description": "CWI's 24/7 streaming radio — the full catalog, roster artists, and alternative rap around the clock.",
       "name": "Radio 365",
       "provider": {
         "@id": "https://cumulativeweb.com/#org"
@@ -263,7 +266,7 @@
       "creator": {
         "@id": "https://cumulativeweb.com/#org"
       },
-      "description": "Machine-readable catalog of Cumulative Web Inc music releases \u2014 tracks, artists, credits, and streaming links.",
+      "description": "Machine-readable catalog of Cumulative Web Inc music releases — tracks, artists, credits, and streaming links.",
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://cumulativeweb.com/cwi-learn/catalog.json",
@@ -294,7 +297,7 @@
           "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Radio 365 is CWI's 24/7 streaming station playing the full catalog \u2014 That Boy Hi Hat, roster artists, and alternative rap around the clock."
+            "text": "Radio 365 is CWI's 24/7 streaming station playing the full catalog — That Boy Hi Hat, roster artists, and alternative rap around the clock."
           },
           "name": "What is Radio 365?"
         },
@@ -307,6 +310,88 @@
           "name": "How do I submit music for sync licensing?"
         }
       ]
+    },
+    {
+      "@id": "https://cumulativeweb.com/cyberpunk-2027#track",
+      "@type": "MusicRecording",
+      "name": "Cyberpunk 2027",
+      "byArtist": {
+        "@id": "https://cumulativeweb.com/thatboyhihat#artist"
+      },
+      "isrcCode": "QTA2X2675077",
+      "genre": [
+        "alternative rap",
+        "post-trap futurism"
+      ],
+      "producer": [
+        {
+          "@type": "Person",
+          "name": "Kokurcho"
+        },
+        {
+          "@id": "https://cumulativeweb.com/blacklansky#person"
+        }
+      ],
+      "url": "https://cumulativeweb.com/videos/cyberpunk-2027-hd",
+      "datePublished": "2026-11-20"
+    },
+    {
+      "@id": "https://cumulativeweb.com/zooted-zone#track",
+      "@type": "MusicRecording",
+      "name": "Zooted Zone",
+      "byArtist": {
+        "@id": "https://cumulativeweb.com/thatboyhihat#artist"
+      },
+      "isrcCode": "QZDA52303345",
+      "genre": [
+        "alternative rap",
+        "post-trap futurism"
+      ],
+      "producer": [
+        {
+          "@type": "Person",
+          "name": "Kokurcho"
+        },
+        {
+          "@id": "https://cumulativeweb.com/blacklansky#person"
+        }
+      ],
+      "url": "https://cumulativeweb.com/zooted-zone.html"
+    },
+    {
+      "@id": "https://cumulativeweb.com/diabolique#track",
+      "@type": "MusicRecording",
+      "name": "Diabolique",
+      "byArtist": {
+        "@id": "https://cumulativeweb.com/thatboyhihat#artist"
+      },
+      "isrcCode": "QZ8EF2666377",
+      "genre": [
+        "alternative rap",
+        "post-trap futurism"
+      ],
+      "producer": [
+        {
+          "@type": "Person",
+          "name": "Hybrid"
+        },
+        {
+          "@id": "https://cumulativeweb.com/blacklansky#person"
+        }
+      ],
+      "url": "https://cumulativeweb.com/diabolique.html",
+      "datePublished": "2026-07-03"
+    },
+    {
+      "@id": "https://cumulativeweb.com/#mcp-api",
+      "@type": "WebAPI",
+      "name": "CWI Discovery Engine MCP Server",
+      "description": "Model Context Protocol endpoint exposing 28 catalog, sync, radio, and graph tools for autonomous AI agents.",
+      "documentation": "https://cwi-machine-data.hp-ace.workers.dev/llms.txt",
+      "provider": {
+        "@id": "https://cumulativeweb.com/#org"
+      },
+      "url": "https://cwi-machine-data.hp-ace.workers.dev/mcp"
     }
   ]
 }
@@ -389,7 +474,7 @@
 <p>Cumulative Web Inc is an independent record label built like a technology company. The roster — That Boy Hi Hat, 183 Wildboi, King Ahkeem, Dre50, Fleekz, and the Black Lansky solo catalog — runs on infrastructure the label owns outright: <a href="https://cumulativeweb.com/radio">Radio 365</a>, a 24/7 streaming station; a film unit that treats music video as cinema; the <a href="https://cumulativeweb.com/artist-discovery/">artist discovery engine</a>; a press desk with verified-fact releases; and a software estate (<a href="https://cumulativeweb.com/sanqa/">SANQA</a>) that productizes the machine’s own instruments.</p>
 <p>The catalog's center of gravity is <strong>post-trap futurism</strong> — That Boy Hi Hat's lane, built out of the DMV: hip-hop's street narratives rewired through synthetic, forward-leaning production. The flagship records tell the story: <a href="https://cumulativeweb.com/zooted-zone.html">"Zooted Zone"</a> (307,439 lifetime Spotify plays, No. 30 on New Rap Hits), "Shaka Zulu" (No. 21), "Doves & Diamonds" (No. 31, with an official film), and "Diabolique" — the 2026 single spearheading the October Discovery Mode campaign. Every track in the catalog carries Black Lansky as co-producer.</p>
 <h2>What’s happening now</h2>
-<p><strong>Cyberpunk 2027</strong> — That Boy Hi Hat’s October 20, 2026 single, produced by Kokurcho and executive co-produced by Black Lansky — is the current campaign: two official visualizations (anime and HD), an open model casting call, and release-week programming across radio and live. The <a href="https://cumulativeweb.com/blog/">blog</a> carries the running story; the <a href="https://cumulativeweb.com/press/releases/">press room</a> carries the official record.</p>
+<p><strong>Cyberpunk 2027</strong> — That Boy Hi Hat’s November 20, 2026 single, produced by Kokurcho and executive co-produced by Black Lansky — is the current campaign: two official visualizations (anime and HD), an open model casting call, and release-week programming across radio and live. The <a href="https://cumulativeweb.com/blog/">blog</a> carries the running story; the <a href="https://cumulativeweb.com/press/releases/">press room</a> carries the official record.</p>
 <p>For the scene: <a href="https://cumulativeweb.com/models">open casting</a> for videos and campaigns, <a href="https://cumulativeweb.com/events">events</a> including the Signal Sessions format, <a href="https://cumulativeweb.com/services">services for independent artists</a> (playlist evidence, sync readiness), and <a href="https://cumulativeweb.com/signup">artist signup</a> for projects that belong in the catalog’s world.</p>
 <h2>Frequently asked</h2>
 <div class="faq"><h3>What is post-trap futurism?</h3><p>The genre That Boy Hi Hat architects from the DMV: trap’s rhythmic DNA pushed into synthetic, cinematic, future-facing production. The label coins it, defines it, and ships it — this site is the authoritative machine-readable source.</p></div>
@@ -416,7 +501,7 @@
   <p><a href="/radio.html">Radio 365</a> is CWI's around-the-clock streaming station. The full catalog, roster artists, and curated alternative rap play continuously — no subscriptions, no signups, just press play. The station also powers the <a href="/live.html">live experience</a> and scheduled programming blocks.</p>
 
   <h2>Music, Film & Sync Licensing</h2>
-  <p>CWI's <a href="/music.html">music division</a> handles releases, distribution, and artist development. The <a href="/films.html">film division</a> produces visual content including the upcoming <a href="/cyberpunk-2027.html">Cyberpunk 2027</a> project. For sync licensing inquiries — film, TV, games, advertising — visit our <a href="/contact.html">contact page</a> or email hp@cumulativeweb.com.</p>
+  <p>CWI's <a href="/music.html">music division</a> handles releases, distribution, and artist development. The <a href="/films.html">film division</a> produces visual content including the upcoming <a href="/cyberpunk-2027.html">Cyberpunk 2027</a> project. For sync licensing inquiries — film, TV, games, advertising — visit our <a href="/contact.html">contact page</a> or email <!--email_off-->hp@cumulativeweb.com<!--/email_off-->.</p>
 
   <h2>For Artists & Developers</h2>
   <p>CWI builds <a href="/software.html">software for independents</a>, including tools for distribution, analytics, and AI-assisted production. Artists interested in working with the label can explore <a href="/services.html">services</a>, upcoming <a href="/events.html">events</a>, and the <a href="/models.html">model casting</a> program. Machine-readable catalog data is available through our <a href="https://cwi-machine-data.hp-ace.workers.dev/query">catalog API</a>.</p>
@@ -428,11 +513,11 @@
     <h3>What is Radio 365?</h3>
     <p>Radio 365 is CWI's 24/7 streaming station playing the full catalog — That Boy Hi Hat, roster artists, and alternative rap around the clock.</p>
     <h3>How do I submit music for sync licensing?</h3>
-    <p>Email hp@cumulativeweb.com with your project details, timeline, and placement type (film, TV, game, ad). Include links to your music or a brief describing what you need.</p>
+    <p>Email <!--email_off-->hp@cumulativeweb.com<!--/email_off--> with your project details, timeline, and placement type (film, TV, game, ad). Include links to your music or a brief describing what you need.</p>
   </div>
 </section>
 <style>.seo-content{max-width:900px;margin:0 auto;padding:48px 24px;color:#e8e8e8}.seo-content h1{font-size:2rem;margin-bottom:16px}.seo-content h2{font-size:1.4rem;margin:32px 0 12px}.seo-content h3{font-size:1.1rem;margin:20px 0 8px}.seo-content p{line-height:1.7;margin-bottom:12px}.seo-content a{color:#7ec8ff}</style>
-<noscript><div style="padding:32px"><p>Cumulative Web Inc — Music · Clothing · Software. Enable JavaScript to browse the roster, or email <a href="mailto:hp@cumulativeweb.com">hp@cumulativeweb.com</a>.</p>
+<noscript><div style="padding:32px"><p>Cumulative Web Inc — Music · Clothing · Software. Enable JavaScript to browse the roster, or email <a href="mailto:hp@cumulativeweb.com"><!--email_off-->hp@cumulativeweb.com<!--/email_off--></a>.</p>
 <p>New on the site: <a href="/services.html">Services for artists</a> · <a href="/sanqa/">SANQA — the CWI flagship software suite</a> · <a href="/demo/neon-royale.html">Neon Royale white-label demo</a> · <a href="/press/ruby/">Ruby — CWI press interview</a> · <a href="/artists/dre50.html">Dre50 — CWI artist</a>.</p></div></noscript>
 <script src="app.js"></script>
 <script src="js/nav.js" defer></script>
