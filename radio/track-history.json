@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-15T12:35:20.648Z",
+  "updated_at": "2026-10-15T13:35:28.792Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "Dre50",
-      "title": "Vai Vem Vem",
-      "artwork": "https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg",
-      "slot_index": 68,
-      "played_at": "2026-10-15T12:35:20.648Z",
-      "track_ends_at": "2026-10-15T12:36:36.699Z"
+      "artist": "That Boy Hi Hat",
+      "title": "Zooted Zone",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg",
+      "slot_index": 87,
+      "played_at": "2026-10-15T13:35:28.792Z",
+      "track_ends_at": "2026-10-15T13:37:13.801Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
