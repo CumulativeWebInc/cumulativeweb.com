@@ -1,7 +1,7 @@
 {
- "epoch": "2026-10-03T00:00:00.000Z",
+ "epoch": "2026-10-15T08:56:13.101Z",
  "period_seconds": 24859.8395669996,
- "program_version": "2026-10-13c",
+ "program_version": "2026-10-15a",
  "build_id": "radio365-2026-10-13c",
  "generated": "2026-10-13T24:00:00Z",
  "method": "re-measured cross-correlation on corrected clock (true_durations_v2), 12 slots interpolated",
