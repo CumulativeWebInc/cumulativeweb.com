@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-15T07:35:21.033Z",
+  "updated_at": "2026-10-15T08:36:01.777Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "That Boy Hi Hat",
-      "title": "Golden Diamond",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg",
-      "slot_index": 105,
-      "played_at": "2026-10-15T07:35:21.033Z",
-      "track_ends_at": "2026-10-15T07:38:02.726Z"
+      "artist": "Fleekz",
+      "title": "2K23 Corners",
+      "artwork": "https://cumulativeweb.com/radio/art/fleekz-2k23-corners.jpg",
+      "slot_index": 124,
+      "played_at": "2026-10-15T08:36:01.777Z",
+      "track_ends_at": "2026-10-15T08:39:26.261Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
