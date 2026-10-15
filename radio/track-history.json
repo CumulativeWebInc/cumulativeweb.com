@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-15T14:35:23.826Z",
+  "updated_at": "2026-10-15T15:35:22.055Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "That Boy Hi Hat",
-      "title": "7th Angel",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg",
-      "slot_index": 106,
-      "played_at": "2026-10-15T14:35:23.826Z",
-      "track_ends_at": "2026-10-15T14:36:22.631Z"
+      "artist": "King Ahkeem",
+      "title": "Element",
+      "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-element.jpg",
+      "slot_index": 125,
+      "played_at": "2026-10-15T15:35:22.055Z",
+      "track_ends_at": "2026-10-15T15:36:59.824Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
