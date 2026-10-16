@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radio 365 — OBS Now Playing Overlay</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: transparent; overflow: hidden; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #fff;
+    width: 100vw; height: 100vh;
+    display: flex; align-items: flex-end; justify-content: flex-start;
+  }
+  #overlay {
+    display: flex; align-items: center; gap: 12px;
+    background: rgba(10, 10, 14, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    padding: 10px 16px 10px 10px;
+    margin: 16px;
+    max-width: 520px;
+    backdrop-filter: blur(6px);
+  }
+  #art {
+    width: 48px; height: 48px; border-radius: 6px;
+    object-fit: cover; background: #222; flex-shrink: 0;
+  }
+  #meta { min-width: 0; }
+  #title {
+    font-size: 16px; font-weight: 700; white-space: nowrap;
+    overflow: hidden; text-overflow: ellipsis;
+  }
+  #artist { font-size: 13px; color: #aaa; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #live {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 10px; font-weight: 700; letter-spacing: 1px; color: #ff5577;
+    margin-top: 3px;
+  }
+  #live .dot {
+    width: 7px; height: 7px; border-radius: 50%; background: #ff2244;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+  #station { font-size: 10px; color: #666; letter-spacing: 2px; margin-top: 2px; }
+</style>
+</head>
+<body>
+  <div id="overlay">
+    <img id="art" alt="">
+    <div id="meta">
+      <div id="title">Loading…</div>
+      <div id="artist">Cumulative Radio 365</div>
+      <div id="live"><span class="dot"></span>LIVE</div>
+      <div id="station">CUMULATIVE RADIO 365</div>
+    </div>
+  </div>
+<script>
+(function () {
+  var ENDPOINT = "https://radio.cumulativeweb.com/nowplaying.json";
+  var titleEl = document.getElementById("title");
+  var artistEl = document.getElementById("artist");
+  var artEl = document.getElementById("art");
+  var lastKey = "";
+
+  // Allow ?endpoint= override for testing
+  try {
+    var q = new URLSearchParams(window.location.search);
+    if (q.get("endpoint")) ENDPOINT = q.get("endpoint");
+  } catch (e) {}
+
+  async function pollTrack() {
+    try {
+      var res = await fetch(ENDPOINT + "?t=" + Date.now(), { cache: "no-store" });
+      if (!res.ok) return;
+      var data = await res.json();
+      if (data.status === "error" || !data.title) return;
+      var key = data.artist + "|" + data.title;
+      if (key === lastKey) return;
+      lastKey = key;
+      titleEl.textContent = data.title || "Unknown";
+      artistEl.textContent = data.artist || "Unknown";
+      if (data.artwork) {
+        artEl.src = data.artwork;
+        artEl.style.display = "";
+      } else {
+        artEl.style.display = "none";
+      }
+      document.title = data.artist + " - " + data.title + " | Radio 365";
+    } catch (e) { /* keep last known track on failure */ }
+  }
+
+  pollTrack();
+  setInterval(pollTrack, 5000);
+})();
+</script>
+</body>
+</html>
