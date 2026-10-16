@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CWI Weekly Signal — Oct 12–18, 2026 | Cumulative Radio 365</title>
+<meta name="description" content="The CWI Weekly Signal: heavy rotation, new this week, and the Cyberpunk 2027 countdown on Cumulative Radio 365. Published every Friday. Machine-readable at /radio/weekly.json.">
+<link rel="canonical" href="https://cumulativeweb.com/radio/weekly.html">
+<style>
+:root{
+  --bg:#07080a; --card:rgba(10,10,12,.78); --border:#23262b;
+  --text:#e8eaed; --sub:#9aa0a6; --accent:#00e6aa; --accent-dim:rgba(0,230,170,.14);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55}
+.wrap{max-width:720px;margin:0 auto;padding:28px 18px 60px}
+.kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:0 0 6px}
+h1{font-size:30px;margin:0 0 4px;color:#fff}
+.week{color:var(--sub);font-size:14px;margin:0 0 24px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin:0 0 16px}
+.card h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--sub);margin:0 0 12px}
+.np-live{display:flex;gap:14px;align-items:center}
+.np-live img{width:72px;height:72px;object-fit:cover;border-radius:10px;background:#111;flex:none}
+.np-title{font-size:20px;color:#fff;margin:0}
+.np-artist{font-size:14px;color:var(--sub);margin:2px 0 0}
+.live-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#ff3b30;margin-right:6px;animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+ol.rotation{margin:0;padding-left:22px}
+ol.rotation li{margin:6px 0;font-size:15px}
+ol.rotation .artist{color:var(--sub);font-size:13px}
+.slots{font-size:12px;color:var(--sub);margin-left:8px}
+.honest{font-size:12px;color:var(--sub);margin:10px 0 0;font-style:italic}
+ul.clean{margin:0;padding-left:20px}
+ul.clean li{margin:6px 0;font-size:15px}
+.countdown{font-size:44px;font-weight:700;color:var(--accent);margin:4px 0}
+.countdown-sub{color:var(--sub);font-size:14px;margin:0 0 10px}
+.presave{display:inline-block;background:var(--accent);color:#06231c;font-weight:700;padding:10px 22px;border-radius:10px;text-decoration:none;margin-top:8px}
+.badge-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+pre{background:#0c0d10;border:1px solid var(--border);border-radius:10px;padding:14px;overflow-x:auto;font-size:12.5px;color:#c8e6c9}
+a{color:var(--accent)}
+.foot{margin-top:28px;font-size:12px;color:var(--sub);text-align:center}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"CWI Weekly Signal — Oct 12–18, 2026","url":"https://cumulativeweb.com/radio/weekly.html","description":"Weekly heavy rotation, new releases, and countdown signal for Cumulative Radio 365.","publisher":{"@type":"Organization","name":"Cumulative Web Inc","url":"https://cumulativeweb.com"}}
+</script>
+</head>
+<body>
+<div class="wrap">
+
+<p class="kicker">Cumulative Radio 365 · Weekly Signal</p>
+<h1>This Week on Radio 365</h1>
+<p class="week">Week of October 12–18, 2026 · Published Friday, October 16, 2026</p>
+
+<div class="card">
+<h2><span class="live-dot"></span>On air right now</h2>
+<div class="np-live" id="np">
+<img id="np-art" src="https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg" alt="Now playing artwork">
+<div>
+<p class="np-title" id="np-title">Shaka Zulu</p>
+<p class="np-artist" id="np-artist">That Boy Hi Hat</p>
+</div>
+</div>
+<p class="honest">Live snapshot at publish time. This card refreshes every 30 seconds from the station feed.</p>
+</div>
+
+<div class="card">
+<h2>Heavy rotation this week</h2>
+<ol class="rotation">
+<li>Diabolique <span class="artist">— That Boy Hi Hat</span><span class="slots">10/130 slots</span></li>
+<li>Shaka Zulu <span class="artist">— That Boy Hi Hat</span><span class="slots">10/130 slots</span></li>
+<li>Zooted Zone <span class="artist">— That Boy Hi Hat</span><span class="slots">10/130 slots</span></li>
+<li>7th Angel <span class="artist">— That Boy Hi Hat</span><span class="slots">10/130 slots</span></li>
+<li>Broken Hearts Club <span class="artist">— That Boy Hi Hat</span><span class="slots">10/130 slots</span></li>
+<li>Unholy Hunters Ref 1.0 <span class="artist">— Greg Porn</span><span class="slots">10/130 slots</span></li>
+</ol>
+<p class="honest">Rotation-based ranking: these six tracks each hold 10 of the 130 schedule slots per cycle. Not measured play counts — we report the schedule honestly.</p>
+</div>
+
+<div class="card">
+<h2>New this week</h2>
+<ul class="clean">
+<li><strong>Cyberpunk 2027 full data record deployed</strong> — presave URL, UPC, artwork, and corrected November 20 release date now served live by <code>get_track</code> and <code>/api/scout</code>.</li>
+<li><strong>CWI Weekly Signal launched</strong> — this page, plus the machine-readable feed below.</li>
+<li><strong>Radio polling infrastructure live</strong> — now-playing SVG badge and OBS overlay at <a href="/radio/overlay.html">/radio/overlay.html</a>.</li>
+<li><strong>Web Scout live</strong> — <a href="/scout/">/scout/</a>, with entry points on the homepage, radio page, Cyberpunk 2027 page, and <a href="/ai.html">/ai</a>.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Spotlight countdown — Cyberpunk 2027</h2>
+<p class="countdown" id="cd-days">35</p>
+<p class="countdown-sub">days until release · November 20, 2026 · ISRC QTA2X2675077 · UPC 700563274374</p>
+<a class="presave" href="https://distrokid.com/hyperfollow/thatboyhihat/cyberpunk-2027">Pre-save on DistroKid</a>
+</div>
+
+<div class="card">
+<h2>Station badge</h2>
+<div class="badge-row">
+<a href="https://cumulativeweb.com/radio"><img src="https://radio.cumulativeweb.com/nowplaying.svg" alt="Radio 365 live now-playing badge" height="28"></a>
+</div>
+<p class="honest">Embed anywhere: <code>&lt;a href="https://cumulativeweb.com/radio"&gt;&lt;img src="https://radio.cumulativeweb.com/nowplaying.svg" alt="Radio 365 live"&gt;&lt;/a&gt;</code></p>
+</div>
+
+<div class="card">
+<h2>For agents</h2>
+<p style="font-size:14px;color:var(--sub);margin:0 0 10px">This page ships with a machine-readable feed, refreshed every Friday alongside the page:</p>
+<pre>curl https://cumulativeweb.com/radio/weekly.json</pre>
+<p style="font-size:14px;color:var(--sub)">Fields: <code>week</code>, <code>top_tracks_rotation</code>, <code>new_this_week</code>, <code>spotlight</code> (title, presave, release, ISRC, UPC, days_remaining), <code>live</code> (nowplaying, badge, stream endpoints), <code>generated_at</code>. Zero auth. CORS open.</p>
+</div>
+
+<p class="foot">Cumulative Web Inc · Cumulative Radio 365 · <a href="https://cumulativeweb.com/radio">Listen live</a></p>
+</div>
+
+<script>
+(function(){
+  var RELEASE = Date.UTC(2026, 10, 20);
+  function tick(){
+    var days = Math.max(0, Math.ceil((RELEASE - Date.now()) / 86400000));
+    var el = document.getElementById('cd-days');
+    if (el) el.textContent = days;
+  }
+  tick();
+  function poll(){
+    fetch('https://radio.cumulativeweb.com/nowplaying.json', {cache:'no-store'})
+      .then(function(r){ return r.json(); })
+      .then(function(d){
+        if (d && d.title) {
+          document.getElementById('np-title').textContent = d.title;
+          document.getElementById('np-artist').textContent = d.artist || '';
+          if (d.artwork) document.getElementById('np-art').src = d.artwork;
+        }
+      })
+      .catch(function(){});
+  }
+  poll();
+  setInterval(poll, 30000);
+})();
+</script>
+</body>
+</html>
