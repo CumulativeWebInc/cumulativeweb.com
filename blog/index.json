@@ -1,8 +1,86 @@
 {
-  "updated": "2026-10-08T11:30:00.000Z",
+  "updated": "2026-10-16T15:55:00.000Z",
   "feed_url": "https://cumulativeweb.com/blog/index.json",
-  "count": 6,
+  "count": 9,
   "posts": [
+    {
+      "slug": "zooted-zone-song-page",
+      "title": "Zooted Zone: That Boy Hi Hat's hype record, from Kokurcho and Black Lansky",
+      "date": "2026-10-16",
+      "excerpt": "That Boy Hi Hat's \"Zooted Zone\" \u2014 produced by Kokurcho, co-produced by Black Lansky, ISRC QZDA52303345 \u2014 the catalog's hype record, in the November Discovery Mode campaign.",
+      "tags": [
+        "discovery-mode",
+        "that-boy-hi-hat",
+        "music",
+        "announcement"
+      ],
+      "status": "published",
+      "url": "https://cumulativeweb.com/blog/zooted-zone.html",
+      "machine": {
+        "content_id": "blog:zooted-zone-song-page",
+        "content_type": "blog_post",
+        "title": "Zooted Zone: That Boy Hi Hat's hype record, from Kokurcho and Black Lansky",
+        "url": "https://cumulativeweb.com/blog/zooted-zone.html",
+        "tags": [
+          "discovery-mode",
+          "that-boy-hi-hat",
+          "music",
+          "announcement"
+        ]
+      }
+    },
+    {
+      "slug": "scorpion-sapphires-song-page",
+      "title": "Scorpion & Sapphires: the two-record That Boy Hi Hat cut",
+      "date": "2026-10-16",
+      "excerpt": "That Boy Hi Hat's \"Scorpion & Sapphires\" (ISRC QZDA72377310) exists as two verified Spotify recordings \u2014 both live, both in the November Discovery Mode campaign.",
+      "tags": [
+        "discovery-mode",
+        "that-boy-hi-hat",
+        "music",
+        "announcement"
+      ],
+      "status": "published",
+      "url": "https://cumulativeweb.com/blog/scorpion-sapphires.html",
+      "machine": {
+        "content_id": "blog:scorpion-sapphires-song-page",
+        "content_type": "blog_post",
+        "title": "Scorpion & Sapphires: the two-record That Boy Hi Hat cut",
+        "url": "https://cumulativeweb.com/blog/scorpion-sapphires.html",
+        "tags": [
+          "discovery-mode",
+          "that-boy-hi-hat",
+          "music",
+          "announcement"
+        ]
+      }
+    },
+    {
+      "slug": "diabolique-song-page",
+      "title": "Diabolique: That Boy Hi Hat's nocturnal single, cut at Cue Recording Studio",
+      "date": "2026-10-16",
+      "excerpt": "That Boy Hi Hat's \"Diabolique\" \u2014 produced by Hybrid, co-produced by Black Lansky, ISRC QZ8EF2666377 \u2014 opted into the November Spotify Discovery Mode campaign.",
+      "tags": [
+        "discovery-mode",
+        "that-boy-hi-hat",
+        "music",
+        "announcement"
+      ],
+      "status": "published",
+      "url": "https://cumulativeweb.com/blog/diabolique.html",
+      "machine": {
+        "content_id": "blog:diabolique-song-page",
+        "content_type": "blog_post",
+        "title": "Diabolique: That Boy Hi Hat's nocturnal single, cut at Cue Recording Studio",
+        "url": "https://cumulativeweb.com/blog/diabolique.html",
+        "tags": [
+          "discovery-mode",
+          "that-boy-hi-hat",
+          "music",
+          "announcement"
+        ]
+      }
+    },
     {
       "slug": "cyberpunk-2027-visualization-live",
       "title": "Cyberpunk 2027 anime visualization is live",
