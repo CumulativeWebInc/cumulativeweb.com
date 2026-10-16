@@ -1,4 +1,5 @@
 {
+ "schema": "cwi-radio-schedule/1",
  "epoch": "2026-10-15T08:56:13.101Z",
  "period_seconds": 24859.8395669996,
  "program_version": "2026-10-15a",
