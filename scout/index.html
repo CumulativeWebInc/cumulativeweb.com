@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Scout — Find the Right Track | Cumulative Web Inc</title>
+<meta name="description" content="Describe the music you need. Web Scout searches the Cumulative Web Inc catalog and returns ranked track matches with verified ISRCs and sync-clearance info.">
+<link rel="canonical" href="https://cumulativeweb.com/scout/">
+<style>
+:root{--bg:#0a0a10;--bg2:#12121c;--card:#16161f;--line:#26263a;--txt:#e8e8f0;--mut:#9a9ab0;--acc:#7c5cff;--acc2:#00e5cc;--warn:#ffb84d;--ok:#3ddc84;--bad:#ff6b6b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header.hero{padding:44px 0 26px;text-align:center}
+.hero h1{font-size:2.2rem;letter-spacing:-.5px;background:linear-gradient(90deg,var(--acc2),var(--acc));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.tag{color:var(--mut);margin:10px 0 22px;font-size:1.02rem}
+.search{display:flex;gap:8px}
+.search input{flex:1;background:var(--bg2);border:1px solid var(--line);border-radius:10px;color:var(--txt);padding:13px 14px;font-size:1rem;min-width:0}
+.search input:focus{outline:none;border-color:var(--acc)}
+.search button{background:var(--acc);border:none;border-radius:10px;color:#fff;font-weight:700;padding:0 22px;font-size:1rem;cursor:pointer;white-space:nowrap}
+.search button:hover{background:#8f74ff}
+.search button:disabled{opacity:.55;cursor:wait}
+.hint{color:var(--mut);font-size:.82rem;margin-top:8px;text-align:center}
+section{margin:26px 0}
+.sec-label{font-size:.78rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--mut);margin-bottom:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:14px}
+.card .rank{font-size:.75rem;color:var(--acc2);font-weight:700;text-transform:uppercase;letter-spacing:1px}
+.card h3{font-size:1.15rem;margin:4px 0 2px}
+.card .artist{color:var(--mut);font-size:.92rem}
+.badges{margin:10px 0;display:flex;flex-wrap:wrap;gap:6px}
+.badge{font-size:.72rem;border-radius:20px;padding:3px 10px;border:1px solid var(--line);color:var(--mut)}
+.badge.ok{border-color:var(--ok);color:var(--ok)}
+.badge.warn{border-color:var(--warn);color:var(--warn)}
+.why{font-size:.88rem;color:var(--mut);margin:8px 0}
+.why li{list-style:none;padding-left:16px;position:relative;margin-bottom:3px}
+.why li::before{content:"▸";position:absolute;left:0;color:var(--acc2)}
+.tags{margin:8px 0;display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:.75rem;background:var(--bg2);border:1px solid var(--line);border-radius:6px;padding:2px 8px;color:var(--mut)}
+.actions{display:flex;gap:8px;align-items:center;margin-top:12px;flex-wrap:wrap}
+.btn{display:inline-block;background:var(--acc2);color:#06251f;font-weight:700;border-radius:8px;padding:9px 18px;text-decoration:none;font-size:.92rem;border:none;cursor:pointer}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--txt)}
+.fb{margin-left:auto;display:flex;gap:6px;align-items:center}
+.fb button{background:var(--bg2);border:1px solid var(--line);border-radius:8px;color:var(--mut);font-size:1rem;padding:6px 10px;cursor:pointer}
+.fb button:hover{border-color:var(--acc2);color:var(--txt)}
+.fb button.voted{border-color:var(--acc2);color:var(--acc2)}
+.fb .thanks{font-size:.8rem;color:var(--acc2)}
+.spotlight{border:1px solid var(--acc);border-radius:14px;padding:18px;background:linear-gradient(180deg,rgba(124,92,255,.08),transparent)}
+.spotlight .sec-label{color:var(--acc2)}
+.spotlight h3{font-size:1.3rem}
+.spotlight .meta{color:var(--mut);font-size:.9rem;margin:6px 0 12px}
+.empty,.error-msg{background:var(--card);border:1px dashed var(--line);border-radius:14px;padding:26px;text-align:center;color:var(--mut)}
+.error-msg{border-color:var(--bad);color:var(--txt)}
+.spinner{text-align:center;padding:30px;color:var(--mut)}
+.spinner::after{content:"";display:inline-block;width:22px;height:22px;border:3px solid var(--line);border-top-color:var(--acc2);border-radius:50%;animation:spin 0.8s linear infinite;vertical-align:middle;margin-left:8px}
+@keyframes spin{to{transform:rotate(360deg)}}
+pre.code{background:#08080d;border:1px solid var(--line);border-radius:10px;padding:14px;overflow-x:auto;font-size:.8rem;color:#c8f5ee;margin-top:10px}
+.copy-row{display:flex;justify-content:flex-end;margin-top:6px}
+.copy-row button{background:var(--bg2);border:1px solid var(--line);color:var(--mut);border-radius:6px;padding:5px 12px;font-size:.8rem;cursor:pointer}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:22px 0 40px;color:var(--mut);font-size:.8rem}
+footer a{color:var(--acc2)}
+.disclaimer{font-size:.78rem;color:var(--mut);margin-top:10px}
+@media(max-width:520px){.search{flex-direction:column}.search button{padding:13px}.hero h1{font-size:1.8rem}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","@id":"https://cumulativeweb.com/scout/#app","name":"CWI Web Scout","url":"https://cumulativeweb.com/scout/","applicationCategory":"MultimediaApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"},"provider":{"@type":"Organization","name":"Cumulative Web Inc","url":"https://cumulativeweb.com/"},"description":"Describe the music you need. Web Scout searches the Cumulative Web Inc catalog and returns ranked track matches with verified ISRCs and sync-clearance info."}
+</script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <h1>Web Scout</h1>
+  <p class="tag">Describe the music you need. The Scout searches the Cumulative Web Inc catalog and returns ranked matches — with verified ISRCs and clearance info.</p>
+  <div class="search">
+    <input id="brief" type="text" placeholder='e.g. "dark tracks for a cyberpunk game trailer"' autocomplete="off" enterkeyhint="search">
+    <button id="go" onclick="doSearch()">Search</button>
+  </div>
+  <p class="hint">Honest matching: tracks are ranked by fit. Promo never mixes into rankings.</p>
+</header>
+
+<section id="spotlight-sec" style="display:none">
+  <div class="spotlight">
+    <p class="sec-label">★ Featured Release</p>
+    <div id="spotlight-body"></div>
+  </div>
+</section>
+
+<section id="results-sec">
+  <p class="sec-label" id="results-label" style="display:none">Ranked matches</p>
+  <div id="results"></div>
+</section>
+
+<section>
+  <p class="sec-label">For AI agents — query the Scout directly</p>
+  <p style="color:var(--mut);font-size:.88rem">No signup, no key. POST a brief, get ranked tracks as JSON. The full 29-tool MCP server lives at <code>https://cwi-machine-data.hp-ace.workers.dev/mcp</code>.</p>
+  <pre class="code" id="curl-block">curl -X POST https://cwi-machine-data.hp-ace.workers.dev/api/scout \
+  -H "Content-Type: application/json" \
+  -d '{"brief": "dark tracks for a cyberpunk game trailer", "limit": 3}'</pre>
+  <div class="copy-row"><button onclick="copyCurl()">Copy</button></div>
+</section>
+
+<footer>
+  <p><strong>Privacy.</strong> To improve matching, each search logs: your brief text, a timestamp, the results returned, and a random session token. No IP addresses are stored. Logs are kept 90 days, then aggregated and deleted. To erase your session data, POST <code>{"action":"delete_my_data","session_token":"…"}</code> to <code>/api/scout/feedback</code>.</p>
+  <p class="disclaimer">A match is a creative shortlist, not a license grant. Clearance: one signature clears master + publishing — <a href="mailto:hp@cumulativeweb.com">hp@cumulativeweb.com</a>. Built by <a href="https://cumulativeweb.com/">Cumulative Web Inc</a>.</p>
+</footer>
+
+</div>
+<script id="results-jsonld" type="application/ld+json"></script>
+<script>
+const API='https://cwi-machine-data.hp-ace.workers.dev/api/scout';
+let sessionToken=null;
+const $=id=>document.getElementById(id);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+$('brief').addEventListener('keydown',e=>{if(e.key==='Enter')doSearch();});
+
+function linkLabel(kind){return kind==='presave'?'Pre-save now':kind==='stream'?'Listen':'Open in Spotify';}
+
+async function doSearch(){
+  const brief=$('brief').value.trim();
+  if(!brief){$('brief').focus();return;}
+  const btn=$('go');btn.disabled=true;btn.textContent='Searching…';
+  $('results-label').style.display='none';
+  $('results').innerHTML='<div class="spinner">Searching the catalog</div>';
+  try{
+    const r=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({brief:brief,limit:3})});
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    const d=await r.json();
+    sessionToken=d.session_token||null;
+    renderResults(d);
+  }catch(e){
+    $('results').innerHTML='<div class="error-msg"><strong>The Scout API is not reachable right now.</strong><br>Your brief was not sent. Please try again in a moment.</div>';
+  }finally{btn.disabled=false;btn.textContent='Search';}
+}
+
+function renderResults(d){
+  const box=$('results');
+  if(!d.tracks||d.count===0){
+    box.innerHTML='<div class="empty"><strong>No tracks matched.</strong><br>Try broadening the description — fewer specific words, more mood.</div>';
+    $('results-jsonld').textContent='';
+    return;
+  }
+  $('results-label').style.display='block';
+  box.innerHTML=d.tracks.map((t,i)=>{
+    const isrcBadge=t.isrc_verified
+      ?'<span class="badge ok">ISRC ✓ verified</span>'
+      :(t.isrc?'<span class="badge warn">ISRC unverified</span>':'<span class="badge">ISRC pending</span>');
+    const why=(t.why_it_fits||[]).map(w=>'<li>'+esc(w)+'</li>').join('');
+    const tags=[...(t.moods||[]),...(t.scenes||[]),...(t.use_cases||[])].slice(0,8).map(x=>'<span class="tag">'+esc(x)+'</span>').join('');
+    const link=t.best_link&&t.best_link.url
+      ?'<a class="btn" href="'+esc(t.best_link.url)+'" target="_blank" rel="noopener">'+linkLabel(t.best_link.kind)+'</a>':'';
+    return '<article class="card">'
+      +'<p class="rank">#'+(i+1)+' · match score '+esc(t.score)+'</p>'
+      +'<h3>'+esc(t.title)+'</h3><p class="artist">'+esc(t.artist)+'</p>'
+      +'<div class="badges">'+isrcBadge+(t.explicit===true?'<span class="badge warn">explicit</span>':'')+'</div>'
+      +(why?'<ul class="why">'+why+'</ul>':'')
+      +(tags?'<div class="tags">'+tags+'</div>':'')
+      +'<div class="actions">'+link
+      +'<span class="fb" id="fb-'+i+'"><button onclick="vote('+i+',\''+esc(t.track_id||'')+'\',true)" aria-label="Useful">👍</button><button onclick="vote('+i+',\''+esc(t.track_id||'')+'\',false)" aria-label="Not useful">👎</button></span>'
+      +'</div></article>';
+  }).join('')
+  +(d.licensing_disclaimer?'<p class="disclaimer">'+esc(d.licensing_disclaimer)+'</p>':'');
+
+  // JSON-LD ItemList of results
+  const items=d.tracks.map((t,i)=>({"@type":"ListItem","position":i+1,"item":{"@type":"MusicRecording","name":t.title,"byArtist":{"@type":"MusicGroup","name":t.artist},"isrcCode":t.isrc||undefined,"url":(t.best_link&&t.best_link.url)||undefined}}));
+  $('results-jsonld').textContent=JSON.stringify({"@context":"https://schema.org","@type":"ItemList","name":"Web Scout results","itemListElement":items});
+}
+
+async function vote(i,trackId,useful){
+  const el=$('fb-'+i);
+  el.innerHTML='<span class="thanks">Thanks — logged.</span>';
+  try{
+    await fetch(API+'/feedback',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({session_token:sessionToken,track_id:trackId,useful:useful})});
+  }catch(e){/* feedback is best-effort */}
+}
+
+async function loadSpotlight(){
+  try{
+    const r=await fetch(API+'/spotlight');
+    if(!r.ok)return;
+    const s=await r.json();
+    const t=s.title||'Cyberpunk 2027';
+    $('spotlight-body').innerHTML='<h3>'+esc(t)+'</h3>'
+      +'<p class="meta">'+esc(s.artist||'That Boy Hi Hat')+' · out '+esc(s.release_date||'November 20, 2026')+(s.isrc?' · ISRC '+esc(s.isrc):'')+'</p>'
+      +'<p style="font-size:.92rem;color:var(--mut);margin-bottom:14px">'+esc(s.blurb||'The next single. Post-trap futurism, recorded at Cue Recording Studios, Falls Church VA.')+'</p>'
+      +'<a class="btn" href="'+esc(s.presave_url||'https://distrokid.com/hyperfollow/thatboyhihat/cyberpunk-2027')+'" target="_blank" rel="noopener">Pre-save Cyberpunk 2027</a>';
+    $('spotlight-sec').style.display='block';
+  }catch(e){/* spotlight is optional */}
+}
+
+function copyCurl(){
+  const t=$('curl-block').textContent;
+  if(navigator.clipboard)navigator.clipboard.writeText(t);
+}
+
+loadSpotlight();
+</script>
+</body>
+</html>
