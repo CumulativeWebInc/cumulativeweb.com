@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-16T03:35:27.336Z",
+  "updated_at": "2026-10-16T04:35:21.009Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
       "title": "Broken Hearts Club",
       "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg",
-      "slot_index": 91,
-      "played_at": "2026-10-16T03:35:27.336Z",
-      "track_ends_at": "2026-10-16T03:38:32.157Z"
+      "slot_index": 109,
+      "played_at": "2026-10-16T04:35:21.009Z",
+      "track_ends_at": "2026-10-16T04:36:21.964Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
