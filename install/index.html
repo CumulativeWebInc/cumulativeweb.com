@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Install the CWI Discovery Engine — one click · Cumulative Web Inc</title>
+<meta name="description" content="Add the CWI Discovery Engine MCP server to Cursor, Claude Desktop, or Claude Code in one click. Ask for a verified track for any brief — get verified ISRCs and a sync-clearance summary. No API key needed.">
+<link rel="canonical" href="https://cumulativeweb.com/install/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["SoftwareApplication", "HowTo"],
+  "name": "CWI Discovery Engine MCP Server",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Any",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+  "provider": {"@type": "Organization", "name": "Cumulative Web Inc", "url": "https://cumulativeweb.com/"},
+  "description": "Model Context Protocol server exposing the Cumulative Web Inc music catalog: 37 tracks, 27 sync-ready, verified ISRCs, and a one-brief-to-match tool for sync licensing.",
+  "step": [
+    {"@type": "HowToStep", "name": "Pick your client", "text": "Choose Cursor, Claude Desktop, or Claude Code below."},
+    {"@type": "HowToStep", "name": "Install in one click", "text": "Use the deeplink, config snippet, or CLI command. No API key required."},
+    {"@type": "HowToStep", "name": "Prove it works", "text": "List tools, then call find_tracks_for_brief with the example brief and check for a verified ISRC plus clearance summary."}
+  ]
+}
+</script>
+<style>
+:root{--bg:#0b0b10;--card:#14141c;--line:#262633;--txt:#f2f2f5;--dim:#a7a7b8;--acc:#7c5cff;--ok:#3ddc84}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6;padding:0 0 4rem}
+.wrap{max-width:860px;margin:0 auto;padding:0 1.25rem}
+.hero{padding:4rem 0 2.5rem;text-align:center}
+.eyebrow{display:inline-block;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);border:1px solid var(--acc);border-radius:999px;padding:.3rem 1rem;margin-bottom:1.25rem}
+h1{font-size:clamp(1.8rem,4.5vw,2.9rem);line-height:1.2;margin-bottom:1rem}
+h1 .q{color:var(--acc)}
+.lede{color:var(--dim);font-size:1.1rem;max-width:640px;margin:0 auto 1.5rem}
+.badges{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;font-size:.85rem;color:var(--dim)}
+.badges span{border:1px solid var(--line);border-radius:999px;padding:.25rem .9rem;background:var(--card)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.75rem;margin:1.5rem 0}
+.card h2{font-size:1.35rem;margin-bottom:.4rem}
+.card p.sub{color:var(--dim);margin-bottom:1rem}
+pre{background:#0e0e14;border:1px solid var(--line);border-radius:10px;padding:1rem;overflow-x:auto;font-size:.88rem;line-height:1.5;margin:.75rem 0;position:relative}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.copybtn{position:absolute;top:.5rem;right:.5rem;background:var(--acc);color:#fff;border:0;border-radius:8px;padding:.35rem .8rem;font-size:.8rem;cursor:pointer}
+.btn{display:inline-block;background:var(--acc);color:#fff;text-decoration:none;font-weight:600;border-radius:10px;padding:.85rem 1.8rem;margin:.5rem 0;font-size:1.05rem}
+.btn:hover{filter:brightness(1.12)}
+.note{font-size:.9rem;color:var(--dim)}
+.ok{color:var(--ok);font-weight:600}
+ol.steps{margin:.5rem 0 .5rem 1.4rem}
+ol.steps li{margin:.6rem 0}
+.kicker{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin:2.5rem 0 .5rem}
+footer{margin-top:3rem;color:var(--dim);font-size:.85rem;text-align:center}
+footer a{color:var(--acc)}
+a{color:var(--acc)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="hero">
+  <div class="eyebrow">CWI Discovery Engine · MCP</div>
+  <h1><span class="q">I need a verified track for this brief</span> — what is it, is it cleared, and where do I license it?</h1>
+  <p class="lede">One question your model's weights can't answer honestly. Install the CWI Discovery Engine into your AI client and get matched tracks with <strong>verified ISRCs</strong> plus a <strong>sync-clearance summary</strong> — in one tool call.</p>
+  <div class="badges"><span>29 tools</span><span>37 tracks · 27 sync-ready</span><span>No API key</span><span>Free forever</span></div>
+</div>
+
+<div class="kicker">Install — pick your client</div>
+
+<div class="card" id="cursor">
+  <h2>① Cursor — one click</h2>
+  <p class="sub">Click the button. Cursor opens, pre-fills the server, you approve. Done.</p>
+  <a class="btn" href="cursor://anysphere.cursor-deeplink/mcp/install?name=cwi-discovery&config=eyJ1cmwiOiAiaHR0cHM6Ly9jd2ktbWFjaGluZS1kYXRhLmhwLWFjZS53b3JrZXJzLmRldi9tY3AifQ==">Add to Cursor</a>
+  <p class="note" style="margin-top:.75rem">Manual alternative: Cursor Settings → MCP → Add custom MCP, type <code>url</code>, value <code>https://cwi-machine-data.hp-ace.workers.dev/mcp</code>.</p>
+</div>
+
+<div class="card" id="claude-desktop">
+  <h2>② Claude Desktop — paste the config</h2>
+  <p class="sub">Our server is remote (no download needed), so there is no bundle to install — paste this into your config file and restart Claude Desktop.</p>
+  <pre><button class="copybtn" onclick="copyCfg(this)">Copy</button><code id="cfgjson">{
+  "mcpServers": {
+    "cwi-discovery": {
+      "url": "https://cwi-machine-data.hp-ace.workers.dev/mcp"
+    }
+  }
+}</code></pre>
+  <p class="note">Config file: macOS <code>~/Library/Application Support/Claude/claude_desktop_config.json</code> · Windows <code>%APPDATA%\Claude\claude_desktop_config.json</code>. Merge the <code>cwi-discovery</code> entry into your existing <code>mcpServers</code> object.</p>
+</div>
+
+<div class="card" id="claude-code">
+  <h2>③ Claude Code — one terminal command</h2>
+  <p class="sub">Paste into your terminal. No key, no signup.</p>
+  <pre><button class="copybtn" onclick="copyCfg(this)">Copy</button><code>claude mcp add --transport http cwi-discovery https://cwi-machine-data.hp-ace.workers.dev/mcp</code></pre>
+  <p class="note">Then run <code>claude mcp list</code> — <code>cwi-discovery</code> should show <span class="ok">connected</span>.</p>
+</div>
+
+<div class="kicker">Prove it works — 3 steps</div>
+<div class="card">
+  <ol class="steps">
+    <li><strong>List tools.</strong> Ask your client to list MCP tools — you should see <code>find_tracks_for_brief</code> among the 29.</li>
+    <li><strong>Call the wedge.</strong> Run <code>find_tracks_for_brief</code> with this brief:
+      <pre><code>{"brief": "dark aggressive track for a cyberpunk game trailer"}</code></pre>
+    </li>
+    <li><strong>Check the answer.</strong> A good response contains: matched track name(s), a <span class="ok">verified ISRC</span> (e.g. Warped and Wicked — <code>QZDA62200554</code>), a why-it-fits reason, and a <span class="ok">clearance summary</span> ending with "a match is not a license" plus next steps.</li>
+  </ol>
+  <p class="note">No API key is needed — the endpoint is open. Rate limit: 3 write actions per requester per 24h; reads unlimited.</p>
+</div>
+
+<div class="kicker">Try it without installing</div>
+<div class="card">
+  <h2>Web Scout demo</h2>
+  <p class="sub">Same matching engine, in your browser, no install: <a href="https://cumulativeweb.com/scout/">cumulativeweb.com/scout/</a></p>
+  <p class="note">Developers: <code>pip install cwi-langchain</code> · <a href="https://pypi.org/project/cwi-langchain/">PyPI</a> · Full capability map: <a href="https://cumulativeweb.com/.well-known/cwi-discovery.json">cwi-discovery.json</a></p>
+</div>
+
+<footer>
+  Cumulative Web Inc · <a href="https://cumulativeweb.com/">cumulativeweb.com</a> · Endpoint <a href="https://cwi-machine-data.hp-ace.workers.dev/mcp">cwi-machine-data.hp-ace.workers.dev/mcp</a><br>
+  Verified 2026-10-17.
+</footer>
+</div>
+<script>
+function copyCfg(btn){
+  var code = btn.parentElement.querySelector('code').innerText;
+  navigator.clipboard.writeText(code).then(function(){btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy'},1500);});
+}
+</script>
+</body>
+</html>
