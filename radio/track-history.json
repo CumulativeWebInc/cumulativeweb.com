@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-17T20:35:25.834Z",
+  "updated_at": "2026-10-17T21:35:21.256Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "183 Wildboi",
-      "title": "Stunt",
-      "artwork": "https://cumulativeweb.com/radio/art/183-wildboi-stunt.jpg",
-      "slot_index": 82,
-      "played_at": "2026-10-17T20:35:25.834Z",
-      "track_ends_at": "2026-10-17T20:35:33.709Z"
+      "artist": "Dre50",
+      "title": "Vai Vem Vem",
+      "artwork": "https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg",
+      "slot_index": 102,
+      "played_at": "2026-10-17T21:35:21.256Z",
+      "track_ends_at": "2026-10-17T21:36:51.461Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
