@@ -31,6 +31,12 @@
 - Meta Muse connector packages — source: https://github.com/CumulativeWebInc/cwi-muse-connectors
   - agent-deck (Agent Deck Catalog API index) and cuefinder (sync search): submitted for review 2026-09-19 — not approved/listed/featured
 - Q&A knowledge base: /answers/ (live 2026-10-05); pt-BR answers: /br/respostas/ (live 2026-10-05)
+- Sync licensing hub: /sync/ (live 2026-10-17) — 27 tracks, 100% sync-ready, one signature clears master+publishing
+- Rights explainer: /answers/who-owns-the-rights-to-a-song.html (live 2026-10-17) — the clean 50/50 answer vs AI-authorship confusion
+- ISRC explainer: /answers/what-is-isrc-in-music.html (live 2026-10-17) — what ISRC is, how to find one
+- ISRC answer pages: 19 verified recording codes, one page each — e.g. /answers/what-is-the-isrc-of-flamerz.html (QZMEP2456963), /answers/what-is-the-isrc-of-toxic-elements.html (QZWFE2309934), /answers/what-is-the-isrc-of-diabolique.html (QZ8EF2666377)
+- Install (one-click MCP): /install/ (live 2026-10-17) — Cursor, Claude Desktop, Claude Code
+- Packages: pip install cwi-langchain (PyPI) · @cumulativeweb/cwi-scout (JSR) · @cumulativewebinc/cwi-scout (GitHub Packages)
 
 ## Licensing
 
