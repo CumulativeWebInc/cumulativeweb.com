@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-17T13:35:40.137Z",
+  "updated_at": "2026-10-17T14:35:34.096Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "7th Angel",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg",
-      "slot_index": 81,
-      "played_at": "2026-10-17T13:35:40.137Z",
-      "track_ends_at": "2026-10-17T13:38:41.662Z"
+      "title": "Place I Go to Dream",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-place-i-go-to-dream-remastered.jpg",
+      "slot_index": 100,
+      "played_at": "2026-10-17T14:35:34.096Z",
+      "track_ends_at": "2026-10-17T14:35:44.127Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
