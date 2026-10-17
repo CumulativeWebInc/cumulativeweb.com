@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-17T00:35:20.973Z",
+  "updated_at": "2026-10-17T01:35:21.828Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "Greg Porn",
-      "title": "Unholy Hunters (Ref 1.0)",
-      "artwork": "https://cumulativeweb.com/assets/artist-greg-porn.jpg",
-      "slot_index": 96,
-      "played_at": "2026-10-17T00:35:20.973Z",
-      "track_ends_at": "2026-10-17T00:36:00.344Z"
+      "artist": "That Boy Hi Hat",
+      "title": "Spirits n Shadows",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-spirits-n-shadows.jpg",
+      "slot_index": 115,
+      "played_at": "2026-10-17T01:35:21.828Z",
+      "track_ends_at": "2026-10-17T01:38:29.655Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
