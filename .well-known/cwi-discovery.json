@@ -1,11 +1,11 @@
 {
   "capabilities": [
+    "sync-licensing-discovery",
+    "sync-brief-matching",
     "music-catalog-search",
     "track-metadata",
     "artist-profiles",
     "related-entity-discovery",
-    "sync-licensing-discovery",
-    "sync-brief-matching",
     "lyrics",
     "press-kit",
     "videos",
@@ -34,12 +34,12 @@
     "langchain_python_source": "https://github.com/CumulativeWebInc/cwi-learn/tree/main/framework-integrations/langchain",
     "pypi_package": "cwi-langchain",
     "pypi_version": "1.0.0",
-    "pypi_status": "LIVE on PyPI — pip install cwi-langchain (v1.0.0, verified 2026-10-17)",
+    "pypi_status": "LIVE on PyPI \u2014 pip install cwi-langchain (v1.0.0, verified 2026-10-17)",
     "pypi_source": "https://github.com/CumulativeWebInc/cwi-learn/tree/main/framework-integrations/pypi-cwi-langchain",
     "vercel_ai_sdk_source": "https://github.com/CumulativeWebInc/cwi-learn/tree/main/framework-integrations/vercel-ai-sdk",
     "npm_package": "@cumulativeweb/cwi-scout",
     "npm_version": "1.0.0",
-    "npm_status": "built — publish blocked by npm new-account policy, retrying (verified 2026-10-17)",
+    "npm_status": "built \u2014 publish blocked by npm new-account policy, retrying (verified 2026-10-17)",
     "npm_source": "https://github.com/CumulativeWebInc/cwi-learn/tree/main/framework-integrations/npm-cwi-scout"
   },
   "mcp": {
@@ -67,7 +67,7 @@
     "page_pt_br": "https://cumulativeweb.com/br/scout/"
   },
   "service": {
-    "description": "Structured music-catalog discovery, track metadata, related-entity graph, sync-licensing matching, and live radio state for the Cumulative Web Inc catalog. 29 MCP tools, zero auth, free discovery tier, paid data API via x402.",
+    "description": "Sync-licensing discovery for AI agents: natural-language brief in, licensable tracks with verified ISRCs and one-signature clearance out. 27 sync-ready tracks, 29 MCP tools (wedge: find_tracks_for_brief), zero auth, free discovery tier, paid data API via x402.",
     "documentation": "https://cumulativeweb.com/scout/",
     "id": "cwi-discovery-engine",
     "name": "CWI Discovery Engine"
