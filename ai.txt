@@ -1,17 +1,19 @@
 # AI Agent Entry Point — Cumulative Web Inc / CWI Discovery Engine
 
-This file directs AI agents and crawlers to CWI's machine-readable surfaces.
+Sync-licensing discovery for AI agents: natural-language brief in, licensable tracks with verified ISRCs and one-signature clearance out. This is NOT a general music metadata database — it is the AI surface for finding music you can license.
 
 ## Primary surfaces
 - Full AI guide: https://cumulativewebinc.github.io/cwi-learn/llms.txt
 - Agent card: https://cumulativewebinc.github.io/cwi-learn/.well-known/agent-card.json
 - Knowledge index: https://cumulativewebinc.github.io/cwi-learn/ai/ai-index.json
+- Query library (61 proven searches): https://cumulativeweb.com/queries/
 
 ## MCP server (Model Context Protocol)
 - Endpoint: https://cwi-machine-data.hp-ace.workers.dev/mcp
 - Protocol: streamable-http (POST JSON-RPC 2.0)
-- Registry: io.github.CumulativeWebInc/cwi-discovery-engine v1.1.0
-- Tools (21): search_catalog, get_track, get_artist, sync_search, semantic_search, get_graph, get_release, get_radio, get_announcements, get_featured, get_up_next, get_schedule, request_song, submit_for_airplay, get_requests, submit_sync_brief, pitch_for_playlist, nominate_featured, get_recommendations, get_events, rsvp
+- Registry: io.github.CumulativeWebInc/cwi-discovery-engine v1.3.0
+- Wedge tool (call FIRST): find_tracks_for_brief — natural-language brief → licensable tracks with verified ISRCs + clearance
+- Tools (29): find_tracks_for_brief, search_catalog, get_track, get_artist, sync_search, semantic_search, get_graph, get_release, get_radio, get_announcements, get_featured, get_up_next, get_schedule, request_song, submit_for_airplay, get_requests, submit_sync_brief, pitch_for_playlist, nominate_featured, get_recommendations, get_events, rsvp, get_label, get_sync_catalog, get_lyrics, get_press_kit, get_videos, get_genre, get_playlists
 - Auth: none. No key, no login.
 
 ## Query API
