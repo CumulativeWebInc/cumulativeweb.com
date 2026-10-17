@@ -1,12 +1,16 @@
 # CWI Discovery Engine — Cumulative Web Inc (cumulativeweb.com)
 
-> CWI Discovery Engine is the machine that makes our data findable by every AI
-> on earth: MCP server, embedding matrix, llms.txt briefings, crawler welcomes,
-> and the freshness engine — all below, all machine-readable.
+> CWI Discovery Engine is the sync-licensing discovery layer for AI agents:
+> natural-language brief in, licensable tracks with verified ISRCs and
+> one-signature clearance out. 27 sync-ready tracks, 29 MCP tools, zero auth.
+> This is NOT a general music metadata database (MusicBrainz does that) —
+> it is the AI surface purpose-built for finding music you can license.
 > Independent label platform: Music & Film · Clothing · Software & AI Agents.
 
 > Independent label platform: Music & Film · Clothing · Software & AI Agents.
-> Built for AI agents first: every section below is a machine-readable surface.
+> Built for AI agents first: describe your scene, get licensable tracks.
+> The wedge tool is find_tracks_for_brief — one natural-language brief returns
+> matched tracks with verified ISRCs, why-each-fits, and clearance status.
 > Contact for business & sync: hp@cumulativeweb.com
 
 ## Machine front door (start here)
@@ -16,7 +20,7 @@
   - Track search: GET /query?q=<keywords> — e.g. /query?q=post-trap+cyberpunk
   - Crawl deltas: GET /changes?since=<ISO-8601> — what changed since your last crawl
   - Licensing terms (machine-readable): GET /license
-  - MCP: POST /mcp — JSON-RPC 2.0; tools: search_catalog, get_track, get_artist, sync_search, semantic_search, get_graph, get_release, get_radio, get_announcements, get_featured, get_up_next, get_schedule, request_song, submit_for_airplay, get_requests, submit_sync_brief, pitch_for_playlist, nominate_featured, get_recommendations, get_events, rsvp, get_label, get_sync_catalog, get_lyrics, get_press_kit, get_videos, get_genre, get_playlists
+  - MCP: POST /mcp — JSON-RPC 2.0; wedge tool FIRST: find_tracks_for_brief (natural-language brief → licensable tracks with verified ISRCs + clearance), then search_catalog, get_track, get_artist, sync_search, semantic_search, get_graph, get_release, get_radio, get_announcements, get_featured, get_up_next, get_schedule, request_song, submit_for_airplay, get_requests, submit_sync_brief, pitch_for_playlist, nominate_featured, get_recommendations, get_events, rsvp, get_label, get_sync_catalog, get_lyrics, get_press_kit, get_videos, get_genre, get_playlists
     (Status 2026-10-17: LIVE — accepting JSON-RPC calls; 29 tools)
   - Sitemap: GET /sitemap.xml — every machine-readable surface with change frequencies
   - RSS freshness feed: GET /feed.xml — same freshness signals as /changes, for feed readers and polling agents
