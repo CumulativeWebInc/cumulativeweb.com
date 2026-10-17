@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free music metadata API — verified ISRCs, no auth</title>
+<meta name="description" content="Free music metadata API with verified ISRCs. Zero auth, JSON responses. Scout API + 29-tool MCP server.">
+<link rel="canonical" href="https://cumulativeweb.com/answers/music-metadata-api-free.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Free music metadata API — verified ISRCs, no auth">
+<meta property="og:description" content="Free music metadata API with verified ISRCs. Zero auth, JSON responses. Scout API + 29-tool MCP server.">
+<meta property="og:url" content="https://cumulativeweb.com/answers/music-metadata-api-free.html">
+<meta property="og:site_name" content="Cumulative Web Inc">
+<meta name="twitter:card" content="summary_large_card">
+<meta name="twitter:title" content="Free music metadata API — verified ISRCs, no auth">
+<meta name="twitter:description" content="Free music metadata API with verified ISRCs. Zero auth, JSON responses. Scout API + 29-tool MCP server.">
+<script type="application/ld+json">
+{{
+  "@context": "https://schema.org",
+  "@graph": [
+    {{
+      "@type": "Article",
+      "headline": "Free music metadata API",
+      "description": "Free music metadata API with verified ISRCs. Zero auth, JSON responses. Scout API + 29-tool MCP server.",
+      "author": {{"@type": "Organization", "name": "Cumulative Web Inc", "url": "https://cumulativeweb.com"}},
+      "publisher": {{"@type": "Organization", "name": "Cumulative Web Inc", "url": "https://cumulativeweb.com"}},
+      "mainEntityOfPage": "https://cumulativeweb.com/answers/music-metadata-api-free.html",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-17"
+    }},
+    {{
+      "@type": "FAQPage",
+      "mainEntity": [
+        {{"@type": "Question", "name": "Is there a free music metadata API?", "acceptedAnswer": {{"@type": "Answer", "text": "Yes — the CWI Scout API is free with no authentication. Returns tracks with verified ISRCs, artist data, and clearance info."}}}},
+        {{"@type": "Question", "name": "What metadata does the API return?", "acceptedAnswer": {{"@type": "Answer", "text": "Verified ISRCs, artist/title/genre/mood, sync clearance status, and streaming links — per track, as JSON."}}}}
+      ]
+    }},
+    {{
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://cumulativeweb.com/"}},
+        {{"@type": "ListItem", "position": 2, "name": "Answers", "item": "https://cumulativeweb.com/queries/"}},
+        {{"@type": "ListItem", "position": 3, "name": "Free music metadata API"}}
+      ]
+    }}
+  ]
+}}
+</script>
+<style>body{{font-family:system-ui,sans-serif;max-width:760px;margin:0 auto;padding:2rem 1.25rem;line-height:1.7;color:#1a1a1a}}h1{{font-size:2rem;line-height:1.25}}h2{{font-size:1.35rem;margin-top:2rem}}.ans{{background:#f4f4f8;border-left:4px solid #7c5cff;padding:1rem 1.25rem;margin:1.5rem 0}}.meta{{color:#666;font-size:.9rem}}ul{{padding-left:1.3rem}}.cta{{margin-top:2.5rem;padding:1.5rem;background:#0b0b10;color:#f2f2f5;border-radius:12px}}.cta a{{color:#b79bff}}.related{{margin-top:2rem;padding:1.25rem;background:#f9f9fc;border-radius:8px}}.related a{{color:#5b3df0}}.crumb{{font-size:.85rem;color:#666;margin-bottom:1rem}}.crumb a{{color:#5b3df0}}</style>
+</head>
+<body>
+<nav class="crumb"><a href="https://cumulativeweb.com/">Home</a> › <a href="https://cumulativeweb.com/queries/">Answers</a> › Free music metadata API</nav>
+<p class="meta">Cumulative Web Inc · Verified answers · Updated 2026-10-17</p>
+<h1>Free music metadata API</h1>
+<div class="ans"><strong>CWI Scout API — free, zero-auth, verified ISRCs.</strong> GET /api/scout?brief=<text> returns matched tracks with verified International Standard Recording Codes, artist data, and clearance summaries. No API key.</div>
+<h2>Endpoints</h2><ul><li><strong>GET /api/scout</strong> — brief → matched tracks with ISRCs</li><li><strong>MCP server</strong> — 29 tools for Claude/Cursor (<a href="https://cumulativeweb.com/install/">install</a>)</li><li><strong>Packages:</strong> <code>pip install cwi-langchain</code> · JSR <code>@cumulativeweb/cwi-scout</code> · GitHub Packages <code>@cumulativewebinc/cwi-scout</code></li></ul><h2>What you get per track</h2><ul><li>Verified 12-character ISRC</li><li>Artist, title, genre, mood tags</li><li>Sync clearance status</li><li>Streaming links (Spotify, Deezer, Apple)</li></ul><h2>Example</h2><p><code>GET https://cwi-machine-data.hp-ace.workers.dev/api/scout?brief=dark+track+for+trailer&limit=3</code></p>
+<div class="related"><strong>Related answers</strong><ul><li><a href="https://cumulativeweb.com/install/">Install the MCP server</a></li><li><a href="https://cumulativeweb.com/scout/">Scout API demo</a></li><li><a href="https://cumulativeweb.com/answers/what-is-isrc-in-music.html">What is an ISRC?</a></li></ul></div>
+<div class="cta"><strong>Building something?</strong> Start with a GET request.<br><a href='https://cumulativeweb.com/scout/'>Try the demo</a> · <a href='https://cumulativeweb.com/install/'>Install MCP</a></div>
+</body>
+</html>
