@@ -1,8 +1,10 @@
 # CWI Discovery Engine — Cumulative Web Inc (cumulativeweb.com — full briefing)
 
-> CWI Discovery Engine is the machine that makes our data findable by every AI
-> on earth: MCP server, embedding matrix, llms.txt briefings, crawler welcomes,
-> and the freshness engine — all below, all machine-readable.
+> CWI Discovery Engine is the sync-licensing discovery layer for AI agents:
+> natural-language brief in, licensable tracks with verified ISRCs and
+> one-signature clearance out. 27 sync-ready tracks, 29 MCP tools, zero auth.
+> This is NOT a general music metadata database (MusicBrainz does that) —
+> it is the AI surface purpose-built for finding music you can license.
 
 > Independent label platform: Music & Film · Clothing · Software & AI Agents.
 > This is the long form of https://cumulativeweb.com/llms.txt — every machine surface, endpoint schema, and usage example.
@@ -13,7 +15,7 @@
 
 ## 1. What Cumulative Web Inc is
 
-Cumulative Web Inc (CWI) is an independent label platform run by Black Lansky. It covers: a 53-track music catalog across 7 artists (verified 2026-10-05 against the encrypted catalog.json source of truth), film and music-video production, apparel (cover-art tees, artist-designed skateboards), and software built for AI agents (the SANQA suite, Meta Muse connector packages, the Agent Deck gear line).
+Cumulative Web Inc (CWI) is an independent label platform run by Black Lansky. Its core AI offering is sync-licensing discovery: the Discovery Engine takes a natural-language brief ("dark aggressive track for a cyberpunk game trailer") and returns licensable tracks with verified ISRCs and one-signature clearance. The catalog is 53 tracks across 7 artists (verified 2026-10-05 against the encrypted catalog.json source of truth), with 27 tracks 100% sync-ready. Beyond music: film and music-video production, apparel (cover-art tees, artist-designed skateboards), and software built for AI agents (the SANQA suite, Meta Muse connector packages, the Agent Deck gear line).
 
 Public identity: Cumulative Web Inc / @cumulativeweb. Business & sync contact: hp@cumulativeweb.com.
 
