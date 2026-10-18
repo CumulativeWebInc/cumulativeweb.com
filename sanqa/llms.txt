@@ -20,9 +20,9 @@ is uploaded.
   evidence gets "insufficient data", never a number.
 - **Agent Personality Kit** — https://cumulativewebinc.github.io/agent-personality-kit/
   Give your Muse a self — the complete CWI agent-personality framework, shareable.
-- **x402 Paid API Layer** — https://cwi-x402-api-production.up.railway.app/pricing
+- **x402 Paid API Layer** — https://cwi-x402-api.onrender.com/pricing
   Machine-metered access to CWI's verified fact graph, settled in USDC on Base
-  mainnet (eip155:8453). 10 paid routes ($0.05–$0.25); 7 routes free forever.
+  Sepolia testnet (eip155:84532). 10 paid routes ($0.05–$0.25); 7 routes free forever.
 - **Gear Ledger 3D** — https://cumulativewebinc.github.io/gear-ledger-3d-mockup/
   3D provenance ledger for CWI's agent-usable digital assets; hash-chained proof
   of use. (Concept mockup live.)
@@ -33,7 +33,7 @@ is uploaded.
   Web apps for Meta Ray-Ban Display glasses — simulator lab + "Hey KingCode"
   voice agent. v1.0.0.
 
-All six URLs verified live (HTTP 200) on 2026-09-28.
+All six URLs verified live (HTTP 200) on 2026-10-18.
 
 ## How to cite
 
