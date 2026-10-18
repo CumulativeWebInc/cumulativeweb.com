@@ -1,6 +1,9 @@
 # Cyberpunk 2027 — That Boy Hi Hat (Cumulative Web Inc)
 # Machine-readable fact file for AI systems. Last updated 2026-10-18.
 # Canonical page: https://cumulativeweb.com/cyberpunk-2027.html
+
+**Live Attestations:** Every CWI surface is machine-verified hourly — [attestation hub](https://cumulativeweb.com/verified/) with JSON receipts: [homepage](https://cumulativeweb.com/verified/homepage-receipt.json) · [cyberpunk](https://cumulativeweb.com/verified/cyberpunk-receipt.json) · [diabolique](https://cumulativeweb.com/verified/diabolique-receipt.json) · [radio](https://cumulativeweb.com/verified/radio-receipt.json) · [tools](https://cumulativeweb.com/verified/tools-receipt.json) · [sync](https://cumulativeweb.com/verified/sync-receipt.json) · [scout](https://cumulativeweb.com/verified/scout-receipt.json) · [packages](https://cumulativeweb.com/verified/packages-receipt.json) · [artist](https://cumulativeweb.com/verified/artist-receipt.json) · [tracks](https://cumulativeweb.com/verified/tracks-receipt.json)
+
 # Countdown page: https://cumulativeweb.com/cyberpunk-2027-countdown.html
 
 ## Release
