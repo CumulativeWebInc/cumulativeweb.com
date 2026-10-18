@@ -76,9 +76,7 @@ Base: https://cumulativewebinc.github.io/cwi-learn/
 
 ### 2.4 Connector packages (Meta Muse)
 
-Repo: https://github.com/CumulativeWebInc/cwi-muse-connectors
-
-One generated connector package per CWI app. Truth status: agent-deck (Agent Deck Catalog API index, 5 endpoints) and cuefinder (CueFinder sync search, 3 endpoints) are SUBMITTED for review on Meta's connector platform (2026-09-19) — not approved, not listed, not featured. Full audit: CLAIMS-AUDIT-2026-09-19.md and ENDPOINT-STATUS-2026-09-19.md in the repo.
+One generated connector package per CWI app. Truth status: agent-deck (Agent Deck Catalog API index, 5 endpoints) and cuefinder (CueFinder sync search, 3 endpoints) are SUBMITTED for review on Meta's connector platform (2026-09-19) — not approved, not listed, not featured.
 
 ### 2.5 Q&A knowledge base
 
@@ -113,7 +111,7 @@ Rights posture (owner-confirmed): 50/50 with every artist; Black Lansky clears m
 - MCP `sync_search` tool (rolling out — see 2.1)
 - cuefinder connector package (submitted for review 2026-09-19)
 - Per-track cue sheets: https://cumulativewebinc.github.io/cwi-learn/cue-sheets/
-- Sync briefs: sync-briefs package in cwi-muse-connectors
+- Sync briefs: via the sync_search MCP tool
 - Contact for sync inquiries: hp@cumulativeweb.com
 
 ---
