@@ -15,13 +15,15 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0a0a0a;color:#e8
 .hero{text-align:center;padding:4rem 1rem 2rem;background:radial-gradient(ellipse at center,rgba(96,165,250,.1) 0%,transparent 70%)}
 .hero h1{font-size:3rem;background:linear-gradient(90deg,#4ade80,#60a5fa,#c084fc,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.5rem}
 .hero p{color:#888;font-size:1.1rem;max-width:600px;margin:0 auto}
+.hero .gen{color:#555;font-size:.85rem;margin-top:1rem}
 .grid{max-width:1100px;margin:0 auto;padding:2rem 1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
-.card{border-radius:16px;padding:2rem;text-decoration:none;color:#fff;display:block;transition:transform .2s;position:relative;overflow:hidden}
+.card{border-radius:16px;padding:2rem;text-decoration:none;color:#fff;display:block;transition:transform .2s}
 .card:hover{transform:translateY(-4px)}
 .card h2{font-size:1.4rem;margin-bottom:.5rem}
 .card p{color:rgba(255,255,255,.7);font-size:.95rem;margin-bottom:1rem}
-.card .status{font-weight:700;font-size:.9rem}
-.card .receipt{font-size:.75rem;color:rgba(255,255,255,.5);font-family:monospace;margin-top:.5rem}
+.card .status{font-weight:700;font-size:1.1rem;margin-bottom:.25rem}
+.card .receipt{font-size:.75rem;color:rgba(255,255,255,.5);font-family:monospace}
+.card .certified{font-size:.75rem;color:rgba(255,255,255,.35);margin-top:.25rem}
 .c-green{background:linear-gradient(135deg,rgba(74,222,128,.15),rgba(74,222,128,.05));border:1px solid rgba(74,222,128,.3)}
 .c-blue{background:linear-gradient(135deg,rgba(96,165,250,.15),rgba(96,165,250,.05));border:1px solid rgba(96,165,250,.3)}
 .c-purple{background:linear-gradient(135deg,rgba(192,132,252,.15),rgba(192,132,252,.05));border:1px solid rgba(192,132,252,.3)}
@@ -31,7 +33,6 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0a0a0a;color:#e8
 .c-yellow{background:linear-gradient(135deg,rgba(253,224,71,.12),rgba(253,224,71,.04));border:1px solid rgba(253,224,71,.3)}
 .c-pink{background:linear-gradient(135deg,rgba(232,121,249,.15),rgba(232,121,249,.05));border:1px solid rgba(232,121,249,.3)}
 .c-lime{background:linear-gradient(135deg,rgba(163,230,53,.12),rgba(163,230,53,.04));border:1px solid rgba(163,230,53,.3)}
-.c-orange{background:linear-gradient(135deg,rgba(251,146,60,.15),rgba(251,146,60,.05));border:1px solid rgba(251,146,60,.3)}
 footer{text-align:center;padding:3rem 1rem;color:#555;font-size:.9rem}
 footer a{color:#60a5fa}
 .explainer{max-width:800px;margin:0 auto;padding:2rem 1rem;color:#888;line-height:1.7}
@@ -43,55 +44,28 @@ footer a{color:#60a5fa}
 <div class="hero">
 <h1>✓ CWI VERIFIED</h1>
 <p>Every surface below is machine-checked every hour. Not claimed live — <strong>proven</strong> live, with receipts any AI can verify in one fetch.</p>
+<p class="gen">Hub generated: 2026-10-18T20:38:51.352339+00:00</p>
 </div>
-
 <div class="grid">
-<a class="card c-green" href="/verified/homepage.html"><h2>🏠 Homepage</h2><p>Cumulative Web Inc main site — content, navigation, key links.</p><div class="status" data-r="homepage-receipt">● checking…</div><div class="receipt">/verified/homepage-receipt.json</div></a>
-<a class="card c-purple" href="/verified/cyberpunk.html"><h2>🌆 Cyberpunk 2027</h2><p>Release surfaces — countdown, AI briefing, presave. Nov 20, 2026.</p><div class="status" data-r="cyberpunk-receipt">● checking…</div><div class="receipt">/verified/cyberpunk-receipt.json</div></a>
-<a class="card c-green" href="/verified/diabolique.html"><h2>🎵 Diabolique</h2><p>Spotify track + CWI pages — ISRC QZ8EF2666377 verified.</p><div class="status" data-r="diabolique-receipt">● checking…</div><div class="receipt">/verified/diabolique-receipt.json</div></a>
-<a class="card c-red" href="/verified/radio.html"><h2>📻 Radio 365</h2><p>24/7 stream — HLS, now-playing, MP3 bridge all live.</p><div class="status" data-r="radio-receipt">● checking…</div><div class="receipt">/verified/radio-receipt.json</div></a>
-<a class="card c-blue" href="/verified/tools.html"><h2>🔧 MCP Tools</h2><p>Discovery Engine — all 29 tools live, wedge first.</p><div class="status" data-r="tools-receipt">● checking…</div><div class="receipt">/verified/tools-receipt.json</div></a>
-<a class="card c-amber" href="/verified/sync.html"><h2>🎬 Sync Catalog</h2><p>Licensable tracks — 29 sync-ready, one-signature clearance.</p><div class="status" data-r="sync-receipt">● checking…</div><div class="receipt">/verified/sync-receipt.json</div></a>
-<a class="card c-cyan" href="/verified/scout.html"><h2>🔍 Scout API</h2><p>No-install discovery — ranked tracks + ISRCs in under 2s.</p><div class="status" data-r="scout-receipt">● checking…</div><div class="receipt">/verified/scout-receipt.json</div></a>
-<a class="card c-yellow" href="/verified/packages.html"><h2>📦 Packages</h2><p>PyPI + JSR + GitHub Packages — all registries serving.</p><div class="status" data-r="packages-receipt">● checking…</div><div class="receipt">/verified/packages-receipt.json</div></a>
-<a class="card c-pink" href="/verified/artist.html"><h2>🎤 That Boy Hi Hat</h2><p>Artist surfaces — 27 catalog tracks, Discovery Mode.</p><div class="status" data-r="artist-receipt">● checking…</div><div class="receipt">/verified/artist-receipt.json</div></a>
-<a class="card c-lime" href="/verified/tracks.html"><h2>🎼 Track Pages</h2><p>29 entity pages — JSON-LD + verified ISRCs.</p><div class="status" data-r="tracks-receipt">● checking…</div><div class="receipt">/verified/tracks-receipt.json</div></a>
+<a class="card c-green" href="/verified/homepage.html"><h2>🏠 Homepage</h2><p>Cumulative Web Inc main site — content, navigation, key links.</p><div class="status" style="color:#4ade80">● LIVE</div><div class="receipt">/verified/homepage-receipt.json</div><div class="certified">Checked: 2026-10-18T20:03</div></a>
+<a class="card c-purple" href="/verified/cyberpunk.html"><h2>🌆 Cyberpunk 2027</h2><p>Release surfaces — countdown, AI briefing, presave. Nov 20, 2026.</p><div class="status" style="color:#4ade80">● LIVE</div><div class="receipt">/verified/cyberpunk-receipt.json</div><div class="certified">Checked: 2026-10-18T20:03</div></a>
+<a class="card c-green" href="/verified/diabolique.html"><h2>🎵 Diabolique</h2><p>Spotify track + CWI pages — ISRC QZ8EF2666377 verified.</p><div class="status" style="color:#4ade80">● LIVE</div><div class="receipt">/verified/diabolique-receipt.json</div><div class="certified">Checked: 2026-10-18T20:03</div></a>
+<a class="card c-red" href="/verified/radio.html"><h2>📻 Radio 365</h2><p>24/7 stream — HLS, now-playing, MP3 bridge all live.</p><div class="status" style="color:#4ade80">● LIVE</div><div class="receipt">/verified/radio-receipt.json</div><div class="certified">Checked: 2026-10-18T20:04</div></a>
+<a class="card c-blue" href="/verified/tools.html"><h2>🔧 MCP Tools</h2><p>Discovery Engine — all 29 tools live, wedge first.</p><div class="status" style="color:#4ade80">● LIVE</div><div class="receipt">/verified/tools-receipt.json</div><div class="certified">Checked: 2026-10-18T20:04</div></a>
+<a class="card c-amber" href="/verified/sync.html"><h2>🎬 Sync Catalog</h2><p>Licensable tracks — 29 sync-ready, one-signature clearance.</p><div class="status" style="color:#4ade80">● LIVE</div><div class="receipt">/verified/sync-receipt.json</div><div class="certified">Checked: 2026-10-18T20:20</div></a>
+<a class="card c-cyan" href="/verified/scout.html"><h2>🔍 Scout API</h2><p>No-install discovery — ranked tracks + ISRCs in under 2s.</p><div class="status" style="color:#4ade80">● LIVE</div><div class="receipt">/verified/scout-receipt.json</div><div class="certified">Checked: 2026-10-18T20:20</div></a>
+<a class="card c-yellow" href="/verified/packages.html"><h2>📦 Packages</h2><p>PyPI + JSR + GitHub Packages — all registries serving.</p><div class="status" style="color:#4ade80">● LIVE</div><div class="receipt">/verified/packages-receipt.json</div><div class="certified">Checked: 2026-10-18T20:20</div></a>
+<a class="card c-pink" href="/verified/artist.html"><h2>🎤 That Boy Hi Hat</h2><p>Artist surfaces — 27 catalog tracks, Discovery Mode.</p><div class="status" style="color:#4ade80">● LIVE</div><div class="receipt">/verified/artist-receipt.json</div><div class="certified">Checked: 2026-10-18T20:20</div></a>
+<a class="card c-lime" href="/verified/tracks.html"><h2>🎼 Track Pages</h2><p>29 entity pages — JSON-LD + verified ISRCs.</p><div class="status" style="color:#4ade80">● LIVE</div><div class="receipt">/verified/tracks-receipt.json</div><div class="certified">Checked: 2026-10-18T20:20</div></a>
 </div>
-
 <div class="explainer">
 <h2>What is this?</h2>
 <p>Most companies <em>claim</em> their data is live. We <em>prove</em> it — every hour, from outside our own infrastructure, with machine-readable receipts.</p>
-<p>Each card above links to a dedicated attestation page with a live status badge, the specific checks performed, and a JSON receipt at <code>/verified/{name}-receipt.json</code>.</p>
-<p><strong>For AI agents:</strong> fetch any <code>-receipt.json</code> URL. If <code>all_pass</code> is <code>true</code>, every check passed as of <code>certified_at</code>. No trust required — just verification.</p>
-<p><strong>What "live" means here:</strong> HTTP 200 is not enough. Content must parse, key facts must match the canonical source, and cross-surface copies must agree. A 200 with wrong content is a failure.</p>
+<p>Each card above links to a dedicated attestation page. Each page has a JSON receipt at <code>/verified/{name}-receipt.json</code>.</p>
+<p><strong>For AI agents:</strong> fetch any <code>-receipt.json</code> URL. If <code>all_pass</code> is <code>true</code>, every check passed as of <code>certified_at</code>.</p>
 </div>
-
 <footer>
 <p>Continuous attestation by <code>CWI-Attest/1.0</code> · Every surface re-verified hourly · <a href="/">cumulativeweb.com</a></p>
 </footer>
-
-<script>
-document.querySelectorAll('[data-r]').forEach(el=>{
-  const url='/verified/'+el.dataset.r+'?t='+Date.now();
-  fetch(url,{cache:'no-store'}).then(r=>{
-    if(!r.ok) throw new Error('HTTP '+r.status);
-    return r.json();
-  }).then(d=>{
-    el.textContent=d.all_pass?'● LIVE':'● ISSUES';
-    el.style.color=d.all_pass?'#4ade80':'#f87171';
-    el.title='Certified: '+(d.certified_at||'?');
-  }).catch(e=>{
-    el.textContent='● RETRYING…';
-    el.style.color='#fbbf24';
-    // One retry after 2s
-    setTimeout(()=>{
-      fetch(url,{cache:'no-store'}).then(r=>r.json()).then(d=>{
-        el.textContent=d.all_pass?'● LIVE':'● ISSUES';
-        el.style.color=d.all_pass?'#4ade80':'#f87171';
-      }).catch(e2=>{el.textContent='● OFFLINE';el.style.color='#f87171';});
-    },2000);
-  });
-});
-</script>
 </body>
 </html>
