@@ -1,5 +1,5 @@
 {
-  "certified_at": "2026-10-18T20:48:36.036315+00:00",
+  "certified_at": "2026-10-18T21:18:42.524447+00:00",
   "certifier": "CWI-Certify/1.0",
   "passed": 6,
   "total": 6,
@@ -56,8 +56,8 @@
       "url": "https://cumulativeweb.com/llms-full.txt",
       "http_status": 200,
       "content_type": "text/plain; charset=utf-8",
-      "bytes": 11125,
-      "sha256": "90d7267dff8083a2",
+      "bytes": 11963,
+      "sha256": "db044e9162466f3a",
       "checks": {
         "http_200": true,
         "fresh_stamp": true
@@ -70,7 +70,7 @@
       "http_status": 200,
       "content_type": "application/json",
       "bytes": 2620,
-      "sha256": "8c60c94169c5a089",
+      "sha256": "5cd6e22b4ce5e183",
       "checks": {
         "http_200": true,
         "valid_json": true,
