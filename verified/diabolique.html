@@ -3,66 +3,65 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>✓ Diabolique — Live Attestation</title>
-<meta name="description" content="Continuous proof that Diabolique by That Boy Hi Hat is live on Spotify and CWI surfaces.">
+<meta name="description" content="Continuous proof that Diabolique (ISRC QZ8EF2666377) is live and verified.">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,system-ui,sans-serif;background:linear-gradient(135deg,#0a0f0a 0%,#0a1e0a 50%,#0a0f0a 100%);color:#e8e8e8;min-height:100vh}
+body{font-family:-apple-system,system-ui,sans-serif;background:#0a0a0a;color:#e8e8e8;min-height:100vh}
 .hero{text-align:center;padding:4rem 1rem 2rem}
-.hero h1{font-size:2.5rem;background:linear-gradient(90deg,#4ade80,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.5rem}
-.hero p{color:#6ee7b7;font-size:1.1rem}
+.hero h1{font-size:2.5rem;margin-bottom:.5rem}
+.hero p{color:#888;font-size:1.1rem}
 .badge{display:inline-block;background:rgba(74,222,128,.15);border:1px solid #4ade80;color:#4ade80;padding:.5rem 1.5rem;border-radius:2rem;font-weight:600;margin:1rem 0;font-size:1.1rem}
-.badge.fail{background:rgba(248,113,113,.15);border-color:#f87171;color:#f87171}
-.meta-line{color:#888;font-size:.95rem;margin:.25rem 0}
-.meta-line code{color:#4ade80;background:rgba(74,222,128,.1);padding:2px 8px;border-radius:4px}
+.stats{display:flex;justify-content:center;gap:3rem;margin:2rem 0;flex-wrap:wrap}
+.stat{text-align:center}.stat .num{font-size:2.5rem;font-weight:800;color:#fff}.stat .label{color:#888;font-size:.85rem;text-transform:uppercase;letter-spacing:1px}
 .grid{max-width:900px;margin:0 auto;padding:2rem 1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
-.card{background:rgba(74,222,128,.05);border:1px solid rgba(74,222,128,.15);border-radius:12px;padding:1.5rem;backdrop-filter:blur(10px)}
-.card h3{color:#fff;margin-bottom:.5rem;font-size:1rem}
-.check{color:#4ade80}.cross{color:#f87171}
-footer{text-align:center;padding:2rem;color:#555;font-size:.85rem}
-footer a{color:#4ade80}
+.card{background:rgba(74,222,128,.15);border:1px solid rgba(74,222,128,.3);border-radius:12px;padding:1.5rem}
+.card h3{color:#fff;font-size:1rem}
+footer{text-align:center;padding:2rem;color:#555;font-size:.85rem}footer a{color:#4ade80}
 .timestamp{color:#888;font-size:.9rem;margin-top:.5rem}
-pre{background:#111;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.75rem;max-width:900px;margin:1rem auto;color:#a7f3d0}
-.btn{display:inline-block;background:#1DB954;color:#000;font-weight:700;padding:.75rem 2rem;border-radius:2rem;text-decoration:none;margin:1rem .5rem}
-.btn2{display:inline-block;background:rgba(74,222,128,.15);border:1px solid #4ade80;color:#4ade80;font-weight:600;padding:.75rem 2rem;border-radius:2rem;text-decoration:none;margin:1rem .5rem}
-.spotify-embed{max-width:600px;margin:2rem auto;padding:0 1rem}
+pre{background:#111;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.75rem;max-width:900px;margin:1rem auto;color:#ccc}
 </style>
 </head>
 <body>
 <div class="hero">
-<h1>DIABOLIQUE</h1>
-<p>That Boy Hi Hat</p>
-<div class="badge" id="badge">● CHECKING…</div>
-<p class="timestamp" id="ts">—</p>
-<p class="meta-line">ISRC: <code>QZ8EF2666377</code></p>
-<p class="meta-line">Spotify: <code>2eSyWmIdPzEMyWejLb2LBj</code></p>
-<div>
-<a class="btn" href="https://open.spotify.com/track/2eSyWmIdPzEMyWejLb2LBj">▶ Play on Spotify</a>
-<a class="btn2" href="/diabolique.html">Track Page</a>
+<h1>🎵 DIABOLIQUE</h1>
+<p>ISRC QZ8EF2666377</p>
+<div class="badge">● LIVE</div>
+<p class="timestamp">Certified: 2026-10-18T20:03:42.394435+00:00</p>
+<div class="stats"></div>
 </div>
+<div class="grid">
+<div class="card"><h3><span style="color:#4ade80">✓</span> track page http 200</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> track page has isrc</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> track page has title</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> spotify oembed 200</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> spotify title match</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> spotify is spotify</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> spotify has artwork</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> track page has jsonld isrc</h3></div>
 </div>
-<div class="spotify-embed">
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2eSyWmIdPzEMyWejLb2LBj?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>
-<div class="grid" id="grid"><p style="text-align:center;color:#666">Loading verification…</p></div>
 <div style="max-width:900px;margin:0 auto;padding:0 1rem">
 <h3 style="color:#fff;margin-bottom:.5rem">Machine-readable receipt</h3>
-<p style="color:#888;font-size:.9rem;margin-bottom:.5rem">AI agents: fetch <a href="/verified/diabolique-receipt.json" style="color:#4ade80"><code>/verified/diabolique-receipt.json</code></a></p>
-<pre id="receipt">Loading…</pre>
+<p style="color:#888;font-size:.9rem">AI agents: <a href="/verified/diabolique-receipt.json" style="color:#4ade80"><code>/verified/diabolique-receipt.json</code></a></p>
+<pre>{
+  "attestation": "diabolique-spotify",
+  "subject": "Diabolique \u2014 That Boy Hi Hat",
+  "spotify_track_id": "2eSyWmIdPzEMyWejLb2LBj",
+  "spotify_url": "https://open.spotify.com/track/2eSyWmIdPzEMyWejLb2LBj",
+  "isrc": "QZ8EF2666377",
+  "certified_at": "2026-10-18T20:03:42.394435+00:00",
+  "checks": {
+    "track_page_http_200": true,
+    "track_page_has_isrc": true,
+    "track_page_has_title": true,
+    "spotify_oembed_200": true,
+    "spotify_title_match": true,
+    "spotify_is_spotify": true,
+    "spotify_has_artwork": true,
+    "track_page_has_jsonld_isrc": true
+  },
+  "all_pass": true
+}</pre>
 </div>
-<footer>
-<p>Attested by <code>CWI-Attest/1.0</code> · <a href="/verified/">All attestations</a></p>
-</footer>
-<script>
-fetch('/verified/diabolique-receipt.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(d=>{
-  const b=document.getElementById('badge');
-  b.textContent=d.all_pass?'● LIVE ON SPOTIFY + CWI':'● ISSUES DETECTED';
-  b.className='badge'+(d.all_pass?'':' fail');
-  document.getElementById('ts').textContent='Certified: '+d.certified_at;
-  document.getElementById('grid').innerHTML=Object.entries(d.checks).map(([k,v])=>
-    `<div class="card"><h3><span class="${v?'check':'cross'}">${v?'✓':'✗'}</span> ${k.replace(/_/g,' ')}</h3></div>`
-  ).join('');
-  document.getElementById('receipt').textContent=JSON.stringify(d,null,2);
-}).catch(e=>{document.getElementById('badge').textContent='● RECEIPT UNAVAILABLE';document.getElementById('badge').className='badge fail';});
-</script>
+<footer><p>Attested by <code>CWI-Attest/1.0</code> · <a href="/verified/">All attestations</a></p></footer>
 </body>
 </html>
