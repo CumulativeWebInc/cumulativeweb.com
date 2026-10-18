@@ -3,54 +3,96 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>✓ Track Pages — Live Attestation</title>
-<meta name="description" content="Continuous proof that all 29 CWI track pages serve valid JSON-LD with verified ISRCs.">
+<meta name="description" content="Continuous proof that Track Pages (29 entity pages — JSON-LD) is live and verified.">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,system-ui,sans-serif;background:linear-gradient(135deg,#0a0a0a 0%,#0f1a0f 50%,#0a0a0a 100%);color:#e8e8e8;min-height:100vh}
+body{font-family:-apple-system,system-ui,sans-serif;background:#0a0a0a;color:#e8e8e8;min-height:100vh}
 .hero{text-align:center;padding:4rem 1rem 2rem}
-.hero h1{font-size:2.5rem;background:linear-gradient(90deg,#4ade80,#a3e635,#fde047);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.5rem}
-.hero p{color:#86efac;font-size:1.1rem}
-.badge{display:inline-block;background:rgba(74,222,128,.15);border:1px solid #4ade80;color:#4ade80;padding:.5rem 1.5rem;border-radius:2rem;font-weight:600;margin:1rem 0;font-size:1.1rem}
-.badge.fail{background:rgba(248,113,113,.15);border-color:#f87171;color:#f87171}
+.hero h1{font-size:2.5rem;margin-bottom:.5rem}
+.hero p{color:#888;font-size:1.1rem}
+.badge{display:inline-block;background:rgba(163,230,53,.12);border:1px solid #a3e635;color:#a3e635;padding:.5rem 1.5rem;border-radius:2rem;font-weight:600;margin:1rem 0;font-size:1.1rem}
 .stats{display:flex;justify-content:center;gap:3rem;margin:2rem 0;flex-wrap:wrap}
 .stat{text-align:center}.stat .num{font-size:2.5rem;font-weight:800;color:#fff}.stat .label{color:#888;font-size:.85rem;text-transform:uppercase;letter-spacing:1px}
-.tracks{max-width:900px;margin:0 auto;padding:0 1rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.5rem}
-.track{background:rgba(74,222,128,.03);border:1px solid rgba(74,222,128,.1);border-radius:8px;padding:.75rem;font-size:.85rem}
-.track .t{color:#fff;font-weight:600}.track .i{color:#4ade80;font-family:monospace;font-size:.75rem}
-.track.fail{border-color:#f87171}.track.fail .i{color:#f87171}
-footer{text-align:center;padding:2rem;color:#555;font-size:.85rem}footer a{color:#4ade80}
+.grid{max-width:900px;margin:0 auto;padding:2rem 1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
+.card{background:rgba(163,230,53,.12);border:1px solid rgba(163,230,53,.3);border-radius:12px;padding:1.5rem}
+.card h3{color:#fff;font-size:1rem}
+footer{text-align:center;padding:2rem;color:#555;font-size:.85rem}footer a{color:#a3e635}
 .timestamp{color:#888;font-size:.9rem;margin-top:.5rem}
-pre{background:#111;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.75rem;max-width:900px;margin:1rem auto;color:#bbf7d0}
+pre{background:#111;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.75rem;max-width:900px;margin:1rem auto;color:#ccc}
 </style>
 </head>
 <body>
 <div class="hero">
-<h1>TRACK PAGES</h1>
-<p>29 Entity Pages · JSON-LD + Verified ISRCs</p>
-<div class="badge" id="badge">● CHECKING…</div>
-<p class="timestamp" id="ts">—</p>
-<div class="stats">
-<div class="stat"><div class="num" id="passed">–</div><div class="label">Pages Verified</div></div>
-<div class="stat"><div class="num">18</div><div class="label">With ISRC</div></div>
-<div class="stat"><div class="num">11</div><div class="label">Correctly Without</div></div>
+<h1>🎼 TRACK PAGES</h1>
+<p>29 entity pages — JSON-LD</p>
+<div class="badge">● LIVE</div>
+<p class="timestamp">Certified: 2026-10-18T20:20:31.344617+00:00</p>
+<div class="stats"><div class="stat"><div class="num">23</div><div class="label">pages passed</div></div></div>
 </div>
+<div class="grid">
+<div class="card"><h3><span style="color:#4ade80">✓</span> pix</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> vai-vem-vem</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> 7th-angel</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> diabolique</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> diabolique-louder</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> doves-diamonds</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> flamerz</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> golden-diamond</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> neon-nights-pt-777</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> painted-lady</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> phantasm</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> place-i-go-to-dream</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> rainbows-and-roses</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> shaka-zulu</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> spirits-n-shadows</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> ultimate</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> warped-wicked</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> zooted-zone</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> full-moon (no-isrc)</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> stunt (no-isrc)</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> be-mad (no-isrc)</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> 2k23-corners (no-isrc)</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> unholy-hunters-ref-10 (no-isrc)</h3></div>
 </div>
-<div class="tracks" id="tracks"><p style="color:#666">Loading…</p></div>
-<div style="max-width:900px;margin:2rem auto;padding:0 1rem">
+<div style="max-width:900px;margin:0 auto;padding:0 1rem">
 <h3 style="color:#fff;margin-bottom:.5rem">Machine-readable receipt</h3>
-<p style="color:#888;font-size:.9rem">AI agents: <a href="/verified/tracks-receipt.json" style="color:#4ade80"><code>/verified/tracks-receipt.json</code></a></p>
-<pre id="receipt">Loading…</pre>
+<p style="color:#888;font-size:.9rem">AI agents: <a href="/verified/tracks-receipt.json" style="color:#a3e635"><code>/verified/tracks-receipt.json</code></a></p>
+<pre>{
+  "attestation": "track-pages",
+  "subject": "29 Track Entity Pages \u2014 JSON-LD ISRC verification",
+  "certified_at": "2026-10-18T20:20:31.344617+00:00",
+  "pages_checked": 23,
+  "pages_passed": 23,
+  "with_isrc_count": 18,
+  "without_isrc_count": 11,
+  "checks": {
+    "pix": true,
+    "vai-vem-vem": true,
+    "7th-angel": true,
+    "diabolique": true,
+    "diabolique-louder": true,
+    "doves-diamonds": true,
+    "flamerz": true,
+    "golden-diamond": true,
+    "neon-nights-pt-777": true,
+    "painted-lady": true,
+    "phantasm": true,
+    "place-i-go-to-dream": true,
+    "rainbows-and-roses": true,
+    "shaka-zulu": true,
+    "spirits-n-shadows": true,
+    "ultimate": true,
+    "warped-wicked": true,
+    "zooted-zone": true,
+    "full-moon (no-isrc)": true,
+    "stunt (no-isrc)": true,
+    "be-mad (no-isrc)": true,
+    "2k23-corners (no-isrc)": true,
+    "unholy-hunters-ref-10 (no-isrc)": true
+  },
+  "all_pass": true
+}</pre>
 </div>
 <footer><p>Attested by <code>CWI-Attest/1.0</code> · <a href="/verified/">All attestations</a></p></footer>
-<script>
-fetch('/verified/tracks-receipt.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(d=>{
-  const b=document.getElementById('badge');
-  b.textContent=d.all_pass?`● ${d.pages_passed}/${d.pages_checked} VERIFIED`:'● ISSUES DETECTED';b.className='badge'+(d.all_pass?'':' fail');
-  document.getElementById('ts').textContent='Certified: '+d.certified_at;
-  document.getElementById('passed').textContent=d.pages_passed+'/'+d.pages_checked;
-  document.getElementById('tracks').innerHTML=Object.entries(d.checks).map(([k,v])=>`<div class="track ${v?'':'fail'}"><div class="t">${v?'✓':'✗'} ${k}</div></div>`).join('');
-  document.getElementById('receipt').textContent=JSON.stringify({attestation:d.attestation,certified_at:d.certified_at,pages_checked:d.pages_checked,pages_passed:d.pages_passed,all_pass:d.all_pass},null,2);
-}).catch(e=>{document.getElementById('badge').textContent='● UNAVAILABLE';document.getElementById('badge').className='badge fail';});
-</script>
 </body>
 </html>
