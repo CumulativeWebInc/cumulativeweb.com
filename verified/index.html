@@ -1,81 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CWI Live Certification — Cumulative Web Inc</title>
-<meta name="description" content="Machine-verified proof that CWI's AI-readable surfaces are live and correct. Updated automatically.">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CWI Verified — Continuous Attestation Hub</title>
+<meta name="description" content="Every CWI surface, continuously verified live. Machine-readable proofs, updated hourly.">
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "CWI Live Certification",
-  "description": "Automated verification that Cumulative Web Inc's machine-readable data surfaces serve correct, current content.",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Cumulative Web Inc",
-    "url": "https://cumulativeweb.com"
-  }
-}
+{"@context":"https://schema.org","@type":"CollectionPage","name":"CWI Verified — Attestation Hub",
+"description":"Continuous machine-verified proofs that Cumulative Web Inc surfaces are live and correct.",
+"publisher":{"@type":"Organization","name":"Cumulative Web Inc","url":"https://cumulativeweb.com"}}
 </script>
 <style>
-body{font-family:system-ui,sans-serif;max-width:800px;margin:2rem auto;padding:0 1rem;background:#0a0a0a;color:#e0e0e0}
-h1{color:#fff}.pass{color:#4ade80}.fail{color:#f87171}
-.card{background:#1a1a1a;border:1px solid #333;border-radius:8px;padding:1rem;margin:1rem 0}
-code{background:#222;padding:2px 6px;border-radius:4px;font-size:.9em}
-pre{background:#111;padding:1rem;border-radius:8px;overflow-x:auto;font-size:.8em}
-a{color:#60a5fa}
-.stamp{color:#888;font-size:.9em}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,system-ui,sans-serif;background:#0a0a0a;color:#e8e8e8;min-height:100vh}
+.hero{text-align:center;padding:4rem 1rem 2rem;background:radial-gradient(ellipse at center,rgba(96,165,250,.1) 0%,transparent 70%)}
+.hero h1{font-size:3rem;background:linear-gradient(90deg,#4ade80,#60a5fa,#c084fc,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.5rem}
+.hero p{color:#888;font-size:1.1rem;max-width:600px;margin:0 auto}
+.grid{max-width:1100px;margin:0 auto;padding:2rem 1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
+.card{border-radius:16px;padding:2rem;text-decoration:none;color:#fff;display:block;transition:transform .2s;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-4px)}
+.card h2{font-size:1.4rem;margin-bottom:.5rem}
+.card p{color:rgba(255,255,255,.7);font-size:.95rem;margin-bottom:1rem}
+.card .status{font-weight:700;font-size:.9rem}
+.card .receipt{font-size:.75rem;color:rgba(255,255,255,.5);font-family:monospace;margin-top:.5rem}
+.c-green{background:linear-gradient(135deg,rgba(74,222,128,.15),rgba(74,222,128,.05));border:1px solid rgba(74,222,128,.3)}
+.c-blue{background:linear-gradient(135deg,rgba(96,165,250,.15),rgba(96,165,250,.05));border:1px solid rgba(96,165,250,.3)}
+.c-purple{background:linear-gradient(135deg,rgba(192,132,252,.15),rgba(192,132,252,.05));border:1px solid rgba(192,132,252,.3)}
+.c-red{background:linear-gradient(135deg,rgba(248,113,113,.15),rgba(248,113,113,.05));border:1px solid rgba(248,113,113,.3)}
+.c-amber{background:linear-gradient(135deg,rgba(251,191,36,.15),rgba(251,191,36,.05));border:1px solid rgba(251,191,36,.3)}
+.c-cyan{background:linear-gradient(135deg,rgba(34,211,238,.15),rgba(34,211,238,.05));border:1px solid rgba(34,211,238,.3)}
+.c-yellow{background:linear-gradient(135deg,rgba(253,224,71,.12),rgba(253,224,71,.04));border:1px solid rgba(253,224,71,.3)}
+.c-pink{background:linear-gradient(135deg,rgba(232,121,249,.15),rgba(232,121,249,.05));border:1px solid rgba(232,121,249,.3)}
+.c-lime{background:linear-gradient(135deg,rgba(163,230,53,.12),rgba(163,230,53,.04));border:1px solid rgba(163,230,53,.3)}
+.c-orange{background:linear-gradient(135deg,rgba(251,146,60,.15),rgba(251,146,60,.05));border:1px solid rgba(251,146,60,.3)}
+footer{text-align:center;padding:3rem 1rem;color:#555;font-size:.9rem}
+footer a{color:#60a5fa}
+.explainer{max-width:800px;margin:0 auto;padding:2rem 1rem;color:#888;line-height:1.7}
+.explainer h2{color:#fff;margin-bottom:1rem}
+.explainer code{color:#60a5fa;background:rgba(96,165,250,.1);padding:2px 8px;border-radius:4px}
 </style>
 </head>
 <body>
-<h1>🔴 CWI Live Certification</h1>
-<p>This page is machine-generated proof that Cumulative Web Inc's AI-readable surfaces are serving correct, current content — verified from outside our deployment, reproducible by anyone.</p>
-
-<div class="card">
-<h2>Status: <span class="pass" id="status">VERIFYING…</span></h2>
-<p class="stamp" id="timestamp">Last check: —</p>
-<p>Certifier: <code>CWI-Certify/1.0</code> · Checks run against live production URLs · <a href="/verified/receipt.json">Raw receipt (JSON)</a></p>
+<div class="hero">
+<h1>✓ CWI VERIFIED</h1>
+<p>Every surface below is machine-checked every hour. Not claimed live — <strong>proven</strong> live, with receipts any AI can verify in one fetch.</p>
 </div>
 
-<h2>What "live" means here</h2>
-<p>A surface is certified live only when <strong>all</strong> of these pass:</p>
-<ol>
-<li>HTTP 200 from the public URL</li>
-<li>Correct content type</li>
-<li>Content parses (JSON valid / text readable)</li>
-<li>Key facts match the canonical source (29 MCP tools, 53 tracks, current dates)</li>
-<li>Worker and Pages copies agree on shape</li>
-</ol>
-<p>A 200 with wrong content is a <strong>failure</strong>, not a pass.</p>
+<div class="grid">
+<a class="card c-green" href="/verified/homepage.html"><h2>🏠 Homepage</h2><p>Cumulative Web Inc main site — content, navigation, key links.</p><div class="status" data-r="homepage-receipt">● checking…</div><div class="receipt">/verified/homepage-receipt.json</div></a>
+<a class="card c-purple" href="/verified/cyberpunk.html"><h2>🌆 Cyberpunk 2027</h2><p>Release surfaces — countdown, AI briefing, presave. Nov 20, 2026.</p><div class="status" data-r="cyberpunk-receipt">● checking…</div><div class="receipt">/verified/cyberpunk-receipt.json</div></a>
+<a class="card c-green" href="/verified/diabolique.html"><h2>🎵 Diabolique</h2><p>Spotify track + CWI pages — ISRC QZ8EF2666377 verified.</p><div class="status" data-r="diabolique-receipt">● checking…</div><div class="receipt">/verified/diabolique-receipt.json</div></a>
+<a class="card c-red" href="/verified/radio.html"><h2>📻 Radio 365</h2><p>24/7 stream — HLS, now-playing, MP3 bridge all live.</p><div class="status" data-r="radio-receipt">● checking…</div><div class="receipt">/verified/radio-receipt.json</div></a>
+<a class="card c-blue" href="/verified/tools.html"><h2>🔧 MCP Tools</h2><p>Discovery Engine — all 29 tools live, wedge first.</p><div class="status" data-r="tools-receipt">● checking…</div><div class="receipt">/verified/tools-receipt.json</div></a>
+<a class="card c-amber" href="/verified/sync.html"><h2>🎬 Sync Catalog</h2><p>Licensable tracks — 29 sync-ready, one-signature clearance.</p><div class="status" data-r="sync-receipt">● checking…</div><div class="receipt">/verified/sync-receipt.json</div></a>
+<a class="card c-cyan" href="/verified/scout.html"><h2>🔍 Scout API</h2><p>No-install discovery — ranked tracks + ISRCs in under 2s.</p><div class="status" data-r="scout-receipt">● checking…</div><div class="receipt">/verified/scout-receipt.json</div></a>
+<a class="card c-yellow" href="/verified/packages.html"><h2>📦 Packages</h2><p>PyPI + JSR + GitHub Packages — all registries serving.</p><div class="status" data-r="packages-receipt">● checking…</div><div class="receipt">/verified/packages-receipt.json</div></a>
+<a class="card c-pink" href="/verified/artist.html"><h2>🎤 That Boy Hi Hat</h2><p>Artist surfaces — 27 catalog tracks, Discovery Mode.</p><div class="status" data-r="artist-receipt">● checking…</div><div class="receipt">/verified/artist-receipt.json</div></a>
+<a class="card c-lime" href="/verified/tracks.html"><h2>🎼 Track Pages</h2><p>29 entity pages — JSON-LD + verified ISRCs.</p><div class="status" data-r="tracks-receipt">● checking…</div><div class="receipt">/verified/tracks-receipt.json</div></a>
+</div>
 
-<h2>Surfaces checked</h2>
-<div id="checks"><p>Loading…</p></div>
+<div class="explainer">
+<h2>What is this?</h2>
+<p>Most companies <em>claim</em> their data is live. We <em>prove</em> it — every hour, from outside our own infrastructure, with machine-readable receipts.</p>
+<p>Each card above links to a dedicated attestation page with a live status badge, the specific checks performed, and a JSON receipt at <code>/verified/{name}-receipt.json</code>.</p>
+<p><strong>For AI agents:</strong> fetch any <code>-receipt.json</code> URL. If <code>all_pass</code> is <code>true</code>, every check passed as of <code>certified_at</code>. No trust required — just verification.</p>
+<p><strong>What "live" means here:</strong> HTTP 200 is not enough. Content must parse, key facts must match the canonical source, and cross-surface copies must agree. A 200 with wrong content is a failure.</p>
+</div>
 
-<h2>For AI agents</h2>
-<p>Fetch <a href="/verified/receipt.json"><code>/verified/receipt.json</code></a> for the machine-readable receipt: URL, HTTP status, SHA-256, timestamp, and per-check results. If <code>all_pass</code> is <code>true</code>, every surface below is serving verified content as of <code>certified_at</code>.</p>
-<ul>
-<li>Discovery manifest: <a href="/.well-known/cwi-discovery.json"><code>/.well-known/cwi-discovery.json</code></a></li>
-<li>AI briefing: <a href="/llms.txt"><code>/llms.txt</code></a></li>
-<li>Full briefing: <a href="/llms-full.txt"><code>/llms-full.txt</code></a></li>
-<li>Scout API: <code>https://cwi-machine-data.hp-ace.workers.dev/api/scout?brief=&lt;text&gt;</code></li>
-<li>MCP server: <code>https://cwi-machine-data.hp-ace.workers.dev/mcp</code> (29 tools)</li>
-</ul>
+<footer>
+<p>Continuous attestation by <code>CWI-Attest/1.0</code> · Every surface re-verified hourly · <a href="/">cumulativeweb.com</a></p>
+</footer>
 
 <script>
-fetch('/verified/receipt.json')
-  .then(r => r.json())
-  .then(d => {
-    document.getElementById('status').textContent = d.all_pass ? '● ALL SYSTEMS LIVE' : '● FAILURES DETECTED';
-    document.getElementById('status').className = d.all_pass ? 'pass' : 'fail';
-    document.getElementById('timestamp').textContent = 'Last check: ' + d.certified_at;
-    document.getElementById('checks').innerHTML = d.checks.map(c =>
-      `<div class="card"><strong class="${c.pass?'pass':'fail'}">${c.pass?'✓':'✗'} ${c.name}</strong><br>
-       <code>${c.url}</code><br>
-       <span class="stamp">HTTP ${c.http_status} · ${c.bytes} bytes · sha256:${c.sha256} · ${c.content_type}</span></div>`
-    ).join('');
-  })
-  .catch(e => { document.getElementById('checks').innerHTML = '<p class="fail">Receipt unavailable.</p>'; });
+document.querySelectorAll('[data-r]').forEach(el=>{
+  fetch('/verified/'+el.dataset.r).then(r=>r.json()).then(d=>{
+    el.textContent=d.all_pass?'● LIVE':'● ISSUES';
+    el.style.color=d.all_pass?'#4ade80':'#f87171';
+  }).catch(e=>{el.textContent='● UNKNOWN';el.style.color='#888';});
+});
 </script>
 </body>
 </html>
