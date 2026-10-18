@@ -54,7 +54,7 @@ code{background:rgba(96,165,250,.1);padding:2px 8px;border-radius:4px;color:#93c
 <p>Attested by <code>CWI-Attest/1.0</code> · <a href="/verified/">All attestations</a> · <a href="/.well-known/cwi-discovery.json">Discovery manifest</a></p>
 </footer>
 <script>
-fetch('/verified/tools-receipt.json').then(r=>r.json()).then(d=>{
+fetch('/verified/tools-receipt.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(d=>{
   const b=document.getElementById('badge');
   b.textContent=d.all_pass?'● ALL 29 TOOLS LIVE':'● ISSUES DETECTED';
   b.className='badge'+(d.all_pass?'':' fail');
