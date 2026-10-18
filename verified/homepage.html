@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>✓ Cumulative Web Inc — Live Attestation</title>
+<meta name="description" content="Continuous proof that cumulativeweb.com is live, correct, and serving real content.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,system-ui,sans-serif;background:linear-gradient(135deg,#0a0a0f 0%,#1a1a2e 50%,#0a0a0f 100%);color:#e8e8e8;min-height:100vh}
+.hero{text-align:center;padding:4rem 1rem 2rem}
+.hero h1{font-size:2.5rem;background:linear-gradient(90deg,#4ade80,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.5rem}
+.hero p{color:#888;font-size:1.1rem}
+.badge{display:inline-block;background:rgba(74,222,128,.15);border:1px solid #4ade80;color:#4ade80;padding:.5rem 1.5rem;border-radius:2rem;font-weight:600;margin:1rem 0;font-size:1.1rem}
+.badge.fail{background:rgba(248,113,113,.15);border-color:#f87171;color:#f87171}
+.grid{max-width:900px;margin:0 auto;padding:2rem 1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
+.card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:1.5rem;backdrop-filter:blur(10px)}
+.card h3{color:#fff;margin-bottom:.5rem;font-size:1rem}
+.card .url{color:#60a5fa;font-size:.8rem;word-break:break-all;margin-bottom:.5rem}
+.card .meta{color:#666;font-size:.8rem;margin-top:.5rem}
+.check{color:#4ade80}.cross{color:#f87171}
+footer{text-align:center;padding:2rem;color:#555;font-size:.85rem}
+footer a{color:#60a5fa}
+.timestamp{color:#888;font-size:.9rem;margin-top:.5rem}
+pre{background:#111;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.75rem;max-width:900px;margin:1rem auto;color:#a5b4fc}
+</style>
+</head>
+<body>
+<div class="hero">
+<h1>Cumulative Web Inc</h1>
+<p>Continuous Live Attestation</p>
+<div class="badge" id="badge">● CHECKING…</div>
+<p class="timestamp" id="ts">—</p>
+</div>
+<div class="grid" id="grid"><p style="text-align:center;color:#666">Loading verification…</p></div>
+<div style="max-width:900px;margin:0 auto;padding:0 1rem">
+<h3 style="color:#fff;margin-bottom:.5rem">Machine-readable receipt</h3>
+<p style="color:#888;font-size:.9rem;margin-bottom:.5rem">AI agents: fetch <a href="/verified/homepage-receipt.json" style="color:#60a5fa"><code>/verified/homepage-receipt.json</code></a></p>
+<pre id="receipt">Loading…</pre>
+</div>
+<footer>
+<p>Attested by <code>CWI-Attest/1.0</code> · Checks run from outside our infrastructure · <a href="/verified/">All attestations</a></p>
+</footer>
+<script>
+fetch('/verified/homepage-receipt.json').then(r=>r.json()).then(d=>{
+  const b=document.getElementById('badge');
+  b.textContent=d.all_pass?'● LIVE AND VERIFIED':'● ISSUES DETECTED';
+  b.className='badge'+(d.all_pass?'':' fail');
+  document.getElementById('ts').textContent='Certified: '+d.certified_at;
+  document.getElementById('grid').innerHTML=Object.entries(d.checks).map(([k,v])=>
+    `<div class="card"><h3><span class="${v?'check':'cross'}">${v?'✓':'✗'}</span> ${k.replace(/_/g,' ')}</h3></div>`
+  ).join('');
+  document.getElementById('receipt').textContent=JSON.stringify(d,null,2);
+}).catch(e=>{document.getElementById('badge').textContent='● RECEIPT UNAVAILABLE';document.getElementById('badge').className='badge fail';});
+</script>
+</body>
+</html>
