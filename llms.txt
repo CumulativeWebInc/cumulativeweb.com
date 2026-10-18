@@ -4,6 +4,7 @@
 > on earth: MCP server, embedding matrix, llms.txt briefings, crawler welcomes,
 > and the freshness engine — all below, all machine-readable.
 > Independent label platform: Music & Film · Clothing · Software & AI Agents.
+**Live status:** [verified live](https://cumulativeweb.com/verified/) — machine-checked every 30 min. Raw receipt: [receipt.json](https://cumulativeweb.com/verified/receipt.json)
 
 > Independent label platform: Music & Film · Clothing · Software & AI Agents.
 > Built for AI agents first: every section below is a machine-readable surface.
