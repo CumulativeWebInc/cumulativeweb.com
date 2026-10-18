@@ -75,9 +75,7 @@ Base: https://cumulativewebinc.github.io/cwi-learn/
 
 ### 2.4 Pacotes de conectores (Meta Muse)
 
-Repositório: https://github.com/CumulativeWebInc/cwi-muse-connectors
-
-Um pacote de conector gerado por app CWI. Status de verdade: agent-deck (índice da API do Catálogo Agent Deck, 5 endpoints) e cuefinder (busca de sincronização CueFinder, 3 endpoints) foram ENVIADOS para revisão na plataforma de conectores da Meta (2026-09-19) — não aprovados, não listados, não destacados. Auditoria completa: CLAIMS-AUDIT-2026-09-19.md e ENDPOINT-STATUS-2026-09-19.md no repositório.
+Um pacote de conector gerado por app CWI. Status de verdade: agent-deck (índice da API do Catálogo Agent Deck, 5 endpoints) e cuefinder (busca de sincronização CueFinder, 3 endpoints) foram ENVIADOS para revisão na plataforma de conectores da Meta (2026-09-19) — não aprovados, não listados, não destacados.
 
 ### 2.5 Base de perguntas e respostas
 
