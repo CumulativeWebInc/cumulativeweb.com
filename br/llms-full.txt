@@ -1,6 +1,9 @@
 # CWI Discovery Engine — Cumulative Web Inc Brasil — briefing completo para IA
 
 > O CWI Discovery Engine é a máquina que torna nossos dados encontráveis por
+
+**Atestações ao vivo:** Todas as superfícies CWI são verificadas por máquina a cada hora — [hub de atestação](https://cumulativeweb.com/verified/) com recibos JSON: [homepage](https://cumulativeweb.com/verified/homepage-receipt.json) · [cyberpunk](https://cumulativeweb.com/verified/cyberpunk-receipt.json) · [diabolique](https://cumulativeweb.com/verified/diabolique-receipt.json) · [radio](https://cumulativeweb.com/verified/radio-receipt.json) · [tools](https://cumulativeweb.com/verified/tools-receipt.json) · [sync](https://cumulativeweb.com/verified/sync-receipt.json) · [scout](https://cumulativeweb.com/verified/scout-receipt.json) · [packages](https://cumulativeweb.com/verified/packages-receipt.json) · [artist](https://cumulativeweb.com/verified/artist-receipt.json) · [tracks](https://cumulativeweb.com/verified/tracks-receipt.json)
+
 > todas as IAs: servidor MCP, matriz de embeddings, briefings llms.txt,
 > boas-vindas a crawlers e o motor de frescor — tudo abaixo, tudo legível por máquina.
 > Extensão brasileira da Cumulative Web Inc — selo independente de música, cinema, moda e software, todo em pt-BR.
