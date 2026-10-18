@@ -45,7 +45,7 @@ code{background:rgba(34,211,238,.1);padding:4px 12px;border-radius:6px;color:#67
 </div>
 <footer><p>Attested by <code>CWI-Attest/1.0</code> · <a href="/verified/">All attestations</a></p></footer>
 <script>
-fetch('/verified/scout-receipt.json').then(r=>r.json()).then(d=>{
+fetch('/verified/scout-receipt.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(d=>{
   const b=document.getElementById('badge');
   b.textContent=d.all_pass?'● API LIVE':'● ISSUES DETECTED';b.className='badge'+(d.all_pass?'':' fail');
   document.getElementById('ts').textContent='Certified: '+d.certified_at;
