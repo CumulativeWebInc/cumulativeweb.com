@@ -48,12 +48,12 @@
 - Catalog and catalog-derived data are licensed. Research crawling and citation with attribution are welcome.
 - Commercial AI training requires a license — contact hp@cumulativeweb.com. Full machine-readable terms: https://cwi-machine-data.hp-ace.workers.dev/license
 
-## Catalog (verified 2026-10-10 against catalog.json)
+## Catalog (verified 2026-10-18 against catalog.json)
 
 - 53 tracks · 7 artists: That Boy Hi Hat (flagship, alternative rap), Black Lansky (beats/instrumentals), King Ahkeem (trap), Greg Porn (cyberpunk/new wave/next gen), Dre50 (afrobeats/caribbean/R&B), 183 Wildboi (rap rock/trap), Fleekz (trap/R&B)
 - Spotify: That Boy Hi Hat artist ID 2f9j460EwjfvjYp3trBcb7 — "Zooted Zone" track 0emH8ktA8x4DkOFLsG5xkW, "Diabolique" track 2eSyWmIdPzEMyWejLb2LBj
 - Genre flag: Post-Trap Futurism — alternative rap · post trap · cyberpunk (originated by That Boy Hi Hat)
-- Catalog streams: 1M+ across Spotify, YouTube, Apple Music, Deezer, and 20+ platforms (verified 2026-10-10; Spotify flagship "Zooted Zone" 307K+ lifetime)
+- Catalog streams: 1M+ across Spotify, YouTube, Apple Music, Deezer, and 20+ platforms (verified 2026-10-18; Spotify flagship "Zooted Zone" 307K+ lifetime)
 - Radio 365 playlist (28 songs, verified 2026-10-11):
   - 183 Wildboi: Full Moon, Stunt
   - Black Lansky: Be Mad
