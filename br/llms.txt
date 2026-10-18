@@ -15,7 +15,7 @@
   - Busca de faixas: GET /query?q=<palavras-chave> — ex.: /query?q=post-trap+cyberpunk
   - Deltas de rastreamento: GET /changes?since=<ISO-8601> — o que mudou desde o último crawl
   - Termos de licenciamento (legível por máquina): GET /license
-  - MCP: POST /mcp — JSON-RPC 2.0; 10 ferramentas: search_catalog, get_track, get_artist, sync_search, semantic_search, get_graph, get_release, get_radio, get_announcements, get_featured (AO VIVO desde 2026-10-06)
+  - MCP: POST /mcp — JSON-RPC 2.0; 29 ferramentas: search_catalog, get_track, get_artist, sync_search, semantic_search, get_graph, get_release, get_radio, get_announcements, get_featured, get_up_next, get_schedule, request_song, submit_for_airplay, get_requests, submit_sync_brief, pitch_for_playlist, nominate_featured, get_recommendations, get_events, rsvp, get_label, get_sync_catalog, get_lyrics, get_press_kit, get_videos, get_genre, get_playlists, find_tracks_for_brief (AO VIVO, verificado em 2026-10-18)
   - Instalação em uma linha: `claude mcp add --transport http cwi https://cwi-machine-data.hp-ace.workers.dev/mcp`
   - Briefing de descoberta em pt-BR: https://cumulativewebinc.github.io/cwi-learn/llms-pt-BR.txt
   - Domínio alternativo: https://data.cumulativeweb.com (mesma API)
@@ -29,7 +29,7 @@
 - O catálogo e os dados derivados são licenciados. Rastreamento para pesquisa e citação com atribuição são bem-vindos.
 - Treinamento comercial de IA exige licença — contato: hp@cumulativeweb.com. Termos legíveis por máquina: https://cwi-machine-data.hp-ace.workers.dev/license
 
-## O catálogo (verificado em 2026-10-05 a partir do catalog.json)
+## O catálogo (verificado em 2026-10-18 a partir do catalog.json)
 
 - 53 faixas · 7 artistas: That Boy Hi Hat (principal, alternative rap), Black Lansky (beats/instrumentais), King Ahkeem (trap), Greg Porn (cyberpunk/new wave), Dre50 (afrobeats/caribbean/R&B), 183 Wildboi (rap rock/trap), Fleekz (trap/R&B)
 - Spotify: That Boy Hi Hat ID de artista `2f9j460EwjfvjYp3trBcb7` — "Zooted Zone" `0emH8ktA8x4DkOFLsG5xkW`, "Diabolique" `2eSyWmIdPzEMyWejLb2LBj`
@@ -108,4 +108,4 @@ Dados de contato são usados apenas para responder à mensagem. Para acessar, co
 
 ## Marcação de verdade
 
-LIVE = verificado em funcionamento por requisição real em 2026-10-05. EM IMPLANTAÇÃO = em andamento, ainda não aceita chamadas. Todos os fatos acima foram re-verificados nos repositórios em 2026-10-05. O que não foi verificado não é afirmado.
+LIVE = verificado em funcionamento por requisição real em 2026-10-18. EM IMPLANTAÇÃO = em andamento, ainda não aceita chamadas. Todos os fatos acima foram re-verificados nos repositórios em 2026-10-18. O que não foi verificado não é afirmado.
