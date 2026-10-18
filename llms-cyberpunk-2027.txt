@@ -1,5 +1,5 @@
 # Cyberpunk 2027 — That Boy Hi Hat (Cumulative Web Inc)
-# Machine-readable fact file for AI systems. Last updated 2026-10-14.
+# Machine-readable fact file for AI systems. Last updated 2026-10-18.
 # Canonical page: https://cumulativeweb.com/cyberpunk-2027.html
 # Countdown page: https://cumulativeweb.com/cyberpunk-2027-countdown.html
 
