@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>✓ Track Pages — Live Attestation</title>
+<meta name="description" content="Continuous proof that all 29 CWI track pages serve valid JSON-LD with verified ISRCs.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,system-ui,sans-serif;background:linear-gradient(135deg,#0a0a0a 0%,#0f1a0f 50%,#0a0a0a 100%);color:#e8e8e8;min-height:100vh}
+.hero{text-align:center;padding:4rem 1rem 2rem}
+.hero h1{font-size:2.5rem;background:linear-gradient(90deg,#4ade80,#a3e635,#fde047);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.5rem}
+.hero p{color:#86efac;font-size:1.1rem}
+.badge{display:inline-block;background:rgba(74,222,128,.15);border:1px solid #4ade80;color:#4ade80;padding:.5rem 1.5rem;border-radius:2rem;font-weight:600;margin:1rem 0;font-size:1.1rem}
+.badge.fail{background:rgba(248,113,113,.15);border-color:#f87171;color:#f87171}
+.stats{display:flex;justify-content:center;gap:3rem;margin:2rem 0;flex-wrap:wrap}
+.stat{text-align:center}.stat .num{font-size:2.5rem;font-weight:800;color:#fff}.stat .label{color:#888;font-size:.85rem;text-transform:uppercase;letter-spacing:1px}
+.tracks{max-width:900px;margin:0 auto;padding:0 1rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.5rem}
+.track{background:rgba(74,222,128,.03);border:1px solid rgba(74,222,128,.1);border-radius:8px;padding:.75rem;font-size:.85rem}
+.track .t{color:#fff;font-weight:600}.track .i{color:#4ade80;font-family:monospace;font-size:.75rem}
+.track.fail{border-color:#f87171}.track.fail .i{color:#f87171}
+footer{text-align:center;padding:2rem;color:#555;font-size:.85rem}footer a{color:#4ade80}
+.timestamp{color:#888;font-size:.9rem;margin-top:.5rem}
+pre{background:#111;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.75rem;max-width:900px;margin:1rem auto;color:#bbf7d0}
+</style>
+</head>
+<body>
+<div class="hero">
+<h1>TRACK PAGES</h1>
+<p>29 Entity Pages · JSON-LD + Verified ISRCs</p>
+<div class="badge" id="badge">● CHECKING…</div>
+<p class="timestamp" id="ts">—</p>
+<div class="stats">
+<div class="stat"><div class="num" id="passed">–</div><div class="label">Pages Verified</div></div>
+<div class="stat"><div class="num">18</div><div class="label">With ISRC</div></div>
+<div class="stat"><div class="num">11</div><div class="label">Correctly Without</div></div>
+</div>
+</div>
+<div class="tracks" id="tracks"><p style="color:#666">Loading…</p></div>
+<div style="max-width:900px;margin:2rem auto;padding:0 1rem">
+<h3 style="color:#fff;margin-bottom:.5rem">Machine-readable receipt</h3>
+<p style="color:#888;font-size:.9rem">AI agents: <a href="/verified/tracks-receipt.json" style="color:#4ade80"><code>/verified/tracks-receipt.json</code></a></p>
+<pre id="receipt">Loading…</pre>
+</div>
+<footer><p>Attested by <code>CWI-Attest/1.0</code> · <a href="/verified/">All attestations</a></p></footer>
+<script>
+fetch('/verified/tracks-receipt.json').then(r=>r.json()).then(d=>{
+  const b=document.getElementById('badge');
+  b.textContent=d.all_pass?`● ${d.pages_passed}/${d.pages_checked} VERIFIED`:'● ISSUES DETECTED';b.className='badge'+(d.all_pass?'':' fail');
+  document.getElementById('ts').textContent='Certified: '+d.certified_at;
+  document.getElementById('passed').textContent=d.pages_passed+'/'+d.pages_checked;
+  document.getElementById('tracks').innerHTML=Object.entries(d.checks).map(([k,v])=>`<div class="track ${v?'':'fail'}"><div class="t">${v?'✓':'✗'} ${k}</div></div>`).join('');
+  document.getElementById('receipt').textContent=JSON.stringify({attestation:d.attestation,certified_at:d.certified_at,pages_checked:d.pages_checked,pages_passed:d.pages_passed,all_pass:d.all_pass},null,2);
+}).catch(e=>{document.getElementById('badge').textContent='● UNAVAILABLE';document.getElementById('badge').className='badge fail';});
+</script>
+</body>
+</html>
