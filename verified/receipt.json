@@ -1,0 +1,95 @@
+{
+  "certified_at": "2026-10-18T19:46:07.227812+00:00",
+  "certifier": "CWI-Certify/1.0",
+  "passed": 6,
+  "total": 6,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "manifest-worker",
+      "url": "https://cwi-machine-data.hp-ace.workers.dev/.well-known/cwi-discovery.json",
+      "http_status": 200,
+      "content_type": "application/json",
+      "bytes": 5195,
+      "sha256": "c29354e001a80b96",
+      "checks": {
+        "http_200": true,
+        "valid_json": true,
+        "top_level_mcp": true,
+        "tool_count_29": true,
+        "jsr_1_0_5": true
+      },
+      "pass": true
+    },
+    {
+      "name": "manifest-pages",
+      "url": "https://cumulativeweb.com/.well-known/cwi-discovery.json",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 5889,
+      "sha256": "73a36e6bdce2c534",
+      "checks": {
+        "http_200": true,
+        "valid_json": true,
+        "top_level_mcp": true,
+        "tool_count_29": true,
+        "jsr_1_0_5": true
+      },
+      "pass": true
+    },
+    {
+      "name": "llms-txt",
+      "url": "https://cumulativeweb.com/llms.txt",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 18248,
+      "sha256": "de6068558f8805ff",
+      "checks": {
+        "http_200": true,
+        "has_29_tools": true,
+        "fresh_stamp": true
+      },
+      "pass": true
+    },
+    {
+      "name": "llms-full-txt",
+      "url": "https://cumulativeweb.com/llms-full.txt",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 11125,
+      "sha256": "90d7267dff8083a2",
+      "checks": {
+        "http_200": true,
+        "fresh_stamp": true
+      },
+      "pass": true
+    },
+    {
+      "name": "scout-get",
+      "url": "https://cwi-machine-data.hp-ace.workers.dev/api/scout?brief=dark%20cyberpunk%20track&limit=2",
+      "http_status": 200,
+      "content_type": "application/json",
+      "bytes": 2620,
+      "sha256": "beeeb2402ea3aa32",
+      "checks": {
+        "http_200": true,
+        "valid_json": true,
+        "returns_tracks_with_isrc": true
+      },
+      "pass": true
+    },
+    {
+      "name": "graph-json",
+      "url": "https://cwi-machine-data.hp-ace.workers.dev/graph.json",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 238065,
+      "sha256": "7cbfbf17df8607f9",
+      "checks": {
+        "http_200": true,
+        "valid_json": true
+      },
+      "pass": true
+    }
+  ]
+}
