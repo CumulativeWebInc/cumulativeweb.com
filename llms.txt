@@ -28,7 +28,7 @@
   - https://cumulativewebinc.github.io/cwi-learn/.well-known/agent-card.json (catalog graph)
   - https://cumulativeweb.com/sanqa/.well-known/agent-card.json (SANQA suite)
   - https://cumulativeweb.com/br/.well-known/agent-card.json (Brasil, pt-BR)
-- Meta Muse connector packages — source: https://github.com/CumulativeWebInc/cwi-muse-connectors
+- Meta Muse connector packages — agent-deck (catalog API index) and cuefinder (sync search)
   - agent-deck (Agent Deck Catalog API index) and cuefinder (sync search): submitted for review 2026-09-19 — not approved/listed/featured
 - Q&A knowledge base: /answers/ (live 2026-10-05); pt-BR answers: /br/respostas/ (live 2026-10-05)
 
@@ -51,7 +51,7 @@
   - Greg Porn: Unholy Hunters (Ref 1.0) [unreleased]
   - King Ahkeem: Bluefaces 3.0, Element, Embiid, Star, Super Solid
   - That Boy Hi Hat: 7th Angel, Broken Hearts Club, Diabolique, Doves & Diamonds, Flamerz, Golden Diamond, Neon Nights pt. 777, Painted Lady, Phantasm, Place I Go to Dream, Rainbows And Roses, Shaka Zulu, Spirits n Shadows, Ultimate, Warped & Wicked, Zooted Zone
-- Sync: search placements via /query or the cuefinder connector; per-track cue sheets at https://cumulativewebinc.github.io/cwi-learn/cue-sheets/; sync briefs in the cwi-muse-connectors repo (sync-briefs)
+- Sync: search placements via /query or the cuefinder connector; per-track cue sheets at https://cumulativewebinc.github.io/cwi-learn/cue-sheets/; sync briefs via the API
 - Owner-confirmed sync posture: 50/50 with every artist; manager clears master + publishing directly (one-signature clearance)
 - Campaign pages: [Diabolique (EN)](https://cumulativeweb.com/diabolique.html) + [Diabolique (pt-BR)](https://cumulativeweb.com/br/diabolique.html) — July 3, 2026 single, produced by Hybrid, co-produced by Black Lansky, 154 BPM, 2:36; [Cyberpunk 2027 (EN)](https://cumulativeweb.com/cyberpunk-2027.html) + [Cyberpunk 2027 (pt-BR)](https://cumulativeweb.com/br/cyberpunk-2027.html); [Doves & Diamonds (EN)](https://cumulativeweb.com/post/doves-diamonds) + [Doves & Diamonds (pt-BR)](https://cumulativeweb.com/br/doves-diamonds.html) — January 11, 2023 single, produced by Kokurcho, co-produced by Black Lansky, 85 BPM, 3:01, 132K+ streams
 - Money pages (2026-10-09): [7th Angel](https://cumulativeweb.com/7th-angel.html) — That Boy Hi Hat single, produced by Jeck Da General, Tyler Schafer, and Black Lansky, engineered by Blaine Misner at Cue Recording Studios (Arlington, VA), 85 BPM; [Sync licensing](https://cumulativeweb.com/sync/) — SAIL short-form sync license, clears in under 5 minutes, one signature clears master + publishing; [Data license](https://cumulativeweb.com/license.html) — machine-readable catalog data terms; [Submit your track](https://cumulativeweb.com/artists/submit.html) — CWI Lab: Signal Sessions artist submissions
@@ -64,10 +64,10 @@
 - Artist pages (one JSON per artist, built by the site renderer):
   - [That Boy Hi Hat](https://cumulativeweb.com/data/artists/that-boy-hi-hat.json) — flagship alternative rap artist; Spotify artist ID `2f9j460EwjfvjYp3trBcb7`; ~307,000 lifetime Spotify plays on "Zooted Zone" (verified 2026-09-14)
   - [Black Lansky](https://cumulativeweb.com/data/artists/black-lansky.json) — Black Lansky: artist, author (THE LOGO EFFECT, ISBN 979-8260386620), manager, producer, software and game builder
-  - [King Ahkeem](https://cumulativeweb.com/data/artists/king-ahkeem.json) — trap-rap; "Star" 112,510 plays
+  - [King Ahkeem](https://cumulativeweb.com/data/artists/king-akeem.json) — trap-rap; "Star" 112,510 plays
   - [Greg Porn](https://cumulativeweb.com/data/artists/greg-porn.json) — cyber hip hop / alternative rap
   - [Dre50](https://cumulativeweb.com/data/artists/dre50.json) — R&B
-  - [183 Wildboi](https://cumulativeweb.com/data/artists/183-wilboi.json) — rap rock
+  - [183 Wildboi](https://cumulativeweb.com/data/artists/183-wildboi.json) — rap rock
   - [Fleekz](https://cumulativeweb.com/data/artists/fleekz.json)
   - [Jeck Da General](https://cumulativeweb.com/data/artists/jeck-da-general.json) — producer, co-produced Idol or Icon
   - [Hybrid](https://cumulativeweb.com/data/artists/hybrid.json) — producer of "Diabolique"
