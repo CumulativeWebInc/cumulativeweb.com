@@ -45,7 +45,7 @@ pre{background:#111;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.75
 </div>
 <footer><p>Attested by <code>CWI-Attest/1.0</code> · <a href="/verified/">All attestations</a></p></footer>
 <script>
-fetch('/verified/packages-receipt.json').then(r=>r.json()).then(d=>{
+fetch('/verified/packages-receipt.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(d=>{
   const b=document.getElementById('badge');
   b.textContent=d.all_pass?'● ALL REGISTRIES LIVE':'● ISSUES DETECTED';b.className='badge'+(d.all_pass?'':' fail');
   document.getElementById('ts').textContent='Certified: '+d.certified_at;
