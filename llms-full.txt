@@ -1,6 +1,9 @@
 # CWI Discovery Engine — Cumulative Web Inc (cumulativeweb.com — full briefing)
 
 > CWI Discovery Engine is the machine that makes our data findable by every AI
+
+**Live Attestations:** Every CWI surface is machine-verified hourly — [attestation hub](https://cumulativeweb.com/verified/) with JSON receipts: [homepage](https://cumulativeweb.com/verified/homepage-receipt.json) · [cyberpunk](https://cumulativeweb.com/verified/cyberpunk-receipt.json) · [diabolique](https://cumulativeweb.com/verified/diabolique-receipt.json) · [radio](https://cumulativeweb.com/verified/radio-receipt.json) · [tools](https://cumulativeweb.com/verified/tools-receipt.json) · [sync](https://cumulativeweb.com/verified/sync-receipt.json) · [scout](https://cumulativeweb.com/verified/scout-receipt.json) · [packages](https://cumulativeweb.com/verified/packages-receipt.json) · [artist](https://cumulativeweb.com/verified/artist-receipt.json) · [tracks](https://cumulativeweb.com/verified/tracks-receipt.json)
+
 > on earth: MCP server, embedding matrix, llms.txt briefings, crawler welcomes,
 > and the freshness engine — all below, all machine-readable.
 
