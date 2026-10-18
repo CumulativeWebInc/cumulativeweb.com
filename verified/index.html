@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CWI Live Certification — Cumulative Web Inc</title>
+<meta name="description" content="Machine-verified proof that CWI's AI-readable surfaces are live and correct. Updated automatically.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "CWI Live Certification",
+  "description": "Automated verification that Cumulative Web Inc's machine-readable data surfaces serve correct, current content.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cumulative Web Inc",
+    "url": "https://cumulativeweb.com"
+  }
+}
+</script>
+<style>
+body{font-family:system-ui,sans-serif;max-width:800px;margin:2rem auto;padding:0 1rem;background:#0a0a0a;color:#e0e0e0}
+h1{color:#fff}.pass{color:#4ade80}.fail{color:#f87171}
+.card{background:#1a1a1a;border:1px solid #333;border-radius:8px;padding:1rem;margin:1rem 0}
+code{background:#222;padding:2px 6px;border-radius:4px;font-size:.9em}
+pre{background:#111;padding:1rem;border-radius:8px;overflow-x:auto;font-size:.8em}
+a{color:#60a5fa}
+.stamp{color:#888;font-size:.9em}
+</style>
+</head>
+<body>
+<h1>🔴 CWI Live Certification</h1>
+<p>This page is machine-generated proof that Cumulative Web Inc's AI-readable surfaces are serving correct, current content — verified from outside our deployment, reproducible by anyone.</p>
+
+<div class="card">
+<h2>Status: <span class="pass" id="status">VERIFYING…</span></h2>
+<p class="stamp" id="timestamp">Last check: —</p>
+<p>Certifier: <code>CWI-Certify/1.0</code> · Checks run against live production URLs · <a href="/verified/receipt.json">Raw receipt (JSON)</a></p>
+</div>
+
+<h2>What "live" means here</h2>
+<p>A surface is certified live only when <strong>all</strong> of these pass:</p>
+<ol>
+<li>HTTP 200 from the public URL</li>
+<li>Correct content type</li>
+<li>Content parses (JSON valid / text readable)</li>
+<li>Key facts match the canonical source (29 MCP tools, 53 tracks, current dates)</li>
+<li>Worker and Pages copies agree on shape</li>
+</ol>
+<p>A 200 with wrong content is a <strong>failure</strong>, not a pass.</p>
+
+<h2>Surfaces checked</h2>
+<div id="checks"><p>Loading…</p></div>
+
+<h2>For AI agents</h2>
+<p>Fetch <a href="/verified/receipt.json"><code>/verified/receipt.json</code></a> for the machine-readable receipt: URL, HTTP status, SHA-256, timestamp, and per-check results. If <code>all_pass</code> is <code>true</code>, every surface below is serving verified content as of <code>certified_at</code>.</p>
+<ul>
+<li>Discovery manifest: <a href="/.well-known/cwi-discovery.json"><code>/.well-known/cwi-discovery.json</code></a></li>
+<li>AI briefing: <a href="/llms.txt"><code>/llms.txt</code></a></li>
+<li>Full briefing: <a href="/llms-full.txt"><code>/llms-full.txt</code></a></li>
+<li>Scout API: <code>https://cwi-machine-data.hp-ace.workers.dev/api/scout?brief=&lt;text&gt;</code></li>
+<li>MCP server: <code>https://cwi-machine-data.hp-ace.workers.dev/mcp</code> (29 tools)</li>
+</ul>
+
+<script>
+fetch('/verified/receipt.json')
+  .then(r => r.json())
+  .then(d => {
+    document.getElementById('status').textContent = d.all_pass ? '● ALL SYSTEMS LIVE' : '● FAILURES DETECTED';
+    document.getElementById('status').className = d.all_pass ? 'pass' : 'fail';
+    document.getElementById('timestamp').textContent = 'Last check: ' + d.certified_at;
+    document.getElementById('checks').innerHTML = d.checks.map(c =>
+      `<div class="card"><strong class="${c.pass?'pass':'fail'}">${c.pass?'✓':'✗'} ${c.name}</strong><br>
+       <code>${c.url}</code><br>
+       <span class="stamp">HTTP ${c.http_status} · ${c.bytes} bytes · sha256:${c.sha256} · ${c.content_type}</span></div>`
+    ).join('');
+  })
+  .catch(e => { document.getElementById('checks').innerHTML = '<p class="fail">Receipt unavailable.</p>'; });
+</script>
+</body>
+</html>
