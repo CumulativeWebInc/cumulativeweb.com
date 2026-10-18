@@ -45,7 +45,7 @@ pre{background:#111;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.75
 <p>Attested by <code>CWI-Attest/1.0</code> · <a href="/verified/">All attestations</a> · <a href="/llms-cyberpunk-2027.txt">AI briefing</a></p>
 </footer>
 <script>
-fetch('/verified/cyberpunk-receipt.json').then(r=>r.json()).then(d=>{
+fetch('/verified/cyberpunk-receipt.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(d=>{
   const b=document.getElementById('badge');
   b.textContent=d.all_pass?'● ALL SURFACES LIVE':'● ISSUES DETECTED';
   b.className='badge'+(d.all_pass?'':' fail');
