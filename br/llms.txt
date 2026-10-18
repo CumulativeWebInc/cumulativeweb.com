@@ -21,7 +21,7 @@
   - Domínio alternativo: https://data.cumulativeweb.com (mesma API)
 - Superfície de aprendizado do catálogo: https://cumulativewebinc.github.io/cwi-learn/llms.txt — catalog.json, graph.json, kit.json, EQUIP-GUIDE.md
 - Cartão do agente: https://cumulativeweb.com/br/.well-known/agent-card.json
-- Pacotes de conectores para o Meta Muse — código-fonte: https://github.com/CumulativeWebInc/cwi-muse-connectors — agent-deck (índice da API do catálogo) e cuefinder (busca de sincronização): enviados para revisão em 2026-09-19 — ainda não aprovados/listados
+- Pacotes de conectores para o Meta Muse — agent-deck (índice da API do catálogo) e cuefinder (busca de sincronização): enviados para revisão em 2026-09-19 — ainda não aprovados/listados
 - Base de perguntas e respostas: /br/respostas/ (em implantação — 2026-10-05); versão em inglês: /answers/
 
 ## Licenciamento
