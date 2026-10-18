@@ -3,55 +3,65 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>✓ Packages — Live Attestation</title>
-<meta name="description" content="Continuous proof that CWI packages are live on PyPI, JSR, and GitHub Packages.">
+<meta name="description" content="Continuous proof that Packages (PyPI · JSR · GitHub) is live and verified.">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,system-ui,sans-serif;background:linear-gradient(135deg,#0d0a0a 0%,#1e1a0a 50%,#0d0a0a 100%);color:#e8e8e8;min-height:100vh}
+body{font-family:-apple-system,system-ui,sans-serif;background:#0a0a0a;color:#e8e8e8;min-height:100vh}
 .hero{text-align:center;padding:4rem 1rem 2rem}
-.hero h1{font-size:2.5rem;background:linear-gradient(90deg,#fde047,#facc15,#a3e635);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.5rem}
-.hero p{color:#fde68a;font-size:1.1rem}
-.badge{display:inline-block;background:rgba(253,224,71,.15);border:1px solid #fde047;color:#fde047;padding:.5rem 1.5rem;border-radius:2rem;font-weight:600;margin:1rem 0;font-size:1.1rem}
-.badge.fail{background:rgba(248,113,113,.15);border-color:#f87171;color:#f87171}
-.pkgs{max-width:700px;margin:2rem auto;display:grid;gap:1rem;padding:0 1rem}
-.pkg{background:rgba(253,224,71,.05);border:1px solid rgba(253,224,71,.15);border-radius:12px;padding:1.5rem;display:flex;justify-content:space-between;align-items:center}
-.pkg .name{font-weight:700;color:#fff;font-size:1.1rem}
-.pkg .ver{color:#fde047;font-family:monospace}
-.pkg .cmd{color:#888;font-size:.85rem;font-family:monospace;margin-top:.25rem}
+.hero h1{font-size:2.5rem;margin-bottom:.5rem}
+.hero p{color:#888;font-size:1.1rem}
+.badge{display:inline-block;background:rgba(253,224,71,.12);border:1px solid #fde047;color:#fde047;padding:.5rem 1.5rem;border-radius:2rem;font-weight:600;margin:1rem 0;font-size:1.1rem}
+.stats{display:flex;justify-content:center;gap:3rem;margin:2rem 0;flex-wrap:wrap}
+.stat{text-align:center}.stat .num{font-size:2.5rem;font-weight:800;color:#fff}.stat .label{color:#888;font-size:.85rem;text-transform:uppercase;letter-spacing:1px}
 .grid{max-width:900px;margin:0 auto;padding:2rem 1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
-.card{background:rgba(253,224,71,.05);border:1px solid rgba(253,224,71,.15);border-radius:12px;padding:1.5rem}
-.card h3{color:#fff;font-size:1rem}.check{color:#4ade80}.cross{color:#f87171}
+.card{background:rgba(253,224,71,.12);border:1px solid rgba(253,224,71,.3);border-radius:12px;padding:1.5rem}
+.card h3{color:#fff;font-size:1rem}
 footer{text-align:center;padding:2rem;color:#555;font-size:.85rem}footer a{color:#fde047}
 .timestamp{color:#888;font-size:.9rem;margin-top:.5rem}
-pre{background:#111;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.75rem;max-width:900px;margin:1rem auto;color:#fef08a}
+pre{background:#111;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.75rem;max-width:900px;margin:1rem auto;color:#ccc}
 </style>
 </head>
 <body>
 <div class="hero">
-<h1>PACKAGES</h1>
-<p>Live on PyPI · JSR · GitHub Packages</p>
-<div class="badge" id="badge">● CHECKING…</div>
-<p class="timestamp" id="ts">—</p>
+<h1>📦 PACKAGES</h1>
+<p>PyPI · JSR · GitHub</p>
+<div class="badge">● LIVE</div>
+<p class="timestamp">Certified: 2026-10-18T20:20:10.848333+00:00</p>
+<div class="stats"></div>
 </div>
-<div class="pkgs">
-<div class="pkg"><div><div class="name">📦 PyPI</div><div class="cmd">pip install cwi-langchain</div></div><div class="ver" id="pypi-ver">1.0.0</div></div>
-<div class="pkg"><div><div class="name">📦 JSR</div><div class="cmd">jsr add @cumulativeweb/cwi-scout</div></div><div class="ver">1.0.5 · score 100%</div></div>
-<div class="pkg"><div><div class="name">📦 GitHub</div><div class="cmd">npm i @cumulativewebinc/cwi-scout</div></div><div class="ver" id="gh-ver">1.0.0</div></div>
+<div class="grid">
+<div class="card"><h3><span style="color:#4ade80">✓</span> pypi reachable</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> pypi has 1 0 0</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> pypi correct name</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> jsr reachable</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> jsr has versions</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> gh packages reachable</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> gh packages has version</h3></div>
 </div>
-<div class="grid" id="grid"><p style="text-align:center;color:#666">Loading…</p></div>
 <div style="max-width:900px;margin:0 auto;padding:0 1rem">
 <h3 style="color:#fff;margin-bottom:.5rem">Machine-readable receipt</h3>
 <p style="color:#888;font-size:.9rem">AI agents: <a href="/verified/packages-receipt.json" style="color:#fde047"><code>/verified/packages-receipt.json</code></a></p>
-<pre id="receipt">Loading…</pre>
+<pre>{
+  "attestation": "packages",
+  "subject": "CWI Package Registries \u2014 PyPI, JSR, GitHub Packages",
+  "certified_at": "2026-10-18T20:20:10.848333+00:00",
+  "packages": {
+    "pypi": "cwi-langchain 1.0.0",
+    "jsr": "@cumulativeweb/cwi-scout",
+    "github": "@cumulativewebinc/cwi-scout"
+  },
+  "checks": {
+    "pypi_reachable": true,
+    "pypi_has_1_0_0": true,
+    "pypi_correct_name": true,
+    "jsr_reachable": true,
+    "jsr_has_versions": true,
+    "gh_packages_reachable": true,
+    "gh_packages_has_version": true
+  },
+  "all_pass": true
+}</pre>
 </div>
 <footer><p>Attested by <code>CWI-Attest/1.0</code> · <a href="/verified/">All attestations</a></p></footer>
-<script>
-fetch('/verified/packages-receipt.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(d=>{
-  const b=document.getElementById('badge');
-  b.textContent=d.all_pass?'● ALL REGISTRIES LIVE':'● ISSUES DETECTED';b.className='badge'+(d.all_pass?'':' fail');
-  document.getElementById('ts').textContent='Certified: '+d.certified_at;
-  document.getElementById('grid').innerHTML=Object.entries(d.checks).map(([k,v])=>`<div class="card"><h3><span class="${v?'check':'cross'}">${v?'✓':'✗'}</span> ${k.replace(/_/g,' ')}</h3></div>`).join('');
-  document.getElementById('receipt').textContent=JSON.stringify(d,null,2);
-}).catch(e=>{document.getElementById('badge').textContent='● UNAVAILABLE';document.getElementById('badge').className='badge fail';});
-</script>
 </body>
 </html>
