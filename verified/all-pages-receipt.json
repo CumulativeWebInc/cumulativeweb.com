@@ -1,0 +1,2430 @@
+{
+  "attestation": "all-pages",
+  "certified_at": "2026-10-18T21:04:00.920832+00:00",
+  "total_pages": 185,
+  "total_passed": 185,
+  "categories": {
+    "artists": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "all_pass": true
+    },
+    "track-pages": {
+      "total": 18,
+      "passed": 18,
+      "failed": 0,
+      "all_pass": true
+    },
+    "press": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0,
+      "all_pass": true
+    },
+    "homepage": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "all_pass": true
+    },
+    "brazil": {
+      "total": 18,
+      "passed": 18,
+      "failed": 0,
+      "all_pass": true
+    },
+    "sanqa": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "all_pass": true
+    },
+    "radio": {
+      "total": 31,
+      "passed": 31,
+      "failed": 0,
+      "all_pass": true
+    },
+    "cena": {
+      "total": 12,
+      "passed": 12,
+      "failed": 0,
+      "all_pass": true
+    },
+    "sync": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "all_pass": true
+    },
+    "blog": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0,
+      "all_pass": true
+    },
+    "answers": {
+      "total": 64,
+      "passed": 64,
+      "failed": 0,
+      "all_pass": true
+    },
+    "videos": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "all_pass": true
+    },
+    "install": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "all_pass": true
+    },
+    "post": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "all_pass": true
+    },
+    "greg-porn": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "all_pass": true
+    },
+    "blacklansky": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "all_pass": true
+    },
+    "thatboyhihat": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "all_pass": true
+    },
+    "183wildboi": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "all_pass": true
+    },
+    "omgbarz": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "all_pass": true
+    },
+    "fleekz": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "all_pass": true
+    },
+    "kingahkeem": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "all_pass": true
+    },
+    "artist-discovery": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "all_pass": true
+    },
+    "services": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "all_pass": true
+    },
+    "matrix-rubric": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "all_pass": true
+    },
+    "verified": {
+      "total": 11,
+      "passed": 11,
+      "failed": 0,
+      "all_pass": true
+    }
+  },
+  "pages": {
+    "artists": [
+      {
+        "url": "https://cumulativeweb.com/artists/submit.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Submit your track \u2014 CWI Lab: Signal Sessions \u00b7 Cumulative We",
+        "size": 19300
+      },
+      {
+        "url": "https://cumulativeweb.com/artists/dre50.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Dre50 \u2014 CWI artist \u00b7 Cumulative Web Inc",
+        "size": 13266
+      }
+    ],
+    "track-pages": [
+      {
+        "url": "https://cumulativeweb.com/films.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Films \u00b7 Cumulative Web Inc",
+        "size": 9352
+      },
+      {
+        "url": "https://cumulativeweb.com/models.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Models \u00b7 Cumulative Web Inc",
+        "size": 13533
+      },
+      {
+        "url": "https://cumulativeweb.com/music.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Music \u00b7 Cumulative Web Inc",
+        "size": 112497
+      },
+      {
+        "url": "https://cumulativeweb.com/software.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Software \u00b7 Cumulative Web Inc",
+        "size": 24870
+      },
+      {
+        "url": "https://cumulativeweb.com/events.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Events \u00b7 Cumulative Web Inc",
+        "size": 12919
+      },
+      {
+        "url": "https://cumulativeweb.com/shop.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Shop \u00b7 Cumulative Web Inc",
+        "size": 23766
+      },
+      {
+        "url": "https://cumulativeweb.com/live.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Live \u00b7 Cumulative Web Inc",
+        "size": 14204
+      },
+      {
+        "url": "https://cumulativeweb.com/contact.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Contact \u00b7 Cumulative Web Inc",
+        "size": 16015
+      },
+      {
+        "url": "https://cumulativeweb.com/games.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Games \u00b7 Cumulative Web Inc",
+        "size": 15743
+      },
+      {
+        "url": "https://cumulativeweb.com/signup.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Signup \u00b7 Cumulative Web Inc",
+        "size": 16675
+      },
+      {
+        "url": "https://cumulativeweb.com/cyberpunk-2027.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Cyberpunk 2027 \u2014 That Boy Hi Hat | Nov 20, 2026 Single",
+        "size": 38482
+      },
+      {
+        "url": "https://cumulativeweb.com/diabolique.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Diabolique by That Boy Hi Hat \u2014 Cumulative Web Inc",
+        "size": 829
+      },
+      {
+        "url": "https://cumulativeweb.com/flamerz.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Flamerz by That Boy Hi Hat \u2014 Cumulative Web Inc",
+        "size": 817
+      },
+      {
+        "url": "https://cumulativeweb.com/7th-angel.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "7th Angel by That Boy Hi Hat \u2014 Cumulative Web Inc",
+        "size": 825
+      },
+      {
+        "url": "https://cumulativeweb.com/license.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Data License \u2014 Cumulative Web Inc",
+        "size": 13684
+      },
+      {
+        "url": "https://cumulativeweb.com/vote-diabolique.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Vote Diabolique \u2014 DistroKid Playlist Spotlight | Cumulative ",
+        "size": 8824
+      },
+      {
+        "url": "https://cumulativeweb.com/scorpion-sapphires.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Scorpion &amp; Sapphires \u2014 That Boy Hi Hat \u2014 That Boy Hi Hat",
+        "size": 11474
+      },
+      {
+        "url": "https://cumulativeweb.com/zooted-zone.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Zooted Zone by That Boy Hi Hat \u2014 Cumulative Web Inc",
+        "size": 833
+      }
+    ],
+    "press": [
+      {
+        "url": "https://cumulativeweb.com/press/releases/signal-sessions-pilot-183-wildboi.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Signal Sessions Pilot: 183 Wildboi\u2019s Rock-Rap Night",
+        "size": 16838
+      },
+      {
+        "url": "https://cumulativeweb.com/press/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Byline \u2014 Your story, in your words, on the record \u00b7 Cumulati",
+        "size": 24851
+      },
+      {
+        "url": "https://cumulativeweb.com/press/releases/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Press releases \u00b7 Cumulative Web Inc",
+        "size": 20588
+      },
+      {
+        "url": "https://cumulativeweb.com/press/cyberpunk-2027-visualization.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Cyberpunk 2027 Visualization \u2014 Official Visuals | CWI",
+        "size": 12359
+      },
+      {
+        "url": "https://cumulativeweb.com/press/ruby/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Ruby \u2014 CWI Press Interview | Cumulative Web Inc",
+        "size": 20591
+      }
+    ],
+    "homepage": [
+      {
+        "url": "https://cumulativeweb.com/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Cumulative Web Inc \u2014 Independent Record Label",
+        "size": 35142
+      }
+    ],
+    "brazil": [
+      {
+        "url": "https://cumulativeweb.com/br/filmes.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Filmes \u2014 Cumulative Web Inc Brasil",
+        "size": 9573
+      },
+      {
+        "url": "https://cumulativeweb.com/br/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Cumulative Web Inc Brasil \u2014 M\u00fasica \u00b7 Cinema \u00b7 Moda \u00b7 Softwar",
+        "size": 11774
+      },
+      {
+        "url": "https://cumulativeweb.com/br/musica.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "M\u00fasica \u2014 Cumulative Web Inc Brasil",
+        "size": 11080
+      },
+      {
+        "url": "https://cumulativeweb.com/br/jogos.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Jogos \u00b7 Cumulative Web Inc Brasil",
+        "size": 11177
+      },
+      {
+        "url": "https://cumulativeweb.com/br/eventos.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Eventos \u2014 Cumulative Web Inc Brasil",
+        "size": 8930
+      },
+      {
+        "url": "https://cumulativeweb.com/br/modelos.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Modelos \u2014 Cumulative Web Inc Brasil",
+        "size": 10203
+      },
+      {
+        "url": "https://cumulativeweb.com/br/software.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Software \u2014 Cumulative Web Inc Brasil",
+        "size": 15256
+      },
+      {
+        "url": "https://cumulativeweb.com/br/privacidade.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Privacidade (LGPD) \u2014 Cumulative Web Inc Brasil",
+        "size": 11264
+      },
+      {
+        "url": "https://cumulativeweb.com/br/contato.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Contato \u2014 Cumulative Web Inc Brasil",
+        "size": 11714
+      },
+      {
+        "url": "https://cumulativeweb.com/br/livestream.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Ao Vivo \u2014 Cumulative Web Inc Brasil",
+        "size": 9426
+      },
+      {
+        "url": "https://cumulativeweb.com/br/cadastro.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Cadastro de Artista \u2014 Cumulative Web Inc Brasil",
+        "size": 15567
+      },
+      {
+        "url": "https://cumulativeweb.com/br/radio.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "R\u00e1dio \u2014 Cumulative Web Inc Brasil",
+        "size": 17995
+      },
+      {
+        "url": "https://cumulativeweb.com/br/sync/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Licenciamento Sync \u2014 Licencie That Boy Hi Hat e o cat\u00e1logo C",
+        "size": 13783
+      },
+      {
+        "url": "https://cumulativeweb.com/br/diabolique.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Diabolique \u2014 That Boy Hi Hat | Single de 3 de julho de 2026",
+        "size": 27196
+      },
+      {
+        "url": "https://cumulativeweb.com/br/respostas/como-licenciar-rap-alternativo-cinema-tv.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Como licenciar rap alternativo para cinema e TV? \u00b7 Cumulativ",
+        "size": 10425
+      },
+      {
+        "url": "https://cumulativeweb.com/br/respostas/o-que-e-post-trap-futurism.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "O que \u00e9 post-trap futurism? \u00b7 Cumulative Web Inc Brasil",
+        "size": 9870
+      },
+      {
+        "url": "https://cumulativeweb.com/br/doves-diamonds.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Doves &amp; Diamonds \u2014 That Boy Hi Hat | Single de 11 de jan",
+        "size": 16125
+      },
+      {
+        "url": "https://cumulativeweb.com/br/7th-angel.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "7th Angel \u2014 That Boy Hi Hat | Cumulative Web Inc",
+        "size": 9938
+      }
+    ],
+    "sanqa": [
+      {
+        "url": "https://cumulativeweb.com/sanqa/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "SANQA\u2122 \u2014 the CWI flagship software suite",
+        "size": 20518
+      }
+    ],
+    "radio": [
+      {
+        "url": "https://cumulativeweb.com/radio",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Radio 365 \u2014 24/7 Independent Radio | Cumulative Web Inc",
+        "size": 42917
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/183-wildboi-full-moon.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "183 Wildboi \u2014 Full Moon | Cumulative Radio 365",
+        "size": 7061
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/183-wildboi-stunt.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "183 Wildboi \u2014 Stunt | Cumulative Radio 365",
+        "size": 6933
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/dre50-pix.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Dre50 \u2014 Pix | Cumulative Radio 365",
+        "size": 6690
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/fleekz-2k23-corners.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Fleekz \u2014 2K23 Corners | Cumulative Radio 365",
+        "size": 7118
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/index.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Proof of Airplay \u2014 Cumulative Radio 365",
+        "size": 11035
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/dre50-vai-vem-vem.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Dre50 \u2014 Vai Vem Vem | Cumulative Radio 365",
+        "size": 6979
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/greg-porn-unholy-hunters-ref-1-0.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Greg Porn \u2014 Unholy Hunters (Ref 1.0) | Cumulative Radio 365",
+        "size": 7237
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/king-ahkeem-bluefaces-3-0.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "King Ahkeem \u2014 Bluefaces 3.0 | Cumulative Radio 365",
+        "size": 6986
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/king-ahkeem-element.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "King Ahkeem \u2014 Element | Cumulative Radio 365",
+        "size": 6897
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/king-ahkeem-embiid.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "King Ahkeem \u2014 Embiid | Cumulative Radio 365",
+        "size": 6808
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/king-ahkeem-star.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "King Ahkeem \u2014 Star | Cumulative Radio 365",
+        "size": 7430
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-doves-diamonds.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "That Boy Hi Hat \u2014 'Doves & Diamonds' on Cumulative Radio 365",
+        "size": 4741
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-golden-diamond.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "That Boy Hi Hat \u2014 Golden Diamond | Cumulative Radio 365",
+        "size": 7296
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/king-ahkeem-super-solid.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "King Ahkeem \u2014 Super Solid | Cumulative Radio 365",
+        "size": 6962
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-broken-hearts-club.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "That Boy Hi Hat \u2014 Broken Hearts Club | Cumulative Radio 365",
+        "size": 7986
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-neon-nights-pt-777-mix-1.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "That Boy Hi Hat \u2014 'Neon Nights pt. 777 (Mix 1)' on Cumulativ",
+        "size": 3835
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-7th-angel.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "That Boy Hi Hat \u2014 '7th Angel' on Cumulative Radio 365 | Proo",
+        "size": 4623
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-phantasm.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "That Boy Hi Hat \u2014 Phantasm | Cumulative Radio 365",
+        "size": 7313
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-diabolique.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "That Boy Hi Hat \u2014 'Diabolique' on Cumulative Radio 365 | Pro",
+        "size": 4660
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-place-i-go-to-dream.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "That Boy Hi Hat \u2014 Place I Go to Dream | Cumulative Radio 365",
+        "size": 7836
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-zooted-zone.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "That Boy Hi Hat \u2014 Zooted Zone | Cumulative Radio 365",
+        "size": 7536
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-rainbows-and-roses.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "That Boy Hi Hat \u2014 Rainbows And Roses | Cumulative Radio 365",
+        "size": 7812
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/black-lansky-be-mad.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Black Lansky \u2014 Be Mad | Cumulative Radio 365",
+        "size": 7104
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-spirits-n-shadows.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "That Boy Hi Hat \u2014 Spirits n Shadows | Cumulative Radio 365",
+        "size": 7344
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-shaka-zulu.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "That Boy Hi Hat \u2014 Shaka Zulu | Cumulative Radio 365",
+        "size": 7702
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-warped-wicked-mix-1.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "That Boy Hi Hat \u2014 'Warped & Wicked (Mix 1)' on Cumulative Ra",
+        "size": 3792
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-painted-lady.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "That Boy Hi Hat \u2014 Painted Lady | Cumulative Radio 365",
+        "size": 6601
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-ultimate.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "That Boy Hi Hat \u2014 Ultimate | Cumulative Radio 365",
+        "size": 6895
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-neon-nights-pt-777.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "That Boy Hi Hat \u2014 Neon Nights pt. 777 | Cumulative Radio 365",
+        "size": 7512
+      },
+      {
+        "url": "https://cumulativeweb.com/radio/proof/that-boy-hi-hat-warped-wicked.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "That Boy Hi Hat \u2014 Warped &amp; Wicked | Cumulative Radio 365",
+        "size": 7384
+      }
+    ],
+    "cena": [
+      {
+        "url": "https://cumulativeweb.com/cena/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "CENA.BR \u2014 Rap, Trap e Underground por cidade | Cumulative We",
+        "size": 8694
+      },
+      {
+        "url": "https://cumulativeweb.com/cena/metodologia/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Metodologia CENA.BR \u2014 como pontuamos cada cidade | Cumulativ",
+        "size": 7412
+      },
+      {
+        "url": "https://cumulativeweb.com/cena/br/al/maceio/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Rap e Trap Underground em Macei\u00f3 (AL) | CENA.BR \u2014 Cumulative",
+        "size": 12590
+      },
+      {
+        "url": "https://cumulativeweb.com/cena/br/df/brasilia/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Rap e Trap Underground em Bras\u00edlia (DF) | CENA.BR \u2014 Cumulati",
+        "size": 12206
+      },
+      {
+        "url": "https://cumulativeweb.com/cena/br/rs/porto-alegre/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Rap e Trap Underground em Porto Alegre (RS) | CENA.BR \u2014 Cumu",
+        "size": 12089
+      },
+      {
+        "url": "https://cumulativeweb.com/cena/br/sp/sao-paulo/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Rap e Trap Underground em S\u00e3o Paulo (SP) | CENA.BR \u2014 Cumulat",
+        "size": 12152
+      },
+      {
+        "url": "https://cumulativeweb.com/cena/br/go/goiania/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Rap e Trap Underground em Goi\u00e2nia (GO) | CENA.BR \u2014 Cumulativ",
+        "size": 12192
+      },
+      {
+        "url": "https://cumulativeweb.com/cena/br/ce/fortaleza/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Rap e Trap Underground em Fortaleza (CE) | CENA.BR \u2014 Cumulat",
+        "size": 12050
+      },
+      {
+        "url": "https://cumulativeweb.com/cena/br/rj/rio-de-janeiro/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Rap e Trap Underground no Rio de Janeiro (RJ) | CENA.BR \u2014 Cu",
+        "size": 12226
+      },
+      {
+        "url": "https://cumulativeweb.com/cena/br/ba/salvador/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Rap e Trap Underground em Salvador (BA) | CENA.BR \u2014 Cumulati",
+        "size": 12182
+      },
+      {
+        "url": "https://cumulativeweb.com/cena/br/pe/recife/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Rap e Trap Underground no Recife (PE) | CENA.BR \u2014 Cumulative",
+        "size": 12089
+      },
+      {
+        "url": "https://cumulativeweb.com/cena/br/mg/belo-horizonte/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Rap e Trap Underground em Belo Horizonte (MG) | CENA.BR \u2014 Cu",
+        "size": 12163
+      }
+    ],
+    "sync": [
+      {
+        "url": "https://cumulativeweb.com/sync/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Sync licensing \u2014 license music for film, trailers, ads & gam",
+        "size": 4084
+      }
+    ],
+    "blog": [
+      {
+        "url": "https://cumulativeweb.com/blog/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "CWI Blog \u2014 latest from Cumulative Web Inc",
+        "size": 21220
+      },
+      {
+        "url": "https://cumulativeweb.com/blog/posts/radio-365-is-live.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Radio 365 is live \u00b7 CWI Blog \u00b7 Cumulative Web Inc",
+        "size": 16666
+      },
+      {
+        "url": "https://cumulativeweb.com/blog/posts/cwi-blog-machine-readable.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "The CWI blog is now machine-readable \u00b7 CWI Blog \u00b7 Cumulative",
+        "size": 16000
+      },
+      {
+        "url": "https://cumulativeweb.com/blog/posts/diabolique-october-discovery-mode.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Diabolique: October Discovery Mode \u00b7 CWI Blog",
+        "size": 16943
+      },
+      {
+        "url": "https://cumulativeweb.com/blog/posts/cwi-discovery-engine-on-mcprush.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "CWI Discovery Engine Joins mcprush \u2014 Our Music Catalog Meets",
+        "size": 21603
+      },
+      {
+        "url": "https://cumulativeweb.com/blog/posts/cyberpunk-2027-visualization-live.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Cyberpunk 2027 Anime Visualization Is Live | CWI Blog",
+        "size": 13735
+      }
+    ],
+    "answers": [
+      {
+        "url": "https://cumulativeweb.com/answers/what-is-post-trap-futurism.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What is post-trap futurism? \u00b7 Cumulative Web Inc",
+        "size": 9693
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/where-to-license-alternative-rap-film-tv.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Where can I license alternative rap for film and TV? \u00b7 Cumul",
+        "size": 10197
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/how-does-cwi-sync-licensing-work.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "How does CWI sync licensing work? \u00b7 Cumulative Web Inc",
+        "size": 9484
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/who-is-that-boy-hi-hat.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Who is That Boy Hi Hat? \u00b7 Cumulative Web Inc",
+        "size": 9238
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/what-is-radio-365.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What is Radio 365? \u00b7 Cumulative Web Inc",
+        "size": 8646
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/how-to-query-cwi-catalog-as-ai-agent.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "How do I query the CWI catalog as an AI agent? \u00b7 Cumulative ",
+        "size": 10018
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/how-to-cite-cwi-data.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "How do I cite CWI data? \u00b7 Cumulative Web Inc",
+        "size": 9059
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/what-data-does-cwi-expose-to-ai.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What data does Cumulative Web Inc expose to AI systems? \u00b7 Cu",
+        "size": 9564
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/where-is-cwis-machine-readable-music-catalog.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Where is CWI's machine-readable music catalog? \u00b7 Cumulative ",
+        "size": 9621
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/what-is-the-cwi-mcp-server.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What is the CWI MCP server and how do I call it? \u00b7 Cumulativ",
+        "size": 9795
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "CWI Answers \u2014 direct answers from Cumulative Web Inc",
+        "size": 11109
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/what-is-the-isrc-of-diabolique.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What is the ISRC of Diabolique by That Boy Hi Hat? \u00b7 Cumulat",
+        "size": 3483
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/is-warped-and-wicked-cleared-for-sync.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Is Warped and Wicked cleared for sync licensing? ISRC + clea",
+        "size": 2984
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/what-is-the-isrc-of-cyberpunk-2027.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What is the ISRC of Cyberpunk 2027 by That Boy Hi Hat? Presa",
+        "size": 3309
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/what-is-the-correct-isrc-for-pix.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What is the correct ISRC for Pix by Dre50? (corrected) \u00b7 Cum",
+        "size": 3021
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/what-is-the-isrc-of-zooted-zone.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What is the ISRC of Zooted Zone by That Boy Hi Hat? \u00b7 Cumula",
+        "size": 3098
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/what-is-the-isrc-of-flamerz.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What is the ISRC of Flamerz by That Boy Hi Hat? \u00b7 Cumulative",
+        "size": 2953
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/what-is-the-isrc-of-shaka-zulu.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What is the ISRC of Shaka Zulu by That Boy Hi Hat? \u00b7 Cumulat",
+        "size": 2980
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/what-is-the-isrc-of-doves-and-diamonds.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What is the ISRC of Doves & Diamonds by That Boy Hi Hat? \u00b7 C",
+        "size": 3036
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/what-is-the-isrc-of-spirits-n-shadows.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What is the ISRC of Spirits n Shadows by That Boy Hi Hat? \u00b7 ",
+        "size": 3043
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/what-is-the-isrc-of-ultimate.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What is the ISRC of Ultimate by That Boy Hi Hat? \u00b7 Cumulativ",
+        "size": 2962
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/what-is-the-isrc-of-rainbows-and-roses.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What is the ISRC of Rainbows And Roses by That Boy Hi Hat? \u00b7",
+        "size": 3052
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/what-is-the-isrc-of-painted-lady.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What is the ISRC of Painted Lady by That Boy Hi Hat? \u00b7 Cumul",
+        "size": 2998
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/what-is-the-isrc-of-toxic-elements.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What is the ISRC of Toxic Elements by That Boy Hi Hat? \u00b7 Cum",
+        "size": 3016
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/what-is-the-isrc-of-golden-diamond.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What is the ISRC of Golden Diamond by That Boy Hi Hat? \u00b7 Cum",
+        "size": 3016
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/what-is-the-isrc-of-neon-nights-pt-777.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What is the ISRC of Neon Nights Pt. 777 by That Boy Hi Hat? ",
+        "size": 3060
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/what-is-the-isrc-of-7th-angel.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What is the ISRC of 7th Angel by That Boy Hi Hat? \u00b7 Cumulati",
+        "size": 2971
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/what-is-the-isrc-of-place-i-go-to-dream.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What is the ISRC of Place I Go to Dream by That Boy Hi Hat? ",
+        "size": 3061
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/what-is-the-isrc-of-phantasm.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What is the ISRC of Phantasm by That Boy Hi Hat? \u00b7 Cumulativ",
+        "size": 2962
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/what-is-the-isrc-of-vai-vem-vem.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What is the ISRC of Vai Vem Vem by Dre50? \u00b7 Cumulative Web I",
+        "size": 2825
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/best-music-for-trailers-indie.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Best music for trailers: indie tracks that clear fast \u00b7 Cumu",
+        "size": 2777
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/who-owns-the-rights-to-a-song.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Who owns the rights to a song? The clean answer \u00b7 Cumulative",
+        "size": 4009
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/best-workout-playlist-gym-2026.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Best workout playlist for the gym (2026) \u00b7 Cumulative Web In",
+        "size": 2398
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/best-indie-songs-for-short-film.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Best indie songs for short film (licensable) \u00b7 Cumulative We",
+        "size": 2728
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/copyright-safe-music-for-youtube.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Copyright-safe music for YouTube (without the strike) \u00b7 Cumu",
+        "size": 2381
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/what-is-the-best-ai-music-api.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What is the best AI music API? Free verified music data for ",
+        "size": 2800
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/what-is-isrc-in-music.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "What is ISRC in music? The recording's fingerprint \u00b7 Cumulat",
+        "size": 4107
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/how-to-embed-music-player-on-website.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "How to embed a music player on your website (free) \u00b7 Cumulat",
+        "size": 2270
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/music-licensing-for-small-business.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Music licensing for small business: do I need a license? \u00b7 C",
+        "size": 2392
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/how-to-verify-song-metadata.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "How to verify song metadata (ISRCs, credits, ownership) \u00b7 Cu",
+        "size": 2494
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/best-underground-hip-hop-2026.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Best underground hip hop 2026 \u00b7 Cumulative Web Inc",
+        "size": 2305
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/how-to-get-your-song-on-the-radio.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "How to get your song on the radio (free, independent) \u00b7 Cumu",
+        "size": 2228
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/how-much-to-license-a-song-for-short-film.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "How much to license a song for a short film (2026)",
+        "size": 6222
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/how-to-clear-a-song-for-sync.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "How to clear a song for sync (step by step)",
+        "size": 5503
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/music-licensing-for-youtube-creators.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Music licensing for YouTube creators (no claims)",
+        "size": 5650
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/press-kit-for-independent-musicians.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Press kit for independent musicians: real examples \u00b7 Cumulat",
+        "size": 2255
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/new-rap-artists-2026.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "New rap artists 2026: who to watch \u00b7 Cumulative Web Inc",
+        "size": 2308
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/sync-licensing-for-indie-games.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Sync licensing for indie games \u2014 cleared tracks",
+        "size": 5462
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/license-indie-hip-hop-for-film.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "License indie hip hop for film \u2014 sync-ready tracks",
+        "size": 5818
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/music-metadata-api-free.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Music API for licensable tracks \u2014 free, no auth",
+        "size": 5462
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/king-ahkeem-artist-page.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "King Ahkeem \u2014 trap artist, catalog, licensing",
+        "size": 4722
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/183-wildboi-artist-page.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "183 Wildboi \u2014 rap rock artist, catalog",
+        "size": 4607
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/dre50-artist-page.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Dre50 \u2014 afrobeats artist, catalog, licensing",
+        "size": 4855
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/add-music-search-to-your-app.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Add licensable music search to your app (free)",
+        "size": 5279
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/post-trap-futurism-genre-explained.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Post-Trap Futurism \u2014 the genre, explained",
+        "size": 5751
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/that-boy-hi-hat-artist-page.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "That Boy Hi Hat \u2014 artist, catalog, sync licensing",
+        "size": 5625
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/isrc-lookup-api.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "ISRC lookup for sync licensing \u2014 verified codes",
+        "size": 5256
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/spotify-api-alternative-indie-catalogs.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "API for indie catalogs you can license (2026)",
+        "size": 5302
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/mcp-server-for-music-discovery.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "MCP server for sync licensing \u2014 29 AI tools",
+        "size": 5336
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/black-lansky-producer-page.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Black Lansky \u2014 producer, CWI founder",
+        "size": 4875
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/afrobeats-brazil-crossover-2026.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Afrobeats Brazil crossover 2026 \u2014 the global sound",
+        "size": 5238
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/dmv-underground-hip-hop-2026.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "DMV underground hip hop 2026 \u2014 artists to watch",
+        "size": 5366
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/los-angeles-indie-rap-2026.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Los Angeles indie rap 2026 \u2014 underground artists",
+        "size": 5267
+      },
+      {
+        "url": "https://cumulativeweb.com/answers/atlanta-trap-music-2026.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Atlanta trap music 2026 \u2014 artists & sync licensing",
+        "size": 5447
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://cumulativeweb.com/videos/cyberpunk-2027-anime.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Cyberpunk 2027 Anime Visualization \u2014 That Boy Hi Hat",
+        "size": 18850
+      },
+      {
+        "url": "https://cumulativeweb.com/videos/cyberpunk-2027-hd.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Cyberpunk 2027 HD Visualization \u2014 That Boy Hi Hat",
+        "size": 19081
+      },
+      {
+        "url": "https://cumulativeweb.com/videos/cyberpunk-2027-trailer.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Cyberpunk 2027 (Official Trailer) \u2014 That Boy Hi Hat",
+        "size": 13173
+      }
+    ],
+    "install": [
+      {
+        "url": "https://cumulativeweb.com/install/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Install the CWI Discovery Engine \u2014 one click \u00b7 Cumulative We",
+        "size": 8227
+      }
+    ],
+    "post": [
+      {
+        "url": "https://cumulativeweb.com/post/doves-diamonds/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Doves &amp; Diamonds \u2014 That Boy Hi Hat | Cumulative Web Inc",
+        "size": 17269
+      }
+    ],
+    "greg-porn": [
+      {
+        "url": "https://cumulativeweb.com/greg-porn/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Greg Porn \u2014 Cyberpunk Rap &amp; Conscious Alt | Cumulative W",
+        "size": 24764
+      }
+    ],
+    "blacklansky": [
+      {
+        "url": "https://cumulativeweb.com/blacklansky/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Black Lansky | Cumulative Web Inc",
+        "size": 20031
+      }
+    ],
+    "thatboyhihat": [
+      {
+        "url": "https://cumulativeweb.com/thatboyhihat/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "That Boy Hi Hat | Cumulative Web Inc",
+        "size": 82307
+      }
+    ],
+    "183wildboi": [
+      {
+        "url": "https://cumulativeweb.com/183wildboi/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "183 Wildboi | Cumulative Web Inc",
+        "size": 22369
+      }
+    ],
+    "omgbarz": [
+      {
+        "url": "https://cumulativeweb.com/omgbarz/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "OMG Barz | Cumulative Web Inc",
+        "size": 21400
+      }
+    ],
+    "fleekz": [
+      {
+        "url": "https://cumulativeweb.com/fleekz/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Fleekz | Cumulative Web Inc",
+        "size": 19515
+      }
+    ],
+    "kingahkeem": [
+      {
+        "url": "https://cumulativeweb.com/kingahkeem/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "King Akeem | Cumulative Web Inc",
+        "size": 41114
+      }
+    ],
+    "artist-discovery": [
+      {
+        "url": "https://cumulativeweb.com/artist-discovery/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Artist Discovery | Cumulative Web Inc",
+        "size": 19079
+      }
+    ],
+    "services": [
+      {
+        "url": "https://cumulativeweb.com/services",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "Services for artists \u00b7 Cumulative Web Inc",
+        "size": 17995
+      }
+    ],
+    "matrix-rubric": [
+      {
+        "url": "https://cumulativeweb.com/matrix-rubric",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "The 10 Steps to Land Everywhere \u2014 CWI Rubric",
+        "size": 10038
+      }
+    ],
+    "verified": [
+      {
+        "url": "https://cumulativeweb.com/verified/cyberpunk.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "\u2713 Cyberpunk 2027 \u2014 Live Attestation",
+        "size": 3404
+      },
+      {
+        "url": "https://cumulativeweb.com/verified/tools.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "\u2713 MCP Tools \u2014 Live Attestation",
+        "size": 3641
+      },
+      {
+        "url": "https://cumulativeweb.com/verified/diabolique.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "\u2713 Diabolique \u2014 Live Attestation",
+        "size": 3612
+      },
+      {
+        "url": "https://cumulativeweb.com/verified/",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "CWI Verified \u2014 Continuous Attestation Hub",
+        "size": 7496
+      },
+      {
+        "url": "https://cumulativeweb.com/verified/radio.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "\u2713 Radio 365 \u2014 Live Attestation",
+        "size": 3644
+      },
+      {
+        "url": "https://cumulativeweb.com/verified/homepage.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "\u2713 Homepage \u2014 Live Attestation",
+        "size": 3439
+      },
+      {
+        "url": "https://cumulativeweb.com/verified/sync.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "\u2713 Sync Catalog \u2014 Live Attestation",
+        "size": 3321
+      },
+      {
+        "url": "https://cumulativeweb.com/verified/scout.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "\u2713 Scout API \u2014 Live Attestation",
+        "size": 3260
+      },
+      {
+        "url": "https://cumulativeweb.com/verified/packages.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "\u2713 Packages \u2014 Live Attestation",
+        "size": 3447
+      },
+      {
+        "url": "https://cumulativeweb.com/verified/tracks.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "\u2713 Track Pages \u2014 Live Attestation",
+        "size": 5310
+      },
+      {
+        "url": "https://cumulativeweb.com/verified/artist.html",
+        "ok": true,
+        "checks": {
+          "http_200": true,
+          "has_title": true,
+          "not_error": true,
+          "has_content": true
+        },
+        "title": "\u2713 That Boy Hi Hat \u2014 Live Attestation",
+        "size": 3099
+      }
+    ]
+  }
+}
