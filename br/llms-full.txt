@@ -6,13 +6,13 @@
 > Extensão brasileira da Cumulative Web Inc — selo independente de música, cinema, moda e software, todo em pt-BR.
 > Versão longa de https://cumulativeweb.com/br/llms.txt — cada superfície de máquina, esquema de endpoint e exemplo de uso.
 > Contato oficial para negócios e sincronização (sync): hp@cumulativeweb.com
-> Última verificação: 2026-10-05
+> Última verificação: 2026-10-18
 
 ---
 
 ## 1. O que é a Cumulative Web Inc
 
-A Cumulative Web Inc (CWI) é uma plataforma de selo independente conduzida por Black Lansky. Abrange: um catálogo de 53 faixas em 7 artistas (verificado em 2026-10-05 a partir da fonte de verdade catalog.json), produção de filmes e videoclipes, vestuário (camisetas com artes de capa, skates desenhados por artistas) e software feito para agentes de IA (a suíte SANQA, pacotes de conectores para o Meta Muse, a linha de gear Agent Deck).
+A Cumulative Web Inc (CWI) é uma plataforma de selo independente conduzida por Black Lansky. Abrange: um catálogo de 53 faixas em 7 artistas (verificado em 2026-10-18 a partir da fonte de verdade catalog.json), produção de filmes e videoclipes, vestuário (camisetas com artes de capa, skates desenhados por artistas) e software feito para agentes de IA (a suíte SANQA, pacotes de conectores para o Meta Muse, a linha de gear Agent Deck).
 
 A CWI Brasil é a extensão brasileira: o mesmo universo falado em pt-BR, com consentimento e privacidade sob a LGPD (Lei nº 13.709/2018).
 
@@ -51,7 +51,7 @@ Superfície de ferramentas sobre o catálogo, busca de sincronização e grafo d
 
 - Endpoint: `POST https://cwi-machine-data.hp-ace.workers.dev/mcp`
 - Ferramentas: `search_catalog` (busca de faixas), `get_track` (registro completo de uma faixa), `get_artist` (registro do artista), `sync_search` (busca para licenciamento de sincronização), `get_graph` (fatia do grafo de conhecimento do catálogo)
-- Status em 2026-10-05: em implantação — ainda não aceita chamadas JSON-RPC (verificado por sonda ao vivo em 2026-10-05 13:20 EDT)
+- Status em 2026-10-18: AO VIVO — aceita chamadas JSON-RPC; 29 ferramentas (verificado por sonda ao vivo em 2026-10-18)
 - Superfícies relacionadas já ativas: o cartão de produto do servidor MCP Agent Deck (https://github.com/CumulativeWebInc/cwi-mcp-server, 28/28 testes verdes em 2026-10-01) e o cartão do registro CWI MCP Server: https://cumulativewebinc.github.io/cwi-learn/registry/cwi-mcp-server/
 
 ### 2.2 Superfície de aprendizado do catálogo (GitHub Pages)
