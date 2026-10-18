@@ -1,0 +1,20 @@
+{
+  "attestation": "cwi-homepage",
+  "subject": "Cumulative Web Inc homepage",
+  "url": "https://cumulativeweb.com/",
+  "certified_at": "2026-10-18T19:55:22.411761+00:00",
+  "http_status": 200,
+  "bytes": 35142,
+  "sha256": "557d21ed469222fa",
+  "checks": {
+    "http_200": true,
+    "has_title": true,
+    "has_nav": true,
+    "links_to_scout": true,
+    "links_to_radio": true,
+    "links_to_sync": true,
+    "not_error_page": true,
+    "has_content": true
+  },
+  "all_pass": true
+}
