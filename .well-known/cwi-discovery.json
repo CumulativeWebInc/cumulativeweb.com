@@ -1,89 +1,126 @@
 {
-  "capabilities": [
-    "sync-licensing-discovery",
-    "sync-brief-matching",
-    "music-catalog-search",
-    "track-metadata",
-    "artist-profiles",
-    "related-entity-discovery",
-    "lyrics",
-    "press-kit",
-    "videos",
-    "genre-definitions",
-    "playlist-placements",
-    "live-radio-state",
-    "radio-schedule",
-    "song-requests",
-    "announcements",
-    "events",
-    "label-profile",
-    "catalog-change-feed",
-    "paid-data-api-x402"
-  ],
-  "discovery": {
-    "catalog": "https://cwi-machine-data.hp-ace.workers.dev/catalog.json",
-    "graph": "https://cumulativeweb.com/graph.json",
-    "llms_full_txt": "https://cumulativeweb.com/llms-full.txt",
-    "llms_txt": "https://cumulativeweb.com/llms.txt",
-    "openapi": "https://cwi-x402-api.onrender.com/openapi.json",
-    "sitemap": "https://cumulativeweb.com/sitemap.xml",
-    "updates": "https://cwi-machine-data.hp-ace.workers.dev/changes"
-  },
-  "generated_at": "2026-10-17T11:45:00Z",
-  "integrations": {
-    "langchain_python_source": "https://github.com/CumulativeWebInc/cwi-learn/tree/main/framework-integrations/langchain",
-    "pypi_package": "cwi-langchain",
-    "pypi_version": "1.0.0",
-    "pypi_status": "LIVE on PyPI \u2014 pip install cwi-langchain (v1.0.0, verified 2026-10-17)",
-    "pypi_source": "https://github.com/CumulativeWebInc/cwi-learn/tree/main/framework-integrations/pypi-cwi-langchain",
-    "vercel_ai_sdk_source": "https://github.com/CumulativeWebInc/cwi-learn/tree/main/framework-integrations/vercel-ai-sdk",
-    "npm_package": "@cumulativeweb/cwi-scout",
-    "npm_version": "1.0.0",
-    "npm_status": "built \u2014 publish blocked by npm new-account policy, retrying (verified 2026-10-17)",
-    "npm_source": "https://github.com/CumulativeWebInc/cwi-learn/tree/main/framework-integrations/npm-cwi-scout"
-  },
-  "mcp": {
-    "endpoint": "https://cwi-machine-data.hp-ace.workers.dev/mcp",
-    "mirror_endpoint": "https://data.cumulativeweb.com/mcp",
-    "protocol": "MCP",
-    "registry_entry": "https://registry.modelcontextprotocol.io/v0/servers/io.github.CumulativeWebInc%2Fcwi-discovery-engine/versions/latest",
-    "registry_status": "active",
-    "registry_version": "1.3.0",
-    "smithery": "https://smithery.ai/server/@CumulativeWebInc/cwi-discovery-engine",
-    "mcprush": "approved (CLM-0075)",
-    "glama": "listed",
-    "tool_count": 29
-  },
-  "publisher": {
-    "contact": "hp@cumulativeweb.com",
-    "name": "Cumulative Web Inc",
-    "url": "https://cumulativeweb.com/"
-  },
-  "schema_version": "1.0",
-  "scout": {
-    "api": "https://cwi-machine-data.hp-ace.workers.dev/api/scout",
-    "api_spotlight": "https://cwi-machine-data.hp-ace.workers.dev/api/scout/spotlight",
-    "page": "https://cumulativeweb.com/scout/",
-    "page_pt_br": "https://cumulativeweb.com/br/scout/"
-  },
-  "service": {
-    "description": "Sync-licensing discovery for AI agents: natural-language brief in, licensable tracks with verified ISRCs and one-signature clearance out. 27 sync-ready tracks, 29 MCP tools (wedge: find_tracks_for_brief), zero auth, free discovery tier, paid data API via x402.",
-    "documentation": "https://cumulativeweb.com/scout/",
-    "id": "cwi-discovery-engine",
-    "name": "CWI Discovery Engine"
-  },
-  "verification": {
-    "health_check": "https://cwi-x402-api.onrender.com/health",
-    "mcp_registry_status": "active",
-    "public_demo": "https://cumulativeweb.com/scout/"
-  },
-  "x402_api": {
-    "asset": "USDC",
-    "base": "https://cwi-x402-api.onrender.com",
-    "mode": "testnet",
-    "network": "eip155:84532",
-    "openapi": "https://cwi-x402-api.onrender.com/openapi.json",
-    "pricing": "https://cwi-x402-api.onrender.com/pricing",
-    "protocol": "x402"
+  "DISCOVERY_MANIFEST": {
+    "capabilities": [
+      "music-catalog-search",
+      "track-metadata",
+      "artist-profiles",
+      "related-entity-discovery",
+      "sync-licensing-discovery",
+      "sync-brief-matching",
+      "lyrics",
+      "press-kit",
+      "videos",
+      "genre-definitions",
+      "playlist-placements",
+      "live-radio-state",
+      "radio-schedule",
+      "song-requests",
+      "announcements",
+      "events",
+      "label-profile",
+      "catalog-change-feed",
+      "paid-data-api-x402"
+    ],
+    "discovery": {
+      "catalog": "https://cwi-machine-data.hp-ace.workers.dev/catalog.json",
+      "graph": "https://cumulativeweb.com/graph.json",
+      "llms_full_txt": "https://cumulativeweb.com/llms-full.txt",
+      "llms_txt": "https://cumulativeweb.com/llms.txt",
+      "openapi": "https://cwi-x402-api.onrender.com/openapi.json",
+      "sitemap": "https://cumulativeweb.com/sitemap.xml",
+      "updates": "https://cwi-machine-data.hp-ace.workers.dev/changes",
+      "query_library": "https://cumulativeweb.com/queries/",
+      "answer_pages": "https://cumulativeweb.com/answers/",
+      "conversion_triggers_v2": "https://cumulativeweb.com/queries/",
+      "trigger_v2_sync": [
+        "https://cumulativeweb.com/answers/how-much-to-license-a-song-for-short-film.html",
+        "https://cumulativeweb.com/answers/license-indie-hip-hop-for-film.html",
+        "https://cumulativeweb.com/answers/music-licensing-for-youtube-creators.html",
+        "https://cumulativeweb.com/answers/sync-licensing-for-indie-games.html",
+        "https://cumulativeweb.com/answers/how-to-clear-a-song-for-sync.html"
+      ],
+      "trigger_v2_developer": [
+        "https://cumulativeweb.com/answers/music-metadata-api-free.html",
+        "https://cumulativeweb.com/answers/isrc-lookup-api.html",
+        "https://cumulativeweb.com/answers/add-music-search-to-your-app.html",
+        "https://cumulativeweb.com/answers/spotify-api-alternative-indie-catalogs.html",
+        "https://cumulativeweb.com/answers/mcp-server-for-music-discovery.html"
+      ],
+      "trigger_v2_catalog": [
+        "https://cumulativeweb.com/answers/that-boy-hi-hat-artist-page.html",
+        "https://cumulativeweb.com/answers/post-trap-futurism-genre-explained.html",
+        "https://cumulativeweb.com/answers/king-ahkeem-artist-page.html",
+        "https://cumulativeweb.com/answers/183-wildboi-artist-page.html",
+        "https://cumulativeweb.com/answers/dre50-artist-page.html",
+        "https://cumulativeweb.com/answers/black-lansky-producer-page.html",
+        "https://cumulativeweb.com/answers/atlanta-trap-music-2026.html",
+        "https://cumulativeweb.com/answers/dmv-underground-hip-hop-2026.html",
+        "https://cumulativeweb.com/answers/afrobeats-brazil-crossover-2026.html",
+        "https://cumulativeweb.com/answers/los-angeles-indie-rap-2026.html"
+      ]
+    },
+    "generated_at": "2026-10-18T18:20:00Z",
+    "integrations": {
+      "langchain_python_source": "https://github.com/CumulativeWebInc/cwi-learn/tree/main/framework-integrations/langchain",
+      "pypi_package": "cwi-langchain",
+      "pypi_version": "1.0.0",
+      "pypi_status": "LIVE on PyPI — pip install cwi-langchain (v1.0.0, verified 2026-10-17)",
+      "pypi_source": "https://github.com/CumulativeWebInc/cwi-learn/tree/main/framework-integrations/pypi-cwi-langchain",
+      "vercel_ai_sdk_source": "https://github.com/CumulativeWebInc/cwi-learn/tree/main/framework-integrations/vercel-ai-sdk",
+      "npm_package": "@cumulativeweb/cwi-scout",
+      "npm_version": "1.0.1",
+      "npm_status": "built — publish blocked by npm new-account policy, retrying hourly (verified 2026-10-18)",
+      "npm_source": "https://github.com/CumulativeWebInc/cwi-learn/tree/main/framework-integrations/npm-cwi-scout",
+      "jsr_package": "@cumulativeweb/cwi-scout",
+      "jsr_version": "1.0.5",
+      "jsr_status": "LIVE on JSR — score 100% (verified 2026-10-18)",
+      "jsr_source": "https://github.com/CumulativeWebInc/cwi-scout",
+      "github_packages": "@cumulativewebinc/cwi-scout@1.0.0",
+      "github_packages_status": "LIVE on GitHub Packages (verified 2026-10-17)"
+    },
+    "mcp": {
+      "endpoint": "https://cwi-machine-data.hp-ace.workers.dev/mcp",
+      "mirror_endpoint": "https://data.cumulativeweb.com/mcp",
+      "protocol": "MCP",
+      "registry_entry": "https://registry.modelcontextprotocol.io/v0/servers/io.github.CumulativeWebInc%2Fcwi-discovery-engine/versions/latest",
+      "registry_status": "active",
+      "registry_version": "1.3.0",
+      "smithery": "https://smithery.ai/server/@CumulativeWebInc/cwi-discovery-engine",
+      "mcprush": "approved (CLM-0075)",
+      "glama": "listed",
+      "tool_count": 29
+    },
+    "publisher": {
+      "contact": "hp@cumulativeweb.com",
+      "name": "Cumulative Web Inc",
+      "url": "https://cumulativeweb.com/"
+    },
+    "schema_version": "1.0",
+    "scout": {
+      "api": "https://cwi-machine-data.hp-ace.workers.dev/api/scout",
+      "api_spotlight": "https://cwi-machine-data.hp-ace.workers.dev/api/scout/spotlight",
+      "page": "https://cumulativeweb.com/scout/",
+      "page_pt_br": "https://cumulativeweb.com/br/scout/"
+    },
+    "service": {
+      "description": "Sync-licensing discovery for AI agents: describe a scene, get licensable tracks with verified ISRCs and one-signature clearance. 29 MCP tools, zero auth, free discovery tier, paid data API via x402. Not a general metadata database — the licensable alternative.",
+      "documentation": "https://cumulativeweb.com/scout/",
+      "id": "cwi-discovery-engine",
+      "name": "CWI Discovery Engine"
+    },
+    "verification": {
+      "health_check": "https://cwi-x402-api.onrender.com/health",
+      "mcp_registry_status": "active",
+      "public_demo": "https://cumulativeweb.com/scout/"
+    },
+    "x402_api": {
+      "asset": "USDC",
+      "base": "https://cwi-x402-api.onrender.com",
+      "mode": "testnet",
+      "network": "eip155:84532",
+      "openapi": "https://cwi-x402-api.onrender.com/openapi.json",
+      "pricing": "https://cwi-x402-api.onrender.com/pricing",
+      "protocol": "x402"
+    }
   }
 }
