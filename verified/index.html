@@ -72,10 +72,25 @@ footer a{color:#60a5fa}
 
 <script>
 document.querySelectorAll('[data-r]').forEach(el=>{
-  fetch('/verified/'+el.dataset.r).then(r=>r.json()).then(d=>{
+  const url='/verified/'+el.dataset.r+'?t='+Date.now();
+  fetch(url,{cache:'no-store'}).then(r=>{
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    return r.json();
+  }).then(d=>{
     el.textContent=d.all_pass?'● LIVE':'● ISSUES';
     el.style.color=d.all_pass?'#4ade80':'#f87171';
-  }).catch(e=>{el.textContent='● UNKNOWN';el.style.color='#888';});
+    el.title='Certified: '+(d.certified_at||'?');
+  }).catch(e=>{
+    el.textContent='● RETRYING…';
+    el.style.color='#fbbf24';
+    // One retry after 2s
+    setTimeout(()=>{
+      fetch(url,{cache:'no-store'}).then(r=>r.json()).then(d=>{
+        el.textContent=d.all_pass?'● LIVE':'● ISSUES';
+        el.style.color=d.all_pass?'#4ade80':'#f87171';
+      }).catch(e2=>{el.textContent='● OFFLINE';el.style.color='#f87171';});
+    },2000);
+  });
 });
 </script>
 </body>
