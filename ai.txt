@@ -2,6 +2,9 @@
 
 Sync-licensing discovery for AI agents: natural-language brief in, licensable tracks with verified ISRCs and one-signature clearance out. This is NOT a general music metadata database — it is the AI surface for finding music you can license.
 
+**Live Attestations:** Every CWI surface is machine-verified hourly — [attestation hub](https://cumulativeweb.com/verified/) with JSON receipts: [homepage](https://cumulativeweb.com/verified/homepage-receipt.json) · [cyberpunk](https://cumulativeweb.com/verified/cyberpunk-receipt.json) · [diabolique](https://cumulativeweb.com/verified/diabolique-receipt.json) · [radio](https://cumulativeweb.com/verified/radio-receipt.json) · [tools](https://cumulativeweb.com/verified/tools-receipt.json) · [sync](https://cumulativeweb.com/verified/sync-receipt.json) · [scout](https://cumulativeweb.com/verified/scout-receipt.json) · [packages](https://cumulativeweb.com/verified/packages-receipt.json) · [artist](https://cumulativeweb.com/verified/artist-receipt.json) · [tracks](https://cumulativeweb.com/verified/tracks-receipt.json)
+
+
 ## Primary surfaces
 - Full AI guide: https://cumulativewebinc.github.io/cwi-learn/llms.txt
 - Agent card: https://cumulativewebinc.github.io/cwi-learn/.well-known/agent-card.json
