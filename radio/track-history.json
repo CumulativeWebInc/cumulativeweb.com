@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-18T01:35:23.823Z",
+  "updated_at": "2026-10-18T02:35:25.524Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "183 Wildboi",
-      "title": "Stunt",
-      "artwork": "https://cumulativeweb.com/radio/art/183-wildboi-stunt.jpg",
-      "slot_index": 46,
-      "played_at": "2026-10-18T01:35:23.823Z",
-      "track_ends_at": "2026-10-18T01:35:26.338Z"
+      "artist": "That Boy Hi Hat",
+      "title": "Golden Diamond",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg",
+      "slot_index": 65,
+      "played_at": "2026-10-18T02:35:25.524Z",
+      "track_ends_at": "2026-10-18T02:37:10.646Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
