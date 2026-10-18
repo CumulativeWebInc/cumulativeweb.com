@@ -2,7 +2,7 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-18T10:35:34.418Z",
+  "updated_at": "2026-10-18T10:37:06.217Z",
   "count": 1,
   "tracks": [
     {
@@ -10,7 +10,7 @@
       "title": "Golden Diamond",
       "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg",
       "slot_index": 86,
-      "played_at": "2026-10-18T10:35:34.418Z",
+      "played_at": "2026-10-18T10:37:06.217Z",
       "track_ends_at": "2026-10-18T10:37:26.675Z"
     }
   ],
