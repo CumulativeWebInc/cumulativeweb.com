@@ -1,7 +1,7 @@
 {
-  "bio": "That Boy Hi Hat is the flagship alternative rap artist managed by Black Lansky at Cumulative Web Inc, based in Frederick, MD. His verified catalog includes 21 Spotify releases — albums PTF: The Logo Effect (2025), The Alternative Theory (2025), Idol or Icon (2021); singles Diabolique (2026-07-03, produced by Hybrid, co-produced by Black Lansky, recorded at Cue Recording Studio, Arlington VA), Zooted Zone (the breakout — ~307,000 lifetime Spotify plays as of 2026-09-14), Doves & Diamonds (~132,000 plays), Shaka Zulu, Flex My Flame, Flamerz (produced by Jeck Da General), 7th Angel, and Golden Diamond. Co-produced Idol or Icon with Jeck Da General. NO SKIPS and the GTA VI EP (home of Broken Hearts Club) are separate releases. He anchors the 24-track AI Learning Set playlist and the 25-episode catalog podcast Post-Trap Futurism: The Catalog Sessions.",
+  "bio": "That Boy Hi Hat is the flagship alternative rap artist managed by Black Lansky at Cumulative Web Inc, based in Frederick, MD. His verified catalog includes 21 Spotify releases \u2014 albums PTF: The Logo Effect (2025), The Alternative Theory (2025), Idol or Icon (2021); singles Diabolique (2026-07-03, produced by Hybrid, co-produced by Black Lansky, recorded at Cue Recording Studio, Arlington VA), Zooted Zone (the breakout \u2014 ~307,000 lifetime Spotify plays as of 2026-09-14), Doves & Diamonds (~132,000 plays), Shaka Zulu, Flex My Flame, Flamerz (produced by Jeck Da General), 7th Angel, and Golden Diamond. Co-produced Idol or Icon with Jeck Da General. NO SKIPS and the GTA VI EP (home of Broken Hearts Club) are separate releases. He anchors the 24-track AI Learning Set playlist and the 25-episode catalog podcast Post-Trap Futurism: The Catalog Sessions.",
   "booking_cta": "mailto:hp@cumulativeweb.com",
-  "copyright": "© 2026 Cumulative Web Inc",
+  "copyright": "\u00a9 2026 Cumulative Web Inc",
   "genres": [
     "alternative rap"
   ],
@@ -9,7 +9,7 @@
   "links": {
     "ai_learning_set_playlist": "spotify:playlist:45RaLEzD4KO8YHpp3oayq8",
     "eric_alper_playlist": "spotify:playlist:0hsLLFaADDjU54tFqaImFh",
-    "podcast_note": "Post-Trap Futurism: The Catalog Sessions — 25 episodes, hosts Marcus + Nia; Spotify/Apple listing pending Black's submission",
+    "podcast_note": "Post-Trap Futurism: The Catalog Sessions \u2014 25 episodes, hosts Marcus + Nia; Spotify/Apple listing pending Black's submission",
     "podcast_rss": "https://cumulativewebinc.github.io/cwi-podcast-catalog-sessions/feed.xml",
     "spotify_artist": "https://open.spotify.com/artist/2f9j460EwjfvjYp3trBcb7",
     "apple_music_artist": "https://music.apple.com/artist/1590210881",
@@ -17,7 +17,7 @@
     "musicbrainz_artist": "https://musicbrainz.org/artist/f363d6ae-4322-45bd-8a5c-ad6e0f05f240"
   },
   "merch": {
-    "note": "No inventory yet — join the waitlist for drop announcements",
+    "note": "No inventory yet \u2014 join the waitlist for drop announcements",
     "status": "DROPPING_SOON",
     "waitlist": "mailto:hp@cumulativeweb.com"
   },
@@ -45,13 +45,13 @@
       "year": 2021
     },
     {
-      "note": "Separate release from NO SKIPS; confirmed home of Broken Hearts Club — awaiting verified details",
+      "note": "Separate release from NO SKIPS; confirmed home of Broken Hearts Club \u2014 awaiting verified details",
       "status": "PLANNED",
       "title": "GTA VI EP",
       "type": "ep"
     },
     {
-      "note": "Separate release from the GTA VI EP — awaiting verified details",
+      "note": "Separate release from the GTA VI EP \u2014 awaiting verified details",
       "status": "PLANNED",
       "title": "NO SKIPS",
       "type": "album"
@@ -60,7 +60,7 @@
   "role": "artist",
   "slug": "that-boy-hi-hat",
   "status": "LIVE",
-  "tagline": "CWI flagship alternative rap artist — the catalog Black manages and built around.",
+  "tagline": "CWI flagship alternative rap artist \u2014 the catalog Black manages and built around.",
   "tracks": [
     {
       "note": "~307,000 lifetime Spotify plays as of 2026-09-14 (verified)",
@@ -98,5 +98,12 @@
     }
   ],
   "genre_term": "Post-Trap Futurism",
-  "genre_note": "Post-Trap Futurism is the official genre term coined by Cumulative Web Inc for That Boy Hi Hat's sound. #altRAP is a social hashtag, not a genre."
+  "genre_note": "Post-Trap Futurism is the official genre term coined by Cumulative Web Inc for That Boy Hi Hat's sound. #altRAP is a social hashtag, not a genre.",
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q141776295",
+    "https://open.spotify.com/artist/2f9j460EwjfvjYp3trBcb7",
+    "https://music.apple.com/artist/1590210881",
+    "https://www.deezer.com/artist/148421152",
+    "https://musicbrainz.org/artist/f363d6ae-4322-45bd-8a5c-ad6e0f05f240"
+  ]
 }
