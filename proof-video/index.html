@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI needs music for a scene. Watch what happens. | CWI Proof Video</title>
+<meta name="description" content="Watch the CWI Discovery Engine turn a natural-language scene brief into licensable tracks with verified ISRCs — narrated by Nia. 29 tools. One signature clears it.">
+<meta property="og:type" content="video.other">
+<meta property="og:title" content="AI needs music for a scene. Watch what happens.">
+<meta property="og:description" content="Describe the scene. Get licensable tracks with verified ISRCs. Hear it live on Radio 365.">
+<meta property="og:video" content="https://cumulativeweb.com/proof-video/cwi-proof-30s-with-audio.mp4">
+<meta property="og:video:type" content="video/mp4">
+<meta property="og:video:width" content="1080">
+<meta property="og:video:height" content="1920">
+<meta name="twitter:card" content="player">
+<meta name="twitter:title" content="AI needs music for a scene. Watch what happens.">
+<meta name="twitter:description" content="Describe the scene. Get licensable tracks with verified ISRCs.">
+<style>
+  :root{
+    --bg:#05070d;
+    --panel:#0b0f1a;
+    --panel2:#0e1424;
+    --line:rgba(0,255,170,.14);
+    --neon:#00ffaa;
+    --cyan:#00e5ff;
+    --violet:#a855f7;
+    --text:#e8f0ff;
+    --dim:#8b93a7;
+    --max:1080px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+    background:
+      radial-gradient(600px 400px at 15% 10%, rgba(0,255,170,.07), transparent 60%),
+      radial-gradient(700px 500px at 85% 30%, rgba(0,229,255,.06), transparent 60%),
+      radial-gradient(600px 600px at 50% 90%, rgba(168,85,247,.06), transparent 60%);
+  }
+  #grid{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.35;
+    background-image:linear-gradient(rgba(0,255,170,.05) 1px,transparent 1px),
+                     linear-gradient(90deg,rgba(0,255,170,.05) 1px,transparent 1px);
+    background-size:44px 44px;
+    mask-image:radial-gradient(ellipse 90% 70% at 50% 20%,black 30%,transparent 75%);
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+  /* ---------- HERO ---------- */
+  header.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:64px 20px 48px;position:relative}
+  .kicker{font-size:12px;letter-spacing:4px;color:var(--neon);text-transform:uppercase;margin-bottom:18px;
+    animation:blink 3s ease-in-out infinite}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:.45}}
+  h1{font-size:clamp(34px,7vw,64px);line-height:1.12;font-weight:700;margin-bottom:10px;
+    background:linear-gradient(100deg,#fff 20%,var(--neon) 55%,var(--cyan) 80%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    text-shadow:0 0 60px rgba(0,255,170,.25)}
+  .sub{color:var(--dim);font-size:clamp(14px,2.6vw,18px);margin-bottom:36px;max-width:640px}
+  .video-frame{position:relative;width:min(360px,84vw);border-radius:22px;overflow:hidden;
+    border:1px solid var(--line);box-shadow:0 0 0 1px rgba(0,255,170,.08),0 24px 80px rgba(0,255,170,.14),0 8px 32px rgba(0,0,0,.6);
+    cursor:pointer}
+  .video-frame video{display:block;width:100%;aspect-ratio:9/16;background:#000}
+  .play-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    background:rgba(3,6,12,.45);transition:opacity .3s}
+  .video-frame.playing .play-overlay{opacity:0;pointer-events:none}
+  .play-btn{width:84px;height:84px;border-radius:50%;border:2px solid var(--neon);
+    background:rgba(0,255,170,.12);color:var(--neon);font-size:30px;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 0 32px rgba(0,255,170,.45);transition:transform .2s}
+  .play-btn:hover{transform:scale(1.08)}
+  .vid-meta{display:flex;gap:14px;justify-content:center;margin-top:16px;font-size:12px;color:var(--dim);flex-wrap:wrap}
+  .vid-meta span{border:1px solid var(--line);border-radius:999px;padding:4px 12px;background:rgba(0,255,170,.05)}
+  /* ---------- SECTIONS ---------- */
+  section{padding:72px 0}
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  h2{font-size:clamp(24px,4.6vw,40px);margin-bottom:14px;line-height:1.25}
+  h2 .glow{color:var(--neon);text-shadow:0 0 24px rgba(0,255,170,.5)}
+  .lede{color:var(--dim);max-width:680px;margin-bottom:32px;font-size:clamp(14px,2.4vw,17px)}
+  .brief{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:28px;
+    font-size:clamp(15px,2.8vw,19px);position:relative;overflow:hidden}
+  .brief::before{content:"BRIEF";position:absolute;top:10px;right:14px;font-size:10px;letter-spacing:3px;color:var(--dim)}
+  .brief .typed{color:var(--cyan)}
+  .cursor{display:inline-block;width:10px;height:20px;background:var(--cyan);vertical-align:-3px;animation:blink 1s steps(1) infinite}
+  .cards{display:grid;gap:16px;grid-template-columns:1fr}
+  @media(min-width:720px){.cards{grid-template-columns:repeat(3,1fr)}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;
+    transition:transform .25s,box-shadow .25s,border-color .25s;position:relative;overflow:hidden}
+  .card:hover{transform:translateY(-4px);border-color:rgba(0,255,170,.4);box-shadow:0 12px 40px rgba(0,255,170,.12)}
+  .card .rank{font-size:11px;letter-spacing:2px;color:var(--dim);margin-bottom:8px}
+  .card h3{font-size:20px;margin-bottom:4px}
+  .card .artist{color:var(--dim);font-size:13px;margin-bottom:14px}
+  .isrc{display:flex;align-items:center;justify-content:space-between;gap:8px;
+    background:rgba(0,255,170,.07);border:1px solid rgba(0,255,170,.25);border-radius:10px;padding:10px 12px}
+  .isrc code{color:var(--neon);font-size:14px;letter-spacing:1px;text-shadow:0 0 12px rgba(0,255,170,.4)}
+  .copy{background:transparent;border:1px solid rgba(0,255,170,.35);color:var(--neon);border-radius:8px;
+    padding:6px 10px;font-size:11px;cursor:pointer;font-family:inherit;transition:background .2s}
+  .copy:hover{background:rgba(0,255,170,.15)}
+  .why{margin-top:14px;font-size:13px;color:var(--dim)}
+  .clearance{margin-top:28px;background:linear-gradient(135deg,rgba(0,255,170,.08),rgba(0,229,255,.06));
+    border:1px solid var(--line);border-radius:16px;padding:24px}
+  .clearance h4{color:var(--neon);letter-spacing:2px;font-size:12px;margin-bottom:10px}
+  .clearance ul{list-style:none;display:grid;gap:8px;font-size:14px}
+  .clearance li::before{content:"✓ ";color:var(--neon)}
+  /* ---------- RADIO ---------- */
+  .radio{background:var(--panel2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .player{display:flex;align-items:center;gap:20px;background:var(--panel);border:1px solid var(--line);
+    border-radius:18px;padding:22px;max-width:640px}
+  .disc{width:72px;height:72px;border-radius:50%;flex-shrink:0;
+    background:conic-gradient(from 0deg,var(--neon),var(--cyan),var(--violet),var(--neon));
+    animation:spin 6s linear infinite;position:relative}
+  .disc::after{content:"";position:absolute;inset:24px;border-radius:50%;background:var(--panel)}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .player .t{font-size:18px}
+  .player .a{color:var(--dim);font-size:13px}
+  .badge{display:inline-block;margin-top:8px;font-size:11px;letter-spacing:2px;color:var(--neon);
+    border:1px solid rgba(0,255,170,.4);border-radius:999px;padding:3px 12px;background:rgba(0,255,170,.08)}
+  .btn{display:inline-block;margin-top:26px;background:var(--neon);color:#04120c;font-weight:700;
+    padding:14px 34px;border-radius:999px;text-decoration:none;font-size:16px;
+    box-shadow:0 0 32px rgba(0,255,170,.4);transition:transform .2s,box-shadow .2s}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 0 48px rgba(0,255,170,.6)}
+  .btn.ghost{background:transparent;color:var(--neon);border:1px solid var(--neon);box-shadow:none}
+  /* ---------- TRANSCRIPT ---------- */
+  .transcript{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:26px;max-width:720px}
+  .transcript .who{color:var(--violet);letter-spacing:3px;font-size:11px;margin-bottom:14px}
+  .transcript p{margin-bottom:14px;font-size:15px}
+  .transcript p:last-child{margin-bottom:0}
+  .transcript .hl{color:var(--neon)}
+  /* ---------- CTA ---------- */
+  .cta{text-align:center;padding:96px 20px;background:
+    radial-gradient(500px 300px at 50% 100%,rgba(0,255,170,.12),transparent 70%)}
+  .cta h2{font-size:clamp(28px,6vw,52px)}
+  .cta .url{display:block;margin-top:18px;color:var(--cyan);font-size:clamp(16px,3vw,22px);text-decoration:none}
+  .cta .url:hover{text-decoration:underline}
+  /* ---------- FOOTER ---------- */
+  footer{border-top:1px solid var(--line);padding:32px 20px;text-align:center;color:var(--dim);font-size:12px}
+  footer a{color:var(--neon);text-decoration:none}
+  .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--neon);
+    color:#04120c;font-weight:700;padding:10px 22px;border-radius:999px;font-size:14px;transition:transform .3s;z-index:50}
+  .toast.show{transform:translateX(-50%) translateY(0)}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "AI needs music for a scene. Watch what happens.",
+  "description": "Watch the CWI Discovery Engine turn a natural-language scene brief into licensable tracks with verified ISRCs — narrated by Nia. Describe the scene. Get licensable tracks with verified ISRCs. Hear it live on Radio 365. 29 tools. One signature clears it.",
+  "thumbnailUrl": "https://cumulativeweb.com/proof-video/poster.jpg",
+  "uploadDate": "2026-10-19",
+  "duration": "PT26S",
+  "contentUrl": "https://cumulativeweb.com/proof-video/cwi-proof-30s-with-audio.mp4",
+  "embedUrl": "https://cumulativeweb.com/proof-video/",
+  "width": 1080,
+  "height": 1920,
+  "inLanguage": "en",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cumulative Web Inc",
+    "url": "https://cumulativeweb.com"
+  },
+  "author": { "@type": "Person", "name": "Black Lansky" },
+  "about": [
+    { "@type": "MusicRecording", "name": "Cyberpunk 2027", "byArtist": { "@type": "MusicGroup", "name": "That Boy Hi Hat" }, "identifier": "QTA2X2675077" },
+    { "@type": "MusicRecording", "name": "Warped and Wicked", "byArtist": { "@type": "MusicGroup", "name": "That Boy Hi Hat" }, "identifier": "QZDA62200554" },
+    { "@type": "MusicRecording", "name": "Phantasm", "byArtist": { "@type": "MusicGroup", "name": "That Boy Hi Hat" }, "identifier": "QZDA72377313" }
+  ],
+  "transcript": "AI needs music for a scene. Watch what happens. Describe the scene. Get licensable tracks with verified ISRCs. Cyberpunk 2027. Warped and Wicked. Phantasm. Every track cleared, every code verified. Hear it live on Radio 365. That Boy Hi Hat, all day, every day. Twenty-nine tools. One signature clears it. Cumulative Web dot com."
+}
+</script>
+</head>
+<body>
+<div id="grid"></div>
+
+<header class="hero">
+  <div class="kicker">CWI Proof Video · 0:26</div>
+  <h1>AI needs music for a scene.<br>Watch what happens.</h1>
+  <p class="sub">Narrated by Nia. The CWI Discovery Engine answers a natural-language brief with licensable tracks, verified ISRCs, and one-signature clearance.</p>
+  <div class="video-frame" id="vf">
+    <video id="pv" src="cwi-proof-30s-with-audio.mp4" poster="poster.jpg" playsinline preload="metadata"></video>
+    <div class="play-overlay" id="po"><div class="play-btn">▶</div></div>
+  </div>
+  <div class="vid-meta">
+    <span>1080 × 1920 vertical</span>
+    <span>26 seconds</span>
+    <span>Nia voiceover</span>
+    <span>3 verified ISRCs</span>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="reveal" id="brief">
+    <h2><span class="glow">Describe the scene.</span> Get licensable tracks with verified ISRCs.</h2>
+    <p class="lede">One natural-language brief in. Three licensable tracks out — every ISRC verified, every track cleared for sync with a single signature.</p>
+    <div class="brief">
+      <span class="typed" id="typed"></span><span class="cursor"></span>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="rank">MATCH 01</div>
+        <h3>Cyberpunk 2027</h3>
+        <div class="artist">That Boy Hi Hat</div>
+        <div class="isrc"><code>QTA2X2675077</code><button class="copy" data-isrc="QTA2X2675077">COPY</button></div>
+        <p class="why">Dark cyberpunk anthem — the anchor match for the brief.</p>
+      </div>
+      <div class="card">
+        <div class="rank">MATCH 02</div>
+        <h3>Warped and Wicked</h3>
+        <div class="artist">That Boy Hi Hat</div>
+        <div class="isrc"><code>QZDA62200554</code><button class="copy" data-isrc="QZDA62200554">COPY</button></div>
+        <p class="why">Gritty, tense energy — built for trailer cuts.</p>
+      </div>
+      <div class="card">
+        <div class="rank">MATCH 03</div>
+        <h3>Phantasm</h3>
+        <div class="artist">That Boy Hi Hat</div>
+        <div class="isrc"><code>QZDA72377313</code><button class="copy" data-isrc="QZDA72377313">COPY</button></div>
+        <p class="why">Atmospheric and haunting — the late-night drive sound.</p>
+      </div>
+    </div>
+    <div class="clearance">
+      <h4>ONE-SIGNATURE CLEARANCE</h4>
+      <ul>
+        <li>CWI owns master + publishing — 50/50 with artists, BMI</li>
+        <li>No samples — 100% human-made recordings</li>
+        <li>A match is not a license — one signature clears each song</li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<div class="radio">
+  <div class="wrap">
+    <section class="reveal">
+      <h2>Hear it <span class="glow">live</span> on Radio 365.</h2>
+      <p class="lede">The catalog never stops playing. Tune in and hear That Boy Hi Hat alongside the full CWI rotation — streaming now.</p>
+      <div class="player">
+        <div class="disc"></div>
+        <div>
+          <div class="t">Cyberpunk 2027</div>
+          <div class="a">That Boy Hi Hat · Radio 365 live rotation</div>
+          <span class="badge">● VERIFIED LIVE</span>
+        </div>
+      </div>
+      <a class="btn" href="https://cumulativeweb.com/radio.html">▶ Listen live</a>
+    </section>
+  </div>
+</div>
+
+<div class="wrap">
+  <section class="reveal">
+    <h2>Nia's <span class="glow">voiceover</span> transcript</h2>
+    <p class="lede">Every word spoken in the video, verbatim.</p>
+    <div class="transcript">
+      <div class="who">NIA · NARRATOR</div>
+      <p><span class="hl">AI needs music for a scene.</span> Watch what happens.</p>
+      <p>Describe the scene. Get licensable tracks with verified ISRCs. <span class="hl">Cyberpunk 2027. Warped and Wicked. Phantasm.</span> Every track cleared, every code verified.</p>
+      <p>Hear it live on Radio 365. <span class="hl">That Boy Hi Hat, all day, every day.</span></p>
+      <p>Twenty-nine tools. One signature clears it. <span class="hl">Cumulative Web dot com.</span></p>
+    </div>
+  </section>
+</div>
+
+<div class="cta reveal">
+  <h2>29 tools. <span class="glow">One signature</span> clears it.</h2>
+  <a class="btn" href="https://cumulativeweb.com/scout/">Try the Scout demo</a><br>
+  <a class="url" href="https://cumulativeweb.com">cumulativeweb.com</a>
+</div>
+
+<footer>
+  © 2026 Cumulative Web Inc · Black Lansky · <a href="https://cumulativeweb.com">cumulativeweb.com</a><br>
+  Structured data: <a href="video.json">video.json</a> · Proof video landing
+</footer>
+
+<div class="toast" id="toast">ISRC copied</div>
+
+<script>
+(function(){
+  // reveal on scroll
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  // video play toggle
+  var v = document.getElementById('pv'), vf = document.getElementById('vf');
+  vf.addEventListener('click', function(){
+    if(v.paused){ v.play(); vf.classList.add('playing'); }
+    else { v.pause(); vf.classList.remove('playing'); }
+  });
+  v.addEventListener('ended', function(){ vf.classList.remove('playing'); });
+
+  // typing effect for the brief
+  var text = 'dark cyberpunk track for an indie game trailer';
+  var typed = document.getElementById('typed'), i = 0;
+  var started = false;
+  var bio = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting && !started){ started = true; tick(); bio.disconnect(); }
+    });
+  },{threshold:.5});
+  bio.observe(document.getElementById('brief'));
+  function tick(){
+    if(i <= text.length){ typed.textContent = text.slice(0,i++); setTimeout(tick, 34); }
+  }
+
+  // copy ISRC
+  var toast = document.getElementById('toast'), t;
+  document.querySelectorAll('.copy').forEach(function(b){
+    b.addEventListener('click', function(ev){
+      ev.stopPropagation();
+      var code = b.getAttribute('data-isrc');
+      (navigator.clipboard ? navigator.clipboard.writeText(code) : Promise.reject())
+        .then(function(){ show('ISRC '+code+' copied'); })
+        .catch(function(){ show(code); });
+      function show(msg){
+        toast.textContent = msg; toast.classList.add('show');
+        clearTimeout(t); t = setTimeout(function(){ toast.classList.remove('show'); }, 1600);
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
