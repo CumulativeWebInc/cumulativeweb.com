@@ -4,7 +4,10 @@
   "copyright": "© 2026 Cumulative Web Inc",
   "image": "placeholder",
   "links": {
-    "note": "Owner-verified artist (2026-10-02); verified profile link pending — multiple same-name profiles exist, must not guess"
+    "note": "Owner-verified artist (2026-10-02); verified profile link pending — multiple same-name profiles exist, must not guess",
+    "spotify_artist": "https://open.spotify.com/artist/5xHUzslJLXrHbvaQRN2c0b",
+    "deezer_artist": "https://www.deezer.com/artist/149457662",
+    "musicbrainz_artist": "https://musicbrainz.org/artist/27e1c8f5-a291-45a1-81f2-fd79dc2da5f7"
   },
   "merch": {
     "note": "No inventory yet — join the waitlist for drop announcements",
