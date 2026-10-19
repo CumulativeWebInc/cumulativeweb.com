@@ -26,7 +26,7 @@ pre{background:#111;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.75
 <h1>🎬 SYNC CATALOG</h1>
 <p>Licensable tracks</p>
 <div class="badge">● LIVE</div>
-<p class="timestamp">Certified: 2026-10-19T19:56:37.060505+00:00</p>
+<p class="timestamp">Certified: 2026-10-19T21:46:08.840682+00:00</p>
 <div class="stats"><div class="stat"><div class="num">29</div><div class="label">track count</div></div></div>
 </div>
 <div class="grid">
@@ -35,6 +35,7 @@ pre{background:#111;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.75
 <div class="card"><h3><span style="color:#4ade80">✓</span> catalog http 200</h3></div>
 <div class="card"><h3><span style="color:#4ade80">✓</span> catalog has tracks</h3></div>
 <div class="card"><h3><span style="color:#4ade80">✓</span> catalog has clearance</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> has verified isrcs</h3></div>
 <div class="card"><h3><span style="color:#4ade80">✓</span> sync search works</h3></div>
 </div>
 <div style="max-width:900px;margin:0 auto;padding:0 1rem">
@@ -43,15 +44,16 @@ pre{background:#111;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.75
 <pre>{
   "attestation": "sync-catalog",
   "subject": "CWI Sync Licensing Catalog",
-  "certified_at": "2026-10-19T19:56:37.060505+00:00",
+  "certified_at": "2026-10-19T21:46:08.840682+00:00",
   "track_count": 29,
-  "verified_isrcs": 29,
+  "verified_isrcs": 18,
   "checks": {
     "sync_page_http_200": true,
     "sync_page_mentions_licensing": true,
     "catalog_http_200": true,
     "catalog_has_tracks": true,
     "catalog_has_clearance": true,
+    "has_verified_isrcs": true,
     "sync_search_works": true
   },
   "all_pass": true
