@@ -11,7 +11,10 @@
     "eric_alper_playlist": "spotify:playlist:0hsLLFaADDjU54tFqaImFh",
     "podcast_note": "Post-Trap Futurism: The Catalog Sessions — 25 episodes, hosts Marcus + Nia; Spotify/Apple listing pending Black's submission",
     "podcast_rss": "https://cumulativewebinc.github.io/cwi-podcast-catalog-sessions/feed.xml",
-    "spotify_artist": "https://open.spotify.com/artist/2f9j460EwjfvjYp3trBcb7"
+    "spotify_artist": "https://open.spotify.com/artist/2f9j460EwjfvjYp3trBcb7",
+    "apple_music_artist": "https://music.apple.com/artist/1590210881",
+    "deezer_artist": "https://www.deezer.com/artist/148421152",
+    "musicbrainz_artist": "https://musicbrainz.org/artist/f363d6ae-4322-45bd-8a5c-ad6e0f05f240"
   },
   "merch": {
     "note": "No inventory yet — join the waitlist for drop announcements",
