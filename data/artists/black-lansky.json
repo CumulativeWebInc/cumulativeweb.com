@@ -1,7 +1,7 @@
 {
-  "bio": "Black Lansky is a multi-disciplinary creator: recording artist, author, artist manager, music producer, software builder, game developer, film editor, and creative designer. He authored THE LOGO EFFECT: How AI and Structured Data Took an Indie Artist to Global Alt-Rap Dominance (published 6 December 2025; ISBN-13 979-8260386620), the blueprint documenting the system he built at Cumulative Web Inc — the company he runs. As a manager and producer he guides alternative rap artist That Boy Hi Hat and carries production and co-production credits across the CWI catalog: That Boy Hi Hat's Diabolique (2026-07-03; produced by Hybrid, co-produced by Black Lansky, recorded at Cue Recording Studio, Arlington VA) and Idol or Icon (with Jeck Da General, with rights owned to the connected tracks); King Akeem's Next Generation Protocol singles; Greg Porn's Pay Yourself and On Edge; Dre50's Pix (lyricist and assistant producer, ℗ 2025 Cumulative Web Inc); and 183 Wildboi's Stunt and Full Moon (Rock-Rap Revival core tracks). As a technologist he builds software, games, and interactive products for CWI — from agent-powered products on the Agent Deck shelf to full-3D game worlds like TAG CITY — and leads film editing and creative design across the label's visual identity. His streaming profiles (Spotify, Apple Music, Deezer) carry the artist name Black Lansky. His artist releases, verified via his Spotify for Artists dashboard on 2026-09-24, include the Focused Intent EP (released Nov 14, 2022; 4,209 all-time Spotify streams), the Sync Ready Tracks EP (58 streams), and the singles tiempo (61), LOFI 2.0 (44), Retro Vibe (17), Skateboard Team Sports (10), and Viral Beats (7).",
+  "bio": "Black Lansky is a multi-disciplinary creator: recording artist, author, artist manager, music producer, software builder, game developer, film editor, and creative designer. He authored THE LOGO EFFECT: How AI and Structured Data Took an Indie Artist to Global Alt-Rap Dominance (published 6 December 2025; ISBN-13 979-8260386620), the blueprint documenting the system he built at Cumulative Web Inc \u2014 the company he runs. As a manager and producer he guides alternative rap artist That Boy Hi Hat and carries production and co-production credits across the CWI catalog: That Boy Hi Hat's Diabolique (2026-07-03; produced by Hybrid, co-produced by Black Lansky, recorded at Cue Recording Studio, Arlington VA) and Idol or Icon (with Jeck Da General, with rights owned to the connected tracks); King Akeem's Next Generation Protocol singles; Greg Porn's Pay Yourself and On Edge; Dre50's Pix (lyricist and assistant producer, \u2117 2025 Cumulative Web Inc); and 183 Wildboi's Stunt and Full Moon (Rock-Rap Revival core tracks). As a technologist he builds software, games, and interactive products for CWI \u2014 from agent-powered products on the Agent Deck shelf to full-3D game worlds like TAG CITY \u2014 and leads film editing and creative design across the label's visual identity. His streaming profiles (Spotify, Apple Music, Deezer) carry the artist name Black Lansky. His artist releases, verified via his Spotify for Artists dashboard on 2026-09-24, include the Focused Intent EP (released Nov 14, 2022; 4,209 all-time Spotify streams), the Sync Ready Tracks EP (58 streams), and the singles tiempo (61), LOFI 2.0 (44), Retro Vibe (17), Skateboard Team Sports (10), and Viral Beats (7).",
   "booking_cta": "mailto:hp@cumulativeweb.com",
-  "copyright": "© 2026 Cumulative Web Inc",
+  "copyright": "\u00a9 2026 Cumulative Web Inc",
   "genres": [
     "Alternative"
   ],
@@ -21,53 +21,53 @@
     "audiomack_artist": "https://audiomack.com/blacklansky"
   },
   "merch": {
-    "note": "No inventory yet — join the waitlist for drop announcements",
+    "note": "No inventory yet \u2014 join the waitlist for drop announcements",
     "status": "DROPPING_SOON",
     "waitlist": "mailto:hp@cumulativeweb.com"
   },
   "name": "Black Lansky",
   "page_status": "LIVE",
-  "page_status_note": "Artist page LIVE — releases verified via Black's Spotify for Artists dashboard, 2026-09-24. Streaming links: Spotify, Apple Music, Deezer, Pandora, Amazon Music, YouTube Music, Tidal, Shazam, iHeart, plus the Black Lansky Radio playlist.",
+  "page_status_note": "Artist page LIVE \u2014 releases verified via Black's Spotify for Artists dashboard, 2026-09-24. Streaming links: Spotify, Apple Music, Deezer, Pandora, Amazon Music, YouTube Music, Tidal, Shazam, iHeart, plus the Black Lansky Radio playlist.",
   "releases": [
     {
-      "note": "Released Nov 14, 2022; 4,209 all-time Spotify streams — verified via Spotify for Artists, 2026-09-24",
+      "note": "Released Nov 14, 2022; 4,209 all-time Spotify streams \u2014 verified via Spotify for Artists, 2026-09-24",
       "status": "LIVE",
       "title": "Focused Intent",
       "type": "EP",
       "year": 2022
     },
     {
-      "note": "61 all-time Spotify streams — verified via Spotify for Artists, 2026-09-24",
+      "note": "61 all-time Spotify streams \u2014 verified via Spotify for Artists, 2026-09-24",
       "status": "LIVE",
       "title": "tiempo",
       "type": "Single"
     },
     {
-      "note": "58 all-time Spotify streams — verified via Spotify for Artists, 2026-09-24",
+      "note": "58 all-time Spotify streams \u2014 verified via Spotify for Artists, 2026-09-24",
       "status": "LIVE",
       "title": "Sync Ready Tracks",
       "type": "EP"
     },
     {
-      "note": "44 all-time Spotify streams — verified via Spotify for Artists, 2026-09-24",
+      "note": "44 all-time Spotify streams \u2014 verified via Spotify for Artists, 2026-09-24",
       "status": "LIVE",
       "title": "LOFI 2.0",
       "type": "Single"
     },
     {
-      "note": "17 all-time Spotify streams — verified via Spotify for Artists, 2026-09-24",
+      "note": "17 all-time Spotify streams \u2014 verified via Spotify for Artists, 2026-09-24",
       "status": "LIVE",
       "title": "Retro Vibe",
       "type": "Single"
     },
     {
-      "note": "10 all-time Spotify streams; full title confirmed via Spotify — verified via Spotify for Artists, 2026-09-24",
+      "note": "10 all-time Spotify streams; full title confirmed via Spotify \u2014 verified via Spotify for Artists, 2026-09-24",
       "status": "LIVE",
       "title": "Skateboard Team Sports",
       "type": "Single"
     },
     {
-      "note": "7 all-time Spotify streams — verified via Spotify for Artists, 2026-09-24",
+      "note": "7 all-time Spotify streams \u2014 verified via Spotify for Artists, 2026-09-24",
       "status": "LIVE",
       "title": "Viral Beats",
       "type": "Single"
@@ -76,7 +76,7 @@
   "role": "artist",
   "slug": "black-lansky",
   "status": "LIVE",
-  "tagline": "Black Lansky — artist, author, manager, producer, software and game builder.",
+  "tagline": "Black Lansky \u2014 artist, author, manager, producer, software and game builder.",
   "tracks": [],
   "book": {
     "title": "THE LOGO EFFECT",
@@ -86,6 +86,12 @@
     "publication_date": "6 December 2025",
     "language": "English",
     "amazon_us": "https://www.amazon.com/dp/B0G5HV59K7",
-    "note": "Black's book, added 2026-09-24 — American (US) Amazon link from Black's request"
-  }
+    "note": "Black's book, added 2026-09-24 \u2014 American (US) Amazon link from Black's request"
+  },
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q141776377",
+    "https://open.spotify.com/artist/74EkS93GMdUPPexrtTuKRU",
+    "https://music.apple.com/us/artist/black-lansky/1636173216",
+    "https://www.deezer.com/artist/149961422"
+  ]
 }
