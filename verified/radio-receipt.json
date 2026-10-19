@@ -1,8 +1,8 @@
 {
   "attestation": "radio-365",
   "subject": "Radio 365 \u2014 Cumulative Web Inc 24/7 stream",
-  "certified_at": "2026-10-19T09:56:28.222649+00:00",
-  "now_playing": "That Boy Hi Hat \u2014 7th Angel",
+  "certified_at": "2026-10-19T10:56:21.892330+00:00",
+  "now_playing": "That Boy Hi Hat \u2014 Shaka Zulu",
   "checks": {
     "nowplaying_http_200": true,
     "nowplaying_valid_json": true,
