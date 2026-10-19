@@ -8,7 +8,10 @@
   ],
   "image": "assets/artist-king-akeem.jpg",
   "links": {
-    "note": "Streaming profile links pending verification"
+    "note": "Streaming profile links pending verification",
+    "spotify_artist": "https://open.spotify.com/artist/7q4imd181rIft4jQh8VDmZ",
+    "deezer_artist": "https://www.deezer.com/artist/54954432",
+    "musicbrainz_artist": "https://musicbrainz.org/artist/eaf64cce-d5cc-453b-b66f-d77277aaf56b"
   },
   "merch": {
     "note": "No inventory yet — join the waitlist for drop announcements",
