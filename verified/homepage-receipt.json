@@ -2,7 +2,7 @@
   "attestation": "cwi-homepage",
   "subject": "Cumulative Web Inc homepage",
   "url": "https://cumulativeweb.com/",
-  "certified_at": "2026-10-19T05:55:41.259557+00:00",
+  "certified_at": "2026-10-19T06:55:44.909583+00:00",
   "http_status": 200,
   "bytes": 35142,
   "sha256": "557d21ed469222fa",
