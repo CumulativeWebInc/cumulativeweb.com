@@ -1,15 +1,16 @@
 {
   "attestation": "sync-catalog",
   "subject": "CWI Sync Licensing Catalog",
-  "certified_at": "2026-10-19T20:56:19.727682+00:00",
+  "certified_at": "2026-10-19T21:46:08.840682+00:00",
   "track_count": 29,
-  "verified_isrcs": 29,
+  "verified_isrcs": 18,
   "checks": {
     "sync_page_http_200": true,
     "sync_page_mentions_licensing": true,
     "catalog_http_200": true,
     "catalog_has_tracks": true,
     "catalog_has_clearance": true,
+    "has_verified_isrcs": true,
     "sync_search_works": true
   },
   "all_pass": true
