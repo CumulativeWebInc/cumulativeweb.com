@@ -1,7 +1,7 @@
 {
   "attestation": "alternative-theory-album",
   "subject": "The Alternative Theory \u2014 That Boy Hi Hat (album deployment)",
-  "certified_at": "2026-10-20T16:21:53.241577+00:00",
+  "certified_at": "2026-10-20T16:32:55.920698+00:00",
   "album": {
     "title": "The Alternative Theory",
     "artist": "That Boy Hi Hat",
@@ -13,7 +13,11 @@
     "tracks": 10,
     "isrcs_total": 10,
     "isrcs_cuefinder_verified": 8,
-    "isrc_note": "8 of 10 ISRCs cuefinder-verified; Flex My Flame (QZHN32303575) and Scorpions & Sapphires (QZDA72377310) carry catalog (a2a-staging) provenance."
+    "isrc_note": "8 of 10 ISRCs cuefinder-verified; Flex My Flame (QZHN32303575) and Scorpions & Sapphires (QZDA72377310) are catalog-sourced.",
+    "isrc_tiers": {
+      "cuefinder-verified": "The ISRC was matched against the label's distributor cue-sheet records (CueFinder export, verified 2026-10-19).",
+      "catalog-sourced": "The ISRC comes from the label's internal catalog and has not yet been matched to distributor records. Do not present it as verified."
+    }
   },
   "page": "https://cumulativeweb.com/the-alternative-theory.html",
   "checks": {
