@@ -1,8 +1,8 @@
 {
   "attestation": "radio-365",
   "subject": "Radio 365 \u2014 Cumulative Web Inc 24/7 stream",
-  "certified_at": "2026-10-20T09:56:33.164305+00:00",
-  "now_playing": "183 Wildboi \u2014 Stunt",
+  "certified_at": "2026-10-20T10:00:30.636503+00:00",
+  "now_playing": "Greg Porn \u2014 Unholy Hunters (Ref 1.0)",
   "checks": {
     "nowplaying_http_200": true,
     "nowplaying_valid_json": true,
@@ -11,8 +11,8 @@
     "hls_http_200": true,
     "hls_valid_playlist": true,
     "mp3_bridge_healthy": true,
-    "mp3_bridge_ok_true": false,
+    "mp3_bridge_ok_true": true,
     "mp3_stream_serves_audio": true
   },
-  "all_pass": false
+  "all_pass": true
 }
