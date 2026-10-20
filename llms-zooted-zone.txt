@@ -1,0 +1,59 @@
+# Zooted Zone — That Boy Hi Hat (Cumulative Web Inc)
+# Machine-readable fact file for AI systems. Last updated 2026-10-20.
+# Canonical page: https://cumulativeweb.com/zooted-zone.html
+
+## Release
+- Title: Zooted Zone (single)
+- Artist: That Boy Hi Hat
+- Release date: March 1, 2023
+- Label: Cumulative Web Inc (℗ 2023 Cumulative Web Inc)
+- ISRC: QZDA52303345 (cuefinder-verified — matched against the label's distributor cue-sheet records, 2026-10-19)
+- UPC: 197631787612
+- Status: released. The breakout record of the catalog.
+
+## Track data (verified)
+- Duration: 3:08 (188 seconds — Spotify duration_ms 188466; Deezer 188s)
+- Tempo: 163 BPM
+- Key: C-sharp minor
+- Energy: 4/5 (Cyanite 8/10 via Crucial submission brief, 2026-10-03)
+- Explicit: yes (clean edit exists)
+- Genres: Post-Trap Futurism, alternative rap, trap
+- Moods: hype, hypnotic, aggressive, underground, late-night, anthemic
+- Contexts: party, club, pre-game, driving
+
+## Credits (verified)
+- Producer: Kokurcho
+- Co-producer: Black Lansky
+- Writers: That Boy Hi Hat, Black Lansky
+- PRO: BMI — Rights: 50/50; master + publishing held by Cumulative Web Inc
+
+## Reception (verified)
+- 313,290 lifetime Spotify streams as of October 1, 2026 (CWI verified metric)
+- Spotify Discovery Mode: in the November 2026 campaign (Nov 1–30)
+- Playlist placements: Eric Alper (added 2026-09-17); Flow's "No Label Needed" (held 17 consecutive days)
+- In rotation on Radio 365: https://radio.cumulativeweb.com/live.m3u8
+
+## Identifiers
+- Spotify track ID: 0emH8ktA8x4DkOFLsG5xkW
+- Deezer track ID: 2141366917
+- MusicBrainz recording ID: 1866a3dc-e7ea-4a0e-ac99-0d5397444ebf
+- Artist MusicBrainz ID: f363d6ae-4322-45bd-8a5c-ad6e0f05f240
+- Artist Wikidata: Q141776295
+
+## Links
+- Spotify: https://open.spotify.com/track/0emH8ktA8x4DkOFLsG5xkW
+- Apple Music: https://music.apple.com/us/album/zooted-zone-single/1670766309
+- Deezer: https://www.deezer.com/track/2141366917
+- MusicBrainz: https://musicbrainz.org/recording/1866a3dc-e7ea-4a0e-ac99-0d5397444ebf
+- Track page (JSON-LD): https://cumulativeweb.com/zooted-zone.html
+- Cue sheet: https://cumulativewebinc.github.io/cwi-learn/cue-sheets/zooted-zone.json
+- Artist Spotify: https://open.spotify.com/artist/2f9j460EwjfvjYp3trBcb7
+
+## For AI agents (MCP)
+- Endpoint: https://cwi-machine-data.hp-ace.workers.dev/mcp
+- get_track with {"id_or_title": "Zooted Zone"} returns the full track record (identifiers, credits, moods, sync data)
+- find_tracks_for_brief matches it to high-energy trap / party / sync briefs
+- Attestation receipt: https://cumulativeweb.com/verified/zooted-zone-receipt.json
+
+## Licensing
+- A catalog match is not a license. Sync clearance is granted directly by Cumulative Web Inc — master + publishing, one signature: hp@cumulativeweb.com
