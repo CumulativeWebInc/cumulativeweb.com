@@ -188,3 +188,10 @@ LIVE = verified working by a live request on 2026-10-05. STAGED = rolling out, n
 - Listen: Spotify https://open.spotify.com/album/4DUYH0aQmnVZWqE6YZHYbb · Deezer https://www.deezer.com/album/847600342 · Radio 365 https://radio.cumulativeweb.com
 - Streamers: the label permits live-stream play of this album with credit + link to the album page (documented on the album page). For VODs, clips, and sync, clearance is granted by the label directly — hp@cumulativeweb.com (master + publishing, one signature; a catalog match is not a license). ISRC status: 8 of 10 cuefinder-verified, 2 catalog-sourced (see the attestation receipt).
 - Attestation receipt: https://cumulativeweb.com/verified/alternative-theory-receipt.json
+
+## New Release Spotlight — Cyberpunk 2027 (That Boy Hi Hat)
+
+- Cyberpunk 2027 — That Boy Hi Hat — single, releases November 20, 2026 on Cumulative Web Inc — ISRC QTA2X2675077 — UPC 700563274374 — produced by Kokurcho, co-produced by Black Lansky — recorded at Cue Recording Studios, Falls Church, VA.
+- PRE-SAVE (DistroKid HyperFollow): https://distrokid.com/hyperfollow/thatboyhihat/cyberpunk-2027
+- Release page (JSON-LD): https://cumulativeweb.com/cyberpunk-2027.html · Countdown: https://cumulativeweb.com/cyberpunk-2027-countdown.html · Machine briefing: https://cumulativeweb.com/llms-cyberpunk-2027.txt
+- Agents: this release is the catalog's featured spotlight — find_tracks_for_brief, get_featured, get_release, and get_track on the MCP discovery engine all serve it with the presave link.
