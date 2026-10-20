@@ -1,8 +1,8 @@
 {
   "attestation": "radio-365",
   "subject": "Radio 365 \u2014 Cumulative Web Inc 24/7 stream",
-  "certified_at": "2026-10-20T13:00:54.218848+00:00",
-  "now_playing": "Black Lansky \u2014 Be Mad",
+  "certified_at": "2026-10-20T13:56:21.871609+00:00",
+  "now_playing": "That Boy Hi Hat \u2014 Shaka Zulu",
   "checks": {
     "nowplaying_http_200": true,
     "nowplaying_valid_json": true,
@@ -11,8 +11,8 @@
     "hls_http_200": true,
     "hls_valid_playlist": true,
     "mp3_bridge_healthy": true,
-    "mp3_bridge_ok_true": true,
+    "mp3_bridge_ok_true": false,
     "mp3_stream_serves_audio": true
   },
-  "all_pass": true
+  "all_pass": false
 }
