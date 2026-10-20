@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Tue, 20 Oct 2026 22:35:36 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 20 Oct 2026 23:35:26 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>That Boy Hi Hat - Diabolique</title>
+    <title>That Boy Hi Hat - Doves &amp; Diamonds</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Diabolique (slot 45, ends 2026-10-20T22:36:12.525Z)</description>
-    <pubDate>Tue, 20 Oct 2026 22:35:36 GMT</pubDate>
-    <guid isPermaLink="false">radio365-45-2026-10-20T22:36:12.525Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Doves &amp; Diamonds (slot 64, ends 2026-10-20T23:36:26.286Z)</description>
+    <pubDate>Tue, 20 Oct 2026 23:35:26 GMT</pubDate>
+    <guid isPermaLink="false">radio365-64-2026-10-20T23:36:26.286Z</guid>
+    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-doves-and-diamonds.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
