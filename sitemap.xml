@@ -885,4 +885,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://cumulativeweb.com/blog/posts/the-alternative-theory-that-boy-hi-hat-builds-a-world-in-ten.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
