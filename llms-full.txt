@@ -180,3 +180,11 @@ Pre-computed 384-dim bge-small-en-v1.5 vectors for 55 CWI catalog track entries 
 ## Truth labeling
 
 LIVE = verified working by a live request on 2026-10-05. STAGED = rolling out, not yet accepting calls. All facts above were re-verified against the repos on 2026-10-05. What is not verified is not claimed.
+
+## Album — The Alternative Theory (That Boy Hi Hat)
+
+- Album page: https://cumulativeweb.com/the-alternative-theory.html
+- The Alternative Theory — That Boy Hi Hat — full-length album, released 2025-11-20 on Cumulative Web Inc — UPC 199750838961 — Spotify album 4DUYH0aQmnVZWqE6YZHYbb — Deezer album 847600342 — 10 tracks (33 min 29 sec): Painted Lady (QZMEP2461120), 7th Angel (QZTB82306781), Flex My Flame (QZHN32303575), Warped and Wicked (QZDA62200554), Ultimate (QZMEM2484571), Scorpions & Sapphires (QZDA72377310), Neon Nights Pt. 777 (QZTB92246281), Flamerz (QZMEP2456963), Place I Go to Dream (QZDA52227918), Toxic Elements (QZWFE2309934). Genre: Post-Trap Futurism / alternative rap. All tracks co-produced by Black Lansky.
+- Listen: Spotify https://open.spotify.com/album/4DUYH0aQmnVZWqE6YZHYbb · Deezer https://www.deezer.com/album/847600342 · Radio 365 https://radio.cumulativeweb.com
+- Streamers: live-stream play permitted with credit + link to the album page; VOD/clips/sync cleared directly by the label — hp@cumulativeweb.com (master + publishing, one signature).
+- Attestation receipt: https://cumulativeweb.com/verified/alternative-theory-receipt.json
