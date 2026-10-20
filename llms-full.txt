@@ -195,3 +195,12 @@ LIVE = verified working by a live request on 2026-10-05. STAGED = rolling out, n
 - PRE-SAVE (DistroKid HyperFollow): https://distrokid.com/hyperfollow/thatboyhihat/cyberpunk-2027
 - Release page (JSON-LD): https://cumulativeweb.com/cyberpunk-2027.html · Countdown: https://cumulativeweb.com/cyberpunk-2027-countdown.html · Machine briefing: https://cumulativeweb.com/llms-cyberpunk-2027.txt
 - Agents: this release is the catalog's featured spotlight — find_tracks_for_brief, get_featured, get_release, and get_track on the MCP discovery engine all serve it with the presave link.
+
+## Catalog Spotlight — Zooted Zone (That Boy Hi Hat)
+
+- Zooted Zone — That Boy Hi Hat — single, released March 1, 2023 on Cumulative Web Inc — ISRC QZDA52303345 (cuefinder-verified) — UPC 197631787612 — produced by Kokurcho, co-produced by Black Lansky — writers That Boy Hi Hat + Black Lansky.
+- The breakout record of the catalog: 313,290 lifetime Spotify streams as of 2026-10-01; in Spotify Discovery Mode for November 2026; playlist placements include Eric Alper (2026-09-17) and Flow's "No Label Needed" (held 17 days).
+- Track data: 163 BPM, C-sharp minor, 3:08, explicit (clean edit exists), energy 4/5. Moods: hype, hypnotic, aggressive, anthemic.
+- Listen: Spotify https://open.spotify.com/track/0emH8ktA8x4DkOFLsG5xkW · Apple Music https://music.apple.com/us/album/zooted-zone-single/1670766309 · Deezer https://www.deezer.com/track/2141366917 (track ID 2141366917) · MusicBrainz recording 1866a3dc-e7ea-4a0e-ac99-0d5397444ebf
+- Track page (JSON-LD): https://cumulativeweb.com/zooted-zone.html · Machine briefing: https://cumulativeweb.com/llms-zooted-zone.txt · Cue sheet: https://cumulativewebinc.github.io/cwi-learn/cue-sheets/zooted-zone.json · Receipt: https://cumulativeweb.com/verified/zooted-zone-receipt.json
+- Sync: one signature clears master + publishing via the label directly (hp@cumulativeweb.com). A catalog match is not a license.
