@@ -1,5 +1,5 @@
 {
-  "certified_at": "2026-10-20T14:18:35.797824+00:00",
+  "certified_at": "2026-10-20T14:48:36.226094+00:00",
   "certifier": "CWI-Certify/1.0",
   "passed": 6,
   "total": 6,
@@ -69,8 +69,8 @@
       "url": "https://cwi-machine-data.hp-ace.workers.dev/api/scout?brief=dark%20cyberpunk%20track&limit=2",
       "http_status": 200,
       "content_type": "application/json",
-      "bytes": 2620,
-      "sha256": "1d375d4b185bf27f",
+      "bytes": 2650,
+      "sha256": "d03c04f0b7a6f1ab",
       "checks": {
         "http_200": true,
         "valid_json": true,
