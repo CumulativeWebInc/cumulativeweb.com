@@ -1,8 +1,38 @@
 {
-  "updated": "2026-10-16T15:55:00.000Z",
+  "updated": "2026-10-20T16:06:40.349200Z",
   "feed_url": "https://cumulativeweb.com/blog/index.json",
-  "count": 9,
+  "count": 10,
   "posts": [
+    {
+      "slug": "the-alternative-theory-that-boy-hi-hat-builds-a-world-in-ten",
+      "title": "The Alternative Theory: That Boy Hi Hat Builds a World in Ten Tracks",
+      "date": "2026-10-20",
+      "excerpt": "That Boy Hi Hat's full-length album The Alternative Theory \u2014 ten tracks of Post-Trap Futurism on Cumulative Web Inc. The full story, the credits, how to listen on every device from Xbox to iPhone, and how Twitch streamers can run it live, cleared directly by the label.",
+      "tags": [
+        "the-alternative-theory",
+        "that-boy-hi-hat",
+        "album",
+        "post-trap-futurism",
+        "streaming",
+        "twitch"
+      ],
+      "status": "published",
+      "url": "https://cumulativeweb.com/blog/posts/the-alternative-theory-that-boy-hi-hat-builds-a-world-in-ten.html",
+      "machine": {
+        "content_id": "blog:the-alternative-theory-that-boy-hi-hat-builds-a-world-in-ten",
+        "content_type": "blog_post",
+        "title": "The Alternative Theory: That Boy Hi Hat Builds a World in Ten Tracks",
+        "url": "https://cumulativeweb.com/blog/posts/the-alternative-theory-that-boy-hi-hat-builds-a-world-in-ten.html",
+        "tags": [
+          "the-alternative-theory",
+          "that-boy-hi-hat",
+          "album",
+          "post-trap-futurism",
+          "streaming",
+          "twitch"
+        ]
+      }
+    },
     {
       "slug": "zooted-zone-song-page",
       "title": "Zooted Zone: That Boy Hi Hat's hype record, from Kokurcho and Black Lansky",
