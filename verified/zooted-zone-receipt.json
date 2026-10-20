@@ -2,19 +2,19 @@
   "attestation": "zooted-zone",
   "subject": "Zooted Zone \u2014 That Boy Hi Hat (breakout single, 2023-03-01)",
   "isrc": "QZDA52303345",
-  "certified_at": "2026-10-20T17:24:18.135228+00:00",
+  "certified_at": "2026-10-20T17:25:40.213173+00:00",
   "checks": {
-    "page_http_200": false,
-    "page_has_isrc": false,
-    "page_has_upc": false,
-    "page_has_deezer_mbid": false,
+    "page_http_200": true,
+    "page_has_isrc": true,
+    "page_has_upc": true,
+    "page_has_deezer_mbid": true,
     "briefing_http_200": true,
     "mcp_spotify_url": true,
     "mcp_apple_url": true,
     "mcp_producers": true,
     "mcp_streaming_urls_full": true,
     "announcement_served": true,
-    "graph_filled": false
+    "graph_filled": true
   },
-  "all_pass": false
+  "all_pass": true
 }
