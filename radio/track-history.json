@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-20T11:35:25.017Z",
+  "updated_at": "2026-10-20T12:35:23.758Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "That Boy Hi Hat",
-      "title": "Broken Hearts Club",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg",
-      "slot_index": 99,
-      "played_at": "2026-10-20T11:35:25.017Z",
-      "track_ends_at": "2026-10-20T11:36:14.451Z"
+      "artist": "183 Wildboi",
+      "title": "Full Moon",
+      "artwork": "https://cumulativeweb.com/radio/art/183-wildboi-full-moon.jpg",
+      "slot_index": 117,
+      "played_at": "2026-10-20T12:35:23.758Z",
+      "track_ends_at": "2026-10-20T12:37:31.307Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
