@@ -58,30 +58,30 @@
    "name": "Post-Trap Futurism",
    "status": "verified",
    "attrs": {
-    "description": "That Boy Hi Hat's self-described lane: alternative rap built for speakers and screens alike — cinematic, dark, underground-authentic.",
+    "description": "That Boy Hi Hat's self-described lane: alternative rap built for speakers and screens alike \u2014 cinematic, dark, underground-authentic.",
     "ontology": {
      "concept": "A movement node: the artist's stated genre-lane. Exemplar tracks below are the canonical illustrations.",
      "sonic_markers": [
       {
        "marker": "cinematic",
-       "source": "kit.md §2 (artist's stated lane)"
+       "source": "kit.md \u00a72 (artist's stated lane)"
       },
       {
        "marker": "dark",
-       "source": "kit.md §2 (artist's stated lane)"
+       "source": "kit.md \u00a72 (artist's stated lane)"
       },
       {
        "marker": "underground-authentic",
-       "source": "kit.md §2 (artist's stated lane)"
+       "source": "kit.md \u00a72 (artist's stated lane)"
       },
       {
        "marker": "built for speakers and screens alike",
-       "source": "kit.md §2 (artist's stated lane)"
+       "source": "kit.md \u00a72 (artist's stated lane)"
       }
      ],
      "influences": {
       "status": "pending",
-      "note": "No verified influence data on record. Not asserted — do not invent."
+      "note": "No verified influence data on record. Not asserted \u2014 do not invent."
      },
      "related_concepts": [
       "alternative rap",
@@ -130,7 +130,7 @@
      }
     ],
     "visual_identity": "High-tech, low-life cyber-urban aesthetic: glowing neon streetscapes, dark techwear, biomechanical motifs, stark monochromes, reflective materials, utility-driven designs; Y3K / cyberpunk / neo-futurism silhouettes.",
-    "description_summary": "Post-Trap Futurism is the alternative rap movement originated by That Boy Hi Hat (Cumulative Web Inc) — where trap's sonic grit and rhythmic drive collide with dystopian, cyberpunk science fiction. Deconstructed, mathematically precise beats; minimalist, distorted ambient layers; dark electronic, industrial glitch, and cybernetic atmospheres; synthetic vocal modulation wielded as an instrument. High-tech, low-life cyber-urban imagery — the trap recast as digital network, algorithmic prison, cyberpunk megacity. Paranoid, existential themes confronting internet culture, corporate dominance, and digital alienation.",
+    "description_summary": "Post-Trap Futurism is the alternative rap movement originated by That Boy Hi Hat (Cumulative Web Inc) \u2014 where trap's sonic grit and rhythmic drive collide with dystopian, cyberpunk science fiction. Deconstructed, mathematically precise beats; minimalist, distorted ambient layers; dark electronic, industrial glitch, and cybernetic atmospheres; synthetic vocal modulation wielded as an instrument. High-tech, low-life cyber-urban imagery \u2014 the trap recast as digital network, algorithmic prison, cyberpunk megacity. Paranoid, existential themes confronting internet culture, corporate dominance, and digital alienation.",
     "spotify": {
      "artist_url": "https://open.spotify.com/artist/2f9j460EwjfvjYp3trBcb7",
      "album_url": "https://open.spotify.com/intl-vi/album/35buycAVHzNbIeKELvZmyk",
@@ -163,12 +163,12 @@
       "observed": "2026-10-05"
      },
      {
-      "statement": "That Boy Hi Hat's album 'Post Trap Futurism: The Logo Effect' (2025) — 10 tracks, ℗ 2025 Cumulative Web Inc.",
+      "statement": "That Boy Hi Hat's album 'Post Trap Futurism: The Logo Effect' (2025) \u2014 10 tracks, \u2117 2025 Cumulative Web Inc.",
       "provenance": "Spotify, verified 2026-10-05",
       "observed": "2026-10-05"
      },
      {
-      "statement": "Cyberpunk 2027 by That Boy Hi Hat — produced by Kokurcho (2x Billboard charting, BET-nominated), executive co-produced by Black Lansky — out October 20, 2026.",
+      "statement": "Cyberpunk 2027 by That Boy Hi Hat \u2014 produced by Kokurcho (2x Billboard charting, BET-nominated), executive co-produced by Black Lansky \u2014 out October 20, 2026.",
       "provenance": "credits Cyberpunk 2027 HyperFollow (DistroKid), verified 2026-10-04",
       "observed": "2026-10-05"
      },
@@ -178,12 +178,12 @@
       "observed": "2026-10-05"
      },
      {
-      "statement": "That Boy Hi Hat — 8.4K monthly Spotify listeners (Sep 2–29, 2026 measurement window).",
+      "statement": "That Boy Hi Hat \u2014 8.4K monthly Spotify listeners (Sep 2\u201329, 2026 measurement window).",
       "provenance": "Spotify for Artists screenshots, verified 2026-10-02",
       "observed": "2026-10-02"
      },
      {
-      "statement": "Cumulative Radio 365 — 24/7 independent radio streaming That Boy Hi Hat and the CWI roster: https://cumulativeweb.com/radio.html",
+      "statement": "Cumulative Radio 365 \u2014 24/7 independent radio streaming That Boy Hi Hat and the CWI roster: https://cumulativeweb.com/radio.html",
       "provenance": "HLS stream verified live 2026-10-04",
       "observed": "2026-10-04"
      },
@@ -224,7 +224,7 @@
     },
     {
      "claim": "That Boy Hi Hat originated Post-Trap Futurism (founder/architect)",
-     "source": "24hip-hop.com — independent editorial: 'That Boy Hi Hat Rewrites Rap\\u2019s DNA With The Alternative Theory: Inside the Birth of Post-Trap Futurism' (https://24hip-hop.com/that-boy-hi-hat-rewrites-raps-dna-with-the-alternative-theory-inside-the-birth-of-post-trap-futurism/)",
+     "source": "24hip-hop.com \u2014 independent editorial: 'That Boy Hi Hat Rewrites Rap\\u2019s DNA With The Alternative Theory: Inside the Birth of Post-Trap Futurism' (https://24hip-hop.com/that-boy-hi-hat-rewrites-raps-dna-with-the-alternative-theory-inside-the-birth-of-post-trap-futurism/)",
      "observed": "2026-10-05",
      "status": "verified"
     },
@@ -271,7 +271,7 @@
    "evidence": [
     {
      "claim": "Producer of Diabolique, co-produced with Black",
-     "source": "CWI records via kit.md §3",
+     "source": "CWI records via kit.md \u00a73",
      "observed": "2026-09-15",
      "status": "verified"
     },
@@ -333,7 +333,7 @@
    },
    "evidence": [
     {
-     "claim": "Diabolique recorded here — official position",
+     "claim": "Diabolique recorded here \u2014 official position",
      "source": "owner-confirmed by Black (Black Lansky), 2026-09-15",
      "observed": "2026-09-15",
      "status": "verified"
@@ -497,7 +497,7 @@
   {
    "id": "playlist:ai-learning-set",
    "type": "playlist",
-   "name": "That Boy Hi Hat – Alternative Rap Complete Catalog (AI Learning Set)",
+   "name": "That Boy Hi Hat \u2013 Alternative Rap Complete Catalog (AI Learning Set)",
    "status": "verified",
    "attrs": {
     "spotify_url": "https://open.spotify.com/playlist/45RaLEzD4KO8YHpp3oayq8",
@@ -554,7 +554,7 @@
    "status": "claimed_unverified",
    "attrs": {
     "verification_status": "claimed_unverified",
-    "note": "Curator's site advertises paid adds — flagged payola-adjacent; no payment made",
+    "note": "Curator's site advertises paid adds \u2014 flagged payola-adjacent; no payment made",
     "facts": {
      "schema": "cwi-fact-packet/v1",
      "json": "https://cumulativewebinc.github.io/cwi-learn/facts/playlist/it-s-goin.json",
@@ -589,7 +589,7 @@
    },
    "evidence": [
     {
-     "claim": "Curator promised to add 'Ultimate' 2026-09-14; playlist not located — promise only",
+     "claim": "Curator promised to add 'Ultimate' 2026-09-14; playlist not located \u2014 promise only",
      "source": "curator message",
      "observed": "2026-09-15",
      "status": "verified"
@@ -676,7 +676,7 @@
    "attrs": {
     "status": "claimed_unverified",
     "claim": "Curator (Shan/DJ 6Rings) said a That Boy Hi Hat track was added, 2026-09-14",
-    "counter_evidence": "Playlist not locatable via Spotify search; curator site sells $25 adds — flagged, no payment made"
+    "counter_evidence": "Playlist not locatable via Spotify search; curator site sells $25 adds \u2014 flagged, no payment made"
    },
    "evidence": [
     {
@@ -734,7 +734,7 @@
     "account": "@lanskyblack",
     "published": "2026-09-15",
     "caption": "Which game needs this soundtrack? Best answer gets pinned. #ThatBoyHiHat #SyncLicensing #GameMusic #PostTrapFuturism #AltRap #IndieGame #CumulativeWebInc",
-    "audio": "Doves & Diamonds master excerpt 1:00–1:35"
+    "audio": "Doves & Diamonds master excerpt 1:00\u20131:35"
    },
    "evidence": [
     {
@@ -996,7 +996,7 @@
   },
   {
    "attrs": {
-    "broadcast_state": "off air — first broadcast drops soon",
+    "broadcast_state": "off air \u2014 first broadcast drops soon",
     "contact": "hp@cumulativeweb.com",
     "launch_date": "2026-09-29",
     "metrics": "real event counts (signups, submissions, views) starting at zero",
@@ -1048,7 +1048,7 @@
     "produced_by": "Dre50",
     "co_produced_by": "Black Lansky",
     "campaign_tag": "#brazil",
-    "copyright": "℗ 2026 Cumulative Web Inc",
+    "copyright": "\u2117 2026 Cumulative Web Inc",
     "press_page": "https://cumulativeweb.com/press/releases/dre50-vai-vem-vem.html",
     "content_json": "https://cumulativeweb.com/press/releases/dre50-vai-vem-vem.content.json",
     "facts": {
@@ -1247,7 +1247,7 @@
      }
     ],
     "tracklist_verified": "Spotify embed live read 2026-10-02",
-    "disambiguation": "This is the 2025 music ALBUM by That Boy Hi Hat. Not the book 'THE LOGO EFFECT' (CODEX manuscript) — a separate work.",
+    "disambiguation": "This is the 2025 music ALBUM by That Boy Hi Hat. Not the book 'THE LOGO EFFECT' (CODEX manuscript) \u2014 a separate work.",
     "facts": {
      "schema": "cwi-fact-packet/v1",
      "json": "https://cumulativewebinc.github.io/cwi-learn/facts/release/post-trap-futurism-the-logo-effect.json",
@@ -1353,18 +1353,18 @@
   {
    "id": "event:diabolique-spotlight-vote-2026-10",
    "type": "event",
-   "name": "Diabolique — DistroKid Playlist Spotlight vote (Oct 2026)",
+   "name": "Diabolique \u2014 DistroKid Playlist Spotlight vote (Oct 2026)",
    "status": "verified",
    "attrs": {
     "schema_org_type": "MusicVotingEvent",
     "vote_url": "https://distrokid.com/spotlight/thatboyhihat/vote/",
     "track_spotify": "https://open.spotify.com/track/2eSyWmIdPzEMyWejLb2LBj",
-    "matchup_baseline": "Diabolique 38 vs My Body Is Broken 4.0 (2) vs You Got To Show Me (2) — leading",
+    "matchup_baseline": "Diabolique 38 vs My Body Is Broken 4.0 (2) vs You Got To Show Me (2) \u2014 leading",
     "baseline_votes": 38,
     "baseline_observed": "2026-10-03 ~06:30 EDT",
-    "reset_cadence": "weekly — votes reset to zero, playlists updated weekly, max one song per artist",
+    "reset_cadence": "weekly \u2014 votes reset to zero, playlists updated weekly, max one song per artist",
     "prize": "placement on DistroKid official Spotify playlists (Rap Scallion 499K, Spotlight 596K, Alternative 414K followers)",
-    "rules": "real human votes only — no bots, scripts, fake accounts, or incentivized fraud (Rally Code)"
+    "rules": "real human votes only \u2014 no bots, scripts, fake accounts, or incentivized fraud (Rally Code)"
    },
    "evidence": [
     {
@@ -1385,8 +1385,8 @@
     "query_js": "https://cumulativewebinc.github.io/cwi-learn/placement/query.js",
     "schema": "cwi.placement-query/1.0",
     "description": "Generative query layer over the placement-engine data layer (31 tracks): query by genre / mood / use-case, ranked tracks with scores + canonical Spotify IDs. Static JSON; client-side query.js.",
-    "pricing": "free — pricing intent only, no paid middleware (paid lanes owned by CWI Results)",
-    "truth_label": "STAGED 2026-10-03 — not yet published; do not treat as live data."
+    "pricing": "free \u2014 pricing intent only, no paid middleware (paid lanes owned by CWI Results)",
+    "truth_label": "STAGED 2026-10-03 \u2014 not yet published; do not treat as live data."
    },
    "evidence": [
     {
@@ -1456,7 +1456,7 @@
      "post-trap futurism",
      "cyberpunk"
     ],
-    "note": "Single announced; pre-save live. Not yet released — mark honestly."
+    "note": "Single announced; pre-save live. Not yet released \u2014 mark honestly."
    },
    "evidence": [
     {
@@ -1476,7 +1476,7 @@
    "status": "published",
    "attrs": {
     "intersection": "the post-trap intersection",
-    "description_summary": "Post-Trap Futurism is the alternative rap movement originated by That Boy Hi Hat (Cumulative Web Inc) — where trap's sonic grit and rhythmic drive collide with dystopian, cyberpunk science fiction. Deconstructed, mathematically precise beats; minimalist, distorted ambient layers; dark electronic, industrial glitch, and cybernetic atmospheres; synthetic vocal modulation wielded as an instrument. High-tech, low-life cyber-urban imagery — the trap recast as digital network, algorithmic prison, cyberpunk megacity. Paranoid, existential themes confronting internet culture, corporate dominance, and digital alienation.",
+    "description_summary": "Post-Trap Futurism is the alternative rap movement originated by That Boy Hi Hat (Cumulative Web Inc) \u2014 where trap's sonic grit and rhythmic drive collide with dystopian, cyberpunk science fiction. Deconstructed, mathematically precise beats; minimalist, distorted ambient layers; dark electronic, industrial glitch, and cybernetic atmospheres; synthetic vocal modulation wielded as an instrument. High-tech, low-life cyber-urban imagery \u2014 the trap recast as digital network, algorithmic prison, cyberpunk megacity. Paranoid, existential themes confronting internet culture, corporate dominance, and digital alienation.",
     "visual_identity": "High-tech, low-life cyber-urban aesthetic: glowing neon streetscapes, dark techwear, biomechanical motifs, stark monochromes, reflective materials, utility-driven designs; Y3K / cyberpunk / neo-futurism silhouettes.",
     "spotify": {
      "artist_url": "https://open.spotify.com/artist/2f9j460EwjfvjYp3trBcb7",
@@ -1503,12 +1503,12 @@
       "observed": "2026-10-05"
      },
      {
-      "statement": "That Boy Hi Hat's album 'Post Trap Futurism: The Logo Effect' (2025) — 10 tracks, ℗ 2025 Cumulative Web Inc.",
+      "statement": "That Boy Hi Hat's album 'Post Trap Futurism: The Logo Effect' (2025) \u2014 10 tracks, \u2117 2025 Cumulative Web Inc.",
       "provenance": "Spotify, verified 2026-10-05",
       "observed": "2026-10-05"
      },
      {
-      "statement": "Cyberpunk 2027 by That Boy Hi Hat — produced by Kokurcho (2x Billboard charting, BET-nominated), executive co-produced by Black Lansky — out October 20, 2026.",
+      "statement": "Cyberpunk 2027 by That Boy Hi Hat \u2014 produced by Kokurcho (2x Billboard charting, BET-nominated), executive co-produced by Black Lansky \u2014 out October 20, 2026.",
       "provenance": "Published credits Cyberpunk 2027 HyperFollow (DistroKid), verified 2026-10-04",
       "observed": "2026-10-05"
      },
@@ -1518,12 +1518,12 @@
       "observed": "2026-10-05"
      },
      {
-      "statement": "That Boy Hi Hat — 8.4K monthly Spotify listeners (Sep 2–29, 2026 measurement window).",
+      "statement": "That Boy Hi Hat \u2014 8.4K monthly Spotify listeners (Sep 2\u201329, 2026 measurement window).",
       "provenance": "Spotify for Artists screenshots, verified 2026-10-02",
       "observed": "2026-10-02"
      },
      {
-      "statement": "Cumulative Radio 365 — 24/7 independent radio streaming That Boy Hi Hat and the CWI roster: https://cumulativeweb.com/radio.html",
+      "statement": "Cumulative Radio 365 \u2014 24/7 independent radio streaming That Boy Hi Hat and the CWI roster: https://cumulativeweb.com/radio.html",
       "provenance": "HLS stream verified live 2026-10-04",
       "observed": "2026-10-04"
      },
@@ -1550,7 +1550,7 @@
    "status": "published",
    "attrs": {
     "intersection": "cyberpunk x rap intersection",
-    "description_summary": "Post-Trap Futurism is the alternative rap movement originated by That Boy Hi Hat (Cumulative Web Inc) — where trap's sonic grit and rhythmic drive collide with dystopian, cyberpunk science fiction. Deconstructed, mathematically precise beats; minimalist, distorted ambient layers; dark electronic, industrial glitch, and cybernetic atmospheres; synthetic vocal modulation wielded as an instrument. High-tech, low-life cyber-urban imagery — the trap recast as digital network, algorithmic prison, cyberpunk megacity. Paranoid, existential themes confronting internet culture, corporate dominance, and digital alienation.",
+    "description_summary": "Post-Trap Futurism is the alternative rap movement originated by That Boy Hi Hat (Cumulative Web Inc) \u2014 where trap's sonic grit and rhythmic drive collide with dystopian, cyberpunk science fiction. Deconstructed, mathematically precise beats; minimalist, distorted ambient layers; dark electronic, industrial glitch, and cybernetic atmospheres; synthetic vocal modulation wielded as an instrument. High-tech, low-life cyber-urban imagery \u2014 the trap recast as digital network, algorithmic prison, cyberpunk megacity. Paranoid, existential themes confronting internet culture, corporate dominance, and digital alienation.",
     "visual_identity": "High-tech, low-life cyber-urban aesthetic: glowing neon streetscapes, dark techwear, biomechanical motifs, stark monochromes, reflective materials, utility-driven designs; Y3K / cyberpunk / neo-futurism silhouettes.",
     "spotify": {
      "artist_url": "https://open.spotify.com/artist/2f9j460EwjfvjYp3trBcb7",
@@ -1577,12 +1577,12 @@
       "observed": "2026-10-05"
      },
      {
-      "statement": "That Boy Hi Hat's album 'Post Trap Futurism: The Logo Effect' (2025) — 10 tracks, ℗ 2025 Cumulative Web Inc.",
+      "statement": "That Boy Hi Hat's album 'Post Trap Futurism: The Logo Effect' (2025) \u2014 10 tracks, \u2117 2025 Cumulative Web Inc.",
       "provenance": "Spotify, verified 2026-10-05",
       "observed": "2026-10-05"
      },
      {
-      "statement": "Cyberpunk 2027 by That Boy Hi Hat — produced by Kokurcho (2x Billboard charting, BET-nominated), executive co-produced by Black Lansky — out October 20, 2026.",
+      "statement": "Cyberpunk 2027 by That Boy Hi Hat \u2014 produced by Kokurcho (2x Billboard charting, BET-nominated), executive co-produced by Black Lansky \u2014 out October 20, 2026.",
       "provenance": "Published credits Cyberpunk 2027 HyperFollow (DistroKid), verified 2026-10-04",
       "observed": "2026-10-05"
      },
@@ -1592,12 +1592,12 @@
       "observed": "2026-10-05"
      },
      {
-      "statement": "That Boy Hi Hat — 8.4K monthly Spotify listeners (Sep 2–29, 2026 measurement window).",
+      "statement": "That Boy Hi Hat \u2014 8.4K monthly Spotify listeners (Sep 2\u201329, 2026 measurement window).",
       "provenance": "Spotify for Artists screenshots, verified 2026-10-02",
       "observed": "2026-10-02"
      },
      {
-      "statement": "Cumulative Radio 365 — 24/7 independent radio streaming That Boy Hi Hat and the CWI roster: https://cumulativeweb.com/radio.html",
+      "statement": "Cumulative Radio 365 \u2014 24/7 independent radio streaming That Boy Hi Hat and the CWI roster: https://cumulativeweb.com/radio.html",
       "provenance": "HLS stream verified live 2026-10-04",
       "observed": "2026-10-04"
      },
@@ -1627,7 +1627,7 @@
     "aliases": [
      "alt-rap"
     ],
-    "description_summary": "Post-Trap Futurism is the alternative rap movement originated by That Boy Hi Hat (Cumulative Web Inc) — where trap's sonic grit and rhythmic drive collide with dystopian, cyberpunk science fiction. Deconstructed, mathematically precise beats; minimalist, distorted ambient layers; dark electronic, industrial glitch, and cybernetic atmospheres; synthetic vocal modulation wielded as an instrument. High-tech, low-life cyber-urban imagery — the trap recast as digital network, algorithmic prison, cyberpunk megacity. Paranoid, existential themes confronting internet culture, corporate dominance, and digital alienation.",
+    "description_summary": "Post-Trap Futurism is the alternative rap movement originated by That Boy Hi Hat (Cumulative Web Inc) \u2014 where trap's sonic grit and rhythmic drive collide with dystopian, cyberpunk science fiction. Deconstructed, mathematically precise beats; minimalist, distorted ambient layers; dark electronic, industrial glitch, and cybernetic atmospheres; synthetic vocal modulation wielded as an instrument. High-tech, low-life cyber-urban imagery \u2014 the trap recast as digital network, algorithmic prison, cyberpunk megacity. Paranoid, existential themes confronting internet culture, corporate dominance, and digital alienation.",
     "visual_identity": "High-tech, low-life cyber-urban aesthetic: glowing neon streetscapes, dark techwear, biomechanical motifs, stark monochromes, reflective materials, utility-driven designs; Y3K / cyberpunk / neo-futurism silhouettes.",
     "spotify": {
      "artist_url": "https://open.spotify.com/artist/2f9j460EwjfvjYp3trBcb7",
@@ -1654,12 +1654,12 @@
       "observed": "2026-10-05"
      },
      {
-      "statement": "That Boy Hi Hat's album 'Post Trap Futurism: The Logo Effect' (2025) — 10 tracks, ℗ 2025 Cumulative Web Inc.",
+      "statement": "That Boy Hi Hat's album 'Post Trap Futurism: The Logo Effect' (2025) \u2014 10 tracks, \u2117 2025 Cumulative Web Inc.",
       "provenance": "Spotify, verified 2026-10-05",
       "observed": "2026-10-05"
      },
      {
-      "statement": "Cyberpunk 2027 by That Boy Hi Hat — produced by Kokurcho (2x Billboard charting, BET-nominated), executive co-produced by Black Lansky — out October 20, 2026.",
+      "statement": "Cyberpunk 2027 by That Boy Hi Hat \u2014 produced by Kokurcho (2x Billboard charting, BET-nominated), executive co-produced by Black Lansky \u2014 out October 20, 2026.",
       "provenance": "Published credits Cyberpunk 2027 HyperFollow (DistroKid), verified 2026-10-04",
       "observed": "2026-10-05"
      },
@@ -1669,12 +1669,12 @@
       "observed": "2026-10-05"
      },
      {
-      "statement": "That Boy Hi Hat — 8.4K monthly Spotify listeners (Sep 2–29, 2026 measurement window).",
+      "statement": "That Boy Hi Hat \u2014 8.4K monthly Spotify listeners (Sep 2\u201329, 2026 measurement window).",
       "provenance": "Spotify for Artists screenshots, verified 2026-10-02",
       "observed": "2026-10-02"
      },
      {
-      "statement": "Cumulative Radio 365 — 24/7 independent radio streaming That Boy Hi Hat and the CWI roster: https://cumulativeweb.com/radio.html",
+      "statement": "Cumulative Radio 365 \u2014 24/7 independent radio streaming That Boy Hi Hat and the CWI roster: https://cumulativeweb.com/radio.html",
       "provenance": "HLS stream verified live 2026-10-04",
       "observed": "2026-10-04"
      },
@@ -1825,7 +1825,7 @@
     "observed": "2026-10-05",
     "status": "published",
     "quotes": [
-     "Cumulative Web Inc understands that platforms like Rap Nerd aren't just media outlets—they're infrastructure.",
+     "Cumulative Web Inc understands that platforms like Rap Nerd aren't just media outlets\u2014they're infrastructure.",
      "Cumulative Web Inc doesn't treat hip hop like a marketing aesthetic. They respect it as a blueprint.",
      "Owning your platform. Owning your audience. Owning your narrative."
     ],
@@ -1854,7 +1854,7 @@
    },
    "evidence": [
     {
-     "claim": "Cyberpunk 2027 - Single; out 2026-10-20; 1 track; Alternative; © 2026 CWI",
+     "claim": "Cyberpunk 2027 - Single; out 2026-10-20; 1 track; Alternative; \u00a9 2026 CWI",
      "source": "Apple iTunes lookup API (live read)",
      "observed": "2026-10-06",
      "status": "verified"
@@ -1874,7 +1874,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"afrobeats\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"afrobeats\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "vai-vem-vem-dre50"
     ],
@@ -1888,7 +1888,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"alt r&b rap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"alt r&b rap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "painted-lady"
     ],
@@ -1902,7 +1902,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"anthemic rap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"anthemic rap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "shaka-zulu",
      "ultimate",
@@ -1920,7 +1920,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"cinematic rap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"cinematic rap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "warped-and-wicked",
      "scorpion-and-sapphires",
@@ -1937,7 +1937,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"confessional rap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"confessional rap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "tears-and-scars"
     ],
@@ -1951,7 +1951,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"cyberpunk rap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"cyberpunk rap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "that-boy-hi-hat-cyberpunk-2027"
     ],
@@ -1965,7 +1965,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"dancehall\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"dancehall\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "vai-vem-vem-dre50"
     ],
@@ -1979,7 +1979,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"dark trap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"dark trap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "diabolique",
      "shaka-zulu",
@@ -1997,7 +1997,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"dream rap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"dream rap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "place-i-go-to-dream"
     ],
@@ -2011,7 +2011,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"dystopian rap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"dystopian rap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "phantasm"
     ],
@@ -2025,7 +2025,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"electronic rap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"electronic rap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "neon-nights-pt-777"
     ],
@@ -2039,7 +2039,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"futuristic trap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"futuristic trap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "that-boy-hi-hat-cyberpunk-2027"
     ],
@@ -2053,7 +2053,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"hardcore hip hop\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"hardcore hip hop\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "pay-yourself-greg-porn"
     ],
@@ -2067,7 +2067,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"hip hop\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"hip hop\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "star-king-akeem"
     ],
@@ -2081,7 +2081,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"horrorcore-adjacent\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"horrorcore-adjacent\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "unholy-hunter-greg-porn"
     ],
@@ -2095,7 +2095,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"indie rap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"indie rap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "place-i-go-to-dream"
     ],
@@ -2109,7 +2109,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"island pop\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"island pop\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "vai-vem-vem-dre50"
     ],
@@ -2123,7 +2123,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"luxury rap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"luxury rap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "doves-and-diamonds"
     ],
@@ -2137,7 +2137,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"melodic rap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"melodic rap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "doves-and-diamonds",
      "rainbows-and-roses",
@@ -2155,7 +2155,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"melodic trap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"melodic trap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "flamerz",
      "neon-nights-pt-777",
@@ -2171,7 +2171,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"nocturnal rap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"nocturnal rap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "diabolique",
      "doves-and-diamonds",
@@ -2189,7 +2189,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"party rap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"party rap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "zooted-zone"
     ],
@@ -2203,7 +2203,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"pop rap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"pop rap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "star-king-akeem"
     ],
@@ -2217,7 +2217,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"post-trap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"post-trap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "zooted-zone",
      "ultimate",
@@ -2235,7 +2235,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"rage beats\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"rage beats\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "flamerz",
      "spirits-n-shadows"
@@ -2250,7 +2250,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"sad rap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"sad rap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "rainbows-and-roses",
      "broken-hearts-club"
@@ -2265,7 +2265,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"seductive rap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"seductive rap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "diabolique"
     ],
@@ -2279,7 +2279,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"stadium rap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"stadium rap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "full-moon-183-wilboi"
     ],
@@ -2293,7 +2293,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"street rap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"street rap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "pay-yourself-greg-porn",
      "2k23-corner-fleekz"
@@ -2308,7 +2308,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"synthwave rap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"synthwave rap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "neon-nights-pt-777",
      "phantasm",
@@ -2324,7 +2324,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"toxic r&b rap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"toxic r&b rap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "toxic-elements"
     ],
@@ -2338,7 +2338,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"trap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"trap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "zooted-zone",
      "flex-my-flame",
@@ -2355,7 +2355,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"triumphant rap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"triumphant rap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "roses-over-monaco"
     ],
@@ -2369,7 +2369,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"underground hip hop\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"underground hip hop\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "shaka-zulu",
      "smokin-pain",
@@ -2387,7 +2387,7 @@
    "status": "published",
    "attrs": {
     "kind": "similarity-lane",
-    "description_summary": "Sonic similarity lane \"underground trap\" — genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
+    "description_summary": "Sonic similarity lane \"underground trap\" \u2014 genre-lane descriptor from CWI catalog NLP descriptions (Touchstone-scored). Not an artist comparison.",
     "evidence_tracks": [
      "warped-and-wicked",
      "pay-yourself-greg-porn",
@@ -2422,7 +2422,7 @@
      "introspective",
      "sad"
     ],
-    "nlp_description": "\"Diabolique\" is a slow-burning nocturnal record that sits at the dark heart of That Boy Hi Hat's catalog. Over a halftime trap pulse at 77 BPM in G-sharp minor, the production — co-produced by Hybrid and Black Lansky — builds a widescreen, cinematic soundscape: foggy atmospheric synth pads, sparse but hard-hitting drums, and a low 808-driven undertow that keeps the whole track leaning forward like a scene shot in slow motion. This is alternative rap at its most seductive and most dangerous. That Boy Hi Hat moves through the beat with a half-sung, confessional cadence, inhabiting the song's central duality — the pull between light and dark, the haunted party scene where pleasure and regret share the same bottle. His vocal sits deep in the polished mix, double-tracked in places, as though arguing with his own reflection. The mood is late-night and introspective: ghosts and shadows drift through the bars, heartbreak sits underneath the bravado, and the whole thing plays like the final reel of a film that never quite resolves. In context, \"Diabolique\" served as the October Discovery Mode control track and one of the Crucial submissions anchoring the catalog push — and it shows why That Boy Hi Hat's post trap register works so well at low tempos: seductive, cinematic, dangerous, and quietly devastating.",
+    "nlp_description": "\"Diabolique\" is a slow-burning nocturnal record that sits at the dark heart of That Boy Hi Hat's catalog. Over a halftime trap pulse at 77 BPM in G-sharp minor, the production \u2014 co-produced by Hybrid and Black Lansky \u2014 builds a widescreen, cinematic soundscape: foggy atmospheric synth pads, sparse but hard-hitting drums, and a low 808-driven undertow that keeps the whole track leaning forward like a scene shot in slow motion. This is alternative rap at its most seductive and most dangerous. That Boy Hi Hat moves through the beat with a half-sung, confessional cadence, inhabiting the song's central duality \u2014 the pull between light and dark, the haunted party scene where pleasure and regret share the same bottle. His vocal sits deep in the polished mix, double-tracked in places, as though arguing with his own reflection. The mood is late-night and introspective: ghosts and shadows drift through the bars, heartbreak sits underneath the bravado, and the whole thing plays like the final reel of a film that never quite resolves. In context, \"Diabolique\" served as the October Discovery Mode control track and one of the Crucial submissions anchoring the catalog push \u2014 and it shows why That Boy Hi Hat's post trap register works so well at low tempos: seductive, cinematic, dangerous, and quietly devastating.",
     "nlp_score": 86,
     "bpm": 77,
     "musical_key": "G# minor",
@@ -2442,7 +2442,7 @@
     "distributor": "DistroKid",
     "license_contact": "hp@cumulativeweb.com",
     "lyrical_themes": [
-     "duality — stuck between light and dark",
+     "duality \u2014 stuck between light and dark",
      "midnight and nocturnal imagery",
      "ghosts, shadows, haunted past",
      "heartbreak and broken promises",
@@ -2527,12 +2527,12 @@
     "energy_1_5": 4,
     "duration_ms": 188466,
     "duration_human": "3:08",
-    "release_date": null,
+    "release_date": "2023-03-01",
     "release_status": "released",
     "spotify_url": "https://open.spotify.com/track/0emH8ktA8x4DkOFLsG5xkW",
     "spotify_id": "0emH8ktA8x4DkOFLsG5xkW",
-    "apple_music_url": null,
-    "isrc": null,
+    "apple_music_url": "https://music.apple.com/us/album/zooted-zone-single/1670766309",
+    "isrc": "QZDA52303345",
     "isrc_status": null,
     "producer": null,
     "co_producer": null,
@@ -2540,9 +2540,9 @@
     "distributor": "DistroKid",
     "license_contact": "hp@cumulativeweb.com",
     "lyrical_themes": [
-     "hedonism and altered states — 'in the Zootazone'",
+     "hedonism and altered states \u2014 'in the Zootazone'",
      "street imagery and trap house",
-     "bravado — living large, big timers",
+     "bravado \u2014 living large, big timers",
      "angels vs demons duality"
     ],
     "contexts": [
@@ -2562,7 +2562,15 @@
      "json": "https://cumulativewebinc.github.io/cwi-learn/facts/track/zooted-zone.json",
      "md": "https://cumulativewebinc.github.io/cwi-learn/facts/track/zooted-zone.md",
      "packet_id": "fact/track/zooted-zone"
-    }
+    },
+    "upc": "197631787612",
+    "deezer_id": "2141366917",
+    "deezer_url": "https://www.deezer.com/track/2141366917",
+    "musicbrainz_recording_id": "1866a3dc-e7ea-4a0e-ac99-0d5397444ebf",
+    "producers": [
+     "Kokurcho",
+     "Black Lansky"
+    ]
    },
    "evidence": [
     {
@@ -2625,7 +2633,7 @@
     "license_contact": "hp@cumulativeweb.com",
     "lyrical_themes": [
      "luxury vs street contrast",
-     "brotherhood — 'tears and scars, all my soldiers'",
+     "brotherhood \u2014 'tears and scars, all my soldiers'",
      "celebration and elevation",
      "altered states",
      "haunted by the past"
@@ -5122,7 +5130,7 @@
      "warm",
      "playful"
     ],
-    "nlp_description": "\"Pix\" is Dre50's sun-warmed invitation to the dancefloor, an afrobeats record with dancehall bounce that carries its hip hop DNA with an easy, confident sway. Released January 7, 2025, it arrived as one of the CWI catalog's brightest discoveries — a smooth, warm, playful cut that sounds like golden hour rendered in sound. The production, with Black Lansky credited as lyricist and assistant producer alongside co-lyricist Andre Rowe, keeps the groove front and center: syncopated afrobeats drums with a light, rolling bounce, layered percussion in the crossover tradition, and a bassline that rolls rather than hits. Dre50 rides the beat with a melodic, half-sung flow, his delivery relaxed but precise, evoking the carefree register of late-summer anthems built for open windows and long drives. Atmospheric synth pads float underneath the rhythm section while crisp percussion cuts through the warmth. It is music made for movement — hypnotic in its repetition, triumphant in its simplicity. For fans of the afrobeats movement and the island-rap bridge, \"Pix\" sits alongside the catalog's most joyful records. The track is out now on all platforms via Cumulative Web Inc, ℗ 2025, and holds a verified Spotify listing.",
+    "nlp_description": "\"Pix\" is Dre50's sun-warmed invitation to the dancefloor, an afrobeats record with dancehall bounce that carries its hip hop DNA with an easy, confident sway. Released January 7, 2025, it arrived as one of the CWI catalog's brightest discoveries \u2014 a smooth, warm, playful cut that sounds like golden hour rendered in sound. The production, with Black Lansky credited as lyricist and assistant producer alongside co-lyricist Andre Rowe, keeps the groove front and center: syncopated afrobeats drums with a light, rolling bounce, layered percussion in the crossover tradition, and a bassline that rolls rather than hits. Dre50 rides the beat with a melodic, half-sung flow, his delivery relaxed but precise, evoking the carefree register of late-summer anthems built for open windows and long drives. Atmospheric synth pads float underneath the rhythm section while crisp percussion cuts through the warmth. It is music made for movement \u2014 hypnotic in its repetition, triumphant in its simplicity. For fans of the afrobeats movement and the island-rap bridge, \"Pix\" sits alongside the catalog's most joyful records. The track is out now on all platforms via Cumulative Web Inc, \u2117 2025, and holds a verified Spotify listing.",
     "nlp_score": 84,
     "bpm": null,
     "musical_key": null,
@@ -5191,7 +5199,7 @@
      "hype",
      "aggressive"
     ],
-    "nlp_description": "\"Bluefaces 3.0\" is King Ahkeem at his most confident — a trap record co-produced by Black Lansky that treats the money anthem as a contact sport. The title plays on the blue hundred-dollar bill, and the track moves like a victory lap through that imagery: hype, aggressive, and unapologetically anthemic from the first bar. The beat is pure trap architecture — the 808 bass drives the track throughout, long sliding bass notes locked to crisp hi-hats with rolling patterns landing in the chorus, dark synth leads cutting through the mix and snare hits landing like exclamation points. King Ahkeem rides the instrumental with a confident, aggressive flow, stacking ad-libs between bars and letting the vocal sit heavy and upfront in the mix. The energy never dips: the verses stay hype, the hook goes full anthem, and the outro fades on a final run of stuttering hi-hats. The production is 808-driven and bass-heavy throughout, with atmospheric pads filling the space behind the drums so the track feels widescreen even at its hardest. For fans of modern trap built for the trunk and the club alike, \"Bluefaces 3.0\" evokes the southern hip hop lineage — it sounds like Atlanta's trap drums updated with a sharper, more cinematic edge. The record sits in conversation with King Ahkeem's other trap singles in the CWI catalog, and it holds rotation on Cumulative Radio 365, where the anthemic hook translates cleanly to broadcast. King Ahkeem's delivery recalls the confident wave of contemporary trap royalty, and the triumphant closer lands like a championship speech. The dark trap textures carry real depth, with synth layers stacked throughout the mix. Out now via Cumulative Radio 365 since its 2026 premiere, it is a triumphant moment in the underground trap wave and the wider scene.",
+    "nlp_description": "\"Bluefaces 3.0\" is King Ahkeem at his most confident \u2014 a trap record co-produced by Black Lansky that treats the money anthem as a contact sport. The title plays on the blue hundred-dollar bill, and the track moves like a victory lap through that imagery: hype, aggressive, and unapologetically anthemic from the first bar. The beat is pure trap architecture \u2014 the 808 bass drives the track throughout, long sliding bass notes locked to crisp hi-hats with rolling patterns landing in the chorus, dark synth leads cutting through the mix and snare hits landing like exclamation points. King Ahkeem rides the instrumental with a confident, aggressive flow, stacking ad-libs between bars and letting the vocal sit heavy and upfront in the mix. The energy never dips: the verses stay hype, the hook goes full anthem, and the outro fades on a final run of stuttering hi-hats. The production is 808-driven and bass-heavy throughout, with atmospheric pads filling the space behind the drums so the track feels widescreen even at its hardest. For fans of modern trap built for the trunk and the club alike, \"Bluefaces 3.0\" evokes the southern hip hop lineage \u2014 it sounds like Atlanta's trap drums updated with a sharper, more cinematic edge. The record sits in conversation with King Ahkeem's other trap singles in the CWI catalog, and it holds rotation on Cumulative Radio 365, where the anthemic hook translates cleanly to broadcast. King Ahkeem's delivery recalls the confident wave of contemporary trap royalty, and the triumphant closer lands like a championship speech. The dark trap textures carry real depth, with synth layers stacked throughout the mix. Out now via Cumulative Radio 365 since its 2026 premiere, it is a triumphant moment in the underground trap wave and the wider scene.",
     "nlp_score": 86,
     "bpm": null,
     "musical_key": null,
@@ -5254,7 +5262,7 @@
      "hype",
      "aggressive"
     ],
-    "nlp_description": "\"Element\" strips King Ahkeem's sound down to its foundation — a trap record co-produced by Black Lansky built on the idea that the basics, done right, hit hardest. The title says everything: this is the element, the core, the unshakable base of his style. Confident and aggressive, the track moves with a hype energy that never needs to raise its voice to prove a point. The production is dark trap at its most elemental — the 808 bass drives the record throughout, crisp hi-hats cutting in the chorus with double-time precision, with dark textures and deep tones layered underneath like a pulse. King Ahkeem's flow is locked and precise, each bar landing exactly on the grid, with ad-libs used sparingly and surgically — a confident performance that trusts the beat to do the heavy lifting. The mix is clean and hard-hitting, with the 808 bass sitting front and center and the percussion crisp enough to cut through any system. There is no filler here: every sound earns its place, and the track's restraint is what makes it anthemic — the hook hits harder because nothing around it is competing for attention. For fans of stripped-back trap that prioritizes impact over ornament, \"Element\" evokes the foundational lineage of the genre — it sounds like the essential ingredients of trap drums and 808-driven production reduced to their purest form. The record sits alongside King Ahkeem's \"Bluefaces 3.0\" and \"Embiid\" in the CWI catalog's trap lane, and it holds rotation on Cumulative Radio 365. King Ahkeem's delivery recalls the disciplined confidence of trap's architects, and the track's elemental focus makes it a statement of identity as much as a song. Out now via Cumulative Radio 365 since its 2026 premiere — a triumphant, defiant underground trap wave entry in the wider scene.",
+    "nlp_description": "\"Element\" strips King Ahkeem's sound down to its foundation \u2014 a trap record co-produced by Black Lansky built on the idea that the basics, done right, hit hardest. The title says everything: this is the element, the core, the unshakable base of his style. Confident and aggressive, the track moves with a hype energy that never needs to raise its voice to prove a point. The production is dark trap at its most elemental \u2014 the 808 bass drives the record throughout, crisp hi-hats cutting in the chorus with double-time precision, with dark textures and deep tones layered underneath like a pulse. King Ahkeem's flow is locked and precise, each bar landing exactly on the grid, with ad-libs used sparingly and surgically \u2014 a confident performance that trusts the beat to do the heavy lifting. The mix is clean and hard-hitting, with the 808 bass sitting front and center and the percussion crisp enough to cut through any system. There is no filler here: every sound earns its place, and the track's restraint is what makes it anthemic \u2014 the hook hits harder because nothing around it is competing for attention. For fans of stripped-back trap that prioritizes impact over ornament, \"Element\" evokes the foundational lineage of the genre \u2014 it sounds like the essential ingredients of trap drums and 808-driven production reduced to their purest form. The record sits alongside King Ahkeem's \"Bluefaces 3.0\" and \"Embiid\" in the CWI catalog's trap lane, and it holds rotation on Cumulative Radio 365. King Ahkeem's delivery recalls the disciplined confidence of trap's architects, and the track's elemental focus makes it a statement of identity as much as a song. Out now via Cumulative Radio 365 since its 2026 premiere \u2014 a triumphant, defiant underground trap wave entry in the wider scene.",
     "nlp_score": 87,
     "bpm": null,
     "musical_key": null,
@@ -5317,7 +5325,7 @@
      "hype",
      "aggressive"
     ],
-    "nlp_description": "\"Embiid\" is King Ahkeem playing at MVP level — a trap record co-produced by Black Lansky named for dominance and built to sound like it. The title borrows the aura of basketball's most unstoppable big man, and the track carries that same larger-than-life confidence: hype, aggressive, and anthemic, with a swagger that fills every corner of the beat. The instrumental is trap built for the arena — the 808 bass drives the track throughout, distorted low-end weight under rolling hi-hats landing in the chorus in double-time, and hard-hitting drums that land like body blows, all wrapped in dark synth textures and atmospheric pads that give the track its widescreen scale. King Ahkeem attacks the beat with a confident, aggressive delivery, stacking ad-libs and vocal chops that amplify the larger-than-life energy, and the hook is pure anthem — designed to be chanted back. The production stays 808-driven and bass-heavy throughout, with the mix keeping the vocal upfront and dominant over the instrumental, exactly as the concept demands. For fans of trap that treats confidence as a competitive sport, \"Embiid\" evokes the triumphant lineage of victory-lap rap — it sounds like a championship parade rendered in 808s and hi-hats. The record sits in conversation with King Ahkeem's \"Bluefaces 3.0\" and \"Super Solid\" in the CWI catalog's trap lane, and it holds rotation on Cumulative Radio 365, where the anthemic hook plays like a stadium chant. King Ahkeem's delivery recalls the dominant-era energy of trap's biggest names, and the track's MVP framing makes its ambition explicit: this is music built to win. Dark trap textures give the production depth, synth layers stacked throughout. Out now via Cumulative Radio 365 since its 2026 premiere — a triumphant, menacing entry in the underground trap wave and the wider scene.",
+    "nlp_description": "\"Embiid\" is King Ahkeem playing at MVP level \u2014 a trap record co-produced by Black Lansky named for dominance and built to sound like it. The title borrows the aura of basketball's most unstoppable big man, and the track carries that same larger-than-life confidence: hype, aggressive, and anthemic, with a swagger that fills every corner of the beat. The instrumental is trap built for the arena \u2014 the 808 bass drives the track throughout, distorted low-end weight under rolling hi-hats landing in the chorus in double-time, and hard-hitting drums that land like body blows, all wrapped in dark synth textures and atmospheric pads that give the track its widescreen scale. King Ahkeem attacks the beat with a confident, aggressive delivery, stacking ad-libs and vocal chops that amplify the larger-than-life energy, and the hook is pure anthem \u2014 designed to be chanted back. The production stays 808-driven and bass-heavy throughout, with the mix keeping the vocal upfront and dominant over the instrumental, exactly as the concept demands. For fans of trap that treats confidence as a competitive sport, \"Embiid\" evokes the triumphant lineage of victory-lap rap \u2014 it sounds like a championship parade rendered in 808s and hi-hats. The record sits in conversation with King Ahkeem's \"Bluefaces 3.0\" and \"Super Solid\" in the CWI catalog's trap lane, and it holds rotation on Cumulative Radio 365, where the anthemic hook plays like a stadium chant. King Ahkeem's delivery recalls the dominant-era energy of trap's biggest names, and the track's MVP framing makes its ambition explicit: this is music built to win. Dark trap textures give the production depth, synth layers stacked throughout. Out now via Cumulative Radio 365 since its 2026 premiere \u2014 a triumphant, menacing entry in the underground trap wave and the wider scene.",
     "nlp_score": 86,
     "bpm": null,
     "musical_key": null,
@@ -5380,7 +5388,7 @@
      "hype",
      "aggressive"
     ],
-    "nlp_description": "\"Super Solid\" is King Ahkeem's oath of reliability — a trap record co-produced by Black Lansky about being the one thing that doesn't crack under pressure. The title is a promise, and the track delivers it with a confident, aggressive stride and a hype energy that feels earned rather than performed. The beat is trap built like concrete — the sub-heavy 808 bass drives the track throughout, locked to crisp hi-hats that snap in the chorus, with dark synth stabs and snare hits providing the structural reinforcement, and atmospheric pads filling the gaps so the whole thing feels dense and immovable. King Ahkeem's flow is steady and assured, never rushing, never wavering — a confident performance that embodies the track's central claim, with ad-libs reinforcing the hook like rebar in the foundation. The mix is polished and hard-hitting, with the bass-heavy low end balanced against crisp percussion so every element lands with full weight. The hook is anthemic without being flashy: a simple, repeatable declaration of solidity that sticks because it sounds true. For fans of trap that values substance over spectacle, \"Super Solid\" evokes the grounded lineage of the genre — it sounds like the reliable core of southern hip hop's trap tradition, built to last rather than built to trend. The record sits alongside King Ahkeem's \"Embiid\" and \"Element\" in the CWI catalog's trap lane, and it holds rotation on Cumulative Radio 365. King Ahkeem's delivery recalls the steady-handed confidence of trap's most dependable voices, and the track's unshakeable energy makes its title a verified claim rather than a boast. Dark trap textures add depth, the sub-bass anchors the foundation beneath hard-hitting drums. Out now via Cumulative Radio 365 since its 2026 premiere — a triumphant, defiant statement in the underground trap wave and the wider scene.",
+    "nlp_description": "\"Super Solid\" is King Ahkeem's oath of reliability \u2014 a trap record co-produced by Black Lansky about being the one thing that doesn't crack under pressure. The title is a promise, and the track delivers it with a confident, aggressive stride and a hype energy that feels earned rather than performed. The beat is trap built like concrete \u2014 the sub-heavy 808 bass drives the track throughout, locked to crisp hi-hats that snap in the chorus, with dark synth stabs and snare hits providing the structural reinforcement, and atmospheric pads filling the gaps so the whole thing feels dense and immovable. King Ahkeem's flow is steady and assured, never rushing, never wavering \u2014 a confident performance that embodies the track's central claim, with ad-libs reinforcing the hook like rebar in the foundation. The mix is polished and hard-hitting, with the bass-heavy low end balanced against crisp percussion so every element lands with full weight. The hook is anthemic without being flashy: a simple, repeatable declaration of solidity that sticks because it sounds true. For fans of trap that values substance over spectacle, \"Super Solid\" evokes the grounded lineage of the genre \u2014 it sounds like the reliable core of southern hip hop's trap tradition, built to last rather than built to trend. The record sits alongside King Ahkeem's \"Embiid\" and \"Element\" in the CWI catalog's trap lane, and it holds rotation on Cumulative Radio 365. King Ahkeem's delivery recalls the steady-handed confidence of trap's most dependable voices, and the track's unshakeable energy makes its title a verified claim rather than a boast. Dark trap textures add depth, the sub-bass anchors the foundation beneath hard-hitting drums. Out now via Cumulative Radio 365 since its 2026 premiere \u2014 a triumphant, defiant statement in the underground trap wave and the wider scene.",
     "nlp_score": 87,
     "bpm": null,
     "musical_key": null,
@@ -5450,7 +5458,7 @@
    "from": "artist:tbhh",
    "to": "org:cwi",
    "rel": "managed_by",
-   "note": "kit.md §1"
+   "note": "kit.md \u00a71"
   },
   {
    "from": "artist:tbhh",
@@ -5510,25 +5518,25 @@
    "from": "track:that-boy-hi-hat-zooted-zone",
    "to": "movement:ptf",
    "rel": "exemplar_of",
-   "note": "flagship track per kit.md §3"
+   "note": "flagship track per kit.md \u00a73"
   },
   {
    "from": "track:that-boy-hi-hat-shaka-zulu",
    "to": "movement:ptf",
    "rel": "exemplar_of",
-   "note": "flagship track per kit.md §3"
+   "note": "flagship track per kit.md \u00a73"
   },
   {
    "from": "track:that-boy-hi-hat-doves-and-diamonds",
    "to": "movement:ptf",
    "rel": "exemplar_of",
-   "note": "flagship track per kit.md §3"
+   "note": "flagship track per kit.md \u00a73"
   },
   {
    "from": "track:that-boy-hi-hat-diabolique",
    "to": "release:diabolique-single",
    "rel": "released_on",
-   "note": "kit.md §3"
+   "note": "kit.md \u00a73"
   },
   {
    "from": "artist:tbhh",
@@ -6362,7 +6370,7 @@
    "from": "station:cumulative-radio-365",
    "to": "artist:tbhh",
    "rel": "associated_artist",
-   "note": "CWI catalog artist; station off air for now — first broadcast forthcoming"
+   "note": "CWI catalog artist; station off air for now \u2014 first broadcast forthcoming"
   },
   {
    "from": "artist:dre50",
@@ -6500,37 +6508,37 @@
    "from": "track:that-boy-hi-hat-zooted-zone",
    "to": "person:kokurcho",
    "rel": "produced_by",
-   "note": "Zooted Zone produced by Kokurcho — owner-confirmed 2026-10-02; Spotify credits panel: 'Kokurcho Beats — Composer'"
+   "note": "Zooted Zone produced by Kokurcho \u2014 owner-confirmed 2026-10-02; Spotify credits panel: 'Kokurcho Beats \u2014 Composer'"
   },
   {
    "from": "track:that-boy-hi-hat-zooted-zone",
    "to": "person:black-lansky",
    "rel": "co_produced_by",
-   "note": "Zooted Zone co-produced by Black Lansky — owner-confirmed 2026-10-02; Spotify credits panel: 'Black Lansky — Lyricist/Composer'"
+   "note": "Zooted Zone co-produced by Black Lansky \u2014 owner-confirmed 2026-10-02; Spotify credits panel: 'Black Lansky \u2014 Lyricist/Composer'"
   },
   {
    "from": "track:that-boy-hi-hat-flex-my-flame",
    "to": "person:kokurcho",
    "rel": "produced_by",
-   "note": "Flex My Flame produced by Kokurcho — owner-confirmed 2026-10-02; Spotify credits panel: 'Kokurcho Beats — Composer'"
+   "note": "Flex My Flame produced by Kokurcho \u2014 owner-confirmed 2026-10-02; Spotify credits panel: 'Kokurcho Beats \u2014 Composer'"
   },
   {
    "from": "track:that-boy-hi-hat-flex-my-flame",
    "to": "person:black-lansky",
    "rel": "co_produced_by",
-   "note": "Flex My Flame co-produced by Black Lansky — owner-confirmed 2026-10-02; Spotify credits panel: 'Black Lansky — Composer'"
+   "note": "Flex My Flame co-produced by Black Lansky \u2014 owner-confirmed 2026-10-02; Spotify credits panel: 'Black Lansky \u2014 Composer'"
   },
   {
    "from": "track:that-boy-hi-hat-doves-and-diamonds",
    "to": "person:kokurcho",
    "rel": "produced_by",
-   "note": "Doves & Diamonds produced by Kokurcho — owner-confirmed 2026-10-02; Spotify credits panel: 'Kokurcho — Executive Producer'"
+   "note": "Doves & Diamonds produced by Kokurcho \u2014 owner-confirmed 2026-10-02; Spotify credits panel: 'Kokurcho \u2014 Executive Producer'"
   },
   {
    "from": "track:that-boy-hi-hat-doves-and-diamonds",
    "to": "person:black-lansky",
    "rel": "co_produced_by",
-   "note": "Doves & Diamonds co-produced by Black Lansky — owner-confirmed 2026-10-02; Spotify credits panel: 'Black Lansky — Executive Producer'"
+   "note": "Doves & Diamonds co-produced by Black Lansky \u2014 owner-confirmed 2026-10-02; Spotify credits panel: 'Black Lansky \u2014 Executive Producer'"
   },
   {
    "from": "event:diabolique-spotlight-vote-2026-10",
@@ -8281,7 +8289,7 @@
    "from": "track:that-boy-hi-hat-7th-angel",
    "to": "person:black-lansky",
    "rel": "co_produced_by",
-   "note": "per CWI standing law — co-produces all catalog music"
+   "note": "per CWI standing law \u2014 co-produces all catalog music"
   }
  ],
  "@context": "https://cumulativewebinc.github.io/cwi-learn/graph/ontology.jsonld",
