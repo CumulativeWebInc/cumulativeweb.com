@@ -1439,7 +1439,7 @@
    "status": "pre-save",
    "attrs": {
     "artist": "That Boy Hi Hat",
-    "release_date": "2026-10-20",
+    "release_date": "2026-11-20",
     "hyperfollow_url": "https://distrokid.com/hyperfollow/thatboyhihat/cyberpunk-2027",
     "producer": "Kokurcho",
     "producer_credits": {
@@ -1839,7 +1839,7 @@
    "name": "Cyberpunk 2027 (single)",
    "status": "verified",
    "attrs": {
-    "release_date": "2026-10-20",
+    "release_date": "2026-11-20",
     "apple_music_album_id": "6819458316",
     "apple_music_url": "https://music.apple.com/us/album/cyberpunk-2027-single/6819458316",
     "pre_save_url": "https://distrokid.com/hyperfollow/thatboyhihat/cyberpunk-2027",
@@ -5046,7 +5046,7 @@
     "energy_1_5": null,
     "duration_ms": null,
     "duration_human": null,
-    "release_date": "2026-10-20",
+    "release_date": "2026-11-20",
     "release_status": "pre_release",
     "spotify_url": null,
     "spotify_id": null,
