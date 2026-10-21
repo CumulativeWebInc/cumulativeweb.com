@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-21T21:35:39.766Z",
+  "updated_at": "2026-10-21T22:35:31.926Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "183 Wildboi",
-      "title": "Stunt",
-      "artwork": "https://cumulativeweb.com/radio/art/183-wildboi-stunt.jpg",
-      "slot_index": 89,
-      "played_at": "2026-10-21T21:35:39.766Z",
-      "track_ends_at": "2026-10-21T21:37:49.360Z"
+      "artist": "That Boy Hi Hat",
+      "title": "Shaka Zulu",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg",
+      "slot_index": 107,
+      "played_at": "2026-10-21T22:35:31.926Z",
+      "track_ends_at": "2026-10-21T22:35:50.765Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
