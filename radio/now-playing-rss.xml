@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Wed, 21 Oct 2026 08:35:21 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 09:35:40 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>That Boy Hi Hat - Golden Diamond</title>
+    <title>King Ahkeem - Super Solid</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Golden Diamond (slot 105, ends 2026-10-21T08:38:59.357Z)</description>
-    <pubDate>Wed, 21 Oct 2026 08:35:21 GMT</pubDate>
-    <guid isPermaLink="false">radio365-105-2026-10-21T08:38:59.357Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: King Ahkeem - Super Solid (slot 123, ends 2026-10-21T09:36:37.007Z)</description>
+    <pubDate>Wed, 21 Oct 2026 09:35:40 GMT</pubDate>
+    <guid isPermaLink="false">radio365-123-2026-10-21T09:36:37.007Z</guid>
+    <enclosure url="https://cumulativeweb.com/radio/art/king-ahkeem-super-solid.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>

@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-21T08:35:21.244Z",
+  "updated_at": "2026-10-21T09:35:40.847Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "That Boy Hi Hat",
-      "title": "Golden Diamond",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg",
-      "slot_index": 105,
-      "played_at": "2026-10-21T08:35:21.244Z",
-      "track_ends_at": "2026-10-21T08:38:59.357Z"
+      "artist": "King Ahkeem",
+      "title": "Super Solid",
+      "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-super-solid.jpg",
+      "slot_index": 123,
+      "played_at": "2026-10-21T09:35:40.847Z",
+      "track_ends_at": "2026-10-21T09:36:37.007Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
