@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Thu, 22 Oct 2026 20:35:22 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 22 Oct 2026 21:36:04 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>That Boy Hi Hat - Broken Hearts Club</title>
+    <title>That Boy Hi Hat - Rainbows And Roses</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Broken Hearts Club (slot 2, ends 2026-10-22T20:37:31.806Z)</description>
-    <pubDate>Thu, 22 Oct 2026 20:35:22 GMT</pubDate>
-    <guid isPermaLink="false">radio365-2-2026-10-22T20:37:31.806Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Rainbows And Roses (slot 20, ends 2026-10-22T21:36:52.101Z)</description>
+    <pubDate>Thu, 22 Oct 2026 21:36:04 GMT</pubDate>
+    <guid isPermaLink="false">radio365-20-2026-10-22T21:36:52.101Z</guid>
+    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-rainbows-and-roses.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
