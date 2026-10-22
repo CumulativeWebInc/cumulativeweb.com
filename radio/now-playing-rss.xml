@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Thu, 22 Oct 2026 02:35:24 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 22 Oct 2026 03:35:26 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>That Boy Hi Hat - Shaka Zulu</title>
+    <title>Greg Porn - Unholy Hunters (Ref 1.0)</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Shaka Zulu (slot 53, ends 2026-10-22T02:37:18.053Z)</description>
-    <pubDate>Thu, 22 Oct 2026 02:35:24 GMT</pubDate>
-    <guid isPermaLink="false">radio365-53-2026-10-22T02:37:18.053Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: Greg Porn - Unholy Hunters (Ref 1.0) (slot 72, ends 2026-10-22T03:37:26.080Z)</description>
+    <pubDate>Thu, 22 Oct 2026 03:35:26 GMT</pubDate>
+    <guid isPermaLink="false">radio365-72-2026-10-22T03:37:26.080Z</guid>
+    <enclosure url="https://cumulativeweb.com/assets/artist-greg-porn.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
