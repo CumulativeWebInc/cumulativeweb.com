@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-23T10:35:21.187Z",
+  "updated_at": "2026-10-23T11:35:21.773Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "7th Angel",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg",
-      "slot_index": 5,
-      "played_at": "2026-10-23T10:35:21.187Z",
-      "track_ends_at": "2026-10-23T10:38:25.970Z"
+      "title": "Shaka Zulu",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg",
+      "slot_index": 24,
+      "played_at": "2026-10-23T11:35:21.773Z",
+      "track_ends_at": "2026-10-23T11:38:11.648Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
