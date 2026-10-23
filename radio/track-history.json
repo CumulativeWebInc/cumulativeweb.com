@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-23T09:35:22.009Z",
+  "updated_at": "2026-10-23T10:35:21.187Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Neon Nights pt. 777",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-neon-nights-pt-777.jpg",
-      "slot_index": 116,
-      "played_at": "2026-10-23T09:35:22.009Z",
-      "track_ends_at": "2026-10-23T09:37:34.631Z"
+      "title": "7th Angel",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg",
+      "slot_index": 5,
+      "played_at": "2026-10-23T10:35:21.187Z",
+      "track_ends_at": "2026-10-23T10:38:25.970Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
