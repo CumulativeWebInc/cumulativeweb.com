@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-22T23:35:20.835Z",
+  "updated_at": "2026-10-23T00:35:22.111Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Golden Diamond",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg",
-      "slot_index": 58,
-      "played_at": "2026-10-22T23:35:20.835Z",
-      "track_ends_at": "2026-10-22T23:36:59.445Z"
+      "title": "Place I Go to Dream",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-place-i-go-to-dream-remastered.jpg",
+      "slot_index": 77,
+      "played_at": "2026-10-23T00:35:22.111Z",
+      "track_ends_at": "2026-10-23T00:37:35.156Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
