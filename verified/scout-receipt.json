@@ -2,8 +2,8 @@
   "attestation": "scout-api",
   "subject": "CWI Scout API \u2014 no-install track discovery",
   "endpoint": "https://cwi-machine-data.hp-ace.workers.dev/api/scout",
-  "certified_at": "2026-10-23T12:56:45.486724+00:00",
-  "response_time_s": 0.65,
+  "certified_at": "2026-10-23T13:56:27.501903+00:00",
+  "response_time_s": 1.18,
   "checks": {
     "scout_http_200": true,
     "scout_under_2s": true,
