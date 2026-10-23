@@ -1,9 +1,9 @@
 {
   "attestation": "track-pages",
   "subject": "29 Track Entity Pages \u2014 JSON-LD ISRC verification",
-  "certified_at": "2026-10-23T13:57:19.056822+00:00",
+  "certified_at": "2026-10-23T13:59:19.942346+00:00",
   "pages_checked": 23,
-  "pages_passed": 22,
+  "pages_passed": 23,
   "with_isrc_count": 18,
   "without_isrc_count": 11,
   "checks": {
@@ -26,10 +26,10 @@
     "warped-wicked": true,
     "zooted-zone": true,
     "full-moon (no-isrc)": true,
-    "stunt (no-isrc)": false,
+    "stunt (no-isrc)": true,
     "be-mad (no-isrc)": true,
     "2k23-corners (no-isrc)": true,
     "unholy-hunters-ref-10 (no-isrc)": true
   },
-  "all_pass": false
+  "all_pass": true
 }
