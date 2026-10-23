@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-23T22:35:22.101Z",
+  "updated_at": "2026-10-23T23:35:27.554Z",
   "count": 1,
   "tracks": [
     {
       "artist": "Dre50",
-      "title": "Vai Vem Vem",
-      "artwork": "https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg",
-      "slot_index": 102,
-      "played_at": "2026-10-23T22:35:22.101Z",
-      "track_ends_at": "2026-10-23T22:37:48.091Z"
+      "title": "Pix",
+      "artwork": "https://cumulativeweb.com/radio/art/dre50-pix.jpg",
+      "slot_index": 119,
+      "played_at": "2026-10-23T23:35:27.554Z",
+      "track_ends_at": "2026-10-23T23:36:09.693Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
