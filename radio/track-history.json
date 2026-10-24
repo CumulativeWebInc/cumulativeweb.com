@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-24T08:35:20.513Z",
+  "updated_at": "2026-10-24T09:35:20.677Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Rainbows And Roses",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-rainbows-and-roses.jpg",
-      "slot_index": 30,
-      "played_at": "2026-10-24T08:35:20.513Z",
-      "track_ends_at": "2026-10-24T08:39:13.833Z"
+      "title": "Zooted Zone",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg",
+      "slot_index": 48,
+      "played_at": "2026-10-24T09:35:20.677Z",
+      "track_ends_at": "2026-10-24T09:36:36.402Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
