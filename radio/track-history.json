@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-24T06:35:20.687Z",
+  "updated_at": "2026-10-24T07:35:20.903Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "King Ahkeem",
-      "title": "Star",
-      "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-star.jpg",
-      "slot_index": 122,
-      "played_at": "2026-10-24T06:35:20.687Z",
-      "track_ends_at": "2026-10-24T06:37:49.365Z"
+      "artist": "That Boy Hi Hat",
+      "title": "Rainbows And Roses",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-rainbows-and-roses.jpg",
+      "slot_index": 10,
+      "played_at": "2026-10-24T07:35:20.903Z",
+      "track_ends_at": "2026-10-24T07:36:11.607Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
