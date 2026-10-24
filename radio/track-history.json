@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-24T21:35:21.936Z",
+  "updated_at": "2026-10-24T22:35:20.359Z",
   "count": 1,
   "tracks": [
     {
       "artist": "Greg Porn",
       "title": "Unholy Hunters (Ref 1.0)",
       "artwork": "https://cumulativeweb.com/assets/artist-greg-porn.jpg",
-      "slot_index": 14,
-      "played_at": "2026-10-24T21:35:21.936Z",
-      "track_ends_at": "2026-10-24T21:36:39.243Z"
+      "slot_index": 33,
+      "played_at": "2026-10-24T22:35:20.359Z",
+      "track_ends_at": "2026-10-24T22:37:04.043Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
