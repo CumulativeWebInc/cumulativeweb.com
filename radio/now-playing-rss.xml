@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Sat, 24 Oct 2026 01:35:21 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 24 Oct 2026 02:35:21 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>That Boy Hi Hat - Doves &amp; Diamonds</title>
+    <title>183 Wildboi - Stunt</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Doves &amp; Diamonds (slot 28, ends 2026-10-24T01:38:17.482Z)</description>
-    <pubDate>Sat, 24 Oct 2026 01:35:21 GMT</pubDate>
-    <guid isPermaLink="false">radio365-28-2026-10-24T01:38:17.482Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-doves-and-diamonds.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: 183 Wildboi - Stunt (slot 46, ends 2026-10-24T02:36:22.968Z)</description>
+    <pubDate>Sat, 24 Oct 2026 02:35:21 GMT</pubDate>
+    <guid isPermaLink="false">radio365-46-2026-10-24T02:36:22.968Z</guid>
+    <enclosure url="https://cumulativeweb.com/radio/art/183-wildboi-stunt.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
