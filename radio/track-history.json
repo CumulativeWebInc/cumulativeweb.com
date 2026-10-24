@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-24T00:35:22.994Z",
+  "updated_at": "2026-10-24T01:35:21.207Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Zooted Zone",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg",
-      "slot_index": 9,
-      "played_at": "2026-10-24T00:35:22.994Z",
-      "track_ends_at": "2026-10-24T00:37:51.154Z"
+      "title": "Doves & Diamonds",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-doves-and-diamonds.jpg",
+      "slot_index": 28,
+      "played_at": "2026-10-24T01:35:21.207Z",
+      "track_ends_at": "2026-10-24T01:38:17.482Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
