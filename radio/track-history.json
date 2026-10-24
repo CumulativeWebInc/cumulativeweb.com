@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-24T05:35:21.046Z",
+  "updated_at": "2026-10-24T06:35:20.687Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "That Boy Hi Hat",
-      "title": "Zooted Zone",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg",
-      "slot_index": 104,
-      "played_at": "2026-10-24T05:35:21.046Z",
-      "track_ends_at": "2026-10-24T05:38:14.997Z"
+      "artist": "King Ahkeem",
+      "title": "Star",
+      "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-star.jpg",
+      "slot_index": 122,
+      "played_at": "2026-10-24T06:35:20.687Z",
+      "track_ends_at": "2026-10-24T06:37:49.365Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
