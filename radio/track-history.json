@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-23T23:35:27.554Z",
+  "updated_at": "2026-10-24T00:35:22.994Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "Dre50",
-      "title": "Pix",
-      "artwork": "https://cumulativeweb.com/radio/art/dre50-pix.jpg",
-      "slot_index": 119,
-      "played_at": "2026-10-23T23:35:27.554Z",
-      "track_ends_at": "2026-10-23T23:36:09.693Z"
+      "artist": "That Boy Hi Hat",
+      "title": "Zooted Zone",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg",
+      "slot_index": 9,
+      "played_at": "2026-10-24T00:35:22.994Z",
+      "track_ends_at": "2026-10-24T00:37:51.154Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
