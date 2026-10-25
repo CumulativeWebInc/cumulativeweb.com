@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-25T04:35:21.148Z",
+  "updated_at": "2026-10-25T05:35:21.128Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "Dre50",
-      "title": "Vai Vem Vem",
-      "artwork": "https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg",
-      "slot_index": 16,
-      "played_at": "2026-10-25T04:35:21.148Z",
-      "track_ends_at": "2026-10-25T04:36:21.861Z"
+      "artist": "That Boy Hi Hat",
+      "title": "Golden Diamond",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg",
+      "slot_index": 34,
+      "played_at": "2026-10-25T05:35:21.128Z",
+      "track_ends_at": "2026-10-25T05:35:26.639Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
