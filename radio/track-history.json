@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-25T22:35:21.408Z",
+  "updated_at": "2026-10-25T23:35:25.613Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
       "title": "Diabolique",
       "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg",
-      "slot_index": 94,
-      "played_at": "2026-10-25T22:35:21.408Z",
-      "track_ends_at": "2026-10-25T22:35:24.759Z"
+      "slot_index": 113,
+      "played_at": "2026-10-25T23:35:25.613Z",
+      "track_ends_at": "2026-10-25T23:35:32.069Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."

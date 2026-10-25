@@ -5,15 +5,15 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Sun, 25 Oct 2026 22:35:21 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 25 Oct 2026 23:35:25 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
     <title>That Boy Hi Hat - Diabolique</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Diabolique (slot 94, ends 2026-10-25T22:35:24.759Z)</description>
-    <pubDate>Sun, 25 Oct 2026 22:35:21 GMT</pubDate>
-    <guid isPermaLink="false">radio365-94-2026-10-25T22:35:24.759Z</guid>
+    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Diabolique (slot 113, ends 2026-10-25T23:35:32.069Z)</description>
+    <pubDate>Sun, 25 Oct 2026 23:35:25 GMT</pubDate>
+    <guid isPermaLink="false">radio365-113-2026-10-25T23:35:32.069Z</guid>
     <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg" type="image/jpeg" />
   </item>
  </channel>
