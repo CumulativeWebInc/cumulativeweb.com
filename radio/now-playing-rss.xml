@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Sun, 25 Oct 2026 02:35:20 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 25 Oct 2026 03:35:21 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>That Boy Hi Hat - 7th Angel</title>
+    <title>That Boy Hi Hat - Ultimate</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - 7th Angel (slot 108, ends 2026-10-25T02:37:29.065Z)</description>
-    <pubDate>Sun, 25 Oct 2026 02:35:20 GMT</pubDate>
-    <guid isPermaLink="false">radio365-108-2026-10-25T02:37:29.065Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Ultimate (slot 127, ends 2026-10-25T03:37:43.782Z)</description>
+    <pubDate>Sun, 25 Oct 2026 03:35:21 GMT</pubDate>
+    <guid isPermaLink="false">radio365-127-2026-10-25T03:37:43.782Z</guid>
+    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-ultimate.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
