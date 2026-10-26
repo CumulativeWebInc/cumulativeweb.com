@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-26T19:35:20.255Z",
+  "updated_at": "2026-10-26T20:35:21.880Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Rainbows And Roses",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-rainbows-and-roses.jpg",
-      "slot_index": 101,
-      "played_at": "2026-10-26T19:35:20.255Z",
-      "track_ends_at": "2026-10-26T19:38:19.607Z"
+      "title": "Warped & Wicked",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-warped-and-wicked.jpg",
+      "slot_index": 118,
+      "played_at": "2026-10-26T20:35:21.880Z",
+      "track_ends_at": "2026-10-26T20:36:56.416Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
