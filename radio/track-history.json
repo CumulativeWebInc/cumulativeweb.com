@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-26T22:35:22.046Z",
+  "updated_at": "2026-10-26T23:35:21.638Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "Dre50",
-      "title": "Vai Vem Vem",
-      "artwork": "https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg",
-      "slot_index": 26,
-      "played_at": "2026-10-26T22:35:22.046Z",
-      "track_ends_at": "2026-10-26T22:36:02.125Z"
+      "artist": "That Boy Hi Hat",
+      "title": "Diabolique",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg",
+      "slot_index": 45,
+      "played_at": "2026-10-26T23:35:21.638Z",
+      "track_ends_at": "2026-10-26T23:37:09.156Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
