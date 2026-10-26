@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-26T13:35:21.211Z",
+  "updated_at": "2026-10-26T14:35:20.657Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "183 Wildboi",
-      "title": "Full Moon",
-      "artwork": "https://cumulativeweb.com/radio/art/183-wildboi-full-moon.jpg",
-      "slot_index": 117,
-      "played_at": "2026-10-26T13:35:21.211Z",
-      "track_ends_at": "2026-10-26T13:38:27.938Z"
+      "artist": "That Boy Hi Hat",
+      "title": "7th Angel",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg",
+      "slot_index": 5,
+      "played_at": "2026-10-26T14:35:20.657Z",
+      "track_ends_at": "2026-10-26T14:36:04.205Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
