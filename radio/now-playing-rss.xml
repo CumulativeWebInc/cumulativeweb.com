@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Tue, 27 Oct 2026 16:35:20 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 27 Oct 2026 17:35:21 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>That Boy Hi Hat - 7th Angel</title>
+    <title>Fleekz - 2K23 Corners</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - 7th Angel (slot 106, ends 2026-10-27T16:38:15.893Z)</description>
-    <pubDate>Tue, 27 Oct 2026 16:35:20 GMT</pubDate>
-    <guid isPermaLink="false">radio365-106-2026-10-27T16:38:15.893Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: Fleekz - 2K23 Corners (slot 124, ends 2026-10-27T17:35:39.362Z)</description>
+    <pubDate>Tue, 27 Oct 2026 17:35:21 GMT</pubDate>
+    <guid isPermaLink="false">radio365-124-2026-10-27T17:35:39.362Z</guid>
+    <enclosure url="https://cumulativeweb.com/radio/art/fleekz-2k23-corners.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
