@@ -1,8 +1,8 @@
 {
   "attestation": "radio-365",
   "subject": "Radio 365 \u2014 Cumulative Web Inc 24/7 stream",
-  "certified_at": "2026-10-27T15:56:17.133221+00:00",
-  "now_playing": "That Boy Hi Hat \u2014 Rainbows And Roses",
+  "certified_at": "2026-10-27T16:56:13.897048+00:00",
+  "now_playing": "That Boy Hi Hat \u2014 Shaka Zulu",
   "mp3_bridge_attempts": 1,
   "checks": {
     "nowplaying_http_200": true,
