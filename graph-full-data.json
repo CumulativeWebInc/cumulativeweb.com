@@ -1,14 +1,14 @@
 {
-  "dataset": "CWI live graph \u2014 full structured node data",
-  "source_graph": "https://cumulativeweb.com/graph.json",
-  "source_generated": "2026-10-08T00:00:00Z",
-  "built": "2026-10-27",
-  "node_count": 134,
-  "edge_count": 477,
-  "completeness_rule": "Every field present on every node; values filled only from the verified record above; otherwise null + unverified status. No invented values.",
-  "count_gap_note": "RESOLVED 2026-10-27: the 151-node/522-edge generation lives in the PUBLIC cwi-learn repo (CumulativeWebInc/cwi-learn graph.json, generated 2026-10-16T19:38:58Z, verified via GitHub API). The local checkout (137/486, Oct 8) is BEHIND the repo \u2014 never push local over it (would regress 151->137). Live site graph remains 134/477 (Oct 8).",
-  "nodes": [
-    {
+  "dataset": "CWI full node data (graph + citations + geo + rubric)",
+  "source_graph": "Completed graph 2026-10-27 (base: cwi-learn graph.json 2026-10-16T19:38:58Z, 151/522)",
+  "source_generated": "2026-10-27T12:27:08Z",
+  "built": "2026-10-27T12:27:08Z",
+  "node_count": 151,
+  "edge_count": 535,
+  "completeness_rule": "Values only from the verified record; otherwise null + unverified status - never invented.",
+  "count_gap_note": "RESOLVED 2026-10-27: site graph and cwi-learn graph unified - both now carry the completed 151-node / 535-edge generation. The old live 134/477 generation is superseded.",
+  "nodes": {
+    "org:cwi": {
       "id": "org:cwi",
       "type": "organization",
       "name": "Cumulative Web Inc",
@@ -116,7 +116,7 @@
         "score": 100.0
       }
     },
-    {
+    "movement:ptf": {
       "id": "movement:ptf",
       "type": "movement",
       "name": "Post-Trap Futurism",
@@ -613,7 +613,7 @@
         "score": 100.0
       }
     },
-    {
+    "person:black-lansky": {
       "id": "person:black-lansky",
       "type": "person",
       "name": "Black Lansky",
@@ -803,7 +803,7 @@
         "score": 100.0
       }
     },
-    {
+    "person:hybrid": {
       "id": "person:hybrid",
       "type": "person",
       "name": "Hybrid",
@@ -886,7 +886,7 @@
         "score": 100.0
       }
     },
-    {
+    "person:jeck-da-general": {
       "id": "person:jeck-da-general",
       "type": "person",
       "name": "Jeck Da General",
@@ -992,7 +992,7 @@
         "score": 100.0
       }
     },
-    {
+    "person:kokurcho": {
       "id": "person:kokurcho",
       "type": "person",
       "name": "Kokurcho",
@@ -1101,7 +1101,7 @@
         "score": 100.0
       }
     },
-    {
+    "studio:cue-recording": {
       "id": "studio:cue-recording",
       "type": "studio",
       "name": "Cue Recording Studio",
@@ -1170,7 +1170,7 @@
         "score": 100.0
       }
     },
-    {
+    "place:frederick-md": {
       "id": "place:frederick-md",
       "type": "place",
       "name": "Frederick, Maryland",
@@ -1232,7 +1232,7 @@
         "score": 100.0
       }
     },
-    {
+    "place:arlington-va": {
       "id": "place:arlington-va",
       "type": "place",
       "name": "Arlington, Virginia",
@@ -1295,7 +1295,7 @@
         "score": 100.0
       }
     },
-    {
+    "release:diabolique-single": {
       "id": "release:diabolique-single",
       "type": "release",
       "name": "Diabolique (single)",
@@ -1373,7 +1373,7 @@
         "score": 100.0
       }
     },
-    {
+    "release:alternative-theory": {
       "id": "release:alternative-theory",
       "type": "release",
       "name": "The Alternative Theory",
@@ -1463,7 +1463,7 @@
         "score": 100.0
       }
     },
-    {
+    "release:gta-vi-ep": {
       "id": "release:gta-vi-ep",
       "type": "release",
       "name": "GTA VI EP",
@@ -1556,7 +1556,7 @@
         "score": 100.0
       }
     },
-    {
+    "release:no-skips": {
       "id": "release:no-skips",
       "type": "release",
       "name": "NO SKIPS",
@@ -1652,7 +1652,7 @@
         "score": 100.0
       }
     },
-    {
+    "playlist:new-rap-hits": {
       "id": "playlist:new-rap-hits",
       "type": "playlist",
       "name": "New Rap Hits",
@@ -1746,7 +1746,7 @@
         "score": 100.0
       }
     },
-    {
+    "playlist:ai-learning-set": {
       "id": "playlist:ai-learning-set",
       "type": "playlist",
       "name": "That Boy Hi Hat \u2013 Alternative Rap Complete Catalog (AI Learning Set)",
@@ -1957,7 +1957,7 @@
         "score": 100.0
       }
     },
-    {
+    "playlist:no-label-needed": {
       "id": "playlist:no-label-needed",
       "type": "playlist",
       "name": "No Label Needed - Hip Hop & R&B | The Next Wave",
@@ -1983,7 +1983,20 @@
           }
         ]
       },
-      "edges": [],
+      "edges": [
+        {
+          "rel": "documents",
+          "from": "evidence:claim-no-label-needed",
+          "to": "playlist:no-label-needed",
+          "note": "Claim vs two full playlist scans, observed 2026-09-15"
+        },
+        {
+          "rel": "claimed_includes",
+          "from": "playlist:no-label-needed",
+          "to": "track:zooted-zone",
+          "note": "Claim: Zooted Zone added 2026-09-14, REFUTED by two full scans 2026-09-14/15 (20 tracks, none by That Boy Hi Hat); node stays claimed_unverified"
+        }
+      ],
       "citations": [
         "Live graph cumulativeweb.com/graph.json, generated 2026-10-08",
         "Curator (Flow) claimed Zooted Zone added 2026-09-14; two full scans found 20 tracks, none by That Boy Hi Hat [playlist scans 2026-09-14/15, observed 2026-09-15]",
@@ -2020,13 +2033,13 @@
       "rubric": {
         "identity": true,
         "classification": true,
-        "has_edges": false,
+        "has_edges": true,
         "specific_citation": true,
         "enrichment": true,
-        "score": 80.0
+        "score": 100.0
       }
     },
-    {
+    "playlist:its-goin": {
       "id": "playlist:its-goin",
       "type": "playlist",
       "name": "It's Goin",
@@ -2052,7 +2065,20 @@
           }
         ]
       },
-      "edges": [],
+      "edges": [
+        {
+          "rel": "documents",
+          "from": "evidence:claim-its-goin",
+          "to": "playlist:its-goin",
+          "note": "Curator (Shan/DJ 6Rings) claim vs Spotify search, observed 2026-09-15"
+        },
+        {
+          "rel": "claimed_add",
+          "from": "playlist:its-goin",
+          "to": "artist:tbhh",
+          "note": "Curator claimed a That Boy Hi Hat track added 2026-09-14; track identity not specified in the claim; playlist not locatable via Spotify search; curator site flagged payola-adjacent, no payment made"
+        }
+      ],
       "citations": [
         "Live graph cumulativeweb.com/graph.json, generated 2026-10-08",
         "Curator (Shan/DJ 6Rings) claimed a That Boy Hi Hat track added 2026-09-14; playlist not locatable via Spotify search [search + scan attempt, observed 2026-09-15]",
@@ -2089,13 +2115,13 @@
       "rubric": {
         "identity": true,
         "classification": true,
-        "has_edges": false,
+        "has_edges": true,
         "specific_citation": true,
         "enrichment": true,
-        "score": 80.0
+        "score": 100.0
       }
     },
-    {
+    "playlist:watch-tha-gap-5": {
       "id": "playlist:watch-tha-gap-5",
       "type": "playlist",
       "name": "WATCH THA GAP VOL.5",
@@ -2120,7 +2146,20 @@
           }
         ]
       },
-      "edges": [],
+      "edges": [
+        {
+          "rel": "documents",
+          "from": "evidence:claim-watch-tha-gap",
+          "to": "playlist:watch-tha-gap-5",
+          "note": "Curator promise, observed 2026-09-15"
+        },
+        {
+          "rel": "promised_includes",
+          "from": "playlist:watch-tha-gap-5",
+          "to": "track:ultimate",
+          "note": "Curator promised to add 'Ultimate' 2026-09-14; playlist not located - promise only"
+        }
+      ],
       "citations": [
         "Live graph cumulativeweb.com/graph.json, generated 2026-10-08",
         "Curator promised to add 'Ultimate' 2026-09-14; playlist not located \u2014 promise only [curator message, observed 2026-09-15]"
@@ -2154,13 +2193,13 @@
       "rubric": {
         "identity": true,
         "classification": true,
-        "has_edges": false,
+        "has_edges": true,
         "specific_citation": true,
         "enrichment": true,
-        "score": 80.0
+        "score": 100.0
       }
     },
-    {
+    "evidence:placements-2026-09-15": {
       "id": "evidence:placements-2026-09-15",
       "type": "evidence",
       "name": "New Rap Hits placement verification",
@@ -2192,7 +2231,32 @@
           }
         ]
       },
-      "edges": [],
+      "edges": [
+        {
+          "rel": "verifies",
+          "from": "evidence:placements-2026-09-15",
+          "to": "playlist:new-rap-hits",
+          "note": "Full playlist scan, all 105 tracks, 2026-09-15; accepted 2026-09-14 via Audiartist"
+        },
+        {
+          "rel": "verifies_position",
+          "from": "evidence:placements-2026-09-15",
+          "to": "track:shaka-zulu",
+          "note": "New Rap Hits position 21, verified 2026-09-15; Audiartist submission #25821"
+        },
+        {
+          "rel": "verifies_position",
+          "from": "evidence:placements-2026-09-15",
+          "to": "track:zooted-zone",
+          "note": "New Rap Hits position 30, verified 2026-09-15; Audiartist submission #25818"
+        },
+        {
+          "rel": "verifies_position",
+          "from": "evidence:placements-2026-09-15",
+          "to": "track:doves-and-diamonds",
+          "note": "New Rap Hits position 31, verified 2026-09-15; Audiartist submission #25820"
+        }
+      ],
       "citations": [
         "Live graph cumulativeweb.com/graph.json, generated 2026-10-08",
         "Scan result [full playlist scan, observed 2026-09-15]"
@@ -2232,13 +2296,13 @@
       "rubric": {
         "identity": true,
         "classification": true,
-        "has_edges": false,
+        "has_edges": true,
         "specific_citation": true,
         "enrichment": true,
-        "score": 80.0
+        "score": 100.0
       }
     },
-    {
+    "evidence:zooted-307k": {
       "id": "evidence:zooted-307k",
       "type": "evidence",
       "name": "Zooted Zone lifetime plays",
@@ -2248,9 +2312,11 @@
           "metric": "lifetime_spotify_plays",
           "value": 313290,
           "track": "track:0emH8ktA8x4DkOFLsG5xkW",
-          "note": "313,290 lifetime plays observed 2026-10-01; supersedes 307,439 (observed 2026-09-14), kept as history",
+          "note": "313,290 lifetime plays observed 2026-10-01; supersedes 307,439 (observed 2026-09-14), kept as history; latest frame 317,255 shown in Oct 25 2026 reel",
           "last_verified": "2026-09-15",
-          "observed": "2026-10-01"
+          "observed": "2026-10-01",
+          "latest_observed": 317255,
+          "latest_source": "Oct 25 2026 @lanskyblack reel frame (Spotify-for-Artists-style screen)"
         },
         "evidence": [
           {
@@ -2261,7 +2327,14 @@
           }
         ]
       },
-      "edges": [],
+      "edges": [
+        {
+          "rel": "measures",
+          "from": "evidence:zooted-307k",
+          "to": "track:zooted-zone",
+          "note": "Lifetime Spotify plays history: 307,439 (2026-09-14) -> 313,290 (2026-10-01) -> 317,255 (2026-10-25 reel frame)"
+        }
+      ],
       "citations": [
         "Live graph cumulativeweb.com/graph.json, generated 2026-10-08",
         "307,439 lifetime plays [Spotify, observed 2026-09-14]"
@@ -2269,36 +2342,27 @@
       "geo": null,
       "enrichment": {
         "graph_attrs": {
-          "status": "verified",
-          "attrs": {
-            "metric": "lifetime_spotify_plays",
-            "value": 313290,
-            "track": "track:0emH8ktA8x4DkOFLsG5xkW",
-            "note": "313,290 lifetime plays observed 2026-10-01; supersedes 307,439 (observed 2026-09-14), kept as history",
-            "last_verified": "2026-09-15",
-            "observed": "2026-10-01"
-          },
-          "evidence": [
-            {
-              "claim": "307,439 lifetime plays",
-              "source": "Spotify",
-              "observed": "2026-09-14",
-              "status": "verified"
-            }
-          ]
+          "metric": "lifetime_spotify_plays",
+          "value": 313290,
+          "track": "track:0emH8ktA8x4DkOFLsG5xkW",
+          "note": "313,290 lifetime plays observed 2026-10-01; supersedes 307,439 (observed 2026-09-14), kept as history; latest frame 317,255 shown in Oct 25 2026 reel",
+          "last_verified": "2026-09-15",
+          "observed": "2026-10-01",
+          "latest_observed": 317255,
+          "latest_source": "Oct 25 2026 @lanskyblack reel frame (Spotify-for-Artists-style screen)"
         }
       },
       "status_notes": [],
       "rubric": {
         "identity": true,
         "classification": true,
-        "has_edges": false,
+        "has_edges": true,
         "specific_citation": true,
         "enrichment": true,
-        "score": 80.0
+        "score": 100.0
       }
     },
-    {
+    "evidence:claim-no-label-needed": {
       "id": "evidence:claim-no-label-needed",
       "type": "evidence",
       "name": "No Label Needed claim (unverified)",
@@ -2318,7 +2382,20 @@
           }
         ]
       },
-      "edges": [],
+      "edges": [
+        {
+          "rel": "documents",
+          "from": "evidence:claim-no-label-needed",
+          "to": "playlist:no-label-needed",
+          "note": "Claim vs two full playlist scans, observed 2026-09-15"
+        },
+        {
+          "rel": "concerns",
+          "from": "evidence:claim-no-label-needed",
+          "to": "track:zooted-zone",
+          "note": "Claim subject: Zooted Zone add claimed 2026-09-14, refuted by scans"
+        }
+      ],
       "citations": [
         "Live graph cumulativeweb.com/graph.json, generated 2026-10-08",
         "Claim vs scan [Messenger + playlist scans, observed 2026-09-15]"
@@ -2348,13 +2425,13 @@
       "rubric": {
         "identity": true,
         "classification": true,
-        "has_edges": false,
+        "has_edges": true,
         "specific_citation": true,
         "enrichment": true,
-        "score": 80.0
+        "score": 100.0
       }
     },
-    {
+    "evidence:claim-its-goin": {
       "id": "evidence:claim-its-goin",
       "type": "evidence",
       "name": "It's Goin claim (unverified, payola-adjacent curator)",
@@ -2374,7 +2451,14 @@
           }
         ]
       },
-      "edges": [],
+      "edges": [
+        {
+          "rel": "documents",
+          "from": "evidence:claim-its-goin",
+          "to": "playlist:its-goin",
+          "note": "Curator (Shan/DJ 6Rings) claim vs Spotify search, observed 2026-09-15"
+        }
+      ],
       "citations": [
         "Live graph cumulativeweb.com/graph.json, generated 2026-10-08",
         "Claim vs search [Messenger + Spotify search, observed 2026-09-15]"
@@ -2404,13 +2488,13 @@
       "rubric": {
         "identity": true,
         "classification": true,
-        "has_edges": false,
+        "has_edges": true,
         "specific_citation": true,
         "enrichment": true,
-        "score": 80.0
+        "score": 100.0
       }
     },
-    {
+    "evidence:claim-watch-tha-gap": {
       "id": "evidence:claim-watch-tha-gap",
       "type": "evidence",
       "name": "WATCH THA GAP VOL.5 promise (unverified)",
@@ -2430,7 +2514,20 @@
           }
         ]
       },
-      "edges": [],
+      "edges": [
+        {
+          "rel": "documents",
+          "from": "evidence:claim-watch-tha-gap",
+          "to": "playlist:watch-tha-gap-5",
+          "note": "Curator promise, observed 2026-09-15"
+        },
+        {
+          "rel": "concerns",
+          "from": "evidence:claim-watch-tha-gap",
+          "to": "track:ultimate",
+          "note": "Promise subject: 'Ultimate' add promised 2026-09-14, playlist not located"
+        }
+      ],
       "citations": [
         "Live graph cumulativeweb.com/graph.json, generated 2026-10-08",
         "Promise only [curator message, observed 2026-09-15]"
@@ -2460,13 +2557,13 @@
       "rubric": {
         "identity": true,
         "classification": true,
-        "has_edges": false,
+        "has_edges": true,
         "specific_citation": true,
         "enrichment": true,
-        "score": 80.0
+        "score": 100.0
       }
     },
-    {
+    "media:gtavi-artwork": {
       "id": "media:gtavi-artwork",
       "type": "media_asset",
       "name": "GTA VI EP artwork",
@@ -2531,7 +2628,7 @@
         "score": 100.0
       }
     },
-    {
+    "media:ig-reel-2026-09-15": {
       "id": "media:ig-reel-2026-09-15",
       "type": "media_asset",
       "name": "Instagram reel: 'Which game needs this soundtrack?'",
@@ -2602,7 +2699,7 @@
         "score": 100.0
       }
     },
-    {
+    "artist:tbhh": {
       "id": "artist:tbhh",
       "type": "artist",
       "name": "That Boy Hi Hat",
@@ -3484,7 +3581,7 @@
         "score": 100.0
       }
     },
-    {
+    "artist:black-lansky": {
       "id": "artist:black-lansky",
       "type": "artist",
       "name": "Black Lansky",
@@ -3703,7 +3800,7 @@
         "score": 100.0
       }
     },
-    {
+    "artist:king-akeem": {
       "id": "artist:king-akeem",
       "type": "artist",
       "name": "King Akeem",
@@ -3891,7 +3988,7 @@
         "score": 100.0
       }
     },
-    {
+    "artist:183-wildboi": {
       "id": "artist:183-wildboi",
       "type": "artist",
       "name": "183 Wildboi",
@@ -4043,7 +4140,7 @@
         "score": 100.0
       }
     },
-    {
+    "artist:dre50": {
       "id": "artist:dre50",
       "type": "artist",
       "name": "Dre50",
@@ -4191,7 +4288,7 @@
         "score": 100.0
       }
     },
-    {
+    "artist:fleekz": {
       "id": "artist:fleekz",
       "type": "artist",
       "name": "Fleekz",
@@ -4317,7 +4414,7 @@
         "score": 100.0
       }
     },
-    {
+    "artist:gregporn": {
       "id": "artist:gregporn",
       "type": "artist",
       "name": "GregPorn",
@@ -4470,7 +4567,7 @@
         "score": 100.0
       }
     },
-    {
+    "station:cumulative-radio-365": {
       "id": "station:cumulative-radio-365",
       "type": "station",
       "name": "Cumulative Radio 365",
@@ -4575,7 +4672,7 @@
         "score": 100.0
       }
     },
-    {
+    "release:dre50-vai-vem-vem": {
       "id": "release:dre50-vai-vem-vem",
       "type": "release",
       "name": "vai vem vem (single)",
@@ -4699,7 +4796,7 @@
         "score": 100.0
       }
     },
-    {
+    "category:brazil": {
       "id": "category:brazil",
       "type": "category",
       "name": "#brazil campaign",
@@ -4760,7 +4857,7 @@
         "score": 100.0
       }
     },
-    {
+    "media:stream-spotify-vvv": {
       "id": "media:stream-spotify-vvv",
       "type": "media_asset",
       "name": "'vai vem vem' on Spotify",
@@ -4821,7 +4918,7 @@
         "score": 100.0
       }
     },
-    {
+    "media:stream-apple-vvv": {
       "id": "media:stream-apple-vvv",
       "type": "media_asset",
       "name": "'vai vem vem' on Apple Music",
@@ -4882,7 +4979,7 @@
         "score": 100.0
       }
     },
-    {
+    "media:stream-deezer-vvv": {
       "id": "media:stream-deezer-vvv",
       "type": "media_asset",
       "name": "'vai vem vem' on Deezer",
@@ -4943,7 +5040,7 @@
         "score": 100.0
       }
     },
-    {
+    "media:stream-amazon-vvv": {
       "id": "media:stream-amazon-vvv",
       "type": "media_asset",
       "name": "'vai vem vem' on Amazon Music",
@@ -5004,7 +5101,7 @@
         "score": 100.0
       }
     },
-    {
+    "media:stream-tidal-vvv": {
       "id": "media:stream-tidal-vvv",
       "type": "media_asset",
       "name": "'vai vem vem' on Tidal",
@@ -5065,7 +5162,7 @@
         "score": 100.0
       }
     },
-    {
+    "release:ptf-the-logo-effect": {
       "id": "release:ptf-the-logo-effect",
       "type": "release",
       "name": "Post Trap Futurism: The Logo Effect",
@@ -5349,7 +5446,7 @@
         "score": 100.0
       }
     },
-    {
+    "org:distrokid": {
       "id": "org:distrokid",
       "type": "organization",
       "name": "DistroKid",
@@ -5420,7 +5517,7 @@
         "score": 100.0
       }
     },
-    {
+    "playlist:distrokid-rap-scallion": {
       "id": "playlist:distrokid-rap-scallion",
       "type": "playlist",
       "name": "DistroKid Rap Scallion",
@@ -5491,7 +5588,7 @@
         "score": 100.0
       }
     },
-    {
+    "playlist:distrokid-spotlight": {
       "id": "playlist:distrokid-spotlight",
       "type": "playlist",
       "name": "DistroKid Spotlight",
@@ -5560,7 +5657,7 @@
         "score": 100.0
       }
     },
-    {
+    "playlist:distrokid-alternative": {
       "id": "playlist:distrokid-alternative",
       "type": "playlist",
       "name": "DistroKid Alternative",
@@ -5629,7 +5726,7 @@
         "score": 100.0
       }
     },
-    {
+    "event:diabolique-spotlight-vote-2026-10": {
       "id": "event:diabolique-spotlight-vote-2026-10",
       "type": "event",
       "name": "Diabolique \u2014 DistroKid Playlist Spotlight vote (Oct 2026)",
@@ -5732,7 +5829,7 @@
         "score": 100.0
       }
     },
-    {
+    "service:placement-query-db": {
       "id": "service:placement-query-db",
       "type": "service",
       "name": "Placement Query DB",
@@ -5817,7 +5914,7 @@
         "score": 100.0
       }
     },
-    {
+    "album:post-trap-futurism-the-logo-effect": {
       "id": "album:post-trap-futurism-the-logo-effect",
       "type": "release",
       "name": "Post Trap Futurism: The Logo Effect",
@@ -5942,7 +6039,7 @@
         "score": 100.0
       }
     },
-    {
+    "release:cyberpunk-2027": {
       "id": "release:cyberpunk-2027",
       "type": "release",
       "name": "Cyberpunk 2027",
@@ -6058,7 +6155,7 @@
         "score": 100.0
       }
     },
-    {
+    "genre:post-trap": {
       "id": "genre:post-trap",
       "type": "genre",
       "name": "Post-Trap",
@@ -6414,7 +6511,7 @@
         "score": 100.0
       }
     },
-    {
+    "genre:cyberpunk-rap": {
       "id": "genre:cyberpunk-rap",
       "type": "genre",
       "name": "Cyberpunk Rap",
@@ -6607,7 +6704,7 @@
         "score": 100.0
       }
     },
-    {
+    "genre:alternative-rap": {
       "id": "genre:alternative-rap",
       "type": "genre",
       "name": "Alternative Rap",
@@ -6956,7 +7053,7 @@
         "score": 100.0
       }
     },
-    {
+    "cta:presave-cyberpunk-2027": {
       "id": "cta:presave-cyberpunk-2027",
       "type": "cta",
       "name": "Pre-save Cyberpunk 2027",
@@ -7014,7 +7111,7 @@
         "score": 100.0
       }
     },
-    {
+    "cta:follow-spotify-tbhh": {
       "id": "cta:follow-spotify-tbhh",
       "type": "cta",
       "name": "Follow That Boy Hi Hat on Spotify",
@@ -7066,7 +7163,7 @@
         "score": 100.0
       }
     },
-    {
+    "cta:listen-radio-365": {
       "id": "cta:listen-radio-365",
       "type": "cta",
       "name": "Listen to Cumulative Radio 365",
@@ -7118,7 +7215,7 @@
         "score": 100.0
       }
     },
-    {
+    "evidence:24hiphop-ptf-editorial": {
       "id": "evidence:24hiphop-ptf-editorial",
       "type": "evidence",
       "name": "24hip-hop.com Post-Trap Futurism editorial",
@@ -7189,7 +7286,7 @@
         "score": 100.0
       }
     },
-    {
+    "evidence:cwi-movement-brief-2026-10-05": {
       "id": "evidence:cwi-movement-brief-2026-10-05",
       "type": "evidence",
       "name": "Owner movement brief 2026-10-05",
@@ -7256,7 +7353,7 @@
         "score": 100.0
       }
     },
-    {
+    "evidence:spotify-logo-effect-verified-2026-10-05": {
       "id": "evidence:spotify-logo-effect-verified-2026-10-05",
       "type": "evidence",
       "name": "Spotify album verification 2026-10-05",
@@ -7315,7 +7412,7 @@
         "score": 100.0
       }
     },
-    {
+    "evidence:rollinghype-ptf-editorial": {
       "id": "evidence:rollinghype-ptf-editorial",
       "type": "evidence",
       "name": "Rolling Hype editorial on Post-Trap Futurism",
@@ -7337,14 +7434,15 @@
       },
       "edges": [
         {
-          "rel": null,
+          "rel": "confirmed_by",
           "from": "movement:ptf",
           "to": "evidence:rollinghype-ptf-editorial",
           "note": null
         }
       ],
       "citations": [
-        "Live graph cumulativeweb.com/graph.json, generated 2026-10-08"
+        "Live graph cumulativeweb.com/graph.json, generated 2026-10-08",
+        "https://rollinghype.com/that-boy-hi-hat-redefines-the-future-of-alternative-rap-with-his-groundbreaking-album-the-alternative-theory/"
       ],
       "geo": null,
       "enrichment": {
@@ -7370,12 +7468,12 @@
         "identity": true,
         "classification": true,
         "has_edges": true,
-        "specific_citation": false,
+        "specific_citation": true,
         "enrichment": true,
-        "score": 80.0
+        "score": 100.0
       }
     },
-    {
+    "evidence:rapnerd-cwi-infrastructure-editorial": {
       "id": "evidence:rapnerd-cwi-infrastructure-editorial",
       "type": "evidence",
       "name": "Rap Nerd editorial on Cumulative Web Inc",
@@ -7401,14 +7499,15 @@
       },
       "edges": [
         {
-          "rel": null,
+          "rel": "covered_by",
           "from": "org:cwi",
           "to": "evidence:rapnerd-cwi-infrastructure-editorial",
           "note": null
         }
       ],
       "citations": [
-        "Live graph cumulativeweb.com/graph.json, generated 2026-10-08"
+        "Live graph cumulativeweb.com/graph.json, generated 2026-10-08",
+        "https://www.rapnerd.com/post/why-cumulative-web-inc-understands-indie-hip-hop-as-infrastructure"
       ],
       "geo": null,
       "enrichment": {
@@ -7438,12 +7537,12 @@
         "identity": true,
         "classification": true,
         "has_edges": true,
-        "specific_citation": false,
+        "specific_citation": true,
         "enrichment": true,
-        "score": 80.0
+        "score": 100.0
       }
     },
-    {
+    "release:cyberpunk-2027-single": {
       "id": "release:cyberpunk-2027-single",
       "type": "release",
       "name": "Cyberpunk 2027 (single)",
@@ -7562,7 +7661,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:afrobeats": {
       "id": "lane:afrobeats",
       "type": "genre",
       "name": "Afrobeats",
@@ -7618,7 +7717,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:alt-randb-rap": {
       "id": "lane:alt-randb-rap",
       "type": "genre",
       "name": "Alt R&B Rap",
@@ -7674,7 +7773,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:anthemic-rap": {
       "id": "lane:anthemic-rap",
       "type": "genre",
       "name": "Anthemic Rap",
@@ -7752,7 +7851,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:cinematic-rap": {
       "id": "lane:cinematic-rap",
       "type": "genre",
       "name": "Cinematic Rap",
@@ -7814,7 +7913,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:confessional-rap": {
       "id": "lane:confessional-rap",
       "type": "genre",
       "name": "Confessional Rap",
@@ -7870,7 +7969,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:cyberpunk-rap": {
       "id": "lane:cyberpunk-rap",
       "type": "genre",
       "name": "Cyberpunk Rap",
@@ -7926,7 +8025,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:dancehall": {
       "id": "lane:dancehall",
       "type": "genre",
       "name": "Dancehall",
@@ -7982,7 +8081,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:dark-trap": {
       "id": "lane:dark-trap",
       "type": "genre",
       "name": "Dark Trap",
@@ -8053,7 +8152,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:dream-rap": {
       "id": "lane:dream-rap",
       "type": "genre",
       "name": "Dream Rap",
@@ -8109,7 +8208,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:dystopian-rap": {
       "id": "lane:dystopian-rap",
       "type": "genre",
       "name": "Dystopian Rap",
@@ -8165,7 +8264,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:electronic-rap": {
       "id": "lane:electronic-rap",
       "type": "genre",
       "name": "Electronic Rap",
@@ -8221,7 +8320,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:futuristic-trap": {
       "id": "lane:futuristic-trap",
       "type": "genre",
       "name": "Futuristic Trap",
@@ -8277,7 +8376,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:hardcore-hip-hop": {
       "id": "lane:hardcore-hip-hop",
       "type": "genre",
       "name": "Hardcore Hip Hop",
@@ -8333,7 +8432,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:hip-hop": {
       "id": "lane:hip-hop",
       "type": "genre",
       "name": "Hip Hop",
@@ -8389,7 +8488,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:horrorcore-adjacent": {
       "id": "lane:horrorcore-adjacent",
       "type": "genre",
       "name": "Horrorcore-Adjacent",
@@ -8445,7 +8544,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:indie-rap": {
       "id": "lane:indie-rap",
       "type": "genre",
       "name": "Indie Rap",
@@ -8501,7 +8600,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:island-pop": {
       "id": "lane:island-pop",
       "type": "genre",
       "name": "Island Pop",
@@ -8557,7 +8656,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:luxury-rap": {
       "id": "lane:luxury-rap",
       "type": "genre",
       "name": "Luxury Rap",
@@ -8613,7 +8712,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:melodic-rap": {
       "id": "lane:melodic-rap",
       "type": "genre",
       "name": "Melodic Rap",
@@ -8684,7 +8783,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:melodic-trap": {
       "id": "lane:melodic-trap",
       "type": "genre",
       "name": "Melodic Trap",
@@ -8744,7 +8843,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:nocturnal-rap": {
       "id": "lane:nocturnal-rap",
       "type": "genre",
       "name": "Nocturnal Rap",
@@ -8815,7 +8914,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:party-rap": {
       "id": "lane:party-rap",
       "type": "genre",
       "name": "Party Rap",
@@ -8871,7 +8970,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:pop-rap": {
       "id": "lane:pop-rap",
       "type": "genre",
       "name": "Pop Rap",
@@ -8927,7 +9026,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:post-trap": {
       "id": "lane:post-trap",
       "type": "genre",
       "name": "Post-Trap",
@@ -8991,7 +9090,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:rage-beats": {
       "id": "lane:rage-beats",
       "type": "genre",
       "name": "Rage Beats",
@@ -9049,7 +9148,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:sad-rap": {
       "id": "lane:sad-rap",
       "type": "genre",
       "name": "Sad Rap",
@@ -9107,7 +9206,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:seductive-rap": {
       "id": "lane:seductive-rap",
       "type": "genre",
       "name": "Seductive Rap",
@@ -9163,7 +9262,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:stadium-rap": {
       "id": "lane:stadium-rap",
       "type": "genre",
       "name": "Stadium Rap",
@@ -9219,7 +9318,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:street-rap": {
       "id": "lane:street-rap",
       "type": "genre",
       "name": "Street Rap",
@@ -9284,7 +9383,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:synthwave-rap": {
       "id": "lane:synthwave-rap",
       "type": "genre",
       "name": "Synthwave Rap",
@@ -9344,7 +9443,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:toxic-randb-rap": {
       "id": "lane:toxic-randb-rap",
       "type": "genre",
       "name": "Toxic R&B Rap",
@@ -9400,7 +9499,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:trap": {
       "id": "lane:trap",
       "type": "genre",
       "name": "Trap",
@@ -9476,7 +9575,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:triumphant-rap": {
       "id": "lane:triumphant-rap",
       "type": "genre",
       "name": "Triumphant Rap",
@@ -9532,7 +9631,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:underground-hip-hop": {
       "id": "lane:underground-hip-hop",
       "type": "genre",
       "name": "Underground Hip Hop",
@@ -9610,7 +9709,7 @@
         "score": 100.0
       }
     },
-    {
+    "lane:underground-trap": {
       "id": "lane:underground-trap",
       "type": "genre",
       "name": "Underground Trap",
@@ -9679,7 +9778,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:diabolique": {
       "id": "track:diabolique",
       "type": "track",
       "name": "Diabolique",
@@ -9932,7 +10031,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:zooted-zone": {
       "id": "track:zooted-zone",
       "type": "track",
       "name": "Zooted Zone",
@@ -10173,7 +10272,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:doves-and-diamonds": {
       "id": "track:doves-and-diamonds",
       "type": "track",
       "name": "Doves & Diamonds",
@@ -10412,7 +10511,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:shaka-zulu": {
       "id": "track:shaka-zulu",
       "type": "track",
       "name": "Shaka Zulu",
@@ -10646,7 +10745,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:flamerz": {
       "id": "track:flamerz",
       "type": "track",
       "name": "Flamerz",
@@ -10904,7 +11003,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:neon-nights-pt-777": {
       "id": "track:neon-nights-pt-777",
       "type": "track",
       "name": "Neon Nights Pt. 777",
@@ -11147,7 +11246,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:ultimate": {
       "id": "track:ultimate",
       "type": "track",
       "name": "Ultimate",
@@ -11367,7 +11466,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:painted-lady": {
       "id": "track:painted-lady",
       "type": "track",
       "name": "Painted Lady",
@@ -11589,7 +11688,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:warped-and-wicked": {
       "id": "track:warped-and-wicked",
       "type": "track",
       "name": "Warped & Wicked",
@@ -11824,7 +11923,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:golden-diamond": {
       "id": "track:golden-diamond",
       "type": "track",
       "name": "Golden Diamond",
@@ -12034,7 +12133,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:spirits-n-shadows": {
       "id": "track:spirits-n-shadows",
       "type": "track",
       "name": "Spirits n Shadows",
@@ -12287,7 +12386,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:flex-my-flame": {
       "id": "track:flex-my-flame",
       "type": "track",
       "name": "Flex My Flame",
@@ -12516,7 +12615,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:rainbows-and-roses": {
       "id": "track:rainbows-and-roses",
       "type": "track",
       "name": "Rainbows And Roses",
@@ -12732,7 +12831,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:tears-and-scars": {
       "id": "track:tears-and-scars",
       "type": "track",
       "name": "Tears and Scars",
@@ -12942,7 +13041,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:toxic-elements": {
       "id": "track:toxic-elements",
       "type": "track",
       "name": "Toxic Elements",
@@ -13179,7 +13278,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:scorpion-and-sapphires": {
       "id": "track:scorpion-and-sapphires",
       "type": "track",
       "name": "Scorpion & Sapphires",
@@ -13391,7 +13490,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:7th-angel": {
       "id": "track:7th-angel",
       "type": "track",
       "name": "7th Angel",
@@ -13599,7 +13698,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:place-i-go-to-dream": {
       "id": "track:place-i-go-to-dream",
       "type": "track",
       "name": "Place I Go to Dream",
@@ -13846,7 +13945,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:smokin-pain": {
       "id": "track:smokin-pain",
       "type": "track",
       "name": "Smokin' Pain",
@@ -14064,7 +14163,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:phantasm": {
       "id": "track:phantasm",
       "type": "track",
       "name": "Phantasm",
@@ -14317,7 +14416,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:misfits-and-hooligans": {
       "id": "track:misfits-and-hooligans",
       "type": "track",
       "name": "Misfits and Hooligans",
@@ -14535,7 +14634,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:roses-over-monaco": {
       "id": "track:roses-over-monaco",
       "type": "track",
       "name": "Roses over Monaco",
@@ -14776,7 +14875,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:broken-hearts-club": {
       "id": "track:broken-hearts-club",
       "type": "track",
       "name": "Broken Hearts Club",
@@ -15011,7 +15110,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:star-king-akeem": {
       "id": "track:star-king-akeem",
       "type": "track",
       "name": "Star",
@@ -15224,7 +15323,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:full-moon-183-wilboi": {
       "id": "track:full-moon-183-wilboi",
       "type": "track",
       "name": "Full Moon",
@@ -15433,7 +15532,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:stunt-183-wilboi": {
       "id": "track:stunt-183-wilboi",
       "type": "track",
       "name": "Stunt",
@@ -15652,7 +15751,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:vai-vem-vem-dre50": {
       "id": "track:vai-vem-vem-dre50",
       "type": "track",
       "name": "vai vem vem",
@@ -15873,7 +15972,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:pay-yourself-greg-porn": {
       "id": "track:pay-yourself-greg-porn",
       "type": "track",
       "name": "Pay Yourself",
@@ -16083,7 +16182,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:on-edge-greg-porn": {
       "id": "track:on-edge-greg-porn",
       "type": "track",
       "name": "On Edge",
@@ -16297,7 +16396,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:unholy-hunter-greg-porn": {
       "id": "track:unholy-hunter-greg-porn",
       "type": "track",
       "name": "Unholy Hunter",
@@ -16493,7 +16592,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:2k23-corner-fleekz": {
       "id": "track:2k23-corner-fleekz",
       "type": "track",
       "name": "2K23 Corners",
@@ -16706,7 +16805,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:that-boy-hi-hat-cyberpunk-2027": {
       "id": "track:that-boy-hi-hat-cyberpunk-2027",
       "type": "track",
       "name": "Cyberpunk 2027",
@@ -16937,7 +17036,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:pix-dre50": {
       "id": "track:pix-dre50",
       "type": "track",
       "name": "Pix",
@@ -17131,7 +17230,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:bluefaces-30-king-ahkeem": {
       "id": "track:bluefaces-30-king-ahkeem",
       "type": "track",
       "name": "Bluefaces 3.0",
@@ -17303,7 +17402,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:element-king-ahkeem": {
       "id": "track:element-king-ahkeem",
       "type": "track",
       "name": "Element",
@@ -17475,7 +17574,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:embiid-king-ahkeem": {
       "id": "track:embiid-king-ahkeem",
       "type": "track",
       "name": "Embiid",
@@ -17647,7 +17746,7 @@
         "score": 100.0
       }
     },
-    {
+    "track:super-solid-king-ahkeem": {
       "id": "track:super-solid-king-ahkeem",
       "type": "track",
       "name": "Super Solid",
@@ -17819,7 +17918,7 @@
         "score": 100.0
       }
     },
-    {
+    "person:tyler-schafer": {
       "id": "person:tyler-schafer",
       "type": "person",
       "name": "Tyler Schafer",
@@ -17882,16 +17981,1172 @@
         "enrichment": true,
         "score": 100.0
       }
+    },
+    "track:cyberpunk-2027": {
+      "id": "track:cyberpunk-2027",
+      "type": "track",
+      "name": "Cyberpunk 2027",
+      "source_attrs": {
+        "status": "verified",
+        "attrs": {
+          "artist": "That Boy Hi Hat",
+          "isrc": "QTA2X2675077",
+          "upc": "700563274374",
+          "release_date": "2026-11-20",
+          "producer": "Kokurcho",
+          "co_producer": "Black Lansky",
+          "studio": "Cue Recording Studios",
+          "presave_url": "https://distrokid.com/hyperfollow/thatboyhihat/cyberpunk-2027",
+          "apple_music_url": "https://music.apple.com/us/album/cyberpunk-2027-single/6819458316",
+          "landing_page": "https://cumulativeweb.com/cyberpunk-2027.html",
+          "genre": "Post-Trap Futurism / Alternative Rap",
+          "date_correction": "Graph attrs carried stale 2026-10-20 (same stale line as movement:ptf prose); corrected 2026-10-27 to the confirmed record: Nov 20 2026 (UPC 700563274374, HyperFollow, attest PASS 7/7)"
+        }
+      },
+      "edges": [
+        {
+          "rel": "performed_by",
+          "from": "track:cyberpunk-2027",
+          "to": "artist:tbhh",
+          "note": "MCP graph_node canonical reference"
+        },
+        {
+          "rel": "produced_by",
+          "from": "track:cyberpunk-2027",
+          "to": "person:kokurcho",
+          "note": "Kokurcho producer credit"
+        },
+        {
+          "rel": "co_produced_by",
+          "from": "track:cyberpunk-2027",
+          "to": "person:black-lansky",
+          "note": "Black Lansky co-producer"
+        },
+        {
+          "rel": "exemplar_of",
+          "from": "track:cyberpunk-2027",
+          "to": "movement:ptf",
+          "note": "Flagship Post-Trap Futurism single"
+        },
+        {
+          "rel": "exemplar_of",
+          "from": "track:cyberpunk-2027",
+          "to": "genre:cyberpunk-rap",
+          "note": "Cyberpunk rap exemplar"
+        },
+        {
+          "rel": "associated",
+          "from": "track:cyberpunk-2027",
+          "to": "game:cyberpunk-2077",
+          "note": "Cultural anchor: shares cyberpunk aesthetic universe"
+        },
+        {
+          "rel": "associated",
+          "from": "track:cyberpunk-2027",
+          "to": "theme:anime-visualization",
+          "note": "Anime visualization aesthetic"
+        },
+        {
+          "rel": "associated",
+          "from": "cta:presave-cyberpunk-2027",
+          "to": "track:cyberpunk-2027",
+          "note": "Direct CTA-to-track link for presave funnel"
+        },
+        {
+          "rel": "associated",
+          "from": "release:cyberpunk-2027-single",
+          "to": "track:cyberpunk-2027",
+          "note": "Release-to-track canonical link"
+        }
+      ],
+      "citations": [
+        "Completed graph, generated 2026-10-27T12:27:08Z",
+        "Cyberpunk 2027: ISRC QTA2X2675077, UPC 700563274374, release Nov 20 2026, produced Kokurcho, co-produced Black Lansky, Cue Recording Studios; HyperFollow 7,812 views (Oct 27 2026); attest PASS 7/7"
+      ],
+      "geo": null,
+      "enrichment": {
+        "graph_attrs": {
+          "artist": "That Boy Hi Hat",
+          "isrc": "QTA2X2675077",
+          "upc": "700563274374",
+          "release_date": "2026-11-20",
+          "producer": "Kokurcho",
+          "co_producer": "Black Lansky",
+          "studio": "Cue Recording Studios",
+          "presave_url": "https://distrokid.com/hyperfollow/thatboyhihat/cyberpunk-2027",
+          "apple_music_url": "https://music.apple.com/us/album/cyberpunk-2027-single/6819458316",
+          "landing_page": "https://cumulativeweb.com/cyberpunk-2027.html",
+          "genre": "Post-Trap Futurism / Alternative Rap",
+          "date_correction": "Graph attrs carried stale 2026-10-20 (same stale line as movement:ptf prose); corrected 2026-10-27 to the confirmed record: Nov 20 2026 (UPC 700563274374, HyperFollow, attest PASS 7/7)"
+        }
+      },
+      "status_notes": [
+        "Release date corrected 2026-10-27: graph attrs carried stale 2026-10-20; confirmed record is Nov 20 2026."
+      ],
+      "rubric": {
+        "identity": true,
+        "classification": true,
+        "has_edges": true,
+        "specific_citation": true,
+        "enrichment": true,
+        "score": 100.0
+      }
+    },
+    "game:cyberpunk-2077": {
+      "id": "game:cyberpunk-2077",
+      "type": "game",
+      "name": "Cyberpunk 2077",
+      "source_attrs": {
+        "status": "verified",
+        "attrs": {
+          "developer": "CD Projekt Red",
+          "cultural_relevance": "Namesake inspiration for the track's cyberpunk aesthetic"
+        }
+      },
+      "edges": [
+        {
+          "rel": "associated",
+          "from": "track:cyberpunk-2027",
+          "to": "game:cyberpunk-2077",
+          "note": "Cultural anchor: shares cyberpunk aesthetic universe"
+        }
+      ],
+      "citations": [
+        "Completed graph, generated 2026-10-27T12:27:08Z",
+        "CD Projekt Red, Cyberpunk 2077 - namesake inspiration for the track's cyberpunk aesthetic"
+      ],
+      "geo": null,
+      "enrichment": {
+        "graph_attrs": {
+          "developer": "CD Projekt Red",
+          "cultural_relevance": "Namesake inspiration for the track's cyberpunk aesthetic"
+        }
+      },
+      "status_notes": [],
+      "rubric": {
+        "identity": true,
+        "classification": true,
+        "has_edges": true,
+        "specific_citation": true,
+        "enrichment": true,
+        "score": 100.0
+      }
+    },
+    "theme:anime-visualization": {
+      "id": "theme:anime-visualization",
+      "type": "theme",
+      "name": "Anime Visualization",
+      "source_attrs": {
+        "status": "verified",
+        "attrs": {
+          "description": "Anime-style music video where characters dynamically animate off the artist's shirt",
+          "creator": "Black Lansky",
+          "video_url": "https://www.youtube.com/watch?v=HOJ0SZ43uk4"
+        }
+      },
+      "edges": [
+        {
+          "rel": "associated",
+          "from": "track:cyberpunk-2027",
+          "to": "theme:anime-visualization",
+          "note": "Anime visualization aesthetic"
+        }
+      ],
+      "citations": [
+        "Completed graph, generated 2026-10-27T12:27:08Z",
+        "Official 19-second anime trailer, designed and created by Black Lansky: https://www.youtube.com/watch?v=HOJ0SZ43uk4"
+      ],
+      "geo": null,
+      "enrichment": {
+        "graph_attrs": {
+          "description": "Anime-style music video where characters dynamically animate off the artist's shirt",
+          "creator": "Black Lansky",
+          "video_url": "https://www.youtube.com/watch?v=HOJ0SZ43uk4"
+        }
+      },
+      "status_notes": [],
+      "rubric": {
+        "identity": true,
+        "classification": true,
+        "has_edges": true,
+        "specific_citation": true,
+        "enrichment": true,
+        "score": 100.0
+      }
+    },
+    "signature:tbhh-flow-architecture": {
+      "id": "signature:tbhh-flow-architecture",
+      "type": "signature",
+      "name": "That Boy Hi Hat flow architecture",
+      "source_attrs": {
+        "status": "verified",
+        "attrs": {
+          "artist": "That Boy Hi Hat",
+          "artist_spotify_id": "2f9j460EwjfvjYp3trBcb7",
+          "description": "Punch lands on bar 2 or 3 instead of the expected spot; a nine-rhyme resolves on bar 4; repeated every verse without exception. Architecture, style, alternative rap and post-trap are one and the same signature across the entire catalog.",
+          "genres": [
+            "alternative rap",
+            "post-trap",
+            "post-trap futurism"
+          ],
+          "scope": "catalog-wide"
+        }
+      },
+      "edges": [
+        {
+          "rel": "manifested_in",
+          "from": "signature:tbhh-flow-architecture",
+          "to": "track:that-boy-hi-hat-7th-angel",
+          "note": null
+        },
+        {
+          "rel": "manifested_in",
+          "from": "signature:tbhh-flow-architecture",
+          "to": "track:that-boy-hi-hat-flamerz",
+          "note": null
+        },
+        {
+          "rel": "declared_by",
+          "from": "signature:tbhh-flow-architecture",
+          "to": "track:that-boy-hi-hat-flamerz",
+          "note": null
+        },
+        {
+          "rel": "verified_by",
+          "from": "signature:tbhh-flow-architecture",
+          "to": "verification:loopcityslums-reaction-2024-05-24",
+          "note": null
+        },
+        {
+          "rel": "defines_genre",
+          "from": "signature:tbhh-flow-architecture",
+          "to": "genre:alternative-rap",
+          "note": null
+        },
+        {
+          "rel": "defines_genre",
+          "from": "signature:tbhh-flow-architecture",
+          "to": "genre:post-trap",
+          "note": null
+        },
+        {
+          "rel": "defines_genre",
+          "from": "signature:tbhh-flow-architecture",
+          "to": "genre:post-trap-futurism",
+          "note": null
+        },
+        {
+          "rel": "specimen_of",
+          "from": "track:that-boy-hi-hat-7th-angel",
+          "to": "signature:tbhh-flow-architecture",
+          "note": null
+        },
+        {
+          "rel": "specimen_of",
+          "from": "track:that-boy-hi-hat-flamerz",
+          "to": "signature:tbhh-flow-architecture",
+          "note": null
+        },
+        {
+          "rel": "owns_signature",
+          "from": "artist:that-boy-hi-hat",
+          "to": "signature:tbhh-flow-architecture",
+          "note": null
+        },
+        {
+          "rel": "defined_by",
+          "from": "track:diabolique",
+          "to": "signature:tbhh-flow-architecture",
+          "note": "phase 2: track shaped by That Boy Hi Hat flow architecture (2026-10-16)"
+        },
+        {
+          "rel": "defined_by",
+          "from": "track:scorpion-and-sapphires",
+          "to": "signature:tbhh-flow-architecture",
+          "note": "phase 2: track shaped by That Boy Hi Hat flow architecture (2026-10-16)"
+        },
+        {
+          "rel": "defined_by",
+          "from": "track:zooted-zone",
+          "to": "signature:tbhh-flow-architecture",
+          "note": "phase 2: track shaped by That Boy Hi Hat flow architecture (2026-10-16)"
+        }
+      ],
+      "citations": [
+        "Completed graph, generated 2026-10-27T12:27:08Z",
+        "Independent reactor @LoopCitySlums decoded the bar architecture unprompted, 2024-05-24"
+      ],
+      "geo": null,
+      "enrichment": {
+        "graph_attrs": {
+          "artist": "That Boy Hi Hat",
+          "artist_spotify_id": "2f9j460EwjfvjYp3trBcb7",
+          "description": "Punch lands on bar 2 or 3 instead of the expected spot; a nine-rhyme resolves on bar 4; repeated every verse without exception. Architecture, style, alternative rap and post-trap are one and the same signature across the entire catalog.",
+          "genres": [
+            "alternative rap",
+            "post-trap",
+            "post-trap futurism"
+          ],
+          "scope": "catalog-wide"
+        }
+      },
+      "status_notes": [],
+      "rubric": {
+        "identity": true,
+        "classification": true,
+        "has_edges": true,
+        "specific_citation": true,
+        "enrichment": true,
+        "score": 100.0
+      }
+    },
+    "genre:post-trap-futurism": {
+      "id": "genre:post-trap-futurism",
+      "type": "genre",
+      "name": "Post-Trap Futurism",
+      "source_attrs": {
+        "status": "verified",
+        "attrs": {
+          "claimed_by_artist": true,
+          "coined_by": "Cumulative Web Inc",
+          "positioning": "The coined movement lane"
+        }
+      },
+      "edges": [
+        {
+          "rel": "defines_genre",
+          "from": "signature:tbhh-flow-architecture",
+          "to": "genre:post-trap-futurism",
+          "note": null
+        },
+        {
+          "rel": "categorized_as",
+          "from": "genre:post-trap-futurism",
+          "to": "category:genre-post-trap-futurism",
+          "note": null
+        },
+        {
+          "rel": "exemplar_of",
+          "from": "track:diabolique",
+          "to": "genre:post-trap-futurism",
+          "note": "phase 2 enrichment: post-trap futurism genre voice (2026-10-16)"
+        },
+        {
+          "rel": "exemplar_of",
+          "from": "track:scorpion-and-sapphires",
+          "to": "genre:post-trap-futurism",
+          "note": "phase 2 enrichment: post-trap futurism genre voice (2026-10-16)"
+        },
+        {
+          "rel": "exemplar_of",
+          "from": "track:zooted-zone",
+          "to": "genre:post-trap-futurism",
+          "note": "phase 2 enrichment: post-trap futurism genre voice (2026-10-16)"
+        }
+      ],
+      "citations": [
+        "Completed graph, generated 2026-10-27T12:27:08Z",
+        "Cumulative Web Inc coined Post-Trap Futurism; That Boy Hi Hat + Black Lansky, architects"
+      ],
+      "geo": null,
+      "enrichment": {
+        "graph_attrs": {
+          "claimed_by_artist": true,
+          "coined_by": "Cumulative Web Inc",
+          "positioning": "The coined movement lane"
+        }
+      },
+      "status_notes": [],
+      "rubric": {
+        "identity": true,
+        "classification": true,
+        "has_edges": true,
+        "specific_citation": true,
+        "enrichment": true,
+        "score": 100.0
+      }
+    },
+    "track:that-boy-hi-hat-7th-angel": {
+      "id": "track:that-boy-hi-hat-7th-angel",
+      "type": "track",
+      "name": "7th Angel",
+      "source_attrs": {
+        "status": "verified",
+        "attrs": {
+          "artist": "That Boy Hi Hat",
+          "isrc": "QZTB82306781",
+          "isrc_provenance": "video-scan",
+          "mbid": "b812d69f-a883-476a-bc84-1329e30fd708",
+          "producers": [
+            "Tyler Schafer",
+            "Jeck Da General",
+            "Black Lansky"
+          ],
+          "role": "reactor specimen \u2014 the song LoopCitySlums scouted",
+          "spotify_album_id": "64m0Q3xrLXiZcLMV8AxCeX",
+          "studio": "Cue Recording Studios, Arlington VA"
+        }
+      },
+      "edges": [
+        {
+          "rel": "included_in",
+          "from": "track:that-boy-hi-hat-7th-angel",
+          "to": "playlist:ai-learning-set",
+          "note": "AI Learning Set"
+        },
+        {
+          "rel": "performed_by",
+          "from": "track:that-boy-hi-hat-7th-angel",
+          "to": "artist:tbhh",
+          "note": "catalog-index.json: parties[].roles includes artist"
+        },
+        {
+          "rel": "has_track",
+          "from": "artist:tbhh",
+          "to": "track:that-boy-hi-hat-7th-angel",
+          "note": "catalog-index.json track listing"
+        },
+        {
+          "rel": "produced_by",
+          "from": "track:that-boy-hi-hat-7th-angel",
+          "to": "person:jeck-da-general",
+          "note": "Black's decision 2026-10-09: three-producer credit (Jeck Da General, Tyler Schafer, Black Lansky)"
+        },
+        {
+          "rel": "produced_by",
+          "from": "track:that-boy-hi-hat-7th-angel",
+          "to": "person:tyler-schafer",
+          "note": "Black's decision 2026-10-09: three-producer credit (Jeck Da General, Tyler Schafer, Black Lansky)"
+        },
+        {
+          "rel": "co_produced_by",
+          "from": "track:that-boy-hi-hat-7th-angel",
+          "to": "person:black-lansky",
+          "note": "per CWI standing law \u2014 co-produces all catalog music"
+        },
+        {
+          "rel": "manifested_in",
+          "from": "signature:tbhh-flow-architecture",
+          "to": "track:that-boy-hi-hat-7th-angel",
+          "note": null
+        },
+        {
+          "rel": "specimen_of",
+          "from": "track:that-boy-hi-hat-7th-angel",
+          "to": "signature:tbhh-flow-architecture",
+          "note": null
+        }
+      ],
+      "citations": [
+        "Completed graph, generated 2026-10-27T12:27:08Z",
+        "7th Angel: ISRC QZTB82306781, Cue Recording Studios Arlington VA, producers Tyler Schafer / Jeck Da General / Black Lansky; the song LoopCitySlums scouted"
+      ],
+      "geo": null,
+      "enrichment": {
+        "graph_attrs": {
+          "artist": "That Boy Hi Hat",
+          "isrc": "QZTB82306781",
+          "isrc_provenance": "video-scan",
+          "mbid": "b812d69f-a883-476a-bc84-1329e30fd708",
+          "producers": [
+            "Tyler Schafer",
+            "Jeck Da General",
+            "Black Lansky"
+          ],
+          "role": "reactor specimen \u2014 the song LoopCitySlums scouted",
+          "spotify_album_id": "64m0Q3xrLXiZcLMV8AxCeX",
+          "studio": "Cue Recording Studios, Arlington VA"
+        }
+      },
+      "status_notes": [],
+      "rubric": {
+        "identity": true,
+        "classification": true,
+        "has_edges": true,
+        "specific_citation": true,
+        "enrichment": true,
+        "score": 100.0
+      }
+    },
+    "track:that-boy-hi-hat-flamerz": {
+      "id": "track:that-boy-hi-hat-flamerz",
+      "type": "track",
+      "name": "Flamerz",
+      "source_attrs": {
+        "status": "verified",
+        "attrs": {
+          "artist": "That Boy Hi Hat",
+          "has_manifesto_intro": true,
+          "intro_note": "Original release opens with the artist's spoken manifesto; radio edit omits it",
+          "isrc": "QZMEP2456963",
+          "isrc_provenance": "video-scan",
+          "manifesto": "This is not Hip Hop, this is alternative rap, and I'm the logo",
+          "mbid": "e945eaa3-b22a-48f3-8181-57cf62a7abbb",
+          "role": "manifesto specimen \u2014 the song where the artist declares the lane",
+          "spotify_track_id": "2MDHAUo4zJTHGX3HUhNw0",
+          "transcript": "~/workspace/flamerz-transcript-2026-10-16.md",
+          "transcript_status": "whisper-unverified"
+        }
+      },
+      "edges": [
+        {
+          "rel": "produced_by",
+          "from": "track:that-boy-hi-hat-flamerz",
+          "to": "person:jeck-da-general",
+          "note": "owner-confirmed"
+        },
+        {
+          "rel": "included_in",
+          "from": "track:that-boy-hi-hat-flamerz",
+          "to": "playlist:ai-learning-set",
+          "note": "AI Learning Set"
+        },
+        {
+          "rel": "performed_by",
+          "from": "track:that-boy-hi-hat-flamerz",
+          "to": "artist:tbhh",
+          "note": "catalog-index.json: parties[].roles includes artist"
+        },
+        {
+          "rel": "has_track",
+          "from": "artist:tbhh",
+          "to": "track:that-boy-hi-hat-flamerz",
+          "note": "catalog-index.json track listing"
+        },
+        {
+          "rel": "manifested_in",
+          "from": "signature:tbhh-flow-architecture",
+          "to": "track:that-boy-hi-hat-flamerz",
+          "note": null
+        },
+        {
+          "rel": "declared_by",
+          "from": "signature:tbhh-flow-architecture",
+          "to": "track:that-boy-hi-hat-flamerz",
+          "note": null
+        },
+        {
+          "rel": "specimen_of",
+          "from": "track:that-boy-hi-hat-flamerz",
+          "to": "signature:tbhh-flow-architecture",
+          "note": null
+        }
+      ],
+      "citations": [
+        "Completed graph, generated 2026-10-27T12:27:08Z",
+        "Flamerz: ISRC QZMEP2456963, Spotify 2MDHAUo4zJTHGXGQHUhNw0, produced Jeck Da General, co-produced Black Lansky; opens with the artist's spoken manifesto"
+      ],
+      "geo": null,
+      "enrichment": {
+        "graph_attrs": {
+          "artist": "That Boy Hi Hat",
+          "has_manifesto_intro": true,
+          "intro_note": "Original release opens with the artist's spoken manifesto; radio edit omits it",
+          "isrc": "QZMEP2456963",
+          "isrc_provenance": "video-scan",
+          "manifesto": "This is not Hip Hop, this is alternative rap, and I'm the logo",
+          "mbid": "e945eaa3-b22a-48f3-8181-57cf62a7abbb",
+          "role": "manifesto specimen \u2014 the song where the artist declares the lane",
+          "spotify_track_id": "2MDHAUo4zJTHGX3HUhNw0",
+          "transcript": "~/workspace/flamerz-transcript-2026-10-16.md",
+          "transcript_status": "whisper-unverified"
+        }
+      },
+      "status_notes": [],
+      "rubric": {
+        "identity": true,
+        "classification": true,
+        "has_edges": true,
+        "specific_citation": true,
+        "enrichment": true,
+        "score": 100.0
+      }
+    },
+    "verification:loopcityslums-reaction-2024-05-24": {
+      "id": "verification:loopcityslums-reaction-2024-05-24",
+      "type": "evidence",
+      "name": "verification:loopcityslums-reaction-2024-05-24",
+      "source_attrs": {
+        "status": "verified",
+        "attrs": {
+          "date": "2024-05-24",
+          "key_quotes": [
+            {
+              "quote": "his punch was hitting on like a second or third bar",
+              "timestamp": "~4:05"
+            },
+            {
+              "quote": "he hit you with a nine rhyme on the fourth, but he did it every time",
+              "timestamp": "~4:08"
+            },
+            {
+              "quote": "he's doing a fucking stylistic with it type shit",
+              "timestamp": "~4:40"
+            },
+            {
+              "quote": "That was some motherfucking hip hop. I don't care what anybody says. Now I'm a fan.",
+              "timestamp": "~4:45"
+            },
+            {
+              "quote": "If you guys fuck with it, go spin it up.",
+              "timestamp": "~5:00"
+            }
+          ],
+          "relationship": "none \u2014 independent reactor, no stake in CWI",
+          "source": "@LoopCitySlums (Formaldehyde Slums)",
+          "transcript": "~/workspace/7th-angel-interview-transcript-2026-10-16.md",
+          "url": "https://x.com/LoopCitySlums/status/1793809143687745662/video/1",
+          "verdict": "decoded the bar architecture unprompted; certified intentionality on camera; converted to fan live"
+        }
+      },
+      "edges": [
+        {
+          "rel": "verified_by",
+          "from": "signature:tbhh-flow-architecture",
+          "to": "verification:loopcityslums-reaction-2024-05-24",
+          "note": null
+        }
+      ],
+      "citations": [
+        "Completed graph, generated 2026-10-27T12:27:08Z",
+        "@LoopCitySlums (Formaldehyde Slums), independent reactor, no stake in CWI: https://x.com/LoopCitySlums/status/1793809143687745662/video/1"
+      ],
+      "geo": null,
+      "enrichment": {
+        "graph_attrs": {
+          "date": "2024-05-24",
+          "key_quotes": [
+            {
+              "quote": "his punch was hitting on like a second or third bar",
+              "timestamp": "~4:05"
+            },
+            {
+              "quote": "he hit you with a nine rhyme on the fourth, but he did it every time",
+              "timestamp": "~4:08"
+            },
+            {
+              "quote": "he's doing a fucking stylistic with it type shit",
+              "timestamp": "~4:40"
+            },
+            {
+              "quote": "That was some motherfucking hip hop. I don't care what anybody says. Now I'm a fan.",
+              "timestamp": "~4:45"
+            },
+            {
+              "quote": "If you guys fuck with it, go spin it up.",
+              "timestamp": "~5:00"
+            }
+          ],
+          "relationship": "none \u2014 independent reactor, no stake in CWI",
+          "source": "@LoopCitySlums (Formaldehyde Slums)",
+          "transcript": "~/workspace/7th-angel-interview-transcript-2026-10-16.md",
+          "url": "https://x.com/LoopCitySlums/status/1793809143687745662/video/1",
+          "verdict": "decoded the bar architecture unprompted; certified intentionality on camera; converted to fan live"
+        }
+      },
+      "status_notes": [],
+      "rubric": {
+        "identity": true,
+        "classification": true,
+        "has_edges": true,
+        "specific_citation": true,
+        "enrichment": true,
+        "score": 100.0
+      }
+    },
+    "category:genre-post-trap-futurism": {
+      "id": "category:genre-post-trap-futurism",
+      "type": "category",
+      "name": "Post-Trap Futurism",
+      "source_attrs": {
+        "status": "verified",
+        "attrs": {
+          "kind": "genre definition",
+          "definition": "CWI's coined movement lane. Post-trap pushed into futurist territory. Cyberpunk 2027 is the flagship release.",
+          "authority": "Cumulative Web Inc",
+          "coined_by": "Cumulative Web Inc",
+          "claimed_by": "That Boy Hi Hat + Black Lansky"
+        }
+      },
+      "edges": [
+        {
+          "rel": "defines_category",
+          "from": "org:cwi",
+          "to": "category:genre-post-trap-futurism",
+          "note": null
+        },
+        {
+          "rel": "categorized_as",
+          "from": "genre:post-trap-futurism",
+          "to": "category:genre-post-trap-futurism",
+          "note": null
+        }
+      ],
+      "citations": [
+        "Completed graph, generated 2026-10-27T12:27:08Z",
+        "Cumulative Web Inc coined Post-Trap Futurism; Cyberpunk 2027 is the flagship release"
+      ],
+      "geo": null,
+      "enrichment": {
+        "graph_attrs": {
+          "kind": "genre definition",
+          "definition": "CWI's coined movement lane. Post-trap pushed into futurist territory. Cyberpunk 2027 is the flagship release.",
+          "authority": "Cumulative Web Inc",
+          "coined_by": "Cumulative Web Inc",
+          "claimed_by": "That Boy Hi Hat + Black Lansky"
+        }
+      },
+      "status_notes": [],
+      "rubric": {
+        "identity": true,
+        "classification": true,
+        "has_edges": true,
+        "specific_citation": true,
+        "enrichment": true,
+        "score": 100.0
+      }
+    },
+    "category:genre-alternative-rap": {
+      "id": "category:genre-alternative-rap",
+      "type": "category",
+      "name": "Alternative Rap",
+      "source_attrs": {
+        "status": "verified",
+        "attrs": {
+          "kind": "genre definition",
+          "definition": "That Boy Hi Hat's self-declared lane: 'This is not Hip Hop, this is alternative rap, and I'm the logo.'",
+          "authority": "Cumulative Web Inc",
+          "claimed_by": "That Boy Hi Hat"
+        }
+      },
+      "edges": [
+        {
+          "rel": "defines_category",
+          "from": "org:cwi",
+          "to": "category:genre-alternative-rap",
+          "note": null
+        },
+        {
+          "rel": "categorized_as",
+          "from": "genre:alternative-rap",
+          "to": "category:genre-alternative-rap",
+          "note": null
+        },
+        {
+          "rel": "categorized_as",
+          "from": "track:diabolique",
+          "to": "category:genre-alternative-rap",
+          "note": "phase 2: category tagging (2026-10-16)"
+        },
+        {
+          "rel": "categorized_as",
+          "from": "track:scorpion-and-sapphires",
+          "to": "category:genre-alternative-rap",
+          "note": "phase 2: category tagging (2026-10-16)"
+        }
+      ],
+      "citations": [
+        "Completed graph, generated 2026-10-27T12:27:08Z",
+        "That Boy Hi Hat self-declared lane: 'This is not Hip Hop, this is alternative rap, and I'm the logo.'"
+      ],
+      "geo": null,
+      "enrichment": {
+        "graph_attrs": {
+          "kind": "genre definition",
+          "definition": "That Boy Hi Hat's self-declared lane: 'This is not Hip Hop, this is alternative rap, and I'm the logo.'",
+          "authority": "Cumulative Web Inc",
+          "claimed_by": "That Boy Hi Hat"
+        }
+      },
+      "status_notes": [],
+      "rubric": {
+        "identity": true,
+        "classification": true,
+        "has_edges": true,
+        "specific_citation": true,
+        "enrichment": true,
+        "score": 100.0
+      }
+    },
+    "category:genre-post-trap": {
+      "id": "category:genre-post-trap",
+      "type": "category",
+      "name": "Post-Trap",
+      "source_attrs": {
+        "status": "verified",
+        "attrs": {
+          "kind": "genre definition",
+          "definition": "Trap's successor lane co-architected by Black Lansky and That Boy Hi Hat.",
+          "authority": "Cumulative Web Inc",
+          "claimed_by": "Black Lansky + That Boy Hi Hat"
+        }
+      },
+      "edges": [
+        {
+          "rel": "defines_category",
+          "from": "org:cwi",
+          "to": "category:genre-post-trap",
+          "note": null
+        },
+        {
+          "rel": "categorized_as",
+          "from": "genre:post-trap",
+          "to": "category:genre-post-trap",
+          "note": null
+        },
+        {
+          "rel": "categorized_as",
+          "from": "track:diabolique",
+          "to": "category:genre-post-trap",
+          "note": "phase 2: category tagging (2026-10-16)"
+        },
+        {
+          "rel": "categorized_as",
+          "from": "track:scorpion-and-sapphires",
+          "to": "category:genre-post-trap",
+          "note": "phase 2: category tagging (2026-10-16)"
+        },
+        {
+          "rel": "categorized_as",
+          "from": "track:zooted-zone",
+          "to": "category:genre-post-trap",
+          "note": "phase 2: category tagging (2026-10-16)"
+        }
+      ],
+      "citations": [
+        "Completed graph, generated 2026-10-27T12:27:08Z",
+        "Black Lansky + That Boy Hi Hat, architects of Post-Trap Futurism"
+      ],
+      "geo": null,
+      "enrichment": {
+        "graph_attrs": {
+          "kind": "genre definition",
+          "definition": "Trap's successor lane co-architected by Black Lansky and That Boy Hi Hat.",
+          "authority": "Cumulative Web Inc",
+          "claimed_by": "Black Lansky + That Boy Hi Hat"
+        }
+      },
+      "status_notes": [],
+      "rubric": {
+        "identity": true,
+        "classification": true,
+        "has_edges": true,
+        "specific_citation": true,
+        "enrichment": true,
+        "score": 100.0
+      }
+    },
+    "category:genre-trap": {
+      "id": "category:genre-trap",
+      "type": "category",
+      "name": "Trap",
+      "source_attrs": {
+        "status": "verified",
+        "attrs": {
+          "kind": "genre definition",
+          "definition": "King Ahkeem's entire catalog lane.",
+          "authority": "Cumulative Web Inc",
+          "artists": [
+            "King Ahkeem"
+          ]
+        }
+      },
+      "edges": [
+        {
+          "rel": "defines_category",
+          "from": "org:cwi",
+          "to": "category:genre-trap",
+          "note": null
+        },
+        {
+          "rel": "categorized_as",
+          "from": "track:zooted-zone",
+          "to": "category:genre-trap",
+          "note": "phase 2: category tagging (2026-10-16)"
+        }
+      ],
+      "citations": [
+        "Completed graph, generated 2026-10-27T12:27:08Z",
+        "Black's genre law 2026-10-06: King Ahkeem - trap, all"
+      ],
+      "geo": null,
+      "enrichment": {
+        "graph_attrs": {
+          "kind": "genre definition",
+          "definition": "King Ahkeem's entire catalog lane.",
+          "authority": "Cumulative Web Inc",
+          "artists": [
+            "King Ahkeem"
+          ]
+        }
+      },
+      "status_notes": [],
+      "rubric": {
+        "identity": true,
+        "classification": true,
+        "has_edges": true,
+        "specific_citation": true,
+        "enrichment": true,
+        "score": 100.0
+      }
+    },
+    "category:genre-afrobeats": {
+      "id": "category:genre-afrobeats",
+      "type": "category",
+      "name": "Afrobeats",
+      "source_attrs": {
+        "status": "verified",
+        "attrs": {
+          "kind": "genre definition",
+          "definition": "Dre50's lane: afrobeats + Jamaican + Brazilian.",
+          "authority": "Cumulative Web Inc",
+          "artists": [
+            "Dre50"
+          ]
+        }
+      },
+      "edges": [
+        {
+          "rel": "defines_category",
+          "from": "org:cwi",
+          "to": "category:genre-afrobeats",
+          "note": null
+        }
+      ],
+      "citations": [
+        "Completed graph, generated 2026-10-27T12:27:08Z",
+        "Black's genre law 2026-10-06: Dre50 - afrobeats + Jamaican + Brazilian"
+      ],
+      "geo": null,
+      "enrichment": {
+        "graph_attrs": {
+          "kind": "genre definition",
+          "definition": "Dre50's lane: afrobeats + Jamaican + Brazilian.",
+          "authority": "Cumulative Web Inc",
+          "artists": [
+            "Dre50"
+          ]
+        }
+      },
+      "status_notes": [],
+      "rubric": {
+        "identity": true,
+        "classification": true,
+        "has_edges": true,
+        "specific_citation": true,
+        "enrichment": true,
+        "score": 100.0
+      }
+    },
+    "category:genre-rap-rock": {
+      "id": "category:genre-rap-rock",
+      "type": "category",
+      "name": "Rap Rock / Rock Rap",
+      "source_attrs": {
+        "status": "verified",
+        "attrs": {
+          "kind": "genre definition",
+          "definition": "183 Wildboi's entire catalog.",
+          "authority": "Cumulative Web Inc",
+          "artists": [
+            "183 Wildboi"
+          ]
+        }
+      },
+      "edges": [
+        {
+          "rel": "defines_category",
+          "from": "org:cwi",
+          "to": "category:genre-rap-rock",
+          "note": null
+        }
+      ],
+      "citations": [
+        "Completed graph, generated 2026-10-27T12:27:08Z",
+        "Black's genre law 2026-10-06: 183 Wildboi - Rap Rock / Rock Rap, all"
+      ],
+      "geo": null,
+      "enrichment": {
+        "graph_attrs": {
+          "kind": "genre definition",
+          "definition": "183 Wildboi's entire catalog.",
+          "authority": "Cumulative Web Inc",
+          "artists": [
+            "183 Wildboi"
+          ]
+        }
+      },
+      "status_notes": [],
+      "rubric": {
+        "identity": true,
+        "classification": true,
+        "has_edges": true,
+        "specific_citation": true,
+        "enrichment": true,
+        "score": 100.0
+      }
+    },
+    "category:genre-cyberpunk": {
+      "id": "category:genre-cyberpunk",
+      "type": "category",
+      "name": "Cyberpunk",
+      "source_attrs": {
+        "status": "verified",
+        "attrs": {
+          "kind": "genre definition",
+          "definition": "Greg Porn's lane: cyberpunk, dark luxury.",
+          "authority": "Cumulative Web Inc",
+          "artists": [
+            "Greg Porn"
+          ]
+        }
+      },
+      "edges": [
+        {
+          "rel": "defines_category",
+          "from": "org:cwi",
+          "to": "category:genre-cyberpunk",
+          "note": null
+        }
+      ],
+      "citations": [
+        "Completed graph, generated 2026-10-27T12:27:08Z",
+        "Black's genre law 2026-10-06: Greg Porn - cyberpunk, dark luxury"
+      ],
+      "geo": null,
+      "enrichment": {
+        "graph_attrs": {
+          "kind": "genre definition",
+          "definition": "Greg Porn's lane: cyberpunk, dark luxury.",
+          "authority": "Cumulative Web Inc",
+          "artists": [
+            "Greg Porn"
+          ]
+        }
+      },
+      "status_notes": [],
+      "rubric": {
+        "identity": true,
+        "classification": true,
+        "has_edges": true,
+        "specific_citation": true,
+        "enrichment": true,
+        "score": 100.0
+      }
+    },
+    "category:genre-dark-luxury": {
+      "id": "category:genre-dark-luxury",
+      "type": "category",
+      "name": "Dark Luxury",
+      "source_attrs": {
+        "status": "verified",
+        "attrs": {
+          "kind": "genre definition",
+          "definition": "Greg Porn's secondary lane.",
+          "authority": "Cumulative Web Inc",
+          "artists": [
+            "Greg Porn"
+          ]
+        }
+      },
+      "edges": [
+        {
+          "rel": "defines_category",
+          "from": "org:cwi",
+          "to": "category:genre-dark-luxury",
+          "note": null
+        }
+      ],
+      "citations": [
+        "Completed graph, generated 2026-10-27T12:27:08Z",
+        "Black's genre law 2026-10-06: Greg Porn - cyberpunk, dark luxury"
+      ],
+      "geo": null,
+      "enrichment": {
+        "graph_attrs": {
+          "kind": "genre definition",
+          "definition": "Greg Porn's secondary lane.",
+          "authority": "Cumulative Web Inc",
+          "artists": [
+            "Greg Porn"
+          ]
+        }
+      },
+      "status_notes": [],
+      "rubric": {
+        "identity": true,
+        "classification": true,
+        "has_edges": true,
+        "specific_citation": true,
+        "enrichment": true,
+        "score": 100.0
+      }
+    },
+    "campaign:discovery-mode-nov-2026": {
+      "id": "campaign:discovery-mode-nov-2026",
+      "type": "campaign",
+      "name": "Discovery Mode \u2014 November 2026",
+      "source_attrs": {
+        "status": "active",
+        "attrs": {
+          "period": "Nov 1-30, 2026",
+          "platform": "Spotify Discovery Mode",
+          "songs": [
+            "track:diabolique",
+            "track:scorpion-and-sapphires",
+            "track:zooted-zone"
+          ],
+          "commission": "30% Discovery Mode contexts only"
+        }
+      },
+      "edges": [
+        {
+          "rel": "featured_in",
+          "from": "track:diabolique",
+          "to": "campaign:discovery-mode-nov-2026",
+          "note": "phase 2: opted into Spotify Discovery Mode Nov 2026 campaign (2026-10-16)"
+        },
+        {
+          "rel": "featured_in",
+          "from": "track:scorpion-and-sapphires",
+          "to": "campaign:discovery-mode-nov-2026",
+          "note": "phase 2: opted into Spotify Discovery Mode Nov 2026 campaign (2026-10-16)"
+        },
+        {
+          "rel": "featured_in",
+          "from": "track:zooted-zone",
+          "to": "campaign:discovery-mode-nov-2026",
+          "note": "phase 2: opted into Spotify Discovery Mode Nov 2026 campaign (2026-10-16)"
+        }
+      ],
+      "citations": [
+        "Completed graph, generated 2026-10-27T12:27:08Z",
+        "Spotify Discovery Mode November campaign, scheduled Nov 1-30 2026, songs editable until Oct 30; commission 30% on Discovery Mode streams only"
+      ],
+      "geo": null,
+      "enrichment": {
+        "graph_attrs": {
+          "period": "Nov 1-30, 2026",
+          "platform": "Spotify Discovery Mode",
+          "songs": [
+            "track:diabolique",
+            "track:scorpion-and-sapphires",
+            "track:zooted-zone"
+          ],
+          "commission": "30% Discovery Mode contexts only"
+        }
+      },
+      "status_notes": [],
+      "rubric": {
+        "identity": true,
+        "classification": true,
+        "has_edges": true,
+        "specific_citation": true,
+        "enrichment": true,
+        "score": 100.0
+      }
     }
-  ],
-  "version": "v3.1 (2026-10-27, Spotify tracklists + durations added)",
-  "v2_notes": "Source_attrs promoted into citations/enrichment; genre definitions + edge exemplars added; 5 release dates found (see release_date_precision for confidence); no values invented; dataset only, nothing written to the live graph.",
-  "v3_notes": "All 9 release nodes now carry day-precision Spotify dates except none: every release node date is Spotify-printed. GTA VI EP corrected Nov 21 (announced) -> Oct 30, 2025 (Spotify printed).",
-  "public_graph_inventory": {
-    "cumulativeweb.com/graph.json": "134 nodes / 477 edges, generated 2026-10-08, live",
-    "cwi-learn repo graph.json": "151 nodes / 522 edges, generated 2026-10-16T19:38:58Z, live (newest generation)",
-    "cumulativeweb.com/graph-full-data.json": "this dataset (134 nodes, full structured data), committed 2026-10-27, site URL pending Pages deploy",
-    "local graphs (74/143, 71/140, Oct 6)": "stale subsets, NOT published (superseded)",
-    "revenue-graph (encrypted)": "private by design, NOT published"
-  }
+  },
+  "version": "v4",
+  "v4_notes": "10 rubric-80 nodes completed: 8 isolated nodes gained 13 grounded edges; 2 editorial nodes fixed by rel-normalization + article-URL citations. 17 repo151 nodes added with full entries. Cyberpunk 2027 date corrected to Nov 20 2026. Zooted Zone latest plays 317,255 (Oct 25 reel frame). Pre-existing graph hygiene item NOT touched: 69 edge endpoints in the wider graph point at ids that are not nodes (genre short-names like genre:rap, long-form track ids like track:that-boy-hi-hat-diabolique); those edges pre-date this completion and do not affect the 151 nodes' rubric scores."
 }
