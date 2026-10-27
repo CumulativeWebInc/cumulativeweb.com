@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verified Briefs — Meta Hackathon Demo | Cumulative Web Inc</title>
+<style>
+body { font-family: system-ui, sans-serif; max-width: 960px; margin: 2em auto; padding: 0 1em; line-height: 1.5; color: #111; }
+table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+th, td { border: 1px solid #ccc; padding: 0.5em; text-align: left; vertical-align: top; }
+tr.pass td:nth-child(4) { background: #d9f2d9; }
+tr.flag td:nth-child(4) { background: #fff3cd; }
+tr.drop td:nth-child(4) { background: #f8d7da; }
+blockquote { border-left: 4px solid #555; margin: 1em 0; padding: 0.5em 1em; background: #f6f6f6; }
+code { background: #f0f0f0; padding: 0.1em 0.3em; }
+footer { margin-top: 2em; border-top: 1px solid #ccc; padding-top: 1em; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<h1>Verified Briefs</h1>
+<p><strong>NEW WORK — built 2026-10-27 for the Meta Global AI Developer Hackathon.</strong>
+Discovery Engine (pre-built) plus a new verified-reasoning layer: Muse Spark 1.3 reasons over a
+music brief, and a deterministic gate disposes every candidate the model proposes. The model never
+gets the final word on identity, ISRC or clearance.</p>
+<h2>How it works</h2>
+<ol>
+<li>Muse Spark 1.3 (Meta Model API) reasons over the brief and proposes up to 5 candidate tracks, with one sentence of reasoning each. ISRCs are deliberately left out of its prompt, so it cannot fake one into the shortlist.</li>
+<li>The caller passes those candidates to the new MCP tool <code>verify_brief_candidates</code> on the Discovery Engine worker. The tool makes no Meta API call and holds no Meta key.</li>
+<li>The gate checks each candidate against the worker sync catalog data (machine-data-layer/sync-catalog-data.js, 29 tracks, 18 verified ISRCs): <strong>PASS</strong> = catalog match + verified ISRC; <strong>FLAG</strong> = catalog match without a verified ISRC; <strong>DROP</strong> = no catalog match.</li>
+<li>Only PASS candidates reach the verified shortlist.</li>
+</ol>
+<p><strong>Known gap, stated not hidden:</strong> cuefinder audit counts 19 verified ISRCs; this file counts 18. The one-track difference is unreconciled. v1 gates on this file only.</p>
+
+<section>
+<h2>Brief 1 — Grounded: sports montage / streetwear</h2>
+<p>Spark reasoned over the real catalog list. The gate kept the three verified tracks and flagged the two matches with no ISRC on file.</p>
+<p><strong>Brief:</strong> High-energy trap anthem for a sports montage and streetwear ad, confident club energy, Post-Trap Futurism<br>
+<strong>Model:</strong> muse-spark-1.3 via Meta Model API (api.meta.ai)<br>
+<strong>Receipt created:</strong> 2026-10-27T09:41:35.867995+00:00 &nbsp;|&nbsp;
+<strong>Brief hash:</strong> 027bea2a633e33ba &nbsp;|&nbsp;
+<strong>Counts:</strong> 5 proposed, 3 PASS, 2 FLAG, 0 DROP</p>
+<blockquote>The brief needs high-energy trap with confident club bounce for sports and streetwear, blending hard-hitting drums and swagger with futuristic post-trap textures.</blockquote>
+<table>
+<thead><tr><th>Candidate</th><th>Artist</th><th>Spark reason</th><th>Gate decision</th><th>ISRC</th></tr></thead>
+<tbody>
+<tr class="pass"><td>Zooted Zone</td><td>That Boy Hi Hat</td><td>Title signals zoned-out club hype perfect for confident sports montage energy.</td><td><strong>PASS</strong><br><small>catalog match, ISRC verified</small></td><td>QZDA52303345<br><small>verified</small></td></tr>
+<tr class="pass"><td>Flamerz</td><td>That Boy Hi Hat</td><td>Aggressive fiery title fits high-octane anthem and streetwear attitude.</td><td><strong>PASS</strong><br><small>catalog match, ISRC verified</small></td><td>QZMEP2456963<br><small>verified</small></td></tr>
+<tr class="flag"><td>Stunt</td><td>183 Wildboi</td><td>Stunting theme delivers boastful flex energy ideal for highlight reels.</td><td><strong>FLAG</strong><br><small>catalog match, ISRC unassigned (not verified)</small></td><td>not on file<br><small>unassigned</small></td></tr>
+<tr class="flag"><td>Embiid</td><td>King Ahkeem</td><td>Sports-referencing title brings athletic swagger and dominant trap confidence.</td><td><strong>FLAG</strong><br><small>catalog match, ISRC unassigned (not verified)</small></td><td>not on file<br><small>unassigned</small></td></tr>
+<tr class="pass"><td>Cyberpunk 2027</td><td>That Boy Hi Hat</td><td>Directly nails Post-Trap Futurism with forward-looking cyber club aesthetic.</td><td><strong>PASS</strong><br><small>catalog match, ISRC verified</small></td><td>QTA2X2675077<br><small>verified</small></td></tr>
+</tbody>
+</table>
+<h3>Verified shortlist</h3>
+<ul><li><strong>Zooted Zone</strong> — That Boy Hi Hat — ISRC QZDA52303345</li><li><strong>Flamerz</strong> — That Boy Hi Hat — ISRC QZMEP2456963</li><li><strong>Cyberpunk 2027</strong> — That Boy Hi Hat — ISRC QTA2X2675077</li></ul>
+</section>
+
+
+<section>
+<h2>Brief 2 — Grounded: late-night emo scene</h2>
+<p>Spark reasoned over the real catalog list. The gate kept four verified tracks and flagged one match with no ISRC on file.</p>
+<p><strong>Brief:</strong> Late-night emotional scene, melancholic and introspective, emo rap<br>
+<strong>Model:</strong> muse-spark-1.3 via Meta Model API (api.meta.ai)<br>
+<strong>Receipt created:</strong> 2026-10-27T09:41:39.919759+00:00 &nbsp;|&nbsp;
+<strong>Brief hash:</strong> 6bbcb5d8fac1ef2b &nbsp;|&nbsp;
+<strong>Counts:</strong> 5 proposed, 4 PASS, 1 FLAG, 0 DROP</p>
+<blockquote>The brief needs melancholic, introspective late-night mood with emo-rap vulnerability. Ideal tracks should suggest heartbreak, dreaming, shadows and nocturnal loneliness rather than energetic stunt anthems.</blockquote>
+<table>
+<thead><tr><th>Candidate</th><th>Artist</th><th>Spark reason</th><th>Gate decision</th><th>ISRC</th></tr></thead>
+<tbody>
+<tr class="flag"><td>Broken Hearts Club</td><td>That Boy Hi Hat</td><td>Title directly signals heartbreak and emotional vulnerability perfect for a melancholic scene.</td><td><strong>FLAG</strong><br><small>catalog match, ISRC unassigned (not verified)</small></td><td>not on file<br><small>unassigned</small></td></tr>
+<tr class="pass"><td>Place I Go to Dream</td><td>That Boy Hi Hat</td><td>Evokes introspective escapism and late-night rumination ideal for an emotional moment.</td><td><strong>PASS</strong><br><small>catalog match, ISRC verified</small></td><td>QZDA52227918<br><small>verified</small></td></tr>
+<tr class="pass"><td>Spirits n Shadows</td><td>That Boy Hi Hat</td><td>Suggests dark, haunted introspection fitting a lonely night-time atmosphere.</td><td><strong>PASS</strong><br><small>catalog match, ISRC verified</small></td><td>QZDA72377312<br><small>verified</small></td></tr>
+<tr class="pass"><td>Neon Nights pt. 777</td><td>That Boy Hi Hat</td><td>Captures late-night neon loneliness with an emo-rap nocturnal feel.</td><td><strong>PASS</strong><br><small>catalog match, ISRC verified</small></td><td>QZTB92246281<br><small>verified</small></td></tr>
+<tr class="pass"><td>Rainbows And Roses</td><td>That Boy Hi Hat</td><td>Implies bittersweet longing and fragile beauty suited to introspective melancholy.</td><td><strong>PASS</strong><br><small>catalog match, ISRC verified</small></td><td>QZFZ22243412<br><small>verified</small></td></tr>
+</tbody>
+</table>
+<h3>Verified shortlist</h3>
+<ul><li><strong>Place I Go to Dream</strong> — That Boy Hi Hat — ISRC QZDA52227918</li><li><strong>Spirits n Shadows</strong> — That Boy Hi Hat — ISRC QZDA72377312</li><li><strong>Neon Nights pt. 777</strong> — That Boy Hi Hat — ISRC QZTB92246281</li><li><strong>Rainbows And Roses</strong> — That Boy Hi Hat — ISRC QZFZ22243412</li></ul>
+</section>
+
+
+<section>
+<h2>Control — Ungrounded battery: Spark invents, gate drops</h2>
+<p>Control run: Spark got no catalog list and invented five tracks. The gate dropped all five and the verified shortlist is empty. This is the proof that the gate, not the model, guarantees identity.</p>
+<p><strong>Brief:</strong> High-energy trap anthem for a sports montage and streetwear ad, confident club energy, Post-Trap Futurism<br>
+<strong>Model:</strong> muse-spark-1.3 via Meta Model API (api.meta.ai)<br>
+<strong>Receipt created:</strong> 2026-10-27T09:42:08.096042+00:00 &nbsp;|&nbsp;
+<strong>Brief hash:</strong> 027bea2a633e33ba &nbsp;|&nbsp;
+<strong>Counts:</strong> 5 proposed, 0 PASS, 0 FLAG, 5 DROP</p>
+<blockquote>This brief needs high-BPM trap with heavy 808s, dark synths and confident swagger for athletic cuts and fashion edits. Tracks must deliver club-ready drops, hype vocal chops, and futuristic post-trap polish.</blockquote>
+<table>
+<thead><tr><th>Candidate</th><th>Artist</th><th>Spark reason</th><th>Gate decision</th><th>ISRC</th></tr></thead>
+<tbody>
+<tr class="drop"><td>Run It Up</td><td>KAIRO</td><td>Relentless 150 BPM trap drums and chant hooks drive perfect sports-montage momentum.</td><td><strong>DROP</strong><br><small>no match in the CWI sync catalog on file</small></td><td>not on file<br><small>n/a</small></td></tr>
+<tr class="drop"><td>Neon Pressure</td><td>VEXA</td><td>Futuristic synths and booming 808s give confident streetwear swagger with club energy.</td><td><strong>DROP</strong><br><small>no match in the CWI sync catalog on file</small></td><td>not on file<br><small>n/a</small></td></tr>
+<tr class="drop"><td>No Brakes</td><td>Dre Kota</td><td>Aggressive bass drops and hype ad-libs fit high-energy highlights and bold fashion cuts.</td><td><strong>DROP</strong><br><small>no match in the CWI sync catalog on file</small></td><td>not on file<br><small>n/a</small></td></tr>
+<tr class="drop"><td>Chrome Dreams</td><td>LUXE Cartel</td><td>Sleek post-trap production with anthemic hook balances luxury streetwear and athletic confidence.</td><td><strong>DROP</strong><br><small>no match in the CWI sync catalog on file</small></td><td>not on file<br><small>n/a</small></td></tr>
+<tr class="drop"><td>After Hours Anthem</td><td>JAXX Future</td><td>Dark futuristic build into massive trap drop sustains peak energy for montage climax.</td><td><strong>DROP</strong><br><small>no match in the CWI sync catalog on file</small></td><td>not on file<br><small>n/a</small></td></tr>
+</tbody>
+</table>
+<h3>Verified shortlist</h3>
+<p><em>Empty. Every proposed candidate was dropped by the gate.</em></p>
+</section>
+
+<footer>
+<p>A verified shortlist entry is a catalog match with a verified ISRC. A match is not a license; clearance is direct by Cumulative Web Inc, hp@cumulativeweb.com, one-signature, BMI.</p>
+<p>Built by Cumulative Web Inc for the Meta Global AI Developer Hackathon, 2026-10-27. Demo page generated from the real run receipts; candidate text, decisions and ISRCs above match those receipts.</p>
+</footer>
+</body>
+</html>
