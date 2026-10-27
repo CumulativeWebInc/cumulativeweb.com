@@ -1,13 +1,13 @@
 {
   "attestation": "mcp-tools",
-  "subject": "CWI Discovery Engine \u2014 MCP server (29 tools)",
+  "subject": "CWI Discovery Engine \u2014 MCP server (30 tools)",
   "endpoint": "https://cwi-machine-data.hp-ace.workers.dev/mcp",
-  "certified_at": "2026-10-27T09:56:19.471096+00:00",
+  "certified_at": "2026-10-27T09:59:57.601251+00:00",
   "tool_count": 30,
   "first_tool": "find_tracks_for_brief",
   "checks": {
     "mcp_reachable": true,
-    "has_29_tools": false,
+    "has_30_tools": true,
     "wedge_first": true,
     "has_search_catalog": true,
     "has_sync_search": true,
@@ -16,5 +16,5 @@
     "wedge_returns_isrc": true,
     "get_track_works": true
   },
-  "all_pass": false
+  "all_pass": true
 }
