@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-27T00:35:22.653Z",
+  "updated_at": "2026-10-27T01:35:21.247Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Doves & Diamonds",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-doves-and-diamonds.jpg",
-      "slot_index": 64,
-      "played_at": "2026-10-27T00:35:22.653Z",
-      "track_ends_at": "2026-10-27T00:37:22.917Z"
+      "title": "Broken Hearts Club",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg",
+      "slot_index": 83,
+      "played_at": "2026-10-27T01:35:21.247Z",
+      "track_ends_at": "2026-10-27T01:37:16.501Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
