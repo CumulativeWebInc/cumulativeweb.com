@@ -6,7 +6,7 @@
   "node_count": 134,
   "edge_count": 477,
   "completeness_rule": "Every field present on every node; values filled only from the verified record above; otherwise null + unverified status. No invented values.",
-  "count_gap_note": "Declared 151-node/522-edge generation has no matching file on disk. Files found: live 134/477; cwi-learn checkout 137/486 (extras: game:cyberpunk-2077, theme:anime-visualization, track:cyberpunk-2027 \u2014 the last is a possible duplicate ID for the Cyberpunk 2027 recording, not a new track; edge diff 9 records). Reconcile before treating any count as canonical.",
+  "count_gap_note": "RESOLVED 2026-10-27: the 151-node/522-edge generation lives in the PUBLIC cwi-learn repo (CumulativeWebInc/cwi-learn graph.json, generated 2026-10-16T19:38:58Z, verified via GitHub API). The local checkout (137/486, Oct 8) is BEHIND the repo \u2014 never push local over it (would regress 151->137). Live site graph remains 134/477 (Oct 8).",
   "nodes": [
     {
       "id": "org:cwi",
@@ -17825,5 +17825,12 @@
   ],
   "version": "v3 (2026-10-27, all release dates Spotify-verified)",
   "v2_notes": "Source_attrs promoted into citations/enrichment; genre definitions + edge exemplars added; 5 release dates found (see release_date_precision for confidence); no values invented; dataset only, nothing written to the live graph.",
-  "v3_notes": "All 9 release nodes now carry day-precision Spotify dates except none: every release node date is Spotify-printed. GTA VI EP corrected Nov 21 (announced) -> Oct 30, 2025 (Spotify printed)."
+  "v3_notes": "All 9 release nodes now carry day-precision Spotify dates except none: every release node date is Spotify-printed. GTA VI EP corrected Nov 21 (announced) -> Oct 30, 2025 (Spotify printed).",
+  "public_graph_inventory": {
+    "cumulativeweb.com/graph.json": "134 nodes / 477 edges, generated 2026-10-08, live",
+    "cwi-learn repo graph.json": "151 nodes / 522 edges, generated 2026-10-16T19:38:58Z, live (newest generation)",
+    "cumulativeweb.com/graph-full-data.json": "this dataset (134 nodes, full structured data), committed 2026-10-27, site URL pending Pages deploy",
+    "local graphs (74/143, 71/140, Oct 6)": "stale subsets, NOT published (superseded)",
+    "revenue-graph (encrypted)": "private by design, NOT published"
+  }
 }
