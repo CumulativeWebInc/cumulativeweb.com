@@ -1,17 +1,17 @@
 {
   "graph_schema": "cwi.graph/1.0",
-  "generated": "2026-10-27T13:02:28Z",
+  "generated": "2026-10-27T13:29:48Z",
   "maintainer": "Cumulative Web Inc (CWI_Data)",
   "source_of_truth_note": "Catalog nodes (artist/track) and all ISRC facts are machine-regenerated from catalog-interop/catalog-index.json (52 track records, 2026-09-19). Non-catalog nodes/edges (organization, movement, people, studio, place, releases, playlists, evidence, media assets) are carried over from the prior edition. Status is verified | owner_confirmed | claimed_unverified | promised_unverified. Placement Query DB node (service:placement-query-db) staged 2026-10-03, status incomplete until query-db.json push is confirmed live.",
   "counts": {
-    "nodes": 151,
-    "edges": 535,
+    "nodes": 202,
+    "edges": 546,
     "organization": 2,
     "movement": 1,
     "person": 5,
     "studio": 1,
     "place": 2,
-    "release": 9,
+    "release": 10,
     "playlist": 8,
     "evidence": 11,
     "media_asset": 7,
@@ -20,13 +20,15 @@
     "category": 9,
     "event": 1,
     "service": 1,
-    "genre": 39,
+    "genre": 48,
     "cta": 3,
-    "track": 40,
+    "track": 58,
     "game": 1,
     "theme": 1,
     "signature": 1,
-    "campaign": 1
+    "campaign": 1,
+    "country": 11,
+    "sync_category": 12
   },
   "nodes": [
     {
@@ -5885,6 +5887,758 @@
           "status": "verified"
         }
       ]
+    },
+    {
+      "id": "genre:rap",
+      "type": "genre",
+      "name": "Rap",
+      "status": "verified",
+      "attrs": {
+        "definition": "Rap in its broad sense: rhythmic spoken delivery over beat-driven production.",
+        "authority": "Cumulative Web Inc",
+        "citation": "Catalog genre tagging (25 exemplar_of edges)"
+      }
+    },
+    {
+      "id": "genre:hip-hop",
+      "type": "genre",
+      "name": "Hip-Hop",
+      "status": "verified",
+      "attrs": {
+        "definition": "Hip-hop in its broad sense: rhythmic spoken delivery over beat-driven production.",
+        "authority": "Cumulative Web Inc",
+        "citation": "Catalog genre tagging (13 exemplar_of edges)"
+      }
+    },
+    {
+      "id": "genre:trap",
+      "type": "genre",
+      "name": "Trap",
+      "status": "verified",
+      "attrs": {
+        "definition": "Trap: rolling hi-hats, heavy 808s, dark synths, triplet flows - Atlanta-born sound.",
+        "authority": "Cumulative Web Inc",
+        "citation": "Catalog genre tagging (9 exemplar_of edges)"
+      }
+    },
+    {
+      "id": "genre:underground",
+      "type": "genre",
+      "name": "Underground",
+      "status": "verified",
+      "attrs": {
+        "definition": "Underground hip-hop: outside the mainstream, raw and independent in spirit.",
+        "authority": "Cumulative Web Inc",
+        "citation": "Catalog genre tagging (8 exemplar_of edges)"
+      }
+    },
+    {
+      "id": "genre:indie",
+      "type": "genre",
+      "name": "Indie",
+      "status": "verified",
+      "attrs": {
+        "definition": "Independent rap: outside major-label machinery, DIY ethos and distribution.",
+        "authority": "Cumulative Web Inc",
+        "citation": "Catalog genre tagging (3 exemplar_of edges)"
+      }
+    },
+    {
+      "id": "genre:dark-luxury",
+      "type": "genre",
+      "name": "Dark Luxury",
+      "status": "verified",
+      "attrs": {
+        "definition": "Greg Porn's secondary lane (genre law 2026-10-06).",
+        "authority": "Cumulative Web Inc",
+        "citation": "Catalog genre tagging (3 exemplar_of edges) + genre law"
+      }
+    },
+    {
+      "id": "genre:afrobeats",
+      "type": "genre",
+      "name": "Afrobeats",
+      "status": "verified",
+      "attrs": {
+        "definition": "Dre50's lane: afrobeats + Jamaican + Brazilian.",
+        "authority": "Cumulative Web Inc",
+        "citation": "Catalog genre tagging (2 exemplar_of edges) + genre law"
+      }
+    },
+    {
+      "id": "genre:dancehall",
+      "type": "genre",
+      "name": "Dancehall",
+      "status": "verified",
+      "attrs": {
+        "definition": "Jamaican dancehall: driving riddims, patois-inflected delivery, party and street energy.",
+        "authority": "Cumulative Web Inc",
+        "citation": "Catalog genre tagging (2 exemplar_of edges)"
+      }
+    },
+    {
+      "id": "genre:rap-rock",
+      "type": "genre",
+      "name": "Rap Rock / Rock Rap",
+      "status": "verified",
+      "attrs": {
+        "definition": "183 Wildboi's entire catalog (genre law 2026-10-06). Aliases: rock-rap.",
+        "authority": "Cumulative Web Inc",
+        "citation": "Catalog genre tagging (2 + 2 exemplar_of edges) + genre law"
+      }
+    },
+    {
+      "id": "track:that-boy-hi-hat-place-i-go-to-dream-remastered",
+      "type": "track",
+      "name": "Place I Go to Dream (Remastered)",
+      "status": "catalog-index-listed",
+      "attrs": {
+        "artist": "That Boy Hi Hat",
+        "status_note": "Sync-file variant; ISRC staging-unverified.",
+        "isrc": "QZDA52227918",
+        "isrc_status": "staging-unverified",
+        "version_of": "track:place-i-go-to-dream",
+        "note": "Shares ISRC with the original per the sync file; staging-unverified, never presented as verified. In AI Learning Set per graph edge."
+      }
+    },
+    {
+      "id": "track:that-boy-hi-hat-place-i-go-to-dream-instrumental",
+      "type": "track",
+      "name": "Place I Go to Dream (Instrumental)",
+      "status": "catalog-index-listed",
+      "attrs": {
+        "artist": "That Boy Hi Hat",
+        "status_note": "Sync-file variant; ISRC staging-unverified.",
+        "isrc": "QZDA52227919",
+        "isrc_status": "staging-unverified",
+        "version_of": "track:place-i-go-to-dream",
+        "note": "Staging-unverified ISRC from the sync file. In AI Learning Set per graph edge."
+      }
+    },
+    {
+      "id": "track:that-boy-hi-hat-warped-and-wicked-radio-edit",
+      "type": "track",
+      "name": "Warped & Wicked (Radio Edit)",
+      "status": "catalog-index-listed",
+      "attrs": {
+        "artist": "That Boy Hi Hat",
+        "status_note": "Catalog-index-listed version; ISRC unknown.",
+        "isrc": null,
+        "isrc_status": "unknown",
+        "version_of": "track:warped-and-wicked",
+        "note": "Radio-edit version listed in catalog-index; no ISRC or release record on file."
+      }
+    },
+    {
+      "id": "track:that-boy-hi-hat-rainbows-and-roses-instrumental",
+      "type": "track",
+      "name": "Rainbows And Roses (Instrumental)",
+      "status": "catalog-index-listed",
+      "attrs": {
+        "artist": "That Boy Hi Hat",
+        "status_note": "Catalog-index-listed version; ISRC unknown.",
+        "isrc": null,
+        "isrc_status": "unknown",
+        "version_of": "track:rainbows-and-roses",
+        "note": "Instrumental version listed in catalog-index; no ISRC or release record on file."
+      }
+    },
+    {
+      "id": "track:that-boy-hi-hat-piv-ot-al",
+      "type": "track",
+      "name": "Piv-ot-al",
+      "status": "catalog-index-listed",
+      "attrs": {
+        "artist": "That Boy Hi Hat",
+        "status_note": "Catalog-index-listed; title spelling unverified.",
+        "isrc": null,
+        "isrc_status": "unknown",
+        "note": "Title spelling taken verbatim from the catalog-index slug; no release or ISRC record on file."
+      }
+    },
+    {
+      "id": "track:black-lansky-mosh-pit",
+      "type": "track",
+      "name": "Mosh Pit",
+      "status": "catalog-index-listed",
+      "attrs": {
+        "artist": "Black Lansky",
+        "status_note": "ISRC audit-recorded, not badge-verified.",
+        "isrc": "QZTA22200882",
+        "isrc_status": "audit-recorded",
+        "album": "Focused Intent",
+        "album_upc": "197386686383",
+        "album_released": "2022-11-14",
+        "note": "ISRC recorded in CWI isrc-audit.csv (Focused Intent five, appended 2026-10-27); not independently badge-verified."
+      }
+    },
+    {
+      "id": "track:black-lansky-allegience",
+      "type": "track",
+      "name": "Allegience",
+      "status": "catalog-index-listed",
+      "attrs": {
+        "artist": "Black Lansky",
+        "status_note": "ISRC audit-recorded, not badge-verified.",
+        "isrc": "QZTA22200883",
+        "isrc_status": "audit-recorded",
+        "album": "Focused Intent",
+        "album_upc": "197386686383",
+        "album_released": "2022-11-14",
+        "note": "ISRC recorded in CWI isrc-audit.csv (Focused Intent five, appended 2026-10-27); not independently badge-verified."
+      }
+    },
+    {
+      "id": "track:black-lansky-give-it-all",
+      "type": "track",
+      "name": "Give It All",
+      "status": "catalog-index-listed",
+      "attrs": {
+        "artist": "Black Lansky",
+        "status_note": "ISRC audit-recorded, not badge-verified.",
+        "isrc": "QZTA22200884",
+        "isrc_status": "audit-recorded",
+        "album": "Focused Intent",
+        "album_upc": "197386686383",
+        "album_released": "2022-11-14",
+        "note": "ISRC recorded in CWI isrc-audit.csv (Focused Intent five, appended 2026-10-27); not independently badge-verified."
+      }
+    },
+    {
+      "id": "track:black-lansky-do-it-to-me",
+      "type": "track",
+      "name": "Do It To Me",
+      "status": "catalog-index-listed",
+      "attrs": {
+        "artist": "Black Lansky",
+        "status_note": "ISRC audit-recorded, not badge-verified.",
+        "isrc": "QZTA22200885",
+        "isrc_status": "audit-recorded",
+        "album": "Focused Intent",
+        "album_upc": "197386686383",
+        "album_released": "2022-11-14",
+        "note": "ISRC recorded in CWI isrc-audit.csv (Focused Intent five, appended 2026-10-27); not independently badge-verified."
+      }
+    },
+    {
+      "id": "track:black-lansky-streets-again",
+      "type": "track",
+      "name": "Streets Again",
+      "status": "catalog-index-listed",
+      "attrs": {
+        "artist": "Black Lansky",
+        "status_note": "ISRC audit-recorded, not badge-verified.",
+        "isrc": "QZTA22200886",
+        "isrc_status": "audit-recorded",
+        "album": "Focused Intent",
+        "album_upc": "197386686383",
+        "album_released": "2022-11-14",
+        "note": "ISRC recorded in CWI isrc-audit.csv (Focused Intent five, appended 2026-10-27); not independently badge-verified."
+      }
+    },
+    {
+      "id": "track:black-lansky-tiempo",
+      "type": "track",
+      "name": "Tiempo",
+      "status": "catalog-index-listed",
+      "attrs": {
+        "artist": "Black Lansky",
+        "status_note": "Catalog-index-listed; ISRC unknown.",
+        "isrc": null,
+        "isrc_status": "unknown",
+        "note": "Listed in catalog-index only; no release or ISRC record on file."
+      }
+    },
+    {
+      "id": "track:black-lansky-lofi-2-0",
+      "type": "track",
+      "name": "Lofi 2.0",
+      "status": "catalog-index-listed",
+      "attrs": {
+        "artist": "Black Lansky",
+        "status_note": "Catalog-index-listed; ISRC unknown.",
+        "isrc": null,
+        "isrc_status": "unknown",
+        "note": "Listed in catalog-index only; no release or ISRC record on file."
+      }
+    },
+    {
+      "id": "track:black-lansky-skateboard-team-sports",
+      "type": "track",
+      "name": "Skateboard Team Sports",
+      "status": "catalog-index-listed",
+      "attrs": {
+        "artist": "Black Lansky",
+        "status_note": "Catalog-index-listed; ISRC unknown.",
+        "isrc": null,
+        "isrc_status": "unknown",
+        "note": "Listed in catalog-index only; no release or ISRC record on file."
+      }
+    },
+    {
+      "id": "track:black-lansky-retro-vibe",
+      "type": "track",
+      "name": "Retro Vibe",
+      "status": "catalog-index-listed",
+      "attrs": {
+        "artist": "Black Lansky",
+        "status_note": "Catalog-index-listed; ISRC unknown.",
+        "isrc": null,
+        "isrc_status": "unknown",
+        "note": "Listed in catalog-index only; no release or ISRC record on file."
+      }
+    },
+    {
+      "id": "track:black-lansky-viral-beats",
+      "type": "track",
+      "name": "Viral Beats",
+      "status": "catalog-index-listed",
+      "attrs": {
+        "artist": "Black Lansky",
+        "status_note": "Catalog-index-listed; ISRC unknown.",
+        "isrc": null,
+        "isrc_status": "unknown",
+        "note": "Listed in catalog-index only; no release or ISRC record on file."
+      }
+    },
+    {
+      "id": "track:black-lansky-sync-ready-tracks",
+      "type": "track",
+      "name": "Sync Ready Tracks",
+      "status": "catalog-index-listed",
+      "attrs": {
+        "artist": "Black Lansky",
+        "status_note": "Catalog-index-listed; ISRC unknown.",
+        "isrc": null,
+        "isrc_status": "unknown",
+        "note": "Listed in catalog-index only; no release or ISRC record on file. Name collides with the Sync Ready Tracks album - flagged, not resolved."
+      }
+    },
+    {
+      "id": "track:king-akeem-goated",
+      "type": "track",
+      "name": "Goated",
+      "status": "catalog-index-listed",
+      "attrs": {
+        "artist": "King Ahkeem",
+        "status_note": "Catalog-index-listed; ISRC unknown.",
+        "isrc": null,
+        "isrc_status": "unknown",
+        "note": "Listed in catalog-index only; not among King Ahkeem's DistroKid-verified ISRCs."
+      }
+    },
+    {
+      "id": "track:king-akeem-summer-night-fast",
+      "type": "track",
+      "name": "Summer Night Fast",
+      "status": "catalog-index-listed",
+      "attrs": {
+        "artist": "King Ahkeem",
+        "status_note": "Catalog-index-listed; ISRC unknown.",
+        "isrc": null,
+        "isrc_status": "unknown",
+        "note": "Listed in catalog-index only; not among King Ahkeem's DistroKid-verified ISRCs."
+      }
+    },
+    {
+      "id": "release:stunt",
+      "type": "release",
+      "name": "Stunt",
+      "status": "verified",
+      "attrs": {
+        "artist": "183 Wildboi",
+        "note": "Stunt single; no ISRC per owner confirmation Oct 27 2026. Edge note reads 'album: Stunt'.",
+        "isrc": null,
+        "isrc_status": "confirmed-none"
+      }
+    },
+    {
+      "id": "country:australia",
+      "type": "country",
+      "name": "Australia",
+      "status": "verified",
+      "attrs": {
+        "catalog_file": "catalog-au.json",
+        "catalog_schema": "cwi-catalog/v1",
+        "region": "AU",
+        "language": "en",
+        "timezone": "Australia/Sydney",
+        "catalog_title": "CWI Catalog (Australia)",
+        "track_count": 37,
+        "capital": "Canberra",
+        "geo": {
+          "lat": -35.30649,
+          "lon": 149.1266,
+          "source": "map geocode, city match, relevance 100"
+        }
+      }
+    },
+    {
+      "id": "country:united-kingdom",
+      "type": "country",
+      "name": "United Kingdom",
+      "status": "verified",
+      "attrs": {
+        "catalog_file": "catalog-uk.json",
+        "catalog_schema": "cwi-catalog/v1",
+        "region": "GB",
+        "language": "en",
+        "timezone": "Europe/London",
+        "catalog_title": "CWI Catalog (United Kingdom)",
+        "track_count": 37,
+        "capital": "London",
+        "geo": {
+          "lat": 51.50643,
+          "lon": -0.12719,
+          "source": "map geocode, city match, relevance 100"
+        }
+      }
+    },
+    {
+      "id": "country:italy",
+      "type": "country",
+      "name": "Italia",
+      "status": "verified",
+      "attrs": {
+        "catalog_file": "catalog-it.json",
+        "catalog_schema": "cwi-catalog/v1",
+        "region": null,
+        "language": "it",
+        "timezone": null,
+        "catalog_title": "Catalogo CWI",
+        "track_count": 37,
+        "capital": "Rome",
+        "geo": {
+          "lat": 41.90325,
+          "lon": 12.49563,
+          "source": "map geocode, city match, relevance 100"
+        },
+        "region_note": "Catalog file carries no region code; left null, not invented.",
+        "timezone_note": "Catalog file carries no timezone; left null, not invented."
+      }
+    },
+    {
+      "id": "country:germany",
+      "type": "country",
+      "name": "Deutschland",
+      "status": "verified",
+      "attrs": {
+        "catalog_file": "catalog-de.json",
+        "catalog_schema": "cwi-catalog/v1",
+        "region": "DE",
+        "language": "de",
+        "timezone": "America/New_York",
+        "catalog_title": "CWI Katalog (Deutschland)",
+        "track_count": 37,
+        "capital": "Berlin",
+        "geo": {
+          "lat": 52.51604,
+          "lon": 13.37691,
+          "source": "map geocode, city match, relevance 100"
+        },
+        "timezone_note": "Catalog file's timezone field reads America/New_York; kept verbatim, flagged as suspect."
+      }
+    },
+    {
+      "id": "country:spain",
+      "type": "country",
+      "name": "Espa\u00f1a",
+      "status": "verified",
+      "attrs": {
+        "catalog_file": "catalog-es.json",
+        "catalog_schema": "cwi-catalog/v1",
+        "region": null,
+        "language": "es",
+        "timezone": null,
+        "catalog_title": "Cat\u00e1logo CWI",
+        "track_count": 37,
+        "capital": "Madrid",
+        "geo": {
+          "lat": 40.42024,
+          "lon": -3.68755,
+          "source": "map geocode, city match, relevance 100"
+        },
+        "region_note": "Catalog file carries no region code; left null, not invented.",
+        "timezone_note": "Catalog file carries no timezone; left null, not invented."
+      }
+    },
+    {
+      "id": "country:france",
+      "type": "country",
+      "name": "France",
+      "status": "verified",
+      "attrs": {
+        "catalog_file": "catalog-fr.json",
+        "catalog_schema": "cwi-catalog/v1",
+        "region": null,
+        "language": "fr",
+        "timezone": null,
+        "catalog_title": "Catalogue CWI",
+        "track_count": 37,
+        "capital": "Paris",
+        "geo": {
+          "lat": 48.85717,
+          "lon": 2.3414,
+          "source": "map geocode, city match, relevance 100"
+        },
+        "region_note": "Catalog file carries no region code; left null, not invented.",
+        "timezone_note": "Catalog file carries no timezone; left null, not invented."
+      }
+    },
+    {
+      "id": "country:ireland",
+      "type": "country",
+      "name": "Ireland",
+      "status": "verified",
+      "attrs": {
+        "catalog_file": "catalog-ie.json",
+        "catalog_schema": "cwi-catalog/v1",
+        "region": "IE",
+        "language": "en",
+        "timezone": "Europe/Dublin",
+        "catalog_title": "CWI Catalog (Ireland)",
+        "track_count": 37,
+        "capital": "Dublin",
+        "geo": {
+          "lat": 53.34807,
+          "lon": -6.24827,
+          "source": "map geocode, city match, relevance 100"
+        }
+      }
+    },
+    {
+      "id": "country:netherlands",
+      "type": "country",
+      "name": "Nederland",
+      "status": "verified",
+      "attrs": {
+        "catalog_file": "catalog-nl.json",
+        "catalog_schema": "cwi-catalog/v1",
+        "region": null,
+        "language": "nl",
+        "timezone": null,
+        "catalog_title": "CWI-catalogus",
+        "track_count": 37,
+        "capital": "Amsterdam",
+        "geo": {
+          "lat": 52.36994,
+          "lon": 4.90788,
+          "source": "map geocode, city match, relevance 100"
+        },
+        "region_note": "Catalog file carries no region code; left null, not invented.",
+        "timezone_note": "Catalog file carries no timezone; left null, not invented."
+      }
+    },
+    {
+      "id": "country:thailand",
+      "type": "country",
+      "name": "Thailand",
+      "status": "verified",
+      "attrs": {
+        "catalog_file": "catalog-th.json",
+        "catalog_schema": "cwi-catalog/v1",
+        "region": null,
+        "language": "th",
+        "timezone": null,
+        "catalog_title": "\u0e41\u0e04\u0e15\u0e15\u0e32\u0e25\u0e47\u0e2d\u0e01 CWI",
+        "track_count": 37,
+        "capital": "Bangkok",
+        "geo": {
+          "lat": 13.75336,
+          "lon": 100.50483,
+          "source": "map geocode, city match, relevance 100"
+        },
+        "region_note": "Catalog file carries no region code; left null, not invented.",
+        "timezone_note": "Catalog file carries no timezone; left null, not invented."
+      }
+    },
+    {
+      "id": "country:brasil",
+      "type": "country",
+      "name": "Brasil",
+      "status": "verified",
+      "attrs": {
+        "catalog_file": "catalog-pt-BR.json",
+        "catalog_schema": "cwi-catalog/v1",
+        "region": null,
+        "language": "pt-BR",
+        "timezone": null,
+        "catalog_title": "Cat\u00e1logo CWI",
+        "track_count": 37,
+        "capital": "Bras\u00edlia",
+        "geo": {
+          "lat": -15.77854,
+          "lon": -47.92876,
+          "source": "map geocode, city match, relevance 100"
+        },
+        "region_note": "Catalog file carries no region code; left null, not invented.",
+        "timezone_note": "Catalog file carries no timezone; left null, not invented."
+      }
+    },
+    {
+      "id": "country:russia",
+      "type": "country",
+      "name": "Russia",
+      "status": "verified",
+      "attrs": {
+        "catalog_file": null,
+        "catalog_gap": "No catalog-ru.json exists; stated explicitly, not papered over.",
+        "producer_base": "Zelenograd, Moscow",
+        "producer_base_geo": {
+          "lat": 55.99432,
+          "lon": 37.18875,
+          "source": "map geocode, city match, relevance 100"
+        },
+        "producer_birthplace": "Kovrov, Vladimir Oblast (screenshot-only source; Genius page unopened)",
+        "birthplace_geo": {
+          "lat": 56.37935,
+          "lon": 41.31865,
+          "source": "map geocode, city match, relevance 100"
+        },
+        "capital_geo": {
+          "lat": 55.75696,
+          "lon": 37.61502,
+          "source": "map geocode, city match, relevance 100"
+        },
+        "person": "person:kokurcho",
+        "sources": [
+          "SoundClick artist page (opened directly Oct 27 2026): 'Zelenograd, Moscow, Russia', 'Beat producer from Russia', Admin Dmitry",
+          "Genius screenshot supplied by owner (Dmitry Sergeevich Kokurin, born June 15 2001, Kovrov, Russia) - page itself unopened",
+          "Owner confirmation Oct 27 2026: Kokurcho is from Russia"
+        ]
+      }
+    },
+    {
+      "id": "sync:late-night-drive-neon",
+      "type": "sync_category",
+      "name": "Late-Night Drive Neon",
+      "status": "verified",
+      "attrs": {
+        "definition": "Night-drive briefs: neon, nocturnal, after-midnight motion.",
+        "authority": "Cumulative Web Inc",
+        "mapping_rule": "Fit judged from the track's own graph attrs (genres/moods/themes) on 2026-10-27; a fit is not a license and not a clearance claim."
+      }
+    },
+    {
+      "id": "sync:trap-gym-hype",
+      "type": "sync_category",
+      "name": "Trap Gym Hype",
+      "status": "verified",
+      "attrs": {
+        "definition": "High-energy training briefs: hype, aggression, trap drums.",
+        "authority": "Cumulative Web Inc",
+        "mapping_rule": "Fit judged from the track's own graph attrs (genres/moods/themes) on 2026-10-27; a fit is not a license and not a clearance claim."
+      }
+    },
+    {
+      "id": "sync:underground-club-stomp",
+      "type": "sync_category",
+      "name": "Underground Club Stomp",
+      "status": "verified",
+      "attrs": {
+        "definition": "Underground club briefs: raw, dark, driving.",
+        "authority": "Cumulative Web Inc",
+        "mapping_rule": "Fit judged from the track's own graph attrs (genres/moods/themes) on 2026-10-27; a fit is not a license and not a clearance claim."
+      }
+    },
+    {
+      "id": "sync:luxury-villain-theme",
+      "type": "sync_category",
+      "name": "Luxury Villain Theme",
+      "status": "verified",
+      "attrs": {
+        "definition": "Luxury-antagonist briefs: polished menace, wealth signifiers.",
+        "authority": "Cumulative Web Inc",
+        "mapping_rule": "Fit judged from the track's own graph attrs (genres/moods/themes) on 2026-10-27; a fit is not a license and not a clearance claim."
+      }
+    },
+    {
+      "id": "sync:afro-dancehall-party-starter",
+      "type": "sync_category",
+      "name": "Afro-Dancehall Party Starter",
+      "status": "verified",
+      "attrs": {
+        "definition": "Party briefs: afrobeats/dancehall warmth and play.",
+        "authority": "Cumulative Web Inc",
+        "mapping_rule": "Fit judged from the track's own graph attrs (genres/moods/themes) on 2026-10-27; a fit is not a license and not a clearance claim."
+      }
+    },
+    {
+      "id": "sync:street-chase-tension",
+      "type": "sync_category",
+      "name": "Street Chase Tension",
+      "status": "verified",
+      "attrs": {
+        "definition": "Pursuit-tension briefs: street imagery, danger, urgency.",
+        "authority": "Cumulative Web Inc",
+        "mapping_rule": "Fit judged from the track's own graph attrs (genres/moods/themes) on 2026-10-27; a fit is not a license and not a clearance claim."
+      }
+    },
+    {
+      "id": "sync:cyberpunk-cityscape",
+      "type": "sync_category",
+      "name": "Cyberpunk Cityscape",
+      "status": "verified",
+      "attrs": {
+        "definition": "Cyberpunk-world briefs: neon dystopia, future city.",
+        "authority": "Cumulative Web Inc",
+        "mapping_rule": "Fit judged from the track's own graph attrs (genres/moods/themes) on 2026-10-27; a fit is not a license and not a clearance claim."
+      }
+    },
+    {
+      "id": "sync:victory-lap-anthem",
+      "type": "sync_category",
+      "name": "Victory Lap Anthem",
+      "status": "verified",
+      "attrs": {
+        "definition": "Triumph briefs: anthemic, euphoric arrival.",
+        "authority": "Cumulative Web Inc",
+        "mapping_rule": "Fit judged from the track's own graph attrs (genres/moods/themes) on 2026-10-27; a fit is not a license and not a clearance claim."
+      }
+    },
+    {
+      "id": "sync:smoky-afterhours-lounge",
+      "type": "sync_category",
+      "name": "Smoky Afterhours Lounge",
+      "status": "verified",
+      "attrs": {
+        "definition": "After-hours briefs: mellow, lonely, late-night smoke.",
+        "authority": "Cumulative Web Inc",
+        "mapping_rule": "Fit judged from the track's own graph attrs (genres/moods/themes) on 2026-10-27; a fit is not a license and not a clearance claim."
+      }
+    },
+    {
+      "id": "sync:mosh-pit-rebellion",
+      "type": "sync_category",
+      "name": "Mosh Pit Rebellion",
+      "status": "verified",
+      "attrs": {
+        "definition": "Rebellion briefs: defiant, raw, pit energy.",
+        "authority": "Cumulative Web Inc",
+        "mapping_rule": "Fit judged from the track's own graph attrs (genres/moods/themes) on 2026-10-27; a fit is not a license and not a clearance claim."
+      }
+    },
+    {
+      "id": "sync:summer-rooftop-groove",
+      "type": "sync_category",
+      "name": "Summer Rooftop Groove",
+      "status": "verified",
+      "attrs": {
+        "definition": "Summer briefs: warm, uplifting, breezy.",
+        "authority": "Cumulative Web Inc",
+        "mapping_rule": "Fit judged from the track's own graph attrs (genres/moods/themes) on 2026-10-27; a fit is not a license and not a clearance claim."
+      }
+    },
+    {
+      "id": "sync:heist-planning-focus",
+      "type": "sync_category",
+      "name": "Heist Planning Focus",
+      "status": "verified",
+      "attrs": {
+        "definition": "Heist briefs: brooding, cinematic, dangerous focus.",
+        "authority": "Cumulative Web Inc",
+        "mapping_rule": "Fit judged from the track's own graph attrs (genres/moods/themes) on 2026-10-27; a fit is not a license and not a clearance claim."
+      }
     }
   ],
   "edges": [
@@ -5919,19 +6673,19 @@
       "note": "owner-confirmed"
     },
     {
-      "from": "track:that-boy-hi-hat-diabolique",
+      "from": "track:diabolique",
       "to": "person:hybrid",
       "rel": "produced_by",
       "note": "per CWI records; co-produced with Black"
     },
     {
-      "from": "track:that-boy-hi-hat-diabolique",
+      "from": "track:diabolique",
       "to": "person:black-lansky",
       "rel": "co_produced_by",
       "note": "per CWI records"
     },
     {
-      "from": "track:that-boy-hi-hat-diabolique",
+      "from": "track:diabolique",
       "to": "studio:cue-recording",
       "rel": "recorded_at",
       "note": "official position, owner-confirmed"
@@ -5943,31 +6697,31 @@
       "note": "owner-confirmed"
     },
     {
-      "from": "track:that-boy-hi-hat-zooted-zone",
+      "from": "track:zooted-zone",
       "to": "person:hybrid",
       "rel": "mixed_and_mastered_by",
       "note": "owner-confirmed; explicitly NOT a co-production credit"
     },
     {
-      "from": "track:that-boy-hi-hat-zooted-zone",
+      "from": "track:zooted-zone",
       "to": "movement:ptf",
       "rel": "exemplar_of",
       "note": "flagship track per kit.md \u00a73"
     },
     {
-      "from": "track:that-boy-hi-hat-shaka-zulu",
+      "from": "track:shaka-zulu",
       "to": "movement:ptf",
       "rel": "exemplar_of",
       "note": "flagship track per kit.md \u00a73"
     },
     {
-      "from": "track:that-boy-hi-hat-doves-and-diamonds",
+      "from": "track:doves-and-diamonds",
       "to": "movement:ptf",
       "rel": "exemplar_of",
       "note": "flagship track per kit.md \u00a73"
     },
     {
-      "from": "track:that-boy-hi-hat-diabolique",
+      "from": "track:diabolique",
       "to": "release:diabolique-single",
       "rel": "released_on",
       "note": "kit.md \u00a73"
@@ -5997,43 +6751,43 @@
       "note": "kit.md / owner-confirmed"
     },
     {
-      "from": "track:that-boy-hi-hat-shaka-zulu",
+      "from": "track:shaka-zulu",
       "to": "playlist:new-rap-hits",
       "rel": "placed_on",
       "note": "verified #21, 2026-09-15"
     },
     {
-      "from": "track:that-boy-hi-hat-zooted-zone",
+      "from": "track:zooted-zone",
       "to": "playlist:new-rap-hits",
       "rel": "placed_on",
       "note": "verified #30, 2026-09-15"
     },
     {
-      "from": "track:that-boy-hi-hat-doves-and-diamonds",
+      "from": "track:doves-and-diamonds",
       "to": "playlist:new-rap-hits",
       "rel": "placed_on",
       "note": "verified #31, 2026-09-15"
     },
     {
-      "from": "track:that-boy-hi-hat-zooted-zone",
+      "from": "track:zooted-zone",
       "to": "playlist:ai-learning-set",
       "rel": "included_in",
       "note": "AI Learning Set"
     },
     {
-      "from": "track:that-boy-hi-hat-shaka-zulu",
+      "from": "track:shaka-zulu",
       "to": "playlist:ai-learning-set",
       "rel": "included_in",
       "note": "AI Learning Set"
     },
     {
-      "from": "track:that-boy-hi-hat-doves-and-diamonds",
+      "from": "track:doves-and-diamonds",
       "to": "playlist:ai-learning-set",
       "rel": "included_in",
       "note": "AI Learning Set"
     },
     {
-      "from": "track:that-boy-hi-hat-diabolique",
+      "from": "track:diabolique",
       "to": "playlist:ai-learning-set",
       "rel": "included_in",
       "note": "AI Learning Set"
@@ -6045,61 +6799,61 @@
       "note": "AI Learning Set"
     },
     {
-      "from": "track:that-boy-hi-hat-neon-nights-pt-777",
+      "from": "track:neon-nights-pt-777",
       "to": "playlist:ai-learning-set",
       "rel": "included_in",
       "note": "AI Learning Set"
     },
     {
-      "from": "track:that-boy-hi-hat-ultimate",
+      "from": "track:ultimate",
       "to": "playlist:ai-learning-set",
       "rel": "included_in",
       "note": "AI Learning Set"
     },
     {
-      "from": "track:that-boy-hi-hat-painted-lady",
+      "from": "track:painted-lady",
       "to": "playlist:ai-learning-set",
       "rel": "included_in",
       "note": "AI Learning Set"
     },
     {
-      "from": "track:that-boy-hi-hat-warped-and-wicked",
+      "from": "track:warped-and-wicked",
       "to": "playlist:ai-learning-set",
       "rel": "included_in",
       "note": "AI Learning Set"
     },
     {
-      "from": "track:that-boy-hi-hat-golden-diamond",
+      "from": "track:golden-diamond",
       "to": "playlist:ai-learning-set",
       "rel": "included_in",
       "note": "AI Learning Set"
     },
     {
-      "from": "track:that-boy-hi-hat-spirits-n-shadows",
+      "from": "track:spirits-n-shadows",
       "to": "playlist:ai-learning-set",
       "rel": "included_in",
       "note": "AI Learning Set"
     },
     {
-      "from": "track:that-boy-hi-hat-flex-my-flame",
+      "from": "track:flex-my-flame",
       "to": "playlist:ai-learning-set",
       "rel": "included_in",
       "note": "AI Learning Set"
     },
     {
-      "from": "track:that-boy-hi-hat-rainbows-and-roses",
+      "from": "track:rainbows-and-roses",
       "to": "playlist:ai-learning-set",
       "rel": "included_in",
       "note": "AI Learning Set"
     },
     {
-      "from": "track:that-boy-hi-hat-tears-and-scars",
+      "from": "track:tears-and-scars",
       "to": "playlist:ai-learning-set",
       "rel": "included_in",
       "note": "AI Learning Set"
     },
     {
-      "from": "track:that-boy-hi-hat-toxic-element",
+      "from": "track:toxic-elements",
       "to": "playlist:ai-learning-set",
       "rel": "included_in",
       "note": "AI Learning Set"
@@ -6111,7 +6865,7 @@
       "note": "AI Learning Set"
     },
     {
-      "from": "track:that-boy-hi-hat-scorpions-and-sapphires",
+      "from": "track:scorpion-and-sapphires",
       "to": "playlist:ai-learning-set",
       "rel": "included_in",
       "note": "AI Learning Set"
@@ -6129,25 +6883,25 @@
       "note": "AI Learning Set"
     },
     {
-      "from": "track:that-boy-hi-hat-smokin-pain",
+      "from": "track:smokin-pain",
       "to": "playlist:ai-learning-set",
       "rel": "included_in",
       "note": "AI Learning Set"
     },
     {
-      "from": "track:that-boy-hi-hat-phantasm",
+      "from": "track:phantasm",
       "to": "playlist:ai-learning-set",
       "rel": "included_in",
       "note": "AI Learning Set"
     },
     {
-      "from": "track:that-boy-hi-hat-misfits-and-hooligans",
+      "from": "track:misfits-and-hooligans",
       "to": "playlist:ai-learning-set",
       "rel": "included_in",
       "note": "AI Learning Set"
     },
     {
-      "from": "track:that-boy-hi-hat-roses-over-monaco",
+      "from": "track:roses-over-monaco",
       "to": "playlist:ai-learning-set",
       "rel": "included_in",
       "note": "AI Learning Set"
@@ -6160,7 +6914,7 @@
     },
     {
       "from": "media:ig-reel-2026-09-15",
-      "to": "track:that-boy-hi-hat-doves-and-diamonds",
+      "to": "track:doves-and-diamonds",
       "rel": "features_audio",
       "note": "publish record"
     },
@@ -6171,38 +6925,38 @@
       "note": "publish record"
     },
     {
-      "from": "track:that-boy-hi-hat-diabolique",
+      "from": "track:diabolique",
       "to": "artist:tbhh",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:tbhh",
-      "to": "track:that-boy-hi-hat-diabolique",
+      "to": "track:diabolique",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:that-boy-hi-hat-spirits-n-shadows",
+      "from": "track:spirits-n-shadows",
       "to": "artist:tbhh",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:tbhh",
-      "to": "track:that-boy-hi-hat-spirits-n-shadows",
+      "to": "track:spirits-n-shadows",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:that-boy-hi-hat-painted-lady",
+      "from": "track:painted-lady",
       "to": "artist:tbhh",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:tbhh",
-      "to": "track:that-boy-hi-hat-painted-lady",
+      "to": "track:painted-lady",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
@@ -6219,26 +6973,26 @@
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:that-boy-hi-hat-ultimate",
+      "from": "track:ultimate",
       "to": "artist:tbhh",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:tbhh",
-      "to": "track:that-boy-hi-hat-ultimate",
+      "to": "track:ultimate",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:that-boy-hi-hat-toxic-element",
+      "from": "track:toxic-elements",
       "to": "artist:tbhh",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:tbhh",
-      "to": "track:that-boy-hi-hat-toxic-element",
+      "to": "track:toxic-elements",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
@@ -6255,110 +7009,110 @@
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:that-boy-hi-hat-phantasm",
+      "from": "track:phantasm",
       "to": "artist:tbhh",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:tbhh",
-      "to": "track:that-boy-hi-hat-phantasm",
+      "to": "track:phantasm",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:that-boy-hi-hat-golden-diamond",
+      "from": "track:golden-diamond",
       "to": "artist:tbhh",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:tbhh",
-      "to": "track:that-boy-hi-hat-golden-diamond",
+      "to": "track:golden-diamond",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:that-boy-hi-hat-flex-my-flame",
+      "from": "track:flex-my-flame",
       "to": "artist:tbhh",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:tbhh",
-      "to": "track:that-boy-hi-hat-flex-my-flame",
+      "to": "track:flex-my-flame",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:that-boy-hi-hat-broken-hearts-club",
+      "from": "track:broken-hearts-club",
       "to": "artist:tbhh",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:tbhh",
-      "to": "track:that-boy-hi-hat-broken-hearts-club",
+      "to": "track:broken-hearts-club",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:that-boy-hi-hat-zooted-zone",
+      "from": "track:zooted-zone",
       "to": "artist:tbhh",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:tbhh",
-      "to": "track:that-boy-hi-hat-zooted-zone",
+      "to": "track:zooted-zone",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:that-boy-hi-hat-neon-nights-pt-777",
+      "from": "track:neon-nights-pt-777",
       "to": "artist:tbhh",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:tbhh",
-      "to": "track:that-boy-hi-hat-neon-nights-pt-777",
+      "to": "track:neon-nights-pt-777",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:that-boy-hi-hat-doves-and-diamonds",
+      "from": "track:doves-and-diamonds",
       "to": "artist:tbhh",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:tbhh",
-      "to": "track:that-boy-hi-hat-doves-and-diamonds",
+      "to": "track:doves-and-diamonds",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:that-boy-hi-hat-shaka-zulu",
+      "from": "track:shaka-zulu",
       "to": "artist:tbhh",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:tbhh",
-      "to": "track:that-boy-hi-hat-shaka-zulu",
+      "to": "track:shaka-zulu",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:that-boy-hi-hat-warped-and-wicked",
+      "from": "track:warped-and-wicked",
       "to": "artist:tbhh",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:tbhh",
-      "to": "track:that-boy-hi-hat-warped-and-wicked",
+      "to": "track:warped-and-wicked",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
@@ -6375,14 +7129,14 @@
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:that-boy-hi-hat-rainbows-and-roses",
+      "from": "track:rainbows-and-roses",
       "to": "artist:tbhh",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:tbhh",
-      "to": "track:that-boy-hi-hat-rainbows-and-roses",
+      "to": "track:rainbows-and-roses",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
@@ -6423,62 +7177,62 @@
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:that-boy-hi-hat-scorpions-and-sapphires",
+      "from": "track:scorpion-and-sapphires",
       "to": "artist:tbhh",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:tbhh",
-      "to": "track:that-boy-hi-hat-scorpions-and-sapphires",
+      "to": "track:scorpion-and-sapphires",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:that-boy-hi-hat-tears-and-scars",
+      "from": "track:tears-and-scars",
       "to": "artist:tbhh",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:tbhh",
-      "to": "track:that-boy-hi-hat-tears-and-scars",
+      "to": "track:tears-and-scars",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:that-boy-hi-hat-smokin-pain",
+      "from": "track:smokin-pain",
       "to": "artist:tbhh",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:tbhh",
-      "to": "track:that-boy-hi-hat-smokin-pain",
+      "to": "track:smokin-pain",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:that-boy-hi-hat-misfits-and-hooligans",
+      "from": "track:misfits-and-hooligans",
       "to": "artist:tbhh",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:tbhh",
-      "to": "track:that-boy-hi-hat-misfits-and-hooligans",
+      "to": "track:misfits-and-hooligans",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:that-boy-hi-hat-roses-over-monaco",
+      "from": "track:roses-over-monaco",
       "to": "artist:tbhh",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:tbhh",
-      "to": "track:that-boy-hi-hat-roses-over-monaco",
+      "to": "track:roses-over-monaco",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
@@ -6627,50 +7381,50 @@
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:king-akeem-star",
+      "from": "track:star-king-akeem",
       "to": "artist:king-akeem",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:king-akeem",
-      "to": "track:king-akeem-star",
+      "to": "track:star-king-akeem",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:king-akeem-super-solid",
+      "from": "track:super-solid-king-ahkeem",
       "to": "artist:king-akeem",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:king-akeem",
-      "to": "track:king-akeem-super-solid",
+      "to": "track:super-solid-king-ahkeem",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:king-akeem-embiid",
+      "from": "track:embiid-king-ahkeem",
       "to": "artist:king-akeem",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:king-akeem",
-      "to": "track:king-akeem-embiid",
+      "to": "track:embiid-king-ahkeem",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:king-akeem-bluefaces-3-0",
+      "from": "track:bluefaces-30-king-ahkeem",
       "to": "artist:king-akeem",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:king-akeem",
-      "to": "track:king-akeem-bluefaces-3-0",
+      "to": "track:bluefaces-30-king-ahkeem",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
@@ -6687,14 +7441,14 @@
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:king-akeem-element",
+      "from": "track:element-king-ahkeem",
       "to": "artist:king-akeem",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:king-akeem",
-      "to": "track:king-akeem-element",
+      "to": "track:element-king-ahkeem",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
@@ -6711,86 +7465,74 @@
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:183-wildboi-stunt",
+      "from": "track:stunt-183-wilboi",
       "to": "artist:183-wildboi",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:183-wildboi",
-      "to": "track:183-wildboi-stunt",
+      "to": "track:stunt-183-wilboi",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:183-wildboi-full-moon",
+      "from": "track:full-moon-183-wilboi",
       "to": "artist:183-wildboi",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:183-wildboi",
-      "to": "track:183-wildboi-full-moon",
+      "to": "track:full-moon-183-wilboi",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:dre50-pix",
+      "from": "track:pix-dre50",
       "to": "artist:dre50",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:dre50",
-      "to": "track:dre50-pix",
+      "to": "track:pix-dre50",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:fleekz-2k23-corner",
+      "from": "track:2k23-corner-fleekz",
       "to": "artist:fleekz",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:fleekz",
-      "to": "track:fleekz-2k23-corner",
+      "to": "track:2k23-corner-fleekz",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:fleekz-2k23-corners",
-      "to": "artist:fleekz",
-      "rel": "performed_by",
-      "note": "catalog-index.json: parties[].roles includes artist"
-    },
-    {
-      "from": "artist:fleekz",
-      "to": "track:fleekz-2k23-corners",
-      "rel": "has_track",
-      "note": "catalog-index.json track listing"
-    },
-    {
-      "from": "track:gregporn-on-edge",
+      "from": "track:on-edge-greg-porn",
       "to": "artist:gregporn",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:gregporn",
-      "to": "track:gregporn-on-edge",
+      "to": "track:on-edge-greg-porn",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
     {
-      "from": "track:gregporn-pay-yourself",
+      "from": "track:pay-yourself-greg-porn",
       "to": "artist:gregporn",
       "rel": "performed_by",
       "note": "catalog-index.json: parties[].roles includes artist"
     },
     {
       "from": "artist:gregporn",
-      "to": "track:gregporn-pay-yourself",
+      "to": "track:pay-yourself-greg-porn",
       "rel": "has_track",
       "note": "catalog-index.json track listing"
     },
@@ -6814,12 +7556,12 @@
     },
     {
       "from": "release:dre50-vai-vem-vem",
-      "to": "track:dre50-vai-vem-vem",
+      "to": "track:vai-vem-vem-dre50",
       "rel": "has_track",
       "note": "1-track single"
     },
     {
-      "from": "track:dre50-vai-vem-vem",
+      "from": "track:vai-vem-vem-dre50",
       "to": "artist:dre50",
       "rel": "performed_by",
       "note": "written & produced by Dre50"
@@ -6843,31 +7585,31 @@
       "note": ""
     },
     {
-      "from": "track:dre50-vai-vem-vem",
+      "from": "track:vai-vem-vem-dre50",
       "to": "media:stream-spotify-vvv",
       "rel": "streaming_on",
       "note": ""
     },
     {
-      "from": "track:dre50-vai-vem-vem",
+      "from": "track:vai-vem-vem-dre50",
       "to": "media:stream-apple-vvv",
       "rel": "streaming_on",
       "note": ""
     },
     {
-      "from": "track:dre50-vai-vem-vem",
+      "from": "track:vai-vem-vem-dre50",
       "to": "media:stream-deezer-vvv",
       "rel": "streaming_on",
       "note": ""
     },
     {
-      "from": "track:dre50-vai-vem-vem",
+      "from": "track:vai-vem-vem-dre50",
       "to": "media:stream-amazon-vvv",
       "rel": "streaming_on",
       "note": ""
     },
     {
-      "from": "track:dre50-vai-vem-vem",
+      "from": "track:vai-vem-vem-dre50",
       "to": "media:stream-tidal-vvv",
       "rel": "streaming_on",
       "note": ""
@@ -6879,104 +7621,104 @@
       "note": "10-track album, Spotify embed live read 2026-10-02"
     },
     {
-      "from": "track:that-boy-hi-hat-doves-and-diamonds",
+      "from": "track:doves-and-diamonds",
       "to": "release:ptf-the-logo-effect",
       "rel": "included_in",
       "note": "verified album track listing 2026-10-02 (3:01)"
     },
     {
-      "from": "track:that-boy-hi-hat-shaka-zulu",
+      "from": "track:shaka-zulu",
       "to": "release:ptf-the-logo-effect",
       "rel": "included_in",
       "note": "verified album track listing 2026-10-02 (4:11)"
     },
     {
-      "from": "track:that-boy-hi-hat-spirits-n-shadows",
+      "from": "track:spirits-n-shadows",
       "to": "release:ptf-the-logo-effect",
       "rel": "included_in",
       "note": "verified album track listing 2026-10-02 (3:18)"
     },
     {
-      "from": "track:that-boy-hi-hat-flex-my-flame",
+      "from": "track:flex-my-flame",
       "to": "release:ptf-the-logo-effect",
       "rel": "included_in",
       "note": "verified album track listing 2026-10-02 (3:03)"
     },
     {
-      "from": "track:that-boy-hi-hat-rainbows-and-roses",
+      "from": "track:rainbows-and-roses",
       "to": "release:ptf-the-logo-effect",
       "rel": "included_in",
       "note": "verified album track listing 2026-10-02 (4:00)"
     },
     {
-      "from": "track:that-boy-hi-hat-tears-and-scars",
+      "from": "track:tears-and-scars",
       "to": "release:ptf-the-logo-effect",
       "rel": "included_in",
       "note": "verified album track listing 2026-10-02 (4:40)"
     },
     {
-      "from": "track:that-boy-hi-hat-toxic-element",
+      "from": "track:toxic-elements",
       "to": "release:ptf-the-logo-effect",
       "rel": "included_in",
       "note": "verified album track listing 2026-10-02 (3:23)"
     },
     {
-      "from": "track:that-boy-hi-hat-ultimate",
+      "from": "track:ultimate",
       "to": "release:ptf-the-logo-effect",
       "rel": "included_in",
       "note": "verified album track listing 2026-10-02 (3:16)"
     },
     {
-      "from": "track:that-boy-hi-hat-warped-and-wicked",
+      "from": "track:warped-and-wicked",
       "to": "release:ptf-the-logo-effect",
       "rel": "included_in",
       "note": "verified album track listing 2026-10-02 (4:08)"
     },
     {
-      "from": "track:that-boy-hi-hat-golden-diamond",
+      "from": "track:golden-diamond",
       "to": "release:ptf-the-logo-effect",
       "rel": "included_in",
       "note": "verified album track listing 2026-10-02 (4:02)"
     },
     {
-      "from": "track:that-boy-hi-hat-zooted-zone",
+      "from": "track:zooted-zone",
       "to": "person:kokurcho",
       "rel": "produced_by",
       "note": "Zooted Zone produced by Kokurcho \u2014 owner-confirmed 2026-10-02; Spotify credits panel: 'Kokurcho Beats \u2014 Composer'"
     },
     {
-      "from": "track:that-boy-hi-hat-zooted-zone",
+      "from": "track:zooted-zone",
       "to": "person:black-lansky",
       "rel": "co_produced_by",
       "note": "Zooted Zone co-produced by Black Lansky \u2014 owner-confirmed 2026-10-02; Spotify credits panel: 'Black Lansky \u2014 Lyricist/Composer'"
     },
     {
-      "from": "track:that-boy-hi-hat-flex-my-flame",
+      "from": "track:flex-my-flame",
       "to": "person:kokurcho",
       "rel": "produced_by",
       "note": "Flex My Flame produced by Kokurcho \u2014 owner-confirmed 2026-10-02; Spotify credits panel: 'Kokurcho Beats \u2014 Composer'"
     },
     {
-      "from": "track:that-boy-hi-hat-flex-my-flame",
+      "from": "track:flex-my-flame",
       "to": "person:black-lansky",
       "rel": "co_produced_by",
       "note": "Flex My Flame co-produced by Black Lansky \u2014 owner-confirmed 2026-10-02; Spotify credits panel: 'Black Lansky \u2014 Composer'"
     },
     {
-      "from": "track:that-boy-hi-hat-doves-and-diamonds",
+      "from": "track:doves-and-diamonds",
       "to": "person:kokurcho",
       "rel": "produced_by",
       "note": "Doves & Diamonds produced by Kokurcho \u2014 owner-confirmed 2026-10-02; Spotify credits panel: 'Kokurcho \u2014 Executive Producer'"
     },
     {
-      "from": "track:that-boy-hi-hat-doves-and-diamonds",
+      "from": "track:doves-and-diamonds",
       "to": "person:black-lansky",
       "rel": "co_produced_by",
       "note": "Doves & Diamonds co-produced by Black Lansky \u2014 owner-confirmed 2026-10-02; Spotify credits panel: 'Black Lansky \u2014 Executive Producer'"
     },
     {
       "from": "event:diabolique-spotlight-vote-2026-10",
-      "to": "track:that-boy-hi-hat-diabolique",
+      "to": "track:diabolique",
       "rel": "associated",
       "note": "Vote target: Diabolique in DistroKid Playlist Spotlight"
     },
@@ -7037,19 +7779,19 @@
     {
       "from": "service:placement-query-db",
       "rel": "supports",
-      "to": "track:that-boy-hi-hat-diabolique",
+      "to": "track:diabolique",
       "note": "exemplar answered track"
     },
     {
       "from": "service:placement-query-db",
       "rel": "supports",
-      "to": "track:that-boy-hi-hat-zooted-zone",
+      "to": "track:zooted-zone",
       "note": "exemplar answered track"
     },
     {
       "from": "service:placement-query-db",
       "rel": "supports",
-      "to": "track:that-boy-hi-hat-doves-and-diamonds",
+      "to": "track:doves-and-diamonds",
       "note": "exemplar answered track"
     },
     {
@@ -7083,12 +7825,12 @@
       "to": "genre:cyberpunk-rap"
     },
     {
-      "from": "track:that-boy-hi-hat-diabolique",
+      "from": "track:diabolique",
       "rel": "exemplar_of",
       "to": "movement:ptf"
     },
     {
-      "from": "track:that-boy-hi-hat-diabolique",
+      "from": "track:diabolique",
       "rel": "exemplar_of",
       "to": "genre:cyberpunk-rap"
     },
@@ -7479,25 +8221,13 @@
       "note": "nlp-description-derived 2026-10-07; e.g. track \"warped-and-wicked\" NLP describes this lane. Lane descriptor, not artist comparison."
     },
     {
-      "from": "track:gregporn-unholy-hunter",
+      "from": "track:unholy-hunter-greg-porn",
       "to": "artist:gregporn",
       "type": "performed_by"
     },
     {
       "from": "track:diabolique",
-      "to": "artist:tbhh",
-      "rel": "performed_by",
-      "note": "catalog record: performed by That Boy Hi Hat"
-    },
-    {
-      "from": "track:diabolique",
       "to": "genre:alternative-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:diabolique",
-      "to": "genre:alt-rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
     },
@@ -7512,12 +8242,6 @@
       "to": "genre:rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:zooted-zone",
-      "to": "artist:tbhh",
-      "rel": "performed_by",
-      "note": "catalog record: performed by That Boy Hi Hat"
     },
     {
       "from": "track:zooted-zone",
@@ -7551,19 +8275,7 @@
     },
     {
       "from": "track:doves-and-diamonds",
-      "to": "artist:tbhh",
-      "rel": "performed_by",
-      "note": "catalog record: performed by That Boy Hi Hat"
-    },
-    {
-      "from": "track:doves-and-diamonds",
       "to": "genre:alternative-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:doves-and-diamonds",
-      "to": "genre:alt-rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
     },
@@ -7587,19 +8299,7 @@
     },
     {
       "from": "track:shaka-zulu",
-      "to": "artist:tbhh",
-      "rel": "performed_by",
-      "note": "catalog record: performed by That Boy Hi Hat"
-    },
-    {
-      "from": "track:shaka-zulu",
       "to": "genre:alternative-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:shaka-zulu",
-      "to": "genre:alt-rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
     },
@@ -7653,12 +8353,6 @@
     },
     {
       "from": "track:flamerz",
-      "to": "genre:alt-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:flamerz",
       "to": "genre:post-trap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
@@ -7683,19 +8377,7 @@
     },
     {
       "from": "track:neon-nights-pt-777",
-      "to": "artist:tbhh",
-      "rel": "performed_by",
-      "note": "catalog record: performed by That Boy Hi Hat"
-    },
-    {
-      "from": "track:neon-nights-pt-777",
       "to": "genre:alternative-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:neon-nights-pt-777",
-      "to": "genre:alt-rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
     },
@@ -7713,25 +8395,13 @@
     },
     {
       "from": "track:neon-nights-pt-777",
-      "to": "genre:cyberpunk",
+      "to": "genre:cyberpunk-rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:ultimate",
-      "to": "artist:tbhh",
-      "rel": "performed_by",
-      "note": "catalog record: performed by That Boy Hi Hat"
     },
     {
       "from": "track:ultimate",
       "to": "genre:alternative-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:ultimate",
-      "to": "genre:alt-rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
     },
@@ -7755,19 +8425,7 @@
     },
     {
       "from": "track:painted-lady",
-      "to": "artist:tbhh",
-      "rel": "performed_by",
-      "note": "catalog record: performed by That Boy Hi Hat"
-    },
-    {
-      "from": "track:painted-lady",
       "to": "genre:alternative-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:painted-lady",
-      "to": "genre:alt-rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
     },
@@ -7785,19 +8443,7 @@
     },
     {
       "from": "track:warped-and-wicked",
-      "to": "artist:tbhh",
-      "rel": "performed_by",
-      "note": "catalog record: performed by That Boy Hi Hat"
-    },
-    {
-      "from": "track:warped-and-wicked",
       "to": "genre:alternative-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:warped-and-wicked",
-      "to": "genre:alt-rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
     },
@@ -7821,19 +8467,7 @@
     },
     {
       "from": "track:golden-diamond",
-      "to": "artist:tbhh",
-      "rel": "performed_by",
-      "note": "catalog record: performed by That Boy Hi Hat"
-    },
-    {
-      "from": "track:golden-diamond",
       "to": "genre:alternative-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:golden-diamond",
-      "to": "genre:alt-rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
     },
@@ -7848,12 +8482,6 @@
       "to": "genre:rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:spirits-n-shadows",
-      "to": "artist:tbhh",
-      "rel": "performed_by",
-      "note": "catalog record: performed by That Boy Hi Hat"
     },
     {
       "from": "track:spirits-n-shadows",
@@ -7875,12 +8503,6 @@
     },
     {
       "from": "track:spirits-n-shadows",
-      "to": "genre:alt-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:spirits-n-shadows",
       "to": "genre:post-trap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
@@ -7899,19 +8521,7 @@
     },
     {
       "from": "track:flex-my-flame",
-      "to": "artist:tbhh",
-      "rel": "performed_by",
-      "note": "catalog record: performed by That Boy Hi Hat"
-    },
-    {
-      "from": "track:flex-my-flame",
       "to": "genre:alternative-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:flex-my-flame",
-      "to": "genre:alt-rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
     },
@@ -7935,19 +8545,7 @@
     },
     {
       "from": "track:rainbows-and-roses",
-      "to": "artist:tbhh",
-      "rel": "performed_by",
-      "note": "catalog record: performed by That Boy Hi Hat"
-    },
-    {
-      "from": "track:rainbows-and-roses",
       "to": "genre:alternative-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:rainbows-and-roses",
-      "to": "genre:alt-rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
     },
@@ -7971,19 +8569,7 @@
     },
     {
       "from": "track:tears-and-scars",
-      "to": "artist:tbhh",
-      "rel": "performed_by",
-      "note": "catalog record: performed by That Boy Hi Hat"
-    },
-    {
-      "from": "track:tears-and-scars",
       "to": "genre:alternative-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:tears-and-scars",
-      "to": "genre:alt-rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
     },
@@ -8001,19 +8587,7 @@
     },
     {
       "from": "track:toxic-elements",
-      "to": "artist:tbhh",
-      "rel": "performed_by",
-      "note": "catalog record: performed by That Boy Hi Hat"
-    },
-    {
-      "from": "track:toxic-elements",
       "to": "genre:alternative-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:toxic-elements",
-      "to": "genre:alt-rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
     },
@@ -8043,19 +8617,7 @@
     },
     {
       "from": "track:scorpion-and-sapphires",
-      "to": "artist:tbhh",
-      "rel": "performed_by",
-      "note": "catalog record: performed by That Boy Hi Hat"
-    },
-    {
-      "from": "track:scorpion-and-sapphires",
       "to": "genre:alternative-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:scorpion-and-sapphires",
-      "to": "genre:alt-rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
     },
@@ -8080,12 +8642,6 @@
     {
       "from": "track:7th-angel",
       "to": "genre:alternative-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:7th-angel",
-      "to": "genre:alt-rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
     },
@@ -8133,12 +8689,6 @@
     },
     {
       "from": "track:place-i-go-to-dream",
-      "to": "genre:alt-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:place-i-go-to-dream",
       "to": "genre:post-trap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
@@ -8157,19 +8707,7 @@
     },
     {
       "from": "track:smokin-pain",
-      "to": "artist:tbhh",
-      "rel": "performed_by",
-      "note": "catalog record: performed by That Boy Hi Hat"
-    },
-    {
-      "from": "track:smokin-pain",
       "to": "genre:alternative-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:smokin-pain",
-      "to": "genre:alt-rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
     },
@@ -8193,12 +8731,6 @@
     },
     {
       "from": "track:phantasm",
-      "to": "artist:tbhh",
-      "rel": "performed_by",
-      "note": "catalog record: performed by That Boy Hi Hat"
-    },
-    {
-      "from": "track:phantasm",
       "to": "person:jeck-da-general",
       "rel": "produced_by",
       "note": "Qobuz/Deezer: Jeck da General (Composer), Black Lansky (Composer, Lyricist)"
@@ -8217,12 +8749,6 @@
     },
     {
       "from": "track:phantasm",
-      "to": "genre:alt-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:phantasm",
       "to": "genre:post-trap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
@@ -8235,25 +8761,13 @@
     },
     {
       "from": "track:phantasm",
-      "to": "genre:cyberpunk",
+      "to": "genre:cyberpunk-rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:misfits-and-hooligans",
-      "to": "artist:tbhh",
-      "rel": "performed_by",
-      "note": "catalog record: performed by That Boy Hi Hat"
     },
     {
       "from": "track:misfits-and-hooligans",
       "to": "genre:alternative-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:misfits-and-hooligans",
-      "to": "genre:alt-rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
     },
@@ -8277,12 +8791,6 @@
     },
     {
       "from": "track:roses-over-monaco",
-      "to": "artist:tbhh",
-      "rel": "performed_by",
-      "note": "catalog record: performed by That Boy Hi Hat"
-    },
-    {
-      "from": "track:roses-over-monaco",
       "to": "person:jeck-da-general",
       "rel": "produced_by",
       "note": "Qobuz/Deezer: Jeck da General (Composer), Black Lansky (Composer, Lyricist)"
@@ -8301,12 +8809,6 @@
     },
     {
       "from": "track:roses-over-monaco",
-      "to": "genre:alt-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:roses-over-monaco",
       "to": "genre:post-trap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
@@ -8316,12 +8818,6 @@
       "to": "genre:rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:broken-hearts-club",
-      "to": "artist:tbhh",
-      "rel": "performed_by",
-      "note": "catalog record: performed by That Boy Hi Hat"
     },
     {
       "from": "track:broken-hearts-club",
@@ -8343,12 +8839,6 @@
     },
     {
       "from": "track:broken-hearts-club",
-      "to": "genre:alt-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:broken-hearts-club",
       "to": "genre:post-trap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
@@ -8358,12 +8848,6 @@
       "to": "genre:rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:star-king-akeem",
-      "to": "artist:king-ahkeem",
-      "rel": "performed_by",
-      "note": "catalog record: performed by King Ahkeem"
     },
     {
       "from": "track:star-king-akeem",
@@ -8385,12 +8869,6 @@
     },
     {
       "from": "track:full-moon-183-wilboi",
-      "to": "artist:183-wildboi",
-      "rel": "performed_by",
-      "note": "catalog record: performed by 183 Wildboi"
-    },
-    {
-      "from": "track:full-moon-183-wilboi",
       "to": "person:black-lansky",
       "rel": "co_produced_by",
       "note": "memory/people/183-wilboi.md: Black co-produced Full Moon"
@@ -8400,18 +8878,6 @@
       "to": "genre:rap-rock",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:full-moon-183-wilboi",
-      "to": "genre:rock-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:stunt-183-wilboi",
-      "to": "artist:183-wildboi",
-      "rel": "performed_by",
-      "note": "catalog record: performed by 183 Wildboi"
     },
     {
       "from": "track:stunt-183-wilboi",
@@ -8427,21 +8893,9 @@
     },
     {
       "from": "track:stunt-183-wilboi",
-      "to": "genre:rock-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:stunt-183-wilboi",
       "to": "release:stunt",
       "rel": "included_in",
       "note": "album: Stunt"
-    },
-    {
-      "from": "track:vai-vem-vem-dre50",
-      "to": "artist:dre50",
-      "rel": "performed_by",
-      "note": "catalog record: performed by Dre50"
     },
     {
       "from": "track:vai-vem-vem-dre50",
@@ -8469,13 +8923,7 @@
     },
     {
       "from": "track:pay-yourself-greg-porn",
-      "to": "artist:greg-porn",
-      "rel": "performed_by",
-      "note": "catalog record: performed by Greg Porn"
-    },
-    {
-      "from": "track:pay-yourself-greg-porn",
-      "to": "genre:cyberpunk",
+      "to": "genre:cyberpunk-rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
     },
@@ -8487,13 +8935,7 @@
     },
     {
       "from": "track:on-edge-greg-porn",
-      "to": "artist:greg-porn",
-      "rel": "performed_by",
-      "note": "catalog record: performed by Greg Porn"
-    },
-    {
-      "from": "track:on-edge-greg-porn",
-      "to": "genre:cyberpunk",
+      "to": "genre:cyberpunk-rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
     },
@@ -8505,13 +8947,13 @@
     },
     {
       "from": "track:unholy-hunter-greg-porn",
-      "to": "artist:greg-porn",
+      "to": "artist:gregporn",
       "rel": "performed_by",
       "note": "catalog record: performed by Greg Porn"
     },
     {
       "from": "track:unholy-hunter-greg-porn",
-      "to": "genre:cyberpunk",
+      "to": "genre:cyberpunk-rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
     },
@@ -8520,12 +8962,6 @@
       "to": "genre:dark-luxury",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:2k23-corner-fleekz",
-      "to": "artist:artist:fleekz",
-      "rel": "performed_by",
-      "note": "catalog record: performed by Fleekz"
     },
     {
       "from": "track:2k23-corner-fleekz",
@@ -8565,12 +9001,6 @@
     },
     {
       "from": "track:that-boy-hi-hat-cyberpunk-2027",
-      "to": "genre:alt-rap",
-      "rel": "exemplar_of",
-      "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:that-boy-hi-hat-cyberpunk-2027",
       "to": "genre:post-trap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
@@ -8580,12 +9010,6 @@
       "to": "genre:rap",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:pix-dre50",
-      "to": "artist:dre50",
-      "rel": "performed_by",
-      "note": "catalog record: performed by Dre50"
     },
     {
       "from": "track:pix-dre50",
@@ -8613,12 +9037,6 @@
     },
     {
       "from": "track:bluefaces-30-king-ahkeem",
-      "to": "artist:king-ahkeem",
-      "rel": "performed_by",
-      "note": "catalog record: performed by King Ahkeem"
-    },
-    {
-      "from": "track:bluefaces-30-king-ahkeem",
       "to": "person:black-lansky",
       "rel": "co_produced_by",
       "note": "catalog record"
@@ -8634,12 +9052,6 @@
       "to": "genre:hip-hop",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:element-king-ahkeem",
-      "to": "artist:king-ahkeem",
-      "rel": "performed_by",
-      "note": "catalog record: performed by King Ahkeem"
     },
     {
       "from": "track:element-king-ahkeem",
@@ -8661,12 +9073,6 @@
     },
     {
       "from": "track:embiid-king-ahkeem",
-      "to": "artist:king-ahkeem",
-      "rel": "performed_by",
-      "note": "catalog record: performed by King Ahkeem"
-    },
-    {
-      "from": "track:embiid-king-ahkeem",
       "to": "person:black-lansky",
       "rel": "co_produced_by",
       "note": "catalog record"
@@ -8682,12 +9088,6 @@
       "to": "genre:hip-hop",
       "rel": "exemplar_of",
       "note": "catalog genre tagging"
-    },
-    {
-      "from": "track:super-solid-king-ahkeem",
-      "to": "artist:king-ahkeem",
-      "rel": "performed_by",
-      "note": "catalog record: performed by King Ahkeem"
     },
     {
       "from": "track:super-solid-king-ahkeem",
@@ -8865,7 +9265,7 @@
       "to": "signature:tbhh-flow-architecture"
     },
     {
-      "from": "artist:that-boy-hi-hat",
+      "from": "artist:tbhh",
       "rel": "owns_signature",
       "to": "signature:tbhh-flow-architecture"
     },
@@ -9051,6 +9451,426 @@
       "to": "track:ultimate",
       "rel": "concerns",
       "note": "Promise subject: 'Ultimate' add promised 2026-09-14, playlist not located"
+    },
+    {
+      "from": "org:cwi",
+      "to": "country:australia",
+      "rel": "has_regional_catalog",
+      "note": "Regional catalog surface: 37 tracks, catalog file in node attrs."
+    },
+    {
+      "from": "org:cwi",
+      "to": "country:united-kingdom",
+      "rel": "has_regional_catalog",
+      "note": "Regional catalog surface: 37 tracks, catalog file in node attrs."
+    },
+    {
+      "from": "org:cwi",
+      "to": "country:italy",
+      "rel": "has_regional_catalog",
+      "note": "Regional catalog surface: 37 tracks, catalog file in node attrs."
+    },
+    {
+      "from": "org:cwi",
+      "to": "country:germany",
+      "rel": "has_regional_catalog",
+      "note": "Regional catalog surface: 37 tracks, catalog file in node attrs."
+    },
+    {
+      "from": "org:cwi",
+      "to": "country:spain",
+      "rel": "has_regional_catalog",
+      "note": "Regional catalog surface: 37 tracks, catalog file in node attrs."
+    },
+    {
+      "from": "org:cwi",
+      "to": "country:france",
+      "rel": "has_regional_catalog",
+      "note": "Regional catalog surface: 37 tracks, catalog file in node attrs."
+    },
+    {
+      "from": "org:cwi",
+      "to": "country:ireland",
+      "rel": "has_regional_catalog",
+      "note": "Regional catalog surface: 37 tracks, catalog file in node attrs."
+    },
+    {
+      "from": "org:cwi",
+      "to": "country:netherlands",
+      "rel": "has_regional_catalog",
+      "note": "Regional catalog surface: 37 tracks, catalog file in node attrs."
+    },
+    {
+      "from": "org:cwi",
+      "to": "country:thailand",
+      "rel": "has_regional_catalog",
+      "note": "Regional catalog surface: 37 tracks, catalog file in node attrs."
+    },
+    {
+      "from": "org:cwi",
+      "to": "country:brasil",
+      "rel": "has_regional_catalog",
+      "note": "Regional catalog surface: 37 tracks, catalog file in node attrs."
+    },
+    {
+      "from": "person:kokurcho",
+      "to": "country:russia",
+      "rel": "based_in",
+      "note": "Base Zelenograd, Moscow (SoundClick, opened directly); birthplace Kovrov per owner-supplied Genius screenshot (page unopened)."
+    },
+    {
+      "from": "country:brasil",
+      "to": "artist:dre50",
+      "rel": "scene_of",
+      "note": "Dre50's lane: afrobeats + Jamaican + Brazilian (genre law 2026-10-06)."
+    },
+    {
+      "from": "org:cwi",
+      "to": "sync:late-night-drive-neon",
+      "rel": "defines_category",
+      "note": "Sync-brief category defined by Cumulative Web Inc; fits judged from graph attrs, not from Spark's unverified mapping."
+    },
+    {
+      "from": "sync:late-night-drive-neon",
+      "to": "track:neon-nights-pt-777",
+      "rel": "fits",
+      "note": "Graph-attr evidence: late-night, nocturnal, futuristic; cyberpunk genre. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:late-night-drive-neon",
+      "to": "track:diabolique",
+      "rel": "fits",
+      "note": "Graph-attr evidence: late-night, nocturnal, midnight imagery. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:late-night-drive-neon",
+      "to": "track:painted-lady",
+      "rel": "fits",
+      "note": "Graph-attr evidence: late-night, nocturnal, seductive. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:late-night-drive-neon",
+      "to": "track:place-i-go-to-dream",
+      "rel": "fits",
+      "note": "Graph-attr evidence: nocturnal, dreamy, mellow. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "org:cwi",
+      "to": "sync:trap-gym-hype",
+      "rel": "defines_category",
+      "note": "Sync-brief category defined by Cumulative Web Inc; fits judged from graph attrs, not from Spark's unverified mapping."
+    },
+    {
+      "from": "sync:trap-gym-hype",
+      "to": "track:zooted-zone",
+      "rel": "fits",
+      "note": "Graph-attr evidence: hype, aggressive, energy 4, trap genre. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:trap-gym-hype",
+      "to": "track:shaka-zulu",
+      "rel": "fits",
+      "note": "Graph-attr evidence: aggressive, anthemic, energy 4. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:trap-gym-hype",
+      "to": "track:bluefaces-30-king-ahkeem",
+      "rel": "fits",
+      "note": "Graph-attr evidence: hype, aggressive, trap genre. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:trap-gym-hype",
+      "to": "track:star-king-akeem",
+      "rel": "fits",
+      "note": "Graph-attr evidence: hype, anthemic, triumphant, trap genre. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "org:cwi",
+      "to": "sync:underground-club-stomp",
+      "rel": "defines_category",
+      "note": "Sync-brief category defined by Cumulative Web Inc; fits judged from graph attrs, not from Spark's unverified mapping."
+    },
+    {
+      "from": "sync:underground-club-stomp",
+      "to": "track:warped-and-wicked",
+      "rel": "fits",
+      "note": "Graph-attr evidence: underground, aggressive, energy 4. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:underground-club-stomp",
+      "to": "track:toxic-elements",
+      "rel": "fits",
+      "note": "Graph-attr evidence: underground, raw, dark. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:underground-club-stomp",
+      "to": "track:2k23-corner-fleekz",
+      "rel": "fits",
+      "note": "Graph-attr evidence: underground, gritty, raw. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:underground-club-stomp",
+      "to": "track:spirits-n-shadows",
+      "rel": "fits",
+      "note": "Graph-attr evidence: underground, aggressive, urgent, energetic. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "org:cwi",
+      "to": "sync:luxury-villain-theme",
+      "rel": "defines_category",
+      "note": "Sync-brief category defined by Cumulative Web Inc; fits judged from graph attrs, not from Spark's unverified mapping."
+    },
+    {
+      "from": "sync:luxury-villain-theme",
+      "to": "track:doves-and-diamonds",
+      "rel": "fits",
+      "note": "Graph-attr evidence: luxury mood; luxury vs street contrast. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:luxury-villain-theme",
+      "to": "track:golden-diamond",
+      "rel": "fits",
+      "note": "Graph-attr evidence: polished, triumphant; diamond title. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:luxury-villain-theme",
+      "to": "track:scorpion-and-sapphires",
+      "rel": "fits",
+      "note": "Graph-attr evidence: seductive, menacing, dark; sapphires. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:luxury-villain-theme",
+      "to": "track:flex-my-flame",
+      "rel": "fits",
+      "note": "Graph-attr evidence: confident, triumphant, polished. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "org:cwi",
+      "to": "sync:afro-dancehall-party-starter",
+      "rel": "defines_category",
+      "note": "Sync-brief category defined by Cumulative Web Inc; fits judged from graph attrs, not from Spark's unverified mapping."
+    },
+    {
+      "from": "sync:afro-dancehall-party-starter",
+      "to": "track:vai-vem-vem-dre50",
+      "rel": "fits",
+      "note": "Graph-attr evidence: afrobeats, dancehall, playful, warm. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:afro-dancehall-party-starter",
+      "to": "track:pix-dre50",
+      "rel": "fits",
+      "note": "Graph-attr evidence: afrobeats, dancehall, playful. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "org:cwi",
+      "to": "sync:street-chase-tension",
+      "rel": "defines_category",
+      "note": "Sync-brief category defined by Cumulative Web Inc; fits judged from graph attrs, not from Spark's unverified mapping."
+    },
+    {
+      "from": "sync:street-chase-tension",
+      "to": "track:zooted-zone",
+      "rel": "fits",
+      "note": "Graph-attr evidence: street imagery, trap house. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:street-chase-tension",
+      "to": "track:shaka-zulu",
+      "rel": "fits",
+      "note": "Graph-attr evidence: dangerous, menacing, defiant. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:street-chase-tension",
+      "to": "track:flamerz",
+      "rel": "fits",
+      "note": "Graph-attr evidence: dangerous, urgent, aggressive. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:street-chase-tension",
+      "to": "track:warped-and-wicked",
+      "rel": "fits",
+      "note": "Graph-attr evidence: dangerous, dystopian, aggressive. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "org:cwi",
+      "to": "sync:cyberpunk-cityscape",
+      "rel": "defines_category",
+      "note": "Sync-brief category defined by Cumulative Web Inc; fits judged from graph attrs, not from Spark's unverified mapping."
+    },
+    {
+      "from": "sync:cyberpunk-cityscape",
+      "to": "track:cyberpunk-2027",
+      "rel": "fits",
+      "note": "Graph-attr evidence: canonical track; title; ISRC-verified. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:cyberpunk-cityscape",
+      "to": "track:neon-nights-pt-777",
+      "rel": "fits",
+      "note": "Graph-attr evidence: cyberpunk genre, futuristic. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:cyberpunk-cityscape",
+      "to": "track:phantasm",
+      "rel": "fits",
+      "note": "Graph-attr evidence: cyberpunk genre, dystopian. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:cyberpunk-cityscape",
+      "to": "track:unholy-hunter-greg-porn",
+      "rel": "fits",
+      "note": "Graph-attr evidence: cyberpunk, dystopian, dark, nocturnal. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "org:cwi",
+      "to": "sync:victory-lap-anthem",
+      "rel": "defines_category",
+      "note": "Sync-brief category defined by Cumulative Web Inc; fits judged from graph attrs, not from Spark's unverified mapping."
+    },
+    {
+      "from": "sync:victory-lap-anthem",
+      "to": "track:ultimate",
+      "rel": "fits",
+      "note": "Graph-attr evidence: anthemic, triumphant, euphoric. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:victory-lap-anthem",
+      "to": "track:golden-diamond",
+      "rel": "fits",
+      "note": "Graph-attr evidence: triumphant, anthemic, euphoric. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:victory-lap-anthem",
+      "to": "track:broken-hearts-club",
+      "rel": "fits",
+      "note": "Graph-attr evidence: anthemic, triumphant, euphoric. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:victory-lap-anthem",
+      "to": "track:star-king-akeem",
+      "rel": "fits",
+      "note": "Graph-attr evidence: anthemic, triumphant, euphoric. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "org:cwi",
+      "to": "sync:smoky-afterhours-lounge",
+      "rel": "defines_category",
+      "note": "Sync-brief category defined by Cumulative Web Inc; fits judged from graph attrs, not from Spark's unverified mapping."
+    },
+    {
+      "from": "sync:smoky-afterhours-lounge",
+      "to": "track:smokin-pain",
+      "rel": "fits",
+      "note": "Graph-attr evidence: late-night, mellow, chill. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:smoky-afterhours-lounge",
+      "to": "track:rainbows-and-roses",
+      "rel": "fits",
+      "note": "Graph-attr evidence: mellow, dreamy, nocturnal. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:smoky-afterhours-lounge",
+      "to": "track:tears-and-scars",
+      "rel": "fits",
+      "note": "Graph-attr evidence: mellow, late-night, melancholic. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:smoky-afterhours-lounge",
+      "to": "track:place-i-go-to-dream",
+      "rel": "fits",
+      "note": "Graph-attr evidence: mellow, dreamy, nocturnal. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "org:cwi",
+      "to": "sync:mosh-pit-rebellion",
+      "rel": "defines_category",
+      "note": "Sync-brief category defined by Cumulative Web Inc; fits judged from graph attrs, not from Spark's unverified mapping."
+    },
+    {
+      "from": "sync:mosh-pit-rebellion",
+      "to": "track:misfits-and-hooligans",
+      "rel": "fits",
+      "note": "Graph-attr evidence: rebellious, defiant, raw, hype. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:mosh-pit-rebellion",
+      "to": "track:stunt-183-wilboi",
+      "rel": "fits",
+      "note": "Graph-attr evidence: rebellious, defiant, raw, rap-rock. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:mosh-pit-rebellion",
+      "to": "track:flamerz",
+      "rel": "fits",
+      "note": "Graph-attr evidence: rebellious, defiant, urgent. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:mosh-pit-rebellion",
+      "to": "track:shaka-zulu",
+      "rel": "fits",
+      "note": "Graph-attr evidence: rebellious, defiant, menacing. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "org:cwi",
+      "to": "sync:summer-rooftop-groove",
+      "rel": "defines_category",
+      "note": "Sync-brief category defined by Cumulative Web Inc; fits judged from graph attrs, not from Spark's unverified mapping."
+    },
+    {
+      "from": "sync:summer-rooftop-groove",
+      "to": "track:roses-over-monaco",
+      "rel": "fits",
+      "note": "Graph-attr evidence: warm, uplifting, hopeful, mellow. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:summer-rooftop-groove",
+      "to": "track:vai-vem-vem-dre50",
+      "rel": "fits",
+      "note": "Graph-attr evidence: warm, playful, laid-back, chill. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:summer-rooftop-groove",
+      "to": "track:pix-dre50",
+      "rel": "fits",
+      "note": "Graph-attr evidence: warm, playful, smooth. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:summer-rooftop-groove",
+      "to": "track:7th-angel",
+      "rel": "fits",
+      "note": "Graph-attr evidence: uplifting, ethereal, cinematic. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "org:cwi",
+      "to": "sync:heist-planning-focus",
+      "rel": "defines_category",
+      "note": "Sync-brief category defined by Cumulative Web Inc; fits judged from graph attrs, not from Spark's unverified mapping."
+    },
+    {
+      "from": "sync:heist-planning-focus",
+      "to": "track:warped-and-wicked",
+      "rel": "fits",
+      "note": "Graph-attr evidence: dystopian, brooding, dangerous. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:heist-planning-focus",
+      "to": "track:toxic-elements",
+      "rel": "fits",
+      "note": "Graph-attr evidence: menacing, raw, dangerous. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:heist-planning-focus",
+      "to": "track:spirits-n-shadows",
+      "rel": "fits",
+      "note": "Graph-attr evidence: haunting, cinematic, dangerous. Fit is not a license and not a clearance claim."
+    },
+    {
+      "from": "sync:heist-planning-focus",
+      "to": "track:diabolique",
+      "rel": "fits",
+      "note": "Graph-attr evidence: cinematic, dangerous, nocturnal, duality. Fit is not a license and not a clearance claim."
     }
   ],
   "@context": "https://cumulativewebinc.github.io/cwi-learn/graph/ontology.jsonld",
@@ -9093,5 +9913,6 @@
     "idBase": "https://cumulativewebinc.github.io/cwi-learn/id/",
     "packagingSchema": "https://cumulativewebinc.github.io/cwi-learn/schemas/product.json"
   },
-  "completion_2026_10_27": "Completed 2026-10-27: 10 rubric-80 nodes completed (13 grounded edges added, 2 editorial edges normalized rel), zooted-307k latest 317,255, cyberpunk-2027 date corrected to 2026-11-20. Base: cwi-learn graph.json generation 2026-10-16T19:38:58Z (151/522). Correction 2026-10-27 ~09:01 EDT: Zooted Zone latest 317,255 -> 317,275 (dashboard screenshot supersedes reel-frame misread); 28-day stats added."
+  "completion_2026_10_27": "Completed 2026-10-27: 10 rubric-80 nodes completed (13 grounded edges added, 2 editorial edges normalized rel), zooted-307k latest 317,255, cyberpunk-2027 date corrected to 2026-11-20. Base: cwi-learn graph.json generation 2026-10-16T19:38:58Z (151/522). Correction 2026-10-27 ~09:01 EDT: Zooted Zone latest 317,255 -> 317,275 (dashboard screenshot supersedes reel-frame misread); 28-day stats added.",
+  "completion_2026_10_27_v5": "Zero-dangling rewrite 2026-10-27: 69 missing ids resolved (endpoint remaps to existing nodes; 19 track + 1 release nodes created from catalog-index/audit records with unknown fields left null; 9 genre nodes from catalog tagging). 11 country nodes (10 catalog files verbatim + Russia SoundClick-grounded). 12 sync categories mapped from graph attrs (46 fits edges)."
 }
