@@ -1,6 +1,6 @@
 {
   "graph_schema": "cwi.graph/1.0",
-  "generated": "2026-10-27T12:27:08Z",
+  "generated": "2026-10-27T13:02:28Z",
   "maintainer": "Cumulative Web Inc (CWI_Data)",
   "source_of_truth_note": "Catalog nodes (artist/track) and all ISRC facts are machine-regenerated from catalog-interop/catalog-index.json (52 track records, 2026-09-19). Non-catalog nodes/edges (organization, movement, people, studio, place, releases, playlists, evidence, media assets) are carried over from the prior edition. Status is verified | owner_confirmed | claimed_unverified | promised_unverified. Placement Query DB node (service:placement-query-db) staged 2026-10-03, status incomplete until query-db.json push is confirmed live.",
   "counts": {
@@ -640,11 +640,21 @@
         "metric": "lifetime_spotify_plays",
         "value": 313290,
         "track": "track:0emH8ktA8x4DkOFLsG5xkW",
-        "note": "313,290 lifetime plays observed 2026-10-01; supersedes 307,439 (observed 2026-09-14), kept as history; latest frame 317,255 shown in Oct 25 2026 reel",
+        "note": "313,290 lifetime plays observed 2026-10-01; supersedes 307,439 (observed 2026-09-14), kept as history; latest 317,275 per Oct 25 2026 dashboard screenshot - supersedes the Oct 25 reel-frame reading 317,255, which was a misread of the same dashboard",
         "last_verified": "2026-09-15",
         "observed": "2026-10-01",
-        "latest_observed": 317255,
-        "latest_source": "Oct 25 2026 @lanskyblack reel frame (Spotify-for-Artists-style screen)"
+        "latest_observed": 317275,
+        "latest_source": "Spotify for Artists dashboard screenshot, Oct 27 2026 (page range Sep 28-Oct 25 2026, Worldwide, audio track only)",
+        "last_28d": {
+          "period": "Sep 28-Oct 25 2026",
+          "scope": "Worldwide",
+          "streams": 10313,
+          "listeners": 5267,
+          "streams_per_listener": 1.958,
+          "playlist_adds": 8,
+          "saves": 3181,
+          "source": "Spotify for Artists dashboard screenshot, Oct 27 2026"
+        }
       },
       "evidence": [
         {
@@ -9028,7 +9038,7 @@
       "from": "evidence:zooted-307k",
       "to": "track:zooted-zone",
       "rel": "measures",
-      "note": "Lifetime Spotify plays history: 307,439 (2026-09-14) -> 313,290 (2026-10-01) -> 317,255 (2026-10-25 reel frame)"
+      "note": "Lifetime Spotify plays history: 307,439 (2026-09-14) -> 313,290 (2026-10-01) -> 317,275 (2026-10-25 dashboard screenshot; reel-frame 317,255 was a misread)"
     },
     {
       "from": "evidence:claim-no-label-needed",
@@ -9083,5 +9093,5 @@
     "idBase": "https://cumulativewebinc.github.io/cwi-learn/id/",
     "packagingSchema": "https://cumulativewebinc.github.io/cwi-learn/schemas/product.json"
   },
-  "completion_2026_10_27": "Completed 2026-10-27: 10 rubric-80 nodes completed (13 grounded edges added, 2 editorial edges normalized rel), zooted-307k latest 317,255, cyberpunk-2027 date corrected to 2026-11-20. Base: cwi-learn graph.json generation 2026-10-16T19:38:58Z (151/522)."
+  "completion_2026_10_27": "Completed 2026-10-27: 10 rubric-80 nodes completed (13 grounded edges added, 2 editorial edges normalized rel), zooted-307k latest 317,255, cyberpunk-2027 date corrected to 2026-11-20. Base: cwi-learn graph.json generation 2026-10-16T19:38:58Z (151/522). Correction 2026-10-27 ~09:01 EDT: Zooted Zone latest 317,255 -> 317,275 (dashboard screenshot supersedes reel-frame misread); 28-day stats added."
 }
