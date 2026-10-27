@@ -1409,7 +1409,8 @@
       "citations": [
         "Live graph cumulativeweb.com/graph.json, generated 2026-10-08",
         "Dated 2025-11-20 [owner-confirmed by Black (Black Lansky), 2026-09-15, observed 2026-09-15]",
-        "Spotify album metadata (album 4DUYH0aQmnVZWqE6YZHYbb): \"album \u00b7 That Boy Hi Hat \u00b7 2025 \u00b7 10 songs\", Published 2025-11-20 \u2014 confirms standing record."
+        "Spotify album metadata (album 4DUYH0aQmnVZWqE6YZHYbb): \"album \u00b7 That Boy Hi Hat \u00b7 2025 \u00b7 10 songs\", Published 2025-11-20 \u2014 confirms standing record.",
+        "Spotify album page tracklist + duration, read directly from the album page 2026-10-27 (live browser check, no sign-in)."
       ],
       "geo": null,
       "enrichment": {
@@ -1437,7 +1438,20 @@
         },
         "release_date_precision": "day",
         "spotify_album_id": "4DUYH0aQmnVZWqE6YZHYbb",
-        "track_count": 10
+        "track_count": 10,
+        "tracklist_spotify_order": [
+          "Painted Lady",
+          "7th Angel",
+          "Flex My Flame",
+          "Warped and Wicked",
+          "Ultimate",
+          "Scorpions & Sapphires",
+          "Neon Nights Pt. 777",
+          "Flamerz",
+          "Place I Go to Dream",
+          "Toxic Elements"
+        ],
+        "duration_spotify": "33 min 29 sec"
       },
       "status_notes": [],
       "rubric": {
@@ -1492,7 +1506,8 @@
         "Live graph cumulativeweb.com/graph.json, generated 2026-10-08",
         "NO SKIPS and GTA VI EP are separate releases, not a rename [owner-confirmed by Black (Black Lansky), 2026-09-15, observed 2026-09-15]",
         "CWI Medium, Oct 22 2025: 'Set for release on November 21st', 6-track GTA VI (The Logo of Alternative Rap). NOTE: Anghami lists the album as Oct 2025 \u2014 month discrepancy flagged; day not independently confirmed on a streaming page.",
-        "Spotify album page (album 6W8SwbDcFFXi1heHLnT1dx), bottom of page: \"October 30, 2025, \u00a9 2025 Cumulative Web Inc, \u2117 2025 Cumulative Web Inc\", 6 songs, 20 min 35 sec. SUPERSEDES the CWI Medium Oct 22 2025 announcement of Nov 21 \u2014 the announced date moved; Spotify printed date governs."
+        "Spotify album page (album 6W8SwbDcFFXi1heHLnT1dx), bottom of page: \"October 30, 2025, \u00a9 2025 Cumulative Web Inc, \u2117 2025 Cumulative Web Inc\", 6 songs, 20 min 35 sec. SUPERSEDES the CWI Medium Oct 22 2025 announcement of Nov 21 \u2014 the announced date moved; Spotify printed date governs.",
+        "Spotify album page tracklist + duration, read directly from the album page 2026-10-27 (live browser check, no sign-in)."
       ],
       "geo": null,
       "enrichment": {
@@ -1520,7 +1535,16 @@
         },
         "release_date_precision": "day",
         "spotify_album_id": "6W8SwbDcFFXi1heHLnT1dx",
-        "track_count": 6
+        "track_count": 6,
+        "tracklist_spotify_order": [
+          "Flamerz",
+          "Zooted Zone",
+          "Doves & Diamonds",
+          "Shaka Zulu",
+          "Golden Diamond",
+          "Broken Hearts Club"
+        ],
+        "duration_spotify": "20 min 35 sec"
       },
       "status_notes": [],
       "rubric": {
@@ -1570,7 +1594,8 @@
         "NO SKIPS and GTA VI EP are separate releases, not a rename [owner-confirmed by Black (Black Lansky), 2026-09-15, observed 2026-09-15]",
         "CWI Medium (The Next Code): EPs like 'No Skips (Gta 5 Top Songs)' (2023). Full title: NO SKIPS (GTA 5 TOP SONGS); 735,032 all-time streams per CWI Medium, Oct 2025.",
         "User-supplied Spotify screenshot 2026-10-27: NO SKIPS (GTA 5 TOP SONGS) page bottom reads \"July 28, 2023, \u00a9 2023 Cumulative Web Inc, \u2117 2023 Cumulative Web Inc\"; visible tracks #4 Broken Hearts Club, #5 Shaka Zulu (and #3 Zooted Zone partially visible)",
-        "Spotify album metadata (album 5OBpsmSGxt9X2VrK9TsG27): \"EP \u00b7 That Boy Hi Hat \u00b7 2023 \u00b7 5 songs\", Published 2023-07-28 \u2014 agrees exactly with user-supplied Spotify screenshot (July 28, 2023, \u00a9/\u2117 2023 CWI)."
+        "Spotify album metadata (album 5OBpsmSGxt9X2VrK9TsG27): \"EP \u00b7 That Boy Hi Hat \u00b7 2023 \u00b7 5 songs\", Published 2023-07-28 \u2014 agrees exactly with user-supplied Spotify screenshot (July 28, 2023, \u00a9/\u2117 2023 CWI).",
+        "Spotify album page tracklist + duration, read directly from the album page 2026-10-27 (live browser check, no sign-in)."
       ],
       "geo": null,
       "enrichment": {
@@ -1607,7 +1632,15 @@
           "phonographic": "\u2117 2023 Cumulative Web Inc"
         },
         "spotify_album_id": "5OBpsmSGxt9X2VrK9TsG27",
-        "track_count": 5
+        "track_count": 5,
+        "tracklist_spotify_order": [
+          "Golden Diamond",
+          "Doves & Diamonds",
+          "Zooted Zone",
+          "Broken Hearts Club",
+          "Shaka Zulu"
+        ],
+        "duration_spotify": "17 min 29 sec"
       },
       "status_notes": [],
       "rubric": {
@@ -5196,7 +5229,8 @@
         "10-track album 'Post Trap Futurism: The Logo Effect' (2025) [Spotify embed live read 2026-10-02 (durations captured), observed 2026-10-02]",
         "Album is distinct from the book 'THE LOGO EFFECT' (CODEX manuscript) [owner-confirmed 2026-10-02; Amazon.in ASIN B0G58HZ3GM is the book, observed 2026-10-02]",
         "Anghami album listing Dec 2025 + Spotify record (2025, 10 tracks, 37:07, \u2117 2025 CWI, verified 2026-10-05) + Doves & Diamonds page published 2025-12-12. Same album as album:post-trap-futurism-the-logo-effect \u2014 duplicate node IDs, not two releases.",
-        "Spotify album metadata (album 35buycAVHzNbIeKELvZmyk): Published 2025-12-12 (page body failed to render in text fetch; date from Spotify metadata + browser tab title confirms album). Same album as album:post-trap-futurism-the-logo-effect."
+        "Spotify album metadata (album 35buycAVHzNbIeKELvZmyk): Published 2025-12-12 (page body failed to render in text fetch; date from Spotify metadata + browser tab title confirms album). Same album as album:post-trap-futurism-the-logo-effect.",
+        "Spotify album page tracklist + duration, read directly from the album page 2026-10-27 (live browser check, no sign-in)."
       ],
       "geo": null,
       "enrichment": {
@@ -5290,7 +5324,20 @@
         },
         "release_date_precision": "day",
         "spotify_album_id": "35buycAVHzNbIeKELvZmyk",
-        "track_count": 10
+        "track_count": 10,
+        "tracklist_spotify_order": [
+          "Doves & Diamonds",
+          "Shaka Zulu",
+          "Spirits n Shadows",
+          "Flex My Flame",
+          "Rainbows And Roses",
+          "Tears and Scars",
+          "Toxic Elements",
+          "Ultimate",
+          "Warped & Wicked",
+          "Golden Diamond"
+        ],
+        "duration_spotify": "37 min 7 sec"
       },
       "status_notes": [],
       "rubric": {
@@ -5830,7 +5877,8 @@
         "Live graph cumulativeweb.com/graph.json, generated 2026-10-08",
         "Album live on Spotify: 2025, 10 tracks, 37:07, P 2025 Cumulative Web Inc [Spotify, verified 2026-10-05, observed 2026-10-05]",
         "Same album as release:ptf-the-logo-effect (see that node). Spotify album id 35buycAVHzNbIeKELvZmyk per movement:ptf source attrs, verified 2026-10-05. Duplicate node IDs, not two releases.",
-        "Same album as release:ptf-the-logo-effect \u2014 Spotify album 35buycAVHzNbIeKELvZmyk, Published 2025-12-12. Duplicate node IDs, not two releases."
+        "Same album as release:ptf-the-logo-effect \u2014 Spotify album 35buycAVHzNbIeKELvZmyk, Published 2025-12-12. Duplicate node IDs, not two releases.",
+        "Spotify album page tracklist + duration, read directly from the album page 2026-10-27 (live browser check, no sign-in)."
       ],
       "geo": null,
       "enrichment": {
@@ -5869,7 +5917,20 @@
         },
         "release_date_precision": "day",
         "spotify_album_id": "35buycAVHzNbIeKELvZmyk",
-        "track_count": 10
+        "track_count": 10,
+        "tracklist_spotify_order": [
+          "Doves & Diamonds",
+          "Shaka Zulu",
+          "Spirits n Shadows",
+          "Flex My Flame",
+          "Rainbows And Roses",
+          "Tears and Scars",
+          "Toxic Elements",
+          "Ultimate",
+          "Warped & Wicked",
+          "Golden Diamond"
+        ],
+        "duration_spotify": "37 min 7 sec"
       },
       "status_notes": [],
       "rubric": {
@@ -17823,7 +17884,7 @@
       }
     }
   ],
-  "version": "v3 (2026-10-27, all release dates Spotify-verified)",
+  "version": "v3.1 (2026-10-27, Spotify tracklists + durations added)",
   "v2_notes": "Source_attrs promoted into citations/enrichment; genre definitions + edge exemplars added; 5 release dates found (see release_date_precision for confidence); no values invented; dataset only, nothing written to the live graph.",
   "v3_notes": "All 9 release nodes now carry day-precision Spotify dates except none: every release node date is Spotify-printed. GTA VI EP corrected Nov 21 (announced) -> Oct 30, 2025 (Spotify printed).",
   "public_graph_inventory": {
