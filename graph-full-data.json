@@ -1,8 +1,8 @@
 {
   "dataset": "CWI full node data (graph + citations + geo + rubric)",
   "source_graph": "Completed graph 2026-10-27 (base: cwi-learn graph.json 2026-10-16T19:38:58Z, 151/522)",
-  "source_generated": "2026-10-27T12:27:08Z",
-  "built": "2026-10-27T12:27:08Z",
+  "source_generated": "2026-10-27T13:02:28Z",
+  "built": "2026-10-27T13:02:28Z",
   "node_count": 151,
   "edge_count": 535,
   "completeness_rule": "Values only from the verified record; otherwise null + unverified status - never invented.",
@@ -2312,11 +2312,21 @@
           "metric": "lifetime_spotify_plays",
           "value": 313290,
           "track": "track:0emH8ktA8x4DkOFLsG5xkW",
-          "note": "313,290 lifetime plays observed 2026-10-01; supersedes 307,439 (observed 2026-09-14), kept as history; latest frame 317,255 shown in Oct 25 2026 reel",
+          "note": "313,290 lifetime plays observed 2026-10-01; supersedes 307,439 (observed 2026-09-14), kept as history; latest 317,275 per Oct 25 2026 dashboard screenshot - supersedes the Oct 25 reel-frame reading 317,255, which was a misread of the same dashboard",
           "last_verified": "2026-09-15",
           "observed": "2026-10-01",
-          "latest_observed": 317255,
-          "latest_source": "Oct 25 2026 @lanskyblack reel frame (Spotify-for-Artists-style screen)"
+          "latest_observed": 317275,
+          "latest_source": "Spotify for Artists dashboard screenshot, Oct 27 2026 (page range Sep 28-Oct 25 2026, Worldwide, audio track only)",
+          "last_28d": {
+            "period": "Sep 28-Oct 25 2026",
+            "scope": "Worldwide",
+            "streams": 10313,
+            "listeners": 5267,
+            "streams_per_listener": 1.958,
+            "playlist_adds": 8,
+            "saves": 3181,
+            "source": "Spotify for Artists dashboard screenshot, Oct 27 2026"
+          }
         },
         "evidence": [
           {
@@ -2332,7 +2342,7 @@
           "rel": "measures",
           "from": "evidence:zooted-307k",
           "to": "track:zooted-zone",
-          "note": "Lifetime Spotify plays history: 307,439 (2026-09-14) -> 313,290 (2026-10-01) -> 317,255 (2026-10-25 reel frame)"
+          "note": "Lifetime Spotify plays history: 307,439 (2026-09-14) -> 313,290 (2026-10-01) -> 317,275 (2026-10-25 dashboard screenshot; reel-frame 317,255 was a misread)"
         }
       ],
       "citations": [
@@ -2345,14 +2355,26 @@
           "metric": "lifetime_spotify_plays",
           "value": 313290,
           "track": "track:0emH8ktA8x4DkOFLsG5xkW",
-          "note": "313,290 lifetime plays observed 2026-10-01; supersedes 307,439 (observed 2026-09-14), kept as history; latest frame 317,255 shown in Oct 25 2026 reel",
+          "note": "313,290 lifetime plays observed 2026-10-01; supersedes 307,439 (observed 2026-09-14), kept as history; latest 317,275 per Oct 25 2026 dashboard screenshot - supersedes the Oct 25 reel-frame reading 317,255, which was a misread of the same dashboard",
           "last_verified": "2026-09-15",
           "observed": "2026-10-01",
-          "latest_observed": 317255,
-          "latest_source": "Oct 25 2026 @lanskyblack reel frame (Spotify-for-Artists-style screen)"
+          "latest_observed": 317275,
+          "latest_source": "Spotify for Artists dashboard screenshot, Oct 27 2026 (page range Sep 28-Oct 25 2026, Worldwide, audio track only)",
+          "last_28d": {
+            "period": "Sep 28-Oct 25 2026",
+            "scope": "Worldwide",
+            "streams": 10313,
+            "listeners": 5267,
+            "streams_per_listener": 1.958,
+            "playlist_adds": 8,
+            "saves": 3181,
+            "source": "Spotify for Artists dashboard screenshot, Oct 27 2026"
+          }
         }
       },
-      "status_notes": [],
+      "status_notes": [
+        "Corrected 2026-10-27 ~09:01 EDT: reel-frame reading 317,255 was a misread; dashboard screenshot reads 317,275."
+      ],
       "rubric": {
         "identity": true,
         "classification": true,
@@ -19147,6 +19169,6 @@
       }
     }
   },
-  "version": "v4",
-  "v4_notes": "10 rubric-80 nodes completed: 8 isolated nodes gained 13 grounded edges; 2 editorial nodes fixed by rel-normalization + article-URL citations. 17 repo151 nodes added with full entries. Cyberpunk 2027 date corrected to Nov 20 2026. Zooted Zone latest plays 317,255 (Oct 25 reel frame). Pre-existing graph hygiene item NOT touched: 69 edge endpoints in the wider graph point at ids that are not nodes (genre short-names like genre:rap, long-form track ids like track:that-boy-hi-hat-diabolique); those edges pre-date this completion and do not affect the 151 nodes' rubric scores."
+  "version": "v4.1",
+  "v4_notes": "10 rubric-80 nodes completed: 8 isolated nodes gained 13 grounded edges; 2 editorial nodes fixed by rel-normalization + article-URL citations. 17 repo151 nodes added with full entries. Cyberpunk 2027 date corrected to Nov 20 2026. Zooted Zone latest plays 317,255 (Oct 25 reel frame). Pre-existing graph hygiene item NOT touched: 69 edge endpoints in the wider graph point at ids that are not nodes (genre short-names like genre:rap, long-form track ids like track:that-boy-hi-hat-diabolique); those edges pre-date this completion and do not affect the 151 nodes' rubric scores. v4.1 correction 2026-10-27 ~09:01 EDT: Zooted Zone latest 317,255 -> 317,275 (Spotify for Artists dashboard screenshot, range Sep 28-Oct 25 2026: 10,313 streams, 5,267 listeners, 1.958 streams/listener, 8 playlist adds, 3,181 saves)."
 }
