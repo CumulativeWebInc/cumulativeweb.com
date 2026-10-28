@@ -1,5 +1,5 @@
 {
-  "certified_at": "2026-10-28T03:48:35.147109+00:00",
+  "certified_at": "2026-10-28T04:19:00.037453+00:00",
   "certifier": "CWI-Certify/1.0",
   "passed": 6,
   "total": 6,
@@ -70,7 +70,7 @@
       "http_status": 200,
       "content_type": "application/json",
       "bytes": 2650,
-      "sha256": "e29374c4c34980dd",
+      "sha256": "2a6437fb2345f5e6",
       "checks": {
         "http_200": true,
         "valid_json": true,
@@ -82,9 +82,9 @@
       "name": "graph-json",
       "url": "https://cwi-machine-data.hp-ace.workers.dev/graph.json",
       "http_status": 200,
-      "content_type": "text/plain; charset=utf-8",
-      "bytes": 341448,
-      "sha256": "a6cf88986ba24172",
+      "content_type": "?",
+      "bytes": 2650,
+      "sha256": "2a6437fb2345f5e6",
       "checks": {
         "http_200": true,
         "valid_json": true
