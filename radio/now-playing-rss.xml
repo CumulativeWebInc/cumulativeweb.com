@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Wed, 28 Oct 2026 17:35:22 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 28 Oct 2026 18:35:37 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>Greg Porn - Unholy Hunters (Ref 1.0)</title>
+    <title>That Boy Hi Hat - Doves &amp; Diamonds</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: Greg Porn - Unholy Hunters (Ref 1.0) (slot 56, ends 2026-10-28T17:35:33.416Z)</description>
-    <pubDate>Wed, 28 Oct 2026 17:35:22 GMT</pubDate>
-    <guid isPermaLink="false">radio365-56-2026-10-28T17:35:33.416Z</guid>
-    <enclosure url="https://cumulativeweb.com/assets/artist-greg-porn.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Doves &amp; Diamonds (slot 75, ends 2026-10-28T18:37:12.212Z)</description>
+    <pubDate>Wed, 28 Oct 2026 18:35:37 GMT</pubDate>
+    <guid isPermaLink="false">radio365-75-2026-10-28T18:37:12.212Z</guid>
+    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-doves-and-diamonds.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
