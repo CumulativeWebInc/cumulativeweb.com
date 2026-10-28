@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-28T16:35:23.812Z",
+  "updated_at": "2026-10-28T17:35:22.324Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "That Boy Hi Hat",
-      "title": "Zooted Zone",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg",
-      "slot_index": 37,
-      "played_at": "2026-10-28T16:35:23.812Z",
-      "track_ends_at": "2026-10-28T16:36:26.231Z"
+      "artist": "Greg Porn",
+      "title": "Unholy Hunters (Ref 1.0)",
+      "artwork": "https://cumulativeweb.com/assets/artist-greg-porn.jpg",
+      "slot_index": 56,
+      "played_at": "2026-10-28T17:35:22.324Z",
+      "track_ends_at": "2026-10-28T17:35:33.416Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
