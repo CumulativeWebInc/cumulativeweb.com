@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-28T13:35:21.911Z",
+  "updated_at": "2026-10-28T14:35:22.661Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Zooted Zone",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg",
-      "slot_index": 111,
-      "played_at": "2026-10-28T13:35:21.911Z",
-      "track_ends_at": "2026-10-28T13:37:43.127Z"
+      "title": "Painted Lady",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-painted-lady.jpg",
+      "slot_index": 129,
+      "played_at": "2026-10-28T14:35:22.661Z",
+      "track_ends_at": "2026-10-28T14:35:25.721Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
