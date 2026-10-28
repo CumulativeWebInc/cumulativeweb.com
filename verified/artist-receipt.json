@@ -1,7 +1,7 @@
 {
   "attestation": "artist-hihat",
   "subject": "That Boy Hi Hat \u2014 artist surfaces",
-  "certified_at": "2026-10-28T07:57:12.945858+00:00",
+  "certified_at": "2026-10-28T08:56:56.054906+00:00",
   "catalog_tracks": 27,
   "checks": {
     "artist_page_http_200": true,
