@@ -11,7 +11,7 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0a0a0a;color:#e8
 .hero{text-align:center;padding:4rem 1rem 2rem}
 .hero h1{font-size:2.5rem;margin-bottom:.5rem}
 .hero p{color:#888;font-size:1.1rem}
-.badge{display:inline-block;background:rgba(96,165,250,.15);border:1px solid #60a5fa;color:#60a5fa;padding:.5rem 1.5rem;border-radius:2rem;font-weight:600;margin:1rem 0;font-size:1.1rem}
+.badge{display:inline-block;background:rgba(248,113,113,.15);border:1px solid #f87171;color:#f87171;padding:.5rem 1.5rem;border-radius:2rem;font-weight:600;margin:1rem 0;font-size:1.1rem}
 .stats{display:flex;justify-content:center;gap:3rem;margin:2rem 0;flex-wrap:wrap}
 .stat{text-align:center}.stat .num{font-size:2.5rem;font-weight:800;color:#fff}.stat .label{color:#888;font-size:.85rem;text-transform:uppercase;letter-spacing:1px}
 .grid{max-width:900px;margin:0 auto;padding:2rem 1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
@@ -26,8 +26,8 @@ pre{background:#111;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.75
 <div class="hero">
 <h1>🔧 MCP TOOLS</h1>
 <p>Discovery Engine — 29 tools</p>
-<div class="badge">● LIVE</div>
-<p class="timestamp">Certified: 2026-10-28T09:01:00.236479+00:00</p>
+<div class="badge">● ISSUES</div>
+<p class="timestamp">Certified: 2026-10-28T09:56:38.097759+00:00</p>
 <div class="stats"></div>
 </div>
 <div class="grid">
@@ -37,8 +37,8 @@ pre{background:#111;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.75
 <div class="card"><h3><span style="color:#4ade80">✓</span> has search catalog</h3></div>
 <div class="card"><h3><span style="color:#4ade80">✓</span> has sync search</h3></div>
 <div class="card"><h3><span style="color:#4ade80">✓</span> has get track</h3></div>
-<div class="card"><h3><span style="color:#4ade80">✓</span> wedge call works</h3></div>
-<div class="card"><h3><span style="color:#4ade80">✓</span> wedge returns isrc</h3></div>
+<div class="card"><h3><span style="color:#f87171">✗</span> wedge call works</h3></div>
+<div class="card"><h3><span style="color:#f87171">✗</span> wedge returns isrc</h3></div>
 <div class="card"><h3><span style="color:#4ade80">✓</span> get track works</h3></div>
 </div>
 <div style="max-width:900px;margin:0 auto;padding:0 1rem">
@@ -48,7 +48,7 @@ pre{background:#111;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.75
   "attestation": "mcp-tools",
   "subject": "CWI Discovery Engine \u2014 MCP server (30 tools)",
   "endpoint": "https://cwi-machine-data.hp-ace.workers.dev/mcp",
-  "certified_at": "2026-10-28T09:01:00.236479+00:00",
+  "certified_at": "2026-10-28T09:56:38.097759+00:00",
   "tool_count": 30,
   "first_tool": "find_tracks_for_brief",
   "checks": {
@@ -58,11 +58,11 @@ pre{background:#111;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.75
     "has_search_catalog": true,
     "has_sync_search": true,
     "has_get_track": true,
-    "wedge_call_works": true,
-    "wedge_returns_isrc": true,
+    "wedge_call_works": false,
+    "wedge_returns_isrc": false,
     "get_track_works": true
   },
-  "all_pass": true
+  "all_pass": false
 }</pre>
 </div>
 <footer><p>Attested by <code>CWI-Attest/1.0</code> · <a href="/verified/">All attestations</a></p></footer>
