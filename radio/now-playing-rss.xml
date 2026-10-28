@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Wed, 28 Oct 2026 09:35:22 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 28 Oct 2026 10:35:21 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>That Boy Hi Hat - Place I Go to Dream</title>
+    <title>That Boy Hi Hat - Rainbows And Roses</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Place I Go to Dream (slot 35, ends 2026-10-28T09:35:52.946Z)</description>
-    <pubDate>Wed, 28 Oct 2026 09:35:22 GMT</pubDate>
-    <guid isPermaLink="false">radio365-35-2026-10-28T09:35:52.946Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-place-i-go-to-dream-remastered.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Rainbows And Roses (slot 54, ends 2026-10-28T10:36:35.137Z)</description>
+    <pubDate>Wed, 28 Oct 2026 10:35:21 GMT</pubDate>
+    <guid isPermaLink="false">radio365-54-2026-10-28T10:36:35.137Z</guid>
+    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-rainbows-and-roses.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
