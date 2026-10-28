@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-28T14:35:22.661Z",
+  "updated_at": "2026-10-28T15:35:21.142Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Painted Lady",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-painted-lady.jpg",
-      "slot_index": 129,
-      "played_at": "2026-10-28T14:35:22.661Z",
-      "track_ends_at": "2026-10-28T14:35:25.721Z"
+      "title": "7th Angel",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg",
+      "slot_index": 18,
+      "played_at": "2026-10-28T15:35:21.142Z",
+      "track_ends_at": "2026-10-28T15:35:25.523Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
