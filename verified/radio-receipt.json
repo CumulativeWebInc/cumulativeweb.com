@@ -1,9 +1,9 @@
 {
   "attestation": "radio-365",
   "subject": "Radio 365 \u2014 Cumulative Web Inc 24/7 stream",
-  "certified_at": "2026-10-28T08:56:45.153704+00:00",
-  "now_playing": "That Boy Hi Hat \u2014 Place I Go to Dream",
-  "mp3_bridge_attempts": 2,
+  "certified_at": "2026-10-28T09:00:52.576191+00:00",
+  "now_playing": "That Boy Hi Hat \u2014 Shaka Zulu",
+  "mp3_bridge_attempts": 1,
   "checks": {
     "nowplaying_http_200": true,
     "nowplaying_valid_json": true,
