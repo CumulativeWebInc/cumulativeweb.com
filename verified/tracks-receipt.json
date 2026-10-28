@@ -1,9 +1,9 @@
 {
   "attestation": "track-pages",
   "subject": "29 Track Entity Pages \u2014 JSON-LD ISRC verification",
-  "certified_at": "2026-10-28T09:01:28.132514+00:00",
+  "certified_at": "2026-10-28T09:57:16.670138+00:00",
   "pages_checked": 23,
-  "pages_passed": 23,
+  "pages_passed": 22,
   "with_isrc_count": 18,
   "without_isrc_count": 11,
   "checks": {
@@ -11,7 +11,7 @@
     "vai-vem-vem": true,
     "7th-angel": true,
     "diabolique": true,
-    "diabolique-louder": true,
+    "diabolique-louder": false,
     "doves-diamonds": true,
     "flamerz": true,
     "golden-diamond": true,
@@ -31,5 +31,5 @@
     "2k23-corners (no-isrc)": true,
     "unholy-hunters-ref-10 (no-isrc)": true
   },
-  "all_pass": true
+  "all_pass": false
 }
