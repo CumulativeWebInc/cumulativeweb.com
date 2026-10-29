@@ -1,8 +1,8 @@
 {
   "attestation": "radio-365",
   "subject": "Radio 365 \u2014 Cumulative Web Inc 24/7 stream",
-  "certified_at": "2026-10-29T14:56:51.597305+00:00",
-  "now_playing": "183 Wildboi \u2014 Stunt",
+  "certified_at": "2026-10-29T15:56:46.975474+00:00",
+  "now_playing": "That Boy Hi Hat \u2014 Golden Diamond",
   "mp3_bridge_attempts": 2,
   "checks": {
     "nowplaying_http_200": true,
