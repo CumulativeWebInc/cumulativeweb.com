@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-29T02:35:21.848Z",
+  "updated_at": "2026-10-29T03:35:22.787Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Place I Go to Dream",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-place-i-go-to-dream-remastered.jpg",
-      "slot_index": 95,
-      "played_at": "2026-10-29T02:35:21.848Z",
-      "track_ends_at": "2026-10-29T02:35:51.066Z"
+      "title": "Phantasm",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-phantasm.jpg",
+      "slot_index": 114,
+      "played_at": "2026-10-29T03:35:22.787Z",
+      "track_ends_at": "2026-10-29T03:37:05.772Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
