@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-29T17:35:23.788Z",
+  "updated_at": "2026-10-29T18:35:30.583Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "183 Wildboi",
-      "title": "Full Moon",
-      "artwork": "https://cumulativeweb.com/radio/art/183-wildboi-full-moon.jpg",
-      "slot_index": 117,
-      "played_at": "2026-10-29T17:35:23.788Z",
-      "track_ends_at": "2026-10-29T17:36:06.174Z"
+      "artist": "That Boy Hi Hat",
+      "title": "Doves & Diamonds",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-doves-and-diamonds.jpg",
+      "slot_index": 6,
+      "played_at": "2026-10-29T18:35:30.583Z",
+      "track_ends_at": "2026-10-29T18:36:43.985Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
