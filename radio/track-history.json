@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-29T16:36:07.895Z",
+  "updated_at": "2026-10-29T17:35:23.788Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "That Boy Hi Hat",
-      "title": "Place I Go to Dream",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-place-i-go-to-dream-remastered.jpg",
-      "slot_index": 100,
-      "played_at": "2026-10-29T16:36:07.895Z",
-      "track_ends_at": "2026-10-29T16:37:37.389Z"
+      "artist": "183 Wildboi",
+      "title": "Full Moon",
+      "artwork": "https://cumulativeweb.com/radio/art/183-wildboi-full-moon.jpg",
+      "slot_index": 117,
+      "played_at": "2026-10-29T17:35:23.788Z",
+      "track_ends_at": "2026-10-29T17:36:06.174Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
