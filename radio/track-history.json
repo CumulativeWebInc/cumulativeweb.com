@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-29T05:35:25.547Z",
+  "updated_at": "2026-10-29T06:35:21.139Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "That Boy Hi Hat",
-      "title": "Broken Hearts Club",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg",
-      "slot_index": 22,
-      "played_at": "2026-10-29T05:35:25.547Z",
-      "track_ends_at": "2026-10-29T05:37:48.704Z"
+      "artist": "Dre50",
+      "title": "Vai Vem Vem",
+      "artwork": "https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg",
+      "slot_index": 41,
+      "played_at": "2026-10-29T06:35:21.139Z",
+      "track_ends_at": "2026-10-29T06:36:56.940Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
