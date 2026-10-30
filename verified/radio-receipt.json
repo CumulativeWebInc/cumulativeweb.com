@@ -1,8 +1,8 @@
 {
   "attestation": "radio-365",
   "subject": "Radio 365 \u2014 Cumulative Web Inc 24/7 stream",
-  "certified_at": "2026-10-30T13:56:18.409718+00:00",
-  "now_playing": "That Boy Hi Hat \u2014 Zooted Zone",
+  "certified_at": "2026-10-30T14:56:16.400600+00:00",
+  "now_playing": "That Boy Hi Hat \u2014 Place I Go to Dream",
   "mp3_bridge_attempts": 1,
   "checks": {
     "nowplaying_http_200": true,
