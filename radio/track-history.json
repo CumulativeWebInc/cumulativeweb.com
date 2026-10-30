@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-30T22:35:22.936Z",
+  "updated_at": "2026-10-30T23:35:22.647Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Doves & Diamonds",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-doves-and-diamonds.jpg",
-      "slot_index": 13,
-      "played_at": "2026-10-30T22:35:22.936Z",
-      "track_ends_at": "2026-10-30T22:35:33.333Z"
+      "title": "7th Angel",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg",
+      "slot_index": 32,
+      "played_at": "2026-10-30T23:35:22.647Z",
+      "track_ends_at": "2026-10-30T23:35:58.134Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
