@@ -1,7 +1,7 @@
 {
   "attestation": "packages",
   "subject": "CWI Package Registries \u2014 PyPI, JSR, GitHub Packages",
-  "certified_at": "2026-10-30T21:56:53.280262+00:00",
+  "certified_at": "2026-10-30T22:56:29.868956+00:00",
   "packages": {
     "pypi": "cwi-langchain 1.0.0",
     "jsr": "@cumulativeweb/cwi-scout",
