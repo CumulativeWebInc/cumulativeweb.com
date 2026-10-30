@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-30T14:35:22.257Z",
+  "updated_at": "2026-10-30T15:35:23.177Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "Fleekz",
-      "title": "2K23 Corners",
-      "artwork": "https://cumulativeweb.com/radio/art/fleekz-2k23-corners.jpg",
-      "slot_index": 124,
-      "played_at": "2026-10-30T14:35:22.257Z",
-      "track_ends_at": "2026-10-30T14:38:57.757Z"
+      "artist": "That Boy Hi Hat",
+      "title": "Shaka Zulu",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg",
+      "slot_index": 12,
+      "played_at": "2026-10-30T15:35:23.177Z",
+      "track_ends_at": "2026-10-30T15:38:11.950Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
