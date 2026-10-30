@@ -5,15 +5,15 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Fri, 30 Oct 2026 10:35:20 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 30 Oct 2026 11:35:21 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
     <title>That Boy Hi Hat - Zooted Zone</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Zooted Zone (slot 48, ends 2026-10-30T10:37:33.032Z)</description>
-    <pubDate>Fri, 30 Oct 2026 10:35:20 GMT</pubDate>
-    <guid isPermaLink="false">radio365-48-2026-10-30T10:37:33.032Z</guid>
+    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Zooted Zone (slot 66, ends 2026-10-30T11:36:29.268Z)</description>
+    <pubDate>Fri, 30 Oct 2026 11:35:21 GMT</pubDate>
+    <guid isPermaLink="false">radio365-66-2026-10-30T11:36:29.268Z</guid>
     <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg" type="image/jpeg" />
   </item>
  </channel>
