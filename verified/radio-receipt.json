@@ -1,8 +1,8 @@
 {
   "attestation": "radio-365",
   "subject": "Radio 365 \u2014 Cumulative Web Inc 24/7 stream",
-  "certified_at": "2026-10-30T15:56:19.542349+00:00",
-  "now_playing": "That Boy Hi Hat \u2014 Golden Diamond",
+  "certified_at": "2026-10-30T16:56:18.026843+00:00",
+  "now_playing": "That Boy Hi Hat \u2014 Zooted Zone",
   "mp3_bridge_attempts": 1,
   "checks": {
     "nowplaying_http_200": true,
