@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Sat, 31 Oct 2026 05:35:29 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 31 Oct 2026 06:35:20 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>Dre50 - Vai Vem Vem</title>
+    <title>That Boy Hi Hat - Golden Diamond</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: Dre50 - Vai Vem Vem (slot 16, ends 2026-10-31T05:37:18.492Z)</description>
-    <pubDate>Sat, 31 Oct 2026 05:35:29 GMT</pubDate>
-    <guid isPermaLink="false">radio365-16-2026-10-31T05:37:18.492Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Golden Diamond (slot 34, ends 2026-10-31T06:36:23.270Z)</description>
+    <pubDate>Sat, 31 Oct 2026 06:35:20 GMT</pubDate>
+    <guid isPermaLink="false">radio365-34-2026-10-31T06:36:23.270Z</guid>
+    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
