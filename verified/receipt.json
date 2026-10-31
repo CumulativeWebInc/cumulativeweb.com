@@ -1,5 +1,5 @@
 {
-  "certified_at": "2026-10-31T19:18:35.213457+00:00",
+  "certified_at": "2026-10-31T19:48:34.712070+00:00",
   "certifier": "CWI-Certify/1.0",
   "passed": 6,
   "total": 6,
@@ -70,7 +70,7 @@
       "http_status": 200,
       "content_type": "application/json",
       "bytes": 2650,
-      "sha256": "0aa033adeca992ba",
+      "sha256": "a0659a4313c3ccee",
       "checks": {
         "http_200": true,
         "valid_json": true,
