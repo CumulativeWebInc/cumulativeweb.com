@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-10-31T04:35:21.752Z",
+  "updated_at": "2026-10-31T05:35:29.448Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "Black Lansky",
-      "title": "Be Mad",
-      "artwork": "https://cumulativeweb.com/radio/art/Black Lansky - Be_Mad.jpg",
-      "slot_index": 126,
-      "played_at": "2026-10-31T04:35:21.752Z",
-      "track_ends_at": "2026-10-31T04:35:38.577Z"
+      "artist": "Dre50",
+      "title": "Vai Vem Vem",
+      "artwork": "https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg",
+      "slot_index": 16,
+      "played_at": "2026-10-31T05:35:29.448Z",
+      "track_ends_at": "2026-10-31T05:37:18.492Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
