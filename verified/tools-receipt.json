@@ -2,7 +2,7 @@
   "attestation": "mcp-tools",
   "subject": "CWI Discovery Engine \u2014 MCP server (30 tools)",
   "endpoint": "https://cwi-machine-data.hp-ace.workers.dev/mcp",
-  "certified_at": "2026-10-31T05:56:20.942673+00:00",
+  "certified_at": "2026-10-31T06:56:17.906110+00:00",
   "tool_count": 30,
   "first_tool": "find_tracks_for_brief",
   "checks": {
