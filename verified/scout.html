@@ -11,7 +11,7 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0a0a0a;color:#e8
 .hero{text-align:center;padding:4rem 1rem 2rem}
 .hero h1{font-size:2.5rem;margin-bottom:.5rem}
 .hero p{color:#888;font-size:1.1rem}
-.badge{display:inline-block;background:rgba(34,211,238,.15);border:1px solid #22d3ee;color:#22d3ee;padding:.5rem 1.5rem;border-radius:2rem;font-weight:600;margin:1rem 0;font-size:1.1rem}
+.badge{display:inline-block;background:rgba(248,113,113,.15);border:1px solid #f87171;color:#f87171;padding:.5rem 1.5rem;border-radius:2rem;font-weight:600;margin:1rem 0;font-size:1.1rem}
 .stats{display:flex;justify-content:center;gap:3rem;margin:2rem 0;flex-wrap:wrap}
 .stat{text-align:center}.stat .num{font-size:2.5rem;font-weight:800;color:#fff}.stat .label{color:#888;font-size:.85rem;text-transform:uppercase;letter-spacing:1px}
 .grid{max-width:900px;margin:0 auto;padding:2rem 1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
@@ -26,13 +26,13 @@ pre{background:#111;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.75
 <div class="hero">
 <h1>🔍 SCOUT API</h1>
 <p>No-install discovery</p>
-<div class="badge">● LIVE</div>
-<p class="timestamp">Certified: 2026-10-31T07:56:22.554813+00:00</p>
-<div class="stats"><div class="stat"><div class="num">1.34</div><div class="label">response time s</div></div></div>
+<div class="badge">● ISSUES</div>
+<p class="timestamp">Certified: 2026-10-31T08:56:50.576390+00:00</p>
+<div class="stats"><div class="stat"><div class="num">2.06</div><div class="label">response time s</div></div></div>
 </div>
 <div class="grid">
 <div class="card"><h3><span style="color:#4ade80">✓</span> scout http 200</h3></div>
-<div class="card"><h3><span style="color:#4ade80">✓</span> scout under 2s</h3></div>
+<div class="card"><h3><span style="color:#f87171">✗</span> scout under 2s</h3></div>
 <div class="card"><h3><span style="color:#4ade80">✓</span> scout returns tracks</h3></div>
 <div class="card"><h3><span style="color:#4ade80">✓</span> scout tracks have isrc</h3></div>
 <div class="card"><h3><span style="color:#4ade80">✓</span> scout tracks have title</h3></div>
@@ -44,16 +44,16 @@ pre{background:#111;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.75
   "attestation": "scout-api",
   "subject": "CWI Scout API \u2014 no-install track discovery",
   "endpoint": "https://cwi-machine-data.hp-ace.workers.dev/api/scout",
-  "certified_at": "2026-10-31T07:56:22.554813+00:00",
-  "response_time_s": 1.34,
+  "certified_at": "2026-10-31T08:56:50.576390+00:00",
+  "response_time_s": 2.06,
   "checks": {
     "scout_http_200": true,
-    "scout_under_2s": true,
+    "scout_under_2s": false,
     "scout_returns_tracks": true,
     "scout_tracks_have_isrc": true,
     "scout_tracks_have_title": true
   },
-  "all_pass": true
+  "all_pass": false
 }</pre>
 </div>
 <footer><p>Attested by <code>CWI-Attest/1.0</code> · <a href="/verified/">All attestations</a></p></footer>
