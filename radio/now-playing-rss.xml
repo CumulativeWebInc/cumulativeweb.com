@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Sat, 31 Oct 2026 13:35:31 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 31 Oct 2026 14:35:21 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>That Boy Hi Hat - Broken Hearts Club</title>
+    <title>That Boy Hi Hat - Diabolique</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Broken Hearts Club (slot 36, ends 2026-10-31T13:36:39.106Z)</description>
-    <pubDate>Sat, 31 Oct 2026 13:35:31 GMT</pubDate>
-    <guid isPermaLink="false">radio365-36-2026-10-31T13:36:39.106Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Diabolique (slot 55, ends 2026-10-31T14:36:49.271Z)</description>
+    <pubDate>Sat, 31 Oct 2026 14:35:21 GMT</pubDate>
+    <guid isPermaLink="false">radio365-55-2026-10-31T14:36:49.271Z</guid>
+    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
