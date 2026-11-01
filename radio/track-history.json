@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-11-01T22:35:24.678Z",
+  "updated_at": "2026-11-01T23:35:24.694Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "Greg Porn",
-      "title": "Unholy Hunters (Ref 1.0)",
-      "artwork": "https://cumulativeweb.com/assets/artist-greg-porn.jpg",
-      "slot_index": 7,
-      "played_at": "2026-11-01T22:35:24.678Z",
-      "track_ends_at": "2026-11-01T22:36:24.760Z"
+      "artist": "Dre50",
+      "title": "Vai Vem Vem",
+      "artwork": "https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg",
+      "slot_index": 26,
+      "played_at": "2026-11-01T23:35:24.694Z",
+      "track_ends_at": "2026-11-01T23:36:58.756Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
