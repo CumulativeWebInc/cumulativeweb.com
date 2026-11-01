@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Sun, 01 Nov 2026 21:35:21 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 01 Nov 2026 22:35:24 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>That Boy Hi Hat - Warped &amp; Wicked</title>
+    <title>Greg Porn - Unholy Hunters (Ref 1.0)</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Warped &amp; Wicked (slot 118, ends 2026-11-01T21:37:53.047Z)</description>
-    <pubDate>Sun, 01 Nov 2026 21:35:21 GMT</pubDate>
-    <guid isPermaLink="false">radio365-118-2026-11-01T21:37:53.047Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-warped-and-wicked.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: Greg Porn - Unholy Hunters (Ref 1.0) (slot 7, ends 2026-11-01T22:36:24.760Z)</description>
+    <pubDate>Sun, 01 Nov 2026 22:35:24 GMT</pubDate>
+    <guid isPermaLink="false">radio365-7-2026-11-01T22:36:24.760Z</guid>
+    <enclosure url="https://cumulativeweb.com/assets/artist-greg-porn.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
