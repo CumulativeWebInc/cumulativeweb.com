@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-11-01T17:35:20.847Z",
+  "updated_at": "2026-11-01T18:35:24.006Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Rainbows And Roses",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-rainbows-and-roses.jpg",
-      "slot_index": 43,
-      "played_at": "2026-11-01T17:35:20.847Z",
-      "track_ends_at": "2026-11-01T17:37:07.293Z"
+      "title": "Shaka Zulu",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg",
+      "slot_index": 62,
+      "played_at": "2026-11-01T18:35:24.006Z",
+      "track_ends_at": "2026-11-01T18:38:10.092Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
