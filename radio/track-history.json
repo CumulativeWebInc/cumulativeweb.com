@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-11-01T01:35:21.857Z",
+  "updated_at": "2026-11-01T02:35:22.899Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Broken Hearts Club",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg",
-      "slot_index": 2,
-      "played_at": "2026-11-01T01:35:21.857Z",
-      "track_ends_at": "2026-11-01T01:36:06.672Z"
+      "title": "Rainbows And Roses",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-rainbows-and-roses.jpg",
+      "slot_index": 20,
+      "played_at": "2026-11-01T02:35:22.899Z",
+      "track_ends_at": "2026-11-01T02:35:26.967Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
