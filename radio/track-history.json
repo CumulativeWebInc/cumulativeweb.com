@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-11-02T03:35:20.763Z",
+  "updated_at": "2026-11-02T04:35:21.796Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "Dre50",
-      "title": "Vai Vem Vem",
-      "artwork": "https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg",
-      "slot_index": 102,
-      "played_at": "2026-11-02T03:35:20.763Z",
-      "track_ends_at": "2026-11-02T03:36:22.958Z"
+      "artist": "King Ahkeem",
+      "title": "Embiid",
+      "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-embiid.jpg",
+      "slot_index": 120,
+      "played_at": "2026-11-02T04:35:21.796Z",
+      "track_ends_at": "2026-11-02T04:36:48.600Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
