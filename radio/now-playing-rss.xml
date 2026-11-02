@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Mon, 02 Nov 2026 22:48:01 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 02 Nov 2026 23:37:21 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>That Boy Hi Hat - Zooted Zone</title>
+    <title>183 Wildboi - Stunt</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Zooted Zone (slot 73, ends 2026-11-02T22:48:05.024Z)</description>
-    <pubDate>Mon, 02 Nov 2026 22:48:01 GMT</pubDate>
-    <guid isPermaLink="false">radio365-73-2026-11-02T22:48:05.024Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: 183 Wildboi - Stunt (slot 89, ends 2026-11-02T23:39:42.621Z)</description>
+    <pubDate>Mon, 02 Nov 2026 23:37:21 GMT</pubDate>
+    <guid isPermaLink="false">radio365-89-2026-11-02T23:39:42.621Z</guid>
+    <enclosure url="https://cumulativeweb.com/radio/art/183-wildboi-stunt.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
