@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-11-02T21:35:35.519Z",
+  "updated_at": "2026-11-02T22:48:01.694Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Place I Go to Dream",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-place-i-go-to-dream-remastered.jpg",
-      "slot_index": 51,
-      "played_at": "2026-11-02T21:35:35.519Z",
-      "track_ends_at": "2026-11-02T21:37:52.931Z"
+      "title": "Zooted Zone",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg",
+      "slot_index": 73,
+      "played_at": "2026-11-02T22:48:01.694Z",
+      "track_ends_at": "2026-11-02T22:48:05.024Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
