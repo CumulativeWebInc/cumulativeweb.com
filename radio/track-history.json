@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-11-04T11:35:20.009Z",
+  "updated_at": "2026-11-04T12:35:25.263Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Spirits n Shadows",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-spirits-n-shadows.jpg",
-      "slot_index": 115,
-      "played_at": "2026-11-04T11:35:20.009Z",
-      "track_ends_at": "2026-11-04T11:35:39.387Z"
+      "title": "Golden Diamond",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg",
+      "slot_index": 4,
+      "played_at": "2026-11-04T12:35:25.263Z",
+      "track_ends_at": "2026-11-04T12:36:19.166Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
