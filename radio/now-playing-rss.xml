@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Wed, 04 Nov 2026 10:35:24 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 04 Nov 2026 11:35:20 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>That Boy Hi Hat - Diabolique</title>
+    <title>That Boy Hi Hat - Spirits n Shadows</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Diabolique (slot 97, ends 2026-11-04T10:35:45.975Z)</description>
-    <pubDate>Wed, 04 Nov 2026 10:35:24 GMT</pubDate>
-    <guid isPermaLink="false">radio365-97-2026-11-04T10:35:45.975Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Spirits n Shadows (slot 115, ends 2026-11-04T11:35:39.387Z)</description>
+    <pubDate>Wed, 04 Nov 2026 11:35:20 GMT</pubDate>
+    <guid isPermaLink="false">radio365-115-2026-11-04T11:35:39.387Z</guid>
+    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-spirits-n-shadows.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>

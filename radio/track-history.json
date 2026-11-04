@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-11-04T10:35:24.684Z",
+  "updated_at": "2026-11-04T11:35:20.009Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Diabolique",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg",
-      "slot_index": 97,
-      "played_at": "2026-11-04T10:35:24.684Z",
-      "track_ends_at": "2026-11-04T10:35:45.975Z"
+      "title": "Spirits n Shadows",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-spirits-n-shadows.jpg",
+      "slot_index": 115,
+      "played_at": "2026-11-04T11:35:20.009Z",
+      "track_ends_at": "2026-11-04T11:35:39.387Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
