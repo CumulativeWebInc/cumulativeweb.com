@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-11-05T20:35:20.846Z",
+  "updated_at": "2026-11-05T21:35:21.731Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Zooted Zone",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg",
-      "slot_index": 87,
-      "played_at": "2026-11-05T20:35:20.846Z",
-      "track_ends_at": "2026-11-05T20:37:41.929Z"
+      "title": "7th Angel",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg",
+      "slot_index": 106,
+      "played_at": "2026-11-05T21:35:21.731Z",
+      "track_ends_at": "2026-11-05T21:36:50.759Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
