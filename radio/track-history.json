@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-11-05T15:35:21.347Z",
+  "updated_at": "2026-11-05T16:35:20.520Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "King Ahkeem",
-      "title": "Super Solid",
-      "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-super-solid.jpg",
-      "slot_index": 123,
-      "played_at": "2026-11-05T15:35:21.347Z",
-      "track_ends_at": "2026-11-05T15:36:08.504Z"
+      "artist": "That Boy Hi Hat",
+      "title": "Shaka Zulu",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-shaka-zulu.jpg",
+      "slot_index": 12,
+      "played_at": "2026-11-05T16:35:20.520Z",
+      "track_ends_at": "2026-11-05T16:39:08.580Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
