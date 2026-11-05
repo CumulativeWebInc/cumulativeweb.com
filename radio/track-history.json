@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-11-05T01:35:20.655Z",
+  "updated_at": "2026-11-05T02:35:20.741Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Warped & Wicked",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-warped-and-wicked.jpg",
-      "slot_index": 118,
-      "played_at": "2026-11-05T01:35:20.655Z",
-      "track_ends_at": "2026-11-05T01:35:31.282Z"
+      "title": "Diabolique",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg",
+      "slot_index": 8,
+      "played_at": "2026-11-05T02:35:20.741Z",
+      "track_ends_at": "2026-11-05T02:36:38.894Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
