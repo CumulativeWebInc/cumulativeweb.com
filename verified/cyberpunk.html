@@ -11,7 +11,7 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0a0a0a;color:#e8
 .hero{text-align:center;padding:4rem 1rem 2rem}
 .hero h1{font-size:2.5rem;margin-bottom:.5rem}
 .hero p{color:#888;font-size:1.1rem}
-.badge{display:inline-block;background:rgba(248,113,113,.15);border:1px solid #f87171;color:#f87171;padding:.5rem 1.5rem;border-radius:2rem;font-weight:600;margin:1rem 0;font-size:1.1rem}
+.badge{display:inline-block;background:rgba(192,132,252,.15);border:1px solid #c084fc;color:#c084fc;padding:.5rem 1.5rem;border-radius:2rem;font-weight:600;margin:1rem 0;font-size:1.1rem}
 .stats{display:flex;justify-content:center;gap:3rem;margin:2rem 0;flex-wrap:wrap}
 .stat{text-align:center}.stat .num{font-size:2.5rem;font-weight:800;color:#fff}.stat .label{color:#888;font-size:.85rem;text-transform:uppercase;letter-spacing:1px}
 .grid{max-width:900px;margin:0 auto;padding:2rem 1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
@@ -26,8 +26,8 @@ pre{background:#111;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.75
 <div class="hero">
 <h1>🌆 CYBERPUNK 2027</h1>
 <p>Release surfaces — Nov 20, 2026</p>
-<div class="badge">● ISSUES</div>
-<p class="timestamp">Certified: 2026-11-07T01:55:43.599865+00:00</p>
+<div class="badge">● LIVE</div>
+<p class="timestamp">Certified: 2026-11-07T02:55:43.689238+00:00</p>
 <div class="stats"></div>
 </div>
 <div class="grid">
@@ -37,7 +37,7 @@ pre{background:#111;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.75
 <div class="card"><h3><span style="color:#4ade80">✓</span> briefing http 200</h3></div>
 <div class="card"><h3><span style="color:#4ade80">✓</span> briefing has isrc</h3></div>
 <div class="card"><h3><span style="color:#4ade80">✓</span> briefing has date</h3></div>
-<div class="card"><h3><span style="color:#f87171">✗</span> presave reachable</h3></div>
+<div class="card"><h3><span style="color:#4ade80">✓</span> presave reachable</h3></div>
 </div>
 <div style="max-width:900px;margin:0 auto;padding:0 1rem">
 <h3 style="color:#fff;margin-bottom:.5rem">Machine-readable receipt</h3>
@@ -46,7 +46,7 @@ pre{background:#111;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.75
   "attestation": "cyberpunk-2027",
   "subject": "Cyberpunk 2027 \u2014 That Boy Hi Hat (releases 2026-11-20)",
   "isrc": "QTA2X2675077",
-  "certified_at": "2026-11-07T01:55:43.599865+00:00",
+  "certified_at": "2026-11-07T02:55:43.689238+00:00",
   "checks": {
     "countdown_http_200": true,
     "countdown_has_date": true,
@@ -54,9 +54,10 @@ pre{background:#111;border-radius:8px;padding:1rem;overflow-x:auto;font-size:.75
     "briefing_http_200": true,
     "briefing_has_isrc": true,
     "briefing_has_date": true,
-    "presave_reachable": false
+    "presave_reachable": true
   },
-  "all_pass": false
+  "all_pass": true,
+  "presave_bot_challenged": false
 }</pre>
 </div>
 <footer><p>Attested by <code>CWI-Attest/1.0</code> · <a href="/verified/">All attestations</a></p></footer>
