@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Sat, 07 Nov 2026 21:35:24 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 07 Nov 2026 22:35:20 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>That Boy Hi Hat - Place I Go to Dream</title>
+    <title>That Boy Hi Hat - Warped &amp; Wicked</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Place I Go to Dream (slot 100, ends 2026-11-07T21:36:12.255Z)</description>
-    <pubDate>Sat, 07 Nov 2026 21:35:24 GMT</pubDate>
-    <guid isPermaLink="false">radio365-100-2026-11-07T21:36:12.255Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-place-i-go-to-dream-remastered.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Warped &amp; Wicked (slot 118, ends 2026-11-07T22:38:49.678Z)</description>
+    <pubDate>Sat, 07 Nov 2026 22:35:20 GMT</pubDate>
+    <guid isPermaLink="false">radio365-118-2026-11-07T22:38:49.678Z</guid>
+    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-warped-and-wicked.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
