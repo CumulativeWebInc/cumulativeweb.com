@@ -1,8 +1,8 @@
 {
   "attestation": "radio-365",
   "subject": "Radio 365 \u2014 Cumulative Web Inc 24/7 stream",
-  "certified_at": "2026-11-07T12:58:46.228112+00:00",
-  "now_playing": "183 Wildboi \u2014 Stunt",
+  "certified_at": "2026-11-07T13:56:14.940568+00:00",
+  "now_playing": "That Boy Hi Hat \u2014 7th Angel",
   "mp3_bridge_attempts": 1,
   "checks": {
     "nowplaying_http_200": true,
