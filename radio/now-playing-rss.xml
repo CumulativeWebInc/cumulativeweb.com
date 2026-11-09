@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Mon, 09 Nov 2026 15:35:23 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 09 Nov 2026 16:35:20 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>Greg Porn - Unholy Hunters (Ref 1.0)</title>
+    <title>That Boy Hi Hat - Painted Lady</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: Greg Porn - Unholy Hunters (Ref 1.0) (slot 110, ends 2026-11-09T15:36:30.867Z)</description>
-    <pubDate>Mon, 09 Nov 2026 15:35:23 GMT</pubDate>
-    <guid isPermaLink="false">radio365-110-2026-11-09T15:36:30.867Z</guid>
-    <enclosure url="https://cumulativeweb.com/assets/artist-greg-porn.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Painted Lady (slot 129, ends 2026-11-09T16:37:18.982Z)</description>
+    <pubDate>Mon, 09 Nov 2026 16:35:20 GMT</pubDate>
+    <guid isPermaLink="false">radio365-129-2026-11-09T16:37:18.982Z</guid>
+    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-painted-lady.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
