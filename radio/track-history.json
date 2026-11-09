@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-11-09T02:35:21.478Z",
+  "updated_at": "2026-11-09T03:35:20.860Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "Black Lansky",
-      "title": "Be Mad",
-      "artwork": "https://cumulativeweb.com/radio/art/Black Lansky - Be_Mad.jpg",
-      "slot_index": 126,
-      "played_at": "2026-11-09T02:35:21.478Z",
-      "track_ends_at": "2026-11-09T02:39:53.604Z"
+      "artist": "Greg Porn",
+      "title": "Unholy Hunters (Ref 1.0)",
+      "artwork": "https://cumulativeweb.com/assets/artist-greg-porn.jpg",
+      "slot_index": 14,
+      "played_at": "2026-11-09T03:35:20.860Z",
+      "track_ends_at": "2026-11-09T03:36:10.740Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
