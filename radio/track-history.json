@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-11-09T10:35:20.738Z",
+  "updated_at": "2026-11-09T11:35:20.599Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "Dre50",
-      "title": "Vai Vem Vem",
-      "artwork": "https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg",
-      "slot_index": 16,
-      "played_at": "2026-11-09T10:35:20.738Z",
-      "track_ends_at": "2026-11-09T10:35:53.358Z"
+      "artist": "That Boy Hi Hat",
+      "title": "Place I Go to Dream",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-place-i-go-to-dream-remastered.jpg",
+      "slot_index": 35,
+      "played_at": "2026-11-09T11:35:20.599Z",
+      "track_ends_at": "2026-11-09T11:37:46.207Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
