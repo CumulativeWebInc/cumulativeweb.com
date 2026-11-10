@@ -1,8 +1,8 @@
 {
   "attestation": "radio-365",
   "subject": "Radio 365 \u2014 Cumulative Web Inc 24/7 stream",
-  "certified_at": "2026-11-10T12:56:13.145883+00:00",
-  "now_playing": "King Ahkeem \u2014 Star",
+  "certified_at": "2026-11-10T13:56:17.612403+00:00",
+  "now_playing": "That Boy Hi Hat \u2014 Rainbows And Roses",
   "mp3_bridge_attempts": 1,
   "checks": {
     "nowplaying_http_200": true,
