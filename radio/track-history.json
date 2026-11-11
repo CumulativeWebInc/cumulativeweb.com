@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-11-11T16:35:20.957Z",
+  "updated_at": "2026-11-11T17:35:20.880Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "King Ahkeem",
-      "title": "Super Solid",
-      "artwork": "https://cumulativeweb.com/radio/art/king-ahkeem-super-solid.jpg",
-      "slot_index": 123,
-      "played_at": "2026-11-11T16:35:20.957Z",
-      "track_ends_at": "2026-11-11T16:37:05.135Z"
+      "artist": "183 Wildboi",
+      "title": "Stunt",
+      "artwork": "https://cumulativeweb.com/radio/art/183-wildboi-stunt.jpg",
+      "slot_index": 11,
+      "played_at": "2026-11-11T17:35:20.880Z",
+      "track_ends_at": "2026-11-11T17:35:53.548Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
