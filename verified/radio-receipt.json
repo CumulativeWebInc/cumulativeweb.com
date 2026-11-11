@@ -1,8 +1,8 @@
 {
   "attestation": "radio-365",
   "subject": "Radio 365 \u2014 Cumulative Web Inc 24/7 stream",
-  "certified_at": "2026-11-11T04:56:14.697370+00:00",
-  "now_playing": "Greg Porn \u2014 Unholy Hunters (Ref 1.0)",
+  "certified_at": "2026-11-11T05:56:21.770431+00:00",
+  "now_playing": "Dre50 \u2014 Vai Vem Vem",
   "mp3_bridge_attempts": 1,
   "checks": {
     "nowplaying_http_200": true,
