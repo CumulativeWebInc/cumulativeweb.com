@@ -2,7 +2,7 @@
   "attestation": "cyberpunk-2027",
   "subject": "Cyberpunk 2027 \u2014 That Boy Hi Hat (releases 2026-11-20)",
   "isrc": "QTA2X2675077",
-  "certified_at": "2026-11-10T23:55:48.141425+00:00",
+  "certified_at": "2026-11-11T00:55:44.952952+00:00",
   "checks": {
     "countdown_http_200": true,
     "countdown_has_date": true,
