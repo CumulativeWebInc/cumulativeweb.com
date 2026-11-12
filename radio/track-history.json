@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-11-12T06:35:21.848Z",
+  "updated_at": "2026-11-12T07:35:21.556Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "Black Lansky",
-      "title": "Be Mad",
-      "artwork": "https://cumulativeweb.com/radio/art/Black Lansky - Be_Mad.jpg",
-      "slot_index": 126,
-      "played_at": "2026-11-12T06:35:21.848Z",
-      "track_ends_at": "2026-11-12T06:37:31.839Z"
+      "artist": "That Boy Hi Hat",
+      "title": "Diabolique",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-diabolique.jpg",
+      "slot_index": 15,
+      "played_at": "2026-11-12T07:35:21.556Z",
+      "track_ends_at": "2026-11-12T07:36:24.873Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
