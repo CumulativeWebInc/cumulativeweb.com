@@ -2,7 +2,7 @@
   "attestation": "cyberpunk-2027",
   "subject": "Cyberpunk 2027 \u2014 That Boy Hi Hat (releases 2026-11-20)",
   "isrc": "QTA2X2675077",
-  "certified_at": "2026-11-12T08:55:41.747356+00:00",
+  "certified_at": "2026-11-12T09:55:46.055433+00:00",
   "checks": {
     "countdown_http_200": true,
     "countdown_has_date": true,
@@ -10,9 +10,8 @@
     "briefing_http_200": true,
     "briefing_has_isrc": true,
     "briefing_has_date": true,
-    "presave_reachable": false
+    "presave_reachable": true
   },
   "all_pass": true,
-  "presave_bot_challenged": true,
-  "presave_note": "DistroKid returns HTTP 403 Cf-Mitigated: challenge to curl; page verified live in a real browser 2026-11-06. presave_reachable is curl-only and excluded from all_pass while challenged."
+  "presave_bot_challenged": false
 }
