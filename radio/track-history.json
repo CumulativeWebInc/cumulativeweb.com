@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-11-12T13:35:23.542Z",
+  "updated_at": "2026-11-12T14:35:22.960Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Flamerz",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-flamerz.jpg",
-      "slot_index": 128,
-      "played_at": "2026-11-12T13:35:23.542Z",
-      "track_ends_at": "2026-11-12T13:37:48.778Z"
+      "title": "Zooted Zone",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg",
+      "slot_index": 17,
+      "played_at": "2026-11-12T14:35:22.960Z",
+      "track_ends_at": "2026-11-12T14:36:37.115Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
