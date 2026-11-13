@@ -1,7 +1,7 @@
 {
   "attestation": "track-pages",
   "subject": "29 Track Entity Pages \u2014 JSON-LD ISRC verification",
-  "certified_at": "2026-11-13T07:56:40.577873+00:00",
+  "certified_at": "2026-11-13T08:56:40.507327+00:00",
   "pages_checked": 23,
   "pages_passed": 23,
   "with_isrc_count": 18,
