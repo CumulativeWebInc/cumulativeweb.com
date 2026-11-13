@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-11-13T12:35:21.367Z",
+  "updated_at": "2026-11-13T13:35:22.991Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "Dre50",
-      "title": "Vai Vem Vem",
-      "artwork": "https://cumulativeweb.com/radio/art/dre50-vai-vem-vem.jpg",
-      "slot_index": 41,
-      "played_at": "2026-11-13T12:35:21.367Z",
-      "track_ends_at": "2026-11-13T12:36:28.437Z"
+      "artist": "That Boy Hi Hat",
+      "title": "Rainbows And Roses",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-rainbows-and-roses.jpg",
+      "slot_index": 60,
+      "played_at": "2026-11-13T13:35:22.991Z",
+      "track_ends_at": "2026-11-13T13:38:55.952Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
