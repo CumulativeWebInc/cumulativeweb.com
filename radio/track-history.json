@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-11-13T07:35:21.445Z",
+  "updated_at": "2026-11-13T08:35:21.438Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "That Boy Hi Hat",
-      "title": "Place I Go to Dream",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-place-i-go-to-dream-remastered.jpg",
-      "slot_index": 77,
-      "played_at": "2026-11-13T07:35:21.445Z",
-      "track_ends_at": "2026-11-13T07:38:03.284Z"
+      "artist": "Greg Porn",
+      "title": "Unholy Hunters (Ref 1.0)",
+      "artwork": "https://cumulativeweb.com/assets/artist-greg-porn.jpg",
+      "slot_index": 96,
+      "played_at": "2026-11-13T08:35:21.438Z",
+      "track_ends_at": "2026-11-13T08:37:25.103Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
