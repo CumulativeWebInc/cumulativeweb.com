@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-11-14T08:35:20.047Z",
+  "updated_at": "2026-11-14T09:35:20.163Z",
   "count": 1,
   "tracks": [
     {
       "artist": "183 Wildboi",
       "title": "Stunt",
       "artwork": "https://cumulativeweb.com/radio/art/183-wildboi-stunt.jpg",
-      "slot_index": 27,
-      "played_at": "2026-11-14T08:35:20.047Z",
-      "track_ends_at": "2026-11-14T08:35:44.065Z"
+      "slot_index": 46,
+      "played_at": "2026-11-14T09:35:20.163Z",
+      "track_ends_at": "2026-11-14T09:36:51.096Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."

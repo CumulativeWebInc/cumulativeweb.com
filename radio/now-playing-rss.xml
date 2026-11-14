@@ -5,15 +5,15 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Sat, 14 Nov 2026 08:35:20 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 14 Nov 2026 09:35:20 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
     <title>183 Wildboi - Stunt</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: 183 Wildboi - Stunt (slot 27, ends 2026-11-14T08:35:44.065Z)</description>
-    <pubDate>Sat, 14 Nov 2026 08:35:20 GMT</pubDate>
-    <guid isPermaLink="false">radio365-27-2026-11-14T08:35:44.065Z</guid>
+    <description>Now playing on Cumulative Radio 365: 183 Wildboi - Stunt (slot 46, ends 2026-11-14T09:36:51.096Z)</description>
+    <pubDate>Sat, 14 Nov 2026 09:35:20 GMT</pubDate>
+    <guid isPermaLink="false">radio365-46-2026-11-14T09:36:51.096Z</guid>
     <enclosure url="https://cumulativeweb.com/radio/art/183-wildboi-stunt.jpg" type="image/jpeg" />
   </item>
  </channel>
