@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-11-15T16:35:24.826Z",
+  "updated_at": "2026-11-15T17:35:21.908Z",
   "count": 1,
   "tracks": [
     {
-      "artist": "Greg Porn",
-      "title": "Unholy Hunters (Ref 1.0)",
-      "artwork": "https://cumulativeweb.com/assets/artist-greg-porn.jpg",
-      "slot_index": 110,
-      "played_at": "2026-11-15T16:35:24.826Z",
-      "track_ends_at": "2026-11-15T16:37:27.498Z"
+      "artist": "That Boy Hi Hat",
+      "title": "Flamerz",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-flamerz.jpg",
+      "slot_index": 128,
+      "played_at": "2026-11-15T17:35:21.908Z",
+      "track_ends_at": "2026-11-15T17:35:27.013Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
