@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-11-16T10:35:21.514Z",
+  "updated_at": "2026-11-16T11:35:21.487Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Broken Hearts Club",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg",
-      "slot_index": 59,
-      "played_at": "2026-11-16T10:35:21.514Z",
-      "track_ends_at": "2026-11-16T10:38:13.734Z"
+      "title": "Place I Go to Dream",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-place-i-go-to-dream-remastered.jpg",
+      "slot_index": 77,
+      "played_at": "2026-11-16T11:35:21.487Z",
+      "track_ends_at": "2026-11-16T11:35:41.519Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
