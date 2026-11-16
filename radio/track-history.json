@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-11-16T19:35:21.579Z",
+  "updated_at": "2026-11-16T20:35:21.670Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Broken Hearts Club",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg",
-      "slot_index": 99,
-      "played_at": "2026-11-16T19:35:21.579Z",
-      "track_ends_at": "2026-11-16T19:37:39.210Z"
+      "title": "Neon Nights pt. 777",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-neon-nights-pt-777.jpg",
+      "slot_index": 116,
+      "played_at": "2026-11-16T20:35:21.670Z",
+      "track_ends_at": "2026-11-16T20:35:40.994Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
