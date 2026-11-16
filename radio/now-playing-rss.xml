@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Mon, 16 Nov 2026 07:35:22 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 08:35:21 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>That Boy Hi Hat - Broken Hearts Club</title>
+    <title>183 Wildboi - Stunt</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Broken Hearts Club (slot 2, ends 2026-11-16T07:35:38.169Z)</description>
-    <pubDate>Mon, 16 Nov 2026 07:35:22 GMT</pubDate>
-    <guid isPermaLink="false">radio365-2-2026-11-16T07:35:38.169Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-broken-hearts-club.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: 183 Wildboi - Stunt (slot 21, ends 2026-11-16T08:37:30.672Z)</description>
+    <pubDate>Mon, 16 Nov 2026 08:35:21 GMT</pubDate>
+    <guid isPermaLink="false">radio365-21-2026-11-16T08:37:30.672Z</guid>
+    <enclosure url="https://cumulativeweb.com/radio/art/183-wildboi-stunt.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
