@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Tue, 17 Nov 2026 01:35:21 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 03:35:30 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>That Boy Hi Hat - 7th Angel</title>
+    <title>That Boy Hi Hat - Warped &amp; Wicked</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - 7th Angel (slot 81, ends 2026-11-17T01:37:44.656Z)</description>
-    <pubDate>Tue, 17 Nov 2026 01:35:21 GMT</pubDate>
-    <guid isPermaLink="false">radio365-81-2026-11-17T01:37:44.656Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Warped &amp; Wicked (slot 118, ends 2026-11-17T03:37:24.544Z)</description>
+    <pubDate>Tue, 17 Nov 2026 03:35:30 GMT</pubDate>
+    <guid isPermaLink="false">radio365-118-2026-11-17T03:37:24.544Z</guid>
+    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-warped-and-wicked.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
