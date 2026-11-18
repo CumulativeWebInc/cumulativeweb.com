@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Wed, 18 Nov 2026 21:35:22 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 18 Nov 2026 22:35:20 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>That Boy Hi Hat - Painted Lady</title>
+    <title>That Boy Hi Hat - 7th Angel</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Painted Lady (slot 129, ends 2026-11-18T21:35:53.849Z)</description>
-    <pubDate>Wed, 18 Nov 2026 21:35:22 GMT</pubDate>
-    <guid isPermaLink="false">radio365-129-2026-11-18T21:35:53.849Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-painted-lady.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - 7th Angel (slot 18, ends 2026-11-18T22:35:53.651Z)</description>
+    <pubDate>Wed, 18 Nov 2026 22:35:20 GMT</pubDate>
+    <guid isPermaLink="false">radio365-18-2026-11-18T22:35:53.651Z</guid>
+    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
