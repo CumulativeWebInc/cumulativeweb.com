@@ -5,16 +5,16 @@
   <link>https://cumulativeweb.com/radio.html</link>
   <description>Live now-playing feed for Cumulative Radio 365. Independent airwaves, every day.</description>
   <language>en-us</language>
-  <lastBuildDate>Wed, 18 Nov 2026 23:35:20 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 00:35:20 GMT</lastBuildDate>
   <atom:link href="https://cumulativeweb.com/radio/now-playing-rss.xml" rel="self" type="application/rss+xml" />
   <atom:link href="https://cwi-machine-data.hp-ace.workers.dev/radio/hub" rel="hub" />
   <item>
-    <title>That Boy Hi Hat - Zooted Zone</title>
+    <title>Greg Porn - Unholy Hunters (Ref 1.0)</title>
     <link>https://cumulativeweb.com/radio.html</link>
-    <description>Now playing on Cumulative Radio 365: That Boy Hi Hat - Zooted Zone (slot 37, ends 2026-11-18T23:36:54.359Z)</description>
-    <pubDate>Wed, 18 Nov 2026 23:35:20 GMT</pubDate>
-    <guid isPermaLink="false">radio365-37-2026-11-18T23:36:54.359Z</guid>
-    <enclosure url="https://cumulativeweb.com/radio/art/that-boy-hi-hat-zooted-zone.jpg" type="image/jpeg" />
+    <description>Now playing on Cumulative Radio 365: Greg Porn - Unholy Hunters (Ref 1.0) (slot 56, ends 2026-11-19T00:36:01.544Z)</description>
+    <pubDate>Thu, 19 Nov 2026 00:35:20 GMT</pubDate>
+    <guid isPermaLink="false">radio365-56-2026-11-19T00:36:01.544Z</guid>
+    <enclosure url="https://cumulativeweb.com/assets/artist-greg-porn.jpg" type="image/jpeg" />
   </item>
  </channel>
 </rss>
