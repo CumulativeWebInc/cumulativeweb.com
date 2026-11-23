@@ -2,16 +2,16 @@
   "station": "Cumulative Radio 365",
   "station_url": "https://cumulativeweb.com/radio.html",
   "hub": "https://cwi-machine-data.hp-ace.workers.dev/radio/hub",
-  "updated_at": "2026-11-23T15:35:23.513Z",
+  "updated_at": "2026-11-23T16:35:20.583Z",
   "count": 1,
   "tracks": [
     {
       "artist": "That Boy Hi Hat",
-      "title": "Golden Diamond",
-      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-golden-diamond.jpg",
-      "slot_index": 65,
-      "played_at": "2026-11-23T15:35:23.513Z",
-      "track_ends_at": "2026-11-23T15:37:10.271Z"
+      "title": "7th Angel",
+      "artwork": "https://cumulativeweb.com/radio/art/that-boy-hi-hat-7th-angel.jpg",
+      "slot_index": 85,
+      "played_at": "2026-11-23T16:35:20.583Z",
+      "track_ends_at": "2026-11-23T16:39:03.705Z"
     }
   ],
   "note": "Refreshed from the live nowplaying endpoint; full history accumulates per refresh."
